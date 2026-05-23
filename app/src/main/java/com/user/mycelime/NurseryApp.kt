@@ -20,7 +20,7 @@ data class TabItem(
 
 val tabs = listOf(
     TabItem(InnerScreen.HABITAT,   "Habitat",   Icons.Default.Home),
-    TabItem(InnerScreen.MAP,       "Map",       Icons.Default.Place),
+    TabItem(InnerScreen.MAP,       "Map",         Icons.Default.Place),
     TabItem(InnerScreen.EVOLUTION, "Evolution", Icons.Default.AccountTree),
     TabItem(InnerScreen.COMMAND,   "Command",   Icons.Default.Settings),
     TabItem(InnerScreen.NURSERY,   "Nursery",   Icons.Default.Egg),
