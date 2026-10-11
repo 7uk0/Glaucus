@@ -193,3 +193,83 @@ fn every_frontier_shuttle_and_poi_spawns() {
     assert!(paths.len() > 100);
     assert!(warnings.is_empty());
 }
+
+#[test]
+fn piloting_a_shuttle_moves_it_and_its_crew() {
+    use athanor::shuttles::{toggle_pilot, GridBody, Pilot, Shuttle};
+    let Some(c) = content() else { return };
+    let mut app = headless_app(c);
+    let grid = {
+        let world = app.world_mut();
+        load_map_path(world, "/Maps/_NF/Shuttles/kestrel.yml", None, LoadOptions::default()).unwrap().grids[0]
+    };
+    app.update();
+    let world = app.world_mut();
+    assert!(world.get::<Shuttle>(grid).is_some(), "kestrel grid has a Shuttle component");
+    let console = {
+        let mut q = world.query::<(Entity, &athanor::shuttles::ShuttleConsole)>();
+        q.iter(world).next().expect("a shuttle console").0
+    };
+    let cpos = world.get::<Xform>(console).unwrap().pos;
+    let ct = tile_of(cpos);
+    let mask = athanor::physics::group::by_name("MobMask").unwrap();
+    let seat = [IVec2::Y, -IVec2::Y, IVec2::X, -IVec2::X, IVec2::new(1, 1), IVec2::new(-1, -1), IVec2::new(1, -1), IVec2::new(-1, 1)]
+        .into_iter()
+        .map(|d| ct + d)
+        .find(|t| world.get::<Grid>(grid).unwrap().has_tile(*t) && !athanor::physics::tile_blocked(world, grid, *t, mask))
+        .expect("standing room by the console");
+    let pilot = spawn_proto(world, "MobHuman", grid, tile_center(seat)).unwrap();
+    assert!(toggle_pilot(world, pilot, console), "took the helm");
+    app.update();
+    {
+        let sh = app.world().get::<Shuttle>(grid).unwrap();
+        let body = app.world().get::<GridBody>(grid).unwrap();
+        eprintln!("kestrel thrust {:?} angular {} mass {:.1} inertia {:.1}", sh.linear_thrust, sh.angular_thrust, body.mass, body.inertia);
+        assert!(sh.linear_thrust.iter().any(|t| *t > 0.0), "thrusters counted");
+    }
+    let start_grid = app.world().get::<Xform>(grid).unwrap().pos;
+    let start_pilot_world = athanor::transform::world_pose_of(app.world(), pilot).pos;
+    let start_local = app.world().get::<Xform>(pilot).unwrap().pos;
+    // Thrust "forward" (shuttle north) for 3 seconds.
+    let fwd = {
+        let sh = app.world().get::<Shuttle>(grid).unwrap();
+        // pick a direction that has thrust
+        [(2usize, Vec2::Y), (0, -Vec2::Y), (1, Vec2::X), (3, -Vec2::X)]
+            .into_iter()
+            .find(|(i, _)| sh.linear_thrust[*i] > 0.0)
+            .unwrap()
+            .1
+    };
+    for _ in 0..90 {
+        app.world_mut().get_mut::<Pilot>(pilot).unwrap().strafe = fwd;
+        app.update();
+    }
+    let v = app.world().get::<GridBody>(grid).unwrap().velocity;
+    let moved = app.world().get::<Xform>(grid).unwrap().pos - start_grid;
+    let pilot_moved = athanor::transform::world_pose_of(app.world(), pilot).pos - start_pilot_world;
+    let local_drift = (app.world().get::<Xform>(pilot).unwrap().pos - start_local).length();
+    eprintln!("after 3s: velocity {v} ({:.1} m/s), grid moved {moved}, pilot moved {pilot_moved}", v.length());
+    assert!(moved.dot(fwd) > 5.0, "shuttle flew forward");
+    assert!(v.length() <= 23.07 + 0.01, "respects Frontier's speed cap");
+    assert!((pilot_moved - moved).length() < 0.5, "crew rides along with the grid");
+    assert!(local_drift < 0.2, "pilot stays at the helm");
+    // Brake to a stop.
+    for _ in 0..240 {
+        let mut p = app.world_mut().get_mut::<Pilot>(pilot).unwrap();
+        p.strafe = Vec2::ZERO;
+        p.brake = 1.0;
+        app.update();
+    }
+    let v2 = app.world().get::<GridBody>(grid).unwrap().velocity.length();
+    assert!(v2 < 0.5, "brakes stopped the ship, still at {v2}");
+    // Rotate.
+    let rot0 = app.world().get::<Xform>(grid).unwrap().rot;
+    for _ in 0..30 {
+        let mut p = app.world_mut().get_mut::<Pilot>(pilot).unwrap();
+        p.brake = 0.0;
+        p.rotation = 1.0;
+        app.update();
+    }
+    let rot1 = app.world().get::<Xform>(grid).unwrap().rot;
+    assert!(rot1 > rot0 + 0.05, "gyroscopes turn the ship CCW: {rot0} -> {rot1}");
+}

@@ -22,6 +22,8 @@ pub struct SectorConfig {
     pub vermin: usize,
     pub carp: usize,
     pub seed: u64,
+    /// Start aboard the shuttle, next to its helm, instead of at the outpost.
+    pub spawn_on_shuttle: bool,
 }
 
 impl Default for SectorConfig {
@@ -34,6 +36,7 @@ impl Default for SectorConfig {
             vermin: 6,
             carp: 4,
             seed: 0xCA9D_0D7E,
+            spawn_on_shuttle: false,
         }
     }
 }
@@ -67,6 +70,21 @@ fn find_proto_on_grid(world: &mut World, grid: Entity, pred: impl Fn(&str) -> bo
         .filter(|(m, x)| x.parent == Some(grid) && m.proto.as_deref().is_some_and(&pred))
         .map(|(_, x)| x.pos)
         .next()
+}
+
+/// A free tile next to a grid's shuttle console.
+pub fn helm_spot(world: &mut World, grid: Entity) -> Option<Vec2> {
+    let console = {
+        let mut q = world.query::<(&crate::shuttles::ShuttleConsole, &Xform)>();
+        q.iter(world).find(|(_, x)| x.parent == Some(grid)).map(|(_, x)| x.pos)?
+    };
+    let mask = group::by_name("MobMask").unwrap();
+    let ct = crate::transform::tile_of(console);
+    [IVec2::NEG_Y, IVec2::Y, IVec2::X, IVec2::NEG_X, IVec2::new(1, -1), IVec2::new(-1, -1)]
+        .into_iter()
+        .map(|d| ct + d)
+        .find(|t| world.get::<Grid>(grid).is_some_and(|g| g.has_tile(*t)) && !tile_blocked(world, grid, *t, mask))
+        .map(tile_center)
 }
 
 pub fn build_sector(world: &mut World, cfg: &SectorConfig) -> Result<Sector, String> {
@@ -104,11 +122,22 @@ pub fn build_sector(world: &mut World, cfg: &SectorConfig) -> Result<Sector, Str
         return Err("outpost has no walkable tiles".into());
     }
 
-    // Player: a latejoin/arrivals spawn point if the map has one.
-    let spawn_pos = find_proto_on_grid(world, outpost, |p| p.contains("SpawnPointLatejoin"))
-        .or_else(|| find_proto_on_grid(world, outpost, |p| p.starts_with("SpawnPoint")))
-        .unwrap_or_else(|| tile_center(tiles[tiles.len() / 2]));
-    let player = spawn_proto(world, &cfg.player_proto, outpost, spawn_pos).ok_or("bad player prototype")?;
+    // Player: a latejoin/arrivals spawn point if the map has one, or the
+    // shuttle's helm.
+    let helm = match (cfg.spawn_on_shuttle, shuttle) {
+        (true, Some(sg)) => helm_spot(world, sg).map(|p| (sg, p)),
+        _ => None,
+    };
+    let (home, spawn_pos) = match helm {
+        Some(h) => h,
+        None => (
+            outpost,
+            find_proto_on_grid(world, outpost, |p| p.contains("SpawnPointLatejoin"))
+                .or_else(|| find_proto_on_grid(world, outpost, |p| p.starts_with("SpawnPoint")))
+                .unwrap_or_else(|| tile_center(tiles[tiles.len() / 2])),
+        ),
+    };
+    let player = spawn_proto(world, &cfg.player_proto, home, spawn_pos).ok_or("bad player prototype")?;
     world.entity_mut(player).insert(Player);
     crate::inventory::equip_starting_gear(world, player, "CaputPlayerGear");
     // The player is not an NPC even if the prototype has a brain.

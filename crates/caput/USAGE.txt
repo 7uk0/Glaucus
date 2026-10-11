@@ -10,6 +10,8 @@ OPTIONS:
     --npcs <n>              NPC contractors on the outpost (default 12)
     --carp <n>              space carp around the outpost  (default 4)
     --seed <n>              world seed
+    --spawn shuttle         start aboard the shuttle, beside its helm
+    --demo-pilot            take the helm and fly an arc (for screenshots)
     --size <WxH>            window size (default 1600x900)
     --screenshot <file>     render --frames frames, save a PNG, exit
     --frames <n>            frames before the screenshot (default 90)
@@ -17,3 +19,4 @@ OPTIONS:
 CONTROLS:
     WASD move · Shift walk · click interact · Shift+click examine
     R combat mode · Q drop · X swap hands · Z use in hand · wheel zoom · F12 screenshot
+    At a shuttle console (click it): WASD thrust · Q/E rotate · Space brake

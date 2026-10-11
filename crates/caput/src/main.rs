@@ -75,6 +75,7 @@ pub struct Args {
     pub width: u32,
     pub height: u32,
     pub zoom: f32,
+    pub demo_pilot: bool,
 }
 
 fn parse_args() -> Args {
@@ -85,6 +86,7 @@ fn parse_args() -> Args {
         width: 1600,
         height: 900,
         zoom: 0.5,
+        demo_pilot: false,
     };
     let argv: Vec<String> = std::env::args().skip(1).collect();
     let mut i = 0;
@@ -97,6 +99,13 @@ fn parse_args() -> Args {
             "--npcs" => a.cfg.contractors = v.parse().unwrap_or(a.cfg.contractors),
             "--carp" => a.cfg.carp = v.parse().unwrap_or(a.cfg.carp),
             "--seed" => a.cfg.seed = v.parse().unwrap_or(a.cfg.seed),
+            "--spawn" => a.cfg.spawn_on_shuttle = v == "shuttle",
+            "--demo-pilot" => {
+                a.demo_pilot = true;
+                a.cfg.spawn_on_shuttle = true;
+                i += 1;
+                continue;
+            }
             "--screenshot" => a.screenshot = Some(v),
             "--frames" => a.frames = v.parse().unwrap_or(a.frames),
             "--zoom" => a.zoom = v.parse().unwrap_or(a.zoom),
@@ -193,7 +202,8 @@ fn main() {
             .chain()
             .after(athanor::drive_sim),
     )
-    .add_systems(Last, auto_screenshot);
+    .add_systems(Last, auto_screenshot)
+    .add_systems(Update, demo_pilot.after(input::movement_keys).before(athanor::drive_sim));
     app.run();
 }
 
@@ -203,6 +213,18 @@ fn setup_world(world: &mut World) {
         Ok(s) => {
             let n = world.query::<&athanor::spawn::EntityData>().iter(world).count();
             eprintln!("   sector ready: {n} entities, {} NPCs", s.npcs.len());
+            if args.demo_pilot
+                && let Some(sg) = s.shuttle
+            {
+                let console = world
+                    .query::<(Entity, &athanor::shuttles::ShuttleConsole, &athanor::transform::Xform)>()
+                    .iter(world)
+                    .find(|(_, _, x)| x.parent == Some(sg))
+                    .map(|(e, _, _)| e);
+                if let Some(c) = console {
+                    athanor::shuttles::toggle_pilot(world, s.player, c);
+                }
+            }
             world.write_message(athanor::events::ChatLine {
                 speaker: None,
                 channel: athanor::events::ChatChannel::Server,
@@ -220,6 +242,18 @@ fn setup_world(world: &mut World) {
 fn feed_clock(time: Res<Time>, mut drive: ResMut<SimDrive>) {
     if let DriveMode::RealTime { pending, .. } = &mut drive.0 {
         *pending += time.delta_secs().min(0.25);
+    }
+}
+
+/// `--demo-pilot`: fly a lazy arc away from the outpost (for screenshots).
+fn demo_pilot(args: Res<Args>, mut q: Query<&mut athanor::shuttles::Pilot>, mut frame: Local<u32>) {
+    if !args.demo_pilot {
+        return;
+    }
+    *frame += 1;
+    for mut p in q.iter_mut() {
+        p.strafe = Vec2::new(0.0, 1.0);
+        p.rotation = if *frame % 240 < 60 { 0.4 } else { 0.0 };
     }
 }
 

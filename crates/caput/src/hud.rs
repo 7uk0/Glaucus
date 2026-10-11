@@ -123,15 +123,17 @@ pub fn update_status(
             Option<&MobState>,
             Option<&Hands>,
             Option<&CombatMode>,
+            Option<&athanor::shuttles::Pilot>,
         ),
         With<Player>,
     >,
+    bodies: Query<&athanor::shuttles::GridBody>,
     names: Query<&MetaData>,
     hover: Res<Hover>,
     mut status: Query<&mut Text, (With<StatusText>, Without<HoverText>)>,
     mut hover_text: Query<&mut Text, (With<HoverText>, Without<StatusText>)>,
 ) {
-    if let (Ok((meta, dmg, th, st, hands, combat)), Ok(mut t)) = (player.single(), status.single_mut()) {
+    if let (Ok((meta, dmg, th, st, hands, combat, pilot)), Ok(mut t)) = (player.single(), status.single_mut()) {
         let mut s = format!("{}\n{}", meta.name, health_line(dmg, th, st));
         if let Some(h) = hands {
             for (i, hand) in h.hands.iter().enumerate() {
@@ -142,6 +144,14 @@ pub fn update_status(
         }
         if combat.is_some_and(|c| c.active) {
             s.push_str("\nCOMBAT MODE");
+        }
+        if let Some(p) = pilot {
+            let ship = names.get(p.shuttle).map(|m| m.name.clone()).unwrap_or_default();
+            let (v, w) = bodies.get(p.shuttle).map_or((0.0, 0.0), |b| (b.velocity.length(), b.angular_velocity));
+            s.push_str(&format!(
+                "\n\nPILOTING {ship}\n{v:.1} m/s  {:.0}°/s\nWASD thrust · Q/E rotate · Space brake · click helm to leave",
+                w.to_degrees()
+            ));
         }
         s.push_str("\n\nWASD move · click use · shift+click examine\nR combat · Q drop · X swap · Z use · wheel zoom");
         if t.0 != s {

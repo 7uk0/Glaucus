@@ -20,6 +20,7 @@
 //! * [`combat`] — melee (`SharedMeleeWeaponSystem`)
 //! * [`damage`] — damage, mob state, destructibles
 //! * [`doors`] — doors and airlocks (`SharedDoorSystem`)
+//! * [`shuttles`] — shuttles, thrusters, piloting (`ShuttleSystem`, `MoverController`)
 //! * [`factions`] — NPC factions (`NpcFactionSystem`)
 //! * [`spawners`] — map-init spawners (`ConditionalSpawnerSystem`)
 //! * [`inventory`] — inventories, clothing, loadouts (`InventorySystem`)
@@ -40,6 +41,7 @@ pub mod naming;
 pub mod physics;
 pub mod rng;
 pub mod sector;
+pub mod shuttles;
 pub mod spawn;
 pub mod spawners;
 pub mod transform;
@@ -161,7 +163,17 @@ impl Plugin for AthanorPlugin {
         );
         app.add_systems(SimTick, advance_clock.before(SimSet::Input));
         app.add_systems(SimTick, movement::mover_system.in_set(SimSet::Movement));
-        app.add_systems(SimTick, physics::physics_step.in_set(SimSet::Physics));
+        app.add_systems(
+            SimTick,
+            (
+                shuttles::update_grid_bodies,
+                shuttles::update_thrust,
+                shuttles::shuttle_movement,
+                physics::physics_step,
+            )
+                .chain()
+                .in_set(SimSet::Physics),
+        );
         app.add_systems(SimTick, transform::update_world_poses.in_set(SimSet::PostPhysics));
         app.add_systems(
             SimTick,
@@ -179,6 +191,7 @@ impl Plugin for AthanorPlugin {
         app.add_systems(Update, drive_sim);
 
         doors::install(app.world_mut());
+        shuttles::install(app.world_mut());
     }
 }
 
@@ -194,6 +207,7 @@ pub fn register_components(reg: &mut spawn::ComponentFactories) {
     spawners::register(reg);
     naming::register(reg);
     inventory::register(reg);
+    shuttles::register(reg);
 }
 
 fn advance_clock(mut clock: ResMut<SimClock>) {

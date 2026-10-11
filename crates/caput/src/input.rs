@@ -49,14 +49,19 @@ pub fn setup_camera(mut commands: Commands, args: Res<crate::Args>) {
 }
 
 pub fn camera_follow(
-    player: Query<&WorldPose, With<Player>>,
+    player: Query<(&WorldPose, &athanor::transform::Xform), With<Player>>,
+    poses: Query<&WorldPose>,
     mut cam: Query<(&mut Transform, &mut Projection), With<MainCamera>>,
     mut wheel: MessageReader<MouseWheel>,
 ) {
     let Ok((mut tf, mut proj)) = cam.single_mut() else { return };
-    if let Ok(p) = player.single() {
+    if let Ok((p, x)) = player.single() {
         tf.translation.x = p.pos.x * PX;
         tf.translation.y = p.pos.y * PX;
+        // Like SS14's eye: rotate with the grid you stand on, so "up" is
+        // always the ship's (and your movement's) north.
+        let grid_rot = x.parent.and_then(|g| poses.get(g).ok()).filter(|_| p.grid.is_some()).map_or(0.0, |g| g.rot);
+        tf.rotation = Quat::from_rotation_z(grid_rot);
     }
     let scroll: f32 = wheel.read().map(|w| w.y).sum();
     if scroll != 0.0
@@ -66,8 +71,11 @@ pub fn camera_follow(
     }
 }
 
-pub fn movement_keys(keys: Res<ButtonInput<KeyCode>>, mut player: Query<&mut InputMover, With<Player>>) {
-    let Ok(mut m) = player.single_mut() else { return };
+pub fn movement_keys(
+    keys: Res<ButtonInput<KeyCode>>,
+    mut player: Query<(&mut InputMover, Option<&mut athanor::shuttles::Pilot>), With<Player>>,
+) {
+    let Ok((mut m, pilot)) = player.single_mut() else { return };
     let mut dir = Vec2::ZERO;
     if keys.any_pressed([KeyCode::KeyW, KeyCode::ArrowUp]) {
         dir.y += 1.0;
@@ -80,6 +88,24 @@ pub fn movement_keys(keys: Res<ButtonInput<KeyCode>>, mut player: Query<&mut Inp
     }
     if keys.any_pressed([KeyCode::KeyD, KeyCode::ArrowRight]) {
         dir.x += 1.0;
+    }
+    if let Some(mut p) = pilot {
+        // At the helm, WASD strafes the shuttle, Q/E rotate, Space brakes
+        // (SS14's ShuttleStrafe*/ShuttleRotate*/ShuttleBrake binds).
+        let mut rot = 0.0;
+        if keys.pressed(KeyCode::KeyQ) {
+            rot += 1.0;
+        }
+        if keys.pressed(KeyCode::KeyE) {
+            rot -= 1.0;
+        }
+        p.strafe = dir;
+        p.rotation = rot;
+        p.brake = if keys.pressed(KeyCode::Space) { 1.0 } else { 0.0 };
+        if m.wish != Vec2::ZERO {
+            m.wish = Vec2::ZERO;
+        }
+        return;
     }
     let wish = dir.normalize_or_zero();
     let walking = keys.pressed(KeyCode::ShiftLeft) && !keys.pressed(KeyCode::ControlLeft);
@@ -141,7 +167,8 @@ pub fn verbs(world: &mut World) {
             keys.just_pressed(KeyCode::F12),
         )
     };
-    if keys_drop {
+    let piloting = world.get::<athanor::shuttles::Pilot>(player).is_some();
+    if keys_drop && !piloting {
         try_drop(world, player);
     }
     if keys_swap {
