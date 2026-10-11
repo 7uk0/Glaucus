@@ -7,9 +7,9 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 
 | | total | ported | % |
 |---|---|---|---|
-| component types used by entity prototypes | 1675 | 64 | 3.8% |
-| component uses across non-abstract prototypes | 423570 | 126013 | 29.8% |
-| component instances placed in 374 maps (534442 entities) | 13066480 | 4215519 | 32.3% |
+| component types used by entity prototypes | 1675 | 84 | 5.0% |
+| component uses across non-abstract prototypes | 423570 | 133245 | 31.5% |
+| component instances placed in 374 maps (534442 entities) | 13066480 | 4732710 | 36.2% |
 
 ## By upstream area (most unported map placements first)
 
@@ -18,7 +18,6 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Robust.Shared/GameObjects` | 13 | 2 | 1629633 | 556593 (34%) |
 | `Content.Client/Clickable` | 1 | 0 | 534336 | 0 (0%) |
 | `Robust.Client/GameObjects` | 6 | 1 | 1031786 | 534381 (52%) |
-| `Content.Server/Power` | 24 | 0 | 402403 | 0 (0%) |
 | `Content.Shared/Tag` | 1 | 0 | 360001 | 0 (0%) |
 | `Content.Shared/Movement` | 25 | 4 | 356842 | 2315 (1%) |
 | `Content.Client/Interactable` | 1 | 0 | 351900 | 0 (0%) |
@@ -28,15 +27,15 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Shared/RCD` | 3 | 0 | 275811 | 0 (0%) |
 | `Content.Server/Atmos` | 35 | 4 | 386005 | 127787 (33%) |
 | `Content.Shared/Rotatable` | 2 | 0 | 253262 | 0 (0%) |
-| `(not found in C#)` | 10 | 1 | 229230 | 0 (0%) |
-| `Content.Shared/NodeContainer` | 1 | 0 | 217800 | 0 (0%) |
+| `Content.Server/Power` | 24 | 11 | 402403 | 151069 (38%) |
 | `Content.Shared/Damage` | 21 | 1 | 688468 | 477096 (69%) |
 | `Content.Shared/Atmos` | 26 | 1 | 300887 | 94860 (32%) |
 | `Content.Shared/Light` | 13 | 0 | 189938 | 0 (0%) |
 | `Content.Shared/Sound` | 10 | 0 | 185308 | 0 (0%) |
 | `Content.Shared/Electrocution` | 4 | 0 | 180376 | 0 (0%) |
-| `Content.Client/Power` | 6 | 0 | 180104 | 0 (0%) |
+| `(not found in C#)` | 10 | 2 | 229230 | 71173 (31%) |
 | `Content.Shared/Magic` | 4 | 0 | 130747 | 0 (0%) |
+| `Content.Client/Power` | 6 | 2 | 180104 | 60137 (33%) |
 | `Content.Shared/Weather` | 1 | 0 | 113074 | 0 (0%) |
 | `Content.Server/Radiation` | 3 | 0 | 103722 | 0 (0%) |
 | `Content.Client/Guidebook` | 2 | 0 | 103138 | 0 (0%) |
@@ -45,7 +44,6 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Client/Atmos` | 4 | 0 | 69809 | 0 (0%) |
 | `Content.Shared/DeviceNetwork` | 3 | 0 | 58418 | 0 (0%) |
 | `Content.Shared/Audio` | 3 | 0 | 55546 | 0 (0%) |
-| `Content.Shared/Chemistry` | 28 | 0 | 50749 | 0 (0%) |
 | `Content.Shared/DeviceLinking` | 3 | 0 | 50322 | 0 (0%) |
 | `Content.Server/GameTicking` | 10 | 0 | 49511 | 0 (0%) |
 | `Content.Shared/Wall` | 1 | 0 | 48033 | 0 (0%) |
@@ -53,6 +51,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Shared/Wires` | 3 | 0 | 42115 | 0 (0%) |
 | `Content.Shared/Containers` | 7 | 1 | 43451 | 4148 (10%) |
 | `Content.Shared/Silicons` | 24 | 0 | 36100 | 0 (0%) |
+| `Content.Shared/Chemistry` | 28 | 1 | 50749 | 15109 (30%) |
 | `Content.Shared/Climbing` | 4 | 0 | 35603 | 0 (0%) |
 | `Content.Server/Damage` | 7 | 0 | 35600 | 0 (0%) |
 | `Content.Server/DeviceLinking` | 13 | 0 | 34566 | 0 (0%) |
@@ -79,7 +78,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Shared/Sprite` | 3 | 0 | 12798 | 0 (0%) |
 | `Content.Server/Audio` | 1 | 0 | 11947 | 0 (0%) |
 | `Content.Shared/Buckle` | 2 | 0 | 10424 | 0 (0%) |
-| `Content.Shared/Power` | 9 | 0 | 9131 | 0 (0%) |
+| `Content.Shared/Power` | 9 | 2 | 9131 | 778 (9%) |
 | `Content.Shared/StepTrigger` | 3 | 0 | 8071 | 0 (0%) |
 | `Content.Shared/Lock` | 7 | 0 | 7558 | 0 (0%) |
 | `Content.Server/_NF/Smuggling` | 5 | 0 | 7476 | 0 (0%) |
@@ -129,7 +128,6 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Shared/Clothing` | 18 | 2 | 8202 | 6601 (80%) |
 | `Content.Shared/VendingMachines` | 2 | 0 | 1588 | 0 (0%) |
 | `Content.Shared/Bed` | 6 | 0 | 1485 | 0 (0%) |
-| `Content.Shared/Materials` | 7 | 2 | 87586 | 86102 (98%) |
 | `Content.Shared/Conveyor` | 1 | 0 | 1461 | 0 (0%) |
 | `Content.Shared/Research` | 6 | 0 | 1384 | 0 (0%) |
 | `Content.Shared/Fax` | 3 | 0 | 1383 | 0 (0%) |
@@ -164,6 +162,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Shared/Medical` | 5 | 0 | 633 | 0 (0%) |
 | `Content.Shared/Throwing` | 3 | 0 | 615 | 0 (0%) |
 | `Content.Shared/_NF/BlackMarket` | 1 | 0 | 603 | 0 (0%) |
+| `Content.Shared/Materials` | 7 | 3 | 87586 | 87000 (99%) |
 | `Content.Shared/Execution` | 1 | 0 | 578 | 0 (0%) |
 | `Content.Server/Speech` | 21 | 0 | 542 | 0 (0%) |
 | `Content.Shared/Morgue` | 3 | 0 | 526 | 0 (0%) |
@@ -196,7 +195,6 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Shared/_NF/CryoSleep` | 1 | 0 | 247 | 0 (0%) |
 | `Content.Shared/_DV/Whitelist` | 1 | 0 | 239 | 0 (0%) |
 | `Content.Shared/Toilet` | 1 | 0 | 237 | 0 (0%) |
-| `Content.Server/Gravity` | 1 | 0 | 227 | 0 (0%) |
 | `Content.Shared/Singularity` | 7 | 0 | 220 | 0 (0%) |
 | `Content.Shared/Warps` | 1 | 0 | 211 | 0 (0%) |
 | `Content.Server/Worldgen` | 7 | 0 | 209 | 0 (0%) |
@@ -409,6 +407,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Server/Delivery` | 1 | 0 | 0 | 0 (0%) |
 | `Content.Server/Destructible` | 1 | 1 | 474861 | 474861 (100%) |
 | `Content.Server/Emoting` | 1 | 0 | 0 | 0 (0%) |
+| `Content.Server/Gravity` | 1 | 1 | 227 | 227 (100%) |
 | `Content.Server/Guardian` | 3 | 0 | 0 | 0 (0%) |
 | `Content.Server/Humanoid` | 2 | 0 | 0 | 0 (0%) |
 | `Content.Server/ImmovableRod` | 1 | 0 | 0 | 0 (0%) |
@@ -476,6 +475,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | `Content.Shared/Mindshield` | 2 | 0 | 0 | 0 (0%) |
 | `Content.Shared/Mobs` | 3 | 2 | 74 | 74 (100%) |
 | `Content.Shared/NameModifier` | 1 | 0 | 0 | 0 (0%) |
+| `Content.Shared/NodeContainer` | 1 | 1 | 217800 | 217800 (100%) |
 | `Content.Shared/Nuke` | 1 | 0 | 0 | 0 (0%) |
 | `Content.Shared/NukeOps` | 1 | 0 | 0 | 0 (0%) |
 | `Content.Shared/ParcelWrap` | 2 | 0 | 0 | 0 (0%) |
@@ -554,7 +554,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | RCDDeconstructable |  | 741 | 275767 | `frontier/Content.Shared/RCD/Components/RCDDeconstructibleComponent.cs` |
 | StaticPrice | 🟡 | 9491 | 261414 | `frontier/Content.Shared/Cargo/Components/StaticPriceComponent.cs` |
 | Rotatable |  | 2751 | 252187 | `frontier/Content.Shared/Rotatable/RotatableComponent.cs` |
-| NodeContainer |  | 214 | 217800 | `frontier/Content.Shared/NodeContainer/NodeContainerComponent.cs` |
+| NodeContainer | ✅ | 214 | 217800 | `frontier/Content.Shared/NodeContainer/NodeContainerComponent.cs` |
 | CollideOnAnchor |  | 492 | 200734 | `RobustToolbox/Robust.Shared/GameObjects/Components/Collidable/CollideOnAnchorComponent.cs` |
 | Visibility |  | 493 | 200454 | `RobustToolbox/Robust.Shared/GameObjects/Components/Eye/VisibilityComponent.cs` |
 | SubFloorHide | 🟡 | 486 | 200454 | `frontier/Content.Shared/SubFloor/SubFloorHideComponent.cs` |
@@ -584,8 +584,8 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | SunShadowCast |  | 550 | 82496 | `frontier/Content.Shared/Light/Components/SunShadowCastComponent.cs` |
 | ContainerContainer |  | 4807 | 82314 |  |
 | MeleeSound |  | 755 | 80502 | `frontier/Content.Shared/Weapons/Melee/Components/MeleeSoundComponent.cs` |
-| ExtensionCableProvider |  | 13 | 71173 | `frontier/Content.Server/Power/Components/ExtensionCableProviderComponent.cs` |
-| PowerProvider |  | 13 | 71173 |  |
+| ExtensionCableProvider | ✅ | 13 | 71173 | `frontier/Content.Server/Power/Components/ExtensionCableProviderComponent.cs` |
+| PowerProvider | ✅ | 13 | 71173 |  |
 | PipeRestrictOverlap |  | 100 | 65852 | `frontier/Content.Server/Atmos/Components/PipeRestrictOverlapComponent.cs` |
 | AtmosMonitoringConsoleDevice |  | 96 | 65826 | `frontier/Content.Shared/Atmos/Consoles/Components/AtmosMonitoringConsoleDeviceComponent.cs` |
 | AtmosPipeColor |  | 99 | 65822 | `frontier/Content.Server/Atmos/Piping/Components/AtmosPipeColorComponent.cs` |
@@ -594,8 +594,8 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | AtmosUnsafeUnanchor |  | 91 | 65674 | `frontier/Content.Server/Atmos/Piping/Components/AtmosUnsafeUnanchorComponent.cs` |
 | PipeAppearance |  | 89 | 65644 | `frontier/Content.Shared/Atmos/Components/PipeAppearanceComponent.cs` |
 | MeleeWeapon | ✅ | 2014 | 61404 | `frontier/Content.Shared/Weapons/Melee/MeleeWeaponComponent.cs` |
-| ApcPowerReceiver |  | 1154 | 59886 | `frontier/Content.Client/Power/Components/ApcPowerReceiverComponent.cs` |
-| ExtensionCableReceiver |  | 1153 | 59865 | `frontier/Content.Server/Power/Components/ExtensionCableReceiverComponent.cs` |
+| ApcPowerReceiver | ✅ | 1154 | 59886 | `frontier/Content.Client/Power/Components/ApcPowerReceiverComponent.cs` |
+| ExtensionCableReceiver | ✅ | 1153 | 59865 | `frontier/Content.Server/Power/Components/ExtensionCableReceiverComponent.cs` |
 | AmbientSound |  | 622 | 55484 | `frontier/Content.Shared/Audio/AmbientSoundComponent.cs` |
 | DeviceNetwork |  | 1240 | 55430 | `frontier/Content.Shared/DeviceNetwork/Components/DeviceNetworkComponent.cs` |
 | UserInterface | 🟡 | 3987 | 51180 | `RobustToolbox/Robust.Shared/GameObjects/Components/UserInterface/UserInterfaceComponent.cs` |
@@ -633,7 +633,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | WallReplacementMarker |  | 3 | 15987 | `frontier/Content.Server/GameTicking/Rules/VariationPass/Components/ReplacementMarkers/WallReplacementMarkerComponent.cs` |
 | DisposalTube |  | 13 | 15567 | `frontier/Content.Server/Disposal/Tube/DisposalTubeComponent.cs` |
 | WiredNetworkConnection |  | 92 | 15328 |  |
-| SolutionContainerManager |  | 4198 | 15109 | `frontier/Content.Shared/Chemistry/Components/SolutionManager/SolutionContainerManagerComponent.cs` |
+| SolutionContainerManager | 🟡 | 4198 | 15109 | `frontier/Content.Shared/Chemistry/Components/SolutionManager/SolutionContainerManagerComponent.cs` |
 | Paintable |  | 997 | 15052 | `frontier/Content.Shared/SprayPainter/Components/PaintableComponent.cs` |
 | DoorSignalControl |  | 365 | 14873 | `frontier/Content.Server/DeviceLinking/Components/DoorSignalControlComponent.cs` |
 | BindToStation |  | 988 | 14714 | `frontier/Content.Shared/_NF/BindToStation/BindToStationComponent.cs` |
@@ -681,9 +681,9 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | UseDelay |  | 1037 | 5359 | `frontier/Content.Shared/Timing/UseDelayComponent.cs` |
 | TileEmission |  | 2 | 5326 | `frontier/Content.Shared/Light/Components/TileEmissionComponent.cs` |
 | ResistLocker |  | 808 | 5282 | `frontier/Content.Server/Resist/ResistLockerComponent.cs` |
-| Battery |  | 264 | 5276 | `frontier/Content.Server/Power/Components/BatteryComponent.cs` |
+| Battery | ✅ | 264 | 5276 | `frontier/Content.Server/Power/Components/BatteryComponent.cs` |
 | FlavorProfile |  | 3272 | 5241 | `frontier/Content.Shared/Nutrition/Components/FlavorProfileComponent.cs` |
-| PowerSupplier |  | 27 | 5236 | `frontier/Content.Server/Power/Components/PowerSupplierComponent.cs` |
+| PowerSupplier | ✅ | 27 | 5236 | `frontier/Content.Server/Power/Components/PowerSupplierComponent.cs` |
 | Lock |  | 709 | 5121 | `frontier/Content.Shared/Lock/LockComponent.cs` |
 | Storage | ✅ | 1218 | 5117 | `frontier/Content.Shared/Storage/StorageComponent.cs` |
 | DrainableSolution |  | 721 | 4966 | `frontier/Content.Shared/Chemistry/Components/DrainableSolutionComponent.cs` |
@@ -706,11 +706,11 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | LockVisuals |  | 606 | 3409 | `frontier/Content.Client/Lock/Visualizers/LockVisualsComponent.cs` |
 | InjectableSolution |  | 1779 | 3236 | `frontier/Content.Shared/Chemistry/Components/SolutionManager/InjectableSolutionComponent.cs` |
 | StationAiVision |  | 135 | 3144 | `frontier/Content.Shared/Silicons/StationAi/StationAiVisionComponent.cs` |
-| PowerNetworkBattery |  | 28 | 2932 | `frontier/Content.Server/Power/Components/PowerNetworkBatteryComponent.cs` |
+| PowerNetworkBattery | ✅ | 28 | 2932 | `frontier/Content.Server/Power/Components/PowerNetworkBatteryComponent.cs` |
 | SpaceGarbage |  | 1154 | 2907 | `frontier/Content.Shared/Shuttles/Components/SpaceGarbageComponent.cs` |
 | DeviceList |  | 18 | 2876 | `frontier/Content.Shared/DeviceNetwork/Components/DeviceListComponent.cs` |
 | ExaminableBattery |  | 28 | 2873 | `frontier/Content.Server/Power/Components/ExaminableBatteryComponent.cs` |
-| BatteryCharger |  | 26 | 2872 | `frontier/Content.Server/Power/Components/BatteryChargerComponent.cs` |
+| BatteryCharger | ✅ | 26 | 2872 | `frontier/Content.Server/Power/Components/BatteryChargerComponent.cs` |
 | StationInfiniteBatteryTarget |  | 26 | 2872 | `frontier/Content.Server/Administration/Components/StationInfiniteBatteryTargetComponent.cs` |
 | AtmosAlertsDevice |  | 8 | 2744 | `frontier/Content.Shared/Atmos/Consoles/Components/AtmosAlertsDeviceComponent.cs` |
 | DamageOnLand |  | 863 | 2737 | `frontier/Content.Server/Damage/Components/DamageOnLandComponent.cs` |
@@ -740,7 +740,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | DisableToolUse |  | 644 | 1909 | `frontier/Content.Server/_NF/Tools/Component/DisableToolUseComponent.cs` |
 | ActiveRadio |  | 226 | 1888 | `frontier/Content.Server/Radio/Components/ActiveRadioComponent.cs` |
 | AirAlarm |  | 4 | 1870 | `frontier/Content.Server/Atmos/Monitor/Components/AirAlarmComponent.cs` |
-| Apc |  | 11 | 1847 | `frontier/Content.Server/Power/Components/ApcComponent.cs` |
+| Apc | ✅ | 11 | 1847 | `frontier/Content.Server/Power/Components/ApcComponent.cs` |
 | ApcVisuals |  | 9 | 1843 | `frontier/Content.Client/Power/APC/ApcVisualizerComponent.cs` |
 | Openable |  | 272 | 1781 | `frontier/Content.Shared/Nutrition/Components/OpenableComponent.cs` |
 | Actions |  | 765 | 1777 | `frontier/Content.Shared/Actions/Components/ActionsComponent.cs` |
@@ -793,7 +793,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | FireVisuals |  | 772 | 1131 | `frontier/Content.Client/Atmos/Components/FireVisualsComponent.cs` |
 | DisposalUnit |  | 7 | 1130 | `frontier/Content.Shared/Disposal/Unit/DisposalUnitComponent.cs` |
 | Drain |  | 13 | 1126 | `frontier/Content.Shared/Fluids/Components/DrainComponent.cs` |
-| BatteryDischarger |  | 19 | 1089 | `frontier/Content.Server/Power/Components/BatteryDischargerComponent.cs` |
+| BatteryDischarger | ✅ | 19 | 1089 | `frontier/Content.Server/Power/Components/BatteryDischargerComponent.cs` |
 | NavMapBeacon |  | 150 | 1088 | `frontier/Content.Shared/Pinpointer/NavMapBeaconComponent.cs` |
 | Flippable |  | 22 | 1075 | `frontier/Content.Shared/Rotatable/FlippableComponent.cs` |
 | ConfigurableNavMapBeacon |  | 146 | 1073 | `frontier/Content.Shared/Pinpointer/ConfigurableNavMapBeaconComponent.cs` |
@@ -807,7 +807,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | BadFood |  | 341 | 913 | `frontier/Content.Server/Nutrition/Components/BadFoodComponent.cs` |
 | Charger |  | 10 | 907 | `frontier/Content.Server/Power/Components/ChargerComponent.cs` |
 | FloorTile |  | 193 | 901 | `frontier/Content.Shared/Tiles/FloorTileComponent.cs` |
-| MaterialStorage |  | 55 | 898 | `frontier/Content.Shared/Materials/MaterialStorageComponent.cs` |
+| MaterialStorage | ✅ | 55 | 898 | `frontier/Content.Shared/Materials/MaterialStorageComponent.cs` |
 | UpgradeBattery |  | 13 | 879 | `frontier/Content.Server/_NF/Power/Components/UpgradeBatteryComponent.cs` |
 | UpgradePowerSupplyRamping |  | 13 | 879 | `frontier/Content.Server/_NF/Power/Components/UpgradePowerSupplyRampingComponent.cs` |
 | Holopad |  | 121 | 873 | `frontier/Content.Shared/Holopad/HolopadComponent.cs` |
@@ -902,10 +902,10 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | EmitSoundOnActivate |  | 110 | 403 | `frontier/Content.Shared/Sound/Components/EmitSoundOnActivateComponent.cs` |
 | SuitSensor |  | 378 | 400 | `frontier/Content.Shared/Medical/SuitSensors/SuitSensorComponent.cs` |
 | ActivatableUIRequiresVision |  | 10 | 393 | `frontier/Content.Shared/Eye/Blinding/Components/ActivatableUIRequiresVisionComponent.cs` |
-| PowerConsumer |  | 16 | 390 | `frontier/Content.Server/Power/Components/PowerConsumerComponent.cs` |
-| FuelGenerator |  | 10 | 389 | `frontier/Content.Shared/Power/Generator/FuelGeneratorComponent.cs` |
+| PowerConsumer | ✅ | 16 | 390 | `frontier/Content.Server/Power/Components/PowerConsumerComponent.cs` |
+| FuelGenerator | ✅ | 10 | 389 | `frontier/Content.Shared/Power/Generator/FuelGeneratorComponent.cs` |
 | GeneratorSignalControl |  | 10 | 389 | `frontier/Content.Server/Power/Generator/GeneratorSignalControlComponent.cs` |
-| PortableGenerator |  | 10 | 389 | `frontier/Content.Shared/Power/Generator/SharedPortableGeneratorComponent.cs` |
+| PortableGenerator | ✅ | 10 | 389 | `frontier/Content.Shared/Power/Generator/SharedPortableGeneratorComponent.cs` |
 | VoiceOverride |  | 15 | 385 | `frontier/Content.Server/Speech/Components/VoiceOverrideComponent.cs` |
 | Cigar |  | 44 | 384 | `frontier/Content.Server/Nutrition/Components/CigarComponent.cs` |
 | RadiationBlockingContainer |  | 143 | 381 | `frontier/Content.Server/Radiation/Components/RadiationBlockingContainerComponent.cs` |
@@ -949,7 +949,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | SliceableFood |  | 137 | 252 | `frontier/Content.Server/Nutrition/Components/SliceableFoodComponent.cs` |
 | BreathMask |  | 161 | 251 |  |
 | Currency |  | 42 | 251 | `frontier/Content.Server/Store/Components/CurrencyComponent.cs` |
-| PowerCharge |  | 8 | 251 | `frontier/Content.Client/Power/PowerCharge/PowerChargeComponent.cs` |
+| PowerCharge | ✅ | 8 | 251 | `frontier/Content.Client/Power/PowerCharge/PowerChargeComponent.cs` |
 | WarnOnCryoSleep |  | 36 | 247 | `frontier/Content.Shared/_NF/CryoSleep/WarnOnCryoSleepComponent.cs` |
 | Cash |  | 30 | 247 | `frontier/Content.Shared/Cargo/Components/CashComponent.cs` |
 | StackLayerThreshold |  | 30 | 247 | `frontier/Content.Shared/Stacks/StackThresholdComponent.cs` |
@@ -966,9 +966,9 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | PowerSwitchable |  | 9 | 232 | `frontier/Content.Shared/Power/Generator/PowerSwitchableComponent.cs` |
 | Morgue |  | 2 | 232 | `frontier/Content.Shared/Morgue/Components/MorgueComponent.cs` |
 | FuelGradeAdapter |  | 8 | 231 | `frontier/Content.Server/_NF/Power/Generator/FuelGradeAdapterComponent.cs` |
-| SolidFuelGeneratorAdapter |  | 8 | 231 | `frontier/Content.Server/Power/Generator/SolidFuelGeneratorAdapterComponent.cs` |
+| SolidFuelGeneratorAdapter | ✅ | 8 | 231 | `frontier/Content.Server/Power/Generator/SolidFuelGeneratorAdapterComponent.cs` |
 | UpgradePowerSupplier |  | 8 | 231 | `frontier/Content.Server/_NF/Power/Components/UpgradePowerSupplierComponent.cs` |
-| GravityGenerator |  | 3 | 227 | `frontier/Content.Server/Gravity/GravityGeneratorComponent.cs` |
+| GravityGenerator | ✅ | 3 | 227 | `frontier/Content.Server/Gravity/GravityGeneratorComponent.cs` |
 | ToolTileCompatible |  | 20 | 226 | `frontier/Content.Shared/Tools/Components/ToolTileCompatibleComponent.cs` |
 | TwoWayLever |  | 1 | 224 | `frontier/Content.Shared/DeviceLinking/Components/TwoWayLeverComponent.cs` |
 | MixedPowerReceiver |  | 3 | 220 | `frontier/Content.Server/_NF/Power/Components/MixedPowerRecieverComponent.cs` |
@@ -1021,7 +1021,7 @@ Either way, something in Caput Mortuum acts on it; how fully is in `docs/PORTING
 | ShuttleIntercom |  | 8 | 161 | `frontier/Content.Server/_NF/RadioEntity/Components/ShuttleIntercomComponent.cs` |
 | PowerMonitoringCableNetworks |  | 3 | 160 | `frontier/Content.Shared/Power/PowerMonitoringCableNetworksComponent.cs` |
 | PowerMonitoringConsole |  | 2 | 160 | `frontier/Content.Shared/Power/SharedPowerMonitoringConsoleComponent.cs` |
-| ChemicalFuelGeneratorAdapter |  | 2 | 158 | `frontier/Content.Server/Power/Generator/ChemicalFuelGeneratorAdapterComponent.cs` |
+| ChemicalFuelGeneratorAdapter | ✅ | 2 | 158 | `frontier/Content.Server/Power/Generator/ChemicalFuelGeneratorAdapterComponent.cs` |
 | CargoPallet | 🟡 | 2 | 157 | `frontier/Content.Server/Cargo/Components/CargoPalletComponent.cs` |
 | FoldableClothing |  | 143 | 156 | `frontier/Content.Shared/Clothing/Components/FoldableClothingComponent.cs` |
 | GunRequiresWield |  | 78 | 156 | `frontier/Content.Shared/Weapons/Ranged/Components/GunRequiresWieldComponent.cs` |

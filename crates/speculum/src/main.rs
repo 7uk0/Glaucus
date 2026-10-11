@@ -97,6 +97,7 @@ fn main() {
         homunculus::HomunculusPlugin,
         mercury::MercuryPlugin,
         alembic::AlembicPlugin,
+        prana::PranaPlugin,
     ));
     let reg = app.world().resource::<ComponentFactories>();
     let factories: std::collections::HashSet<String> = reg.names().map(|n| n.to_string()).collect();

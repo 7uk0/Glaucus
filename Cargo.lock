@@ -2143,6 +2143,7 @@ dependencies = [
  "grimoire",
  "homunculus",
  "mercury",
+ "prana",
  "tracing",
  "vellum",
 ]
@@ -4491,6 +4492,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "prana"
+version = "0.1.0"
+dependencies = [
+ "athanor",
+ "bevy_app",
+ "bevy_ecs",
+ "bevy_math",
+ "grimoire",
+ "serde",
+ "tracing",
+ "vellum",
+]
+
+[[package]]
 name = "presser"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4983,6 +4998,7 @@ dependencies = [
  "grimoire",
  "homunculus",
  "mercury",
+ "prana",
  "vellum",
  "walkdir",
 ]

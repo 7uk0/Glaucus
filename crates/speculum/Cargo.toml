@@ -13,5 +13,6 @@ athanor = { path = "../athanor" }
 homunculus = { path = "../homunculus" }
 mercury = { path = "../mercury" }
 alembic = { path = "../alembic" }
+prana = { path = "../prana" }
 bevy_app.workspace = true
 walkdir.workspace = true

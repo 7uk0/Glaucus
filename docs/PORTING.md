@@ -88,6 +88,21 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Temperature, fire, reactions | ⬜ | |
 | Vents, scrubbers, pipes, canisters | ⬜ | |
 
+## Layer 2d — Power (`prana`)
+
+| Upstream system | Status | Notes |
+|---|---|---|
+| Node networks (`NodeContainer`, cable/device/terminal/port/adjacent nodes) | ✅ | Power groups (HV, MV, Apc); flood fill per grid, rebuilt when anchors change. Pipes not yet |
+| Pow3r `BatteryRampPegSolver` | ✅ | Line-for-line: ramping, proportional sharing, battery pass-through, height ordering |
+| Suppliers, consumers, batteries, chargers/dischargers | ✅ | Substations, SMES (via cable terminals), APCs; `Battery` ↔ network sync |
+| APC nets, LV extension cables, `ApcPowerReceiver` | ✅ | Nearest provider within range; powered = received ≈ load |
+| Fuel generators (P.A.C.M.A.N. family) | ✅ | Solid (material) and chemical fuel, burn rate by target power, start-on-map-init |
+| `PowerCharge`, gravity generators, grid gravity | ✅ | Charge up/down, ~100 s of gravity on battery; asteroids/wrecks have none |
+| Effects: thrusters, gyroscopes, airlocks, consoles | ✅ | Via `athanor::power::Unpowered` |
+| Solar, AME, TEG, PA/singularity, radiation collectors | ⬜ | |
+| Wires panels, power switches, battery-backed receivers, power monitoring UI | ⬜ | |
+| Lights responding to power | ⬜ | Waits for lighting |
+
 ## Layer 3 — Client (`caput`)
 
 | Upstream system | Status | Notes |
@@ -112,7 +127,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 1. **Shuttles** (Frontier's heart): ~~piloting~~ ✅, ~~grid collisions~~ ✅, impact damage, docking, FTL.
 2. **Economy**: ~~spesos, bank, selling, shipyard purchases~~ ✅; bounties, vending, ship resale.
 3. **Atmospherics** (`alembic`): ~~gas mixtures per tile, pressure, breathing, airtight~~ ✅; Monstermos, internals, temperature, fire, vents/scrubbers.
-4. **Power**: APCs, SMES, cables, powered machines (lights, doors, consoles).
+4. **Power** (`prana`): ~~APCs, SMES, cables, powered machines, generators, gravity~~ ✅; solar, AME, wires.
 5. **Lighting** with occluders.
 6. **Containers & storage**: ~~backpacks, lockers, crates, storage UI~~ ✅; locks/access, welding, crate pulling.
 7. **Construction** graphs and tools.

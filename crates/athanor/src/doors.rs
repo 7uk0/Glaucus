@@ -44,6 +44,8 @@ pub struct Door {
     /// Airlocks close themselves after this many seconds open.
     pub auto_close: Option<f64>,
     pub bolted: bool,
+    /// Has an `AirlockComponent`: needs power to open or close (`CanChangeState`).
+    pub airlock: bool,
 }
 
 impl Default for Door {
@@ -63,6 +65,7 @@ impl Default for Door {
             deny_sound: None,
             auto_close: None,
             bolted: false,
+            airlock: false,
         }
     }
 }
@@ -133,6 +136,7 @@ pub fn register(reg: &mut ComponentFactories) {
         let delay = node.get("autoCloseDelay").and_then(Node::as_seconds).unwrap_or(5.0);
         if let Some(mut d) = e.get_mut::<Door>() {
             d.auto_close = Some(delay);
+            d.airlock = true;
         } else {
             // Door comes later in the component list; stash for the Door factory.
             e.insert(PendingAutoClose(delay));
@@ -164,6 +168,7 @@ pub fn install(world: &mut World) {
 pub fn fixup_pending(mut commands: Commands, mut q: Query<(Entity, &PendingAutoClose, &mut Door)>) {
     for (e, p, mut d) in q.iter_mut() {
         d.auto_close = Some(p.0);
+        d.airlock = true;
         commands.entity(e).remove::<PendingAutoClose>();
     }
 }
@@ -177,8 +182,16 @@ pub fn toggle(world: &mut World, door: Entity, user: Option<Entity>) -> bool {
     }
 }
 
+/// `SharedAirlockSystem.CanChangeState`: airlocks need power.
+fn airlock_frozen(world: &World, door: Entity) -> bool {
+    world.get::<Door>(door).is_some_and(|d| d.airlock) && !crate::power::is_powered(world, door)
+}
+
 pub fn try_open(world: &mut World, door: Entity, _user: Option<Entity>) -> bool {
     let now = world.resource::<SimClock>().time;
+    if airlock_frozen(world, door) {
+        return false;
+    }
     let Some(mut d) = world.get_mut::<Door>(door) else { return false };
     if d.state != DoorState::Closed {
         return false;
@@ -204,7 +217,7 @@ pub fn try_open(world: &mut World, door: Entity, _user: Option<Entity>) -> bool 
 
 pub fn try_close(world: &mut World, door: Entity, _user: Option<Entity>) -> bool {
     let now = world.resource::<SimClock>().time;
-    if door_blocked(world, door) {
+    if airlock_frozen(world, door) || door_blocked(world, door) {
         return false;
     }
     let Some(mut d) = world.get_mut::<Door>(door) else { return false };
@@ -283,8 +296,11 @@ pub fn door_update(world: &mut World) {
                 nd.next_change = None;
             }
             DoorState::Open => {
-                // Auto-close timer fired.
-                if door_blocked(world, e) {
+                // Auto-close timer fired. Unpowered airlocks stay open until
+                // power returns (`AirlockSystem.OnPowerChanged`).
+                if airlock_frozen(world, e) {
+                    nd.next_change = None;
+                } else if door_blocked(world, e) {
                     nd.next_change = Some(now + 1.0);
                 } else {
                     let _ = world.get_mut::<Door>(e).map(|mut x| x.next_change = None);
@@ -318,5 +334,18 @@ pub fn door_sync_collision(mut q: Query<(&Door, &mut Body), Changed<Door>>) {
         if b.can_collide != c {
             b.can_collide = c;
         }
+    }
+}
+
+/// Power came back to an airlock: an open one resumes its auto-close
+/// countdown (`AirlockSystem.OnPowerChanged` → `UpdateAutoClose`).
+pub fn on_power_restored(world: &mut World, door: Entity) {
+    let now = world.resource::<SimClock>().time;
+    if let Some(mut d) = world.get_mut::<Door>(door)
+        && d.state == DoorState::Open
+        && d.next_change.is_none()
+        && let Some(delay) = d.auto_close
+    {
+        d.next_change = Some(now + delay);
     }
 }

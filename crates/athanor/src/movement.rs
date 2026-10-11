@@ -109,6 +109,7 @@ pub fn mover_system(
     clock: Res<SimClock>,
     content: Res<Content>,
     grids: Query<&Grid>,
+    weightless_grids: Query<(), With<crate::power::Weightless>>,
     mut q: Query<(&InputMover, Option<&MovementSpeedModifier>, &mut Body, &mut Xform, Has<AlwaysTouching>)>,
 ) {
     let dt = clock.dt;
@@ -120,15 +121,16 @@ pub fn mover_system(
         let speed = speed.unwrap_or(&def);
         let wish_in = if mover.can_move { mover.wish.clamp_length_max(1.0) } else { Vec2::ZERO };
 
-        // Weightless = not standing on a tile of a grid. (Gravity generators
-        // are not simulated yet; every grid is treated as having gravity.)
+        // Weightless = not standing on a tile of a grid, or the grid has no
+        // gravity (`power::Weightless`, set by the power plugin from gravity generators).
         let tile_def = xform
             .parent
             .and_then(|p| grids.get(p).ok())
             .map(|g| g.tiles.get(tile_of(xform.pos).x, tile_of(xform.pos).y))
             .filter(|t| !t.is_empty())
             .and_then(|t| content.tiles.get(t.type_id));
-        let weightless = tile_def.is_none();
+        let no_gravity = xform.parent.is_some_and(|p| weightless_grids.contains(p));
+        let weightless = tile_def.is_none() || no_gravity;
         let on_grid = xform.parent.is_some_and(|p| grids.contains(p));
 
         let mut velocity = body.velocity;
@@ -148,7 +150,7 @@ pub fn mover_system(
             (wish, friction, speed.base_weightless_acceleration)
         } else {
             let wish = wish_in * if mover.walking { speed.walk_speed() } else { speed.sprint_speed() };
-            let td = tile_def.unwrap();
+            let td = tile_def.expect("weightless when no tile");
             let friction = if wish != Vec2::ZERO {
                 speed.base_friction * td.mob_friction.or(td.friction).unwrap_or(1.0)
             } else {

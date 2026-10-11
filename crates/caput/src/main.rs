@@ -178,6 +178,7 @@ fn main() {
     .add_plugins(HomunculusPlugin)
     .add_plugins(mercury::MercuryPlugin)
     .add_plugins(alembic::AlembicPlugin)
+    .add_plugins(prana::PranaPlugin)
     .init_resource::<hud::PlayerAir>()
     .init_resource::<shipyard_ui::ShipyardWindow>()
     .init_resource::<storage_ui::StorageWindow>()

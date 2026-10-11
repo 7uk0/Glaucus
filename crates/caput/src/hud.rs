@@ -121,6 +121,10 @@ pub struct PlayerAir {
     pub celsius: f32,
     pub felt_pressure: f32,
     pub suffocating: bool,
+    /// The grid underfoot has no gravity.
+    pub weightless: bool,
+    /// Ship power, when piloting: (supplied W, demanded W, stored J, capacity J).
+    pub ship_power: Option<(f32, f32, f32, f32)>,
 }
 
 pub fn sample_player_air(world: &mut World) {
@@ -128,12 +132,40 @@ pub fn sample_player_air(world: &mut World) {
     let air = alembic::air_at(world, me);
     let felt = world.get::<alembic::Barotrauma>(me).map_or(air.pressure(), |b| b.felt_pressure);
     let suffocating = world.get::<alembic::Respirator>(me).is_some_and(|r| !r.is_breathing());
+    let grid = world.get::<athanor::transform::Xform>(me).and_then(|x| x.parent);
+    let weightless = grid.is_some_and(|g| world.get::<athanor::power::Weightless>(g).is_some());
+    let shuttle = world.get::<athanor::shuttles::Pilot>(me).map(|p| p.shuttle);
+    let ship_power = shuttle.map(|s| ship_power(world, s));
     let mut out = world.resource_mut::<PlayerAir>();
+    out.weightless = weightless;
+    out.ship_power = ship_power;
     out.pressure = air.pressure();
     out.oxygen = air.fraction(alembic::gas::OXYGEN);
     out.celsius = air.temperature - 273.15;
     out.felt_pressure = felt;
     out.suffocating = suffocating;
+}
+
+/// Sum of a grid's generators and batteries, for the pilot's readout.
+fn ship_power(world: &mut World, grid: Entity) -> (f32, f32, f32, f32) {
+    let (mut supplied, mut demand, mut stored, mut cap) = (0.0, 0.0, 0.0, 0.0);
+    let mut q = world.query::<(&athanor::transform::Xform, Option<&prana::PowerSupplier>, Option<&prana::ApcPowerReceiver>, Option<&prana::Battery>)>();
+    for (x, s, r, b) in q.iter(world) {
+        if x.parent != Some(grid) {
+            continue;
+        }
+        if let Some(s) = s {
+            supplied += s.supply.current_supply;
+        }
+        if let Some(r) = r {
+            demand += r.load.desired_power;
+        }
+        if let Some(b) = b {
+            stored += b.charge;
+            cap += b.max_charge;
+        }
+    }
+    (supplied, demand, stored, cap)
 }
 
 fn air_line(a: &PlayerAir) -> String {
@@ -144,21 +176,27 @@ fn air_line(a: &PlayerAir) -> String {
         format!("Air: {:.0} kPa · O2 {:.0}% · {:.0}°C", a.pressure, a.oxygen * 100.0, a.celsius)
     };
     if a.felt_pressure <= HAZARD_LOW_PRESSURE {
-        s.push_str("
-LOW PRESSURE");
+        s.push_str("\nLOW PRESSURE");
     } else if a.felt_pressure <= WARNING_LOW_PRESSURE {
-        s.push_str("
-Low pressure");
+        s.push_str("\nLow pressure");
     } else if a.felt_pressure >= HAZARD_HIGH_PRESSURE {
-        s.push_str("
-HIGH PRESSURE");
+        s.push_str("\nHIGH PRESSURE");
     } else if a.felt_pressure >= WARNING_HIGH_PRESSURE {
-        s.push_str("
-High pressure");
+        s.push_str("\nHigh pressure");
     }
     if a.suffocating {
-        s.push_str("
-SUFFOCATING");
+        s.push_str("\nSUFFOCATING");
+    }
+    if a.weightless {
+        s.push_str("\nNo gravity");
+    }
+    if let Some((sup, dem, st, cap)) = a.ship_power {
+        s.push_str(&format!(
+            "\nShip power: {:.1} kW generated · {:.1} kW load · {:.0}% stored",
+            sup / 1000.0,
+            dem / 1000.0,
+            if cap > 0.0 { st / cap * 100.0 } else { 0.0 }
+        ));
     }
     s
 }

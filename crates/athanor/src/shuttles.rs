@@ -150,6 +150,15 @@ pub fn toggle_pilot(world: &mut World, user: Entity, console: Entity) -> bool {
         return false;
     }
     let Some(grid) = world.get::<Xform>(console).and_then(|x| x.parent) else { return false };
+    if !crate::power::is_powered(world, console) {
+        // `ActivatableUIRequiresPower`: a dark console can't be used.
+        world.write_message(crate::events::Popup {
+            text: "The console is unpowered.".into(),
+            at: user,
+            kind: crate::events::PopupKind::Small,
+        });
+        return false;
+    }
     let name = world.get::<crate::spawn::MetaData>(grid).map(|m| m.name.clone()).unwrap_or_default();
     if world.get::<Shuttle>(grid).is_none() {
         world.write_message(crate::events::Popup {
@@ -231,8 +240,9 @@ pub fn update_grid_bodies(mut commands: Commands, mut q: Query<(Entity, &Grid, O
 
 /// Recompute thrust pools from anchored thrusters (`ThrusterSystem`).
 pub fn update_thrust(world: &mut World) {
+    // Unpowered thrusters and gyroscopes don't fire (`ThrusterSystem.CanEnable`).
     let thrusters: Vec<(Entity, Thruster, Xform)> = {
-        let mut q = world.query::<(Entity, &Thruster, &Xform)>();
+        let mut q = world.query_filtered::<(Entity, &Thruster, &Xform), Without<crate::power::Unpowered>>();
         q.iter(world).map(|(e, t, x)| (e, t.clone(), *x)).collect()
     };
     let shuttles: Vec<Entity> = {

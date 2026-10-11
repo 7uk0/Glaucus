@@ -40,6 +40,7 @@ pub mod map_loader;
 pub mod movement;
 pub mod naming;
 pub mod physics;
+pub mod power;
 pub mod rng;
 pub mod sector;
 pub mod shuttles;

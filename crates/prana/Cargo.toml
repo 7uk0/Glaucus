@@ -1,0 +1,18 @@
+[package]
+name = "prana"
+description = "Power: node networks (cables), the Pow3r battery-ramp-peg solver, APCs, receivers, batteries, generators, gravity. ~ Content.Server/Power + NodeContainer + Gravity."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+athanor = { path = "../athanor" }
+grimoire = { path = "../grimoire" }
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_math.workspace = true
+tracing.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+vellum = { path = "../vellum" }
