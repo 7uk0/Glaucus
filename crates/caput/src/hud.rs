@@ -128,6 +128,7 @@ pub fn update_status(
         With<Player>,
     >,
     bodies: Query<&athanor::shuttles::GridBody>,
+    accounts: Query<&mercury::BankAccount, With<Player>>,
     names: Query<&MetaData>,
     hover: Res<Hover>,
     mut status: Query<&mut Text, (With<StatusText>, Without<HoverText>)>,
@@ -135,6 +136,9 @@ pub fn update_status(
 ) {
     if let (Ok((meta, dmg, th, st, hands, combat, pilot)), Ok(mut t)) = (player.single(), status.single_mut()) {
         let mut s = format!("{}\n{}", meta.name, health_line(dmg, th, st));
+        if let Ok(a) = accounts.single() {
+            s.push_str(&format!("\nBank: {} spesos", a.balance));
+        }
         if let Some(h) = hands {
             for (i, hand) in h.hands.iter().enumerate() {
                 let held = hand.held.and_then(|e| names.get(e).ok()).map_or("empty".to_string(), |m| m.name.clone());

@@ -1,0 +1,18 @@
+[package]
+name = "mercury"
+description = "Frontier's economy: bank accounts, pricing, cargo selling, the shipyard. ~ Content.Server/_NF/{Bank,Cargo,Shipyard} + PricingSystem."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+athanor = { path = "../athanor" }
+grimoire = { path = "../grimoire" }
+astrolabe = { path = "../astrolabe" }
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_math.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+vellum = { path = "../vellum" }

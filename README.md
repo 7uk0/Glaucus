@@ -28,11 +28,15 @@ Today it runs:
   damage/mob-state/destructibles, doors and airlocks, inventories and clothing.
 - **NPCs driven by upstream's HTN task networks**: the `htnCompound` YAML is
   planned by a port of `HTNPlanJob`, with utility-query targeting, A* pathfinding and steering.
+- **Shuttles you can fly**: thrusters and gyroscopes from the ship's own
+  map, Frontier's velocity cap, brakes, hull-on-hull impacts.
+- **Frontier's economy**: a 30,000-speso account, the shipyard selling all
+  of Frontier's vessels, pallet consoles that appraise and buy your salvage, ATMs.
 - A **Bevy client** drawing it all with upstream sprites: tiles, decals, wall
   smoothing, door animations, humanoids in their clothing, parallax, HUD, sound.
 
 It is early. See [docs/PORTING.md](docs/PORTING.md) for what is ported and
-what is not (atmos, power, chemistry, shuttles and much more are still ahead).
+what is not (atmos, power, chemistry, docking/FTL and much more are still ahead).
 
 ## Running it
 
@@ -69,6 +73,7 @@ alongside, your body prototype, NPC counts, world seed.
 | [`astrolabe`](crates/astrolabe) | tiles, chunked grids, map files, decals, migrations | `MapLoaderSystem`, `MapGrid`, tile definitions |
 | [`athanor`](crates/athanor) | the simulation: every ported game system | `Robust.Shared` + `Content.Shared` + `Content.Server` |
 | [`homunculus`](crates/homunculus) | NPC minds: HTN planner, utility AI, pathfinding | `Content.Server/NPC` |
+| [`mercury`](crates/mercury) | Frontier economy: bank, pricing, selling, shipyard | `_NF` Bank / Cargo / Shipyard, `PricingSystem` |
 | [`caput`](crates/caput) | the Bevy client | `Robust.Client` + `Content.Client` |
 
 Our own content (NPC contractors, starting gear) lives in [`resources/`](resources),

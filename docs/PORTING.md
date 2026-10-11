@@ -60,6 +60,16 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | NPC melee | ✅ | Miss chance, chase, face target |
 | NPC ranged combat, interaction operators | ⬜ | 28 operator/precondition/consideration types reported as unported by the domain loader |
 
+## Layer 2b — Frontier economy (`mercury`)
+
+| Upstream system | Status | Notes |
+|---|---|---|
+| Bank accounts | 🟡 | 30,000 default balance; ATM deposit by using cash, balance on click. No withdrawals/ledger |
+| `PricingSystem` | 🟡 | Materials, stack price, static price, contents, Frontier `MobPrice`. No solutions yet |
+| Pallet-console selling (`NFCargoSystem`) | ✅ | Sell pallets within `palletDistance`, console + item `MarketModifier`, cash stacks |
+| Shipyard purchase | 🟡 | All 115 `vessel` prototypes by group; buy → ship spawned in clear space + deed. No selling ships back, no docking at purchase |
+| Bounties, black market, contraband | ⬜ | |
+
 ## Layer 3 — Client (`caput`)
 
 | Upstream system | Status | Notes |
@@ -75,12 +85,13 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Audio | 🟡 | One-shot sounds, collections, distance attenuation |
 | Lighting & occlusion | ⬜ | Fullbright for now |
 | Generic visualizers (Appearance data) | ⬜ | |
-| UIs (vending, cargo, shipyard, PDA...) | ⬜ | |
+| Shipyard console window | ✅ | Paged registry, balance, buy |
+| Other UIs (vending, ATM menu, PDA...) | ⬜ | |
 
 ## Layer 4 — Game systems (roadmap, roughly in order)
 
 1. **Shuttles** (Frontier's heart): ~~piloting~~ ✅, ~~grid collisions~~ ✅, impact damage, docking, FTL.
-2. **Economy**: spesos, bank, `StaticPrice` selling, cargo, shipyard purchases, bounties.
+2. **Economy**: ~~spesos, bank, selling, shipyard purchases~~ ✅; bounties, vending, ship resale.
 3. **Atmospherics** (`alembic`): gas mixtures per tile, pressure, breathing, airtight, vents/scrubbers.
 4. **Power**: APCs, SMES, cables, powered machines (lights, doors, consoles).
 5. **Lighting** with occluders.

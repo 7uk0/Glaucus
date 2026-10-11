@@ -15,5 +15,6 @@ grimoire = { path = "../grimoire" }
 astrolabe = { path = "../astrolabe" }
 athanor = { path = "../athanor" }
 homunculus = { path = "../homunculus" }
+mercury = { path = "../mercury" }
 bevy = { workspace = true, features = ["2d", "ui", "audio"] }
 tracing.workspace = true

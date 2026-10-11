@@ -15,6 +15,7 @@ mod audio;
 mod hud;
 mod input;
 mod parallax;
+mod shipyard_ui;
 mod sprites;
 mod textures;
 mod world_render;
@@ -76,6 +77,7 @@ pub struct Args {
     pub height: u32,
     pub zoom: f32,
     pub demo_pilot: bool,
+    pub demo_shipyard: bool,
 }
 
 fn parse_args() -> Args {
@@ -87,6 +89,7 @@ fn parse_args() -> Args {
         height: 900,
         zoom: 0.5,
         demo_pilot: false,
+        demo_shipyard: false,
     };
     let argv: Vec<String> = std::env::args().skip(1).collect();
     let mut i = 0;
@@ -100,6 +103,11 @@ fn parse_args() -> Args {
             "--carp" => a.cfg.carp = v.parse().unwrap_or(a.cfg.carp),
             "--seed" => a.cfg.seed = v.parse().unwrap_or(a.cfg.seed),
             "--spawn" => a.cfg.spawn_on_shuttle = v == "shuttle",
+            "--demo-shipyard" => {
+                a.demo_shipyard = true;
+                i += 1;
+                continue;
+            }
             "--demo-pilot" => {
                 a.demo_pilot = true;
                 a.cfg.spawn_on_shuttle = true;
@@ -167,6 +175,8 @@ fn main() {
         },
     })
     .add_plugins(HomunculusPlugin)
+    .add_plugins(mercury::MercuryPlugin)
+    .init_resource::<shipyard_ui::ShipyardWindow>()
     .insert_resource(args.clone())
     .init_resource::<textures::TextureCache>()
     .init_resource::<world_render::GridViews>()
@@ -198,6 +208,9 @@ fn main() {
             hud::collect_chat,
             hud::animate_popups,
             audio::play_sounds,
+            shipyard_ui::open_requests,
+            shipyard_ui::close_on_escape,
+            shipyard_ui::rebuild,
         )
             .chain()
             .after(athanor::drive_sim),
@@ -213,6 +226,16 @@ fn setup_world(world: &mut World) {
         Ok(s) => {
             let n = world.query::<&athanor::spawn::EntityData>().iter(world).count();
             eprintln!("   sector ready: {n} entities, {} NPCs", s.npcs.len());
+            if args.demo_shipyard {
+                let console = world
+                    .query::<(Entity, &athanor::spawn::MetaData)>()
+                    .iter(world)
+                    .find(|(_, m)| m.proto.as_deref() == Some("ComputerShipyard"))
+                    .map(|(e, _)| e);
+                if let Some(c) = console {
+                    world.write_message(mercury::UiRequest::Shipyard { user: s.player, console: c });
+                }
+            }
             if args.demo_pilot
                 && let Some(sg) = s.shuttle
             {

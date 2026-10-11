@@ -186,6 +186,10 @@ pub fn verbs(world: &mut World) {
         let n = world.resource::<Time>().elapsed_secs() as u64;
         world.commands().spawn(Screenshot::primary_window()).observe(save_to_disk(format!("caput-{n}.png")));
     }
+    // A modal window owns the mouse.
+    if world.get_resource::<crate::shipyard_ui::ShipyardWindow>().is_some_and(|w| w.is_open()) {
+        return;
+    }
     if click {
         let target = world.resource::<Hover>().entity;
         let Some(target) = target else { return };
