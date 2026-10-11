@@ -34,7 +34,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Physics | 🟡 | Kinematic movers vs static fixtures, upstream collision groups bit-exact, cross-grid hulls. No dynamic-dynamic solver, no throwing yet |
 | `SharedMoverController` | ✅ | Upstream acceleration/friction, tile friction, sprint/walk, weightless, `MovementAlwaysTouching` |
 | Tick loop | ✅ | 30 Hz `SimTick` schedule; headless or real-time driven |
-| Containers | 🟡 | `InContainer` for held/worn items; no general `ContainerManager`, no storage UIs |
+| Containers & storage | 🟡 | `EntityStorage` lockers/crates (open/close, swallow/spill), `Storage` backpacks with size/capacity, `StorageFill`, `EntityTableContainerFill`, `EntityTableSpawner`, entity tables (All/Group/Nested/Ent). No locks/welding, no grid-shaped inventory |
 | Hands / items / pick up / drop | ✅ | |
 | Interaction verbs, examine | 🟡 | Interact, use-in-hand, interact-using hooks; no verb menu yet |
 | Inventory & clothing | 🟡 | Slots from templates, `Loadout`/`startingGear`; no armor/modifiers from clothing yet |
@@ -43,7 +43,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Destructible | 🟡 | `DamageTrigger` + destruction/spawn/sound behaviours |
 | Melee | ✅ | Attack rate, range, unarmed via mob's own weapon |
 | Doors & airlocks | 🟡 | Two-phase state machine, bump-open, auto-close, blocked-closing, bolts. No access readers/power yet |
-| Spawners | 🟡 | `ConditionalSpawner`, `RandomSpawner`; `EntityTableSpawner` pending |
+| Spawners | ✅ | `ConditionalSpawner`, `RandomSpawner`, `EntityTableSpawner` |
 | Names | ✅ | `RandomMetadata`, localized datasets |
 | Factions | ✅ | `npcFaction` hostility |
 | Shuttles | 🟡 | Grid bodies (mass/inertia from tiles at upstream density), thruster/gyroscope pools, consoles & piloting, Frontier velocity ellipse, brakes, angular clamp. Hull-on-hull impacts (inelastic, momentum exchange). No impact damage, docking or FTL yet |
@@ -86,6 +86,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Lighting & occlusion | ⬜ | Fullbright for now |
 | Generic visualizers (Appearance data) | ⬜ | |
 | Shipyard console window | ✅ | Paged registry, balance, buy |
+| Storage window, locker visuals | ✅ | `EntityStorageVisuals`; take/put buttons |
 | Other UIs (vending, ATM menu, PDA...) | ⬜ | |
 
 ## Layer 4 — Game systems (roadmap, roughly in order)
@@ -95,7 +96,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 3. **Atmospherics** (`alembic`): gas mixtures per tile, pressure, breathing, airtight, vents/scrubbers.
 4. **Power**: APCs, SMES, cables, powered machines (lights, doors, consoles).
 5. **Lighting** with occluders.
-6. **Containers & storage**: backpacks, lockers, crates, storage UI.
+6. **Containers & storage**: ~~backpacks, lockers, crates, storage UI~~ ✅; locks/access, welding, crate pulling.
 7. **Construction** graphs and tools.
 8. **Chemistry & medicine**: solutions, reagents, reactions, metabolism.
 9. **Food, drink, hunger/thirst.**

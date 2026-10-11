@@ -51,3 +51,10 @@ pub struct MeleeSwing {
     pub hit: bool,
     pub animation: Option<String>,
 }
+
+/// Ask the client to show a storage window (backpack, box...).
+#[derive(Message, Debug, Clone, Copy)]
+pub struct OpenStorage {
+    pub user: Entity,
+    pub storage: Entity,
+}

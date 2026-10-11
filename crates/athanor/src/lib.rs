@@ -22,6 +22,7 @@
 //! * [`doors`] — doors and airlocks (`SharedDoorSystem`)
 //! * [`shuttles`] — shuttles, thrusters, piloting (`ShuttleSystem`, `MoverController`)
 //! * [`factions`] — NPC factions (`NpcFactionSystem`)
+//! * [`storage`] — lockers, crates, backpacks, fills, entity tables
 //! * [`spawners`] — map-init spawners (`ConditionalSpawnerSystem`)
 //! * [`inventory`] — inventories, clothing, loadouts (`InventorySystem`)
 //! * [`naming`] — random names from datasets (`RandomMetadata`)
@@ -44,6 +45,7 @@ pub mod sector;
 pub mod shuttles;
 pub mod spawn;
 pub mod spawners;
+pub mod storage;
 pub mod transform;
 
 use bevy_app::prelude::*;
@@ -142,7 +144,8 @@ impl Plugin for AthanorPlugin {
             .add_message::<events::Popup>()
             .add_message::<events::SoundAt>()
             .add_message::<events::ChatLine>()
-            .add_message::<events::MeleeSwing>();
+            .add_message::<events::MeleeSwing>()
+            .add_message::<events::OpenStorage>();
 
         let mut reg = spawn::ComponentFactories::default();
         register_components(&mut reg);
@@ -184,6 +187,7 @@ impl Plugin for AthanorPlugin {
                 doors::door_update,
                 naming::resolve_names,
                 inventory::resolve_loadouts,
+                storage::resolve_fills,
             )
                 .chain()
                 .in_set(SimSet::Gameplay),
@@ -192,6 +196,7 @@ impl Plugin for AthanorPlugin {
 
         doors::install(app.world_mut());
         shuttles::install(app.world_mut());
+        storage::install(app.world_mut());
     }
 }
 
@@ -208,6 +213,7 @@ pub fn register_components(reg: &mut spawn::ComponentFactories) {
     naming::register(reg);
     inventory::register(reg);
     shuttles::register(reg);
+    storage::register(reg);
 }
 
 fn advance_clock(mut clock: ResMut<SimClock>) {

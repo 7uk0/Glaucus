@@ -18,5 +18,5 @@ OPTIONS:
 
 CONTROLS:
     WASD move · Shift walk · click interact · Shift+click examine
-    R combat mode · Q drop · X swap hands · Z use in hand · wheel zoom · F12 screenshot
+    R combat mode · Q drop · X swap hands · Z use in hand · B backpack · wheel zoom · F12 screenshot
     At a shuttle console (click it): WASD thrust · Q/E rotate · Space brake

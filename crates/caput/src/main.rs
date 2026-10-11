@@ -16,6 +16,7 @@ mod hud;
 mod input;
 mod parallax;
 mod shipyard_ui;
+mod storage_ui;
 mod sprites;
 mod textures;
 mod world_render;
@@ -177,6 +178,7 @@ fn main() {
     .add_plugins(HomunculusPlugin)
     .add_plugins(mercury::MercuryPlugin)
     .init_resource::<shipyard_ui::ShipyardWindow>()
+    .init_resource::<storage_ui::StorageWindow>()
     .insert_resource(args.clone())
     .init_resource::<textures::TextureCache>()
     .init_resource::<world_render::GridViews>()
@@ -211,6 +213,8 @@ fn main() {
             shipyard_ui::open_requests,
             shipyard_ui::close_on_escape,
             shipyard_ui::rebuild,
+            storage_ui::requests,
+            storage_ui::rebuild,
         )
             .chain()
             .after(athanor::drive_sim),

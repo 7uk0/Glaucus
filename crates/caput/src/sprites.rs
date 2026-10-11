@@ -180,6 +180,7 @@ const HIDDEN_BY_DEFAULT: &[&str] = &[
     "enum.ElectrifiedLayers.HUD",
     "enum.LockVisualLayers.Lock",
     "enum.EmagLayers.Emagged",
+    "enum.PaperLabelVisuals.Layer",
 ];
 
 /// Render-side state for one simulation entity.
@@ -322,6 +323,7 @@ pub fn update_sprites(
         Option<&Door>,
         Option<&MobState>,
         Has<InContainer>,
+        Option<&athanor::storage::EntityStorage>,
     )>,
     grids: Query<&Grid>,
     inventories: Query<&athanor::inventory::Inventory>,
@@ -344,7 +346,7 @@ pub fn update_sprites(
     }
 
     for (mut view, mut root_tf, mut root_vis) in views.iter_mut() {
-        let Ok((pose, xform, data, door, mob, contained)) = sims.get(view.sim) else {
+        let Ok((pose, xform, data, door, mob, contained, estorage)) = sims.get(view.sim) else {
             continue;
         };
         let spec = view.spec.clone();
@@ -427,6 +429,25 @@ pub fn update_sprites(
                 }
                 if layer.map.iter().any(|m| m == "enum.DoorVisualLayers.BaseBolted") {
                     visible = d.bolted;
+                }
+            }
+            // EntityStorageVisualizerSystem: lockers and crates.
+            if let (Some(es), Some(v)) = (estorage, data.get("EntityStorageVisuals")) {
+                if layer.map.iter().any(|m| m == "enum.StorageVisualLayers.Base") {
+                    let key = if es.open { "stateBaseOpen" } else { "stateBaseClosed" };
+                    if let Some(st) = v.get_str(key) {
+                        state = Some(st.to_string());
+                    }
+                }
+                if layer.map.iter().any(|m| m == "enum.StorageVisualLayers.Door") {
+                    let key = if es.open { "stateDoorOpen" } else { "stateDoorClosed" };
+                    match v.get_str(key) {
+                        Some(st) => {
+                            state = Some(st.to_string());
+                            visible = true;
+                        }
+                        None => visible = false,
+                    }
                 }
             }
             // Mob damage states.

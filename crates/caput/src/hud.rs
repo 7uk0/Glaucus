@@ -157,7 +157,7 @@ pub fn update_status(
                 w.to_degrees()
             ));
         }
-        s.push_str("\n\nWASD move · click use · shift+click examine\nR combat · Q drop · X swap · Z use · wheel zoom");
+        s.push_str("\n\nWASD move · click use · shift+click examine\nR combat · Q drop · X swap · Z use · B backpack · wheel zoom");
         if t.0 != s {
             t.0 = s;
         }

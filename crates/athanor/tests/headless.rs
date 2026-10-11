@@ -302,3 +302,48 @@ fn shuttles_cannot_fly_through_stations() {
     let x = app.world().get::<Xform>(ship).unwrap().pos.x;
     eprintln!("ship x after ramming: {x}");
 }
+
+#[test]
+fn lockers_are_filled_and_open_and_close() {
+    use athanor::interaction::InContainer;
+    use athanor::storage::{contents, toggle, EntityStorage};
+    let Some(c) = content() else { return };
+    let mut app = headless_app(c);
+    let grid = load_map_path(app.world_mut(), "/Maps/_NF/Outpost/frontier.yml", None, LoadOptions::default()).unwrap().grids[0];
+    let world = app.world_mut();
+    let lockers: Vec<Entity> = {
+        let mut q = world.query::<(Entity, &EntityStorage)>();
+        q.iter(world).map(|(e, _)| e).collect()
+    };
+    let filled: Vec<(Entity, usize)> = lockers.iter().map(|&l| (l, contents(world, l).len())).filter(|(_, n)| *n > 0).collect();
+    let total: usize = filled.iter().map(|(_, n)| n).sum();
+    eprintln!("{} entity storages on the outpost, {} filled, {total} items inside", lockers.len(), filled.len());
+    assert!(filled.len() > 5, "lockers and crates should arrive filled");
+    let (locker, n) = filled[0];
+    let user = spawn_proto(world, "MobHuman", grid, world.get::<Xform>(locker).unwrap().pos).unwrap();
+    toggle(world, user, locker);
+    assert!(world.get::<EntityStorage>(locker).unwrap().open);
+    assert!(contents(world, locker).is_empty(), "opening spills everything");
+    toggle(world, user, locker);
+    assert!(!world.get::<EntityStorage>(locker).unwrap().open);
+    assert_eq!(contents(world, locker).len(), n, "closing swallows it all back");
+    assert!(world.get::<InContainer>(user).is_none(), "the player is not shut inside");
+}
+
+#[test]
+fn backpacks_hold_items() {
+    use athanor::storage::{contents, insert};
+    let Some(c) = content() else { return };
+    let mut app = headless_app(c);
+    let grid = load_map_path(app.world_mut(), "/Maps/_NF/Shuttles/adder.yml", None, LoadOptions::default()).unwrap().grids[0];
+    let world = app.world_mut();
+    let floor = floor_west_of_wall(world, grid).unwrap();
+    let you = spawn_proto(world, "MobHuman", grid, tile_center(floor)).unwrap();
+    let pack = spawn_proto(world, "ClothingBackpack", grid, tile_center(floor)).unwrap();
+    let tool = spawn_proto(world, "Crowbar", grid, tile_center(floor)).unwrap();
+    athanor::interaction::try_pickup(world, you, tool).unwrap();
+    assert!(insert(world, you, tool, pack), "crowbar fits in a backpack");
+    assert_eq!(contents(world, pack), vec![tool]);
+    let crate_ = spawn_proto(world, "CrateGenericSteel", grid, tile_center(floor)).unwrap();
+    assert!(!insert(world, you, crate_, pack), "a crate does not");
+}

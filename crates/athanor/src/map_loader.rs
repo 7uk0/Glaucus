@@ -172,8 +172,9 @@ pub fn load_map(world: &mut World, file: &MapFile, map: Option<Entity>, opts: Lo
     }
 
     if opts.run_spawners {
-        out.spawned_by_spawners = crate::spawners::run_spawners(world);
+        out.spawned_by_spawners = crate::spawners::run_spawners(world) + crate::storage::run_table_spawners(world);
     }
+    crate::storage::resolve_fills(world);
     let _ = world.get_resource_or_init::<GridIndex>();
     let _ = WorldPose::default();
     out
