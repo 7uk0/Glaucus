@@ -131,6 +131,11 @@ impl Node {
         parse_angle(self.as_str()?)
     }
 
+    /// Robust `TimeSpan`: plain seconds or `1.5s` / `2m` / `1h` / `1d`.
+    pub fn as_seconds(&self) -> Option<f64> {
+        parse_timespan(self.as_str()?)
+    }
+
     /// A scalar or a sequence of scalars, as a list of strings.
     pub fn as_str_list(&self) -> Vec<String> {
         match self.untagged() {
@@ -167,6 +172,29 @@ pub fn parse_f64(s: &str) -> Option<f64> {
         ".nan" | ".NaN" | "NaN" => Some(f64::NAN),
         _ => s.parse::<f64>().ok(),
     }
+}
+
+/// Port of `TimeSpanExt.TryTimeSpan`. Returns seconds.
+pub fn parse_timespan(s: &str) -> Option<f64> {
+    let s = s.trim();
+    if s.contains(',') || s.contains(' ') || s.contains(':') {
+        return None;
+    }
+    if let Ok(v) = s.parse::<f64>() {
+        return Some(v);
+    }
+    if s.len() <= 1 {
+        return None;
+    }
+    let (num, unit) = s.split_at(s.len() - 1);
+    let n: f64 = num.parse().ok()?;
+    Some(match unit {
+        "s" | "S" => n,
+        "m" | "M" => n * 60.0,
+        "h" | "H" => n * 3600.0,
+        "d" | "D" => n * 86400.0,
+        _ => return None,
+    })
 }
 
 pub fn parse_vec2(s: &str) -> Option<(f32, f32)> {

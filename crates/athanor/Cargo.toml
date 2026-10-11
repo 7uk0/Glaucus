@@ -1,0 +1,20 @@
+[package]
+name = "athanor"
+description = "The simulation furnace: SS14/Frontier game systems on bevy_ecs. ~ Content.Shared + Content.Server + Robust.Shared game systems."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+vellum = { path = "../vellum" }
+grimoire = { path = "../grimoire" }
+astrolabe = { path = "../astrolabe" }
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_math.workspace = true
+serde.workspace = true
+indexmap.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+vellum = { path = "../vellum" }

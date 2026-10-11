@@ -415,6 +415,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "athanor"
+version = "0.1.0"
+dependencies = [
+ "astrolabe",
+ "bevy_app",
+ "bevy_ecs",
+ "bevy_math",
+ "grimoire",
+ "indexmap",
+ "serde",
+ "tracing",
+ "vellum",
+]
+
+[[package]]
 name = "atomic-waker"
 version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
