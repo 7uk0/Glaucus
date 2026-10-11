@@ -122,6 +122,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "alembic"
+version = "0.1.0"
+dependencies = [
+ "athanor",
+ "bevy_app",
+ "bevy_ecs",
+ "bevy_math",
+ "grimoire",
+ "serde",
+ "tracing",
+]
+
+[[package]]
 name = "allocator-api2"
 version = "0.2.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2123,6 +2136,7 @@ dependencies = [
 name = "caput"
 version = "0.1.0"
 dependencies = [
+ "alembic",
  "astrolabe",
  "athanor",
  "bevy",

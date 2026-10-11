@@ -177,6 +177,8 @@ fn main() {
     })
     .add_plugins(HomunculusPlugin)
     .add_plugins(mercury::MercuryPlugin)
+    .add_plugins(alembic::AlembicPlugin)
+    .init_resource::<hud::PlayerAir>()
     .init_resource::<shipyard_ui::ShipyardWindow>()
     .init_resource::<storage_ui::StorageWindow>()
     .insert_resource(args.clone())
@@ -206,6 +208,7 @@ fn main() {
             sprites::update_sprites,
             input::camera_follow,
             parallax::update_parallax,
+            hud::sample_player_air,
             hud::update_status,
             hud::collect_chat,
             hud::animate_popups,

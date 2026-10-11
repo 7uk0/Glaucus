@@ -330,10 +330,17 @@ pub fn register(reg: &mut ComponentFactories) {
 /// Apply damage to an entity: modifier sets, container filtering, then
 /// threshold checks. Returns the damage actually dealt.
 pub fn apply_damage(world: &mut World, target: Entity, damage: &Damage, origin: Option<Entity>) -> f32 {
+    change_damage(world, target, damage, origin, false)
+}
+
+/// `DamageableSystem.TryChangeDamage` with `ignoreResistances`.
+pub fn change_damage(world: &mut World, target: Entity, damage: &Damage, origin: Option<Entity>, ignore_resistances: bool) -> f32 {
     let content = world.resource::<Content>().clone();
     let Some(mut dmg) = world.get_mut::<Damageable>(target) else { return 0.0 };
     let mut d = damage.clone();
-    if let Some(set) = dmg.modifier_set.as_ref().and_then(|s| content.damage.modifier_sets.get(s)) {
+    if !ignore_resistances
+        && let Some(set) = dmg.modifier_set.as_ref().and_then(|s| content.damage.modifier_sets.get(s))
+    {
         d = d.with_modifiers(set);
     }
     let supported = dmg.container.as_ref().and_then(|c| content.damage.containers.get(c));

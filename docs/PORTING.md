@@ -70,6 +70,24 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Shipyard purchase | 🟡 | All 115 `vessel` prototypes by group; buy → ship spawned in clear space + deed. No selling ships back, no docking at purchase |
 | Bounties, black market, contraband | ⬜ | |
 
+## Layer 2c — Atmospherics (`alembic`)
+
+| Upstream system | Status | Notes |
+|---|---|---|
+| `GasMixture`, gas prototypes | ✅ | All 11 Frontier gases; specific heats ÷ Frontier `heat_scale` 2 |
+| `GridAtmosphere` loading | ✅ | Saved tile mixes (serializer v1 and v2 chunk bitmasks); unsaved floor starts as vacuum |
+| Airtightness | ✅ | `Airtight` with `airBlockedDirection` + rotation; doors seal while shut; tiny fans pass people but not air |
+| LINDA (`ProcessCell`, `Share`, `TemperatureShare`) | ✅ | Active-tile set, archive, pressure-difference wind, at Frontier's 15 Hz |
+| Space | ✅ | Tiles with no floor are an immutable vacuum sink |
+| Monstermos (explosive equalization) | ⬜ | Rooms vent through LINDA alone, so more slowly than upstream |
+| Space wind (`MovedByPressure`) | 🟡 | Loose items and mobs shoved down steep gradients; simplified thresholds |
+| `RespiratorSystem` | ✅ | Inhale/exhale cycle, saturation, suffocation damage + recovery, gasps |
+| Lungs (`LungSystem`, `Gas` metabolism) | 🟡 | Data-driven from `Body` → lungs' `metabolizerTypes` → reagent `Oxygenate`/`ModifyLungGas`/`HealthChange` (Vox choke on O₂, everyone exhales CO₂). Breaths metabolize instantly instead of on the metabolizer clock |
+| `BarotraumaSystem` | ✅ | Low/high pressure damage ignoring resistances, `PressureProtection` from head + outer clothing, `PressureImmunity`, `maxDamage` cap |
+| Internals, gas tanks | ⬜ | A hardsuit stops barotrauma but you still need air |
+| Temperature, fire, reactions | ⬜ | |
+| Vents, scrubbers, pipes, canisters | ⬜ | |
+
 ## Layer 3 — Client (`caput`)
 
 | Upstream system | Status | Notes |
@@ -81,7 +99,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Humanoid appearance | 🟡 | Species base sprites + skin; no hair/markings yet |
 | Clothing visuals | ✅ | `clothingVisuals` and default `equipped-<SLOT>` states, species variants |
 | Parallax | 🟡 | Image layer + generated star fields |
-| HUD, popups, chat log, examine | 🟡 | Minimal panels |
+| HUD, popups, chat log, examine | 🟡 | Minimal panels; air readout with pressure/suffocation alerts |
 | Audio | 🟡 | One-shot sounds, collections, distance attenuation |
 | Lighting & occlusion | ⬜ | Fullbright for now |
 | Generic visualizers (Appearance data) | ⬜ | |
@@ -93,7 +111,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 
 1. **Shuttles** (Frontier's heart): ~~piloting~~ ✅, ~~grid collisions~~ ✅, impact damage, docking, FTL.
 2. **Economy**: ~~spesos, bank, selling, shipyard purchases~~ ✅; bounties, vending, ship resale.
-3. **Atmospherics** (`alembic`): gas mixtures per tile, pressure, breathing, airtight, vents/scrubbers.
+3. **Atmospherics** (`alembic`): ~~gas mixtures per tile, pressure, breathing, airtight~~ ✅; Monstermos, internals, temperature, fire, vents/scrubbers.
 4. **Power**: APCs, SMES, cables, powered machines (lights, doors, consoles).
 5. **Lighting** with occluders.
 6. **Containers & storage**: ~~backpacks, lockers, crates, storage UI~~ ✅; locks/access, welding, crate pulling.

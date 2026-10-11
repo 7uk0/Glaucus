@@ -1,0 +1,15 @@
+[package]
+name = "alembic"
+description = "Atmospherics: tile gas mixtures, LINDA sharing, airtightness, space, breathing and pressure. ~ Content.Server/Atmos."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+athanor = { path = "../athanor" }
+grimoire = { path = "../grimoire" }
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_math.workspace = true
+tracing.workspace = true
+serde.workspace = true

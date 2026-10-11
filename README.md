@@ -30,13 +30,16 @@ Today it runs:
   planned by a port of `HTNPlanJob`, with utility-query targeting, A* pathfinding and steering.
 - **Shuttles you can fly**: thrusters and gyroscopes from the ship's own
   map, Frontier's velocity cap, brakes, hull-on-hull impacts.
+- **Atmospherics**: every tile's air loaded from the map, shared by a port of
+  LINDA; airlocks seal, space drains, lungs breathe it (oxygen in, CO₂ out),
+  and vacuum suffocates and bruises anyone without a hardsuit.
 - **Frontier's economy**: a 30,000-speso account, the shipyard selling all
   of Frontier's vessels, pallet consoles that appraise and buy your salvage, ATMs.
 - A **Bevy client** drawing it all with upstream sprites: tiles, decals, wall
   smoothing, door animations, humanoids in their clothing, parallax, HUD, sound.
 
 It is early. See [docs/PORTING.md](docs/PORTING.md) for what is ported and
-what is not (atmos, power, chemistry, docking/FTL and much more are still ahead).
+what is not (power, lighting, chemistry, docking/FTL and much more are still ahead).
 
 ## Running it
 
@@ -74,6 +77,7 @@ alongside, your body prototype, NPC counts, world seed.
 | [`athanor`](crates/athanor) | the simulation: every ported game system | `Robust.Shared` + `Content.Shared` + `Content.Server` |
 | [`homunculus`](crates/homunculus) | NPC minds: HTN planner, utility AI, pathfinding | `Content.Server/NPC` |
 | [`mercury`](crates/mercury) | Frontier economy: bank, pricing, selling, shipyard | `_NF` Bank / Cargo / Shipyard, `PricingSystem` |
+| [`alembic`](crates/alembic) | atmospherics: tile air, LINDA, airtightness, breathing, barotrauma | `Content.Server/Atmos`, `RespiratorSystem` |
 | [`caput`](crates/caput) | the Bevy client | `Robust.Client` + `Content.Client` |
 
 Our own content (NPC contractors, starting gear) lives in [`resources/`](resources),
@@ -88,7 +92,8 @@ cargo test --workspace
 Integration tests run against the real upstream content when `upstream/` is
 present (they pass trivially without it): every prototype, map and RSI loads;
 humans walk into walls and stop; bumped airlocks open; a carp hunts and bites a
-human; every Frontier shuttle and POI spawns.
+human; every Frontier shuttle and POI spawns; the outpost holds one atmosphere
+while an opened airlock vents to space and a spaced human suffocates.
 
 ## License
 

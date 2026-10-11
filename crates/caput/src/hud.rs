@@ -113,7 +113,57 @@ fn health_line(dmg: Option<&Damageable>, th: Option<&MobThresholds>, st: Option<
     }
 }
 
-#[allow(clippy::type_complexity)]
+/// What the player is breathing, sampled from the simulation each frame.
+#[derive(Resource, Default)]
+pub struct PlayerAir {
+    pub pressure: f32,
+    pub oxygen: f32,
+    pub celsius: f32,
+    pub felt_pressure: f32,
+    pub suffocating: bool,
+}
+
+pub fn sample_player_air(world: &mut World) {
+    let Some(me) = world.query_filtered::<Entity, With<Player>>().iter(world).next() else { return };
+    let air = alembic::air_at(world, me);
+    let felt = world.get::<alembic::Barotrauma>(me).map_or(air.pressure(), |b| b.felt_pressure);
+    let suffocating = world.get::<alembic::Respirator>(me).is_some_and(|r| !r.is_breathing());
+    let mut out = world.resource_mut::<PlayerAir>();
+    out.pressure = air.pressure();
+    out.oxygen = air.fraction(alembic::gas::OXYGEN);
+    out.celsius = air.temperature - 273.15;
+    out.felt_pressure = felt;
+    out.suffocating = suffocating;
+}
+
+fn air_line(a: &PlayerAir) -> String {
+    use alembic::gas::consts::*;
+    let mut s = if a.pressure < 0.5 {
+        "Air: vacuum".to_string()
+    } else {
+        format!("Air: {:.0} kPa · O2 {:.0}% · {:.0}°C", a.pressure, a.oxygen * 100.0, a.celsius)
+    };
+    if a.felt_pressure <= HAZARD_LOW_PRESSURE {
+        s.push_str("
+LOW PRESSURE");
+    } else if a.felt_pressure <= WARNING_LOW_PRESSURE {
+        s.push_str("
+Low pressure");
+    } else if a.felt_pressure >= HAZARD_HIGH_PRESSURE {
+        s.push_str("
+HIGH PRESSURE");
+    } else if a.felt_pressure >= WARNING_HIGH_PRESSURE {
+        s.push_str("
+High pressure");
+    }
+    if a.suffocating {
+        s.push_str("
+SUFFOCATING");
+    }
+    s
+}
+
+#[allow(clippy::type_complexity, clippy::too_many_arguments)]
 pub fn update_status(
     player: Query<
         (
@@ -131,11 +181,12 @@ pub fn update_status(
     accounts: Query<&mercury::BankAccount, With<Player>>,
     names: Query<&MetaData>,
     hover: Res<Hover>,
+    air: Res<PlayerAir>,
     mut status: Query<&mut Text, (With<StatusText>, Without<HoverText>)>,
     mut hover_text: Query<&mut Text, (With<HoverText>, Without<StatusText>)>,
 ) {
     if let (Ok((meta, dmg, th, st, hands, combat, pilot)), Ok(mut t)) = (player.single(), status.single_mut()) {
-        let mut s = format!("{}\n{}", meta.name, health_line(dmg, th, st));
+        let mut s = format!("{}\n{}\n{}", meta.name, health_line(dmg, th, st), air_line(&air));
         if let Ok(a) = accounts.single() {
             s.push_str(&format!("\nBank: {} spesos", a.balance));
         }

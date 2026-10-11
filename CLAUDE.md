@@ -29,6 +29,8 @@ Headless screenshots (no GPU): install `mesa-vulkan-drivers libxkbcommon-x11-0`,
 - `astrolabe` — tiles, grids, map files, decals, migrations
 - `athanor` — simulation on `bevy_ecs` (all game systems)
 - `homunculus` — NPC HTN planner/utility AI/pathfinding
+- `mercury` — Frontier economy: bank, pricing, selling, shipyard
+- `alembic` — atmospherics: tile gas, LINDA, airtightness, breathing, barotrauma
 - `caput` — Bevy client
 
 ## Porting conventions
@@ -45,7 +47,7 @@ Headless screenshots (no GPU): install `mesa-vulkan-drivers libxkbcommon-x11-0`,
 - Game content we add goes in `resources/` as upstream-format YAML, never in Rust.
 - Update `docs/PORTING.md` when a system's status changes.
 - Crate/module names follow an alchemical/esoteric theme (vellum, grimoire,
-  athanor, homunculus...). Planned: `alembic` (atmos), `mercury` (Frontier economy/shipyard).
+  athanor, homunculus, mercury, alembic...).
 
 ## License
 
