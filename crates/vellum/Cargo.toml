@@ -1,0 +1,12 @@
+[package]
+name = "vellum"
+description = "Resource layer: layered resource roots (VFS), RSI sprite metadata, locale. ~ Robust ResourceManager/RSI."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+walkdir.workspace = true

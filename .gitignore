@@ -1,0 +1,4 @@
+/target
+/upstream
+*.png.tmp
+/screenshots/*.tmp

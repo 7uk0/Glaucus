@@ -1,0 +1,14 @@
+[package]
+name = "astrolabe"
+description = "Maps & grids: SS14 map file format (v7), tile chunks, tile definitions. ~ Robust MapLoader/MapManager."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+grimoire = { path = "../grimoire" }
+vellum = { path = "../vellum" }
+base64.workspace = true
+indexmap.workspace = true
+thiserror.workspace = true
+serde.workspace = true

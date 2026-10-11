@@ -1,0 +1,4 @@
+# Pinned upstream commits. Update with: tools/summon-upstream.sh --latest, then copy the printed hashes here.
+frontier=a4a6f4b20e5962117ea577a8175fc640dfcd3e5a
+robusttoolbox=feb9e1db69ab97acfd07580918f5d20ffaa6b770
+ss14=ac7a32eca60c3693e8abdba16b17e9a0743e3e9a
