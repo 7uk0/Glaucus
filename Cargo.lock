@@ -3033,6 +3033,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "homunculus"
+version = "0.1.0"
+dependencies = [
+ "athanor",
+ "bevy_app",
+ "bevy_ecs",
+ "bevy_math",
+ "grimoire",
+ "tracing",
+ "vellum",
+]
+
+[[package]]
 name = "icu_collections"
 version = "2.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
