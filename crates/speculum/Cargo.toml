@@ -1,0 +1,17 @@
+[package]
+name = "speculum"
+description = "The scrying mirror: a census of upstream components — who uses them, where upstream defines them, and whether they are ported."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+vellum = { path = "../vellum" }
+grimoire = { path = "../grimoire" }
+astrolabe = { path = "../astrolabe" }
+athanor = { path = "../athanor" }
+homunculus = { path = "../homunculus" }
+mercury = { path = "../mercury" }
+alembic = { path = "../alembic" }
+bevy_app.workspace = true
+walkdir.workspace = true

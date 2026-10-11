@@ -4973,6 +4973,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "speculum"
+version = "0.1.0"
+dependencies = [
+ "alembic",
+ "astrolabe",
+ "athanor",
+ "bevy_app",
+ "grimoire",
+ "homunculus",
+ "mercury",
+ "vellum",
+ "walkdir",
+]
+
+[[package]]
 name = "spin"
 version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"

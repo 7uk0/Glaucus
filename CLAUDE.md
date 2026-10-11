@@ -9,6 +9,15 @@ single-player with NPCs. Engine and game systems are reimplemented; **content
 (prototypes, maps, RSIs, locale, audio) is read from upstream checkouts, never
 vendored or converted.**
 
+## Memory: read the Akasha first
+
+`docs/akasha/` is this project's long-term memory: who the user is and what
+they decided, a session journal, build/environment gotchas, a map of upstream,
+per-system knowledge, and a census of every upstream component
+(`docs/akasha/census.md`, regenerate with `cargo run --release -p speculum`).
+**Read `docs/akasha/README.md` at the start of a session and write down what
+you learn as you go**, in the same commit as the code.
+
 ## Setup
 
 ```bash
@@ -16,6 +25,7 @@ tools/summon-upstream.sh            # fetch pinned upstream into ./upstream (git
 cargo build -p caput                # client (Bevy 0.20; first build ~10 min)
 cargo run --release -p caput        # play
 cargo test --workspace              # tests; upstream-backed ones skip without ./upstream
+tools/summon-wiki.py frontier       # mirror the Frontier wiki (pages + images) into upstream/wiki/
 ```
 
 Linux build deps: `pkg-config libasound2-dev libudev-dev libwayland-dev libxkbcommon-dev`.
@@ -31,6 +41,7 @@ Headless screenshots (no GPU): install `mesa-vulkan-drivers libxkbcommon-x11-0`,
 - `homunculus` — NPC HTN planner/utility AI/pathfinding
 - `mercury` — Frontier economy: bank, pricing, selling, shipyard
 - `alembic` — atmospherics: tile gas, LINDA, airtightness, breathing, barotrauma
+- `speculum` — dev tool: component census (what's ported, where upstream defines it)
 - `caput` — Bevy client
 
 ## Porting conventions
