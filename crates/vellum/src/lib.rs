@@ -201,6 +201,13 @@ impl Resources {
         if content.is_dir() {
             res.add_root(content);
         }
+        // Caput Mortuum's own content overlay (`<repo>/resources`), layered last.
+        if let Some(repo) = upstream.parent() {
+            let overlay = repo.join("resources");
+            if overlay.join("Prototypes").is_dir() {
+                res.add_root(overlay);
+            }
+        }
         res
     }
 }

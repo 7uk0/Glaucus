@@ -22,6 +22,9 @@
 //! * [`doors`] — doors and airlocks (`SharedDoorSystem`)
 //! * [`factions`] — NPC factions (`NpcFactionSystem`)
 //! * [`spawners`] — map-init spawners (`ConditionalSpawnerSystem`)
+//! * [`inventory`] — inventories, clothing, loadouts (`InventorySystem`)
+//! * [`naming`] — random names from datasets (`RandomMetadata`)
+//! * [`sector`] — single-player sector setup (stand-in for `NFAdventureRule`)
 
 pub mod combat;
 pub mod content;
@@ -30,10 +33,13 @@ pub mod doors;
 pub mod events;
 pub mod factions;
 pub mod interaction;
+pub mod inventory;
 pub mod map_loader;
 pub mod movement;
+pub mod naming;
 pub mod physics;
 pub mod rng;
+pub mod sector;
 pub mod spawn;
 pub mod spawners;
 pub mod transform;
@@ -164,6 +170,8 @@ impl Plugin for AthanorPlugin {
                 doors::door_sync_collision,
                 doors::bump_open,
                 doors::door_update,
+                naming::resolve_names,
+                inventory::resolve_loadouts,
             )
                 .chain()
                 .in_set(SimSet::Gameplay),
@@ -184,6 +192,8 @@ pub fn register_components(reg: &mut spawn::ComponentFactories) {
     doors::register(reg);
     factions::register(reg);
     spawners::register(reg);
+    naming::register(reg);
+    inventory::register(reg);
 }
 
 fn advance_clock(mut clock: ResMut<SimClock>) {

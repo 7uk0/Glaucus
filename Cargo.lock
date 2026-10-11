@@ -2123,7 +2123,13 @@ dependencies = [
 name = "caput"
 version = "0.1.0"
 dependencies = [
+ "astrolabe",
+ "athanor",
  "bevy",
+ "grimoire",
+ "homunculus",
+ "tracing",
+ "vellum",
 ]
 
 [[package]]

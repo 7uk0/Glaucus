@@ -1,0 +1,19 @@
+caput-mortuum — single-player SS14/Frontier in Rust
+
+USAGE:
+    caput-mortuum [OPTIONS]
+
+OPTIONS:
+    --outpost <res path>    station map        (default /Maps/_NF/Outpost/frontier.yml)
+    --shuttle <res path>    shuttle to park nearby, or "none" (default /Maps/_NF/Shuttles/kestrel.yml)
+    --player <proto>        player entity prototype      (default MobHuman)
+    --npcs <n>              NPC contractors on the outpost (default 12)
+    --carp <n>              space carp around the outpost  (default 4)
+    --seed <n>              world seed
+    --size <WxH>            window size (default 1600x900)
+    --screenshot <file>     render --frames frames, save a PNG, exit
+    --frames <n>            frames before the screenshot (default 90)
+
+CONTROLS:
+    WASD move · Shift walk · click interact · Shift+click examine
+    R combat mode · Q drop · X swap hands · Z use in hand · wheel zoom · F12 screenshot

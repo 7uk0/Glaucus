@@ -1,6 +1,6 @@
 [package]
 name = "caput"
-description = "Caput Mortuum game client (Bevy)."
+description = "Caput Mortuum game client (Bevy): renders the athanor simulation with upstream SS14/Frontier sprites."
 version.workspace = true
 edition.workspace = true
 license.workspace = true
@@ -10,4 +10,10 @@ name = "caput-mortuum"
 path = "src/main.rs"
 
 [dependencies]
+vellum = { path = "../vellum" }
+grimoire = { path = "../grimoire" }
+astrolabe = { path = "../astrolabe" }
+athanor = { path = "../athanor" }
+homunculus = { path = "../homunculus" }
 bevy = { workspace = true, features = ["2d", "ui", "audio"] }
+tracing.workspace = true

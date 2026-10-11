@@ -80,6 +80,10 @@ impl MovementSpeedModifier {
     }
 }
 
+/// `MovementAlwaysTouching`: can push off nothing (flying mobs, carp).
+#[derive(Component, Debug, Clone, Copy, Default)]
+pub struct AlwaysTouching;
+
 /// Marker for mobs that use mob movement (`MobMoverComponent`).
 #[derive(Component, Debug, Clone, Copy, Default)]
 pub struct MobMover;
@@ -94,6 +98,9 @@ pub fn register(reg: &mut ComponentFactories) {
     reg.register("MobMover", |e, _, _| {
         e.insert(MobMover);
     });
+    reg.register("MovementAlwaysTouching", |e, _, _| {
+        e.insert(AlwaysTouching);
+    });
     data_component!(reg, "MovementSpeedModifier", MovementSpeedModifier);
 }
 
@@ -102,11 +109,11 @@ pub fn mover_system(
     clock: Res<SimClock>,
     content: Res<Content>,
     grids: Query<&Grid>,
-    mut q: Query<(&InputMover, Option<&MovementSpeedModifier>, &mut Body, &mut Xform)>,
+    mut q: Query<(&InputMover, Option<&MovementSpeedModifier>, &mut Body, &mut Xform, Has<AlwaysTouching>)>,
 ) {
     let dt = clock.dt;
     let def = MovementSpeedModifier::default();
-    for (mover, speed, mut body, mut xform) in q.iter_mut() {
+    for (mover, speed, mut body, mut xform, always_touching) in q.iter_mut() {
         if xform.anchored {
             continue;
         }
@@ -129,7 +136,7 @@ pub fn mover_system(
             let walk = speed.base_weightless_modifier * speed.walk_speed();
             let sprint = speed.base_weightless_modifier * speed.sprint_speed();
             let wish = wish_in * if mover.walking { walk } else { sprint };
-            let friction = if on_grid {
+            let friction = if on_grid || always_touching {
                 if wish != Vec2::ZERO {
                     speed.base_weightless_friction
                 } else {
@@ -154,7 +161,7 @@ pub fn mover_system(
             friction = friction.min(accel);
         }
         apply_friction(speed.minimum_friction_speed, dt, friction, &mut velocity);
-        let touching = !weightless || on_grid;
+        let touching = !weightless || on_grid || always_touching;
         if touching {
             accelerate(&mut velocity, wish, accel, dt);
         }

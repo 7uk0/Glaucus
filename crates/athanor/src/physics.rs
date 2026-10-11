@@ -402,6 +402,46 @@ fn push_obstacle(world: &World, e: Entity, layer: u32, mask: u32, out: &mut Vec<
     }
 }
 
+/// Obstacles for a mover floating in a map (off-grid): hard fixtures of every
+/// nearby grid, transformed into world space. Without this, things in space
+/// would pass straight through hulls.
+fn obstacles_off_grid(world: &World, map: Entity, pos: Vec2, reach: f32, me: Entity, layer: u32, mask: u32, out: &mut Vec<Obstacle>) {
+    out.clear();
+    let grids = world.get_resource::<crate::transform::GridIndex>().map(|g| g.grids.clone()).unwrap_or_default();
+    let mut local = Vec::new();
+    for g in grids {
+        let gp = crate::transform::world_pose_of(world, g);
+        if gp.map != Some(map) {
+            continue;
+        }
+        let lp = crate::transform::to_local(&gp, pos);
+        // Cheap reject: is the point near any of this grid's tiles?
+        let Some(grid) = world.get::<Grid>(g) else { continue };
+        let t = tile_of(lp);
+        let near = (-1..=1).any(|dx| (-1..=1).any(|dy| grid.has_tile(t + IVec2::new(dx, dy))));
+        if !near {
+            continue;
+        }
+        obstacles_near(world, g, lp, reach, me, layer, mask, &mut local);
+        for o in local.drain(..) {
+            let corners = [o.min, Vec2::new(o.max.x, o.min.y), o.max, Vec2::new(o.min.x, o.max.y)];
+            let mut a = Vec2::splat(f32::MAX);
+            let mut b = Vec2::splat(f32::MIN);
+            for c in corners {
+                let w = crate::transform::to_world(&gp, c);
+                a = a.min(w);
+                b = b.max(w);
+            }
+            out.push(Obstacle {
+                entity: o.entity,
+                min: a,
+                max: b,
+                circle: o.circle.map(|(c, r)| (crate::transform::to_world(&gp, c), r)),
+            });
+        }
+    }
+}
+
 /// Push a circle out of an obstacle. Returns the correction vector.
 fn resolve_circle(center: Vec2, r: f32, o: &Obstacle) -> Option<Vec2> {
     if let Some((c, cr)) = o.circle {
@@ -468,7 +508,8 @@ pub fn physics_step(world: &mut World) {
         let mut pos = x.pos;
         let delta = body.velocity * dt;
         let is_grid = world.get::<Grid>(parent).is_some();
-        let collides = body.can_collide && is_grid && mask != 0;
+        let is_map = world.get::<crate::transform::MapRoot>(parent).is_some();
+        let collides = body.can_collide && (is_grid || is_map) && mask != 0;
         let steps = ((delta.length() / (r * 0.5).max(0.05)).ceil() as usize).clamp(1, 16);
         let step = delta / steps as f32;
         for _ in 0..steps {
@@ -476,7 +517,11 @@ pub fn physics_step(world: &mut World) {
             if !collides {
                 continue;
             }
-            obstacles_near(world, parent, pos, r + 1.0, e, layer, mask, &mut obstacles);
+            if is_grid {
+                obstacles_near(world, parent, pos, r + 1.0, e, layer, mask, &mut obstacles);
+            } else {
+                obstacles_off_grid(world, parent, pos, r + 1.0, e, layer, mask, &mut obstacles);
+            }
             for _ in 0..4 {
                 let mut moved = false;
                 for o in &obstacles {

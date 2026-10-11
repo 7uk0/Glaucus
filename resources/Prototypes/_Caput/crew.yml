@@ -1,0 +1,42 @@
+# Caput Mortuum single-player content.
+#
+# Upstream SS14 has no NPC crew: every crewmember is a player. For a
+# single-player sector we add contractors with HTN brains, written in the
+# same data format upstream uses for its mobs. They defend themselves
+# against hostiles (MeleeCombatCompound) and otherwise wander and idle.
+
+- type: htnCompound
+  id: CaputCrewCompound
+  branches:
+  - tasks:
+    - !type:HTNCompoundTask
+      task: MeleeCombatCompound
+  - tasks:
+    - !type:HTNCompoundTask
+      task: IdleCompound
+
+- type: entity
+  parent: MobHuman
+  id: CaputMobContractor
+  name: contractor
+  suffix: NPC
+  description: A Frontier contractor going about their business.
+  components:
+  - type: HTN
+    rootTask:
+      task: CaputCrewCompound
+    blackboard:
+      IdleRange: !type:Single
+        12
+      MinimumIdleTime: !type:Single
+        3
+      MaximumIdleTime: !type:Single
+        12
+  - type: CaputRandomName
+  - type: Loadout
+    prototypes:
+    - CaputContractorGearGrey
+    - CaputContractorGearBlue
+    - CaputContractorGearOrange
+    - CaputContractorGearMedic
+    - CaputContractorGearMerc

@@ -1,0 +1,46 @@
+# Starting gear for the player and NPC contractors (upstream items only).
+
+- type: startingGear
+  id: CaputPlayerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorGrey
+    shoes: ClothingShoesColorBlack
+    back: ClothingBackpack
+    gloves: ClothingHandsGlovesColorBlack
+
+- type: startingGear
+  id: CaputContractorGearGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorGrey
+    shoes: ClothingShoesColorBlack
+    back: ClothingBackpack
+
+- type: startingGear
+  id: CaputContractorGearBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorDarkBlue
+    shoes: ClothingShoesColorBrown
+    back: ClothingBackpackSatchel
+
+- type: startingGear
+  id: CaputContractorGearOrange
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorOrange
+    shoes: ClothingShoesBootsWork
+    head: ClothingHeadHatHardhatOrange
+    back: ClothingBackpackDuffel
+
+- type: startingGear
+  id: CaputContractorGearMedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    shoes: ClothingShoesColorWhite
+    back: ClothingBackpackMedical
+
+- type: startingGear
+  id: CaputContractorGearMerc
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    shoes: ClothingShoesBootsMercenary
+    gloves: ClothingHandsMercenaryGlovesCombat
+    back: ClothingBackpackMercenary
