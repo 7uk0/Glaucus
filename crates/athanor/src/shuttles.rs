@@ -451,18 +451,107 @@ pub fn shuttle_movement(world: &mut World) {
         if body.angular_velocity.abs() < 1e-5 {
             body.angular_velocity = 0.0;
         }
-        if let Some(mut x) = world.get_mut::<Xform>(s) {
-            let com_world = x.pos + rotate(body.com, x.rot);
-            let new_rot = x.rot + body.angular_velocity * dt;
+        let old = *world.get::<Xform>(s).unwrap();
+        if body.velocity != Vec2::ZERO || body.angular_velocity != 0.0 {
+            let com_world = old.pos + rotate(body.com, old.rot);
+            let new_rot = old.rot + body.angular_velocity * dt;
             let new_com = com_world + body.velocity * dt;
-            x.rot = new_rot;
-            x.pos = new_com - rotate(body.com, new_rot);
+            let new_pos = new_com - rotate(body.com, new_rot);
+            if let Some(mut x) = world.get_mut::<Xform>(s) {
+                x.rot = new_rot;
+                x.pos = new_pos;
+            }
+            if let Some(other) = overlapping_grid(world, s) {
+                // Hit something: undo the step and resolve the impact.
+                if let Some(mut x) = world.get_mut::<Xform>(s) {
+                    *x = old;
+                }
+                impact(world, s, &mut body, other);
+            }
         }
         world.entity_mut(s).insert(body);
         if let Some(mut sh) = world.get_mut::<Shuttle>(s) {
             sh.firing = firing;
             sh.firing_angular = firing_angular;
         }
+    }
+}
+
+/// Fraction of relative velocity kept after a hull-on-hull hit.
+pub const RESTITUTION: f32 = 0.15;
+
+/// Does any tile of grid `g` overlap a tile of another grid on its map?
+pub fn overlapping_grid(world: &World, g: Entity) -> Option<Entity> {
+    let gp = world_pose_of(world, g);
+    let grid = world.get::<Grid>(g)?;
+    let (x0, y0, x1, y1) = grid.tiles.bounds()?;
+    let center_local = Vec2::new((x0 + x1 + 1) as f32, (y0 + y1 + 1) as f32) * 0.5;
+    let radius = Vec2::new((x1 - x0 + 1) as f32, (y1 - y0 + 1) as f32).length() * 0.5 + 1.0;
+    let center = crate::transform::to_world(&gp, center_local);
+    let others = world.get_resource::<crate::transform::GridIndex>().map(|i| i.grids.clone()).unwrap_or_default();
+    for o in others {
+        if o == g {
+            continue;
+        }
+        let op = world_pose_of(world, o);
+        if op.map != gp.map {
+            continue;
+        }
+        let Some(og) = world.get::<Grid>(o) else { continue };
+        let Some((a0, b0, a1, b1)) = og.tiles.bounds() else { continue };
+        let oc_local = Vec2::new((a0 + a1 + 1) as f32, (b0 + b1 + 1) as f32) * 0.5;
+        let oradius = Vec2::new((a1 - a0 + 1) as f32, (b1 - b0 + 1) as f32).length() * 0.5 + 1.0;
+        if crate::transform::to_world(&op, oc_local).distance(center) > radius + oradius {
+            continue;
+        }
+        // Narrow phase: tile centres of ours inside a tile of theirs, with a
+        // little slack so grazing corners do not count.
+        for ((x, y), _) in grid.tiles.iter() {
+            let w = crate::transform::to_world(&gp, Vec2::new(x as f32 + 0.5, y as f32 + 0.5));
+            let l = crate::transform::to_local(&op, w);
+            let t = tile_of(l);
+            if og.has_tile(t) {
+                let inner = l - Vec2::new(t.x as f32 + 0.5, t.y as f32 + 0.5);
+                if inner.x.abs() < 0.45 && inner.y.abs() < 0.45 {
+                    return Some(o);
+                }
+            }
+        }
+    }
+    None
+}
+
+/// Inelastic hull impact (a slim port of `ShuttleSystem.Impact`): exchange
+/// momentum with a moving shuttle, or rebound off a station.
+fn impact(world: &mut World, s: Entity, body: &mut GridBody, other: Entity) {
+    let speed = body.velocity.length();
+    match world.get::<GridBody>(other).cloned() {
+        Some(mut ob) if world.get::<Shuttle>(other).is_some() => {
+            let m1 = body.mass;
+            let m2 = ob.mass.max(0.001);
+            let p = body.velocity * m1 + ob.velocity * m2;
+            let vcm = p / (m1 + m2);
+            body.velocity = vcm + (vcm - body.velocity) * RESTITUTION;
+            ob.velocity = vcm + (vcm - ob.velocity) * RESTITUTION;
+            ob.angular_velocity *= 0.5;
+            world.entity_mut(other).insert(ob);
+        }
+        _ => {
+            body.velocity = -body.velocity * RESTITUTION;
+        }
+    }
+    body.angular_velocity = -body.angular_velocity * RESTITUTION;
+    if speed > 0.5 {
+        world.write_message(crate::events::SoundAt {
+            path: "MetalThud".into(),
+            at: s,
+        });
+        let name = world.get::<crate::spawn::MetaData>(other).map(|m| m.name.clone()).unwrap_or_default();
+        world.write_message(crate::events::ChatLine {
+            speaker: None,
+            channel: crate::events::ChatChannel::Server,
+            text: format!("The hull shudders as it strikes the {name}!"),
+        });
     }
 }
 

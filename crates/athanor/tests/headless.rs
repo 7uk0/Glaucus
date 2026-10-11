@@ -273,3 +273,32 @@ fn piloting_a_shuttle_moves_it_and_its_crew() {
     let rot1 = app.world().get::<Xform>(grid).unwrap().rot;
     assert!(rot1 > rot0 + 0.05, "gyroscopes turn the ship CCW: {rot0} -> {rot1}");
 }
+
+#[test]
+fn shuttles_cannot_fly_through_stations() {
+    use athanor::shuttles::GridBody;
+    let Some(c) = content() else { return };
+    let mut app = headless_app(c);
+    let station = load_map_path(app.world_mut(), "/Maps/_NF/POI/beacon.yml", None, LoadOptions::default()).unwrap().grids[0];
+    let map = app.world().get::<Xform>(station).unwrap().parent.unwrap();
+    let sb = app.world().get::<Grid>(station).unwrap().tiles.bounds().unwrap();
+    // Park the shuttle west of the station, then fly east into it.
+    let opts = LoadOptions {
+        offset: athanor::transform::world_pose_of(app.world(), station).pos + Vec2::new(sb.0 as f32 - 40.0, (sb.1 + sb.3) as f32 * 0.5),
+        ..Default::default()
+    };
+    let ship = load_map_path(app.world_mut(), "/Maps/_NF/Shuttles/kestrel.yml", Some(map), opts).unwrap().grids[0];
+    app.update();
+    // Shove it at the station directly (no pilot needed).
+    for _ in 0..(30 * 10) {
+        if let Some(mut b) = app.world_mut().get_mut::<GridBody>(ship) {
+            if b.velocity.x >= 0.0 {
+                b.velocity = Vec2::new(10.0, 0.0);
+            }
+        }
+        app.update();
+        assert!(athanor::shuttles::overlapping_grid(app.world(), ship).is_none(), "hulls must never interpenetrate");
+    }
+    let x = app.world().get::<Xform>(ship).unwrap().pos.x;
+    eprintln!("ship x after ramming: {x}");
+}
