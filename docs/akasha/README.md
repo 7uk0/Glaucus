@@ -13,11 +13,12 @@ code.
 
 | Page | What's in it |
 |---|---|
+| [next.md](next.md) | **Start here:** current state, what to do next, open threads, handy commands |
 | [user.md](user.md) | Who the user is, how they want to work, decisions they made |
 | [journal.md](journal.md) | Chronological log of sessions: what was done, what's next |
 | [environment.md](environment.md) | Build/run/test gotchas, disk, headless rendering, network |
 | [upstream.md](upstream.md) | Map of the upstream codebases: where things live, how to find them |
-| [systems/](systems/) | One page per game system: what it's for, how upstream does it, how we ported it |
+| [systems/](systems/) | One page per game system: what it's for, how upstream does it, how we ported it. Atmospherics, power, worldgen, docking, rendering, mining (research), Frontier gameplay |
 | [wiki.md](wiki.md) | The SS14 and Frontier wikis: where they are, how they were pulled, what's in them |
 
 ## Writing rules

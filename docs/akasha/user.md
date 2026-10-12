@@ -41,3 +41,7 @@
 - Code + memory live in `7uk0/Glaucus`, branch `ccr-9978bc94-j2gdmx` until a
   dedicated repo exists. Commit and push there regularly.
 - The user wants short, straight answers when they ask questions.
+- 2026-10-12: "Save memory as much as you can." Workers restart without
+  warning. Commit and push memory (this Akasha, especially `next.md`) after
+  every work block, not just at milestones. Keep tools in `tools/`, not the
+  scratchpad.

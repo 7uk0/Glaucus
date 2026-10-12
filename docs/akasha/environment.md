@@ -24,7 +24,10 @@ xvfb-run -a -s "-screen 0 1600x900x24" env WGPU_BACKEND=vulkan \
   target/debug/caput-mortuum --screenshot out.png --frames 150
 ```
 
-ALSA errors in the log are harmless (no sound card). Parallax must sit inside
+ALSA errors in the log are harmless (no sound card). For big maps, give Xvfb
+a big screen (`2600x2600x24`): `--render-map` sizes the window to the map.
+Don't rebuild `caput` while a background batch render is running, or later
+launches will use the new binary. Parallax must sit inside
 the camera clip range (z = -990, not -2000).
 
 ## Disk (cloud container)
@@ -33,6 +36,10 @@ the camera clip range (z = -990, not -2000).
 - **One cargo target dir only.** A second `CARGO_TARGET_DIR` doubles usage
   (13 GB + 10 GB filled the disk on 2026-10-11). Use the repo's `target/`.
 - `upstream/` holds symlinks into the scratchpad (Frontier ~1 GB, RT, SS14).
+- Old client binaries pile up in `target/debug/deps/caput_mortuum-*` (~1.7 GB
+  each, one per rebuild). On 2026-10-12 `deps` reached 20 GB and the disk had
+  2.4 GB left. Delete all but the newest ones, plus `target/debug/incremental`.
+  Also delete test executables in `deps` older than about 2 hours, then rebuild.
 
 ## Shell / harness
 

@@ -113,3 +113,14 @@ chemistry/medical → food → construction.
 - Rendered all 112 ships with shipyard renders and compared per pixel. All
   sizes match. 103 ships differ on fewer than 3% of pixels, and the
   differences are explained (`systems/rendering.md`).
+
+## 2026-10-12 — Memory save after a worker restart
+
+- The worker restarted while mining research was in progress. Nothing was
+  lost: docking was already committed (1bf5cd9).
+- The user asked to "save memory as much as you can". Added:
+  - `next.md`: handoff page with state, next steps, open threads and commands;
+  - `systems/mining.md`: everything read about upstream mining, with a port plan;
+  - `tools/conjure-fleet.sh` and `tools/catoptromancy.py`: the batch render
+    and compare tools, moved out of the scratchpad;
+  - disk and batch-render gotchas in `environment.md`.
