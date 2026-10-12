@@ -14,7 +14,7 @@ vendored or converted.**
 `docs/akasha/` is this project's long-term memory: who the user is and what
 they decided, a session journal, build/environment gotchas, a map of upstream,
 per-system knowledge, and a census of every upstream component
-(`docs/akasha/census.md`, regenerate with `cargo run --release -p speculum`).
+(`docs/akasha/census.md`, regenerate with `cargo run --release -p speculum --bin speculum`).
 **Read `docs/akasha/README.md` at the start of a session and write down what
 you learn as you go**, in the same commit as the code.
 
