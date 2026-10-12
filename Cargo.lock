@@ -5020,6 +5020,7 @@ dependencies = [
  "astrolabe",
  "athanor",
  "bevy_app",
+ "demiurge",
  "grimoire",
  "homunculus",
  "mercury",
