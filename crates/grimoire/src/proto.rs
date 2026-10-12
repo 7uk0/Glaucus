@@ -146,6 +146,14 @@ const KIND_RULES: &[(&str, &[&str], &[&str])] = &[
     ("loadout", &[], &["encryptionKeys", "implants", "cartridges"]),
 ];
 
+/// `ComponentRegistry` fields, merged per component type on inheritance
+/// (entity `components`; `[AlwaysPushInheritance]` registries on other kinds).
+const REGISTRY_FIELDS: &[(&str, &str)] = &[
+    ("entity", "components"),
+    ("spaceBiome", "chunkComponents"),
+    ("pointOfInterest", "addComponents"),
+];
+
 /// Component fields with `[AlwaysPushInheritance]`.
 const COMPONENT_ALWAYS_PUSH: &[(&str, &str)] = &[
     ("UserInterface", "interfaces"),
@@ -400,7 +408,7 @@ pub fn push_inheritance(kind: &str, child: &Mapping, parent: &Mapping) -> Mappin
                 out.insert(k.clone(), pv.clone());
             }
             Some(cv) => {
-                if kind == "entity" && k == "components" {
+                if REGISTRY_FIELDS.contains(&(kind, k.as_str())) {
                     *cv = merge_component_registry(cv, pv);
                 } else if always.contains(&k.as_str()) {
                     *cv = combine(cv, pv);

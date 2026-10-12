@@ -221,20 +221,35 @@ pub fn unanchor(world: &mut World, e: Entity) {
 }
 
 /// Delete an entity and everything parented to it, unhooking grid anchors.
+/// Children are found with one pass over transforms, so deleting a grid with
+/// thousands of entities is linear.
 pub fn delete(world: &mut World, e: Entity) {
-    let children: Vec<Entity> = {
+    let mut children: HashMap<Entity, Vec<Entity>> = HashMap::new();
+    {
         let mut q = world.query::<(Entity, &Xform)>();
-        q.iter(world).filter(|(_, x)| x.parent == Some(e)).map(|(c, _)| c).collect()
-    };
-    for c in children {
-        delete(world, c);
+        for (c, x) in q.iter(world) {
+            if let Some(p) = x.parent {
+                children.entry(p).or_default().push(c);
+            }
+        }
     }
-    if world.get::<Xform>(e).is_some_and(|x| x.anchored) {
-        unanchor(world, e);
+    // Depth-first order, then delete leaves first.
+    let mut order = Vec::new();
+    let mut stack = vec![e];
+    while let Some(n) = stack.pop() {
+        order.push(n);
+        if let Some(cs) = children.get(&n) {
+            stack.extend(cs.iter().copied());
+        }
     }
-    if world.get_entity(e).is_ok() {
-        world.trigger(Deleting { entity: e });
-        world.despawn(e);
+    for n in order.into_iter().rev() {
+        if world.get::<Xform>(n).is_some_and(|x| x.anchored) {
+            unanchor(world, n);
+        }
+        if world.get_entity(n).is_ok() {
+            world.trigger(Deleting { entity: n });
+            world.despawn(n);
+        }
     }
 }
 

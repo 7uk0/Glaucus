@@ -1,0 +1,19 @@
+[package]
+name = "demiurge"
+description = "World generation: Frontier's points of interest and SS14's chunked space worldgen (biomes, noise, Poisson-placed asteroids and wrecks, locality loading, debris GC). ~ Content.Server/Worldgen + _NF/GameRule PointOfInterestSystem."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+athanor = { path = "../athanor" }
+grimoire = { path = "../grimoire" }
+astrolabe = { path = "../astrolabe" }
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_math.workspace = true
+tracing.workspace = true
+fastnoise-lite = "1.1.1"
+
+[dev-dependencies]
+vellum = { path = "../vellum" }

@@ -45,3 +45,21 @@ sector generation (POIs, asteroid belts, wrecks) → docking → mining + PKA
 (ranged weapons) → salvage machines (techfab, reclaimer) → internals,
 jetpacks, magboots → lighting → cargo crate runs → expeditions →
 chemistry/medical → food → construction.
+
+## 2026-10-12 — Session 1, continued
+
+- Started `demiurge` (world generation): noise channels (FastNoiseLite),
+  `EntitySpawnCollectionCache`, Poisson sampler, chunk controller, biomes,
+  debris placement, blob floors, locality population, debris GC. **Work in
+  progress: `world.rs` is written but not yet wired into `lib.rs` or compiled;
+  `poi.rs` (Frontier POI placement) not written yet.** See
+  `systems/frontier-gameplay.md` for the rules being ported (POI groups and
+  distances, NF biomes near/mid/far, outpost dead zone).
+- grimoire: `chunkComponents` (spaceBiome) and `addComponents`
+  (pointOfInterest) now merge per component on inheritance.
+- athanor: `spawn::delete` is linear in subtree size; `transform::make_grid`.
+- The worker restarted several times; the user asked for plain status answers
+  and for the code + memory to be committed to one of their existing repos,
+  since `7uk0/Caput-Mortuum` can't be created from here. Pushed to
+  `7uk0/Glaucus`, branch `ccr-9978bc94-j2gdmx` (unrelated history; `master`
+  untouched). Move it to its own repo once one exists.

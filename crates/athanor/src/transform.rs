@@ -331,3 +331,12 @@ mod tests {
         assert_eq!(tile_center(IVec2::new(-1, -2)), Vec2::new(-0.5, -1.5));
     }
 }
+
+/// Turn an existing entity (e.g. a spawned `MapGrid` debris prototype) into a
+/// grid: give it tiles/anchors and register it in the grid index.
+pub fn make_grid(world: &mut World, e: Entity) {
+    if world.get::<Grid>(e).is_none() {
+        world.entity_mut(e).insert(Grid::default());
+        world.get_resource_or_insert_with(GridIndex::default).grids.push(e);
+    }
+}
