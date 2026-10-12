@@ -30,3 +30,14 @@
   `Co-Authored-By: Claude ... <noreply@anthropic.com>` + `Claude-Session: <link>`
   (use the exact lines the session's system reminder gives).
 - License is AGPL-3.0 (inherited from Frontier); keep MIT notices for SS14/RT.
+- 2026-10-12: "Keep going like you were, don't stop the rewrite till I tell you to."
+  **Goal: single-player with NPCs. No servers, no multiplayer, no netcode.**
+  "We can add anything we want after the full rewrite" → port upstream
+  faithfully first; custom features come after.
+- 2026-10-12: textures/rotation looked wrong in screenshots → compare against
+  real renders (`reference/wiki/frontier/images/Surveyor.png`, map renders);
+  "pull more images online for graphical reference". Use
+  `caput-mortuum --render-map /Maps/... --screenshot out.png` for 1:1 renders.
+- Code + memory live in `7uk0/Glaucus`, branch `ccr-9978bc94-j2gdmx` until a
+  dedicated repo exists. Commit and push there regularly.
+- The user wants short, straight answers when they ask questions.

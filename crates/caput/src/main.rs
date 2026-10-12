@@ -17,6 +17,7 @@ mod input;
 mod parallax;
 mod shipyard_ui;
 mod storage_ui;
+mod smoothing;
 mod sprites;
 mod textures;
 mod world_render;
@@ -32,6 +33,12 @@ use homunculus::HomunculusPlugin;
 pub const PX: f32 = 32.0;
 
 /// Upstream `DrawDepth` → z. Floors at the bottom, overlays on top.
+/// Clyde draws every grid's tiles first (`_drawGrids`), then
+/// `WorldSpaceBelowEntities` overlays (decals), then all entity sprites
+/// sorted by draw depth, so tiles and decals sit below every `DrawDepth`.
+pub const Z_TILES: f32 = -400.0;
+pub const Z_DECALS: f32 = -350.0;
+
 pub fn z_for(depth: &str) -> f32 {
     let d: i32 = match depth {
         "LowFloors" => -20,
@@ -64,7 +71,8 @@ pub fn z_for(depth: &str) -> f32 {
         "Effects" => 11,
         "Ghosts" => 12,
         "Overlays" => 13,
-        _ => 0,
+        // `ConstantSerializer` also takes raw values (DrawDepth.Default = 0).
+        other => other.parse().unwrap_or(0),
     };
     d as f32 * 10.0
 }
@@ -79,6 +87,15 @@ pub struct Args {
     pub zoom: f32,
     pub demo_pilot: bool,
     pub demo_shipyard: bool,
+    /// `--render-map PATH`: draw one map file top-down at 32 px/tile with no
+    /// HUD, player or stars, like upstream's `Content.MapRenderer`.
+    pub render_map: Option<String>,
+}
+
+/// Where the camera sits in `--render-map` mode.
+#[derive(Resource, Clone, Copy)]
+pub struct RenderView {
+    pub center: Vec2,
 }
 
 fn parse_args() -> Args {
@@ -91,6 +108,7 @@ fn parse_args() -> Args {
         zoom: 0.5,
         demo_pilot: false,
         demo_shipyard: false,
+        render_map: None,
     };
     let argv: Vec<String> = std::env::args().skip(1).collect();
     let mut i = 0;
@@ -114,6 +132,15 @@ fn parse_args() -> Args {
                 a.cfg.spawn_on_shuttle = true;
                 i += 1;
                 continue;
+            }
+            "--render-map" => {
+                a.render_map = Some(v.clone());
+                a.cfg.outpost = v;
+                a.cfg.shuttle = None;
+                a.cfg.contractors = 0;
+                a.cfg.vermin = 0;
+                a.cfg.carp = 0;
+                a.zoom = 1.0;
             }
             "--screenshot" => a.screenshot = Some(v),
             "--frames" => a.frames = v.parse().unwrap_or(a.frames),
@@ -154,6 +181,22 @@ fn main() {
         t.elapsed()
     );
 
+    let mut args = args;
+    if let Some(path) = &args.render_map
+        && let Ok(file) = astrolabe::map::MapFile::load(&content.res, &vellum::ResPath::new(path))
+        && let Some(g) = file.grids().next()
+        && let Ok(tiles) = file.grid_tiles(g, &content.tiles)
+    {
+        let (mut lo, mut hi) = (bevy::math::IVec2::MAX, bevy::math::IVec2::MIN);
+        for ((x, y), _) in tiles.iter() {
+            lo = lo.min(bevy::math::IVec2::new(x, y));
+            hi = hi.max(bevy::math::IVec2::new(x + 1, y + 1));
+        }
+        args.width = ((hi.x - lo.x) as f32 * PX) as u32;
+        args.height = ((hi.y - lo.y) as f32 * PX) as u32;
+    }
+    let render_mode = args.render_map.is_some();
+
     let mut app = App::new();
     app.add_plugins(
         DefaultPlugins
@@ -167,7 +210,7 @@ fn main() {
             })
             .set(ImagePlugin::default_nearest()),
     )
-    .insert_resource(ClearColor(Color::srgb(0.01, 0.01, 0.025)))
+    .insert_resource(ClearColor(if render_mode { Color::BLACK } else { Color::srgb(0.01, 0.01, 0.025) }))
     .add_plugins(AthanorPlugin {
         content,
         drive: DriveMode::RealTime {
@@ -186,10 +229,12 @@ fn main() {
     .init_resource::<textures::TextureCache>()
     .init_resource::<world_render::GridViews>()
     .init_resource::<sprites::SpriteViews>()
+    .init_resource::<smoothing::SmoothIndex>()
     .init_resource::<input::Hover>()
     .init_resource::<hud::ChatLog>()
     .init_resource::<audio::SoundCache>()
-    .add_systems(Startup, (setup_world, input::setup_camera, (hud::load_font, hud::setup_hud).chain(), parallax::setup_parallax))
+    .add_systems(Startup, (setup_world, input::setup_camera, hud::load_font))
+    .add_systems(Startup, (hud::setup_hud.after(hud::load_font), parallax::setup_parallax).run_if(move || !render_mode))
     .add_systems(
         Update,
         (
@@ -206,8 +251,8 @@ fn main() {
         (
             world_render::sync_grids,
             sprites::sync_sprite_views,
-            sprites::update_sprites,
             input::camera_follow,
+            sprites::update_sprites,
             parallax::update_parallax,
             hud::sample_player_air,
             hud::update_status,
@@ -231,6 +276,17 @@ fn main() {
 fn setup_world(world: &mut World) {
     let args = world.resource::<Args>().clone();
     match build_sector(world, &args.cfg) {
+        Ok(s) if args.render_map.is_some() => {
+            athanor::spawn::delete(world, s.player);
+            let g = world.get::<athanor::transform::Grid>(s.outpost).unwrap();
+            let (mut lo, mut hi) = (bevy::math::IVec2::MAX, bevy::math::IVec2::MIN);
+            for ((x, y), _) in g.tiles.iter() {
+                lo = lo.min(bevy::math::IVec2::new(x, y));
+                hi = hi.max(bevy::math::IVec2::new(x + 1, y + 1));
+            }
+            let pos = world.get::<athanor::transform::Xform>(s.outpost).unwrap().pos;
+            world.insert_resource(RenderView { center: pos + (lo + hi).as_vec2() / 2.0 });
+        }
         Ok(s) => {
             let n = world.query::<&athanor::spawn::EntityData>().iter(world).count();
             eprintln!("   sector ready: {n} entities, {} NPCs", s.npcs.len());

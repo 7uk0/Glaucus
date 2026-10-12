@@ -120,6 +120,30 @@ pub fn register(reg: &mut ComponentFactories) {
         }
         e.insert(nc);
     });
+    reg.register("CableVis", |e, node, _| {
+        e.insert(CableVis { node: node.get_str("node").unwrap_or("power").to_string(), mask: 0 });
+    });
+}
+
+/// `CableVisComponent` + the `WireVisVisuals.ConnectedMask` appearance data
+/// `CableVisSystem` computes from the node's reachable cables
+/// (`WireVisDirFlags`: N=1, S=2, E=4, W=8). The client picks
+/// `{statePrefix}{mask}` from it.
+#[derive(Component, Debug, Clone, Default)]
+pub struct CableVis {
+    pub node: String,
+    pub mask: u8,
+}
+
+/// `WireVisDirFlags` bit for a neighbour offset.
+pub fn wire_vis_bit(d: IVec2) -> u8 {
+    match (d.x, d.y) {
+        (0, 1) => 1,
+        (0, -1) => 2,
+        (1, 0) => 4,
+        (-1, 0) => 8,
+        _ => 0,
+    }
 }
 
 /// A node's identity: (entity, index in its container).
@@ -132,6 +156,8 @@ pub struct NodeNets {
     pub net_of: HashMap<NodeRef, usize>,
     /// Network index → (group, grid).
     pub nets: Vec<(NodeGroupId, Entity)>,
+    /// Cable node → `WireVisDirFlags` of the cables it reaches on other tiles.
+    pub cable_masks: HashMap<NodeRef, u8>,
 }
 
 #[derive(Clone, Copy)]
@@ -199,6 +225,7 @@ pub fn build(world: &mut World) -> NodeNets {
         by_grid.entry(*g).or_default().entry(*t).or_default().push(i);
     }
     let mut uf = Uf((0..placed.len()).collect());
+    let mut masks: HashMap<usize, u8> = HashMap::new();
     let empty: Vec<usize> = Vec::new();
     for tiles in by_grid.values() {
         let at = |t: IVec2| tiles.get(&t).unwrap_or(&empty);
@@ -237,8 +264,11 @@ pub fn build(world: &mut World) -> NodeNets {
                                 continue;
                             }
                             for &b in at(tile + d) {
-                                if placed[b].2.kind == NodeKind::Cable {
+                                if placed[b].2.kind == NodeKind::Cable && placed[b].2.group == pa.group {
                                     link(b, &mut uf);
+                                    // `ReachableNodes` is made symmetric upstream.
+                                    *masks.entry(a).or_insert(0) |= wire_vis_bit(d);
+                                    *masks.entry(b).or_insert(0) |= wire_vis_bit(-d);
                                 }
                             }
                         }
@@ -297,6 +327,10 @@ pub fn build(world: &mut World) -> NodeNets {
             out.nets.len() - 1
         });
         out.net_of.insert((p.entity, p.idx), n);
+    }
+    for (i, m) in masks {
+        let p = placed[i].2;
+        out.cable_masks.insert((p.entity, p.idx), m);
     }
     out
 }

@@ -10,7 +10,7 @@ use bevy::prelude::*;
 use grimoire::Node;
 
 use crate::textures::TextureCache;
-use crate::{z_for, PX};
+use crate::PX;
 
 /// Links a render root to its simulation grid.
 #[derive(Component)]
@@ -80,7 +80,7 @@ fn build_tiles(
     cache: &mut TextureCache,
     images: &mut Assets<Image>,
 ) {
-    let z = z_for("FloorTiles");
+    let z = crate::Z_TILES;
     let mut children = Vec::new();
     for ((x, y), tile) in grid.tiles.iter() {
         let Some(def) = content.tiles.get(tile.type_id) else { continue };
@@ -123,10 +123,13 @@ fn build_decals(
     cache: &mut TextureCache,
     images: &mut Assets<Image>,
 ) {
+    // `DecalOverlay` draws in (zIndex, decal id) order, which
+    // `read_decal_grid` already sorted; z follows that rank.
     let decals = astrolabe::read_decal_grid(decal_grid);
-    let base_z = z_for("FloorTiles") + 0.5;
+    let base_z = crate::Z_DECALS;
+    let step = 40.0 / decals.len().max(1) as f32;
     let mut children = Vec::new();
-    for d in decals {
+    for (rank, d) in decals.into_iter().enumerate() {
         let Some(proto) = content.protos.get("decal", &d.id) else { continue };
         let Some(sprite) = proto.get("sprite") else { continue };
         let tex_and_rect = if let (Some(rsi_path), Some(state)) = (sprite.get_str("sprite"), sprite.get_str("state")) {
@@ -159,7 +162,7 @@ fn build_decals(
                     Transform::from_translation(Vec3::new(
                         (d.pos.0 + 0.5) * PX,
                         (d.pos.1 + 0.5) * PX,
-                        base_z + d.z_index as f32 * 0.01,
+                        base_z + rank as f32 * step,
                     ))
                     .with_rotation(Quat::from_rotation_z(d.angle as f32)),
                 ))

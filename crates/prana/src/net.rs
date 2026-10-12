@@ -232,6 +232,19 @@ fn grid_revisions(world: &mut World) -> Vec<(Entity, u64)> {
 /// Rebuild networks and receiver links (`NodeGroupSystem` + `PowerNetSystem.ReconnectNetworks`).
 pub fn rebuild(world: &mut World) {
     let nodes = nadi::build(world);
+    // `CableVisSystem.UpdateAppearance` on `NodeGroupsRebuilt`.
+    let mut q = world.query::<(Entity, &nadi::NodeContainer, &mut nadi::CableVis)>();
+    for (e, nc, mut vis) in q.iter_mut(world) {
+        let mask = nc
+            .nodes
+            .iter()
+            .position(|n| n.name == vis.node)
+            .and_then(|i| nodes.cable_masks.get(&(e, i)).copied())
+            .unwrap_or(0);
+        if vis.mask != mask {
+            vis.mask = mask;
+        }
+    }
     let mut topo = PowerTopology { nodes, ..Default::default() };
     topo.nets = topo.nodes.nets.iter().map(|(g, _)| NetMembers { group: Some(*g), ..Default::default() }).collect();
 

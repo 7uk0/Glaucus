@@ -53,9 +53,14 @@ pub fn camera_follow(
     poses: Query<&WorldPose>,
     mut cam: Query<(&mut Transform, &mut Projection), With<MainCamera>>,
     mut wheel: MessageReader<MouseWheel>,
+    view: Option<Res<crate::RenderView>>,
 ) {
     let Ok((mut tf, mut proj)) = cam.single_mut() else { return };
-    if let Ok((p, x)) = player.single() {
+    if let Some(v) = view {
+        tf.translation.x = v.center.x * PX;
+        tf.translation.y = v.center.y * PX;
+        tf.rotation = Quat::IDENTITY;
+    } else if let Ok((p, x)) = player.single() {
         tf.translation.x = p.pos.x * PX;
         tf.translation.y = p.pos.y * PX;
         // Like SS14's eye: rotate with the grid you stand on, so "up" is

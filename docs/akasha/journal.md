@@ -63,3 +63,21 @@ chemistry/medical → food → construction.
   since `7uk0/Caput-Mortuum` can't be created from here. Pushed to
   `7uk0/Glaucus`, branch `ccr-9978bc94-j2gdmx` (unrelated history; `master`
   untouched). Move it to its own repo once one exists.
+
+## 2026-10-12 — Rendering fidelity pass
+
+- User: textures "rotating weirdly" in screenshots → compared against the
+  official Surveyor render. Fixed in order:
+  - noRot/snapCardinals/direction rotation (engine rules);
+  - IconSmooth rewritten as `caput/src/smoothing.rs`: all modes, DirOffset, edge rule;
+  - tiles and decals moved below every DrawDepth;
+  - decals drawn in (zIndex, id) order;
+  - SubFloorHide `visibleLayers` (vents and pumps show on floors);
+  - door draw depth and airlock lights;
+  - cable connection masks (prana `CableVis`);
+  - pipe colours.
+- Surveyor now matches the official render except power state and decal order.
+  The official render is unpowered, and MapRenderer's decal sort is unstable.
+- Rules written up in `systems/rendering.md`.
+- `--render-map PATH` renders a map 1:1 for comparisons. `speculum --bin scry`
+  prints an entity's resolved components.

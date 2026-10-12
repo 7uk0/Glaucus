@@ -2,7 +2,7 @@
 //! layers, draw depth, noRot...) and renders it with Bevy sprites, applying
 //! ports of the client visualizers that matter most:
 //!
-//! * `IconSmoothSystem` (walls, windows, tables: 4 corner layers),
+//! * `IconSmoothSystem` (walls, windows, tables, carpets; see [`crate::smoothing`]),
 //! * door visuals (`DoorVisualLayers`: closed/opening/open/closing),
 //! * `DamageStateVisuals` (alive/crit/dead mob states),
 //! * `HumanoidAppearance` (species body-part sprites with skin colour),
@@ -21,6 +21,7 @@ use bevy::prelude::*;
 use grimoire::{parse_color, Node};
 use vellum::rsi::{rsi_direction_for, RsiDirection};
 
+use crate::smoothing::{self, offset_rsi_dir, Corner, DirOffset, Placement, SmoothIndex, SmoothMode, SmoothSpec, Smoothed};
 use crate::textures::TextureCache;
 use crate::{z_for, PX};
 
@@ -35,8 +36,14 @@ pub struct LayerSpec {
     pub offset: Vec2,
     pub scale: Vec2,
     pub rotation: f32,
-    /// Fixed RSI direction (icon-smoothing corners).
-    pub fixed_dir: Option<RsiDirection>,
+    /// `Layer.DirOffset`: shifts which direction's frame is drawn.
+    pub dir_offset: DirOffset,
+    /// Icon-smoothing corner this layer shows (`CornerLayers`).
+    pub corner: Option<Corner>,
+    /// `EdgeLayer` direction flag (hidden when that side has a neighbour).
+    pub edge: Option<u8>,
+    /// Listed in `SubFloorHide.visibleLayers`: stays drawn under a floor.
+    pub subfloor_visible: bool,
     /// Inventory slot layer: (slot name, sub-layer index).
     pub slot: Option<(String, usize)>,
 }
@@ -48,17 +55,14 @@ pub struct SpriteSpec {
     pub depth: f32,
     pub color: [u8; 4],
     pub no_rot: bool,
+    /// `SpriteComponent.SnapCardinals`: rotate in quarter turns relative to the eye.
+    pub snap_cardinals: bool,
     pub offset: Vec2,
     pub scale: Vec2,
     pub visible: bool,
-    pub smooth: Option<SmoothSpec>,
-}
-
-#[derive(Debug, Clone)]
-pub struct SmoothSpec {
-    pub key: String,
-    pub base: String,
-    pub mode: String,
+    pub smooth: Option<Arc<SmoothSpec>>,
+    /// Some layer survives `SubFloorHide` covering (vents, pumps...).
+    pub subfloor_any_visible: bool,
 }
 
 fn parse_vec2(n: Option<&Node>, d: Vec2) -> Vec2 {
@@ -87,7 +91,10 @@ fn parse_layer(n: &Node) -> LayerSpec {
         offset: parse_vec2(n.get("offset"), Vec2::ZERO),
         scale: parse_vec2(n.get("scale"), Vec2::ONE),
         rotation: n.get("rotation").and_then(Node::as_angle).unwrap_or(0.0) as f32,
-        fixed_dir: None,
+        dir_offset: DirOffset::None,
+        corner: None,
+        edge: None,
+        subfloor_visible: false,
         slot: None,
     }
 }
@@ -96,7 +103,7 @@ fn parse_layer(n: &Node) -> LayerSpec {
 const SLOT_SUBLAYERS: usize = 3;
 
 impl SpriteSpec {
-    pub fn parse(sprite: &Node, data: &EntityData) -> SpriteSpec {
+    pub fn parse(sprite: &Node, smooth: Option<Arc<SmoothSpec>>, subfloor: Option<&Node>) -> SpriteSpec {
         let mut layers: Vec<LayerSpec> = Vec::new();
         for n in sprite.get("layers").and_then(Node::as_seq).unwrap_or_default() {
             let l = parse_layer(n);
@@ -123,47 +130,56 @@ impl SpriteSpec {
                 offset: Vec2::ZERO,
                 scale: Vec2::ONE,
                 rotation: 0.0,
-                fixed_dir: None,
+                dir_offset: DirOffset::None,
+                corner: None,
+                edge: None,
+                subfloor_visible: false,
                 slot: None,
             });
         }
-        let smooth = data.get("IconSmooth").and_then(|s| {
-            Some(SmoothSpec {
-                key: s.get_str("key")?.to_string(),
-                base: s.get_str("base").unwrap_or("").to_string(),
-                mode: s.get_str("mode").unwrap_or("Corners").to_string(),
-            })
-        });
-        if let Some(sm) = &smooth
-            && sm.mode == "Corners"
-        {
-            // SetCornerLayers: SE, NE, NW, SW with direction offsets.
-            for dir in [RsiDirection::South, RsiDirection::East, RsiDirection::North, RsiDirection::West] {
-                layers.push(LayerSpec {
-                    rsi: None,
-                    state: Some(format!("{}0", sm.base)),
-                    texture: None,
-                    map: vec![format!("corner:{}", dir as u8)],
-                    visible: true,
-                    color: [255; 4],
-                    offset: Vec2::ZERO,
-                    scale: Vec2::ONE,
-                    rotation: 0.0,
-                    fixed_dir: Some(dir),
-                    slot: None,
-                });
+        if let Some(sm) = &smooth {
+            if sm.edge {
+                for l in &mut layers {
+                    l.edge = l.map.iter().find_map(|m| smoothing::edge_layer_flag(m));
+                }
+            }
+            if sm.mode == SmoothMode::Corners {
+                // Frontier's `SetCornerLayers`: reuse layers already mapped to
+                // a corner, otherwise append SE, NE, NW, SW.
+                let state0 = format!("{}0", sm.base);
+                for (key, corner, offset) in smoothing::CORNER_LAYERS {
+                    let idx = match layers.iter().position(|l| l.map.iter().any(|m| m == key)) {
+                        Some(i) => i,
+                        None => {
+                            layers.push(parse_layer(&Node::Null));
+                            layers.last_mut().unwrap().map = vec![key.to_string()];
+                            layers.len() - 1
+                        }
+                    };
+                    let l = &mut layers[idx];
+                    l.state = Some(state0.clone());
+                    l.corner = Some(corner);
+                    l.dir_offset = offset;
+                }
             }
         }
+        let keep: Vec<String> = subfloor.and_then(|n| n.get("visibleLayers")).map(Node::as_str_list).unwrap_or_default();
+        for l in &mut layers {
+            l.subfloor_visible = l.map.iter().any(|m| keep.contains(m));
+        }
+        let subfloor_any_visible = layers.iter().any(|l| l.subfloor_visible);
         SpriteSpec {
             rsi: sprite.get_str("sprite").map(str::to_owned),
             layers,
             depth: z_for(sprite.get_str("drawdepth").unwrap_or("Objects")),
             color: sprite.get_str("color").and_then(parse_color).unwrap_or([255; 4]),
             no_rot: sprite.get("noRot").and_then(Node::as_bool).unwrap_or(false),
+            snap_cardinals: sprite.get("snapCardinals").and_then(Node::as_bool).unwrap_or(false),
             offset: parse_vec2(sprite.get("offset"), Vec2::ZERO),
             scale: parse_vec2(sprite.get("scale"), Vec2::ONE),
             visible: sprite.get("visible").and_then(Node::as_bool).unwrap_or(true),
             smooth,
+            subfloor_any_visible,
         }
     }
 }
@@ -190,25 +206,42 @@ pub struct SpriteView {
     pub spec: Arc<SpriteSpec>,
     pub layers: Vec<Entity>,
     pub layer_state: Vec<(String, f32)>,
-    pub smooth_cache: Option<(u64, [u8; 4])>,
+    pub smooth_cache: Option<(SmoothKey, Smoothed)>,
 }
+
+/// Everything a smoothing result depends on.
+type SmoothKey = (u64, u64, u32, bool, IVec2);
 
 /// sim entity → view entity.
 #[derive(Resource, Default)]
 pub struct SpriteViews(pub HashMap<Entity, Entity>);
 
-/// Create views for new sprite-bearing sim entities; drop views of deleted ones.
+/// Create views for new sprite-bearing sim entities; drop views of deleted
+/// ones. Also keeps the [`SmoothIndex`] of icon-smoothing entities.
+#[allow(clippy::type_complexity)]
 pub fn sync_sprite_views(
     mut commands: Commands,
     mut views: ResMut<SpriteViews>,
+    mut index: ResMut<SmoothIndex>,
     new: Query<(Entity, &EntityData), (Added<EntityData>, Without<Grid>)>,
-    all: Query<(), With<EntityData>>,
-    mut spec_cache: Local<HashMap<usize, Arc<SpriteSpec>>>,
+    mut removed: RemovedComponents<EntityData>,
+    mut spec_cache: Local<HashMap<usize, (Option<Arc<SpriteSpec>>, Option<Arc<SmoothSpec>>)>>,
 ) {
     for (e, data) in new.iter() {
-        let Some(sprite) = data.get("Sprite") else { continue };
         let key = Arc::as_ptr(&data.components) as usize;
-        let spec = spec_cache.entry(key).or_insert_with(|| Arc::new(SpriteSpec::parse(sprite, data))).clone();
+        let (spec, smooth) = spec_cache
+            .entry(key)
+            .or_insert_with(|| {
+                let smooth = data.get("IconSmooth").map(|s| Arc::new(SmoothSpec::parse(s, data.has("SmoothEdge"))));
+                let spec = data.get("Sprite").map(|sprite| Arc::new(SpriteSpec::parse(sprite, smooth.clone(), data.get("SubFloorHide"))));
+                (spec, smooth)
+            })
+            .clone();
+        if let Some(sm) = smooth {
+            index.specs.insert(e, sm);
+            index.generation += 1;
+        }
+        let Some(spec) = spec else { continue };
         let n = spec.layers.len();
         let layers: Vec<Entity> = (0..n)
             .map(|_| commands.spawn((Sprite::default(), Transform::default(), Visibility::Hidden)).id())
@@ -229,83 +262,66 @@ pub fn sync_sprite_views(
             .id();
         views.0.insert(e, view);
     }
-    let dead: Vec<Entity> = views.0.keys().copied().filter(|e| !all.contains(*e)).collect();
-    for e in dead {
+    for e in removed.read() {
         if let Some(v) = views.0.remove(&e) {
             commands.entity(v).despawn();
+        }
+        if index.specs.remove(&e).is_some() {
+            index.generation += 1;
         }
     }
 }
 
-fn door_state_name(d: &Door) -> &'static str {
-    match d.state {
-        DoorState::Opening => "opening",
-        DoorState::Open => "open",
-        DoorState::Closing => "closing",
-        DoorState::Denying => "deny",
-        _ => "closed",
-    }
+/// What the client `DoorSystem` + `AirlockSystem` appearance handlers decide.
+struct DoorVisual {
+    /// `DoorVisualLayers.Base` state.
+    base: String,
+    /// `DoorVisualLayers.BaseUnlit`: (state, visible).
+    unlit: (String, bool),
+    bolted: bool,
+    emergency: bool,
+    /// `OpenDrawDepth` / `ClosedDrawDepth` (both `Doors` by default).
+    depth: f32,
+    /// Base/unlit states are one-shot flicks (opening, closing, deny).
+    flick: bool,
 }
 
-fn smooth_neighbours(grid: &Grid, tile: IVec2, key: &str, smooth_keys: &HashMap<Entity, String>) -> [bool; 8] {
-    // N, NE, E, SE, S, SW, W, NW
-    let offs = [
-        IVec2::new(0, 1),
-        IVec2::new(1, 1),
-        IVec2::new(1, 0),
-        IVec2::new(1, -1),
-        IVec2::new(0, -1),
-        IVec2::new(-1, -1),
-        IVec2::new(-1, 0),
-        IVec2::new(-1, 1),
-    ];
-    let mut out = [false; 8];
-    for (i, o) in offs.iter().enumerate() {
-        out[i] = grid
-            .anchored_at(tile + *o)
-            .iter()
-            .any(|e| smooth_keys.get(e).is_some_and(|k| k == key));
+fn door_visual(d: &Door, data: &EntityData, powered: bool) -> DoorVisual {
+    let yaml = data.get("Door");
+    let get = |k: &str, def: &str| yaml.and_then(|n| n.get_str(k)).unwrap_or(def).to_string();
+    let open = d.state == DoorState::Open;
+    let depth_key = if open { "openDrawDepth" } else { "closedDrawDepth" };
+    let depth = z_for(yaml.and_then(|n| n.get_str(depth_key)).unwrap_or("Doors"));
+    let base = match d.state {
+        DoorState::Open => get("openSpriteState", "open"),
+        DoorState::Opening => get("openingSpriteState", "opening"),
+        DoorState::Closing => get("closingSpriteState", "closing"),
+        _ => get("closedSpriteState", "closed"),
+    };
+    let airlock = data.get("Airlock");
+    let aget = |k: &str, def: &str| airlock.and_then(|n| n.get_str(k)).unwrap_or(def).to_string();
+    let abool = |k: &str, def: bool| airlock.and_then(|n| n.get(k)).and_then(Node::as_bool).unwrap_or(def);
+    let (mut unlit_visible, mut bolted, mut emergency) = (false, false, false);
+    if airlock.is_some() && powered {
+        bolted = d.bolted && matches!(d.state, DoorState::Closed | DoorState::Welded);
+        emergency = abool("emergencyAccess", false);
+        unlit_visible = (matches!(d.state, DoorState::Closing | DoorState::Opening | DoorState::Denying)
+            || (open && abool("openUnlitVisible", false)))
+            && !bolted
+            && !emergency;
     }
-    out
-}
-
-/// `CalculateCornerFill` → states for corners (SE, NE, NW, SW).
-fn corner_fill(n: [bool; 8]) -> [u8; 4] {
-    let [north, ne, east, se, south, sw, west, nw] = n;
-    let (ccw, diag, cw) = (1u8, 2u8, 4u8);
-    let mut c_ne = 0;
-    let mut c_se = 0;
-    let mut c_sw = 0;
-    let mut c_nw = 0;
-    if north {
-        c_ne |= ccw;
-        c_nw |= cw;
-    }
-    if ne {
-        c_ne |= diag;
-    }
-    if east {
-        c_ne |= cw;
-        c_se |= ccw;
-    }
-    if se {
-        c_se |= diag;
-    }
-    if south {
-        c_se |= cw;
-        c_sw |= ccw;
-    }
-    if sw {
-        c_sw |= diag;
-    }
-    if west {
-        c_sw |= cw;
-        c_nw |= ccw;
-    }
-    if nw {
-        c_nw |= diag;
-    }
-    [c_se, c_ne, c_nw, c_sw]
+    let emergency = emergency
+        && abool("emergencyAccessLayer", true)
+        && !matches!(d.state, DoorState::Open | DoorState::Opening | DoorState::Closing)
+        && !bolted;
+    let unlit_state = match d.state {
+        DoorState::Opening => aget("openingSpriteState", "opening_unlit"),
+        DoorState::Closing | DoorState::Open => aget("closingSpriteState", "closing_unlit"),
+        DoorState::Denying => aget("denySpriteState", "deny_unlit"),
+        _ => aget("openingSpriteState", "opening_unlit"),
+    };
+    let flick = matches!(d.state, DoorState::Opening | DoorState::Closing | DoorState::Denying);
+    DoorVisual { base, unlit: (unlit_state, unlit_visible), bolted, emergency, depth, flick }
 }
 
 #[allow(clippy::too_many_arguments)]
@@ -324,41 +340,37 @@ pub fn update_sprites(
         Option<&MobState>,
         Has<InContainer>,
         Option<&athanor::storage::EntityStorage>,
+        Has<athanor::power::Unpowered>,
+        Option<&prana::nadi::CableVis>,
     )>,
     grids: Query<&Grid>,
+    camera: Query<&Transform, (With<crate::input::MainCamera>, Without<SpriteView>, Without<Sprite>)>,
     inventories: Query<&athanor::inventory::Inventory>,
     clothes: Query<(&athanor::inventory::Clothing, &EntityData)>,
-    smoothers: Query<(Entity, &EntityData)>,
-    mut smooth_keys: Local<HashMap<Entity, String>>,
-    mut smooth_keys_frame: Local<u32>,
+    smooth_index: Res<SmoothIndex>,
+    xforms: Query<&Xform>,
 ) {
     let now = time.elapsed_secs();
-    // Refresh the smoothing key table occasionally (it only changes when
-    // things are built or destroyed).
-    *smooth_keys_frame = smooth_keys_frame.wrapping_add(1);
-    if smooth_keys.is_empty() || (*smooth_keys_frame).is_multiple_of(120) {
-        smooth_keys.clear();
-        for (e, d) in smoothers.iter() {
-            if let Some(k) = d.get("IconSmooth").and_then(|s| s.get_str("key")) {
-                smooth_keys.insert(e, k.to_string());
-            }
-        }
-    }
 
+    let cam_rot = camera.single().map_or(0.0, |t| t.rotation.to_euler(EulerRot::ZYX).0);
     for (mut view, mut root_tf, mut root_vis) in views.iter_mut() {
-        let Ok((pose, xform, data, door, mob, contained, estorage)) = sims.get(view.sim) else {
+        let Ok((pose, xform, data, door, mob, contained, estorage, unpowered, cable_vis)) = sims.get(view.sim) else {
             continue;
         };
         let spec = view.spec.clone();
         let parent_grid = xform.parent.and_then(|p| grids.get(p).ok());
-        let hidden = !spec.visible
-            || contained
-            || data.has("Marker")
-            || (data.has("SubFloorHide")
-                && parent_grid.is_some_and(|g| {
-                    let t = g.tiles.get(tile_of(xform.pos).x, tile_of(xform.pos).y);
-                    content.tiles.get(t.type_id).is_some_and(|d| !d.is_subfloor)
-                }));
+        // `SubFloorHideSystem`: anchored on a non-subfloor tile = covered;
+        // only `visibleLayers` stay drawn.
+        let covered = data.has("SubFloorHide")
+            && xform.anchored
+            && parent_grid.is_some_and(|g| {
+                let t = g.tiles.get(tile_of(xform.pos).x, tile_of(xform.pos).y);
+                content.tiles.get(t.type_id).is_some_and(|d| !d.is_subfloor)
+            });
+        // It also owns sprite visibility (`SetVisible(hasVisibleLayer || revealed)`),
+        // overriding the `visible: false` pipes and vents start with.
+        let sprite_visible = if data.has("SubFloorHide") { !covered || spec.subfloor_any_visible } else { spec.visible };
+        let hidden = !sprite_visible || contained || data.has("Marker");
         let want_vis = if hidden { Visibility::Hidden } else { Visibility::Visible };
         if *root_vis != want_vis {
             *root_vis = want_vis;
@@ -369,8 +381,25 @@ pub fn update_sprites(
 
         // Mobs that are down lie on their side, like upstream's standing state.
         let lying = mob.is_some_and(|m| m.is_incapacitated()) && data.has("HumanoidAppearance");
-        let base_rot = if spec.no_rot { 0.0 } else { pose.rot };
-        let depth = if mob.is_some_and(|m| m.0 == MobStateKind::Dead) { z_for("DeadMobs") } else { spec.depth };
+        // `SpriteSystem.RenderSprite`: `screen` is the entity's angle on screen
+        // (world rotation relative to the camera). noRot sprites stay upright
+        // on screen; snapCardinals ones turn in quarter steps of it.
+        let screen = pose.rot - cam_rot;
+        let base_rot = if spec.no_rot {
+            cam_rot
+        } else if spec.snap_cardinals {
+            pose.rot - round_to_cardinal(screen)
+        } else {
+            pose.rot
+        };
+        let door_vis = door.map(|d| door_visual(d, data, !unpowered));
+        let depth = if mob.is_some_and(|m| m.0 == MobStateKind::Dead) {
+            z_for("DeadMobs")
+        } else if let Some(dv) = &door_vis {
+            dv.depth
+        } else {
+            spec.depth
+        };
         // Within a depth, things further south draw on top.
         let z = depth - pose.pos.y * 0.0001;
         *root_tf = Transform::from_translation(Vec3::new(
@@ -381,20 +410,26 @@ pub fn update_sprites(
         .with_rotation(Quat::from_rotation_z(base_rot + if lying { std::f32::consts::FRAC_PI_2 } else { 0.0 }))
         .with_scale(spec.scale.extend(1.0));
 
-        // Icon smoothing corners.
-        let corners = match (&spec.smooth, parent_grid) {
-            (Some(sm), Some(g)) if sm.mode == "Corners" => {
-                let rev = g.revision;
-                match view.smooth_cache {
-                    Some((r, c)) if r == rev => Some(c),
-                    _ => {
-                        let c = corner_fill(smooth_neighbours(g, tile_of(xform.pos), &sm.key, &smooth_keys));
-                        view.smooth_cache = Some((rev, c));
-                        Some(c)
-                    }
+        // Icon smoothing (recomputed only when the grid or the index changes).
+        let tile = tile_of(xform.pos);
+        let smoothed = match &spec.smooth {
+            Some(sm) => {
+                let grid = if xform.anchored { parent_grid } else { None };
+                let key = (
+                    grid.map_or(0, |g| g.revision),
+                    smooth_index.generation,
+                    xform.rot.to_bits(),
+                    xform.anchored,
+                    tile,
+                );
+                if !matches!(&view.smooth_cache, Some((k, _)) if *k == key) {
+                    let at = Placement { grid, tile, rot: xform.rot };
+                    let s = smoothing::calculate(sm, &at, &smooth_index, |e| xforms.get(e).map_or(0.0, |x| x.rot));
+                    view.smooth_cache = Some((key, s));
                 }
+                view.smooth_cache.as_ref().map(|(_, s)| s.clone())
             }
-            _ => None,
+            None => None,
         };
 
         let damage_states = mob.and_then(|m| {
@@ -418,17 +453,26 @@ pub fn update_sprites(
             let mut color = layer.color;
 
             // Door visuals.
-            if let Some(d) = door {
-                let is_base = layer.map.iter().any(|m| m == "enum.DoorVisualLayers.Base")
-                    || (layer.map.is_empty() && i == 0 && state.as_deref() == Some("closed"));
-                if is_base {
-                    state = Some(door_state_name(d).to_string());
+            let mut flick = false;
+            if let (Some(d), Some(dv)) = (door, &door_vis) {
+                let has = |k: &str| layer.map.iter().any(|m| m == k);
+                if has("enum.DoorVisualLayers.Base") || (layer.map.is_empty() && i == 0 && state.as_deref() == Some("closed")) {
+                    state = Some(dv.base.clone());
+                    flick = dv.flick;
                 }
-                if layer.map.iter().any(|m| m == "enum.WeldableLayers.BaseWelded") {
+                if has("enum.DoorVisualLayers.BaseUnlit") {
+                    state = Some(dv.unlit.0.clone());
+                    visible = dv.unlit.1;
+                    flick = dv.flick;
+                }
+                if has("enum.WeldableLayers.BaseWelded") {
                     visible = d.state == DoorState::Welded;
                 }
-                if layer.map.iter().any(|m| m == "enum.DoorVisualLayers.BaseBolted") {
-                    visible = d.bolted;
+                if has("enum.DoorVisualLayers.BaseBolted") {
+                    visible = dv.bolted;
+                }
+                if has("enum.DoorVisualLayers.BaseEmergencyAccess") {
+                    visible = dv.emergency;
                 }
             }
             // EntityStorageVisualizerSystem: lockers and crates.
@@ -477,18 +521,44 @@ pub fn update_sprites(
                     None => visible = false,
                 }
             }
-            // Corner states for smoothed sprites.
-            let fixed_dir = layer.fixed_dir;
-            if let (Some(c), Some(dir)) = (corners, fixed_dir)
-                && let Some(sm) = &spec.smooth
-            {
-                let idx = match dir {
-                    RsiDirection::South => 0,
-                    RsiDirection::East => 1,
-                    RsiDirection::North => 2,
-                    _ => 3,
+            // Icon smoothing states and edges.
+            if let Some(sm) = &smoothed {
+                if let (Some(c), Some(corner)) = (sm.corners, layer.corner)
+                    && let Some(spec_sm) = &spec.smooth
+                {
+                    state = Some(format!("{}{}", spec_sm.base, c[corner as usize]));
+                }
+                if i == 0
+                    && let Some(s0) = &sm.layer0
+                {
+                    state = Some(s0.clone());
+                }
+                if let (Some(flags), Some(edge)) = (sm.edges, layer.edge) {
+                    visible = flags & edge == 0;
+                }
+            }
+
+            if covered {
+                visible = layer.subfloor_visible;
+            }
+            // `CableVisualizerSystem`: `{statePrefix}{mask}` on layer 0,
+            // `{extraLayerPrefix}{mask}` on layer 1.
+            if let (Some(cv), Some(viz)) = (cable_vis, data.get("CableVisualizer")) {
+                let prefix = match i {
+                    0 => viz.get_str("statePrefix"),
+                    1 => viz.get_str("extraLayerPrefix"),
+                    _ => None,
                 };
-                state = Some(format!("{}{}", sm.base, c[idx]));
+                if let Some(p) = prefix {
+                    state = Some(format!("{p}{}", cv.mask));
+                }
+            }
+            // `PipeColorVisualizerSystem`: `AtmosPipeColor` tints the pipe layer.
+            if data.has("PipeColorVisuals")
+                && layer.map.iter().any(|m| m == "enum.PipeVisualLayers.Pipe")
+                && let Some([r, g, b, _]) = data.get("AtmosPipeColor").and_then(|n| n.get_str("color")).and_then(parse_color)
+            {
+                color = [r, g, b, color[3]];
             }
 
             // Equipped clothing (`ClientClothingSystem`).
@@ -544,13 +614,16 @@ pub fn update_sprites(
                     && let Some(rs) = rsi.state(st)
                     && let Some(tex) = cache.state_image(&content, &mut images, &rsi, st)
                 {
-                    let dir = fixed_dir.unwrap_or_else(|| rsi_direction_for(rs.directions, pose.rot as f64));
+                    // `RenderLayer`: the on-screen angle picks the direction that
+                    // sets the layer matrix; `DirOffset` then shifts the frame.
+                    let angle_dir = rsi_direction_for(rs.directions, screen as f64);
+                    let dir = offset_rsi_dir(angle_dir, layer.dir_offset);
                     // Restart one-shot animations (door opening) on state change.
                     if view.layer_state[i].0 != *st {
                         view.layer_state[i] = (st.clone(), now);
                     }
                     let since = now - view.layer_state[i].1;
-                    let frame = if door.is_some() && matches!(st.as_str(), "opening" | "closing") {
+                    let frame = if flick {
                         let mut t = since;
                         let delays = &rs.delays[(dir as usize).min(rs.directions as usize - 1)];
                         let mut f = 0;
@@ -568,8 +641,9 @@ pub fn update_sprites(
                     sprite.rect = Some(Rect::new(x as f32, y as f32, (x + w) as f32, (y + h) as f32));
                     sprite.custom_size = Some(Vec2::new(w as f32, h as f32) * layer.scale);
                     drawn = true;
-                    // Directional states are not rotated with the entity.
-                    let undo = if rs.directions > 1 && !spec.no_rot { -pose.rot } else { 0.0 };
+                    // `GetLayerDrawMatrix`: a direction frame is counter-rotated by
+                    // its direction's angle, leaving only the residual rotation.
+                    let undo = if rs.directions > 1 && !spec.no_rot { -rsi_dir_angle(angle_dir) } else { 0.0 };
                     *tf = Transform::from_translation(Vec3::new(layer.offset.x * PX, layer.offset.y * PX, i as f32 * 0.001))
                         .with_rotation(Quat::from_rotation_z(layer.rotation + undo));
                 }
@@ -605,19 +679,22 @@ fn humanoid_part(content: &Content, appearance: &Node, part: &str) -> Option<(St
     Some((bs.get_str("sprite")?.to_string(), bs.get_str("state")?.to_string(), skin))
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+/// `Angle.RoundToCardinalAngle`.
+fn round_to_cardinal(a: f32) -> f32 {
+    (a / std::f32::consts::FRAC_PI_2).round() * std::f32::consts::FRAC_PI_2
+}
 
-    #[test]
-    fn corners_match_upstream() {
-        // Lone wall: all corners empty.
-        assert_eq!(corner_fill([false; 8]), [0, 0, 0, 0]);
-        // Wall with a neighbour to the north: NE gets CCW(1), NW gets CW(4).
-        let mut n = [false; 8];
-        n[0] = true;
-        assert_eq!(corner_fill(n), [0, 1, 4, 0]);
-        // Fully surrounded: every corner 7.
-        assert_eq!(corner_fill([true; 8]), [7, 7, 7, 7]);
+/// `Direction.ToAngle()` for an RSI direction (south = 0, counter-clockwise).
+fn rsi_dir_angle(d: RsiDirection) -> f32 {
+    use std::f32::consts::{FRAC_PI_2, FRAC_PI_4, PI};
+    match d {
+        RsiDirection::South => 0.0,
+        RsiDirection::SouthEast => FRAC_PI_4,
+        RsiDirection::East => FRAC_PI_2,
+        RsiDirection::NorthEast => 3.0 * FRAC_PI_4,
+        RsiDirection::North => PI,
+        RsiDirection::NorthWest => 5.0 * FRAC_PI_4,
+        RsiDirection::West => 3.0 * FRAC_PI_2,
+        RsiDirection::SouthWest => 7.0 * FRAC_PI_4,
     }
 }
