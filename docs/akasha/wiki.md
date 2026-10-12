@@ -1,7 +1,8 @@
 # The wikis and docs
 
-Mirrored by `tools/summon-wiki.py` (MediaWiki API) into `upstream/wiki/<site>/`; a copy of the Frontier mirror and the SS14 dev docs is committed under `reference/`
-(gitignored, like the rest of `upstream/`). Re-runs are incremental.
+Mirrored by `tools/summon-wiki.py` (MediaWiki API) into `upstream/wiki/<site>/`
+(gitignored, like the rest of `upstream/`). Re-runs are incremental. A copy of
+the Frontier mirror and the SS14 dev docs is committed under `reference/`.
 
 | Source | Where | Status | Licence |
 |---|---|---|---|
