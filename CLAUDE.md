@@ -42,7 +42,8 @@ Headless screenshots (no GPU): install `mesa-vulkan-drivers libxkbcommon-x11-0`,
 - `mercury` — Frontier economy: bank, pricing, selling, shipyard
 - `alembic` — atmospherics: tile gas, LINDA, airtightness, breathing, barotrauma
 - `prana` — power: node networks, Pow3r solver, APCs, batteries, generators, gravity
-- `speculum` — dev tool: component census (what's ported, where upstream defines it)
+- `demiurge` — world generation: Frontier POIs, chunked asteroid fields, debris GC
+- `speculum` — dev tools: component census, `scry` (resolved components of a prototype)
 - `caput` — Bevy client
 
 ## Porting conventions
@@ -59,7 +60,7 @@ Headless screenshots (no GPU): install `mesa-vulkan-drivers libxkbcommon-x11-0`,
 - Game content we add goes in `resources/` as upstream-format YAML, never in Rust.
 - Update `docs/PORTING.md` when a system's status changes.
 - Crate/module names follow an alchemical/esoteric theme (vellum, grimoire,
-  athanor, homunculus, mercury, alembic, prana, speculum, akasha...).
+  athanor, homunculus, mercury, alembic, prana, demiurge, speculum, akasha...).
 
 ## License
 

@@ -36,6 +36,16 @@ python3 -I tools/wiki-text.py upstream/wiki/frontier/html/Piloting.html
   node networks (power/pipes), device network, NPCs, body, chemistry, construction,
   destructible, entity tables. Read the relevant chapter before porting a system.
 
+## Reference images (`reference/images/`)
+
+Pulled 2026-10-12, provenance in `reference/images/README.md`:
+- 112 ship renders from https://shipyard.frontierstation14.com (`/storage/renders/...`),
+  named by map basename.
+- 20 Frontier POI/outpost renders, from the same site.
+- 20 SS14 station renders from https://mapserver.tanukij.dev, a mirror of the
+  official mapserver, which no longer resolves.
+- 25 gameplay screenshots (Steam store, spacestation14.com progress reports).
+
 ## To do
 
 - Retry the SS14 wiki (`tools/summon-wiki.py ss14`) when the origin is back,

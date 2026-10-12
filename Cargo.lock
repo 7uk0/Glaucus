@@ -2140,6 +2140,7 @@ dependencies = [
  "astrolabe",
  "athanor",
  "bevy",
+ "demiurge",
  "grimoire",
  "homunculus",
  "mercury",

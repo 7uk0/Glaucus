@@ -91,13 +91,13 @@ pub struct Biome {
     pub priority: i64,
     pub distance_range_sq: Option<(f32, f32)>,
     pub noise_ranges: Vec<(String, Vec<(f32, f32)>)>,
-    pub gen: ChunkGen,
+    pub chunkgen: ChunkGen,
 }
 
 pub struct Chunk {
     pub coords: IVec2,
     pub biome: Option<String>,
-    pub gen: Option<ChunkGen>,
+    pub chunkgen: Option<ChunkGen>,
     noise: HashMap<String, NoiseGen>,
     pub loaded: bool,
     pub loaders: Vec<Entity>,
@@ -194,7 +194,7 @@ impl Cosmos {
                             .collect()
                     })
                     .unwrap_or_default(),
-                gen: ChunkGen::from_components(d.get("chunkComponents").and_then(Node::as_seq).unwrap_or_default()),
+                chunkgen: ChunkGen::from_components(d.get("chunkComponents").and_then(Node::as_seq).unwrap_or_default()),
             });
         }
         biomes.sort_by(|a, b| b.priority.cmp(&a.priority));
@@ -227,7 +227,7 @@ impl Cosmos {
         if !self.chunks.contains_key(&coords) {
             self.chunks.insert(
                 coords,
-                Chunk { coords, biome: None, gen: None, noise: HashMap::new(), loaded: false, loaders: Vec::new(), owned: Vec::new(), do_spawns: true },
+                Chunk { coords, biome: None, chunkgen: None, noise: HashMap::new(), loaded: false, loaders: Vec::new(), owned: Vec::new(), do_spawns: true },
             );
             let center = coords.as_vec2() * CHUNK_SIZE + Vec2::splat(CHUNK_SIZE / 2.0);
             let len_sq = center.length_squared();
@@ -251,7 +251,7 @@ impl Cosmos {
                 }
                 let c = self.chunks.get_mut(&coords).unwrap();
                 c.biome = Some(b.id.clone());
-                c.gen = Some(b.gen.clone());
+                c.chunkgen = Some(b.chunkgen.clone());
                 break;
             }
         }
@@ -384,15 +384,15 @@ fn distance_carvers(world: &mut World, map: Entity) -> Vec<(Vec2, Vec<(f32, f32)
 
 /// `DebrisFeaturePlacerSystem.OnChunkLoaded`.
 pub fn place_debris(world: &mut World, coords: IVec2) {
-    let (map, gen, existing) = {
+    let (map, chunkgen, existing) = {
         let mut cosmos = world.resource_mut::<Cosmos>();
         let map = cosmos.map;
         let c = cosmos.chunks.get_mut(&coords).unwrap();
         c.do_spawns = false;
-        let Some(gen) = c.gen.clone() else { return };
-        (map, gen, c.owned.clone())
+        let Some(chunkgen) = c.chunkgen.clone() else { return };
+        (map, chunkgen, c.owned.clone())
     };
-    let Some(density_ch) = gen.density_channel.clone() else { return };
+    let Some(density_ch) = chunkgen.density_channel.clone() else { return };
     let existing: Vec<(Vec2, Entity)> = existing.into_iter().filter(|(_, e)| world.get_entity(*e).is_ok()).collect();
     if !existing.is_empty() {
         // Debris still standing from last time: nothing new (upstream reuses its points).
@@ -413,15 +413,15 @@ pub fn place_debris(world: &mut World, coords: IVec2) {
             .collect::<Vec<_>>()
     };
     let mut boxes = grid_boxes(world, map);
-    let carvers = if gen.point_set_carver { distance_carvers(world, map) } else { Vec::new() };
-    let half = 0.5 + gen.safety_radius;
+    let carvers = if chunkgen.point_set_carver { distance_carvers(world, map) } else { Vec::new() };
+    let half = 0.5 + chunkgen.safety_radius;
     let mut owned = Vec::new();
     for point in points {
         let (proto, keep) = {
             let mut cosmos = world.resource_mut::<Cosmos>();
             let pd = cosmos.noise(coords, &density_ch, point / CHUNK_SIZE);
-            let cancel = cosmos.rng.chance(gen.random_cancel);
-            if (pd == 0.0 && gen.density_clip) || cancel {
+            let cancel = cosmos.rng.chance(chunkgen.random_cancel);
+            if (pd == 0.0 && chunkgen.density_clip) || cancel {
                 continue;
             }
             let (a, b) = (point - Vec2::splat(half), point + Vec2::splat(half));
@@ -430,7 +430,7 @@ pub fn place_debris(world: &mut World, coords: IVec2) {
             }
             // Carvers (`PrePlaceDebrisFeatureEvent`).
             let mut carved = false;
-            for (ch, ranges) in &gen.noise_carvers {
+            for (ch, ranges) in &chunkgen.noise_carvers {
                 let v = cosmos.noise(coords, ch, point / CHUNK_SIZE);
                 if ranges.iter().any(|&(lo, hi)| !(lo > v || hi < v)) {
                     carved = true;
@@ -440,7 +440,7 @@ pub fn place_debris(world: &mut World, coords: IVec2) {
             if carved {
                 continue;
             }
-            if gen.point_set_carver {
+            if chunkgen.point_set_carver {
                 let mut prob = 1.0f32;
                 for (pos, thresholds) in &carvers {
                     let d2 = pos.distance_squared(point);
@@ -460,8 +460,8 @@ pub fn place_debris(world: &mut World, coords: IVec2) {
                 }
             }
             // Selection: the simple table first, then the noise-driven one may override.
-            let mut proto = gen.simple.as_ref().and_then(|t| t.spawns(&mut cosmos.rng).into_iter().next());
-            if let Some((ch, table)) = &gen.noise_selector {
+            let mut proto = chunkgen.simple.as_ref().and_then(|t| t.spawns(&mut cosmos.rng).into_iter().next());
+            if let Some((ch, table)) = &chunkgen.noise_selector {
                 let p = cosmos.noise(coords, ch, point / CHUNK_SIZE);
                 if (0.0..=1.0).contains(&p) && cosmos.rng.chance(p)
                     && let Some(w) = table.spawns(&mut cosmos.rng).into_iter().next()
@@ -511,7 +511,7 @@ pub fn build_blob(world: &mut World, grid: Entity, b: &Node) {
     let mut spawn_points: Vec<IVec2> = Vec::new();
     let mut in_points: HashSet<IVec2> = HashSet::new();
     let dirs = [IVec2::Y, IVec2::NEG_Y, IVec2::X, IVec2::NEG_X];
-    let mut place = |p: IVec2, rng: &mut SimRng, taken: &mut HashMap<IVec2, astrolabe::tiles::Tile>, sp: &mut Vec<IVec2>, inp: &mut HashSet<IVec2>| {
+    let place = |p: IVec2, rng: &mut SimRng, taken: &mut HashMap<IVec2, astrolabe::tiles::Tile>, sp: &mut Vec<IVec2>, inp: &mut HashSet<IVec2>| {
         if inp.remove(&p) {
             if let Some(i) = sp.iter().position(|q| *q == p) {
                 sp.swap_remove(i);
@@ -523,9 +523,8 @@ pub fn build_blob(world: &mut World, grid: Entity, b: &Node) {
                 sp.push(n);
             }
         }
-        let id = tileset[rng.range_u32(0, tileset.len() as u32) as usize];
-        let variants = content.tiles.get(id).map_or(1, |d| d.variant_count()) as u32;
-        let variant = rng.range_u32(0, variants) as u8;
+        let id = tileset[rng.below(tileset.len() as u32) as usize];
+        let variant = content.tiles.get(id).map_or(0, |d| d.pick_variant(rng.next_f32()));
         taken.insert(p, astrolabe::tiles::Tile { type_id: id, flags: 0, variant, rotation_mirroring: 0 });
     };
     place(IVec2::ZERO, &mut rng, &mut taken, &mut spawn_points, &mut in_points);
@@ -533,7 +532,7 @@ pub fn build_blob(world: &mut World, grid: Entity, b: &Node) {
         if spawn_points.is_empty() {
             break;
         }
-        let p = spawn_points[rng.range_u32(0, spawn_points.len() as u32) as usize];
+        let p = spawn_points[rng.below(spawn_points.len() as u32) as usize];
         place(p, &mut rng, &mut taken, &mut spawn_points, &mut in_points);
         if draw > 0.0 {
             for d in dirs {
@@ -618,14 +617,14 @@ pub fn populate(world: &mut World, grid: Entity) {
                 continue;
             }
             let cache = SpawnCache::from_node(set.get("entries"));
-            let n = rng.range_u32(min, max + 1);
+            let n = rng.next_range(min as i32, max as i32 + 1).max(0) as u32;
             for _ in 0..n {
                 let mut chosen = None;
                 for _ in 0..10 {
                     if free.is_empty() {
                         break;
                     }
-                    let i = rng.range_u32(0, free.len() as u32) as usize;
+                    let i = rng.below(free.len() as u32) as usize;
                     if !sealed_ok && tile_air_blocked(world, grid, free[i]) {
                         continue;
                     }

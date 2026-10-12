@@ -103,14 +103,26 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Wires panels, power switches, battery-backed receivers, power monitoring UI | ⬜ | |
 | Lights responding to power | ⬜ | Waits for lighting |
 
+## Layer 2e — World generation (`demiurge`)
+
+| Upstream system | Status | Notes |
+|---|---|---|
+| `NfAdventureRuleSystem` + `PointOfInterestSystem` | ✅ | Depots ring A–D, market, requireds, optionals, unique groups; clearance retries; random rotation; `addComponents` |
+| `WorldControllerSystem`, `BiomeSelectionSystem`, `NoiseIndexSystem` | ✅ | 128 m chunks around players and `WorldLoader`s; NF near/mid/far biomes |
+| `DebrisFeaturePlacerSystem` + selectors + carvers | ✅ | Poisson points, density/wreck/carver noise, Frontier `PointSetDistanceCarver` dead zone |
+| `BlobFloorPlanBuilder`, `LocalityLoader`, populators | ✅ | Incl. Frontier `RandomEntityPopulator` |
+| `GCQueueSystem` (`SpaceDebris`) | ✅ | |
+| Station records / warp naming for POIs, debris re-chunking on move | ⬜ | |
+
 ## Layer 3 — Client (`caput`)
 
 | Upstream system | Status | Notes |
 |---|---|---|
 | Sprite rendering, layers, draw depth | ✅ | Directional states, animations, `noRot`, offsets |
 | Tile & decal rendering | ✅ | Variants, rotation/mirroring |
-| Icon smoothing | 🟡 | Corners mode (walls/windows/tables). CardinalFlags/Diagonal pending |
-| Door / damage-state visuals | ✅ | |
+| Icon smoothing | ✅ | All modes incl. Frontier `DiagonalNF`, `SmoothEdge`, edge rule, DirOffsets (`smoothing.rs`) |
+| Door / damage-state visuals | ✅ | Open/closed draw depth, airlock unlit/bolt lights |
+| SubFloorHide, cable/pipe visuals | ✅ | `visibleLayers`, cable connection masks, pipe colours. No pipe connector stubs yet |
 | Humanoid appearance | 🟡 | Species base sprites + skin; no hair/markings yet |
 | Clothing visuals | ✅ | `clothingVisuals` and default `equipped-<SLOT>` states, species variants |
 | Parallax | 🟡 | Image layer + generated star fields |
@@ -118,6 +130,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Audio | 🟡 | One-shot sounds, collections, distance attenuation |
 | Lighting & occlusion | ⬜ | Fullbright for now |
 | Generic visualizers (Appearance data) | ⬜ | |
+| Map render mode (`--render-map`) | ✅ | 1:1 renders compared against official renders in `reference/` |
 | Shipyard console window | ✅ | Paged registry, balance, buy |
 | Storage window, locker visuals | ✅ | `EntityStorageVisuals`; take/put buttons |
 | Other UIs (vending, ATM menu, PDA...) | ⬜ | |
@@ -134,7 +147,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 8. **Chemistry & medicine**: solutions, reagents, reactions, metabolism.
 9. **Food, drink, hunger/thirst.**
 10. **Ranged weapons**, projectiles, hitscan; NPC gun operators.
-11. **Frontier world**: sector POIs, expeditions, salvage, NFSD/pirate NPC crews.
+11. **Frontier world**: ~~sector POIs, asteroid fields~~ ✅; expeditions, salvage, NFSD/pirate NPC crews.
 12. Everything else (1,600+ remaining component types).
 
 The upstream content does not change shape as systems are ported: each new

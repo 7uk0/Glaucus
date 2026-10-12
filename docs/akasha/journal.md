@@ -81,3 +81,24 @@ chemistry/medical → food → construction.
 - Rules written up in `systems/rendering.md`.
 - `--render-map PATH` renders a map 1:1 for comparisons. `speculum --bin scry`
   prints an entity's resolved components.
+
+## 2026-10-12 — Worldgen wired in, reference images
+
+- `demiurge` finished and wired into the game:
+  - POI placement (`poi.rs`);
+  - chunked asteroid fields (`world.rs`);
+  - `DemiurgePlugin`;
+  - tests on real content.
+
+  The game now starts with 18 POIs around the outpost and generates belts
+  as you fly. `--no-worldgen` skips it. See `systems/worldgen.md`.
+- Found and fixed RNG range bugs: `SimRng::range_u32` is inclusive. Added
+  `below(n)` and `next_range(min, max)` for upstream's exclusive `Next`.
+  Spawn-table amounts (`EntitySpawnCollection`) were off by one.
+- `astrolabe` `TileDef::pick_variant` (weighted `placementVariants`).
+- `athanor::spawn::add_components` (`EntityManager.AddComponents`).
+- `reference/images/`: 184 reference images.
+  - Sources: the Frontier shipyard site (ship and POI renders), an SS14
+    mapserver mirror (station renders), and the Steam page and
+    spacestation14.com (screenshots).
+  - Use them with `--render-map` for 1:1 comparisons.

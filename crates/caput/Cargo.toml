@@ -18,5 +18,6 @@ homunculus = { path = "../homunculus" }
 mercury = { path = "../mercury" }
 alembic = { path = "../alembic" }
 prana = { path = "../prana" }
+demiurge = { path = "../demiurge" }
 bevy = { workspace = true, features = ["2d", "ui", "audio"] }
 tracing.workspace = true

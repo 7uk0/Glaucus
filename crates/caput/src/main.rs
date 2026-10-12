@@ -90,6 +90,9 @@ pub struct Args {
     /// `--render-map PATH`: draw one map file top-down at 32 px/tile with no
     /// HUD, player or stars, like upstream's `Content.MapRenderer`.
     pub render_map: Option<String>,
+    /// Generate the sector's points of interest and asteroid fields
+    /// (`--no-worldgen` turns it off for quick starts).
+    pub worldgen: bool,
 }
 
 /// Where the camera sits in `--render-map` mode.
@@ -109,6 +112,7 @@ fn parse_args() -> Args {
         demo_pilot: false,
         demo_shipyard: false,
         render_map: None,
+        worldgen: true,
     };
     let argv: Vec<String> = std::env::args().skip(1).collect();
     let mut i = 0;
@@ -122,6 +126,11 @@ fn parse_args() -> Args {
             "--carp" => a.cfg.carp = v.parse().unwrap_or(a.cfg.carp),
             "--seed" => a.cfg.seed = v.parse().unwrap_or(a.cfg.seed),
             "--spawn" => a.cfg.spawn_on_shuttle = v == "shuttle",
+            "--no-worldgen" => {
+                a.worldgen = false;
+                i += 1;
+                continue;
+            }
             "--demo-shipyard" => {
                 a.demo_shipyard = true;
                 i += 1;
@@ -135,6 +144,7 @@ fn parse_args() -> Args {
             }
             "--render-map" => {
                 a.render_map = Some(v.clone());
+                a.worldgen = false;
                 a.cfg.outpost = v;
                 a.cfg.shuttle = None;
                 a.cfg.contractors = 0;
@@ -222,6 +232,7 @@ fn main() {
     .add_plugins(mercury::MercuryPlugin)
     .add_plugins(alembic::AlembicPlugin)
     .add_plugins(prana::PranaPlugin)
+    .add_plugins(demiurge::DemiurgePlugin)
     .init_resource::<hud::PlayerAir>()
     .init_resource::<shipyard_ui::ShipyardWindow>()
     .init_resource::<storage_ui::StorageWindow>()
@@ -288,6 +299,19 @@ fn setup_world(world: &mut World) {
             world.insert_resource(RenderView { center: pos + (lo + hi).as_vec2() / 2.0 });
         }
         Ok(s) => {
+            if args.worldgen {
+                // `NFAdventureRule` start: POIs around the outpost, then the
+                // chunked asteroid fields (`worldgen.worldgen_config` = NFDefault).
+                let rng = athanor::rng::SimRng(args.cfg.seed ^ 0x9E37_79B9);
+                let pois = demiurge::generate_pois(world, s.map, rng, &demiurge::PoiConfig::default());
+                eprintln!(
+                    "   {} points of interest: {}",
+                    pois.len(),
+                    pois.iter().map(|p| format!("{} ({:.1} km)", p.name, p.pos.length() / 1000.0)).collect::<Vec<_>>().join(", ")
+                );
+                let content = world.resource::<athanor::Content>().clone();
+                world.insert_resource(demiurge::Cosmos::new(&content, s.map, "NFDefault", args.cfg.seed));
+            }
             let n = world.query::<&athanor::spawn::EntityData>().iter(world).count();
             eprintln!("   sector ready: {n} entities, {} NPCs", s.npcs.len());
             if args.demo_shipyard {

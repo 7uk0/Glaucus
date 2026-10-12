@@ -69,7 +69,6 @@ impl NoiseChannel {
 }
 
 /// `NoiseGenerator`: one seeded FastNoiseLite configured from a channel.
-#[derive(Clone)]
 pub struct NoiseGen {
     cfg: NoiseChannel,
     noise: FastNoiseLite,

@@ -38,6 +38,22 @@ impl SimRng {
         lo + (self.next_u64() % (hi - lo + 1) as u64) as u32
     }
 
+    /// `IRobustRandom.Next(n)`: uniform in `[0, n)` (0 when n is 0).
+    pub fn below(&mut self, n: u32) -> u32 {
+        if n == 0 {
+            return 0;
+        }
+        (self.next_u64() % n as u64) as u32
+    }
+
+    /// `IRobustRandom.Next(min, max)`: uniform in `[min, max)`.
+    pub fn next_range(&mut self, min: i32, max: i32) -> i32 {
+        if max <= min {
+            return min;
+        }
+        min + self.below((max - min) as u32) as i32
+    }
+
     pub fn chance(&mut self, p: f32) -> bool {
         self.next_f32() < p
     }

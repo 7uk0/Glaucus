@@ -188,6 +188,30 @@ pub fn spawn_with(world: &mut World, proto: Option<&str>, comps: Arc<Vec<Node>>,
     id
 }
 
+/// `EntityManager.AddComponents(uid, registry)` (removeExisting = true):
+/// layer YAML components over an existing entity and run their factories.
+pub fn add_components(world: &mut World, e: Entity, comps: &[Node]) {
+    if comps.is_empty() || world.get_entity(e).is_err() {
+        return;
+    }
+    let content = world.resource::<Content>().clone();
+    let mut merged: Vec<Node> = world.get::<EntityData>(e).map(|d| d.components.as_ref().clone()).unwrap_or_default();
+    for c in comps {
+        let ty = c.get_str("type");
+        merged.retain(|m| m.get_str("type") != ty);
+        merged.push(c.clone());
+    }
+    world.entity_mut(e).insert(EntityData { components: Arc::new(merged) });
+    world.resource_scope(|world, factories: Mut<ComponentFactories>| {
+        let mut ent = world.entity_mut(e);
+        for c in comps {
+            if let Some(f) = c.get_str("type").and_then(|ty| factories.get(ty)) {
+                f(&mut ent, c, &content);
+            }
+        }
+    });
+}
+
 /// Fired after an entity and all its components exist (≈ `MapInitEvent`).
 #[derive(EntityEvent, Debug, Clone, Copy)]
 pub struct Spawned {

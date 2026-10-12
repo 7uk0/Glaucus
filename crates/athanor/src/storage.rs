@@ -107,7 +107,8 @@ pub fn spawn_entries(entries: &[Node], rng: &mut SimRng) -> Vec<String> {
     let amount = |e: &Node, rng: &mut SimRng| {
         let a = e.get("amount").and_then(Node::as_i64).unwrap_or(1).max(0) as u32;
         let m = e.get("maxAmount").and_then(Node::as_i64).unwrap_or(1).max(0) as u32;
-        if m > a { rng.range_u32(a, m) } else { a }
+        // `random.Next(Amount, MaxAmount)`: max exclusive.
+        if m > a { rng.next_range(a as i32, m as i32) as u32 } else { a }
     };
     for e in entries {
         if let Some(g) = e.get_str("orGroup") {

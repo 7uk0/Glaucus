@@ -56,10 +56,11 @@ impl SpawnCache {
     /// `GetSpawns`: prototype ids (an entry without an id spawns nothing).
     pub fn spawns(&self, rng: &mut SimRng) -> Vec<String> {
         let mut out = Vec::new();
-        let mut push = |e: &Entry, rng: &mut SimRng, out: &mut Vec<String>| {
+        let push = |e: &Entry, rng: &mut SimRng, out: &mut Vec<String>| {
             let mut amount = e.amount;
             if e.max_amount > amount {
-                amount = rng.range_u32(amount, e.max_amount);
+                // `random.Next(Amount, MaxAmount)`: max exclusive.
+                amount = rng.next_range(amount as i32, e.max_amount as i32) as u32;
             }
             if let Some(id) = &e.id {
                 for _ in 0..amount {

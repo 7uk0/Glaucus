@@ -24,7 +24,7 @@ pub fn sample_rectangle(top_left: Vec2, lower_right: Vec2, min_dist: f32, rng: &
     out.push(first);
 
     while !active.is_empty() {
-        let i = rng.range_u32(0, active.len() as u32) as usize;
+        let i = rng.below(active.len() as u32) as usize;
         let base = active[i];
         let mut found = false;
         for _ in 0..POINTS_PER_ITERATION {
@@ -54,7 +54,7 @@ pub fn sample_rectangle(top_left: Vec2, lower_right: Vec2, min_dist: f32, rng: &
             }
         }
         if !found {
-            active.swap_remove(i);
+            active.remove(i);
         }
     }
     out

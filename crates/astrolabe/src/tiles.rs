@@ -22,6 +22,8 @@ pub struct TileDef {
     pub name: String,
     pub sprite: Option<String>,
     pub variants: Option<u8>,
+    /// Weights for `TileSystem.PickVariant` (default `[1]`).
+    pub placement_variants: Option<Vec<f32>>,
     pub base_turf: Option<String>,
     pub is_subfloor: bool,
     pub is_space: bool,
@@ -40,6 +42,22 @@ pub struct TileDef {
 impl TileDef {
     pub fn sprite_path(&self) -> Option<ResPath> {
         self.sprite.as_deref().map(ResPath::new)
+    }
+
+    /// `TileSystem.PickVariant`: weighted by `placementVariants`, given a
+    /// uniform `[0, 1)` roll.
+    pub fn pick_variant(&self, roll: f32) -> u8 {
+        let weights: &[f32] = self.placement_variants.as_deref().unwrap_or(&[1.0]);
+        let sum: f32 = weights.iter().sum();
+        let rand = roll * sum;
+        let mut acc = 0.0;
+        for (i, w) in weights.iter().enumerate() {
+            acc += w;
+            if acc >= rand {
+                return i as u8;
+            }
+        }
+        0
     }
 
     pub fn variant_count(&self) -> u8 {

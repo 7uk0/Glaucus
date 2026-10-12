@@ -1,0 +1,2716 @@
+{
+ "source": "https://shipyard.frontierstation14.com/render/shuttles",
+ "fetched": "2026-10-12",
+ "licence": "Renders of AGPL-3.0 Frontier map files and CC-BY-SA 3.0 SS14/Frontier sprites; see ../README.md",
+ "files": [
+  {
+   "file": "barnacle.png",
+   "map": "Maps/_NF/Shuttles/BlackMarket/barnacle.yml",
+   "id": "Barnacle",
+   "name": "Barnacle",
+   "price": 20000,
+   "category": "Small",
+   "class": [
+    "Pirate"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "BlackMarket",
+   "description": "Nobody expects the lowly barnacle",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/barnacle.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Barnacle",
+   "lastModified": "Tue, 14 Jul 2026 09:30:32 GMT",
+   "bytes": 105281,
+   "width": 320,
+   "height": 416,
+   "format": "png",
+   "sha256": "6f6ff124d00f4068daa2091e998c69cf2a2a5cb86c7cb2bf403dbf645635752c"
+  },
+  {
+   "file": "bocakillo.png",
+   "map": "Maps/_NF/Shuttles/BlackMarket/bocakillo.yml",
+   "id": "Bocakillo",
+   "name": "Bocakillo",
+   "price": 35000,
+   "category": "Small",
+   "class": [
+    "Pirate"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "BlackMarket",
+   "description": "A tiny plastitanium vessel suited to a crew of 2 to 3 pirates. Has two broadside cannons and a rear-facing disposals launcher. Runs on plasma.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/bocakillo.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Bocakillo",
+   "lastModified": "Tue, 14 Jul 2026 09:31:12 GMT",
+   "bytes": 89534,
+   "width": 256,
+   "height": 544,
+   "format": "png",
+   "sha256": "23885e5c443b02876e4c63899252561b67c7d1999d880c6dfeb5abe8d55463d0"
+  },
+  {
+   "file": "falcon.png",
+   "map": "Maps/_NF/Shuttles/BlackMarket/falcon.yml",
+   "id": "Falcon",
+   "name": "Falcon",
+   "price": 70000,
+   "category": "Medium",
+   "class": [
+    "Pirate"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "BlackMarket",
+   "description": "Rebuilt mining vessel made into a pirate ship with hangar bay to store vehicles, fits between 3-4 crew.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/falcon.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Falcon",
+   "lastModified": "Tue, 14 Jul 2026 09:31:52 GMT",
+   "bytes": 207284,
+   "width": 480,
+   "height": 704,
+   "format": "png",
+   "sha256": "bc60ae6a225377747c6d1e33215b85bfc4e48805b382891e5483b829f5585740"
+  },
+  {
+   "file": "menace.png",
+   "map": "Maps/_NF/Shuttles/BlackMarket/menace.yml",
+   "id": "Menace",
+   "name": "Menace",
+   "price": 21000,
+   "category": "Small",
+   "class": [
+    "Pirate"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "BlackMarket",
+   "description": "Mail is no longer an option: you either receive it or you die.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/menace.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Menace",
+   "lastModified": "Tue, 14 Jul 2026 09:32:32 GMT",
+   "bytes": 44285,
+   "width": 352,
+   "height": 288,
+   "format": "png",
+   "sha256": "15dd7ffca9a71f1c8aaad8d630f531ec3deff259833e4558d2b32089a35571b2"
+  },
+  {
+   "file": "schooner.png",
+   "map": "Maps/_NF/Shuttles/BlackMarket/schooner.yml",
+   "id": "Schooner",
+   "name": "Schooner",
+   "price": 60000,
+   "category": "Medium",
+   "class": [
+    "Pirate"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "BlackMarket",
+   "description": "A small wooden ship with 2 central cargo bays.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/schooner.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Schooner",
+   "lastModified": "Tue, 14 Jul 2026 09:33:13 GMT",
+   "bytes": 224664,
+   "width": 416,
+   "height": 928,
+   "format": "png",
+   "sha256": "95c14f2ee1900e712888fce4604819a8be5ea9d55ed2aa6572ead2233cab6099"
+  },
+  {
+   "file": "turncoat.png",
+   "map": "Maps/_NF/Shuttles/BlackMarket/turncoat.yml",
+   "id": "Turncoat",
+   "name": "Turncoat",
+   "price": 85000,
+   "category": "Medium",
+   "class": [
+    "Pirate"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "BlackMarket",
+   "description": "A mercenaries pride and joy, repurposed at illicit shipyards for nefarious ends. Suited to a crew of 4.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/turncoat.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Turncoat",
+   "lastModified": "Tue, 14 Jul 2026 09:33:52 GMT",
+   "bytes": 235009,
+   "width": 416,
+   "height": 960,
+   "format": "png",
+   "sha256": "4e96f9b0ea3afe3d5cd8f9c653743408fd93b951415334b31b3e6a34f67400a8"
+  },
+  {
+   "file": "alleycat.png",
+   "map": "Maps/_NF/Shuttles/Bus/alleycat.yml",
+   "id": "Alleycat",
+   "name": "Alleycat",
+   "price": 0,
+   "category": "Small",
+   "class": [],
+   "engines": [],
+   "shipyardGroup": "Bus",
+   "description": "",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/alleycat.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Alleycat",
+   "lastModified": "Tue, 14 Jul 2026 09:34:33 GMT",
+   "bytes": 67495,
+   "width": 224,
+   "height": 352,
+   "format": "png",
+   "sha256": "cf4c340335253fe9ead4eb3ea92240d773450a142e032d525ed215e2682e7328"
+  },
+  {
+   "file": "cheetah.png",
+   "map": "Maps/_NF/Shuttles/Bus/cheetah.yml",
+   "id": "Cheetah",
+   "name": "Cheetah",
+   "price": 0,
+   "category": "Small",
+   "class": [],
+   "engines": [],
+   "shipyardGroup": "Bus",
+   "description": "",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/cheetah.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Cheetah",
+   "lastModified": "Tue, 14 Jul 2026 09:35:13 GMT",
+   "bytes": 38131,
+   "width": 224,
+   "height": 352,
+   "format": "png",
+   "sha256": "21eef96e36bdb0a42c2f77a1822364d16b396f046c263f5895e812f07c8d4636"
+  },
+  {
+   "file": "mcbus.png",
+   "map": "Maps/_NF/Shuttles/Bus/mcbus.yml",
+   "id": "McBus",
+   "name": "McBus",
+   "price": 0,
+   "category": "Small",
+   "class": [],
+   "engines": [],
+   "shipyardGroup": "Bus",
+   "description": "",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/mcbus.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/McBus",
+   "lastModified": "Tue, 14 Jul 2026 09:35:51 GMT",
+   "bytes": 38571,
+   "width": 224,
+   "height": 352,
+   "format": "png",
+   "sha256": "d8dc99a68b3e8a885364dc01bb7d86f12dad6226df754a1f39314950d2b2e44f"
+  },
+  {
+   "file": "aegis.png",
+   "map": "Maps/_NF/Shuttles/Expedition/aegis.yml",
+   "id": "Aegis",
+   "name": "FSA Aegis",
+   "price": 50000,
+   "category": "Medium",
+   "class": [
+    "Expedition",
+    "Civilian"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Expedition",
+   "description": "The Aegis is an expedition shuttle designed for long duration exploration missions with the comfort and care of the crew as a mainstay priority.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/aegis.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Aegis",
+   "lastModified": "Tue, 14 Jul 2026 09:37:43 GMT",
+   "bytes": 294874,
+   "width": 608,
+   "height": 864,
+   "format": "png",
+   "sha256": "90bbd4297418527a2f96b54579a4824be6a2448fde77b503166b5a14e45e1116"
+  },
+  {
+   "file": "anchor.png",
+   "map": "Maps/_NF/Shuttles/Expedition/anchor.yml",
+   "id": "Anchor",
+   "name": "KC Anchor",
+   "price": 132000,
+   "category": "Large",
+   "class": [
+    "Expedition",
+    "Civilian"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Expedition",
+   "description": "A large luxury cruiser capable of long ranged travel acrossed the sector, expedition capable.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/anchor.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Anchor",
+   "lastModified": "Tue, 14 Jul 2026 09:38:25 GMT",
+   "bytes": 533638,
+   "width": 1376,
+   "height": 1376,
+   "format": "png",
+   "sha256": "6c81cee4409ca73666872f28087c64681417b1fe1632806dd1f8056085fd8270"
+  },
+  {
+   "file": "brigand.png",
+   "map": "Maps/_NF/Shuttles/Expedition/brigand.yml",
+   "id": "Brigand",
+   "name": "LVHI Brigand",
+   "price": 67600,
+   "category": "Medium",
+   "class": [
+    "Expedition"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Expedition",
+   "description": "Civilian conversion of an old military light frigate from the early days of humanity's expansion to the stars, predating FTL technology. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/brigand.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Brigand",
+   "lastModified": "Tue, 14 Jul 2026 09:39:03 GMT",
+   "bytes": 156550,
+   "width": 416,
+   "height": 960,
+   "format": "png",
+   "sha256": "a645cff58d53a0a9b7bd963f5a91635bd653978cd8a077757a67e129351c5557"
+  },
+  {
+   "file": "charon.png",
+   "map": "Maps/_NF/Shuttles/Expedition/charon.yml",
+   "id": "Charon",
+   "name": "EIS Charon",
+   "price": 82000,
+   "category": "Medium",
+   "class": [
+    "Expedition"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Expedition",
+   "description": "Originally built as a roll-on, roll-off transport for heavy terraforming equipment. Since its obsolescence and appearance on the secondary market, the Charon has become a favorite of upfitters for the broad possibilities afforded by its open equipment bay. A product of Endurance Industrial Shipyards.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/charon.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Charon",
+   "lastModified": "Tue, 14 Jul 2026 09:39:43 GMT",
+   "bytes": 276260,
+   "width": 768,
+   "height": 1056,
+   "format": "png",
+   "sha256": "651009987f6fa36ec97eb6afa891e42a6828d248b97874e6e33b13e8a3c19126"
+  },
+  {
+   "file": "decadedove.png",
+   "map": "Maps/_NF/Shuttles/Expedition/decadedove.yml",
+   "id": "DecadeDove",
+   "name": "DYS Dove",
+   "price": 57000,
+   "category": "Medium",
+   "class": [
+    "Expedition"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Expedition",
+   "description": "Versatile expedition-capable multi-purpose light freighter.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/decadedove.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/DecadeDove",
+   "lastModified": "Tue, 14 Jul 2026 09:40:24 GMT",
+   "bytes": 408185,
+   "width": 832,
+   "height": 832,
+   "format": "png",
+   "sha256": "da33d746adb7953077874932702b8cafb9bd43d56e66c6efa0b4392152809831"
+  },
+  {
+   "file": "dragonfly.png",
+   "map": "Maps/_NF/Shuttles/Expedition/dragonfly.yml",
+   "id": "Dragonfly",
+   "name": "DYS Dragonfly",
+   "price": 65000,
+   "category": "Medium",
+   "class": [
+    "Expedition"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Expedition",
+   "description": "Highly modular salvaging vessel welded together from smaller re-purposed hulls.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/dragonfly.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Dragonfly",
+   "lastModified": "Tue, 14 Jul 2026 09:41:04 GMT",
+   "bytes": 215557,
+   "width": 800,
+   "height": 896,
+   "format": "png",
+   "sha256": "f1e143624c1941f3c74fa1aaa1f4d2778a4c36f8ccb629b3b01b0bb920a10d01"
+  },
+  {
+   "file": "pathfinder.png",
+   "map": "Maps/_NF/Shuttles/Expedition/pathfinder.yml",
+   "id": "Pathfinder",
+   "name": "KC Pathfinder",
+   "price": 50000,
+   "category": "Small",
+   "class": [
+    "Expedition"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Expedition",
+   "description": "Once a scout ship serving with the Nanotrasen Marine Expeditionary Forces, this now decommissioned expedition capable ship can be yours!",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/pathfinder.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Pathfinder",
+   "lastModified": "Tue, 14 Jul 2026 09:41:43 GMT",
+   "bytes": 123748,
+   "width": 736,
+   "height": 480,
+   "format": "png",
+   "sha256": "af61f8e22f115bba3946e67c31dc0c99fdf73a1977f3fa11637d7ac39823f554"
+  },
+  {
+   "file": "sprinter.png",
+   "map": "Maps/_NF/Shuttles/Expedition/sprinter.yml",
+   "id": "Sprinter",
+   "name": "KC Sprinter",
+   "price": 60000,
+   "category": "Medium",
+   "class": [
+    "Expedition"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Expedition",
+   "description": "A light freighter often picked by bounty hunters due to its quick acceleration, expedition capable.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/sprinter.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Sprinter",
+   "lastModified": "Tue, 14 Jul 2026 09:42:24 GMT",
+   "bytes": 347489,
+   "width": 832,
+   "height": 832,
+   "format": "png",
+   "sha256": "a97627d333616f19fe86100235f35de0ba43ce5fff388b8ba0099b63f95f546a"
+  },
+  {
+   "file": "broadhead.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/broadhead.yml",
+   "id": "Broadhead",
+   "name": "NSF Broadhead",
+   "price": 60000,
+   "category": "Medium",
+   "class": [
+    "Detective"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A medium size detective ship with facilities for autopsies, interrogations and detailed investigations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/broadhead.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Broadhead",
+   "lastModified": "Tue, 14 Jul 2026 09:43:03 GMT",
+   "bytes": 241943,
+   "width": 544,
+   "height": 832,
+   "format": "png",
+   "sha256": "c1564ac42e31d6048db884a8c4be2ff1041e59cbaead3512916f314229cb1e37"
+  },
+  {
+   "file": "empress.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/empress.yml",
+   "id": "Empress",
+   "name": "NSF Empress",
+   "price": 165000,
+   "category": "Large",
+   "class": [
+    "Capital"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A large patrol vessel capable of carrying up to 4 smaller faster attack ships. The flagship vessel of the NFSD.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/empress.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Empress",
+   "lastModified": "Tue, 14 Jul 2026 09:44:27 GMT",
+   "bytes": 498185,
+   "width": 2016,
+   "height": 960,
+   "format": "png",
+   "sha256": "ea565c9424da23169be8c750f809d31ea679eb1799f58a07748b226d20e473c0"
+  },
+  {
+   "file": "heimdall.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/heimdall.yml",
+   "id": "Heimdall",
+   "name": "NSF Heimdall",
+   "price": 27000,
+   "category": "Small",
+   "class": [
+    "Detective"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A small detective runabout for intelligence gathering and forensic work.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/heimdall.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Heimdall",
+   "lastModified": "Tue, 14 Jul 2026 09:45:48 GMT",
+   "bytes": 96715,
+   "width": 480,
+   "height": 512,
+   "format": "png",
+   "sha256": "01c4a32c87a3442abf57b16d084a3ef92401c7ee0b482d66993db202cbf11b64"
+  },
+  {
+   "file": "hospitaller.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/hospitaller.yml",
+   "id": "Hospitaller",
+   "name": "NSF Hospitaller",
+   "price": 28220,
+   "category": "Small",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "APU"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A small security medical craft designed for emergency response and search and rescue operations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/hospitaller.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Hospitaller",
+   "lastModified": "Tue, 14 Jul 2026 09:46:27 GMT",
+   "bytes": 40564,
+   "width": 224,
+   "height": 384,
+   "format": "png",
+   "sha256": "c9e6c4f167179597d8f585d124a29bb1b76a7c8a879995490c1288ec72555490"
+  },
+  {
+   "file": "hypnos.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/hypnos.yml",
+   "id": "Hypnos",
+   "name": "NSF Hypnos",
+   "price": 34500,
+   "category": "Medium",
+   "class": [
+    "Pursuit"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A light medium ship with a recommended crew of 2 to 3 officers, the Hypnos is a dedicated interdiction vessel outfitted with a powerful EMP device for tackling escaping vessels.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/hypnos.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Hypnos",
+   "lastModified": "Tue, 14 Jul 2026 09:47:10 GMT",
+   "bytes": 121219,
+   "width": 608,
+   "height": 640,
+   "format": "png",
+   "sha256": "e706345abeeb0cf45c41ad94592cd187a788aea251bf6c003b954d754c69931d"
+  },
+  {
+   "file": "paladin.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/paladin.yml",
+   "id": "Paladin",
+   "name": "NSF Paladin",
+   "price": 34220,
+   "category": "Small",
+   "class": [
+    "Fighter"
+   ],
+   "engines": [
+    "APU"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A small security assault craft designed for space combat equipped with an EXP-2100g mounted grenade launcher.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/paladin.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Paladin",
+   "lastModified": "Tue, 14 Jul 2026 09:47:48 GMT",
+   "bytes": 44289,
+   "width": 224,
+   "height": 384,
+   "format": "png",
+   "sha256": "0eb2964c00fd07749048f21daec4b78022c58e53cb728f0dc574a5e2d10491c6"
+  },
+  {
+   "file": "prowler.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/prowler.yml",
+   "id": "Prowler",
+   "name": "NSF Prowler",
+   "price": 45000,
+   "category": "Medium",
+   "class": [
+    "Patrol"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A medium-sized patrol craft, the Prowler class is a dedicated deep space pursuit vessel with an advanced sensor suite and moderate cargo capacity.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/prowler.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Prowler",
+   "lastModified": "Tue, 14 Jul 2026 09:48:28 GMT",
+   "bytes": 160066,
+   "width": 800,
+   "height": 608,
+   "format": "png",
+   "sha256": "4f6e0620d913ec05effe5da4b668d5ea29a6dc348345006ffc6b874eb143d359"
+  },
+  {
+   "file": "templar.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/templar.yml",
+   "id": "Templar",
+   "name": "NSF Templar",
+   "price": 24220,
+   "category": "Small",
+   "class": [
+    "Pursuit"
+   ],
+   "engines": [
+    "APU"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A small security assault craft designed for combat interdiction operations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/templar.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Templar",
+   "lastModified": "Tue, 14 Jul 2026 09:49:47 GMT",
+   "bytes": 41893,
+   "width": 224,
+   "height": 352,
+   "format": "png",
+   "sha256": "5c54066c0a07494f8f512cc9d7d91baaee25b56a0769de88757a22509907c02c"
+  },
+  {
+   "file": "wasp.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/wasp.yml",
+   "id": "Wasp",
+   "name": "NSF Wasp",
+   "price": 135000,
+   "category": "Large",
+   "class": [
+    "Capital",
+    "Detainment",
+    "Expedition"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Security",
+   "description": "A large expedition oriented ship for holding prisoners and making them work planetside.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/wasp.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Wasp",
+   "lastModified": "Tue, 14 Jul 2026 09:50:31 GMT",
+   "bytes": 366508,
+   "width": 864,
+   "height": 1600,
+   "format": "png",
+   "sha256": "61ed126ed1a3688762c4b7267ccb77c62c46ed3b32ec333a47dc1b5d6fc95802"
+  },
+  {
+   "file": "cleric.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/cleric.yml",
+   "id": "Cleric",
+   "name": "NSF Cleric",
+   "price": 11800,
+   "category": "Micro",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "APU"
+   ],
+   "shipyardGroup": "Custom",
+   "description": "Micro support vessel used for emergency rescues and first aid.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/cleric.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Cleric",
+   "lastModified": "Tue, 14 Jul 2026 09:43:43 GMT",
+   "bytes": 23164,
+   "width": 288,
+   "height": 160,
+   "format": "png",
+   "sha256": "255c143893bc6bd1970987107d226b81402219a560a6e0afffa2bf93c60ded4c"
+  },
+  {
+   "file": "fighter.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/fighter.yml",
+   "id": "Fighter",
+   "name": "NSF Fighter",
+   "price": 9000,
+   "category": "Micro",
+   "class": [
+    "Fighter"
+   ],
+   "engines": [
+    "APU"
+   ],
+   "shipyardGroup": "Custom",
+   "description": "Micro attack vessel used for boarding and transport of prisoners.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/fighter.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Fighter",
+   "lastModified": "Tue, 14 Jul 2026 09:45:08 GMT",
+   "bytes": 23249,
+   "width": 160,
+   "height": 288,
+   "format": "png",
+   "sha256": "54986ddea3251d7d223b13c513e13b38739c2e93233661803fbebb6ccca4ee66"
+  },
+  {
+   "file": "rogue.png",
+   "map": "Maps/_NF/Shuttles/Nfsd/rogue.yml",
+   "id": "Rogue",
+   "name": "NSF Rogue",
+   "price": 12200,
+   "category": "Micro",
+   "class": [
+    "Fighter"
+   ],
+   "engines": [
+    "APU"
+   ],
+   "shipyardGroup": "Custom",
+   "description": "Micro assault vessel with a toggle for going dark in deep space.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/rogue.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Rogue",
+   "lastModified": "Tue, 14 Jul 2026 09:49:07 GMT",
+   "bytes": 25798,
+   "width": 160,
+   "height": 288,
+   "format": "png",
+   "sha256": "afb8618c4667b3eabe9e65841ce85d2c9224378af71a413a095e3951cf18b327"
+  },
+  {
+   "file": "mcdelivery.png",
+   "map": "Maps/_NF/Shuttles/mcdelivery.yml",
+   "id": "McDelivery",
+   "name": "DC McDelivery",
+   "price": 8000,
+   "category": "Micro",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Welding"
+   ],
+   "shipyardGroup": "Custom",
+   "description": "Fast food fast ship, bring the McCargo meals to the people",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/mcdelivery.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/McDelivery",
+   "lastModified": "Tue, 14 Jul 2026 10:33:44 GMT",
+   "bytes": 27593,
+   "width": 320,
+   "height": 224,
+   "format": "png",
+   "sha256": "7afa3840518164364b204bd3f29ec6f04f95416509655bad5ca3cb2cafca6019"
+  },
+  {
+   "file": "canister.png",
+   "map": "Maps/_NF/Shuttles/Scrap/canister.yml",
+   "id": "Canister",
+   "name": "UAC Canister",
+   "price": 8000,
+   "category": "Micro",
+   "class": [
+    "Scrapyard",
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Scrap",
+   "description": "Whatever you're bringing, it won't fit. Seats two. Gravity included.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/canister.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Canister",
+   "lastModified": "Tue, 14 Jul 2026 09:51:12 GMT",
+   "bytes": 32398,
+   "width": 192,
+   "height": 224,
+   "format": "png",
+   "sha256": "af82eab7178b47e3317f83cba37bf4d57a9633df05f7cf0048062ef7e46dc240"
+  },
+  {
+   "file": "construct.png",
+   "map": "Maps/_NF/Shuttles/Scrap/construct.yml",
+   "id": "Construct",
+   "name": "NT Construct",
+   "price": 10500,
+   "category": "Micro",
+   "class": [
+    "Scrapyard",
+    "Engineering"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Scrap",
+   "description": "A technically spacefaring vessel.  No livery.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/construct.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Construct",
+   "lastModified": "Tue, 14 Jul 2026 09:51:52 GMT",
+   "bytes": 20997,
+   "width": 224,
+   "height": 192,
+   "format": "png",
+   "sha256": "96846a383a5ef2234ad4e108b72c7024994a410c85039ec04a360751ebe85943"
+  },
+  {
+   "file": "disciple.png",
+   "map": "Maps/_NF/Shuttles/Scrap/disciple.yml",
+   "id": "Disciple",
+   "name": "NSV Disciple",
+   "price": 15000,
+   "category": "Small",
+   "class": [
+    "Scrapyard",
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Scrap",
+   "description": "A cheaply made amalgamation of religious ships. For the seasoned religious assistant.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/disciple.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Disciple",
+   "lastModified": "Tue, 14 Jul 2026 09:52:32 GMT",
+   "bytes": 127428,
+   "width": 352,
+   "height": 384,
+   "format": "png",
+   "sha256": "21e0d9506a0dfbec34bcdd9237f556aa7ee40ed0877dd3286e712533e673466b"
+  },
+  {
+   "file": "geode.png",
+   "map": "Maps/_NF/Shuttles/Scrap/geode.yml",
+   "id": "Geode",
+   "name": "CLU Geode",
+   "price": 51000,
+   "category": "Medium",
+   "class": [
+    "Scrapyard",
+    "Civilian",
+    "Salvage"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Scrap",
+   "description": "Built into a rock by the finest goblin engineers, this vessel has all the discrete trader needs to conduct business.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/geode.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Geode",
+   "lastModified": "Tue, 14 Jul 2026 09:53:13 GMT",
+   "bytes": 385924,
+   "width": 736,
+   "height": 736,
+   "format": "png",
+   "sha256": "2439455244b27690d7cb07dc03db515e0cd62be1b4e701356c992df24a08d441"
+  },
+  {
+   "file": "nugget.png",
+   "map": "Maps/_NF/Shuttles/Scrap/nugget.yml",
+   "id": "Nugget",
+   "name": "SV Nugget",
+   "price": 15950,
+   "category": "Small",
+   "class": [
+    "Scrapyard",
+    "Kitchen"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Scrap",
+   "description": "A flying hunk of wood and metal disguised as a kitchen shuttle. Not FDA approved.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/nugget.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Nugget",
+   "lastModified": "Tue, 14 Jul 2026 09:53:55 GMT",
+   "bytes": 218428,
+   "width": 608,
+   "height": 512,
+   "format": "png",
+   "sha256": "8bf51a38e1ea31f5a85c488846d2844bc8a376be0ddb3cc92bdf3cac0cbb057d"
+  },
+  {
+   "file": "orange.png",
+   "map": "Maps/_NF/Shuttles/Scrap/orange.yml",
+   "id": "Orange",
+   "name": "SV Orange",
+   "price": 18000,
+   "category": "Small",
+   "class": [
+    "Scrapyard",
+    "Cargo",
+    "Salvage"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Scrap",
+   "description": "A cargo slash salvage shuttle made from scavenged wrecks, comes with some damage.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/orange.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Orange",
+   "lastModified": "Tue, 14 Jul 2026 09:54:33 GMT",
+   "bytes": 252451,
+   "width": 704,
+   "height": 352,
+   "format": "png",
+   "sha256": "da9de71324b72ee215b1e6db9a6be7505c923b2faae752f510e4a1167262a0a9"
+  },
+  {
+   "file": "rusty.png",
+   "map": "Maps/_NF/Shuttles/Scrap/rusty.yml",
+   "id": "Rusty",
+   "name": "SSF Rusty",
+   "price": 9000,
+   "category": "Micro",
+   "class": [
+    "Scrapyard",
+    "Civilian"
+   ],
+   "engines": [
+    "Welding"
+   ],
+   "shipyardGroup": "Scrap",
+   "description": "A cheap old model transport shuttle, good enough to get to places.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/rusty.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Rusty",
+   "lastModified": "Tue, 14 Jul 2026 09:55:13 GMT",
+   "bytes": 58568,
+   "width": 224,
+   "height": 288,
+   "format": "png",
+   "sha256": "705b503104fc4a9d51975ee226a02669bf68415fd5f69c15950d1e42b5964f32"
+  },
+  {
+   "file": "tide.png",
+   "map": "Maps/_NF/Shuttles/Scrap/tide.yml",
+   "id": "Tide",
+   "name": "SV Tide",
+   "price": 9700,
+   "category": "Small",
+   "class": [
+    "Scrapyard",
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Scrap",
+   "description": "A cheaply made mass-produced shuttle made from salvaged wrecks. For the seasoned assistant.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/tide.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Tide",
+   "lastModified": "Tue, 14 Jul 2026 09:55:52 GMT",
+   "bytes": 119731,
+   "width": 384,
+   "height": 480,
+   "format": "png",
+   "sha256": "bb49bf393828582da4f8cccef999b2b700de0c9bbd70cae98689b60c53685e6a"
+  },
+  {
+   "file": "broom.png",
+   "map": "Maps/_NF/Shuttles/Sr/broom.yml",
+   "id": "Broom",
+   "name": "LVHI Broom",
+   "price": 13500,
+   "category": "Micro",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Sr",
+   "description": "A cramped yet reliable shuttle for providing official janitorial services. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/broom.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Broom",
+   "lastModified": "Tue, 14 Jul 2026 09:56:35 GMT",
+   "bytes": 29672,
+   "width": 160,
+   "height": 320,
+   "format": "png",
+   "sha256": "ff0c2514631af743dc4f588e04566f90c16a5e7458f6263eb2fb54b7ac38baee"
+  },
+  {
+   "file": "chauffeur.png",
+   "map": "Maps/_NF/Shuttles/Sr/chauffeur.yml",
+   "id": "Chauffeur",
+   "name": "NC Chauffeur",
+   "price": 17500,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Sr",
+   "description": "A small transport shuttle with space for 4 passengers. Comes with the latest audio entertainment technology.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/chauffeur.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Chauffeur",
+   "lastModified": "Tue, 14 Jul 2026 09:57:13 GMT",
+   "bytes": 67666,
+   "width": 288,
+   "height": 384,
+   "format": "png",
+   "sha256": "9bd72e85d69ddc621f597ce80207afff114036d2b92776a95e61d2999b335a77"
+  },
+  {
+   "file": "duchess.png",
+   "map": "Maps/_NF/Shuttles/Sr/duchess.yml",
+   "id": "Duchess",
+   "name": "NT Duchess",
+   "price": 25500,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Sr",
+   "description": "A mobile office and personal transport for the Station Representative, based on the BB Bodkin.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/duchess.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Duchess",
+   "lastModified": "Tue, 14 Jul 2026 09:57:52 GMT",
+   "bytes": 94519,
+   "width": 352,
+   "height": 512,
+   "format": "png",
+   "sha256": "a845c706cd32c6a825f486dbbf8a5306b32d45603edc9a915a99c62c997f5bfa"
+  },
+  {
+   "file": "express.png",
+   "map": "Maps/_NF/Shuttles/Sr/express.yml",
+   "id": "Express",
+   "name": "FSC Express",
+   "price": 17250,
+   "category": "Small",
+   "class": [
+    "Cargo"
+   ],
+   "engines": [
+    "Plasma",
+    "Solar"
+   ],
+   "shipyardGroup": "Sr",
+   "description": "A small endurance shuttle for express logistics support in Frontier space.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/express.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Express",
+   "lastModified": "Tue, 14 Jul 2026 09:58:32 GMT",
+   "bytes": 71967,
+   "width": 288,
+   "height": 576,
+   "format": "png",
+   "sha256": "45dedc6867dca4d436ee91b8421e237518188e4255387859ce3b67940a9b249b"
+  },
+  {
+   "file": "harbormaster.png",
+   "map": "Maps/_NF/Shuttles/Sr/harbormaster.yml",
+   "id": "Harbormaster",
+   "name": "LVHI Harbormaster",
+   "price": 28500,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Sr",
+   "description": "A small tugboat. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/harbormaster.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Harbormaster",
+   "lastModified": "Tue, 14 Jul 2026 09:59:13 GMT",
+   "bytes": 68050,
+   "width": 448,
+   "height": 352,
+   "format": "png",
+   "sha256": "56dd2014593d0d99c6e817d7bd175f3a9ff6b9312d7689bed2866230fc03af6f"
+  },
+  {
+   "file": "hound.png",
+   "map": "Maps/_NF/Shuttles/Sr/hound.yml",
+   "id": "Hound",
+   "name": "CBC Hound",
+   "price": 25000,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Sr",
+   "description": "A Rotund Security vessel capable of housing and transporting the roudiest of criminals!",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/hound.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Hound",
+   "lastModified": "Tue, 14 Jul 2026 09:59:52 GMT",
+   "bytes": 80047,
+   "width": 352,
+   "height": 416,
+   "format": "png",
+   "sha256": "13acb916558fe10b613736f38ce7dfd016886100610b901e3b1b992b9dd8d362"
+  },
+  {
+   "file": "mailpod.png",
+   "map": "Maps/_NF/Shuttles/Sr/mailpod.yml",
+   "id": "MailPod",
+   "name": "NC Mail Pod",
+   "price": 12750,
+   "category": "Micro",
+   "class": [
+    "Cargo"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Sr",
+   "description": "A cramped yet reliable shuttle for delivering packages.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/mailpod.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/MailPod",
+   "lastModified": "Tue, 14 Jul 2026 10:00:34 GMT",
+   "bytes": 23251,
+   "width": 160,
+   "height": 288,
+   "format": "png",
+   "sha256": "36a2b500fbe8c3721b8bc934c49f31169541bb703f62714e8f140d75eef4de49"
+  },
+  {
+   "file": "parcel.png",
+   "map": "Maps/_NF/Shuttles/Sr/parcel.yml",
+   "id": "Parcel",
+   "name": "NC Parcel",
+   "price": 17000,
+   "category": "Small",
+   "class": [
+    "Cargo"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Sr",
+   "description": "A reliable shuttle for delivering mail and packages.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/parcel.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Parcel",
+   "lastModified": "Tue, 14 Jul 2026 10:02:36 GMT",
+   "bytes": 41688,
+   "width": 352,
+   "height": 288,
+   "format": "png",
+   "sha256": "8021bf624b5977804f4498da4e34221ca9a8ea278a29549139d67cf7f8ee0cea"
+  },
+  {
+   "file": "hunter.png",
+   "map": "Maps/_NF/Shuttles/Syndicate/hunter.yml",
+   "id": "Hunter",
+   "name": "Hunter",
+   "price": 50000,
+   "category": "Small",
+   "class": [
+    "Syndicate"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Syndicate",
+   "description": "A small armored Syndicate assault shuttle, perfect for devious operations!",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/hunter.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Hunter",
+   "lastModified": "Tue, 14 Jul 2026 10:03:21 GMT",
+   "bytes": 65947,
+   "width": 352,
+   "height": 544,
+   "format": "png",
+   "sha256": "74436c5105fb331210b5ace87278dba73c4408672f79440a3967bc382a54198e"
+  },
+  {
+   "file": "infiltrator.png",
+   "map": "Maps/_NF/Shuttles/Syndicate/infiltrator.yml",
+   "id": "Infiltrator",
+   "name": "Infiltrator",
+   "price": 85000,
+   "category": "Medium",
+   "class": [
+    "Syndicate"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Syndicate",
+   "description": "A Syndicate nuclear operative infiltration ship.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/infiltrator.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Infiltrator",
+   "lastModified": "Tue, 14 Jul 2026 10:04:04 GMT",
+   "bytes": 209010,
+   "width": 608,
+   "height": 960,
+   "format": "png",
+   "sha256": "538b95617177e73fcc26a80a021e894ce2531603194a55d9491c699487ee8343"
+  },
+  {
+   "file": "voltage.png",
+   "map": "Maps/_NF/Shuttles/Syndicate/voltage.yml",
+   "id": "Voltage",
+   "name": "Voltage",
+   "price": 55000,
+   "category": "Medium",
+   "class": [
+    "Cargo",
+    "Syndicate"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Syndicate",
+   "description": "A small armored Syndicate smuggling shuttle, perfect for fueling Nanotrasen's inevitable demise!",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/voltage.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Voltage",
+   "lastModified": "Tue, 14 Jul 2026 10:04:43 GMT",
+   "bytes": 121893,
+   "width": 672,
+   "height": 640,
+   "format": "png",
+   "sha256": "db4bbc7241427113905037df68c1aec6598831861baf8b28f710478dc4d1d9d0"
+  },
+  {
+   "file": "adder.png",
+   "map": "Maps/_NF/Shuttles/adder.yml",
+   "id": "Adder",
+   "name": "LVHI Adder",
+   "price": 18000,
+   "category": "Small",
+   "class": [
+    "Salvage"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small maneuverable shuttle designed for mining. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/adder.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Adder",
+   "lastModified": "Tue, 14 Jul 2026 10:05:23 GMT",
+   "bytes": 52814,
+   "width": 320,
+   "height": 320,
+   "format": "png",
+   "sha256": "a970d8a0371428ed734cfcaa32f70b55295e9820a6fc532168a81b051987e194"
+  },
+  {
+   "file": "ambition.png",
+   "map": "Maps/_NF/Shuttles/ambition.yml",
+   "id": "Ambition",
+   "name": "UAC Ambition",
+   "price": 190000,
+   "category": "Large",
+   "class": [
+    "Atmospherics"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "Declassified gas production and distribution platform seized in a hostile takeover of an Atmosian conglomerate. For the ultimate insurgent.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/ambition.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Ambition",
+   "lastModified": "Tue, 14 Jul 2026 10:06:47 GMT",
+   "bytes": 884267,
+   "width": 800,
+   "height": 1952,
+   "format": "png",
+   "sha256": "460512cb575c8947de5e6203f3de86a669e1595a624114e99d34b765053b07d2"
+  },
+  {
+   "file": "backpacker.png",
+   "map": "Maps/_NF/Shuttles/backpacker.yml",
+   "id": "Backpacker",
+   "name": "NT Backpacker",
+   "price": 26000,
+   "category": "Medium",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small recreational shuttle for all your out in space adventure. Comes fully kitted with a small kitchen, toilet, work garage and highly customizable recreational spaces.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/backpacker.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Backpacker",
+   "lastModified": "Tue, 14 Jul 2026 10:08:08 GMT",
+   "bytes": 88929,
+   "width": 288,
+   "height": 576,
+   "format": "png",
+   "sha256": "72435199e3bded958179c9539849fb0f163bd6d66cee4507a00a0666fbadd449"
+  },
+  {
+   "file": "balena.png",
+   "map": "Maps/_NF/Shuttles/balena.yml",
+   "id": "Balena",
+   "name": "PT Balena",
+   "price": 86000,
+   "category": "Medium",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A full service super-yacht with a bar, concession booth, and swimming pool for the most affluent of travelers.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/balena.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Balena",
+   "lastModified": "Tue, 14 Jul 2026 10:08:50 GMT",
+   "bytes": 351833,
+   "width": 608,
+   "height": 1312,
+   "format": "png",
+   "sha256": "205d354bbb6855184a0262f40e51a9be4d5e6259086f82172ece3395ea276d85"
+  },
+  {
+   "file": "barge.png",
+   "map": "Maps/_NF/Shuttles/barge.yml",
+   "id": "Barge",
+   "name": "NC Barge",
+   "price": 54000,
+   "category": "Medium",
+   "class": [
+    "Cargo",
+    "Salvage"
+   ],
+   "engines": [
+    "Solar",
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A medium shipping vessel repurposed in a salvage and material exploitation vessel.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/barge.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Barge",
+   "lastModified": "Tue, 14 Jul 2026 10:09:29 GMT",
+   "bytes": 226999,
+   "width": 416,
+   "height": 1056,
+   "format": "png",
+   "sha256": "f042d0fdb9f8012f7387cc1e518ae0620679594265327d8d3c3b1305745992bf"
+  },
+  {
+   "file": "baroness.png",
+   "map": "Maps/_NF/Shuttles/baroness.yml",
+   "id": "Baroness",
+   "name": "BB Baroness",
+   "price": 27000,
+   "category": "Medium",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small luxury cruiser for one or two people, with a lounge, a private bedroom, and a hell of a cockpit view.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/baroness.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Baroness",
+   "lastModified": "Tue, 14 Jul 2026 10:10:09 GMT",
+   "bytes": 122415,
+   "width": 480,
+   "height": 608,
+   "format": "png",
+   "sha256": "121697de82f027e1cb09d00907cca3e46d8a321031532ec3ee727382988ed71e"
+  },
+  {
+   "file": "bocadillo.png",
+   "map": "Maps/_NF/Shuttles/bocadillo.yml",
+   "id": "Bocadillo",
+   "name": "NC Bocadillo",
+   "price": 25500,
+   "category": "Small",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A tiny food truck perfect for a solo chef. Better with a friend!",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/bocadillo.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Bocadillo",
+   "lastModified": "Tue, 14 Jul 2026 10:10:54 GMT",
+   "bytes": 73358,
+   "width": 544,
+   "height": 256,
+   "format": "png",
+   "sha256": "f1b4951da005bbd993972cf7ab32943bd3849dd927a8ac1721c4c42ac511c8c2"
+  },
+  {
+   "file": "bodkin.png",
+   "map": "Maps/_NF/Shuttles/bodkin.yml",
+   "id": "Bodkin",
+   "name": "BB Bodkin",
+   "price": 42000,
+   "category": "Medium",
+   "class": [
+    "Salvage"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "The smaller sibling to the Broadhead, the BB Bodkin is designed for rockhopping and salvage recovery.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/bodkin.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Bodkin",
+   "lastModified": "Tue, 14 Jul 2026 10:11:35 GMT",
+   "bytes": 150563,
+   "width": 480,
+   "height": 672,
+   "format": "png",
+   "sha256": "6e741a73e0b1ebaef306119a8bcbfeed92de5e84fe5f1a4758b2fb2e90c13101"
+  },
+  {
+   "file": "bookworm.png",
+   "map": "Maps/_NF/Shuttles/bookworm.yml",
+   "id": "Bookworm",
+   "name": "BB Bookworm",
+   "price": 32500,
+   "category": "Medium",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A cozy medium-size library for travellers who wish to relax with a book or perhaps a board game.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/bookworm.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Bookworm",
+   "lastModified": "Tue, 14 Jul 2026 10:12:14 GMT",
+   "bytes": 132383,
+   "width": 544,
+   "height": 544,
+   "format": "png",
+   "sha256": "c81d70ee5963467002bfeccc34623c07ad4f51bd84a2f9f28f7df35a11024ec3"
+  },
+  {
+   "file": "bulker.png",
+   "map": "Maps/_NF/Shuttles/bulker.yml",
+   "id": "Bulker",
+   "name": "KL Bulker",
+   "price": 47500,
+   "category": "Medium",
+   "class": [
+    "Salvage"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A medium mining vessel designed for deep space missions",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/bulker.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Bulker",
+   "lastModified": "Tue, 14 Jul 2026 10:12:54 GMT",
+   "bytes": 141192,
+   "width": 864,
+   "height": 416,
+   "format": "png",
+   "sha256": "48b79ffcbae7cb522ae1f2eebe77985b39800eeb8be2dd9b1c33114932995a52"
+  },
+  {
+   "file": "camper.png",
+   "map": "Maps/_NF/Shuttles/camper.yml",
+   "id": "Camper",
+   "name": "SSF Camper",
+   "price": 15000,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A personal mobile home for nomadic spacers, equipped with a small kitchen, toilet and bedroom.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/camper.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Camper",
+   "lastModified": "Tue, 14 Jul 2026 10:14:19 GMT",
+   "bytes": 73723,
+   "width": 224,
+   "height": 448,
+   "format": "png",
+   "sha256": "e6d186593fa3a3ddd0a41a436e682c8f9467c319197789ba753c47d712084d94"
+  },
+  {
+   "file": "ceres.png",
+   "map": "Maps/_NF/Shuttles/ceres.yml",
+   "id": "Ceres",
+   "name": "BB Ceres",
+   "price": 70000,
+   "category": "Medium",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A medium-size, high-class restaurant ship with ample seating, integrated botany and a dining room for VIP guests",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/ceres.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Ceres",
+   "lastModified": "Tue, 14 Jul 2026 10:15:01 GMT",
+   "bytes": 322157,
+   "width": 800,
+   "height": 992,
+   "format": "png",
+   "sha256": "0ec21551a5b6d6ef5c9eb9c9c27a942ce67f7c54c8ba315e3ae60dc1f46b3f8c"
+  },
+  {
+   "file": "chisel.png",
+   "map": "Maps/_NF/Shuttles/chisel.yml",
+   "id": "Chisel",
+   "name": "ICR Chisel",
+   "price": 34500,
+   "category": "Small",
+   "class": [
+    "Salvage",
+    "Cargo"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "Standard small-size vessel, originally meant to aid in ship scrapping, now modified to function as a multipurpose salvage/mining/cargo-hauling shuttle.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/chisel.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Chisel",
+   "lastModified": "Tue, 14 Jul 2026 10:15:41 GMT",
+   "bytes": 126379,
+   "width": 480,
+   "height": 416,
+   "format": "png",
+   "sha256": "e92782b4500ca063c44ec4a56dd536dbd058ceef1b69e46f9843e7cee2ebfefd"
+  },
+  {
+   "file": "coffeehouse.png",
+   "map": "Maps/_NF/Shuttles/coffeehouse.yml",
+   "id": "Coffeehouse",
+   "name": "SSF Coffeehouse",
+   "price": 32500,
+   "category": "Small",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small service ship with caf\u00e9 inside it, ready to serve the best coffee in the galaxy.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/coffeehouse.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Coffeehouse",
+   "lastModified": "Tue, 14 Jul 2026 10:16:19 GMT",
+   "bytes": 92062,
+   "width": 416,
+   "height": 448,
+   "format": "png",
+   "sha256": "aba4cc320c5bac7aafe537d68b5a6b3edc53f94c049bc0a697abfca98c7df5fe"
+  },
+  {
+   "file": "comet.png",
+   "map": "Maps/_NF/Shuttles/comet.yml",
+   "id": "Comet",
+   "name": "NT Comet",
+   "price": 62000,
+   "category": "Medium",
+   "class": [
+    "Salvage",
+    "Engineering"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A mining and construction vessel intended to help build or repair quickly.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/comet.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Comet",
+   "lastModified": "Tue, 14 Jul 2026 10:16:59 GMT",
+   "bytes": 158867,
+   "width": 352,
+   "height": 1248,
+   "format": "png",
+   "sha256": "ab759f0b6784e765ee735fc0627885e0140c5006e8e363ec7fda7d104602ead0"
+  },
+  {
+   "file": "copperhead.png",
+   "map": "Maps/_NF/Shuttles/copperhead.yml",
+   "id": "Copperhead",
+   "name": "LVHI Copperhead",
+   "price": 26000,
+   "category": "Small",
+   "class": [
+    "Salvage"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "Copperhead is an affordable, versatile, small shuttle with room for customization optimized for mining and salvage missions. Whether operating within a fleet or autonomously, its design is a compromise between speed, which is important for medium- to long-distance travel, and maneuverability, which is crucial for navigating asteroid fields. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/copperhead.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Copperhead",
+   "lastModified": "Tue, 14 Jul 2026 10:17:38 GMT",
+   "bytes": 75864,
+   "width": 384,
+   "height": 448,
+   "format": "png",
+   "sha256": "3ea6d218ca929f3ad6a4a18876a39fe5837abd68aba67aa2dff040cbc411501c"
+  },
+  {
+   "file": "courier.png",
+   "map": "Maps/_NF/Shuttles/courier.yml",
+   "id": "Courier",
+   "name": "FSC Courier",
+   "price": 30000,
+   "category": "Small",
+   "class": [
+    "Cargo"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A nimble cargo runner designed to move high value cargo as safely as the pilot is willing through the hazardous pockets of deep space.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/courier.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Courier",
+   "lastModified": "Tue, 14 Jul 2026 10:18:19 GMT",
+   "bytes": 100559,
+   "width": 352,
+   "height": 576,
+   "format": "png",
+   "sha256": "a72fb424e5d04bf552938c3658d604d1f337c3c0fec0e6198795ea646da39514"
+  },
+  {
+   "file": "crescent.png",
+   "map": "Maps/_NF/Shuttles/crescent.yml",
+   "id": "Crescent",
+   "name": "NC Crescent",
+   "price": 300000,
+   "category": "Large",
+   "class": [
+    "Science",
+    "Chemistry",
+    "Civilian"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "The Crescent, named for its exterior shape, is a vessel focused on providing service, medical aide, and scientific breakthroughs for smaller vessels.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/crescent.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Crescent",
+   "lastModified": "Tue, 14 Jul 2026 10:19:04 GMT",
+   "bytes": 1281560,
+   "width": 2016,
+   "height": 1536,
+   "format": "png",
+   "sha256": "2df361df574745617e8e673a1dc93d5908fc234aab0b721e2eeadb0a09de0185"
+  },
+  {
+   "file": "crossroads.png",
+   "map": "Maps/_NF/Shuttles/crossroads.yml",
+   "id": "Crossroads",
+   "name": "PHI Crossroads",
+   "price": 70000,
+   "category": "Medium",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A spacious and inviting service ship. The crossroads is designed to help with dock crowding, connect communities, and serve as anchors for gatherings.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/crossroads.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Crossroads",
+   "lastModified": "Tue, 14 Jul 2026 10:19:45 GMT",
+   "bytes": 416983,
+   "width": 800,
+   "height": 896,
+   "format": "png",
+   "sha256": "9f512c31ee6a0d3dee54b82fa95582e3538ac33bf33e6c1cea96a3fa8a6f43df"
+  },
+  {
+   "file": "dragoon.png",
+   "map": "Maps/_NF/Shuttles/dragoon.yml",
+   "id": "Dragoon",
+   "name": "FSA Dragoon",
+   "price": 31000,
+   "category": "Medium",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "The Dragoon is the explorer of choice for adventures that are more guns and explosives themed.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/dragoon.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Dragoon",
+   "lastModified": "Tue, 14 Jul 2026 10:20:24 GMT",
+   "bytes": 121046,
+   "width": 416,
+   "height": 544,
+   "format": "png",
+   "sha256": "afd8f90d586a12e09b9c9c5dadaee46f6cdf89a468a44ca13d93aa7cf1087f9a"
+  },
+  {
+   "file": "firefighter.png",
+   "map": "Maps/_NF/Shuttles/firefighter.yml",
+   "id": "Firefighter",
+   "name": "AC Firefighter",
+   "price": 44000,
+   "category": "Medium",
+   "class": [
+    "Engineering"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "An engineering vessel designed for rapid repairs and delivering relief from searing shuttle fires.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/firefighter.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Firefighter",
+   "lastModified": "Tue, 14 Jul 2026 10:22:23 GMT",
+   "bytes": 140426,
+   "width": 416,
+   "height": 672,
+   "format": "png",
+   "sha256": "c275d41f6057b69f18e70d8949cd4e8469865b936afb828b66d5b44f3a842d48"
+  },
+  {
+   "file": "garden.png",
+   "map": "Maps/_NF/Shuttles/garden.yml",
+   "id": "Garden",
+   "name": "HS Garden",
+   "price": 30000,
+   "category": "Small",
+   "class": [
+    "Botany"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small botany vessel dedicated to horiticultural experimentation.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/garden.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Garden",
+   "lastModified": "Tue, 14 Jul 2026 10:23:03 GMT",
+   "bytes": 96398,
+   "width": 416,
+   "height": 448,
+   "format": "png",
+   "sha256": "09fb1ff5acd5ff73c25594c91c5dd7702ba4d7386ccc6114cff8e3541157c635"
+  },
+  {
+   "file": "gasbender.png",
+   "map": "Maps/_NF/Shuttles/gasbender.yml",
+   "id": "Gasbender",
+   "name": "LVHI Gasbender",
+   "price": 83000,
+   "category": "Medium",
+   "class": [
+    "Atmospherics"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "The Gasbender is a medium-sized engineering vessel outfitted for deep space construction projects. Features atmospherics setup with mixing/ignition chamber. Designed to work in pair with smaller salvage ship. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/gasbender.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Gasbender",
+   "lastModified": "Tue, 14 Jul 2026 10:23:44 GMT",
+   "bytes": 303540,
+   "width": 672,
+   "height": 1056,
+   "format": "png",
+   "sha256": "d9c70b755877173a0ef856d6132dca117d7dbbf1724b5fb4f81575aa8d0b3cff"
+  },
+  {
+   "file": "gaslight.png",
+   "map": "Maps/_NF/Shuttles/gaslight.yml",
+   "id": "Gaslight",
+   "name": "FSC Gaslight",
+   "price": 40000,
+   "category": "Medium",
+   "class": [
+    "Atmospherics"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A compact gas extraction and mining vessel designed and deployed by the Far Star Corporation.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/gaslight.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Gaslight",
+   "lastModified": "Tue, 14 Jul 2026 10:24:24 GMT",
+   "bytes": 132978,
+   "width": 480,
+   "height": 512,
+   "format": "png",
+   "sha256": "2b16761222ab9c5d406f209bbc626f63e97e47ab38700e1f25a585ceb3327d4f"
+  },
+  {
+   "file": "hammer.png",
+   "map": "Maps/_NF/Shuttles/hammer.yml",
+   "id": "Hammer",
+   "name": "BB Hammer",
+   "price": 43000,
+   "category": "Medium",
+   "class": [
+    "Engineering"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A mobile engineering platform for deep-space repairs, upgrades and remodelling.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/hammer.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Hammer",
+   "lastModified": "Tue, 14 Jul 2026 10:25:03 GMT",
+   "bytes": 144441,
+   "width": 544,
+   "height": 448,
+   "format": "png",
+   "sha256": "21c1c14998552ce4236bb2ab3e48e350ceb245163ca14b08d4b6424d23866769"
+  },
+  {
+   "file": "hauler.png",
+   "map": "Maps/_NF/Shuttles/hauler.yml",
+   "id": "Hauler",
+   "name": "NC Hauler",
+   "price": 75000,
+   "category": "Medium",
+   "class": [
+    "Cargo",
+    "Salvage"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A medium sized vessel specializing in long-haul salvage, mining, and cargo operations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/hauler.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Hauler",
+   "lastModified": "Tue, 14 Jul 2026 10:25:42 GMT",
+   "bytes": 253443,
+   "width": 544,
+   "height": 1248,
+   "format": "png",
+   "sha256": "9b6659d735d82e397f4e9f6edfddd84a5092115597499402aad4530e67a3e385"
+  },
+  {
+   "file": "honker.png",
+   "map": "Maps/_NF/Shuttles/honker.yml",
+   "id": "Honker",
+   "name": "NT Honker",
+   "price": 22500,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "HONK HONK HONK HONK HONK HONK",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/honker.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Honker",
+   "lastModified": "Tue, 14 Jul 2026 10:26:22 GMT",
+   "bytes": 59704,
+   "width": 288,
+   "height": 480,
+   "format": "png",
+   "sha256": "89a876c0646fbeda28ca8d0cc66ee09448f1252fb950b80f80b96f65a13fb8dd"
+  },
+  {
+   "file": "investigator.png",
+   "map": "Maps/_NF/Shuttles/investigator.yml",
+   "id": "Investigator",
+   "name": "NR Investigator",
+   "price": 49000,
+   "category": "Medium",
+   "class": [
+    "Science"
+   ],
+   "engines": [
+    "Solar",
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A medium research shuttle designed for xenoarcheological studies.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/investigator.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Investigator",
+   "lastModified": "Tue, 14 Jul 2026 10:27:04 GMT",
+   "bytes": 197507,
+   "width": 1056,
+   "height": 544,
+   "format": "png",
+   "sha256": "aec8dcfdc737c8e0cb64c5f50d4307c031296fbabcb03ae3938a520bc208eff0"
+  },
+  {
+   "file": "izakaya.png",
+   "map": "Maps/_NF/Shuttles/izakaya.yml",
+   "id": "Izakaya",
+   "name": "SSF Izakaya",
+   "price": 70000,
+   "category": "Medium",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A medium-size, japanese-inspired restaurant/pub ship with a large dining area, and equally large kitchen.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/izakaya.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Izakaya",
+   "lastModified": "Tue, 14 Jul 2026 10:27:45 GMT",
+   "bytes": 481680,
+   "width": 1024,
+   "height": 800,
+   "format": "png",
+   "sha256": "f0bb2a74d00bdf31972e8f792bd7d9b1089ad0402b33644a513095852114858a"
+  },
+  {
+   "file": "jackrabbit.png",
+   "map": "Maps/_NF/Shuttles/jackrabbit.yml",
+   "id": "Jackrabbit",
+   "name": "PT Jackrabbit",
+   "price": 38000,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A fast and lightweight cruiser for those with criminal records a little too long to be cops.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/jackrabbit.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Jackrabbit",
+   "lastModified": "Tue, 14 Jul 2026 10:28:22 GMT",
+   "bytes": 168755,
+   "width": 480,
+   "height": 608,
+   "format": "png",
+   "sha256": "2ded4f6ff94eb490eb7ab900e1126ced7e6f2edf24b4b703d8e55ea071ca1dc5"
+  },
+  {
+   "file": "kestrel.png",
+   "map": "Maps/_NF/Shuttles/kestrel.yml",
+   "id": "Kestrel",
+   "name": "NC Kestrel",
+   "price": 47000,
+   "category": "Small",
+   "class": [
+    "Salvage"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "Once a local shipping lane freighter, this model has been converted for use in debris field mining and salvage operations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/kestrel.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Kestrel",
+   "lastModified": "Tue, 14 Jul 2026 10:29:02 GMT",
+   "bytes": 220084,
+   "width": 480,
+   "height": 704,
+   "format": "png",
+   "sha256": "0c9f9f18008d03584d89d18a849087dd4c4af1cc34b52626c854854117a8b3db"
+  },
+  {
+   "file": "kilderkin.png",
+   "map": "Maps/_NF/Shuttles/kilderkin.yml",
+   "id": "Kilderkin",
+   "name": "LVHI Kilderkin",
+   "price": 49000,
+   "category": "Medium",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "Spaceworthy bar/microbrewery with everything one needs to facilitate poor life choices: lots of booze, smokes, and lack of food. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/kilderkin.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Kilderkin",
+   "lastModified": "Tue, 14 Jul 2026 10:29:44 GMT",
+   "bytes": 127904,
+   "width": 512,
+   "height": 608,
+   "format": "png",
+   "sha256": "8a7234833f01585da01c606ca1df1554c67d508eff526d15797f7aee39b2e0f8"
+  },
+  {
+   "file": "lanternmk2.png",
+   "map": "Maps/_NF/Shuttles/lanternmk2.yml",
+   "id": "LanternMk2",
+   "name": "LVHI Lantern Mk2",
+   "price": 33000,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma",
+    "Solar"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "The Lantern Mk2 is a small-sized modification of and old chapel-vessel design equipped with everything chaplain might need in their never ending battle for salvation of NT personnel souls. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/lanternmk2.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/LanternMk2",
+   "lastModified": "Mon, 13 Apr 2026 08:46:35 GMT",
+   "bytes": 109255,
+   "width": 352,
+   "height": 736,
+   "format": "png",
+   "sha256": "8bd02424f40bcab5b53107573c45adcbb55f3a43418af3a538d1a4b7f66d8af2"
+  },
+  {
+   "file": "liquidator.png",
+   "map": "Maps/_NF/Shuttles/liquidator.yml",
+   "id": "Liquidator",
+   "name": "LVHI Liquidator",
+   "price": 26000,
+   "category": "Small",
+   "class": [
+    "Salvage",
+    "Cargo"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small shipbreaker/salvage vessel equipped with everything a small crew need for extended work shift in deep space. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/liquidator.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Liquidator",
+   "lastModified": "Tue, 14 Jul 2026 10:31:05 GMT",
+   "bytes": 97536,
+   "width": 512,
+   "height": 512,
+   "format": "png",
+   "sha256": "be2ffe8ff3a250495c4a790af1f2170151e39358cc438cce0e306b7060721ff2"
+  },
+  {
+   "file": "loader.png",
+   "map": "Maps/_NF/Shuttles/loader.yml",
+   "id": "Loader",
+   "name": "NC Loader",
+   "price": 21000,
+   "category": "Small",
+   "class": [
+    "Cargo"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A compact cargo ship designed for hauling shipments.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/loader.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Loader",
+   "lastModified": "Tue, 14 Jul 2026 10:31:43 GMT",
+   "bytes": 102925,
+   "width": 352,
+   "height": 448,
+   "format": "png",
+   "sha256": "3f050e9f7018c3f42fcc7256542e54c749762c3150c0b36b00a2242290e748d6"
+  },
+  {
+   "file": "lyrae.png",
+   "map": "Maps/_NF/Shuttles/lyrae.yml",
+   "id": "Lyrae",
+   "name": "BB Lyrae",
+   "price": 60000,
+   "category": "Medium",
+   "class": [
+    "Science"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A medium size science vessel with laboratories for both anomalous and xenoarchaeology research.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/lyrae.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Lyrae",
+   "lastModified": "Tue, 14 Jul 2026 10:32:25 GMT",
+   "bytes": 196370,
+   "width": 768,
+   "height": 768,
+   "format": "png",
+   "sha256": "b32ea245be9a8f2d4f9d0d0ca6303b500cadee4274ef2f64fa9a1b9f2e30f780"
+  },
+  {
+   "file": "mccargo.png",
+   "map": "Maps/_NF/Shuttles/mccargo.yml",
+   "id": "McCargo",
+   "name": "DC McCargo",
+   "price": 63000,
+   "category": "Medium",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "Your very own McCargo\u2122 franchise! Comes fully stocked and ready for production of McMeals.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/mccargo.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/McCargo",
+   "lastModified": "Tue, 14 Jul 2026 10:33:05 GMT",
+   "bytes": 194275,
+   "width": 864,
+   "height": 704,
+   "format": "png",
+   "sha256": "bbe39e98290e0c506430634acb46023a0e951559bdebc6ddbd96726505294347"
+  },
+  {
+   "file": "nightlight.png",
+   "map": "Maps/_NF/Shuttles/nightlight.yml",
+   "id": "Nightlight",
+   "name": "FSC Nightlight",
+   "price": 45000,
+   "category": "Medium",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "The Far Star Corporation's premier catering and service shuttle! Legally NOT a testbed for nutrient sequencing and biogenerative pattern research on humanoid physiology!",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/nightlight.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Nightlight",
+   "lastModified": "Tue, 14 Jul 2026 10:34:25 GMT",
+   "bytes": 142349,
+   "width": 544,
+   "height": 608,
+   "format": "png",
+   "sha256": "da6b5900af0d3001ac2653b2cd0aaafce9166ec9167ef30b4bc0aa7d3361110e"
+  },
+  {
+   "file": "nook.png",
+   "map": "Maps/_NF/Shuttles/nook.yml",
+   "id": "Nook",
+   "name": "WSE Nook",
+   "price": 22000,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A ship designed as a mobile home, with space for user modifications. Fast and comfortable.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/nook.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Nook",
+   "lastModified": "Tue, 14 Jul 2026 10:35:03 GMT",
+   "bytes": 122178,
+   "width": 352,
+   "height": 416,
+   "format": "png",
+   "sha256": "2d4ee35440a85c01542e98c020a994c1aeaa3387926d3f00aa547cf6591190d4"
+  },
+  {
+   "file": "phoenix.png",
+   "map": "Maps/_NF/Shuttles/phoenix.yml",
+   "id": "Phoenix",
+   "name": "NR Phoenix",
+   "price": 66000,
+   "category": "Medium",
+   "class": [
+    "Science",
+    "Engineering"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A research and salvage vessel designed for deep space exploration.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/phoenix.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Phoenix",
+   "lastModified": "Tue, 14 Jul 2026 10:35:43 GMT",
+   "bytes": 433309,
+   "width": 864,
+   "height": 768,
+   "format": "png",
+   "sha256": "7187fd59fb1ed2939bafa0cc382d8bd3c3a25bed4eedd4df674b3f99d60cf15d"
+  },
+  {
+   "file": "piecrust.png",
+   "map": "Maps/_NF/Shuttles/piecrust.yml",
+   "id": "Piecrust",
+   "name": "NC Piecrust",
+   "price": 34000,
+   "category": "Small",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A rustic cafe for the nostalgic deep space chef.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/piecrust.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Piecrust",
+   "lastModified": "Tue, 14 Jul 2026 10:36:24 GMT",
+   "bytes": 139123,
+   "width": 416,
+   "height": 480,
+   "format": "png",
+   "sha256": "c44a6e53a12b53d41337991d16147d84d4b568f3f7aba4b8ebd165a7602fecc9"
+  },
+  {
+   "file": "placebo.png",
+   "map": "Maps/_NF/Shuttles/placebo.yml",
+   "id": "Placebo",
+   "name": "NC Placebo",
+   "price": 18500,
+   "category": "Small",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small psychology vessel. Named after the famous Placebo effect.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/placebo.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Placebo",
+   "lastModified": "Tue, 14 Jul 2026 10:37:02 GMT",
+   "bytes": 64466,
+   "width": 416,
+   "height": 384,
+   "format": "png",
+   "sha256": "2378b284122164813e1bc6e15531bd4b061ed0bf8c2e32a5666654790261fa07"
+  },
+  {
+   "file": "prospector.png",
+   "map": "Maps/_NF/Shuttles/prospector.yml",
+   "id": "Prospector",
+   "name": "NC Prospector",
+   "price": 22000,
+   "category": "Small",
+   "class": [
+    "Salvage"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small mining vessel designed to assist salvage operations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/prospector.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Prospector",
+   "lastModified": "Tue, 14 Jul 2026 10:37:45 GMT",
+   "bytes": 90039,
+   "width": 320,
+   "height": 416,
+   "format": "png",
+   "sha256": "720cf53c7518adc45bfe6683136d7ac783cd66320d99c50d2e1b6f6ee1181c79"
+  },
+  {
+   "file": "pts.png",
+   "map": "Maps/_NF/Shuttles/pts.yml",
+   "id": "PTS",
+   "name": "NC Personal Transport",
+   "price": 17500,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small transport shuttle with space for 4 passengers. Comes with the latest audio entertainment technology.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/pts.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/PTS",
+   "lastModified": "Tue, 14 Jul 2026 10:38:24 GMT",
+   "bytes": 67183,
+   "width": 288,
+   "height": 384,
+   "format": "png",
+   "sha256": "7e08e9c860bbb5c79c4b398c5a332c6b111308107c63115ca87d339ad4e8b4af"
+  },
+  {
+   "file": "pulsar.png",
+   "map": "Maps/_NF/Shuttles/pulsar.yml",
+   "id": "Pulsar",
+   "name": "FSC Pulsar",
+   "price": 47500,
+   "category": "Medium",
+   "class": [
+    "Science"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "The Pulsar offers two robust polar work sites built around object retrieval and research circling a command hub. With a focus on safety, know that any catastrophic failures are entirely the fault of the operator! Brought to you by the Far Star Corporation.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/pulsar.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Pulsar",
+   "lastModified": "Tue, 14 Jul 2026 10:39:04 GMT",
+   "bytes": 194555,
+   "width": 480,
+   "height": 800,
+   "format": "png",
+   "sha256": "79e0c2b6b2ecebebcedfbcc89530958b6baa8c802d71d96c606e8c61f6da6973"
+  },
+  {
+   "file": "retort.png",
+   "map": "Maps/_NF/Shuttles/retort.yml",
+   "id": "Retort",
+   "name": "FSC Retort",
+   "price": 70000,
+   "category": "Medium",
+   "class": [
+    "Atmospherics"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A robust gas mining and engineering vessel designed and deployed by the Far Star Corporation to provide infrastructure support for deep space operations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/retort.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Retort",
+   "lastModified": "Tue, 14 Jul 2026 10:39:45 GMT",
+   "bytes": 251064,
+   "width": 672,
+   "height": 864,
+   "format": "png",
+   "sha256": "515c9f01cf04fead8993fbd01c0413b0560b2b8f434b7f2e9594e9855832c212"
+  },
+  {
+   "file": "skipper.png",
+   "map": "Maps/_NF/Shuttles/skipper.yml",
+   "id": "Skipper",
+   "name": "NC Skipper",
+   "price": 34500,
+   "category": "Small",
+   "class": [
+    "Kitchen"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small service ship with a full service kitchen and hydroponics garden.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/skipper.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Skipper",
+   "lastModified": "Tue, 14 Jul 2026 10:41:05 GMT",
+   "bytes": 105588,
+   "width": 480,
+   "height": 480,
+   "format": "png",
+   "sha256": "dc61ee9a9c3c506cfa5223e5d11a22501eee3e67b21c459d820eacf7620a4f5a"
+  },
+  {
+   "file": "spectre.png",
+   "map": "Maps/_NF/Shuttles/spectre.yml",
+   "id": "Spectre",
+   "name": "NR Spectre",
+   "price": 125000,
+   "category": "Large",
+   "class": [
+    "Science"
+   ],
+   "engines": [
+    "AME"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A large, robust vessel with a pure focus on research and development. It is equipped with multiple artifact chambers.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/spectre.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Spectre",
+   "lastModified": "Tue, 14 Jul 2026 10:41:45 GMT",
+   "bytes": 367056,
+   "width": 1120,
+   "height": 1376,
+   "format": "png",
+   "sha256": "c952dc13b0c3e3ca378c012b13211c3d9e14d47840362018768f8f335824ffbe"
+  },
+  {
+   "file": "stellaris.png",
+   "map": "Maps/_NF/Shuttles/stellaris.yml",
+   "id": "Stellaris",
+   "name": "NT Stellaris",
+   "price": 52000,
+   "category": "Medium",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A mobile theatre perfect for putting on any show.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/stellaris.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Stellaris",
+   "lastModified": "Tue, 14 Jul 2026 10:43:45 GMT",
+   "bytes": 166404,
+   "width": 544,
+   "height": 832,
+   "format": "png",
+   "sha256": "4d59dae351747ca740cccf4b2f46098c7cf18903805ba3f3ed204c85810bae7a"
+  },
+  {
+   "file": "stringer.png",
+   "map": "Maps/_NF/Shuttles/stringer.yml",
+   "id": "Stringer",
+   "name": "LVHI Stringer",
+   "price": 28000,
+   "category": "Small",
+   "class": [
+    "Civilian"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A small shuttle with low operational costs for reporters who want to be first on a scene. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/stringer.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Stringer",
+   "lastModified": "Tue, 14 Jul 2026 10:44:25 GMT",
+   "bytes": 86775,
+   "width": 352,
+   "height": 576,
+   "format": "png",
+   "sha256": "63acf72d0fde2905b012e4567779e046d7d80f3a11798504a061acd40d96fddd"
+  },
+  {
+   "file": "stronghold.png",
+   "map": "Maps/_NF/Shuttles/stronghold.yml",
+   "id": "Stronghold",
+   "name": "DBI Stronghold",
+   "price": 62000,
+   "category": "Large",
+   "class": [
+    "Science",
+    "Salvage"
+   ],
+   "engines": [
+    "Solar",
+    "Uranium"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A science Vessel with a Robust Research chamber.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/stronghold.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Stronghold",
+   "lastModified": "Tue, 14 Jul 2026 10:45:05 GMT",
+   "bytes": 202516,
+   "width": 960,
+   "height": 768,
+   "format": "png",
+   "sha256": "e3aca44c3d6230e10570c742cfdb298de2d1205ecf73a81581ae50fa054cfa1f"
+  },
+  {
+   "file": "surveyor.png",
+   "map": "Maps/_NF/Shuttles/surveyor.yml",
+   "id": "Surveyor",
+   "name": "FSC Surveyor",
+   "price": 21000,
+   "category": "Small",
+   "class": [
+    "Salvage"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A budget mining and recovery shuttle for corporations unwilling to operate outside of a shoestring budget. Brought to you by the Far Star Corporation!",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/surveyor.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Surveyor",
+   "lastModified": "Tue, 14 Jul 2026 10:45:46 GMT",
+   "bytes": 96919,
+   "width": 352,
+   "height": 416,
+   "format": "png",
+   "sha256": "075133bd54937483152ef98a1b5a9aa82ddb8d452927421036b6ff152513aa9d"
+  },
+  {
+   "file": "vagabond.png",
+   "map": "Maps/_NF/Shuttles/vagabond.yml",
+   "id": "Vagabond",
+   "name": "NT Vagabond",
+   "price": 86000,
+   "category": "Medium",
+   "class": [
+    "Cargo",
+    "Salvage"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Shipyard",
+   "description": "A adaptable long-haul industrial freighter that pilots have adapted to many different purposes.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/vagabond.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Vagabond",
+   "lastModified": "Tue, 14 Jul 2026 10:47:05 GMT",
+   "bytes": 277636,
+   "width": 576,
+   "height": 1152,
+   "format": "png",
+   "sha256": "a446ec3c0c09c4d5830dea7d8a4931075cd47040e87a017dffcfa5d564b8f21a"
+  },
+  {
+   "file": "akupara.png",
+   "map": "Maps/_NF/Shuttles/akupara.yml",
+   "id": "Akupara",
+   "name": "UW Akupara",
+   "price": 56000,
+   "category": "Medium",
+   "class": [
+    "Botany"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A medium full-feature botanical research biodome equipped to help a botanist fully interact with their plants in almost any way conceivable.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/akupara.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Akupara",
+   "lastModified": "Tue, 14 Jul 2026 10:06:04 GMT",
+   "bytes": 296939,
+   "width": 576,
+   "height": 992,
+   "format": "png",
+   "sha256": "b531fd06902e5f31b26deaa0f06528c2624b65125bc280e1e2d5642f0a3552b5"
+  },
+  {
+   "file": "apothecary.png",
+   "map": "Maps/_NF/Shuttles/apothecary.yml",
+   "id": "Apothecary",
+   "name": "FSB Apothecary",
+   "price": 36000,
+   "category": "Small",
+   "class": [
+    "Medical",
+    "Chemistry"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A small medical and chemistry support vessel. Deployed by the Far Star Biotech company to provide aid and medical services to the Frontier.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/apothecary.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Apothecary",
+   "lastModified": "Tue, 14 Jul 2026 10:07:28 GMT",
+   "bytes": 107900,
+   "width": 480,
+   "height": 512,
+   "format": "png",
+   "sha256": "2eb924ee4c383712f37bffa09222363a32c9eb99ef5e16a130a5131bc0899594"
+  },
+  {
+   "file": "caladrius.png",
+   "map": "Maps/_NF/Shuttles/caladrius.yml",
+   "id": "Caladrius",
+   "name": "FSB Caladrius",
+   "price": 200000,
+   "category": "Large",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A medical carrier produced by the Far Star Biotech corporation. Designed for large scale colonization support, humanitarian relief and post-disaster investigation and recovery operations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/caladrius.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Caladrius",
+   "lastModified": "Tue, 14 Jul 2026 10:13:37 GMT",
+   "bytes": 599766,
+   "width": 992,
+   "height": 1536,
+   "format": "png",
+   "sha256": "e3667d957ef3c30499e94cfba400967b67920f8a87991c3420ae15686ff2bcab"
+  },
+  {
+   "file": "druid.png",
+   "map": "Maps/_NF/Shuttles/druid.yml",
+   "id": "Druid",
+   "name": "FSB Druid",
+   "price": 45000,
+   "category": "Medium",
+   "class": [
+    "Botany"
+   ],
+   "engines": [
+    "Solar",
+    "Uranium"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A medium service vessel providing botanical and chemical services to support the needs of the Frontier. Designed, developed and deployed by the Far Star Biotech company to render aid wherever it is needed.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/druid.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Druid",
+   "lastModified": "Tue, 14 Jul 2026 10:21:04 GMT",
+   "bytes": 191090,
+   "width": 544,
+   "height": 800,
+   "format": "png",
+   "sha256": "6f7c6612f4b215d669e2d8d3fc97aad542c6479943a3ae3b47d66017717136de"
+  },
+  {
+   "file": "eagle.png",
+   "map": "Maps/_NF/Shuttles/eagle.yml",
+   "id": "Eagle",
+   "name": "NM Eagle",
+   "price": 72500,
+   "category": "Medium",
+   "class": [
+    "Medical",
+    "Engineering"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A medium-sized engineering and medical vessel. Focused on responding to shuttle distress, the Eagle comes equipped to restore most crew and shuttles to good health.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/eagle.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Eagle",
+   "lastModified": "Tue, 14 Jul 2026 10:21:44 GMT",
+   "bytes": 250082,
+   "width": 928,
+   "height": 704,
+   "format": "png",
+   "sha256": "7420f3e3014f0f749036f0608406123b59976aa296f66a869f15eb09580951a8"
+  },
+  {
+   "file": "searchlight.png",
+   "map": "Maps/_NF/Shuttles/searchlight.yml",
+   "id": "Searchlight",
+   "name": "LVHI Searchlight",
+   "price": 34500,
+   "category": "Small",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A small vessel outfitted for the search and recovery of wounded NT personnel. Manufactured by Langstad-Voigt Heavy Industries.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/searchlight.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Searchlight",
+   "lastModified": "Tue, 14 Jul 2026 10:40:23 GMT",
+   "bytes": 92133,
+   "width": 384,
+   "height": 704,
+   "format": "png",
+   "sha256": "f99c2eaf51d252275d42f252c55fcf3eda68bc1345610c804e0a024565e60b43"
+  },
+  {
+   "file": "spirit.png",
+   "map": "Maps/_NF/Shuttles/spirit.yml",
+   "id": "Spirit",
+   "name": "FSB Spirit",
+   "price": 16500,
+   "category": "Small",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "The FSB Spirit is a search and rescue shuttle for experienced Frontier medics.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/spirit.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Spirit",
+   "lastModified": "Tue, 14 Jul 2026 10:42:23 GMT",
+   "bytes": 55412,
+   "width": 288,
+   "height": 352,
+   "format": "png",
+   "sha256": "2921b85cb39d1ebc7bd33280c754b3373fe4e1d5bd4800274c5e35c790f60e18"
+  },
+  {
+   "file": "stasis.png",
+   "map": "Maps/_NF/Shuttles/stasis.yml",
+   "id": "Stasis",
+   "name": "FSB Stasis",
+   "price": 55000,
+   "category": "Medium",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "Bananium"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A medium medical vessel providing cryogenic and support medical services for the traumas of deep space operations. Designed, developed and deployed by the Far Star Biotech company to render aid wherever it is needed.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/stasis.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Stasis",
+   "lastModified": "Tue, 14 Jul 2026 10:43:04 GMT",
+   "bytes": 173677,
+   "width": 480,
+   "height": 736,
+   "format": "png",
+   "sha256": "dc714f434cfb1169a1256f636c63a112d455cce73e94ca8660946a39770abb52"
+  },
+  {
+   "file": "tyne.png",
+   "map": "Maps/_NF/Shuttles/tyne.yml",
+   "id": "Tyne",
+   "name": "BB Tyne",
+   "price": 22000,
+   "category": "Small",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "Plasma"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A small, agile lifeboat with an exterior deck and survivor cabin for search and rescue operations.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/tyne.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Tyne",
+   "lastModified": "Tue, 14 Jul 2026 10:46:24 GMT",
+   "bytes": 79875,
+   "width": 224,
+   "height": 512,
+   "format": "png",
+   "sha256": "26d14c8105c131f997501567ca446f2ec924e24e2d81a6ab9ce2fdbac7f8c68e"
+  },
+  {
+   "file": "vitalis.png",
+   "map": "Maps/_NF/Shuttles/vitalis.yml",
+   "id": "Vitalis",
+   "name": "CTC Vitalis",
+   "price": 75000,
+   "category": "Medium",
+   "class": [
+    "Medical"
+   ],
+   "engines": [
+    "Uranium"
+   ],
+   "shipyardGroup": "Medical",
+   "description": "A medium medical support vessel designed for cryogenic deployment.",
+   "source": "https://shipyard.frontierstation14.com/storage/renders/shuttles/vitalis.png",
+   "page": "https://shipyard.frontierstation14.com/render/shuttles/Vitalis",
+   "lastModified": "Tue, 14 Jul 2026 10:47:45 GMT",
+   "bytes": 191408,
+   "width": 480,
+   "height": 928,
+   "format": "png",
+   "sha256": "3275b911820ebe522eada53117433a0f3563d44182d26619af323051e1264722"
+  }
+ ]
+}
