@@ -46,7 +46,8 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Spawners | ✅ | `ConditionalSpawner`, `RandomSpawner`, `EntityTableSpawner` |
 | Names | ✅ | `RandomMetadata`, localized datasets |
 | Factions | ✅ | `npcFaction` hostility |
-| Shuttles | 🟡 | Grid bodies (mass/inertia from tiles at upstream density), thruster/gyroscope pools, consoles & piloting, Frontier velocity ellipse, brakes, angular clamp. Hull-on-hull impacts (inelastic, momentum exchange). No impact damage, docking or FTL yet |
+| Shuttles | 🟡 | Grid bodies (mass/inertia from tiles at upstream density), thruster/gyroscope pools, consoles & piloting, Frontier velocity ellipse, brakes, angular clamp. Hull-on-hull impacts (inelastic, momentum exchange). No impact damage or FTL yet |
+| Docking | ✅ | Dock types, range/alignment, weld, airlock open+bolt+stay airtight, FTL-dock placement (shipyard), `ForceAnchor` stations |
 
 ## Layer 2 — NPCs (`homunculus`)
 
@@ -137,7 +138,7 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 
 ## Layer 4 — Game systems (roadmap, roughly in order)
 
-1. **Shuttles** (Frontier's heart): ~~piloting~~ ✅, ~~grid collisions~~ ✅, impact damage, docking, FTL.
+1. **Shuttles** (Frontier's heart): ~~piloting~~ ✅, ~~grid collisions~~ ✅, ~~docking~~ ✅, impact damage, FTL.
 2. **Economy**: ~~spesos, bank, selling, shipyard purchases~~ ✅; bounties, vending, ship resale.
 3. **Atmospherics** (`alembic`): ~~gas mixtures per tile, pressure, breathing, airtight~~ ✅; Monstermos, internals, temperature, fire, vents/scrubbers.
 4. **Power** (`prana`): ~~APCs, SMES, cables, powered machines, generators, gravity~~ ✅; solar, AME, wires.

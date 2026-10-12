@@ -104,3 +104,68 @@ fn sell_cargo_and_bank_the_cash() {
     assert!(mercury::bank::on_atm_using(world, you, cash, atm));
     assert_eq!(world.get::<BankAccount>(you).unwrap().balance, report.value);
 }
+
+#[test]
+fn bought_ships_arrive_docked_and_hold_until_undocked() {
+    use athanor::docking::{undock_all, Docking};
+    use athanor::doors::{Door, DoorState};
+    use athanor::shuttles::GridBody;
+    let Some(c) = content() else { return };
+    let mut app = app(c);
+    let sector = build_sector(app.world_mut(), &SectorConfig { contractors: 0, vermin: 0, carp: 0, shuttle: None, ..Default::default() }).unwrap();
+    app.update();
+    let world = app.world_mut();
+    let console = find(world, |m, _| m.proto.as_deref() == Some("ComputerShipyard")).unwrap();
+    let cheapest = world.resource::<Vessels>().group("Shipyard").next().unwrap().clone();
+    let ship = mercury::buy_vessel(world, sector.player, console, &cheapest.id).unwrap();
+
+    // `TryFTLDock`: at least one of the ship's docks is joined to an outpost dock.
+    let pairs: Vec<(Entity, Entity)> = {
+        let mut q = world.query::<(Entity, &Docking, &Xform)>();
+        q.iter(world).filter(|(_, d, x)| x.parent == Some(ship) && d.docked()).map(|(e, d, _)| (e, d.docked_with.unwrap())).collect()
+    };
+    assert!(!pairs.is_empty(), "{} did not dock", cheapest.name);
+    for (a, b) in &pairs {
+        assert_eq!(world.get::<Xform>(*b).unwrap().parent, Some(sector.outpost));
+        let (pa, pb) = (athanor::transform::world_pose_of(world, *a), athanor::transform::world_pose_of(world, *b));
+        assert!(pa.pos.distance(pb.pos) < 1.05, "docks {:.2} m apart", pa.pos.distance(pb.pos));
+    }
+    for _ in 0..60 {
+        app.update();
+    }
+    let world = app.world_mut();
+    for (a, _) in &pairs {
+        let d = world.get::<Door>(*a).unwrap();
+        assert_eq!(d.state, DoorState::Open, "docked airlock opens");
+        assert!(d.bolted && !d.change_airtight);
+    }
+    assert!(athanor::shuttles::overlapping_grid(world, ship).is_none());
+
+    // The weld holds the ship against a shove.
+    let before = world.get::<Xform>(ship).unwrap().pos;
+    world.get_mut::<GridBody>(ship).unwrap().velocity = bevy_math::Vec2::new(4.0, 0.0);
+    for _ in 0..30 {
+        app.update();
+    }
+    let held = app.world().get::<Xform>(ship).unwrap().pos;
+    assert!(held.distance(before) < 0.05, "docked ship drifted {:?}", held - before);
+
+    // Undocked, a shove away from the station carries it off and the
+    // airlocks unbolt and shut.
+    let world = app.world_mut();
+    let (sa, sb) = pairs[0];
+    let away = (athanor::transform::world_pose_of(world, sa).pos - athanor::transform::world_pose_of(world, sb).pos).normalize();
+    assert_eq!(undock_all(world, ship), pairs.len());
+    world.get_mut::<GridBody>(ship).unwrap().velocity = away * 4.0;
+    for _ in 0..60 {
+        app.update();
+    }
+    let world = app.world_mut();
+    let moved = world.get::<Xform>(ship).unwrap().pos;
+    assert!(moved.distance(before) > 1.0, "undocked ship stayed put");
+    for (a, _) in &pairs {
+        let d = world.get::<Door>(*a).unwrap();
+        assert!(!d.bolted && d.change_airtight);
+        assert_ne!(d.state, DoorState::Open);
+    }
+}

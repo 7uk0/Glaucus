@@ -286,8 +286,9 @@ pub fn update_airtight(world: &mut World) {
         let mut blocked = world.get::<GridAtmos>(ge).unwrap().static_blocked.clone();
         for (t, e) in &anchors {
             let Some(door) = world.get::<Door>(*e) else { continue };
-            // Doors seal while (mostly) shut, like `ChangeAirtight`.
-            if door.collidable() {
+            // Doors seal while (mostly) shut, like `ChangeAirtight`; a door
+            // that doesn't change airtightness (docked) stays sealed.
+            if door.collidable() || !door.change_airtight {
                 let (Some(d), Some(x)) = (world.get::<EntityData>(*e), world.get::<Xform>(*e)) else { continue };
                 let b = airtight_bits(d, x.rot);
                 if b != 0 {

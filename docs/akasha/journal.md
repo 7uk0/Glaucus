@@ -102,3 +102,14 @@ chemistry/medical → food → construction.
     mapserver mirror (station renders), and the Steam page and
     spacestation14.com (screenshots).
   - Use them with `--render-map` for 1:1 comparisons.
+
+## 2026-10-12 — Docking; 112-ship render check
+
+- Docking ported (`athanor/src/docking.rs`, `systems/docking.md`):
+  - dock/undock, weld, FTL-dock placement;
+  - bought ships and the starting Kestrel arrive docked to the outpost;
+  - pilots press F to dock or undock;
+  - Frontier `ForceAnchor` stations are static.
+- Rendered all 112 ships with shipyard renders and compared per pixel. All
+  sizes match. 103 ships differ on fewer than 3% of pixels, and the
+  differences are explained (`systems/rendering.md`).

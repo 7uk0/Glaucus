@@ -149,6 +149,9 @@ pub fn buy_vessel(world: &mut World, buyer: Entity, console: Entity, vessel_id: 
     .map_err(PurchaseError::LoadFailed)?;
     let ship = *loaded.grids.first().ok_or_else(|| PurchaseError::LoadFailed("no grid".into()))?;
     try_withdraw(world, buyer, vessel.price);
+    // `ShipyardSystem.TryPurchaseShuttle` → `TryFTLDock` to the console's grid;
+    // if no dock fits, the ship stays where it was loaded (proximity).
+    let docked = cp.grid.is_some_and(|g| athanor::docking::try_ftl_dock(world, ship, g, None));
     // Frontier names ships "<model> <prefix>-<number>".
     let n = world.get_resource_or_init::<athanor::rng::SimRng>().range_u32(100, 999);
     let short = vessel.name.split_whitespace().last().unwrap_or(&vessel.name).to_string();
@@ -167,8 +170,10 @@ pub fn buy_vessel(world: &mut World, buyer: Entity, console: Entity, vessel_id: 
         speaker: None,
         channel: ChatChannel::Server,
         text: format!(
-            "Purchased the {} for {} spesos. The {ship_name} is waiting east of the station. Balance: {left}.",
-            vessel.name, vessel.price
+            "Purchased the {} for {} spesos. The {ship_name} is {}. Balance: {left}.",
+            vessel.name,
+            vessel.price,
+            if docked { "docked at the station" } else { "waiting east of the station" }
         ),
     });
     let _ = world.get::<Xform>(ship);

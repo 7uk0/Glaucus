@@ -242,7 +242,7 @@ pub fn update_status(
             let ship = names.get(p.shuttle).map(|m| m.name.clone()).unwrap_or_default();
             let (v, w) = bodies.get(p.shuttle).map_or((0.0, 0.0), |b| (b.velocity.length(), b.angular_velocity));
             s.push_str(&format!(
-                "\n\nPILOTING {ship}\n{v:.1} m/s  {:.0}°/s\nWASD thrust · Q/E rotate · Space brake · click helm to leave",
+                "\n\nPILOTING {ship}\n{v:.1} m/s  {:.0}°/s\nWASD thrust · Q/E rotate · Space brake · F dock/undock · click helm to leave",
                 w.to_degrees()
             ));
         }

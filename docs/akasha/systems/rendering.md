@@ -14,6 +14,27 @@ game in known ways:
 - `DecalPainter` sorts decals by zIndex only, with an unstable sort. The game's
   `DecalOverlay` sorts by (zIndex, decal id). We follow the game.
 - Some wiki renders are of older map versions (Druid, Apothecary sizes differ).
+- `Content.MapRenderer/Painters/EntityPainter.cs` ignores layer `scale` and
+  `offset`, and only rotates 1-directional layers. In the official renders
+  the gravity generator's core ring (scale 0.4) is drawn full size.
+- Random spawners differ per run (plants, bottles, graffiti), so those tiles
+  never match.
+
+### Batch check, 2026-10-12
+
+We rendered all 112 ships that have a render on the Frontier shipyard site
+(`reference/images/frontier-ships/`). Every size matched exactly.
+
+| Pixels differing by >40/255 | Ships |
+|---|---|
+| under 3% | 103 |
+| under 2% | 75 |
+| ~5% (izakaya, stringer, alleycat, orange) | random spawners, power state, decal order (above) |
+| 16–21% (empress, vagabond) | map redesigned since the shipyard render |
+
+Scripts are in the session scratchpad. Re-create them from this description
+if needed: render each `map` from `index.json` with `--render-map`, then
+compare per pixel after compositing the reference on black.
 
 ## Engine rules (RobustToolbox `SpriteSystem.Render.cs`)
 

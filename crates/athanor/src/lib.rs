@@ -31,6 +31,7 @@
 pub mod combat;
 pub mod content;
 pub mod damage;
+pub mod docking;
 pub mod doors;
 pub mod events;
 pub mod factions;
@@ -173,6 +174,7 @@ impl Plugin for AthanorPlugin {
                 shuttles::update_grid_bodies,
                 shuttles::update_thrust,
                 shuttles::shuttle_movement,
+                docking::solve_welds,
                 physics::physics_step,
             )
                 .chain()
@@ -209,6 +211,7 @@ pub fn register_components(reg: &mut spawn::ComponentFactories) {
     interaction::register(reg);
     combat::register(reg);
     doors::register(reg);
+    docking::register(reg);
     factions::register(reg);
     spawners::register(reg);
     naming::register(reg);

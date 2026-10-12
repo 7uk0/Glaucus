@@ -46,6 +46,9 @@ pub struct Door {
     pub bolted: bool,
     /// Has an `AirlockComponent`: needs power to open or close (`CanChangeState`).
     pub airlock: bool,
+    /// `DoorComponent.ChangeAirtight`: opening/closing toggles airtightness.
+    /// Docking turns it off so a docked, open airlock still holds air.
+    pub change_airtight: bool,
 }
 
 impl Default for Door {
@@ -66,6 +69,7 @@ impl Default for Door {
             auto_close: None,
             bolted: false,
             airlock: false,
+            change_airtight: true,
         }
     }
 }
@@ -112,6 +116,9 @@ pub fn register(reg: &mut ComponentFactories) {
         }
         if let Some(v) = secs("denyDuration") {
             d.deny_duration = v;
+        }
+        if let Some(b) = node.get("changeAirtight").and_then(Node::as_bool) {
+            d.change_airtight = b;
         }
         if let Some(b) = node.get("bumpOpen").and_then(Node::as_bool) {
             d.bump_open = b;
@@ -297,8 +304,10 @@ pub fn door_update(world: &mut World) {
             }
             DoorState::Open => {
                 // Auto-close timer fired. Unpowered airlocks stay open until
-                // power returns (`AirlockSystem.OnPowerChanged`).
-                if airlock_frozen(world, e) {
+                // power returns (`AirlockSystem.OnPowerChanged`); docked
+                // airlocks cancel it (`DockingSystem.OnAutoClose`).
+                let docked = world.get::<crate::docking::Docking>(e).is_some_and(|d| d.docked());
+                if airlock_frozen(world, e) || docked {
                     nd.next_change = None;
                 } else if door_blocked(world, e) {
                     nd.next_change = Some(now + 1.0);

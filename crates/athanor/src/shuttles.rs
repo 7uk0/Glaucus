@@ -88,6 +88,17 @@ pub struct Thruster {
     pub kind: ThrusterType,
 }
 
+/// Frontier `ForceAnchorComponent`: the grid's body is static and its
+/// shuttle disabled (`ForceAnchorSystem.OnForceAnchorMapInit`). Outposts and
+/// POIs have it; nothing moves them.
+#[derive(Component, Debug, Clone, Copy, Default)]
+pub struct ForceAnchor;
+
+/// Can this grid move (a dynamic shuttle body, not force-anchored)?
+pub fn is_movable(world: &World, g: Entity) -> bool {
+    world.get::<Shuttle>(g).is_some_and(|s| s.enabled) && world.get::<GridBody>(g).is_some() && world.get::<ForceAnchor>(g).is_none()
+}
+
 /// `ShuttleConsoleComponent`.
 #[derive(Component, Debug, Clone, Copy, Default)]
 pub struct ShuttleConsole;
@@ -126,6 +137,12 @@ pub fn register(reg: &mut ComponentFactories) {
                 _ => ThrusterType::Linear,
             },
         });
+    });
+    reg.register("ForceAnchor", |e, _, _| {
+        e.insert(ForceAnchor);
+        if let Some(mut s) = e.get_mut::<Shuttle>() {
+            s.enabled = false;
+        }
     });
     reg.register("ShuttleConsole", |e, _, _| {
         e.insert(ShuttleConsole);
@@ -343,7 +360,7 @@ pub fn shuttle_movement(world: &mut World) {
         let north = world_pose_of(world, s).rot;
         let sh = world.get::<Shuttle>(s).cloned().unwrap();
         let mut body = world.get::<GridBody>(s).cloned().unwrap();
-        if !sh.enabled || body.mass <= 0.0 {
+        if !sh.enabled || body.mass <= 0.0 || world.get::<ForceAnchor>(s).is_some() {
             continue;
         }
         let inv_mass = 1.0 / body.mass;
@@ -499,8 +516,9 @@ pub fn overlapping_grid(world: &World, g: Entity) -> Option<Entity> {
     let radius = Vec2::new((x1 - x0 + 1) as f32, (y1 - y0 + 1) as f32).length() * 0.5 + 1.0;
     let center = crate::transform::to_world(&gp, center_local);
     let others = world.get_resource::<crate::transform::GridIndex>().map(|i| i.grids.clone()).unwrap_or_default();
+    let welded = crate::docking::docked_grids(world, g);
     for o in others {
-        if o == g {
+        if o == g || welded.contains(&o) {
             continue;
         }
         let op = world_pose_of(world, o);
@@ -536,7 +554,7 @@ pub fn overlapping_grid(world: &World, g: Entity) -> Option<Entity> {
 fn impact(world: &mut World, s: Entity, body: &mut GridBody, other: Entity) {
     let speed = body.velocity.length();
     match world.get::<GridBody>(other).cloned() {
-        Some(mut ob) if world.get::<Shuttle>(other).is_some() => {
+        Some(mut ob) if is_movable(world, other) => {
             let m1 = body.mass;
             let m2 = ob.mass.max(0.001);
             let p = body.velocity * m1 + ob.velocity * m2;

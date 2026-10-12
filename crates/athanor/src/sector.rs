@@ -97,7 +97,7 @@ pub fn build_sector(world: &mut World, cfg: &SectorConfig) -> Result<Sector, Str
         .copied()
         .ok_or("outpost map has no grid")?;
 
-    // Park the shuttle just off the outpost's east edge.
+    // The starting shuttle: loaded off the outpost's east edge, then docked.
     let shuttle = match &cfg.shuttle {
         Some(path) => {
             let bounds = world.get::<Grid>(outpost).and_then(|g| g.tiles.bounds()).unwrap_or((0, 0, 0, 0));
@@ -112,7 +112,12 @@ pub fn build_sector(world: &mut World, cfg: &SectorConfig) -> Result<Sector, Str
                     ..Default::default()
                 },
             )?;
-            loaded.grids.first().copied()
+            let sg = loaded.grids.first().copied();
+            // Like a ship bought at the shipyard, it arrives docked (`TryFTLDock`).
+            if let Some(sg) = sg {
+                crate::docking::try_ftl_dock(world, sg, outpost, None);
+            }
+            sg
         }
         None => None,
     };

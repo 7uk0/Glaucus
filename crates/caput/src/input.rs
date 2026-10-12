@@ -159,6 +159,7 @@ pub fn update_hover(
 /// the way upstream input handlers raise events on the server.
 pub fn verbs(world: &mut World) {
     let Some(player) = world.query_filtered::<Entity, With<Player>>().iter(world).next() else { return };
+    let keys_dock = world.resource::<ButtonInput<KeyCode>>().just_pressed(KeyCode::KeyF);
     let (click, shift, keys_drop, keys_swap, keys_use, keys_combat, keys_shot) = {
         let mouse = world.resource::<ButtonInput<MouseButton>>();
         let keys = world.resource::<ButtonInput<KeyCode>>();
@@ -173,6 +174,20 @@ pub fn verbs(world: &mut World) {
         )
     };
     let piloting = world.get::<athanor::shuttles::Pilot>(player).is_some();
+    // The console's dock / undock-all buttons (`DockRequestMessage`,
+    // Frontier's `UndockAllRequestMessage`), as one key.
+    if keys_dock && let Some(p) = world.get::<athanor::shuttles::Pilot>(player).copied() {
+        let docked = !athanor::docking::docked_grids(world, p.shuttle).is_empty();
+        let text = if docked {
+            let n = athanor::docking::undock_all(world, p.shuttle);
+            format!("Undocked ({n} port{}).", if n == 1 { "" } else { "s" })
+        } else if athanor::docking::try_dock_nearest(world, p.shuttle) {
+            "Docking clamps engaged.".to_string()
+        } else {
+            "Docking failed: no aligned dock within range.".to_string()
+        };
+        world.write_message(athanor::events::ChatLine { speaker: None, channel: athanor::events::ChatChannel::Server, text });
+    }
     if keys_drop && !piloting {
         try_drop(world, player);
     }
