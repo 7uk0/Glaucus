@@ -1,0 +1,95 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ClothingNeckLGBTPin.png|50px]] || LGBT Pin || $100 || 3
+|-
+| [[File:ClothingNeckAllyPin.png|50px]] || Straight Ally Pin || $100 || 3
+|-
+| [[File:ClothingNeckAromanticPin.png|50px]] || Aromantic Pin || $100 || 3
+|-
+| [[File:ClothingNeckAsexualPin.png|50px]] || Asexual Pin || $100 || 3
+|-
+| [[File:ClothingNeckAroacePin.png|50px]] || Aroace Pin || $100 || 3
+|-
+| [[File:ClothingNeckBisexualPin.png|50px]] || Bisexual Pin || $100 || 3
+|-
+| [[File:ClothingNeckGayPin.png|50px]] || Gay Pin || $100 || 3
+|-
+| [[File:ClothingNeckIntersexPin.png|50px]] || Intersex Pin || $100 || 3
+|-
+| [[File:ClothingNeckLesbianPin.png|50px]] || Lesbian Pin || $100 || 3
+|-
+| [[File:ClothingNeckNonBinaryPin.png|50px]] || Non-Binary Pin || $100 || 3
+|-
+| [[File:ClothingNeckPansexualPin.png|50px]] || Pansexual Pin || $100 || 3
+|-
+| [[File:ClothingNeckPluralPin.png|50px]] || Plural Pin || $100 || 3
+|-
+| [[File:ClothingNeckOmnisexualPin.png|50px]] || Omnisexual Pin || $100 || 3
+|-
+| [[File:ClothingNeckGenderqueerPin.png|50px]] || Genderqueer Pin || $100 || 3
+|-
+| [[File:ClothingNeckGenderfluidPin.png|50px]] || Genderfluid Pin || $100 || 3
+|-
+| [[File:ClothingNeckTransPin.png|50px]] || Transgender Pin || $100 || 3
+|-
+| [[File:ClothingNeckAutismPin.png|50px]] || Neurodivergent Pin || $100 || 3
+|-
+| [[File:ClothingNeckGoldAutismPin.png|50px]] || Autism Pin || $100 || 3
+|-
+| [[File:PlushieSharkBlue.png|50px]] || Blue Shark Soft Toy || $50 || 2
+|-
+| [[File:PlushieSharkPink.png|50px]] || Pink Shark Soft Toy || $50 || 2
+|-
+| [[File:PlushieSharkGrey.png|50px]] || Grey Shark Soft Toy || $50 || 2
+|-
+| [[File:ClothingNeckScarfStripedAce.png|50px]] || Striped Asexual Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedAro.png|50px]] || Striped Aromantic Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedAroace.png|50px]] || Striped Aroace Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedBiSexual.png|50px]] || Striped Bisexual Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedGay.png|50px]] || Striped Gay Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedInter.png|50px]] || Striped Intersex Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedLesbian.png|50px]] || Striped Lesbian Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedPan.png|50px]] || Striped Pan Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedNonBinary.png|50px]] || Striped Non-binary Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedRainbow.png|50px]] || Rainbow Scarf || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedTrans.png|50px]] || Striped Trans Scarf || $100 || 2
+|-
+| [[File:ClothingHeadHatXmasCrown.png|50px]] || Xmas Crown || $100 || 2
+|-
+| [[File:BedsheetRainbow.png|50px]] || Rainbow Bedsheet || $1,000 || 2
+|-
+| [[File:ClothingNeckHeadphones.png|50px]] || Headphones || $100 || 2
+|-
+| [[File:ClothingHeadHatFlowerWreath.png|50px]] || Flower Wreath || $100 || 2
+|-
+| [[File:ClothingUniformColorRainbow.png|50px]] || Rainbow Jumpsuit || $100 || 2
+|-
+| [[File:ClothingUnderSocksCoder.png|50px]] || Coder Socks || $100 || 2
+|-
+| [[File:ClothingUnderSocksBee.png|50px]] || Bee Socks || $100 || 2
+|-
+| style="background-color:#383838;" | [[File:ClothingNeckScarfStripedLesbianLong.png|50px]]
+| style="background-color:#383838;" | Long Bacon
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#383838;" | [[File:ClothingUniformJumpskirtColorRainbow.png|50px]]
+| style="background-color:#383838;" | Rainbow Jumpskirt
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|}
+</div>
+</includeonly>

@@ -1,0 +1,8 @@
+{{Ambox
+| color = red
+| icon = Warning-red.svg
+| title = Spoiler Warning
+| message = This page contains '''spoilers'''. View at your own discretion.
+| tiny = {{{tiny|}}}
+| class = {{{class|}}}
+}}<noinclude>{{doc|Template:Ambox/doc}}</noinclude>

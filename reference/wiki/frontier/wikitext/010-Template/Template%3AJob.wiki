@@ -1,0 +1,16 @@
+|- body style="background-color:#{{{1}}}1A;"
+|style="border: 1px solid #000000;" | [[File:{{{2}}}|64px]]<br><div id="{{{3}}}">{{{3}}}</div>
+|style="border: 1px solid #000000;" | {{{desc}}}
+|style="border: 1px solid #000000;" | <span style="display: none;">{{#ifeq:{{{difficulty|}}}|Very Hard|h|{{#ifeq:{{{difficulty|}}}|Hard to Very Hard|g|{{#ifeq:{{{difficulty|}}}|Hard|f|{{#ifeq:{{{difficulty|}}}|Medium to Hard|e|{{#ifeq:{{{difficulty|}}}|Medium|d|{{#ifeq:{{{difficulty|}}}|Easy to Medium|c|{{#ifeq:{{{difficulty|}}}|Easy|b|a}}}}}}}}}}}}}}</span>{{{difficulty}}}<noinclude>
+
+
+Use it in conjunction with the JobCategory template
+
+==Example==
+{| {{JobCategory|What they workin|0C2C47}}
+
+{{Job|0C2C47|Hop.png|Head of Personnel|
+|desc=what does the job do
+|difficulty=Yes}}
+
+|}

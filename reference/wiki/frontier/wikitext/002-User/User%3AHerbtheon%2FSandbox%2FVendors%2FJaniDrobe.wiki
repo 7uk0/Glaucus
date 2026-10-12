@@ -1,0 +1,72 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:NFClothingBackpackDuffelJanitor.png|50px]] || Janitor Duffel || $100 || 2
+|-
+| [[File:ClothingBackpackMessengerJanitor.png|50px]] || Janitor Messenger Bag || $100 || 2
+|-
+| [[File:ClothingUniformJumpsuitJanitor.png|50px]] || Janitor Jumpsuit || $100 || 2
+|-
+| [[File:ClothingUniformJumpskirtJanitor.png|50px]] || Janitor Jumpskirt || $100 || 2
+|-
+| [[File:ClothingHandsGlovesJanitor.png|50px]] || Rubber Gloves || $100 || 2
+|-
+| [[File:ClothingShoesColorBlack.png|50px]] || Black Shoes || $100 || 2
+|-
+| [[File:ClothingHeadHatPurplesoft.png|50px]] || Purple Cap || $100 || 2
+|-
+| [[File:ClothingBeltJanitor.png|50px]] || Janibelt || $200 || 2
+|-
+| [[File:NFPouchJanitor.png|50px]] || Janitor's Pouch || $500 || 2
+|-
+| [[File:ClothingOuterWinterJani.png|50px]] || Janitorial Winter Coat || $500 || 2
+|-
+| [[File:ClothingShoesBootsWinterJani.png|50px]] || Janitor Winter Boots || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedPurple.png|50px]] || Striped Purple Scarf || $100 || 3
+|-
+| [[File:ClothingHeadHatHoodBioJanitor.png|50px]] || Bio Hood || $100 || 1
+|-
+| [[File:ClothingOuterBioJanitor.png|50px]] || Bio Suit || $400 || 1
+|-
+| [[File:ClothingOuterEVASuitJanitor.png|50px]] || Janitor EVA Suit || $1,500 || 1
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineJanitor.png|50px]]
+| style="background-color:#383838;" | Janitor Figure
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#383838;" | [[File:ClothingUniformJumpskirtJanimaid.png|50px]]
+| style="background-color:#383838;" | Janitorial Maid Uniform
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#383838;" | [[File:ClothingUniformJumpskirtJanimaidmini.png|50px]]
+| style="background-color:#383838;" | Janitorial Maid Uniform with Miniskirt
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#383838;" | [[File:UniformMaid.png|50px]]
+| style="background-color:#383838;" | Maid Uniform
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:ClothingHeadHatTacticalMaidHeadband.png|50px]]
+| style="background-color:#380C0C;" | Tactical Maid Headband
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:ClothingUniformJumpskirtTacticalMaid.png|50px]]
+| style="background-color:#380C0C;" | Tactical Maid Suitskirt
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:ClothingHandsTacticalMaidGloves.png|50px]]
+| style="background-color:#380C0C;" | Tactical Maid Gloves
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 1
+|}
+</div>
+</includeonly>

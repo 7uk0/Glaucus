@@ -1,0 +1,2 @@
+== Summary ==
+bolt-open sprite of the Inspector revolver pistol

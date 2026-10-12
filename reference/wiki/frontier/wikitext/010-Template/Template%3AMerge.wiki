@@ -1,0 +1,13 @@
+<includeonly>{{Ambox
+| color = purple
+| icon = Merge.svg
+| message = It has been proposed that this page be [[support:Merge|merged]] with [[{{{1}}}]].
+| tiny = {{{tiny|}}}
+| class = {{{class|}}}
+| date = {{{date|}}}
+}}<!--
+
+-->{{#ifeq: {{lc:{{{nocat|}}}}} | yes ||[[Category:Candidates for merging]]}}</includeonly><!--
+
+--><noinclude>{{Merge|Template:Merge|nocat=yes}}
+{{doc|Template:Ambox/doc}}</noinclude>

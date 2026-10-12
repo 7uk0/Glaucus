@@ -1,0 +1,12 @@
+{| class="wikitable mw-collapsible" width=100% style="font-size: 95%;"
+! colspan=2 style="background: #013220; font-size: 100%;border: 2px solid #FFFFFF" | Game Mechanics
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#400b76;" |'''The Basics'''
+| style="border: 2px solid #FFFFFF" | [[Server Rules]] · [[Getting Started]]
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#400b76;" |'''Objects'''
+| style="border: 2px solid #FFFFFF" | [[Engineering Objects]] · [[Medical Objects]] · [[NFSD objects]] · [[Weapons]] · [[Melees]]
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#400b76;" |'''In-game abstractions'''
+| style="border: 2px solid #FFFFFF" | [[Bluespace Events]] · [[Piloting]] · [[Writing and Documents|Writing & Documents]]
+|}

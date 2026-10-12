@@ -1,0 +1,41 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Placeholder.png|50px]] || Valet EVA Suit || $1,500 || 2
+|-
+| [[File:Placeholder.png|50px]] || Valet's Uniform || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Valet's Uniform || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Bellhop Cap || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Valet Vest || $300 || 2
+|-
+| [[File:Placeholder.png|50px]] || White Gloves || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Black Shoes || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Laceup Shoes || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Approved Rubber Stamp || $200 || 3
+|-
+| [[File:Placeholder.png|50px]] || Denied Rubber Stamp || $200 || 3
+|-
+| [[File:Placeholder.png|50px]] || Clipboard || $100 || 3
+|-
+| [[File:Placeholder.png|50px]] || Folder || $100 || 3
+|-
+| [[File:Placeholder.png|50px]] || Folder || $100 || 3
+|-
+| [[File:Placeholder.png|50px]] || Folder || $100 || 3
+|-
+| [[File:Placeholder.png|50px]] || Hand Labeler || $100 || 3
+|-
+| [[File:Placeholder.png|50px]] || BRB Sign || $100 || 3
+|-
+| [[File:Placeholder.png|50px]] || Desk Bell || $100 || 3
+|}
+</div>
+</includeonly>

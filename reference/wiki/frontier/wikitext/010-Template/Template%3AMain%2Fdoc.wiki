@@ -1,0 +1,55 @@
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Article",
+			"description": "A main article.",
+			"example": "Article",
+			"type": "wiki-page-name",
+			"required": true
+		},
+		"2": {
+			"label": "Second Article",
+			"description": "A second main article.",
+			"example": "Second Article",
+			"type": "wiki-page-name"
+		},
+		"3": {
+			"label": "Third Article",
+			"description": "A third main article.",
+			"example": "Third Article",
+			"type": "wiki-page-name"
+		}
+	},
+	"description": "This hatnote template is meant to be in sections of an article mentioning information about another existing main article.",
+	"paramOrder": [
+		"1",
+		"2",
+		"3"
+	],
+	"format": "inline"
+}
+</templatedata>
+
+== Examples ==
+{| class="wikitable"
+! Code !! Result
+|-
+| <code><nowiki>{{Main|Special:WantedPages}}</nowiki></code> || {{Main|Special:WantedPages}}
+|-
+| <code><nowiki>{{Main|Special:WantedPages#Section Title}}</nowiki></code> || {{Main|Special:WantedPages#Section Title}}
+|-
+| <code><nowiki>{{Main|Special:WantedPages|Special:UncategorizedPages}}</nowiki></code> || {{Main|Special:WantedPages|Special:UncategorizedPages}}
+|-
+| <code><nowiki>{{Main|Special:WantedPages|Special:UncategorizedPages|Special:UncategorizedCategories}}</nowiki></code> || {{Main|Special:WantedPages|Special:UncategorizedPages|Special:UncategorizedCategories}}
+|-
+| <code><nowiki>{{Main|Special:WantedPages{{!}}Page 1}}</nowiki></code> (Custom link label) || {{Main|Special:WantedPages{{!}}Page 1}}
+|}
+
+== Dependencies ==
+This template requires the {{tl|Hatnote}} metatemplate.
+
+== Source ==
+Roughly based on [[wikipedia:Template:For|Wikipedia's For Template]].
+
+<noinclude>[[Category:Template documentation]]</noinclude>

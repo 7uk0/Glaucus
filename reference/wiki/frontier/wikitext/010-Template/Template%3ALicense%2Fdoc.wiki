@@ -1,0 +1,70 @@
+This template is to be used under a ''Licensing'' heading on file pages to denote the file's license.
+
+== Available licenses ==
+=== Game ===
+* Usage: <nowiki>{{License|game}}</nowiki>
+{{License|game}}
+
+=== Fairuse ===
+* Usage: <nowiki>{{License|fairuse}}</nowiki>
+{{License|fairuse}}
+
+=== CC0 ===
+* Usage: <nowiki>{{License|CC0}}</nowiki>
+{{License|CC0}}
+
+=== CC-BY-NC-ND ===
+* Usage: <nowiki>{{License|CC-BY-NC-ND}}</nowiki>
+{{License|CC-BY-NC-ND}}
+
+=== CC-BY-NC-SA ===
+* Usage: <nowiki>{{License|CC-BY-NC-SA}}</nowiki>
+{{License|CC-BY-NC-SA}}
+
+=== CC-BY-NC ===
+* Usage: <nowiki>{{License|CC-BY-NC}}</nowiki>
+{{License|CC-BY-NC}}
+
+=== CC-BY-ND ===
+* Usage: <nowiki>{{License|CC-BY-ND}}</nowiki>
+{{License|CC-BY-ND}}
+
+=== CC-BY-SA ===
+* Usage: <nowiki>{{License|CC-BY-SA}}</nowiki>
+{{License|CC-BY-SA}}
+
+=== CC-BY ===
+* Usage: <nowiki>{{License|CC-BY}}</nowiki>
+{{License|CC-BY}}
+
+=== CC-PD ===
+* Usage: <nowiki>{{License|CC-PD}}</nowiki>
+{{License|CC-PD}}
+
+=== CC-SRR ===
+* Usage: <nowiki>{{License|CC-SRR}}</nowiki>
+{{License|CC-SRR}}
+
+=== Permission ===
+* Usage: <nowiki>{{License|permission}}</nowiki>
+{{License|permission}}
+
+=== No license ===
+'''Providing no parameter (or invalid one) defaults to the nolicense notice:'''
+
+<nowiki>{{License}}</nowiki>{{License}}
+
+== Specifying source ==
+'''Source parameter (optional):'''
+
+The source parameter accepts a url to the source where the file came from if necessary for attribution.
+
+Example:
+
+<nowiki>{{License|game|source=https://indie.io/}}</nowiki>
+{{License|game|source=https://indie.io/}}
+
+<includeonly>
+[[Category:License templates]]
+</includeonly>
+<noinclude>[[Category:Template documentation]]</noinclude>

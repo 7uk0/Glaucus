@@ -1,0 +1,16 @@
+*Game content
+** License|game|This contains content from the game or its official media
+*Commonly used
+** License|fairuse|This will be used in a way that qualifies as "fair use" under US law
+** License|CC0|This file is licensed under the CC0 1.0 License
+** License|CC-BY-NC-ND|This is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License
+** License|CC-BY-NC-SA|This is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License
+** License|CC-BY-NC|This is licensed under the Creative Commons Attribution-NonCommercial 3.0 License
+** License|CC-BY-ND|This is licensed under the Creative Commons Attribution-NoDerivs 3.0 License
+** License|CC-BY-SA|This is licensed under the Creative Commons Attribution-ShareAlike 3.0 License
+** License|permission|The copyright holder gave permission to use this work only in wiki.gg articles
+** License|CC-BY|This is licensed under the Creative Commons Attribution 3.0 License
+** License|CC-PD|This is in the public domain
+** License|CC-SRR|This is licensed under the Creative Commons Some Rights Reserved License
+*Unsure or unknown
+** License|nolicense|I don't know the license

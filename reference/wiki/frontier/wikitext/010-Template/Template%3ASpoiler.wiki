@@ -1,0 +1,14 @@
+<includeonly><!-- 
+
+Base code written for Terraria Wiki: https://terraria.wiki.gg/wiki/Template:Spoiler
+
+NOTE: This template needs a JavaScript function in MediaWiki:Common.js or MediaWiki:Vector.js to work, as well as styling in MediaWiki:Common.css or MediaWiki:Vector.css for the related classes
+
+-->{{#vardefine:element|{{#if:{{{block|}}}|div|span}}}}<!--
+
+--><{{#var:element}} class="spoiler-content {{{class|}}}" id="{{{id|}}}" style="{{{css|{{{style|}}}}}}"><{{#var:element}}>{{{1|}}}</{{#var:element}}></{{#var:element}}><!-- 
+-->[[Category:Pages with spoilers]]<!--
+--></includeonly><noinclude>
+{{doc}}
+[[Category:Formatting templates]]
+</noinclude>

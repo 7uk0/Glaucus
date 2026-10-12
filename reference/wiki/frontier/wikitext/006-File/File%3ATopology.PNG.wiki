@@ -1,0 +1,4 @@
+== Summary ==
+Sector topology, screenshot taken from in-game guide.
+== Licensing ==
+{{License|game}}

@@ -1,0 +1,90 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:CadetPDA.png|50px]] || Cadet PDA || $100 || 10
+|-
+| [[File:DeputyPDA.png|50px]] || Deputy PDA || $100 || 10
+|-
+| [[File:BrigmedicNFPDA.png|50px]] || Brigmedic PDA || $100 || 10
+|-
+| [[File:NFDetectivePDA.png|50px]] || Detective PDA || $100 || 10
+|-
+| [[File:SergeantPDA.png|50px]] || Sergeant PDA || $100 || 10
+|-
+| [[File:BailiffPDA.png|50px]] || Bailiff PDA || $100 || 10
+|-
+| [[File:ClothingHeadsetNfsdBrownCommon.png|50px]] || Headset || $50
+|-
+| [[File:ClothingHeadsetNfsdCreamCommon.png|50px]] || Headset || $50
+|-
+| [[File:ClothingHeadsetNfsdGreenCommon.png|50px]] || Headset || $50
+|-
+| [[File:NFPrisonerPDA.png|50px]] || Prisoner PDA || $100
+|-
+| [[File:NFPrisonerIDCard.png|50px]] || ID Card || $25
+|-
+| [[File:ClothingHeadsetPrison.png|50px]] || Prisoner Headset || $25
+|-
+| [[File:RubberStampPal.png|50px]] || Public Affairs Liaison's Rubber Stamp || $100 || 3
+|-
+| [[File:RubberStampApproved.png|50px]] || Approved Rubber Stamp || $100
+|-
+| [[File:RubberStampDenied.png|50px]] || Denied Rubber Stamp || $100
+|-
+| [[File:Pen.png|50px]] || Pen || $100
+|-
+| [[File:BoxPaper.png|50px]] || Paper Box || $50 || 4
+|-
+| [[File:BoxPaperOffice.png|50px]] || Office Paper Box || $50 || 4
+|-
+| [[File:BoxPaperCaptainsThoughts.png|50px]] || Captains Thoughts Paper Box || $50 || 4
+|-
+| [[File:BoxEnvelope.png|50px]] || Envelope Box || $50 || 4
+|-
+| [[File:BoxFolderNfsdForms.png|50px]] || NFSD Form Folder || $50 || 3
+|-
+| [[File:BoxFolderNfsdFormsBrown.png|50px]] || NFSD Form Folder || $50 || 3
+|-
+| [[File:BoxFolderGreen.png|50px]] || Folder || $50 || 3
+|-
+| [[File:BoxFolderRed.png|50px]] || Folder || $50 || 3
+|-
+| [[File:HandLabeler.png|50px]] || Hand Labeler || $50
+|-
+| [[File:EncryptionKeyNfsd.png|50px]] || NFSD Encryption Key || $10
+|-
+| [[File:EncryptionKeyCommand.png|50px]] || Command Encryption Key || $10 || 5
+|-
+| [[File:ClothingOuterCoatNfsdFormal.png|50px]] || NFSD Formal Coat || $175 || 3
+|-
+| [[File:ClothingOuterCoatNfsdFormalSheriff.png|50px]] || NFSD Sheriff's Formal Coat || $175 || 3
+|-
+| [[File:ClothingOuterCoatNfsdLongCoat.png|50px]] || NFSD Long Coat || $175 || 3
+|-
+| [[File:ClothingNeckCloakSheriff.png|50px]] || Sheriff's Coat || $50 || 3
+|-
+| [[File:ClothingNeckMantleSheriff.png|50px]] || Sheriff's Mantle || $50 || 3
+|-
+| [[File:ClothingNeckPublicAffairsLiaisonBadge.png|50px]] || Public Affairs Liaison Badge || $50 || 10
+|-
+| [[File:ClothingNeckNfsdBadgeSecurityCadet.png|50px]] || NFSD Cadet Badge || $50 || 10
+|-
+| [[File:ClothingNeckNfsdBadgeSecurity.png|50px]] || NFSD Deputy Badge || $50 || 10
+|-
+| [[File:ClothingNeckNfsdBadgeSecurityBrigmedic.png|50px]] || NFSD Brigmedic Badge || $50 || 10
+|-
+| [[File:ClothingNeckNfsdBadgeDetective.png|50px]] || NFSD Detective Badge || $50 || 10
+|-
+| [[File:ClothingNeckNfsdBadgeSeniorOfficer.png|50px]] || NFSD Sergeant Badge || $50 || 10
+|-
+| [[File:ClothingNeckNfsdBadgeWarden.png|50px]] || NFSD Bailiff Badge || $50 || 10
+|-
+| [[File:ClothingNeckNfsdBadgeSheriff.png|50px]] || NFSD Sheriff Badge || $50 || 10
+|-
+| [[File:ClothingMaskGasSheriff.png|50px]] || NFSD Sheriff Gas Mask || $125 || 3
+|-
+| [[File:AccessConfigurator.png|50px]] || Access Configurator || $100 || 2
+|}
+</div>

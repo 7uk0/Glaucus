@@ -1,0 +1,13 @@
+<includeonly>{{Ambox
+| color = gold
+| icon = Stub.svg
+| message = This page is a [[support:Stub|stub]]. You can help '''{{SITENAME}}''' by [{{fullurl:{{FULLPAGENAME}}|action=edit}} expanding it].
+| tiny = {{{tiny|}}}
+| class = {{{class|}}}
+| date = {{{date|}}}
+}}<!--
+
+-->{{#ifeq: {{lc:{{{nocat|}}}}} | yes ||[[Category:Stubs]]}}</includeonly><!--
+
+--><noinclude>{{Stub|nocat=yes}}
+{{doc|Template:Ambox/doc}}</noinclude>

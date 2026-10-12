@@ -1,0 +1,32 @@
+<div style="position:relative; display:flex; align-items:center; height:160px; padding:20px 28px; border-radius:16px; overflow:hidden; color:#fff; background:#111;">
+
+  <!-- Background using File -->
+  <div style="position:absolute;inset:0;z-index:0;overflow:hidden;line-height:0;">
+    <div style="position:absolute;top:70%;left:50%;transform:translate(-50%,-50%);">
+      [[File:User_Herbtheon_Profile.png|frameless|link=|1050x1050px]]
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div style="position:relative; z-index:1; display:flex; align-items:center; gap:18px;">
+
+    <!-- Avatar -->
+    <div style="width:100px;height:100px;flex:0 0 100px;border-radius:50%;overflow:hidden;border:3px solid #00ec64;background:#1e1d1f;line-height:0;position:relative;
+    ">
+
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -48%) scale(0.3);">
+        [[File:User Herbtheon Profile Front.gif]]
+      </div>
+
+    </div>
+
+    <!-- Text -->
+    <div style="display:flex; flex-direction:column; justify-content:center; min-width:0; margin-top:10px;">
+      <div style="font-size:22px; font-weight:700; color:#00ec64;">Witchurch / Herbtheon</div>
+      <div style="font-size:13px; opacity:0.82; margin-top:-10px;">
+ Retired Head Bureaucrat for a Miraheze Wiki since October, regrowing my roots here and hopefully for the best of the community. I play as Maren Svetlanen, mainly in Hypatia!
+      </div>
+    </div>
+
+  </div>
+</div>

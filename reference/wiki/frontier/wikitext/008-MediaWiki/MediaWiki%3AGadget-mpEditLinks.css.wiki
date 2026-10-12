@@ -1,0 +1,25 @@
+.mp-edit-link {
+	display:block;
+	position:absolute;
+	right:0.5em;
+	top:0.5em;
+	background:var(--wiki-content-background-color);
+}
+
+.mp-edit-link a {
+	display:block;
+	padding:0.1em;
+	border:1px solid var(--wiki-content-link-color);
+}
+
+.mp-edit-link a::before {
+	display:inline-block;
+	content:'';
+	background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E%3Ctitle%3E edit %3C/title%3E%3Cpath d=%22m16.77 8 1.94-2a1 1 0 0 0 0-1.41l-3.34-3.3a1 1 0 0 0-1.41 0L12 3.23zM1 14.25V19h4.75l9.96-9.96-4.75-4.75z%22/%3E%3C/svg%3E");
+	background-size:contain;
+	width:1em;
+	height:1em;
+	filter:var(--wiki-icon-to-link-filter);
+	vertical-align:text-top;
+	margin-right:0.2em;
+}

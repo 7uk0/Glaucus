@@ -1,0 +1,12 @@
+<includeonly>{{License/template
+| source = {{{source|}}}
+| type = developer
+| darkIcon = yes
+| icon = [[File:IN COPYRIGHT.svg|50px|link=https://rightsstatements.org/page/InC/1.0/?language=en|IN COPYRIGHT]]
+| text = This file is owned by [https://indie.io indie.io] and/or its licensors, and is licensed under the [https://indie.io indie.io] [https://www.indie.io/terms-of-service Terms of Use].<br/>
+All trademarks and registered trademarks present in the file are proprietary to [https://indie.io indie.io] and/or its licensors.
+}}</includeonly><noinclude>
+This template currently looks like: {{License/indie.io}}
+
+See {{tl|License}} for full license documentation
+[[Category:License templates]]</noinclude>

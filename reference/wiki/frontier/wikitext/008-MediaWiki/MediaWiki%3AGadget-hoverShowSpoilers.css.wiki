@@ -1,0 +1,8 @@
+.spoiler-content:hover > * {
+  pointer-events:unset;
+  opacity: 1;
+}
+
+.spoiler-content:hover {
+  background-color: transparent;
+}

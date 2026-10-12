@@ -1,0 +1,32 @@
+/* All CSS here is applied on api.php pages */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color:#20211f;
+    border-color: #7b7261;
+    color: #f6ecdb;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: rgb(234, 224, 207);
+    border-color: rgb(83, 84, 81);
+  }
+  
+  .mw-highlight .s2 {
+    color: rgb(206, 99, 91);
+  }
+  
+  a {
+    color: rgb(133, 180, 221);
+  }
+  
+  a:visited {
+    color: rgb(141, 127, 218);
+  }
+  
+  pre, code, .mw-code {
+    background-color: rgb(34, 35, 33);
+    color: rgb(234, 224, 207);
+    border-color: rgb(63, 64, 62);
+  }
+}

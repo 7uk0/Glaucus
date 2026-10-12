@@ -1,0 +1,13 @@
+<includeonly>{{#vardefine:varname|ITER_INDEX_{{#if:{{{1|}}}|{{{1}}}|default}}<!-- end vardefine -->}}<!--
+
+main logic
+-->{{#vardefineecho:{{#var:varname}}|
+  {{#expr:
+    {{#ifeq:{{lc:{{{reset|}}}<!-- end lc -->}}
+            |yes
+            |0
+            |{{#var:{{#var:varname}}|0}}
+    <!-- end ifeq -->}} + {{#if:{{{get|}}}|0|1}}
+  <!-- end expr -->}}
+<!-- end vde -->}}</includeonly><noinclude>{{documentation}}
+[[Category:Templates]]</noinclude>

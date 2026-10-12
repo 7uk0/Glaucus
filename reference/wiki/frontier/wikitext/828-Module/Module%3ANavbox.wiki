@@ -1,0 +1,680 @@
+-- version 1.2.2
+
+-- config table for RANGER.
+-- If you want to change the default config, DO NOT change it here,
+-- please do it via the `onLoadConfig` hook in [[Module:Navbox/Hooks]].
+local config = {
+	default_navbox_class = "navigation-not-searchable",   -- Base value of the `class` parameter.
+	default_title_class = nil,    -- Base value of the `title_class` parameter.
+	default_above_class = nil,    -- Base value of the `above_class` parameter.
+	default_below_class = nil,    -- Base value of the `below_class` parameter.
+	default_section_class =nil,   -- Base value of the `section_class` parameter.
+	default_header_class = nil,   -- Base value of the `header_class` parameter.
+	default_group_class = nil,    -- Base value of the `group_class` parameter.
+	default_list_class = 'hlist', -- Base value of the `list_class` parameter.
+	
+	default_header_state = nil, -- Base value of the `state` parameter.
+
+	editlink_hover_message_key = 'Navbox-edit-hover', -- The system message name for hover text of the edit icon. 
+	
+	custom_render_handle = nil, -- usually for debugging purposes only. if set, it should be a function accept 2 parameters: `dataTree` and `args`, and return a string as module output.
+}
+
+---------------------------------------------------------------------
+
+-- Argument alias.
+local CANONICAL_NAMES = {
+	['titlestyle'] = 'title_style',
+	['listclass'] = 'list_class',
+	['groupstyle'] = 'group_style',
+	['collapsible'] = 'state',
+	['editlink'] = 'meta',
+	['editlinks'] = 'meta',
+	['editicon'] = 'meta',
+	['edit_link'] = 'meta',
+	['edit_links'] = 'meta',
+	['edit_icon'] = 'meta',
+	['navbar'] = 'meta',
+	['name'] = 'template',
+	['evenodd'] = 'striped',
+	['class'] = 'navbox_class',
+	['css'] = 'navbox_style',
+	['style'] = 'navbox_style',
+	['group'] = '1:group',
+	['list'] = '1:list',
+}
+
+local DEFAULT_ARGS = {
+	['meta'] = true,
+}
+
+local STATES = {
+	['no'] = '',
+	['off'] = '',
+	['plain'] = '',
+	['collapsed'] = 'mw-collapsible mw-collapsed',
+}
+
+local BOOL_FALSE = {
+	['no'] = true,
+	['off'] = true,
+	['false'] = true,
+}
+
+local STRIPED = {
+	['odd'] = 'striped-odd',
+	['swap'] = 'striped-odd',
+	['y'] = 'striped-even',
+	['yes'] = 'striped-even',
+	['on'] = 'striped-even',
+	['even'] = 'striped-even',
+	['striped'] = 'striped-even',
+}
+
+local NAVBOX_CHILD_INDICATOR = '!!C$H$I$L$D!!'
+local NAVBOX_CHILD_INDICATOR_LENGTH = string.len( NAVBOX_CHILD_INDICATOR )
+
+local CLASS_PREFIX = 'ranger-'
+
+---------------------------------------------------------------------
+
+local p = {}
+local h = {} -- non-public
+local hooks = mw.title.new('Module:Navbox/Hooks').exists and require('Module:Navbox/Hooks') or {}
+
+---------------------------------------------------------------------
+
+-- For templates: {{#invoke:navbox|main|...}}
+function p.main(frame)
+	local args = p.mergeArgs(frame)
+	return p.build(args, true)
+end
+
+-- For modules: return require('module:navbox').build(args)
+-- By default this method will skip the arguments sanitizing phase 
+-- (and onSanitizeArgsStart/onSanitizeArgsEnd hooks).
+-- Set `doParseArgs` to true to do arguments sanitizing.
+-- If `customConfig` table is provided, it will be merged into default config table (after onLoadConfig()).
+-- If `customHooks` table is provided, all default hook handles will be overrided, unprovided hooks will be empty.
+function p.build(args, doParseArgs, customConfig, customHooks)
+	if customHooks then
+		hooks = customHooks
+	end
+	
+	if doParseArgs then 
+		args = h.parseArgs(args)
+	end
+
+	h.runHook('onLoadConfig', config, args)
+
+	if customConfig then
+		for k,v in pairs(customConfig) do
+			config[k] = v
+		end
+	end
+	
+	--merge default args
+	for k,v in pairs(DEFAULT_ARGS) do
+		if args[k] == nil then
+			args[k] = DEFAULT_ARGS[k]
+		end
+	end
+
+	h.runHook('onBuildTreeStart', args)
+	local dataTree = h.buildDataTree(args)
+	h.runHook('onBuildTreeEnd', dataTree, args)
+	
+	if type(config.custom_render_handle) == 'function' then
+		return config.custom_render_handle(dataTree, args)
+	else
+		return h.render(dataTree)
+	end
+end
+
+-- merge args from frame and frame:getParent()
+-- It may be used when creating custom wrapping navbox module.
+--
+-- For example, Module:PillNavbox
+--
+-- local RANGER = require('Module:Navbox')
+-- local p = {}
+-- function p.main(frame)
+--     return RANGER.build(RANGER.mergeArgs(frame), true, {
+--         default_navbox_class = 'pill', -- use "pill" style by default.
+--     })
+-- end
+-- return p
+--
+function p.mergeArgs(frame)
+	local inputArgs = {}
+	
+	for k, v in pairs(frame.args) do
+		v = mw.text.trim(tostring(v))
+		if v ~= '' then
+			inputArgs[k] = v
+		end
+	end
+	
+	for k, v in pairs(frame:getParent().args) do
+		v = mw.text.trim(v)
+		if v ~= '' then
+			inputArgs[k] = v
+		end
+	end
+	
+	return inputArgs
+end
+
+------------------------------------------------------------------------
+
+function h.parseArgs(inputArgs)
+	h.runHook('onSanitizeArgsStart', inputArgs)
+	
+	local args = {}
+	
+	for k, v in pairs(inputArgs) do
+		if type(k) == 'string' then
+			-- all named args have already been trimmed
+			local key = h.normalizeKey(k)
+			args[key] = h.normalizeValue(key, v)
+		else
+			args[k] = mw.text.trim(v) -- keep number-index arguments (for {{navbox|child|...}})
+		end
+	end
+	
+	h.runHook('onSanitizeArgsEnd', args, inputArgs)
+	
+	return args
+end
+
+-- Normalize the name string of arguments.
+-- the normalized form is (index:)?name, in which:
+-- index is number index such as 1, 1.3, 1.2.45,
+-- name is in lowercase underscore-case, such as group, group_style
+-- e.g: header_state, 1.3:list_style
+-- the input argument name can be:
+-- * camel-case: listStyle, ListStyle
+-- * space separated: list style
+-- * prefix+index+postfix?, and can be in camel-case or space/hyphen separated or mixed: list 1 style, list1, list1Style, list1_style
+-- * index.name: 1.3.list
+-- * index_name: 1.3_list (Space separated are treated as underscore separated, therefore 1.3 list are vaild too)
+function h.normalizeKey(s)
+	-- camel-case to lowercase underscore-case
+	s = s:gsub('%l%f[%u]', '%0_') -- listStyle to list_style
+	s = (s:gsub(' ', '_')):lower() -- space to underscore 
+	s = s:gsub('%l%f[%d]', '%0_') -- group1* to group_1*
+	s = s:gsub('%d%f[%l]', '%0_') -- *1style to *1_style
+	
+	-- number format x_y_z to x.y.z
+	s = s:gsub('(%d)_%f[%d]', '%1%.')
+	
+	-- move index to the beginning:
+	-- group_1.2_style to 1.2:group_style
+	-- group_1 to 1:group
+	s = s:gsub('^([%l_]+)_([%d%.]+)', '%2:%1')
+	
+	-- support index.name and index_name:
+	-- 1.2.group / 1.2_group to 1.2:group
+	s = s:gsub('^([%d%.]+)[%._]%f[%l]', '%1:')
+	
+	-- now the key should be in normalized form, if the origin key is vaild
+
+	-- standardize *_css to *_style
+	s = s:gsub('_css$', '_style')
+	-- standardize *collapsible to *state
+	s = s:gsub('collapsible$', 'state')
+
+	-- standardize all aliases to the canonical name
+	return CANONICAL_NAMES[s] or s
+end
+
+function h.normalizeValue(k, v)
+	k = tostring(k)
+	if k:find('_style$') then
+		v = (v .. ';'):gsub(';;', ';')
+		return v
+	elseif k:find('state$') then
+		return STATES[v]
+	elseif k == 'striped' then
+		return STRIPED[v]
+	elseif k == 'meta' then
+		return not BOOL_FALSE[v]
+	elseif v:sub(1, 2) == '{|' or v:match('^[*:;#]') then
+		-- Applying nowrap to lines in a table does not make sense.
+		-- Add newlines to compensate for trim of x in |parm=x in a template.
+		return '\n' .. v ..'\n'
+	end
+	return v
+end
+
+-- parse arguments, convert them to structured data tree
+function h.buildDataTree(args)
+	-- parse args to a tree
+	local tree = h.buildTree(args)
+
+	-- build root navbox data
+	local data = h.buildNavboxData(tree.info)
+	
+	-- Recursively build section tree
+	if tree.children then
+		data.sections = h.buildSections(tree.children, {
+			listClass = h.mergeAttrs(args.list_class, config.default_list_class),
+			listStyle =  args.list_style,
+			groupClass = h.mergeAttrs(args.group_class, config.default_group_class),
+			groupStyle = args.group_style,
+			sectionClass = h.mergeAttrs(args.section_class, config.default_section_class),
+			sectionStyle = args.section_style,
+			headerClass = h.mergeAttrs(args.header_class, config.default_header_class),
+			headerStyle = args.header_style,
+			headerState = args.header_state or config.default_header_state,
+		})
+	end
+	if args[1] == 'child' then
+		data.CHILD_MODE = true
+	end
+
+	return data
+end
+
+function h.buildSections(list, defaults)
+	local sections = {}
+	local section = nil
+	for k, node in h.orderedPairs(list) do
+		local info = node.info or {}
+		--start a new section if needed
+		if info.header or not section then
+			section = { 
+				class = h.mergeAttrs(info.section_class, defaults.sectionClass),
+				style = h.mergeAttrs(info.section_style, defaults.sectionStyle),
+				body = {}
+			}
+			-- Section header if needed.
+			-- If the value of a `|header_n=` is two or more consecutive "-" characters (e.g. --, -----), 
+			-- it means start a new section without header, and the new section will be not collapsable.
+			if info.header and not string.match(info.header, '^%-%-+$') then
+				section.header = {
+					content = info.header,
+					class = h.mergeAttrs(info.header_class, defaults.headerClass),
+					style = h.mergeAttrs(info.header_style, defaults.headerStyle),
+				}
+				section.state = info.state or defaults.headerState or 'mw-collapsible'
+			end
+			sections[#sections+1] = section
+		end
+		-- above/below for this section
+		if info.above then
+			section.above = {
+				content = info.above,
+				class= h.mergeAttrs(info.above_class, config.default_above_class),
+				style = info.above_style,
+			}
+		end
+		if info.below then
+			section.below = {
+				content = info.below,
+				class= h.mergeAttrs(info.below_class, config.default_below_class),
+				style = info.below_style,
+			}
+		end
+		-- this group+list row
+		if info.group or info.list or node.children then
+			local row = {}
+			section.body[#section.body+1] = row
+			if info.group then
+				row.group = {
+					content = info.group,
+					class = h.mergeAttrs(info.group_class, defaults.groupClass),
+					style = h.mergeAttrs(info.group_style, defaults.groupStyle),
+				}
+			end
+			if info.list then
+				if string.sub(info.list, 1, NAVBOX_CHILD_INDICATOR_LENGTH) == NAVBOX_CHILD_INDICATOR then
+					-- it is from {{navbox|child| ... }}
+					row.sections = mw.text.jsonDecode(string.sub(info.list, NAVBOX_CHILD_INDICATOR_LENGTH+1))
+				else
+					row.list = {
+						content = info.list,
+						class = h.mergeAttrs(info.list_class, defaults.listClass),
+						style = h.mergeAttrs(info.list_style, defaults.listStyle),
+					}
+				end
+			end
+			-- sub-nodes, will override {{navbox|child| ... }}
+			if node.children then
+				row.sections = h.buildSections(node.children, defaults)
+			end
+		end
+	end
+	-- flatten if needed:
+	-- If a section has only one list with no content and no corresponding group but has sublists, these sublists will be moved to upper level.
+	for _, sect in ipairs(sections) do
+		if #sect.body == 1 then
+			local node = sect.body[1]
+			if not node.group and not node.list and node.sections and #node.sections == 1 and not node.sections[1].header then
+				sect.body = node.sections[1].body
+			end
+		end
+	end	
+	return sections
+end
+	
+function h.buildNavboxData(info)
+	local data = {
+		state = info.state or 'mw-collapsible', -- here we need a default value for empty input
+		striped = info.striped,
+		class = h.mergeAttrs(info.navbox_class, config.default_navbox_class),
+		style = info.navbox_style,
+	}
+	
+	-- data for titlebar
+	if info.title or info.meta or data.state ~= '' then
+		data.title = {
+			content = info.title,
+			class = h.mergeAttrs(info.title_class, config.default_title_class),
+			style = info.title_style,
+		}
+		if info.meta then
+			data.metaLinks = {
+				link = info.meta_link, -- will be used as [[$link|$text]]
+				url = info.meta_url,  -- will be used as [$url $text], only if there is no data.metaLinks.link
+				text = info.meta_text, --hovertext
+			}
+			if not info.meta_link and not info.meta_url then
+				-- default link target
+				local title = mw.title.new(info.template or mw.getCurrentFrame():getParent():getTitle(), 'Template')
+				if not title then
+					error('Invalid title ' .. info.template)
+				end
+				data.metaLinks.link = title.fullText
+			end
+			if not info.meta_text then
+				local msg = mw.message.new(config.editlink_hover_message_key)
+				data.metaLinks.text = msg:exists() and msg:plain() or 'View or edit this template'
+			end
+		end
+	end
+	
+	-- above/below
+	if info.above then
+		data.above = {
+			content = info.above,
+			class= h.mergeAttrs(info.above_class, config.default_above_class),
+			style = info.above_style,
+		}
+	end
+
+	if info.below then
+		data.below = {
+			content = info.below,
+			class= h.mergeAttrs(info.below_class, config.default_below_class),
+			style = info.below_style,
+		}
+	end
+	
+	return data
+end
+
+-- parse arguments, convert them into a tree based on their index
+-- each node on tree is { info = { #data for this node# }, children = {#children nodes#}  }
+function h.buildTree(args, defaults)
+	local tree = { info = {} }
+	local check = function(key, value)
+		local index, name = string.match(key, '^([%d%.]+):(.+)$')
+
+		-- no number index found, for root node
+		if not index then 
+			tree.info[key] = value
+			return
+		end
+
+		-- filter invalid number index
+		if string.match(index, '^%.') or string.match(index, '%.$') or string.match(index, '%.%.') then
+			return
+		end
+		
+		-- find the node that matches the index in the tree
+		local arr = mw.text.split(index, '.', true)
+		local node = tree
+		for _, v in ipairs(arr) do
+			v = tonumber(v)
+			if not node.children then
+				node.children = {}
+			end
+			if not node.children[v] then 
+				node.children[v] = { info = {} }
+			end
+			node = node.children[v]
+		end
+		
+		node.info[name] = value
+	end
+	for k,v in pairs(args) do
+		check(k, v)
+	end
+	return tree
+end
+
+function h.render(data)
+	-- handle {{navbox|child|...}} syntax
+	if data.CHILD_MODE then
+		return NAVBOX_CHILD_INDICATOR..mw.text.jsonEncode(data.sections)
+	end
+
+	-----  normal case -----
+	
+	local out = mw.html.create()
+	
+	-- build navbox container
+	local navbox = out:tag('div')
+		:attr('role', 'navigation'):attr('aria-label', 'Navbox')
+		:addClass(CLASS_PREFIX..'navbox')
+		:addClass(data.class)
+		:addClass(data.striped)
+		:addClass(data.state)
+		:cssText(data.style)
+
+	--title bar
+	if data.title then
+		local titlebar = navbox:tag('div'):addClass(CLASS_PREFIX..'title')
+		titlebar:tag('div'):addClass('mw-collapsible-toggle-placeholder')
+		if data.metaLinks then
+			titlebar:node(h.renderMetaLinks(data.metaLinks))
+		end
+		if data.title then
+			titlebar:addClass(data.title.class):tag('div')
+			:addClass(CLASS_PREFIX..'title-text')
+			:addClass(data.title.class)
+			:cssText(data.title.style)
+			:wikitext(data.title.content)
+		end
+	end
+
+	--above
+	if data.above then
+		navbox:tag('div')
+		:addClass(CLASS_PREFIX..'above mw-collapsible-content')
+		:addClass(data.above.class)
+		:cssText(data.above.style)
+		:wikitext(data.above.content)
+		:attr('id', (not data.title) and mw.uri.anchorEncode(data.above.content) or nil) -- id for aria-labelledby attribute, if no title
+	end
+	
+	-- sections
+	if data.sections then
+		h.renderSections(data.sections, navbox, 0, true)
+	else
+		-- Insert a blank section for completely empty navbox to ensure it behaves correctly when collapsed.
+		if not data.above and not data.below then 
+			navbox:tag('div'):addClass(CLASS_PREFIX..'section mw-collapsible-content')
+		end
+	end
+
+	--below
+	if data.below then
+		navbox:tag('div')
+		:addClass(CLASS_PREFIX..'below mw-collapsible-content')
+		:addClass(data.below.class)
+		:cssText(data.below.style)
+		:wikitext(data.below.content)
+	end
+	return tostring(out)..'[[Category:Pages with navboxes]]' -- suggest to use HIDDENCAT here; will be used for maintenance & gadget imports
+end
+
+function h.renderSections(data, container, level, even)
+	for i,sect in ipairs(data) do
+		--section box
+		local section = container:tag('div')
+			:addClass(CLASS_PREFIX..'section mw-collapsible-content')
+			:addClass(sect.class)
+			:addClass(sect.state)
+			:cssText(sect.style)
+		-- section header
+		if sect.header then
+			section:tag('div')
+			:addClass(CLASS_PREFIX..'header')
+			:addClass(sect.header.class)
+			:cssText(sect.header.style)
+			:tag('div'):addClass('mw-collapsible-toggle-placeholder'):done()
+			:tag('div'):addClass(CLASS_PREFIX..'header-text'):wikitext(sect.header.content)
+		end
+		-- above:
+		if sect.above then
+			section:tag('div')
+			:addClass(CLASS_PREFIX..'above mw-collapsible-content')
+			:addClass(sect.above.class)
+			:cssText(sect.above.style)
+			:wikitext(sect.above.content)
+		end
+		-- body: groups&lists
+		local box = section:tag('div'):addClass(CLASS_PREFIX..'section-body mw-collapsible-content')
+		even = h.renderBody(sect.body, box, level, (level==0) and true or even) -- reset even status each section
+		-- below:
+		if sect.below then
+			section:tag('div')
+			:addClass(CLASS_PREFIX..'below mw-collapsible-content')
+			:addClass(sect.below.class)
+			:cssText(sect.below.style)
+			:wikitext(sect.below.content)
+		end
+	end
+	return even
+end
+
+
+function h.renderMetaLinks(info)
+	local box = mw.html.create('span'):addClass(CLASS_PREFIX..'meta')
+	local meta = box:tag('span'):addClass('nv nv-view')
+	
+	if info.link then 
+		meta:wikitext('[['..info.link..'|')
+			:tag('span'):wikitext(info.text):attr('title', info.text):done()
+			:wikitext(']]')
+	elseif info.url then
+		meta:wikitext('['..info.url..' ')
+			:tag('span'):wikitext(info.text):attr('title', info.text):done()
+			:wikitext(']')
+	end
+	
+	return box
+end
+
+function h.renderBody(info, box, level, even)
+	local count = 0
+	for _,v in h.orderedPairs(info) do
+		if v.group or v.list or v.sections then
+			count = count + 1
+			-- row container
+			local row = box:tag('div'):addClass(CLASS_PREFIX..'row')
+			-- group cell
+			if v.group or (v.sections and level > 0 and not v.list) then
+				local groupCell = row:tag('div')
+					:addClass(CLASS_PREFIX..'group level-'..level)
+					:addClass((level > 0) and CLASS_PREFIX..'subgroup' or nil)
+				local groupContentWrap = groupCell:tag('div'):addClass(CLASS_PREFIX..'wrap')
+				if v.group then
+					groupCell:addClass(v.group.class):cssText(v.group.style)
+					groupContentWrap:wikitext(v.group.content)
+				else
+					groupCell:addClass('empty')
+					row:addClass('empty-group-list')
+				end
+			else
+				row:addClass('empty-group')
+			end
+			-- list cell
+			local listCell = row:tag('div'):addClass(CLASS_PREFIX..'listbox')
+			if not v.list and not v.sections then
+				listCell:addClass('empty')
+				row:addClass('empty-list')
+			end
+			if v.list or (v.group and not v.sections) then
+				--listCell:node(h.renderList(v['list'] or '', k, level, args))
+				even = not even -- flip even/odd status
+				local cell = listCell:tag('div')
+				:addClass(CLASS_PREFIX..'wrap')
+				:addClass(even and CLASS_PREFIX..'even' or CLASS_PREFIX..'odd')
+				if v.list then
+					cell:addClass(v.list.class):cssText(v.list.style)
+					:tag('div'):addClass(CLASS_PREFIX..'list'):wikitext(v.list.content)
+				end
+			end
+			if v.sections then
+				local sublistBox = listCell:tag('div'):addClass(CLASS_PREFIX..'sublist level-'..level)
+				even = h.renderSections(v.sections, sublistBox, level+1, even)
+			end
+		end
+	end
+	if count > 0 then
+		box:css('--count', count) -- for flex-grow
+	end
+	return even
+end
+
+-- pairs, but sort the keys alphabetically
+function h.orderedPairs(t, f)
+	local a = {}
+	for n in pairs(t) do table.insert(a, n) end
+	table.sort(a, f)
+	local i = 0      -- iterator variable
+	local iter = function ()   -- iterator function
+		i = i + 1
+		if a[i] == nil then return nil
+		else return a[i], t[a[i]]
+		end
+	end
+	return iter
+end
+
+-- For cascading parameters, such as style or class, they are merged in exact order (from general to specific). 
+-- Any parameter starting with multiple hyphens(minus signs) will terminate the cascade.
+-- An example:
+-- For group_1.1, its style is affected by parameters |group_1.1_style=... , |subgroup_level_1_style=... , and |subgroup_style=... .
+-- If we have |group_1.1_style= color:red; |subgroup_level_1_style= font-weight: bold; and |subgroup_style= color: green; ,
+-- the style of group_1.1 will be style="color:green; font-weight: bold; color: red;" ;
+-- if we have |group_1.1_style= -- color:red; |subgroup_level_1_style= font-weight: bold; and |subgroup_style= color: green; ,
+-- the style of group_1.1 will be style="color: red;" only, and the cascade is no longer performed for |subgroup_level_1_style and |subgroup_style.
+function h.mergeAttrs(...)
+	local trim = mw.text.trim
+	local s = ''
+	for i=1, select('#', ...) do
+		local v = trim(select(i, ...) or '')
+		local str = string.match(v, '^%-%-+(.*)$')
+		if str then
+			s = trim(str..' '..s)
+			break
+		else
+			s = trim(v..' '..s)
+		end
+	end
+	if s == '' then s = nil end
+	return s
+end
+
+function h.runHook(key, ...)
+	if hooks[key] then
+		hooks[key](...)
+	end
+end
+
+-----------------------------------------------
+return p

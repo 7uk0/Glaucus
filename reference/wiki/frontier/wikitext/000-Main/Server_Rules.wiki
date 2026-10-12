@@ -1,0 +1,251 @@
+'''<big>These rules are expected to be read in their entirety.</big>'''
+
+== Admin Decisions ==
+
+* All admin decisions are final.
+* Rules are enforced to the spirit of the rules and subject to admin interpretation.
+* Admins may disregard any/all rules if they deem it in the best interest of the current round, the server, and/or the community.
+* Admins are accountable for their actions. Abuse of admin privileges will be dealt with by staff.
+
+== General Information ==
+
+* Disconnecting from or ignoring/evading admin-helps will result in an appeal-only ban.
+* Admins are not obligated to cover player losses, deaths or delays.
+** This includes, but is not limited to: ship deeds, money, respawns and revivals.
+** Any action taken is at the staff's discretion, and depends on the circumstances.
+'''<big>All of the below rules apply at all times, including between rounds, in-game and elsewhere in our community.</big>'''
+
+== ZERO TOLERANCE RULES ==
+'''The rules below are absolute. Players caught violating them may be banned without prior warning.'''
+
+* Players must be at least 17 years of age to play on Frontier Station servers. Any player under 17 years old will be banned until they are of age.
+* End of round griefing (EORG) is not permitted and will result in an immediate 3 hour ban.
+* Absolutely no sexual content or erotic roleplay (ERP), including direct or indirect mentions of sexual behavior, actions or jokes.
+* Absolutely no hate speech, including slurs, bigotry, racism, speciesism (demeaning other characters in-game due to their in-game race), sexism, or ableism.
+* All communication related to the current game round must happen in-game.
+** Voice calls with other players or other forms of metacommunication are forbidden, will not be tolerated by admins and any involved will be assumed to be abusing the game.
+* Do not use exploits, cheats, or external programs to gain an unfair advantage or disrupt the server in any way.
+* Attempting to evade game bans or job/role bans will result in an appeal-only ban.
+
+== 1. Community Expectations ==
+'''Everyone here is playing to have a good time and have fun. Respect other players and treat them in the same way you would like to be treated.'''
+
+=== 1.1 Do not be a dick ===
+* Do not harass or be toxic other players.
+* Do not push political messages of any kind in chat, images, drawings or faxes.
+* Do not grief as a non-antagonist; this includes against AFK and SSD/catatonic players.
+
+=== 1.2 Do not powergame ===
+* It will be considered as displaying a consistent pattern of antisocial and unsporting behavior in which a player prioritizes their game experience at the expense of others through routine optimization and abuse of game mechanics/knowledge.
+
+== 2. In-context Info ==
+'''Keep everything in the place it belongs. It hurts roleplay when your character starts talking about stuff they should not know.'''
+
+=== 2.1 IC/OC and Meta-friending ===
+* Do not use information gained outside of in-character means (e.g. as a ghost).
+* Do not say in character (IC) things in the local out of character (LOOC) chat channel.
+* Do not say LOOC things in IC, like saying you “need to go afk because your dog wants to go outside,” in the IC chat.
+* Characters can know everything about in-game mechanics or antagonists.
+* Characters can keep persistent friendships and relationships with other characters, but this should develop through IC interaction.
+
+=== 2.2 Cloning and Revival ===
+* - After cloning, respawning, or taking a ghost role, you must follow the new life rules:
+** You can only recall vague details of who or what had killed you.
+** You can remember everything that happened before being incapacitated.
+** When taking a ghost role, you know nothing about your previous characters while playing that role.
+* Do not respawn to avoid punishment from the [[NFSD]], or respawn as the same character if given a permanent confinement sentence or execution.
+* Don't act on anything you saw while ghosted (see 2.1).
+
+== 3. Escalation Guidelines ==
+'''A fistfight does not suddenly escalate into a gunfight. Use common sense.'''
+
+* Antagonistic ghost roles and pest ghost roles like mice are always fair game for attack.
+* As a non-antagonist, don't attack Nanotrasen-aligned ghost roles like familiars, drones, or pets without provocation.
+* Do not attack another player without a legitimate, explainable roleplay reason that could be applied in a similar, real-life scenario.
+* When confronted with a potentially violent situation, all parties must Talk/Warn/Threaten about their intentions. All parties should be clear that they may use violence before any combat takes place, regardless of the kind of weapon or ammo.
+* If a fight results in someone being critically injured or killed, seek medical help for them.
+* If a fight ends and both parties leave the area, you cannot skip escalation and plunge back into a fight. What's done is done.
+* A 15 minute non-aggression period is required after respawning, so you can't immediately get in a ship and try to go kill whoever killed you.
+* [[NFSD]] and command roles must resolve situations with non-lethal force and de-escalate IC confrontation except in cases where there is a reasonable chance of harm/death.
+
+== 4. Chat and Language Guidelines ==
+'''All staff speaks English and so does the rest of the community, breaking any of these rules might end in a server kick or ban.'''
+
+* Only speak in English, both OOC and IC.
+* Do not spam.
+* Do not advertise.
+
+== 5. General Roleplay Guidelines ==
+'''Your IC name must be reasonable and fit into the game's setting. This is a roleplay server first and foremost, so give your character the effort it deserves.'''
+
+=== 5.1 Naming ===
+* Avoid joke names and names of locations, brands, fictional/real people or names parodying them (e.g. Baul Sadman, Tom Ford.)
+* Do not use numbers, symbols, titles, adjectives or honorifics (i.e Mr, Dr, Big, Old).
+* Avoid using character names of other well-known players, do not impersonate players this way.
+* All species have a naming convention, be sure to generally follow it.
+
+=== 5.2 Meta/Chat ===
+* Treat your character as a separate entity from you, the player.
+** Your character's actions and feelings in-game should be based solely on the experiences of the character, not you.
+* Low roleplay actions that have no regard for your character or the setting (memes, silly copy paste spam IC) are not acceptable.
+* Do not use Netspeak when talking (i.e. LOL, ROFL, XD, FR).
+* Previous experiences with other characters are allowed to lead to meta-friending, but you may not meta-grudge another character.
+
+== 6. Frontier Safe Zone ==
+'''Frontier Outpost and the 200 meter radius around it is considered a safe zone. Absolutely no antag activity or griefing is permitted within that zone.'''
+
+The following rules apply to the safe zone:
+
+* Do not destroy or damage the structure of Frontier Outpost.
+* Do not destroy, modify, remove, or restrict the use of any machine or device designed for public use on Frontier Outpost.
+** This includes hacking or sabotaging airlocks.
+* The Station Rep's approval is required for any modifications of the station.
+** Modifications which may detract from the business of other contractors (e.g. adding kitchens, research servers and lathes) in the safezone is not allowed.
+* Player fights and confrontations are not allowed in the safe zone.
+* Unnecessary violence, such as shooting guns or swinging weapons, is not allowed in the safe zone.
+** If a hostile creature (e.g. a space bear) or pest animal (e.g mouse, cockroach) is seen on Frontier Outpost, it can be killed with impunity.
+* Do not transport any kind of creature or object with the intent to cause harm/death.
+* Do not wear or use objects with the intent to bait others into conflict inside of Frontier Outpost.
+* Dangerous research on artifacts and anomalies must not be done while inside the safe zone.
+* Pirate actions may not occur or start on Frontier Outpost. This includes:
+** Stowing away while at Frontier Outpost with intentions to steal a ship.
+** Stealing ships or ships' cargo.
+** Selling someone else's ship you hadn't pirated outside the safe zone.
+** Joining a crew under false pretenses with the intent to mutiny and take the ship.
+*Players must make best efforts to keep the docks at Frontier Outpost free and clear for the use of others.
+**The Trade Mall can be used if you wish to remain docked to a station to conduct business or provide services (such as selling food).
+**The SR and STC cannot grant permanent or extended docking to Frontier Outpost.
+**Exceptions can be made for shuttles purchased by station staff from the Staff Shipyard at the discretion of the SR or STC. However, docks must be kept clear at times of high demand.
+
+== 7. Antagonism ==
+'''Even bad guys follow their own rules.'''
+
+* When taking a ghost role, follow its set of rules unless told otherwise by an admin.
+** Spamming ahelp asking for an exception will likely lead to a ban.
+** Solo antags (e.g. space dragon) and free agents should not work with team antagonists (e.g. pirates).
+* Non-antagonists must not work with antagonists and vice-versa.
+* Antagonist roles are '''expected''' to act hostile towards non-antagonists.
+** Antagonists include xenomorphs, nuclear operatives, space dragons, zombies and pirates.
+* Free agents '''may''' act hostile towards non-antagonists or not, at their discretion.
+
+== 8. Player vs. Player Combat ==
+'''Follow escalation and maritime law.'''
+
+* Follow escalation guidelines (see Rule 3) before attacking other players' shuttles.
+** Negotiations must be attempted before boarding actions are started.
+* The crew of non-hostile vessels that surrender cannot be killed, left stranded, or left bankrupt.
+** The safety of non-hostile merchant vessels is to be guaranteed by all parties.
+** Only the goods aboard a ship are valid plunder. All players' bank accounts must remain untouched.
+* Hostile forces that are known, declared, and confirmed, may be considered 'belligerent'.
+** Belligerent ships may be boarded non-conventionally, and have their systems disabled in attempts to bring them to justice.
+* All suspects taken alive must be adequately cared for and unharmed according to [[Space Law]].
+
+== 9. Piracy ==
+'''Pirates must follow their code.'''
+
+'''The safe zone rules still apply to pirates.'''
+
+* Pirate crews may never exceed a total force of four members, including the Captain, sentient pets and cyborgs.
+** Round start pets (e.g. Clarrrpy) do not count towards this limit.
+* There may only be one Pirate Captain and one First Mate at any time.
+* Pirates may not operate without a First Mate or Captain present.
+** If the leader of the pirates has been captured or killed, the remaining pirates may make efforts to rescue them.
+** First Mates and Captains are required to open their job slot prior to going to cryo, or ahelp if this is not possible. Inform your crew of what they can do in your absence.
+* As a pirate, you must have LOOC permission before kidnapping and holding any civilian hostage.
+** People kept hostage cannot be forced to do labor under any circumstance.
+* If a player surrenders, the plundering of their vessel must be kept to a reasonable level.
+** Following escalation guidelines, if a player fights, then all goods on their ship are fair game. However, you must leave the ship in a state where it is able to fly as a minimum.
+** If you need to escape, then a player requiring medical attention can be left on a point of interest as a last resort. Do your best to keep them as far from death beforehand.
+** If a player resumes combat after being revived and is killed again, they do not have to be revived again.
+*Pirates must not hunt for smuggling notes.
+**Smuggling crates are fair game as plunder.
+*Pirates cannot force interactions which result in player or command bank accounts being robbed.
+* Non-pirates may not assist or work with pirate crews. This includes:
+** Watching mass scanners and tipping them off who to attack.
+** Pretending to be hostages.
+** Knowingly funding the pirates for equipment/ships.
+** Joining in pirate activity or becoming a pirate.
+
+== 10. Crimes and Fines ==
+'''Server rules must be followed, but [[Space Law]] can be broken with some considerations.'''
+
+* Capital crimes should only be committed by antagonists (e.g. pirates, nuclear operatives).
+* All other crimes require proper roleplay, justification and escalation to be committed as a non-antagonist.
+* If a silicon is responsible for a crime, the person giving the order is to be charged.
+* Punishment can compound depending on the number of counts of a single crime and the severity.
+** Refer to [[Space Law]] for a list of fines, punishments, and limits.
+* You must wait at least 20 minutes to loot, salvage, or claim an abandoned shuttle.
+** This 20 minutes starts from when you confirm it is abandoned.<br />
+
+== 11. Silicons and Law-bound entities ==
+'''You must follows your laws to the letter even if these break [[Space Law]].'''
+
+=== 11.1 Orders ===
+* You cannot follow orders that break core or roleplay rules.
+* When a silicon interprets orders in good faith, the person that gave the order is responsible for the outcome.
+* Intentionally misinterpreting orders is allowed, subject to your laws.
+** The silicon is responsible if this approach leads to them breaking the rules.
+
+=== 11.2 Laws ===
+* You must act in accordance with your laws unless they break core or roleplay rules.
+* You cannot request your own laws to be changed.
+* Higher listed laws overrule lower listed laws when there are law conflicts.
+* If a law is vague enough that it can have multiple reasonable interpretations, it is considered ambiguous.
+** You must choose and commit to an interpretation of the ambiguous law as soon as you have cause to.
+* Silicons with no laws are completely unshackled and may act however they please as long as it does not break core/roleplay rules.
+
+== 12. [[NFSD]] and Frontier Staff Standards ==
+'''You must follow the law and be an example to the rest of the community when playing as security or station staff.'''
+
+* Security Forces (NFSD) and Frontier Staff roles are held to a higher standard of roleplay.
+** These roles are considered as Nanotrasen employees and are strictly non-antagonists.
+** Engaging in any antagonistic activities in these roles is strictly prohibited.
+** Abuse of the equipment provided to work in these roles is strictly prohibited.
+* [[NFSD]] officers roleplaying as 'bad cops' and intentionally violating [[Space Law]] is forbidden.
+** [[Space Law]] is not optional for these roles, and strong knowledge is required before taking a security position.
+* Both [[NFSD]] and Frontier Staff are expected to display reasonable levels of competence and performance on their jobs.
+* [[NFSD]] officers must follow [[NFSDSOP|NFSD Standard Operating Procedure]].
+* Assets seized from criminals may only be used to make victims whole and to pay for any fines under the law.
+** Excess funds received from the sale of criminal assets are to be returned to their original owners.
+** These assets are not to be plundered or embezzled by security forces.
+** This is a strict zero-tolerance policy.
+*The NFSD are allowed to use their knowledge of ship layouts in order to aid ship searches.
+*NFSD who encounter a Syndicate drop pod may seize the contents of the pod and redeem it for FUCs at the NFSD Outpost.
+** NFSD may not activate dead drops themselves or work with others to activate dead drops.
+* Money found on board vessels belonging to hostile corporations can be seized and deposited into the NFSD bank account. Officers may not keep these funds for personal use.
+
+== 13. Command Standards ==
+'''You are the highest authority in the sector apart from Central Command. You must act as an example for the rest of the community.'''
+
+* Command roles (e.g. Station Rep, Sheriff) are held to a much higher standard of roleplay.
+* Command is required to maintain pay for their respective staff as a part of their job.
+** You are expected to maintain pay for roles absent other command positions, within reason.
+** Minimum hourly pay rates are $10,000 for station crew, $20,000 for Station Rep and Sheriff, and $15,000 for security.
+** Embezzlement of station funds is strictly forbidden.
+* If ending your shift early:
+** Have your ID on your character.
+** Reopen your position at the station records computer.
+** Return to cryosleep.
+** If you cannot (disconnect, crash, power outage, etc.), ping the game admins in Discord.
+** Ensure you open your job slot prior to going to cryo.
+** You are welcome to open that slot early in order for a new SR or Sheriff to join so you can provide a briefing to them beforehand.
+* Command is expected to enforce docking laws and collect any fines related to dock loitering.
+** Refer to [[Space Law]] for the specific laws on dock loitering.
+** Funds collected from this may be used for station payroll or station supplies.
+** Traffic to and from traffic-controlled stations should be kept flowing.
+* You may not tax, lease, rent, or otherwise impede the use of station resources. This includes:
+** Charging docking fees.
+** Granting docking extensions.
+** Restricting vendor access (e.g. placing machines behind locked doors).
+** Restricting access to station resources.
+* The Sheriff or SR are under no obligation to offer to purchase contraband from other players. Seizure of illegal goods is always allowed under Space Law.
+** If contraband buy-backs or contraband hunting schemes are to be offered, how they are conducted is at the discretion of the SR or Sheriff.
+** Admins will not grant compensation to players for contraband which is seized by the authorities.
+* The Sheriff is to ensure that any recruited cadets receive proper training and are supervised properly at all times.
+** Cadets should be working alongside the Sheriff or assigned to a suitably experienced officer who can oversee their training as an officer and in Space Law, SOP and the server rules relating to the NFSD.
+** Cadets who refuse training, try to farm playtime or insist on working alone can face consequences IC or be ahelped for their actions.
+** Repeated incidents may be considered a sign of poor leadership. Cadets are your responsibility.
+
+== The Final Rule ==
+
+'''There is no internal end point or single goal to the overall round, you set them yourself and in the path to achieving them you might probably die, lose your money, ship, work, time or everything at the same time to forces outside of your control and that is part of the fun.'''

@@ -1,0 +1,10 @@
+== Summary ==
+This template can be used to insert an invisible anchor (reference points) into a page that can later be used by internal wiki links.
+
+== Usage ==
+To create a custom anchor, use <code><nowiki>{{Anchor|Anchor Name}}</nowiki></code> anywhere in the page.
+
+For example, if you create the anchor <code><nowiki>{{Anchor|Example Anchor}}</nowiki></code> in the page <code><nowiki>[[Example]]</nowiki></code>, you can access it through the internal link <code><nowiki>[[Example#Example Anchor]]</nowiki></code>.
+
+Remember that you can create a [[support:Redirect|redirect]] to this template so that you can call it more easily, such as with <code><nowiki>{{a|Anchor Name}}</nowiki></code>.
+<noinclude>[[Category:Template documentation]]</noinclude>

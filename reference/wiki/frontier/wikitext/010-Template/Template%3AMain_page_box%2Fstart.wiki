@@ -1,0 +1,14 @@
+<includeonly><div class="mp-box <!--
+These variables are used to determine if certain layout should hide certain boxes.
+The variable is created in and passed from [[Module:Main page]], and is formatted as a pseudo bitmask to reduce variable usage
+An example of this variable would be "1,1,0," which would mean display on desktop and tablet but not on mobile
+-->{{#ifeq:{{#explode:{{#var:imp-variable-display-box}}|,|0}}|0|mp-hide-on-desktop}} <!--
+-->{{#ifeq:{{#explode:{{#var:imp-variable-display-box}}|,|1}}|0|mp-hide-on-tablet}} <!--
+-->{{#ifeq:{{#explode:{{#var:imp-variable-display-box}}|,|2}}|0|mp-hide-on-mobile}} <!--
+-->{{{class|}}}" style="grid-area:{{#var:imp-variable-id}}; {{{style|}}}" id="mp-box-{{#var:imp-variable-id}}" data-box-id="{{#var:imp-variable-id}}"><!--
+-->{{#if:{{{title|{{{1|}}}}}}|
+<h2> {{{title|{{{1|}}}}}} </h2>
+}}<div class="mp-body"></includeonly><noinclude>
+{{doc}}
+[[Category:Main page templates]]
+</noinclude>

@@ -1,0 +1,5 @@
+<includeonly></div>
+</div></includeonly><noinclude>
+{{doc}}
+[[Category:Main page templates]]
+</noinclude>

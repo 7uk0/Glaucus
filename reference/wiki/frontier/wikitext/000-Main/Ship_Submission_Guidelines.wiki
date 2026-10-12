@@ -1,0 +1,84 @@
+Ship submissions to be included into the game are open to any and all contributors, however we do have some additional guidelines to follow while mapping.  Adhering to these guidelines will ensure your ship passes inspection and gets approved to be added to an in-game shipyard to be purchased by players. The guidelines are split into three (3) major sections: Rules, Guidelines, and Suggestions. Rules must always be followed, and any ship submission that does not follow these will most likely be rejected or at the very least, have changes requested to them before they will be further reviewed. Guidelines are things that are ''generally'' required of ships, but certain exceptions can be made if the ship's theme or design calls for them. And Suggestions are just best design practices that you should keep in mind while decorating your ship, but aren't necessarily disqualifying.
+
+== Rules ==
+These need to be adhered to for every ship submitted, no exceptions.
+
+# Ensure that your ship has, at the very least, Atmos waste piping system (generators all output co2)
+# Color your distribution and waste Atmos pipes (2 different colors). 
+# Do not place diagonal walls or windows directly adjacent to each other in cardinal directions.
+# Your design must be decorated. 
+# Your design must include:
+#* A fax machine. 
+#* A records console. 
+#* A warp point (ship). 
+#* A late join spawn point. 
+#* '''''New''''' A long-range holopad (ship) 
+# Use two stage airlocks (docking door + red airlocks for example). 
+# Put directional fans under your exterior doors. 
+# Thrusters must be accessible (in the event of EMP attacks or upgrading)
+# Your wiring must be logical and minimal (refer to the wiring section for examples, once it is written).
+# Place atmos tiles in atmos chambers. 
+# Run “variantize” and “fixgridatmos” commands. 
+# Save your design as a grid, not as a map. 
+# The only things you may mount on top of windows are neon bar signs, shutters, and blast doors (sec only).
+# Do not write your character's name on your ship (Shipyard branding is acceptable). 
+# Expeditions ships must utilize a high power source and have a minimum price of $50,000 spesos.
+# Do not map the following items:
+#* Gas miners.
+#* RTGs (broken or regular).
+#* Generators that do not consume fuel (except for solars).
+#* Loose weaponry (use prefilled gun safes instead).
+#* Paper notes (these are a pain for translation for non-English forks, please create guidebook entries instead)
+#If your design operates at a power deficit at time of purchase, mention it in the guidebook entry to notify the owner of the ideal power settings.
+
+== Guidelines ==
+The following are generally accepted as required, but may occasionally be altered if the ship design/theme calls for it. Be prepared to justify breaking any of these guidelines in your ship review PR.
+
+# Do not use custom filled lockers. 
+# Decorate your ships with colors that indicate department or function. 
+# Use cool colors for distribution pipes and warm colors for waste pipes. 
+# Do not overdo lighting. 
+# Place Grilles under windows.
+# Include defib and fire extinguisher cabinets.
+# Do not point thrusters at walls or other thrusters (try to make thruster direction make some sort of sense).
+# Do not map the following items:
+#* Sexy posters.  If they happen because of a random poster spawner, that's fine.
+
+== Suggestions: ==
+
+# Place glass floor under exterior diagonal walls.
+# Put plating and grille under windows.
+# Larger ships should have linked up firelocks and air alarms
+# Before submitting your design, you might want to purchase the ship and walk around it as a player.  Flaws can be easier to notice this way, especially problems with consoles that you wouldn't see while editing the map.
+# The document that notifies the owner of ideal power settings should be placed in the engineering room and the cockpit if possible.
+
+
+These guidelines are subject to change as the game and community evolves, and more new shiny features get added (like guns pew pew).
+
+== Ship Size ==
+Run "gridtc [grid uid]" to determine your ship's tile count.  
+{| class="wikitable"
+|+Ship Size Limits
+!Size Category
+!Maximum Tiles
+!Target Profile Limits
+|-
+|Micro
+|64
+|8 tiles long and 8 tiles wide
+|-
+|Small
+|256
+|16 tiles long and 16 tiles wide
+|-
+|Medium
+|1024
+|32 tiles long and 32 tiles wide
+|-
+|Large
+|2304
+|48 tiles long and 48 tiles wide
+|}
+Your ship's total tile count should be less than or equal to the max tile count for the size category you are aiming for.  The length and width should be within that category's target profile limit.  If your ship is below the maximum tile limit for a category but exceeds the target profile limit, it belongs to the larger category.  Exceptions can be made at the maintainer's discretion on a case by case basis.
+
+Ships with tile counts below 20 or above 2304 will not be accepted.

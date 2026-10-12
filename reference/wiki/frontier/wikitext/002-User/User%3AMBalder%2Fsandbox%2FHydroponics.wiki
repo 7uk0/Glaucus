@@ -1,0 +1,195 @@
+This page is a guide on the various tools, items, systems and reagents used in hydroponics. It doesn't aim to explain how to perform one specific task, but instead to provide in-depth information about each tool available to the enterprising botanist.
+
+= Tools and Machines =
+
+This section introduces the different objects commonly used for botany.
+
+== Planters ==
+* Hydroponics tray
+* Soil bed
+* Fungal soil bed
+
+These objects can receive seeds, water, nutrients and various reagents to grow plants.
+Hydroponics trays are commonly found on botany, medical and kitchen ships, with the akapura being the outlier in having soil beds instead of trays.
+
+From a growth point of view, those three planters are identical.
+The Trays come with covenient warning lights, but plant information can also be found visually (by looking at the plant itself) or by inspecting the planter, which provides information regarding the plant's state.
+
+== Hand tools ==
+* Clippers: takes a seed from an existing plant, then reduce the plant health by a random amount between 30 and 50 plant HP.
+* Spade: removes the content of a planter, entirely destroying any plant inside. Useful to clear a planter for a new product.
+* Hatchet / Scythe: Bladed tools capable of harvesting wooden plants.
+* Plant analyzer: an advanced tool available through research or service techfab, which can display information regarding a plant while it is in a planter. Useful when doing mutations or swabbing, to see the effect of a modification without clipping or waiting for harvest.
+
+== Other tools ==
+* biogenerator: the workhorse of botany. It turns produce into biomass, for an amount depending on the nutriments value of the converted plant. That biomass can in turn be used to print most seeds, several useful reagents such as robust harvest and left-4-zed, cloth for swabs, and a lot more.
+* Seed extractor: If a plant is not seedless, this machine can create seeds directly from the harvested products. This is useful for kitchen or medical botany, but dedicated botany tend to create seedless plants quite frequently, in which case the cryoxadone approach (see below) is more efficient.
+
+= Reagents =
+
+== Robust harvest ==
+Robust harvest is the only reliable way to increase a given plant's potency without mutations or swabbing. It has several undesirable effects based on the dosage applied to the plant.
+
+Obtained at:
+* Biogenerator
+* Chemistry
+* Botany vendors
+
+For each 1u absorbed by the plant, the following effects will occur:
+* if potency is lower than 50
+** potency raised by 3, up to 50
+** if new potency is 30 or higher
+*** plant becomes seedless
+* if potency is already 50 or higher
+** 10% chance to reduce yield by 1 (repeats for each additional 1u of robust harvest absorbed)
+
+Important note: Seeds have various starting potency, when spawned, printed or bought. To calculate the safe amount of robust harvest to apply to a plant without reaching seedless, and without risking to reduce yield, please check the potency of the seed by inspecting it before planting, and refer to the following table:
+
+{| class="wikitable"
+! Base potency !! Safe Robust Harvest units before seedless !! Max potency with seeds !! Safe Robust Harvest units before yield loss !! Theoretical Max potency without yield loss  !! Actual max potency
+|-
+| 1 || 9 || 28 || 17 || 52 || 50
+|-
+| 2 || 9 || 29 || 16 || 50 || 50
+|-
+| 3 || 9 || 30 || 16 || 51 || 50
+|-
+| 4 || 8 || 28 || 16 || 52 || 50
+|-
+| 5 || 8 || 29 || 15 || 50 || 50
+|-
+| 6 || 8 || 30 || 15 || 51 || 50
+|-
+| 7 || 7 || 28 || 15 || 52 || 50
+|-
+| 8 || 7 || 29 || 14 || 50 || 50
+|-
+| 9 || 7 || 30 || 14 || 51 || 50
+|-
+| 10 || 6 || 28 || 14 || 52 || 50
+|-
+| 11 || 6 || 29 || 13 || 50 || 50
+|-
+| 12 || 6 || 30 || 13 || 51 || 50
+|-
+| 13 || 5 || 28 || 13 || 52 || 50
+|-
+| 14 || 5 || 29 || 12 || 50 || 50
+|-
+| 15 || 5 || 30 || 12 || 51 || 50
+|-
+| 16 || 4 || 28 || 12 || 52 || 50
+|-
+| 17 || 4 || 29 || 11 || 50 || 50
+|-
+| 18 || 4 || 30 || 11 || 51 || 50
+|-
+| 19 || 3 || 28 || 11 || 52 || 50
+|-
+| 20 || 3 || 29 || 10 || 50 || 50
+|-
+| 21 || 3 || 30 || 10 || 51 || 50
+|-
+| 22 || 2 || 28 || 10 || 52 || 50
+|-
+| 23 || 2 || 29 || 9 || 50 || 50
+|-
+| 24 || 2 || 30 || 9 || 51 || 50
+|-
+| 25 || 1 || 28 || 9 || 52 || 50
+|-
+| 26 || 1 || 29 || 8 || 50 || 50
+|-
+| 27 || 1 || 30 || 8 || 51 || 50
+|-
+| 28 || 0 || 28 || 8 || 52 || 50
+|-
+| 29 || 0 || 29 || 7 || 50 || 50
+|-
+| 30 || 0 || 30 || 7 || 51 || 50
+|-
+| 31 || X || X || 7 || 52 || 50
+|-
+| 32 || X || X || 6 || 50 || 50
+|-
+| 33 || X || X || 6 || 51 || 50
+|-
+| 34 || X || X || 6 || 52 || 50
+|-
+| 35 || X || X || 5 || 50 || 50
+|-
+| 36 || X || X || 5 || 51 || 50
+|-
+| 37 || X || X || 5 || 52 || 50
+|-
+| 38 || X || X || 4 || 50 || 50
+|-
+| 39 || X || X || 4 || 51 || 50
+|-
+| 40 || X || X || 4 || 52 || 50
+|-
+| 41 || X || X || 3 || 50 || 50
+|-
+| 42 || X || X || 3 || 51 || 50
+|-
+| 43 || X || X || 3 || 52 || 50
+|-
+| 44 || X || X || 2 || 50 || 50
+|-
+| 45 || X || X || 2 || 51 || 50
+|-
+| 46 || X || X || 2 || 52 || 50
+|-
+| 47 || X || X || 1 || 50 || 50
+|-
+| 48 || X || X || 1 || 51 || 50
+|-
+| 49 || X || X || 1 || 52 || 50
+|}
+
+* The theoretical max potency without yield loss is not achieved because robust harvest cannot raise the potency of a plant above 50. When 1u of robust harvest is applied to a plant that is already at 58 or 59 potency, instead of raising to 51 or 52, it will be capped at 50.
+
+== Cryoxadone ==
+Cryoxadone is extremely useful for mutation research, and also useful for mass production of plants with persistent harvests.
+
+Obtained at:
+* Chemistry
+* Space critters blood
+* <s>crimes against Shelegs</s>
+
+An easy and renewable source of cryoxadone on dedicated botany ships like the druid is to electrolyze water.
+This produces oxygen.
+Oxygen can be converted into dexaline with 1u of liquid plasma as catalyst. The dexaline is then mixed with equal part oxygen (again, from electrolyzing water) and water.
+
+Cryoxadone is one of the fastest acting healing reagent for plants, healing 5 health and 5 toxicity per 1u of cryoxadone.
+
+In addition, Cryoxadone has a random chance of reverting plant aging. In practice, this means that 1u of cryoxadone added to a tray indicating "this plant is old and whitling" can be enough to reset that plant to its previous stage and grant it several more minutes of production time.
+
+Furthermore, if a plant aging is reduced below the sprouting phase, it is returned to a seed item state. This is extremely useful for seedless and a permanently seedless plants, since it can be planted, grown to juvenile stage, clipped, then de-aged to a seed, which resets its "clipped" status again, allowing for another planting, growing and clipping. (repeat until you have enough seeds)
+
+== left-4-zed ==
+A mutation primer, raising the mutability of plants and making mutations more reliable.
+
+Obtained at:
+* Biogenerator
+* Chemistry
+
+Left-4-zed raises mutability (MutationMod) in plants. When attempting mutations, the effect will be multiplied by the mutability of the target plant. As such, a high mutability allows for quicker and stronger effects for fewer mutagen use.
+
+Plant mutability starts at 1.0, and is bounded between [0.0 - 3.0]
+
+Each 1u of L4Z has a 30% chance to adjust mutation modifier by 0.4
+
+This means that to raise the default mutability from 1.0 to the maximum of 3.0, 5 successful rolls are necessary. (0.4*5 = 2)
+
+This results in a binomial distribution where we try to find the probability of 5 successes, with a probability per event (P) of 0.3, providing the following results:
+
+Chances to reach 3.0 mutability per input of L4Z
+* 05u: 0.2430%
+* 10u: 15.027%
+* 15u: 48.451%
+* 20u: 76.249%
+* 25u: 90.953%
+* 30u: 96.985%
+
+TL:DR: 20u gives you a 3/4 chance to reach max mutability, 30u gives roughly 97% chances to do so.

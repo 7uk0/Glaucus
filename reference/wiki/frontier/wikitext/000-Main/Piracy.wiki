@@ -1,0 +1,74 @@
+{{WIP}}
+
+<blockquote>Yarr! Dis be me sovereign space shuttle. Now, whaur be me rum?
+
+-Pirate Hoverbike Description</blockquote>
+
+So you've decided to fly the jolly roger, to live the life away from the boots of NT. Hoist your sails and get your spy glasses, It's gonna be a journey.
+Before you begin your life of piracy, it's advised you freshen up your knowledge of the [[https://frontierstation.wiki.gg/wiki/Server_Rules| Rules]], especially [https://frontierstation.wiki.gg/wiki/Server_Rules#3._Escalation_Guidelines escalation] and the [https://frontierstation.wiki.gg/wiki/Server_Rules#9._Piracy Piracy Rules]. Remember, you are not a nukie or a crazed murderer, you are a pirate!
+
+__TOC__
+
+
+==Roles==
+
+
+{|{{JobCategory|Pirate Roles:|784717}}
+
+{{Job|784717|pirateCaptain.png|Pirate Captain|
+|desc=The Pirate Captain makes sure that their entire crew is getting a share of that loot, and is also in charge of getting all the glory, threatening the crew, and making sure ships know what happens when they don't give them what they want. They are one of the two pirate command roles and lead the crew to endless riches or the depths of NFSD's dungeons
+|difficulty=Very Hard}}
+
+{{Job|784717|pirateFirstMate.png|Pirate First Mate|
+|desc=The Pirate First Mate acts as a sort of "Quartermaster" to the Pirate Captain, second in command, and is in charge if there is no Pirate Captain whatsoever... or if they accidentally got arrested while drinking too much rum.
+|difficulty=Very Hard}}
+
+{{Job|784717|pirate.png|Pirate|
+|desc=The lowest of the low on Pirate Cove, your job is to listen to the Captain and the First Mate, whether it be cleaning the deck, hauling loot, or holding up a person at gun point. Pirating is pirating in the end... YARR! Remember that to sail such treacherous waters you need a captain or first mate
+|difficulty=Hard}}
+
+|}
+
+
+
+==The cove==
+===Overview===
+[[File:Pirate Cove.png|thumb|Your piraty home]]
+The cove is your home base, here your pirate buddies and you will start their journey through the stars. Care for it, protect it and leave it in good shape after you cryo for it is the one place we can call home as pirates.
+
+The cove comes equipped with an array of starting equipment. From a set of botany tools and crates, to a decked out top of the line kitchen (With included syndicate ovens, this is not a crack house, this is a crack home). The cove also includes some starting weapons, disablers and cuffs. Letting you stuck up on both Lethal and Non-lethal options.
+
+
+
+
+
+
+
+
+
+
+
+
+===Consoles===
+Within the cove you will find a variety of consoles, some are the bog standard you find in all ships but there are a few special ones, understanding them is vital for the work of a pirate.
+{| class="wikitable" style="width: 100%; text-align: left;"
+! style="width: 15%;" | Image
+! style="width: 25%;" | Console
+! style="width: 60%;" | Description
+|-
+| [[File:IFFCOMPUTER.png|64px]]
+| '''IFF computer'''
+| Has a special function to hide the cove from IFF radar.
+|-
+| [[File:STATIONRECORDS.png|64px]]
+| '''Station records computer'''
+| Here the captain and first mate can open slots for when they are looking for crew.
+|-
+| [[File:PIRATESHIPYARDCOMPUTER.png|64px]]
+| '''Black Market Shipyard Computer'''
+| Lets you buy a unique selection of pirate ships not found anywhere else.
+|-
+| [[File:PIRATEBOUNTY.png|64px]]
+| '''Pirate Bounty Computer'''
+| Here you can take contracts and bounties, go steal the loot and get doubloons in exchange.
+|}

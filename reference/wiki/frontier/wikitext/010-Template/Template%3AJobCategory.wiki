@@ -1,0 +1,17 @@
+class="wikitable sortable" style="width: 100%; text-align:center; border: 1px solid #000000;"
+!! colspan="3" style="padding:10px; background-color:#{{{2}}}; border: 1px solid #000000;" | '''{{{1}}}'''
+|-
+!style="width:12.5%; padding:5px; background-color:#{{{2}}}BF; border: 1px solid #000000;" | '''Job'''
+!style="width:75%; padding:5px; background-color:#{{{2}}}BF; border: 1px solid #000000;" | '''Role'''
+!style="width:12.5%; padding:5px; background-color:#{{{2}}}BF; border: 1px solid #000000;" | '''Difficulty'''<noinclude>
+
+==Example==
+{|{{JobCategory|Where they workin|0C2C47}}
+
+{{Job|0C2C47|SR.png|Station Representative|
+|desc=what the job doin
+|difficulty=Yes Please}}
+
+|}
+[[Category:Templates]]
+</noinclude>

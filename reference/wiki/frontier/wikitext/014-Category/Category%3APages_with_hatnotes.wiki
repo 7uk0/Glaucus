@@ -1,0 +1,5 @@
+This category contains every page with a {{tl|hatnote}}. It can be used for maintenance but primarily exists to enable the use of gadgets for targeted CSS and JS.
+__HIDDENCAT__
+__EXPECTUNUSEDCATEGORY__
+
+[[Category:Categories for loading gadgets]]

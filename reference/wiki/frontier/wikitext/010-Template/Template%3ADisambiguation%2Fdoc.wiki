@@ -1,0 +1,53 @@
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Disambiguation Page",
+			"description": "A custom disambiguation page name.",
+			"example": "Disambiguation Page",
+			"type": "wiki-page-name"
+		},
+		"2": {
+			"label": "Link Label",
+			"description": "A label for the custom disambiguation page.",
+			"example": "Alternative Page Name",
+			"type": "line"
+		},
+		"topic": {
+			"label": "Custom Topic",
+			"description": "In case {{PAGENAME}} does not describe the topic, this can be used to display a custom topic",
+			"example": "a custom topic",
+			"default": "{{PAGENAME}}",
+			"type": "line"
+		}
+	},
+	"description": "This hatnote template is meant to be used at the top of an article to indicate the existence of a disambiguation page.",
+	"paramOrder": [
+		"1",
+		"2",
+		"topic"
+	],
+	"format": "inline"
+}
+</templatedata>
+
+== Examples ==
+{| class="wikitable"
+! Code !! Result
+|-
+| <code><nowiki>{{Disambiguation}}</nowiki></code> || {{Disambiguation|topic=Example}}
+|-
+| <code><nowiki>{{Disambiguation|Special:Random|topic=Example}}</nowiki></code> || {{Disambiguation|Special:Random|topic=Example}}
+|-
+| <code><nowiki>{{Disambiguation|Special:Random|Page Label|topic=this particular topic}}</nowiki></code> || {{Disambiguation|Special:Random|Page Label|topic=this particular topic}}
+|}
+
+== Dependencies ==
+For this template to work properly, you need the following:
+* The {{tl|Hatnote}} base template.
+* The <code>.hatnote</code> class, found in [[MediaWiki:Common.css]].
+
+== Source ==
+Roughly based on [[wikipedia:Template:About|Wikipedia's About Template]].
+
+<noinclude>[[Category:Template documentation]]</noinclude>

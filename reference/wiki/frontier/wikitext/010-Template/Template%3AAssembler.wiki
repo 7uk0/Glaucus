@@ -1,0 +1,1 @@
+<div style="text-align:center;">[[File:Assembler.png|32px|link=]] Assembler for {{{1|unknown}}} seconds.</div>

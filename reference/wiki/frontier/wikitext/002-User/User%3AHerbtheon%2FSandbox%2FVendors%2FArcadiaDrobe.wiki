@@ -1,0 +1,51 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+|-
+| [[File:ClothingOuterEVASuitArcadia.png|50px]] || Arcadia EVA Suit || $1500 || 3
+|-
+| [[File:ClothingBackpackArcadia.png|50px]] || Arcadia Backpack || $100 || 3
+|-
+| [[File:ClothingBackpackDuffelArcadia.png|50px]] || Arcadia Duffel || $100 || 3
+|-
+| [[File:ClothingBackpackSatchelArcadia.png|50px]] || Arcadia Satchel || $100 || 3
+|-
+| [[File:ClothingBackpackMessengerArcadia.png|50px]] || Arcadia Messenger Bag || $100 || 3
+|-
+| [[File:ClothingBeltArcadia.png|50px]] || Arcadia Webbing || $200 || 3
+|-
+| [[File:ClothingEyesArcadiaVisor.png|50px]] || Arcadia Visor || $100 || 3
+|-
+| [[File:ClothingHandsGlovesArcadiaCombat.png|50px]] || Arcadia Combat Gloves || $100 || 3
+|-
+| [[File:ClothingMaskArcadia.png|50px]] || Arcadia Battle Mask || $250 || 3
+|-
+| [[File:ClothingOuterWinterArcadia.png|50px]] || Arcadia Winter Coat || $500 || 3
+|-
+| [[File:ClothingOuterCoatArcadiaTrench.png|50px]] || Arcadia Flak Trenchcoat || $350 || 3
+|-
+| [[File:ClothingUniformJumpskirtArcadia.png|50px]] || Arcadia Jumpskirt || $100 || 5
+|-
+| [[File:ClothingUniformJumpsuitArcadia.png|50px]] || Arcadia Jumpshirt || $100 || 5
+|-
+| [[File:ClothingUniformJumpsuitMilitaryArcadiaTac.png|50px]] || Arcadia Tactical Jumpshirt || $100 || 5
+|-
+| style="background-color:#380C0C;" | [[File:ClothingHeadHatTacticalMaidHeadband.png|50px]]
+| style="background-color:#380C0C;" | Tactical Maid Headband
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 3
+|-
+| style="background-color:#380C0C;" | [[File:ClothingUniformJumpskirtTacticalMaid.png|50px]]
+| style="background-color:#380C0C;" | Tactical Maid Suitskirt
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 3
+|-
+| style="background-color:#380C0C;" | [[File:ClothingHandsTacticalMaidGloves.png|50px]]
+| style="background-color:#380C0C;" | Tactical Maid Gloves
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 3
+|}
+</div>
+</includeonly>

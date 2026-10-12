@@ -1,0 +1,59 @@
+Images source: [[dev:Category:PS4 input images]]
+
+=== D-pad & sticks ===
+<code><nowiki>{{key|PS4|Dpad}}</nowiki></code>
+{{key|PS4|Dpad}}
+
+<code><nowiki>{{key|PS4|Left}}</nowiki></code>
+{{key|PS4|Left}}
+
+<code><nowiki>{{key|PS4|Right}}</nowiki></code>
+{{key|PS4|Right}}
+
+<code><nowiki>{{key|PS4|Up}}</nowiki></code>
+{{key|PS4|Up}}
+
+<code><nowiki>{{key|PS4|Down}}</nowiki></code>
+{{key|PS4|Down}}
+
+<code><nowiki>{{key|PS4|Left Stick}}</nowiki></code>
+{{key|PS4|Left Stick}}
+
+<code><nowiki>{{key|PS4|Right Stick}}</nowiki></code>
+{{key|PS4|Right Stick}}
+
+<code><nowiki>{{key|PS4|Touch Pad}}</nowiki></code>
+{{key|PS4|Touch Pad}}
+
+=== Front buttons ===
+<code><nowiki>{{key|PS4|Circle}}</nowiki></code>
+{{key|PS4|Circle}}
+
+<code><nowiki>{{key|PS4|Cross}}</nowiki></code>
+{{key|PS4|Cross}}
+
+<code><nowiki>{{key|PS4|Square}}</nowiki></code>
+{{key|PS4|Square}}
+
+<code><nowiki>{{key|PS4|Triangle}}</nowiki></code>
+{{key|PS4|Triangle}}
+
+<code><nowiki>{{key|PS4|Share}}</nowiki></code>
+{{key|PS4|Share}}
+
+<code><nowiki>{{key|PS4|Options}}</nowiki></code>
+{{key|PS4|Options}}
+
+=== Rear buttons ===
+<code><nowiki>{{key|PS4|L1}}</nowiki></code>
+{{key|PS4|L1}}
+
+<code><nowiki>{{key|PS4|R1}}</nowiki></code>
+{{key|PS4|R1}}
+
+<code><nowiki>{{key|PS4|L2}}</nowiki></code>
+{{key|PS4|L2}}
+
+<code><nowiki>{{key|PS4|R2}}</nowiki></code>
+{{key|PS4|R2}}
+<noinclude>[[Category:Key template documentation]]</noinclude>

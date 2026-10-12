@@ -1,0 +1,16 @@
+{{Important
+|Title=This page is a work in progress!
+|Note=<font size=2>This page is a work in progress, meaning it may have outdated, incomplete or lacking information. Additional information on this page's topic may be found in-game in the Guidebook.</font><br>You can help Frontier Station by [{{SERVER}}{{localurl:{{NAMESPACE}}:{{PAGENAME}}|action=edit}} expanding it].
+|Image=Warningsign.png
+|Color=#FFFFCC
+}}
+<noinclude>== Usage ==
+Using this template on a page adds it to [[:Category:WIPs]]. To use it, write: 
+
+<pre>
+{{WIP}}
+</pre>
+
+[[Category:Templates]]
+</noinclude>
+<includeonly>[[Category:WIPs|{{FULLPAGENAME}}]]</includeonly>

@@ -1,0 +1,21 @@
+This is an example character infobox using the [[support:DRUID infoboxes|DRUID infoboxes]] framework. You can edit it, move (rename) it, or delete it as desired.
+
+== Modify this template ==
+To see how DRUID works, please '''edit this page'''! It has several comments explaining the different parts of how to make an infobox.
+
+== Copyable code for use on other content pages ==
+If you want to create pages using this infobox, you can use the snippet below. Please understand, this code is for CONTENT PAGES ONLY!! It does not have anything to do with changing what the template supports.
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Example character infobox
+|title=
+|image=
+
+|Region=
+|Element=
+
+|Attack=
+|HP=
+|Armor=
+|Attack Speed=
+}}
+</syntaxhighlight><noinclude>[[Category:Template documentation]]</noinclude>

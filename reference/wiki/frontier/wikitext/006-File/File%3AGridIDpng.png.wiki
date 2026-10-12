@@ -1,0 +1,4 @@
+== Summary ==
+a picture by arimah that showcases which area of the f3 tabs to look for the grid's ID
+== Licensing ==
+{{License|game}}

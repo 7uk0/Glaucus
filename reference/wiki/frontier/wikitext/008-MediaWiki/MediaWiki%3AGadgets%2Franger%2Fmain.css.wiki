@@ -1,0 +1,575 @@
+/** as of Module:navbox version 1.2.2 **/
+
+.ranger-navbox{
+  border-color: var(--navbox-outer-border-color);
+  border-style: var(--navbox-outer-border-style);
+  border-width: var(--navbox-outer-border-width);
+  border-radius: var(--navbox-outer-border-radius);
+  padding: var(--navbox-padding);
+  font-size: var(--navbox-font-size);
+  margin: var(--navbox-margin);
+  background: var(--navbox-background);
+  line-height: 1.5;
+  clear:both;
+}
+
+.ranger-navbox * {
+  border: 0;
+}
+.ranger-navbox .center *{
+  margin-left: unset;
+  margin-right: unset;
+}
+.ranger-navbox, 
+.ranger-navbox .ranger-section,
+.ranger-navbox .ranger-listbox{
+  display: flex;
+  flex-direction: column;
+  gap: var(--navbox-gap);
+}
+.ranger-navbox .ranger-title,
+.ranger-navbox .ranger-header{
+  text-align: center;
+  min-height: 1.5em;
+  position: relative;
+  z-index: 0;
+  font-weight: bold;
+}
+.ranger-navbox .ranger-title{
+  color: var(--navbox-title-color);
+  background: var(--navbox-title-background);
+  font-size: var(--navbox-title-font-size);
+  padding: var(--navbox-title-padding--y) calc(1.5em + var(--navbox-icon-offset--x)); /* left and right padding equal to the size and position of the edit/collapse buttons */
+}
+.ranger-navbox .ranger-title a,
+.ranger-navbox .ranger-title a:visited,
+.ranger-navbox .ranger-title a:hover,
+.ranger-navbox .ranger-title a.external,
+.ranger-navbox .ranger-title a.external:visited,
+.ranger-navbox .ranger-title a.external:hover {
+	text-decoration: var(--navbox-title-link-decoration);
+}
+.ranger-navbox .ranger-title a.new,
+.ranger-navbox .ranger-title a.new:visited {
+	text-decoration: var(--navbox-title-redlink-decoration);
+}
+.ranger-navbox .ranger-title a,
+.ranger-navbox .ranger-title a.external,
+.ranger-navbox .ranger-title a.external:visited {
+  color: var(--navbox-title-link-color);
+}
+.ranger-navbox .ranger-title a:visited{
+  color: var(--navbox-title-link-color--visited);
+}
+.ranger-navbox .ranger-title a.new,
+.ranger-navbox .ranger-title a.new:visited{
+    color:var(--navbox-title-redlink-color);
+}
+.ranger-navbox .ranger-title a:hover,
+.ranger-navbox .ranger-title a:visited:hover,
+.ranger-navbox .ranger-title a.external:hover,
+.ranger-navbox .ranger-title a.external:visited:hover {
+  color:var(--navbox-title-link-color--hover);
+}
+.ranger-navbox .ranger-header{
+  color: var(--navbox-header-color);
+  background: var(--navbox-header-background);
+  font-size: var(--navbox-header-font-size);
+  padding: var(--navbox-header-padding--y) calc(1.5em + var(--navbox-icon-offset--x)); /* left and right padding equal to the size and position of the edit/collapse buttons */
+}
+.ranger-navbox .ranger-sublist .ranger-header{
+  font-size: var(--navbox-subheader-font-size);
+  padding: var(--navbox-subheader-padding--y) calc(1.5em + var(--navbox-icon-offset--x)); /* left and right padding equal to the size and position of the edit/collapse buttons */
+}
+.ranger-navbox .ranger-header a,
+.ranger-navbox .ranger-header a:visited,
+.ranger-navbox .ranger-header a:hover,
+.ranger-navbox .ranger-header a.external,
+.ranger-navbox .ranger-header a.external:visited,
+.ranger-navbox .ranger-header a.external:hover {
+	text-decoration: var(--navbox-header-link-decoration);
+}
+.ranger-navbox .ranger-header a.new,
+.ranger-navbox .ranger-header a.new:visited {
+	text-decoration: var(--navbox-header-redlink-decoration);
+}
+.ranger-navbox .ranger-header a,
+.ranger-navbox .ranger-header a.external,
+.ranger-navbox .ranger-header a.external:visited {
+  color: var(--navbox-header-link-color);
+}
+.ranger-navbox .ranger-header a:visited{
+  color: var(--navbox-header-link-color--visited);
+}
+.ranger-navbox .ranger-header a.new,
+.ranger-navbox .ranger-header a.new:visited{
+    color:var(--navbox-header-redlink-color);
+}
+.ranger-navbox .ranger-header a:hover,
+.ranger-navbox .ranger-header a:visited:hover,
+.ranger-navbox .ranger-header a.external:hover,
+.ranger-navbox .ranger-header a.external:visited:hover {
+  color:var(--navbox-header-link-color--hover);
+}
+.ranger-navbox .ranger-meta{
+  font-size: var(--navbox-title-font-size);
+  position: absolute;
+  left: var(--navbox-icon-offset--x);
+  top: calc(var(--navbox-title-padding--y) + 0.08em); /* 0.08em: vertial offset tweak based on the icon graph */
+  display: block;
+}
+.ranger-navbox .ranger-meta .nv{
+  --mask: var(--icon-metalinks);
+  display: block;
+  width: 0.84em; /* based on the icon graph */
+  height: 0.84em;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  background-color: var(--navbox-title-icon-color);
+}
+.ranger-navbox .ranger-meta .nv > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.ranger-navbox .ranger-meta .nv > a > span{
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ranger-navbox .ranger-meta:has(.mw-selflink){
+	display: none;
+}
+.ranger-navbox,
+.ranger-navbox .ranger-section{
+  position: relative;
+}
+.ranger .mw-collapsible-toggle-placeholder{
+  display: none;
+}
+.ranger-navbox .ranger-title > .ranger-title-text,
+.ranger-navbox .ranger-header > .ranger-header-text{
+  pointer-events: none;
+}
+.ranger-navbox .ranger-title > .ranger-title-text a,
+.ranger-navbox .ranger-header > .ranger-header-text a{
+  pointer-events: auto;
+}
+.ranger-navbox .ranger-title > .mw-collapsible-toggle,
+.ranger-navbox .ranger-header > .mw-collapsible-toggle{
+  --mask: var(--icon-chevron-down);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+.ranger-navbox.small-collapsible-toggle-click-area .ranger-title > .mw-collapsible-toggle,
+.ranger-navbox.small-collapsible-toggle-click-area .ranger-header > .mw-collapsible-toggle{
+  width: 1.5em;
+  height: 1.5em;
+  right: var(--navbox-icon-offset--x);
+}
+.ranger-navbox.small-collapsible-toggle-click-area .ranger-title > .mw-collapsible-toggle{
+  top: var(--navbox-title-padding--y);
+}
+.ranger-navbox.small-collapsible-toggle-click-area .ranger-header > .mw-collapsible-toggle{
+  top: var(--navbox-header-padding--y);
+}
+.ranger-navbox.small-collapsible-toggle-click-area .ranger-sublist .ranger-header > .mw-collapsible-toggle{
+  top: var(--navbox-subheader-padding--y);
+}
+.ranger-navbox .ranger-title > .mw-collapsible-toggle::before,
+.ranger-navbox .ranger-header > .mw-collapsible-toggle::before{
+  content: "";
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  right: var(--navbox-icon-offset--x);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  background-color: var(--navbox-title-icon-color);
+  transform: scaleY(-1);
+}
+.ranger-navbox .ranger-title > .mw-collapsible-toggle::before{
+  top: var(--navbox-title-padding--y);
+}
+.ranger-navbox .ranger-header > .mw-collapsible-toggle::before{
+  top: var(--navbox-header-padding--y);
+}
+.ranger-navbox .ranger-sublist .ranger-header > .mw-collapsible-toggle::before{
+  top: var(--navbox-subheader-padding--y);
+}
+.ranger-navbox.small-collapsible-toggle-click-area .ranger-title > .mw-collapsible-toggle::before,
+.ranger-navbox.small-collapsible-toggle-click-area .ranger-header > .mw-collapsible-toggle::before{
+  top: 0;
+  right: 0;
+}
+.ranger-navbox .ranger-header > .mw-collapsible-toggle::before{
+  background-color: var(--navbox-header-icon-color);
+}
+.ranger-navbox .ranger-title > .mw-collapsible-toggle.mw-collapsible-toggle-collapsed::before,
+.ranger-navbox .ranger-header > .mw-collapsible-toggle.mw-collapsible-toggle-collapsed::before{
+  transform: none;
+}
+.ranger-navbox .ranger-title > .mw-collapsible-toggle *,
+.ranger-navbox .ranger-title > .mw-collapsible-toggle::after,
+.ranger-navbox .ranger-header > .mw-collapsible-toggle *,
+.ranger-navbox .ranger-header > .mw-collapsible-toggle::after{
+  display: none;
+}
+.ranger-navbox .ranger-list{
+  width: unset;
+  padding: var(--navbox-list-padding);
+}
+.ranger-navbox .ranger-above{
+  background: var(--navbox-above-background);
+  color: var(--navbox-above-color);
+  padding: var(--navbox-above-padding);
+  width: unset;
+}
+.ranger-navbox .ranger-below{
+  background: var(--navbox-below-background);
+  color: var(--navbox-below-color);
+  padding: var(--navbox-below-padding);
+  width: unset;
+}
+.ranger-navbox .ranger-sublist{
+  display: flex;
+  flex-direction: column;
+  gap: var(--navbox-gap);
+}
+.ranger-navbox .ranger-section-body{
+  display: grid;
+  gap: var(--navbox-gap);
+  grid-template-columns: auto minmax(0,1fr);
+}
+/* gap fix for collapsed content */
+.ranger-navbox [class^="ranger-"][hidden="until-found"]{
+  margin-top: calc(0px - var(--navbox-gap)) !important;
+}
+.ranger-navbox .ranger-row{
+  display: contents;
+}
+.ranger-navbox .ranger-group,
+.ranger-navbox .ranger-subgroup{
+  text-align: var(--navbox-group-text-align);
+  white-space: nowrap;
+  font-weight: bold;
+  background: var(--navbox-group-background);
+  color: var(--navbox-group-color);
+  padding: var(--navbox-group-padding);
+  width: unset;
+}
+/* for desktop view */
+.ranger-navbox.group-align-left .ranger-group,
+.ranger-navbox.group-align-left .ranger-subgroup{
+  --navbox-group-text-align: left;
+}
+.ranger-navbox.group-align-center .ranger-group,
+.ranger-navbox.group-align-center .ranger-subgroup{
+  --navbox-group-text-align: center;
+}
+.ranger-navbox.group-align-right .ranger-group,
+.ranger-navbox.group-align-right .ranger-subgroup{
+  --navbox-group-text-align: right;
+}
+/* for mobile view */
+.ranger-navbox.mobile-group-align-left .ranger-group,
+.ranger-navbox.mobile-group-align-left .ranger-subgroup{
+  --navbox-group-text-align--mobile: left;
+}
+
+.ranger-navbox.mobile-group-align-center .ranger-group,
+.ranger-navbox.mobile-group-align-center .ranger-subgroup{
+  --navbox-group-text-align--mobile: center;
+}
+
+.ranger-navbox.mobile-group-align-right .ranger-group,
+.ranger-navbox.mobile-group-align-right .ranger-subgroup{
+  --navbox-group-text-align--mobile: right;
+}
+
+.ranger-navbox .ranger-listbox > .ranger-wrap{
+  background: var(--navbox-list-background);
+  color: var(--navbox-list-color);
+  flex-grow: 1;
+}
+.ranger-navbox .ranger-sublist{
+  flex-grow: var(--count);
+}
+.ranger-navbox .ranger-listbox:first-child{ /* A list-n without group-n */
+  grid-column-end: span 2;
+}
+.ranger-navbox .ranger-group,
+.ranger-navbox .ranger-subgroup,
+.ranger-navbox .ranger-listbox > .ranger-wrap{
+  display: grid;
+  justify-items: stretch;
+  align-items: center;
+}
+.ranger-navbox.striped-even .ranger-even,
+.ranger-navbox.striped-odd .ranger-odd{
+  background: var(--navbox-list-background--striped);
+}
+/* make links use full line height (larger click box)*/
+.ranger-navbox .hlist a{
+	display: inline-block;
+}
+
+.ranger-navbox .align-left,
+.ranger-navbox .alignleft{
+  text-align: left;
+}
+.ranger-navbox .align-center,
+.ranger-navbox .aligncenter{
+  text-align: center;
+}
+.ranger-navbox .align-right,
+.ranger-navbox .alignright{
+  text-align: right;
+}
+
+/* responsive */
+@media screen and (max-width: 720px) {
+  .ranger-navbox .ranger-section-body,
+  .ranger-navbox .ranger-sublist {
+    display: flex;
+    flex-flow: column;
+  }
+  .ranger-navbox .ranger-row{
+    display: block;
+  }
+  .ranger-navbox .ranger-group + .ranger-listbox > .ranger-sublist:first-child,
+  .ranger-navbox .ranger-subgroup + .ranger-listbox > .ranger-sublist:first-child{
+    margin-top: var(--navbox-gap);
+  }
+  .ranger-navbox .ranger-listbox.empty{
+    display: none;
+  }
+  .ranger-navbox .ranger-group,
+  .ranger-navbox .ranger-subgroup{
+    text-align: var(--navbox-group-text-align--mobile);
+    white-space: normal;
+  }
+  
+  .ranger-navbox .ranger-sublist {
+    padding-left: var(--navbox-tree-indent);
+    margin-left: var(--navbox-tree-line-indent);
+  }
+  .ranger-navbox .ranger-subgroup,
+  .ranger-navbox .ranger-listbox {
+    position:relative;
+  }
+  .ranger-navbox .ranger-group br,
+  .ranger-navbox .ranger-subgroup br{
+    display: none;
+  }
+  .ranger-navbox .ranger-sublist > .ranger-section > .ranger-header{
+    margin-left: calc( 0px - var(--navbox-tree-indent) - var(--navbox-tree-line-indent));
+  }
+  .ranger-navbox .ranger-sublist .ranger-row > ::before{
+    position: absolute;
+    left: calc(0px - var(--navbox-tree-indent));
+    top: 0;
+    width: var(--navbox-tree-line-width);
+    height: 100%;
+    content: '';
+    display: block;
+    background-color: var(--navbox-tree-line-color);
+  }
+  .ranger-navbox .ranger-sublist .ranger-row > .ranger-listbox::before,
+  .ranger-navbox .ranger-row.empty-list > .ranger-subgroup::before{
+    height: calc(100% + var(--navbox-gap));
+  }
+  .ranger-navbox .ranger-sublist .ranger-row:last-child > ::before {
+    display: none;
+  }
+  .ranger-navbox .ranger-sublist .ranger-row:last-child > :first-child::before {
+    display: block;
+    height: calc(50% + var(--navbox-tree-line-width)/2);
+  }
+  .ranger-navbox .ranger-subgroup::after,
+  .ranger-navbox .empty-group > .ranger-listbox > .ranger-wrap::after{
+    position: absolute;
+    left: calc(0px - var(--navbox-tree-indent) + var(--navbox-tree-line-width));
+    width: calc(var(--navbox-tree-indent) - var(--navbox-tree-line-spacing) - var(--navbox-tree-line-width));
+    height: var(--navbox-tree-line-width);
+    content: '';
+    background-color: var(--navbox-tree-line-color);
+  }
+  /* increase height for links */
+  .ranger-navbox .hlist{
+    line-height: 2;
+  }
+}
+/**** `.pill` class: the "pill" style  ****/
+/* remove middle dots betweem items */
+.ranger-navbox.pill .hlist dd:not(:last-child)::after,
+.ranger-navbox.pill .hlist li:not(:last-child)::after{
+  display: none;
+}
+/* remove parentheses around nested lists*/
+.ranger-navbox.pill .hlist dd ol::before,
+.ranger-navbox.pill .hlist dd ul::before,
+.ranger-navbox.pill .hlist dd dl::before,
+.ranger-navbox.pill .hlist dt ol::before,
+.ranger-navbox.pill .hlist dt ul::before,
+.ranger-navbox.pill .hlist dt dl::before,
+.ranger-navbox.pill .hlist li ol::before,
+.ranger-navbox.pill .hlist li ul::before,
+.ranger-navbox.pill .hlist li dl::before,
+.ranger-navbox.pill .hlist dd ol::after,
+.ranger-navbox.pill .hlist dd ul::after,
+.ranger-navbox.pill .hlist dd dl::after,
+.ranger-navbox.pill .hlist dt ol::after,
+.ranger-navbox.pill .hlist dt ul::after,
+.ranger-navbox.pill .hlist dt dl::after,
+.ranger-navbox.pill .hlist li ol::after,
+.ranger-navbox.pill .hlist li ul::after,
+.ranger-navbox.pill .hlist li dl::after {
+  display: none;
+}
+/* make lists inline-flex */
+.ranger-navbox.pill .hlist ul,
+.ranger-navbox.pill .hlist ol,
+.ranger-navbox.pill .hlist dl{
+  display: inline-flex;
+  gap: var(--navbox-pill-gap);
+  flex-wrap: wrap;
+}
+/* "pill" style for items */
+.ranger-navbox.pill .hlist li,
+.ranger-navbox.pill .hlist dt,
+.ranger-navbox.pill .hlist dd{
+  padding: var(--navbox-pill-padding);
+  border-radius: var(--navbox-pill-border-radius);
+  box-shadow: var(--navbox-pill-box-shadow);
+  background: var(--navbox-pill-background);
+  /* 100% height */
+  display: flex;
+  align-items: center;
+  /* for nested lists */
+  gap: var(--navbox-pill-gap); 
+  flex-wrap: wrap;
+}
+/* Add a hover / focus feedback style */
+.ranger-navbox.pill .hlist dd:hover,
+.ranger-navbox.pill .hlist dd:focus,
+.ranger-navbox.pill .hlist dt:hover,
+.ranger-navbox.pill .hlist dt:focus,
+.ranger-navbox.pill .hlist li:hover,
+.ranger-navbox.pill .hlist li:focus {
+  box-shadow: var(--navbox-pill-box-shadow--hover);
+  background: var(--navbox-pill-background--hover);
+}
+/* pill with selflink
+ *
+ * Only select the deepest level for nested lists.
+ * We have to use :has() to pick pills with selflink and
+ * all browsers which support :has() should also support :is() and :not(),
+ * therefore we can use :is() and :not() here safely.
+ */
+.ranger-navbox.pill .hlist .ranger-list :is(li,dt,dd):has(.mw-selflink):not(:has(li, dt, dd)){ 
+  background: var(--navbox-pill-selflink-background);
+}
+/**** `.pill-mobile` class: only apply the "pill" style on mobile ****/
+@media screen and (max-width: 720px) {
+	/* remove middle dots betweem items */
+	.ranger-navbox.pill-mobile .hlist dd:not(:last-child)::after,
+	.ranger-navbox.pill-mobile .hlist li:not(:last-child)::after{
+	  display: none;
+	}
+	/* remove parentheses around nested lists*/
+	.ranger-navbox.pill-mobile .hlist dd ol::before,
+	.ranger-navbox.pill-mobile .hlist dd ul::before,
+	.ranger-navbox.pill-mobile .hlist dd dl::before,
+	.ranger-navbox.pill-mobile .hlist dt ol::before,
+	.ranger-navbox.pill-mobile .hlist dt ul::before,
+	.ranger-navbox.pill-mobile .hlist dt dl::before,
+	.ranger-navbox.pill-mobile .hlist li ol::before,
+	.ranger-navbox.pill-mobile .hlist li ul::before,
+	.ranger-navbox.pill-mobile .hlist li dl::before,
+	.ranger-navbox.pill-mobile .hlist dd ol::after,
+	.ranger-navbox.pill-mobile .hlist dd ul::after,
+	.ranger-navbox.pill-mobile .hlist dd dl::after,
+	.ranger-navbox.pill-mobile .hlist dt ol::after,
+	.ranger-navbox.pill-mobile .hlist dt ul::after,
+	.ranger-navbox.pill-mobile .hlist dt dl::after,
+	.ranger-navbox.pill-mobile .hlist li ol::after,
+	.ranger-navbox.pill-mobile .hlist li ul::after,
+	.ranger-navbox.pill-mobile .hlist li dl::after {
+	  display: none;
+	}
+	/* make lists inline-flex */
+	.ranger-navbox.pill-mobile .hlist ul,
+	.ranger-navbox.pill-mobile .hlist ol,
+	.ranger-navbox.pill-mobile .hlist dl{
+	  display: inline-flex;
+	  gap: var(--navbox-pill-gap);
+	  flex-wrap: wrap;
+	}
+	/* "pill" style for items */
+	.ranger-navbox.pill-mobile .hlist li,
+	.ranger-navbox.pill-mobile .hlist dt,
+	.ranger-navbox.pill-mobile .hlist dd{
+	  /* 100% height */
+	  display: flex;
+	  align-items: center;
+	  /* for nested lists */
+	  gap: var(--navbox-pill-gap);
+	  flex-wrap: wrap;
+	}
+	/* "pill" style for items */
+	.ranger-navbox.pill-mobile .hlist li,
+	.ranger-navbox.pill-mobile .hlist dt,
+	.ranger-navbox.pill-mobile .hlist dd{
+	  padding: var(--navbox-pill-padding);
+	  border-radius: var(--navbox-pill-border-radius);
+	  box-shadow: var(--navbox-pill-box-shadow);
+	  background: var(--navbox-pill-background);
+	  /* 100% height */
+	  display: flex;
+	  align-items: center;
+	  /* for nested lists */
+	  gap: var(--navbox-pill-gap);
+	  flex-wrap: wrap;
+	}
+	/* Add a hover / focus feedback style */
+	.ranger-navbox.pill-mobile .hlist dd:hover,
+	.ranger-navbox.pill-mobile .hlist dd:focus,
+	.ranger-navbox.pill-mobile .hlist dt:hover,
+	.ranger-navbox.pill-mobile .hlist dt:focus,
+	.ranger-navbox.pill-mobile .hlist li:hover,
+	.ranger-navbox.pill-mobile .hlist li:focus {
+	  box-shadow: var(--navbox-pill-box-shadow--hover);
+	  background: var(--navbox-pill-background--hover);
+	}
+	/* pill with selflink
+	 *
+	 * Only select the deepest level for nested lists.
+	 * We have to use :has() to pick pills with selflink and
+	 * all browsers which support :has() should also support :is() and :not(),
+	 * therefore we can use :is() and :not() here safely.
+	 */
+	.ranger-navbox.pill-mobile .hlist .ranger-list :is(li,dt,dd):has(.mw-selflink):not(:has(li, dt, dd)){ 
+	  background: var(--navbox-pill-selflink-background);
+	}
+}
+/*********************
+* End Template:Navbox*
+**********************/

@@ -1,0 +1,299 @@
+/* Any JavaScript here will be loaded for all users on every page load. */
+
+/* DRUID */
+$(function () {
+  $(".druid-title-tab").off("click")
+    .on('click', function () {
+      var $parent = $(this).closest(".druid-container");
+      $parent.find(".druid-toggleable").removeClass("focused");
+      var i = $(this).attr("data-druid");
+      $parent.find(".druid-toggleable[data-druid=" + i + "]").addClass("focused");
+  });
+    
+  $(".druid-section-tab").off("click")
+    .on('click', function () {
+      var $parent = $(this).closest(".druid-section-container");
+      $parent.find(".druid-toggleable").removeClass("focused");
+      var i = $(this).attr("data-druid");
+      $parent.find(".druid-toggleable[data-druid=" + i + "]").addClass("focused");
+  });
+
+  $(".druid-collapsible").off("click")
+    .on('click', function () {
+      var kind = $(this).attr("data-druid-section");
+      $(this).toggleClass("druid-collapsible-collapsed");
+      $(this)
+        .closest(".druid-container")
+        .find("[data-druid-section-row=" + kind + "]")
+        .toggleClass("druid-collapsed");
+  });
+});
+/* End DRUID */
+
+/* [[Template:Spoiler]] */
+$(function () {
+	$('.spoiler-content')
+	.off('click') // in case this code is loaded twice
+	.on('click', function(e){
+		$(this).toggleClass('show');
+	}).find('a').on('click', function(e){
+		e.stopPropagation();
+	});
+
+});
+/* End Template:Spoiler */
+
+
+/* Link to imported modules from Lua code */
+$(function() {
+    var config = mw.config.get([
+        'wgCanonicalNamespace',
+        'wgFormattedNamespaces'
+    ]);
+    if (config.wgCanonicalNamespace !== 'Module') {
+        return;
+    }
+    var localizedNamespace = config.wgFormattedNamespaces[828];
+    $('.s1, .s2, .s').each(function() {
+        var $this = $(this);
+        var html = $this.html();
+        var quote = html[0];
+        var isLongStringQuote = quote === '[';
+        var quoteRE = new RegExp('^\\' + quote + '|\\' + quote + '$', 'g');
+        if (isLongStringQuote) {
+            quoteRE = /^\[\[|\]\]$/g;
+        }
+        var name = html.replace(quoteRE, '');
+        var isEnglishPrefix = name.startsWith('Module:');
+        var isLocalizedPrefix = name.startsWith(localizedNamespace + ':');
+        var isDevPrefix = name.startsWith('Dev:');
+        if (isEnglishPrefix || isLocalizedPrefix || isDevPrefix) {
+            var attrs = {
+                href: mw.util.getUrl(name)
+            };
+            if (isDevPrefix) {
+                attrs.href = 'https://commons.wiki.gg/wiki/Module:' + mw.util.wikiUrlencode(name.replace('Dev:', ''));
+                attrs.target = '_blank';
+                attrs.rel = 'noopener';
+            }
+            var link = mw.html.element('a', attrs, name);
+            var str = quote + link + quote;
+            if (isLongStringQuote) {
+                str = '[[' + link + ']]';
+            }
+            $this.html(str);
+        }
+    });
+});
+
+
+/* CharInserts */
+
+$(function() {
+	$('.mw-charinsert-item').each(function() {
+		$(this).text($(this).closest('div').attr('data-ci-label'));
+		$(this).css('display', 'inline-block');
+	});
+	$('.ci-loading-text').css('display','none');
+});
+
+/**
+ * DiscordCompact.js
+ * ----------------------
+ * A very simple script to display a Discord widget.
+ * Version 0.0.2
+ * https://support.wiki.gg/wiki/DiscordCompact
+ * ----------------------
+ */
+
+$(function() {
+	var widget = $("#content #discord-compact-widget");
+
+    // Bail out if we didn't find a widget.
+    if (!widget.length) return;
+
+	var id = widget.attr("data-id");
+	
+	// Ensure that the id is not blank.
+	if (id === "") throw new Error("DiscordCompact has a blank server id!");
+	// Ensure that the id consists only of numbers and is at least 17 characters long.
+	if (!new RegExp("^[0-9]{17}[0-9]+$").test(id)) throw new Error("DiscordCompact has an invalid server id!");
+	
+	var apiBase = "https://discord.com/api/guilds/" + id;
+	// Get some information about the server, such as online member count and invite url.
+	// This also tells us if the server exists or has widgets disabled, so we look out for that too.
+	$.ajax(apiBase + "/widget.json").fail(function(req){
+        if (!req.responseJSON) throw new Error("DiscordCompact encountered an unknown error whilst fetching widget.json (status: " + req.status);
+		switch (req.responseJSON.code) {
+            case 10004:
+                throw new Error("DiscordCompact has a valid server id, but no such server exists!");
+            case 50004:
+                throw new Error("DiscordCompact has a valid server id, but that server has widgets disabled!");
+            default:
+                throw new Error("DiscordCompact encountered an unknown error whilst fetching widget.json (status: " + req.status + "; code: " + req.responseJSON.code + ")");
+        }
+	}).done(function(res){
+		const inviteURL = res.instant_invite;
+
+        // Warn if we can't get an invite URL.
+        if (inviteURL == null) console.warn("DiscordCompact cannot get an invite URL; does this server have an invite channel set in Widget settings?");
+        
+        // Now get the widget image.
+        $.ajax({url: apiBase + "/widget.png?style=banner2", xhrFields: {responseType: "blob"}}).fail(function(req){
+            if (!req.responseJSON) throw new Error("DiscordCompact encountered an unknown error whilst fetching widget.png! (status: " + req.status);
+            throw new Error("DiscordCompact encountered an unknown error whilst fetching widget.png! (status: " + req.status + "; code: " + req.responseJSON.code + ")");
+        }).done(function(blob){
+            // Convert the image data into base64. This prevents us having to make the client request it a second time.
+            const imageReader = new FileReader();
+            imageReader.readAsDataURL(blob);
+            imageReader.onloadend = function() {
+                const b64Data = imageReader.result;
+
+                // Replace the widget with an <a> tag
+                widget.replaceWith(function() {
+                    return $("<a>", {
+                        id: widget.attr("id"),
+                        class: widget.attr("class"),
+                        style: widget.attr("style"),
+                        alt: "Discord server widget",
+                        href: inviteURL
+                    });
+                });
+
+                // We need to grab the widget again to update it.
+                widget = $("#discord-compact-widget");
+
+                // Setup the CSS so that the image is displayed.
+                widget.css("display", "block");
+                widget.css("max-height", "76px");
+                widget.css("max-width", "320px");
+
+                // Create the image.
+                const widgetImage = document.createElement("img");
+                widgetImage.src = b64Data;
+                widgetImage.style.width = "100%";
+                widgetImage.style.height = "100%";
+                widgetImage.style.borderRadius = "5px";
+                widget.append(widgetImage);
+
+                // Prevent image dragging.
+                widget.on("dragstart", function(e) { e.preventDefault(); });
+
+                // We're done here.
+                console.log("DiscordCompact loaded successfully!");
+            }
+        });
+	});
+});
+
+/**
+ * based on https://dev.fandom.com/wiki/MediaWiki:DiscordIntegrator/code.js
+ * 
+ * used by other wikis.
+ */
+$(function() {
+	'use strict';
+	var mconfig = mw.config.get([
+		'wgContentLanguage',
+		'wgUserLanguage',
+		'wgUserName'
+	]);
+	if (window.DiscordIntegratorLoaded) {
+		return;
+	}
+	window.DiscordIntegratorLoaded = true;
+	/**
+	 * Main object
+	 * @static
+	 */
+	var DiscordIntegrator = {
+
+		/**
+		 * Initializing
+		 */
+		init: function() {
+			mw.hook('wikipage.content').add($.proxy(this.insertToContent, this));
+		},
+		/**
+		 * Finding the designated places in content
+		 * in which to place the widget and placing it
+		 */
+		insertToContent: function($content) {
+			$content.find('.DiscordIntegrator:not(.loaded)').each($.proxy(function(cabbage, el) {
+				el = $(el);
+				el.html(this.generateContent(el.data())).addClass('loaded');
+			}, this));
+		},
+		/**
+		 * Determines the theme of the widget.
+		 * @param {string} config Configured theme
+		 * @return {string} 'light' or 'dark' depending on the wiki theme and configuration
+		 */
+		determineTheme: function(config) {
+			// If explicitly configured to light or dark.
+			if (config === 'dark') {
+				return 'dark';
+			}
+			if (config === 'light') {
+				return 'light';
+			}
+			/** If not configured **/
+			// try to determine based on wiki theme (set by themeToggle):
+			var clas = $(':root').attr('class');
+			var regex = /(^|\s)theme-(\w+)(\s|$)/;
+			var match = clas.match(regex);
+			if(match){
+				var wikiThemeName = match[2];
+				if(typeof(config) === 'object' && config !== null){ //with json theme config
+					if(config[wikiThemeName]){
+						return config[wikiThemeName];
+					}
+				}
+				if(wikiThemeName === 'light'){
+					return 'light';
+				}
+				if(wikiThemeName === 'dark'){
+					return 'dark';
+				}
+			}
+			// Otherwise, default to dark.
+			return 'dark';
+		},
+		/**
+		 * Generating widget content from an object
+		 * @return {string} Content of the widget
+		 */
+		generateContent: function(config) {
+			if (!config.id || !String(config.id).match(/\d{17,19}/)) {
+				return "Error: ID of the widget is malformed or not supplied, please see <a href='https://support.wiki.gg/wiki/DiscordWidget' title='the instructions'>the instructions</a> for how to find your server's ID. Please make sure you are not inserting <strong>the DiscordIntegrator template</strong> when asked for <strong>your widget ID</strong>.";
+			}
+			if (
+				(
+					config.loggedIn === true ||
+					Boolean(config['logged-in']) === true &&
+					config['logged-in'] !== 'false' &&
+					config['logged-in'] !== '{{{loggedIn}}}'
+				) && !mconfig.wgUserName
+			) {
+				return "Please <a href='/Special:UserLogin' title='log in'>log in</a> to see this widget.";
+			}
+			var username = config.username === '@disabled' ?
+				'' :
+				config.username === '@function' &&
+				typeof window.DiscordIntegratorGetUsername === 'function' ?
+					window.DiscordIntegratorGetUsername() :
+					config.username || mconfig.wgUserName;
+			return mw.html.element('iframe', {
+				src: 'https://discord.com/widget?id=' + config.id +
+					'&theme=' + this.determineTheme(config.theme) +
+					'&username=' + encodeURIComponent(username),
+				width: config.width || '100%',
+				height: config.height || '400px',
+				allowtransparency: 'true',
+				frameborder: '0',
+				title: "Discord server widget"
+			});
+		}
+	};
+	DiscordIntegrator.init();
+});

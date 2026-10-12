@@ -1,0 +1,70 @@
+$(function(){
+
+    // CONFIG section, you can edit this part
+
+    // a list of sections that should be collapsed by default for *all users*.
+    // This should be the name of the heading as listed in Mediawiki:Sidebar and is case-sensitive.
+    // For example, if you have '* Character_Classes' and you want that section collapsed, add 'Character_Classes' into the brackets below.
+    // Separate entries with commas and use underscores instead of spaces.
+    // Example list: ['Character_Classes', 'Items', 'External_Links']
+    // Please DO NOT add navigation or tb into this list, as they are expected functionality.
+    var INITIALLY_COLLAPSED_IDS = [];
+	var MIN_ACTIVATION_WIDTH = 721;
+
+    //END CONFIG
+
+    // add the p- onto ids for ease of use, if not present
+    INITIALLY_COLLAPSED_IDS.forEach(function(id, index){
+        if(!id.startsWith('p-')){
+            INITIALLY_COLLAPSED_IDS[index] = 'p-' + id;
+        }
+    });
+
+	var $portals = $("#mw-panel .vector-menu-portal");
+
+	var setup = function(){
+		$portals.each(function(index, el){
+			if(window.innerWidth < MIN_ACTIVATION_WIDTH) {
+				return;
+			}
+			var $el = $(el);
+			var $id = $el.attr("id");
+			if(!$id){
+				return;
+			}
+
+			// check if this portal should be collapsed
+			if(
+                // portal is set to be initially collapsed and user has not indicated that they want it open
+                (INITIALLY_COLLAPSED_IDS.includes($id) && localStorage.getItem('sidebar_c_'+$id) != "n")
+                || // or
+                // user has indicated they want this portal collapsed
+                (localStorage.getItem('sidebar_c_'+$id) === "y")
+                ){
+				    $el.addClass('collapsed').find('.vector-menu-content').slideUp(0);
+			}
+		});
+	}
+	setup();
+	$(window).on('resize', setup);
+	$portals.on("click", "h3", function(event){
+		if(window.innerWidth < MIN_ACTIVATION_WIDTH) {
+			return;
+		}
+		var $el = $(this).parent();
+		var $id = $el.attr("id");
+		if(!$id){
+			return;
+		}
+
+		$el.toggleClass('collapsed');
+		if($el.hasClass('collapsed')){ // more consistent between class and slide status.
+			localStorage.setItem('sidebar_c_'+$id, "y");
+			$el.find('.vector-menu-content').slideUp('fast');
+		}
+		else{
+			localStorage.setItem('sidebar_c_'+$id, "n");
+			$el.find('.vector-menu-content').slideDown('fast');
+		}
+	});
+});

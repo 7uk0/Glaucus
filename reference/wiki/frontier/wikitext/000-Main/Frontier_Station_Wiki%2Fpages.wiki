@@ -1,0 +1,14 @@
+{{Main page box/start
+| title = Useful wiki pages
+| class = centered-content
+}}
+<div class="mp-links columns-2">
+* {{MP link|Space Law}}
+* {{MP link|Server Rules}}
+* {{MP link|Random page|link=Special:Random}}
+</div>
+<div>
+{{Game Mechanics}}
+{{Guides Menu}}
+</div>
+{{Main page box/end}}<noinclude>[[Category:Main page boxes]]</noinclude><!-- don't edit this line -->

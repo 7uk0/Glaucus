@@ -1,0 +1,10 @@
+<includeonly>{{License/template
+| source = {{{source|}}}
+| type = CC-SRR
+| icon = [[File:CC-SRR.svg|link=|CC-Some Rights Reserved]]
+| text = This file is under the Creative Commons Some Rights Reserved License.
+}}</includeonly>
+<noinclude>This template currently looks like: {{License/CC-SRR}}
+
+See {{tl|License}} for full license documentation
+[[Category:License templates]]</noinclude>

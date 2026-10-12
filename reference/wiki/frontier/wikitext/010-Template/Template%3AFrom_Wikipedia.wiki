@@ -1,0 +1,8 @@
+<includeonly>{{Ambox
+| color = darkblue
+| icon = Wikipedia.svg
+| title= This code is adapted from [[wikipedia:Main Page|Wikipedia]].
+| message = For the original code, see the following pages: {{#arraymap:{{{1|}}}|,|%s|[[wikipedia:%s|%s]]}}
+| tiny = {{{tiny|}}}
+| class = {{{class|}}}
+}}</includeonly><noinclude>{{doc}}</noinclude>

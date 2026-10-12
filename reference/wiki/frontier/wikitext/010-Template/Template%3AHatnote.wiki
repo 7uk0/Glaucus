@@ -1,0 +1,8 @@
+<includeonly><!--
+
+-->[[Category:Pages with hatnotes]]<!--
+--><div class="hatnote {{#if:{{{icon|}}}|icon}}">{{#if:{{{icon|}}}|[[File:{{{icon}}}|x22px]]<nowiki> </nowiki>}}{{{1|}}}</div><!-- 
+
+--></includeonly><!-- 
+
+--><noinclude>{{doc}}[[Category:Hatnote templates| ]]</noinclude>

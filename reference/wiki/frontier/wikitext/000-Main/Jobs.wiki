@@ -1,0 +1,117 @@
+{{WIP}}
+
+There are a number of jobs available within Frontier Space, both as sector staff and as free contractors.
+
+== Contractors ==
+
+[[Getting Started|Contractor]], pilot and mercenary are the most common jobs. These jobs do not come with prescribed responsibilities or gameplay expectations.
+
+The jobs are functionally similar: make your own choices, get hired or buy a ship.
+Make money, or spend it. Space is big and you are free to pursue your own interests.
+
+Contractors are do not have a base salary, and instead earn money by getting hired by other players or by other means, such as selling salvage materials or artifacts.
+You should expect to earn spesos through your own actions, either providing services or collecting materials or treasures to sell to other players or to the trade mall.
+You are free to pursue any path, be it [[Basic Salvaging|salvage]], mining, science, mercenary combat, food service, and much more.
+
+Fhe shipyard console at the Frontier Outpost (as well as other locations) offers a wide selection of ships suited for different tasks. You are also free to modify any ship to fit your intended experience.
+Specialized shipyard consoles on the expeditionary lodge, medical dispatch (as well as other locations) can give you access to more specialized ships for healthcare and mercenary combat. Please note that these tend to be more expensive, and are generally more suitable once you have enough experience and money saved.
+
+=== Starting on a Point Of Interest (POI)===
+Contractor is the first free job you will have access to. contractors start their shift only on the medbay of the Frontier Outpost.
+If you are planning your first shift, you will find more information in the [[Getting Started]] guide.
+
+Pilot and Mercenary have the same (lack of) responsibilities as the contractor. They have access to different loadout gear, and the mercenary may purchase combat firearms at the expeditionary lodge. Otherwise they are also free to pursue their own interests instead of performing prescribed tasks.
+
+Pilot and mercenary may also start their shifs on the EL and MD, which grants access to specialized ships.
+
+=== Starting on an existing ship ===
+In the lobby, while selecting your starting location, you will be able to select "ship" jobs.
+
+Ship jobs are positions opened by the captain of an existing ship looking to hire additional crew members. You are not required to use this system to be hired (you may ask in round, on the radio or in person), but prospective employers will need to come pick you up on location. If you join through the ship menu, you will appear directly on their vessel instead as a candidate hologram.
+
+As a candidate, you may discuss jobs details, payroll and other terms of employment. Both the hiring capatain and yourself need to accept the agreement (through the matching action) in order for you to join the ship. In that case, you will be instantly teleported on location. If either of you choose to refuse the interview instead, you will be sent back to the lobby without penalties.
+
+== Sector staff==
+
+These roles represent employees of the sector.
+In contrast to contractors, these roles have well defined functions, and it is expected that you fulfill them at the best of your ability.
+
+Note that there is no automatic payroll. the various station finances - and payroll -are managed by command staff.
+
+If you join while no command staff is available, you can wait until one becomes available or ask on Ahelp for assistance with salary, but there is no guarantee that your time worked will be honored if no one is available to do so.
+If you join while a command staff for your department is available, consider discussing terms of employment with them, such as base salary, bonuses for performance, or other relevant details.
+
+Staff ships: most staff jobs will be provided with a ship coupon in their loadout when starting a shift.
+The ship coupon may be used to obtain a free ship, suitable for their responsibilities. To redeem this free ship, use the coupon as you would use an ID on the relevant shipyard console (not the public shipyard console).
+Remmember to keep the coupon, as it will hold the deed for the ship, and is used to return the ship (sell it) at the end of your shift. Note that selling the ship voids the coupon. 
+
+=== Command roles ===
+
+Note: command roles are allowed to fulfill payroll for other departments in cases when command for that department is not currently staffed or unavailable. For example, the sheriff may pay service staff if no SR is present.
+{| class="wikitable"
+|+ List of command jobs
+|-
+! Job !! Description !! Department
+|-
+| [[Station Representative|Station Representative (SR)]] || Operates from the Frontier Outpost, and oversees the civilian administration of the sector. Renames ships, recovers ship deeds, hands out new id's and is in charge of the Frontier Outpost's staff and budget. || Frontier Outpost Staff
+|-
+| [[NFSDSOP|Sheriff]] || Operates from the NFSD Outpost, and oversees law enforcement and security for the sector. || New Frontier Sheriff Department
+|-
+| [[Director of Care |Director of Care (DoC)]]|| Operates from and manages the Medical Dispatch, and oversees emergency response, health care, and medical pod rescues for the sector. || Medical
+|-
+| Plant Manager (PM)|| Operates from the Edison power plant, and is in charge of power generation. Power generated at Edison can be redeemed for spesos, AME fuel or air mix. || Power Plant
+|}
+
+=== Staff roles ===
+
+==== Frontier Outpost Staff ====
+'''Command''': Station representative 
+{| class="wikitable sortable"
+|+ List of frontier outpost jobs
+|-
+! Job !! Description !! Minimum Hourly Wage*
+|-
+| Station Traffic Controller (STC) || Manages traffic around the station and monitors docking durations on the Frontier Outpost and Trade Mall. Has the authority to write fines where applicable. See [[Space Law]]|| 10.000
+|-
+| Security Guard || Provides security for the SR, enforces laws on stations, assists the STC by collecting fines for traffic and docking violations. '''Note that this role is not a part of the NFSD and should not normally be chasing criminals through space or guarding No-Fly Zones.''' See [[Space Law]]|| 15.000
+|-
+| Mail carrier || Delivers the mail. Collects mail from FO and TM, and delivers it to recipients wherever they may be. || 10.000
+|-
+| Janitor || Ensure hygiene and basic maintenance of the sector's POIs. Replace lights, wipe the floors and keep the outposts free of trash. || 10.000
+|-
+| Valet || Guides new players and helps around with various miscellaneous tasks.  || 10.000
+|}
+<nowiki>*</nowiki>Note that the minimum wage is an absolute minimum as defined in the [[Server Rules|rules]] and that the actual wage is up to the discretion of the Station Representative.
+
+==== Power Plant Staff ====
+'''command''': plant manager
+{| class="wikitable"
+|+ Caption text
+|-
+! Job !! Description !! Minimum Hourly Wage*
+|-
+| Plant Technician || Assists the plant manager with the operation of the Edison power plant. || 10.000
+|}
+<nowiki>*</nowiki>Note that the minimum wage is an absolute minimum as defined in the [[Server Rules|rules]] and that the actual wage is up to the discretion of the Plant Manager.
+
+====Medical====
+'''command''': director of care
+
+The medical department does not have joinable medical jobs from the lobby, but is instead operated by independent contractors.
+The director of care is encouraged to work with, and establish compensation and contracts for medical responders, but this is done in-round through character interactions, not through an enforced job system.
+
+==== [[New Frontier Sheriff's Department|Law Enforcement]] ====
+'''command''': sheriff
+
+The NFSD is the sector's Sheriff department, in charge of law enforcement for the area.
+For more information, please consult the [[New Frontier Sheriff's Department|NFSD Jobs]] page, and the [[NFSDSOP| NFSD Standard Operating Procedure]] page.
+
+==Non-job roles==
+
+Several roles do not act as "jobs".
+This includes ghost roles, borgs and prisoners.
+
+These roles do not have expectations of making money, most lack a bank account, and should be understood as purely roleplay roles.
+
+==Antagonists==
+<nowiki>*</nowiki>'''Bzz bzzz''' ''Message intercepted by pirate high command. See [[Piracy]] instead!''<nowiki>*</nowiki>

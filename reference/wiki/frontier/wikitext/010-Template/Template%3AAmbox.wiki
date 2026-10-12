@@ -1,0 +1,17 @@
+<includeonly><!--
+
+--><div class="ambox {{{class|}}} {{#ifeq:{{lc:{{{tiny|}}}}}|yes|tiny}}"<!--
+   --> style="{{#if:{{{color|}}}|--ambox-color: {{{color|}}};<!-- /if -->}}"><!--
+   
+   --><div class="ambox-icon metadata <!-- the metadata class stops it from showing in MediaViewer -->">[[File:{{{icon|Ambox banner content.svg}}}{{!}}{{#ifeq:{{lc:{{{tiny|}}}}}|yes|48x20px|48x48px}}|alt=|link=]]</div><!--
+   
+   --><div class="ambox-content"><!-- start ambox content
+      -->{{#if: {{{title|}}} | <p class="ambox-title">{{{title}}}</p> }}<!--
+      --><p class="ambox-text">{{{message|No text provided.}}}{{#if: {{{date|}}} |<nowiki> </nowiki>(Message added: {{{date}}}) }}</p><!--
+   --></div><!-- end ambox content
+
+--></div><!-- end ambox
+
+--></includeonly><noinclude>
+{{doc}}
+[[Category:Notice templates]]</noinclude>

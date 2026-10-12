@@ -1,0 +1,19 @@
+<includeonly><!--
+Variables
+-->{{#vardefine:link|{{{link|{{{1|}}}}}}}}<!--
+
+Image-->{{#if:{{{image|}}}|[[File:{{#replace:{{{image|}}}|File:}}|{{{size|42px}}}|link={{#var:link}}{{#if:{{{altText|}}}|{{!}}alt={{{altText|}}}}}|class={{{imageClass|}}}]]}}<!--
+
+
+Link below the image
+-->{{#if:{{{1|}}}|<!--
+
+  If it's an external link, use external link syntax -->{{#if:{{#pos:{{{link|}}}|http}}|[{{{link|}}} {{{1|}}}]|<!--
+  
+  Otherwise use normal syntax
+  the ifeq, pos, sub combo is filtering out a leading :, so that we can add our own without doubling up, allowing easy category linking
+  -->[[:{{#ifeq:{{#pos:{{#var:link}}|:}}|0|{{#sub:{{#var:link}}|1}}|{{#var:link}}}}|{{{1|}}}]]}}
+  }}</includeonly><noinclude>
+{{doc}}
+[[Category:Main page templates]]
+</noinclude>

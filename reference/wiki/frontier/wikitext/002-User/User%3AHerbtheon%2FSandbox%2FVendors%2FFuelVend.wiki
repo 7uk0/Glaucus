@@ -1,0 +1,17 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:FuelPlasma.png|50px]] || Fuel-grade Plasma || $1,200
+|-
+| [[File:FuelUranium.png|50px]] || Fuel-grade Uranium || $2,500
+|-
+| [[File:FuelBananium.png|50px]] || Fuel-grade Bananium || $5,000
+|-
+| [[File:AmeJar.png|50px]] || AME Fuel Jar || $4,000
+|-
+| [[File:JerryCan.png|50px]] || Jerry Can (Welding Fuel) || $500
+|}
+</div>
+</includeonly>

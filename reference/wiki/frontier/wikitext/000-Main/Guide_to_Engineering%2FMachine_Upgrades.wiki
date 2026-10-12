@@ -1,0 +1,659 @@
+==Machine Upgrades==
+<br/>
+[[File:Machine frame completed.png|frameless|left|alt=Machine being upgraded|Machine being upgraded]] In frontier, some machines built from machine parts (capacitors, manipulators, matter bins and batteries) can be upgraded by replacing the default components with higher tier ones.
+
+
+===Component tiers and values===
+
+All of these components can be inserted into, or removed by a RPED for fast upgrades
+
+{| class="wikitable"
+|+ Components
+|-
+!style="color: var(--wiki-accent-color)" | Category !!style="color: var(--wiki-accent-color)" | Tier 1 !!style="color: var(--wiki-accent-color)" | Tier 2 !!style="color: var(--wiki-accent-color)" | Tier 3 !!style="color: var(--wiki-accent-color)" | Tier 4
+|-
+| Capacitors || [[File:Capacitor.png|frameless|alt=capacitor|capacitor]]Capacitor || [[File:Adv_capacitor.png|frameless|alt=Advanced capacitor|Advanced capacitor]]Advanced Capacitor || [[File:Super_capacitor.png|frameless|alt=Super Capacitor|Super Capacitor]]Super Capacitor || [[File:Quadratic_capacitor-1-1.gif|frameless|alt=Bluespace capacitor|Bluespace capacitor]]Bluespace Capacitor
+|-
+| Manipulators || [[File:micro mani.png|frameless|alt=Manipulator|Manipulator]]Manipulator || [[File:nano mani.png|frameless|alt=Advanced Manipulator|Advanced Manipulator]]Advanced Manipulator || [[File:pico mani.png|frameless|alt=Super Manipulator|Super Manipulator]]Super Manipulator || [[File:femto mani-1-1.gif|frameless|alt=Bluespace manipulator|Bluespace manipulator]]Bluespace manipulator
+|-
+| Matter bins || [[File:matter bin.png|frameless|alt=Matter bin|Matter bin]]Matter bin || [[File:advanced matter bin.png|frameless|alt=Advanced Matter Bin|Advanced Matter Bin]]Advanced Matter Bin || [[File:super matter bin.png|frameless|alt=Super Matter Bin|Super Matter Bin]]Super Matter Bin || [[File:bluespace matter bin-0-0.gif|frameless|alt=Bluespace Matter Bin|Bluespace Matter Bin]]Bluespace Matter Bin
+|-
+| power cells <ref group="footnotes">While other parts are used accross various type of machines, only the power storage machines (SMES, Substation, APC) benefit from power cell upgrades currently</ref> || [[File:power cell small.png|frameless|alt=small-capacity power cells|small-capacity power cells]]small-capacity power cells <br/> [[File:Power_cell_potato.png|frameless|alt=potato battery|potato battery]]potato battery || [[File:Power cell medium.png|frameless|alt=medium-capacity power cells|medium-capacity power cells]]medium-capacity power cells || [[File:Power cell high.png|frameless|alt=high-capacity power cells|high-capacity power cells]]high-capacity power cells <br/> [[File:Power cell microreactor.png|frameless|alt=microreactor power cells|microreactor power cells]]microreactor power cells || [[File:Power cell hyper.png|frameless|alt=hyper-capacity power cells|hyper-capacity power cells]]hyper-capacity power cells <br/> [[File:Power cell antique.png|frameless|alt=antique prototype power cells|antique prototype power cells]]antique prototype power cells
+|}
+
+===Things that look like upgradable components but aren't===
+
+Beakers can be used interchangeably (small beaker, large beaker, cryostatis beaker, bluespace beaker) in the construction of several machines, such as techfabs.
+The type of beaker used doesn't appear to cause a difference in the amount of lube / glue a given lathe can hold, not in other machines tested so far.
+
+===Flatpacking===
+A flatpacked machine is always deployed with tier 1 components, but can be upgraded after deployment.
+
+===Acquiring components===
+Tier 1 components are available at the Autolathe, Engineering Techfab, some tool vendors
+
+Tier 2 and 3 components are obtained through science (research, then print at the protolathe), engineering techfab, salvaging, expeditions, and other activities.
+
+Tier 4 components are not available through science, and are only found through expeditions, rare salvage, and other activities.
+
+==Machine upgrade process==
+
+Machines which use capacitors, manipulators, matter bins or batteries as part of their construction sequence can be upgraded by removing the current parts and replacing them with higher tier parts.
+For most machines, a Rapid Parts Exchange Device (RPED) can be used to insert the upgraded machine parts and remove the obsolete ones.
+Some machines may require deconstruction and reconstruction with the new parts.
+When building a new machine from scratch, you can simply use the upgraded parts during the construction sequence.
+
+===Manual machine upgrade===
+To upgrade a machine manually, you need to deconstruct it until the machine board and components pops out.
+For most machines, the tool sequence is:
+* screwdriver (opens the maintenance panel)
+* crowbar (puts the machine into the "construction finished" state
+* crowbar (removes the board and components)
+At this point, you should have a completed machine frame (with wires), a machine board, and a pile of other components.
+* Insert the machine circuit board
+* Insert the new upgraded components (Capacitors, Manipulators, matter bins, batteries) and non-upgradable components (beakers, cables, steel, glass, etc... according to the circuits board's requirements) until you receive the "construction completed"  message
+* Screwdriver to finalize construction
+
+===RPED upgrades===
+A Rapid Parts Exchange Device (RPED) can be used to upgrade a machine without deconstructing it.
+The RPED acts as a container for machine parts, and as a tool to replace them.
+While holding a RPED, click the ground to collect all nearby machine parts.
+
+For most machines, the upgrade sequence is:
+* screwdriver (opens the maintenance panel)
+* Use RPED on target machine
+* screwdriver (closes the maintenance panel)
+
+Some machines, such as gyroscopes or thrusters do not have a maintenance panel, and can be upgraded without additional requirements.
+Some machines, such as cooking ranges and reagent grinders, need to be crowbared into their deconstructed state before the RPED can be applied, then screwdrivered back to their finished state.
+
+For each machine part used in the target machine, if the RPED contains a part of same type and higher rating, it will extract the old part and replace it with the new one.
+The old part is stored in the RPED. If the RPED is full, the part is left on top of the upgraded machine.
+
+==Upgradable machines==
+
+A machine which displays the upgrade symbol on its inspect description can be upgraded.
+The effect of upgrades depends on its function. For example, production machines usually increase material efficiency and time efficiency with component tiers. 
+
+[[File:Autolathe-inspect-upgrade-highlight.png|frameless|center|alt=The upgrades icon on the inspect description panel of a machine (autolathe)|The upgrades icon on the inspect description panel of a machine (autolathe)]]
+
+Clicking the icon will bring up the upgrade details of the machine
+
+[[File:Autolathe-inspect-upgrade-detail.png|frameless|center|alt=Machine's upgrade details panel|Machine's upgrade details panel]]
+
+=== List of upgradable machines per component types ===
+
+The values listed below assume that you have replaced ALL instances of the same part with one of the indicated tier.
+
+Some machines can receive multiple type of upgrades, and can be found in more than one table below.
+
+The number of component of each type per machine is available in the raw list at the end of this page.
+
+==== Capacitors ====
+{| class="wikitable" style="margin: auto;"
+!style="color: var(--wiki-accent-color)" | Machine Name !!style="color: var(--wiki-accent-color)" | # of parts !!style="color: var(--wiki-accent-color)" | Effect category !!style="color: var(--wiki-accent-color)" | Tier 1 [[File:capacitor.png]]  !!style="color: var(--wiki-accent-color)" | Tier 2 [[File:Adv capacitor.png]] !!style="color: var(--wiki-accent-color)" | Tier 3 [[File:Super capacitor.png]] !!style="color: var(--wiki-accent-color)" | Tier 4 [[File:Quadratic capacitor-1-1.gif]]
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Electric Range || 4 ||rowspan="4" | Cooking time ||rowspan="2" | No effect ||rowspan="2" | Cooking time: -50% ||rowspan="2" | Cooking time: -75% ||rowspan="2" | Cooking time: -87.5% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Food-o-mat  || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| DONK CO. microwave || 1 ||rowspan="2" | Cooking time: -50% ||rowspan="2" | Cooking time: -75% ||rowspan="2" | Cooking time: -87.5% ||rowspan="2" | Cooking time: -93.75% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Syndicate electric range || 3
+|-
+| A.P.E || 2 ||rowspan="2"| Fire rate ||rowspan="2"| No effect ||rowspan="2"| Fire rate: +25% ||rowspan="2"| Fire rate: +56.25% ||rowspan="2"| Fire rate: +95.31% 
+|-
+| Emitter || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Hotplate || 2 || Heat strength ||| No effect ||| Heat strength: +50% ||| Heat strength: +125% ||| Heat strength: +237.5% 
+|-
+| Gas recycler || 1 || Minimum temperature || No effect || Minimum temperature: -5% || Minimum temperature: -9.75% || Minimum temperature: -14.26% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Anomaly synchronizer || 5 ||rowspan="7" | Power draw ||| No effect ||| power draw: -20% ||| power draw: -36% ||| power draw: -48.8% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Gyroscope || 1  ||rowspan="6" | No effect ||rowspan="6" | Power draw: -25% ||rowspan="6" | Power draw: -43.75% ||rowspan="6" | Power draw: -57.81% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Security Gyroscope || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Small Gyroscope || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Small Security Gyroscope || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Small NFSD Gyroscope || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Seed Extractor || 1
+|-
+| SMES || 1 ||rowspan="3"| Power ramp rate ||rowspan="3"| No effect ||rowspan="3"| Power ramp rate: +100% ||rowspan="3"| Power ramp rate: +200% ||rowspan="3"| Power ramp rate: +300% 
+|-
+| Advanced SMES  || 2
+|-
+| Substation  || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| D-K jr. portable generator || 2 ||rowspan="4" | Power supply ||rowspan="4" |  No effect ||rowspan="4" |  Power Supply: +25% ||rowspan="4" | Power Supply: +56.25% ||rowspan="4" | Power Supply: +95.31% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| D-K portable generator || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| P.A.C.M.A.N || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| S.U.P.E.R.P.A.C.M.A.N  || 2
+|-
+| Cargo Telepad || 2 || Teleport delay || No effect || Teleport delay: -20% || Teleport delay: -36% || Teleport delay: -48.8% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Security Thruster || 2 ||rowspan="4" |  Thrust (max speed) ||rowspan="4" | Thrust: +30% ||rowspan="4" |  Thrust: +70% ||rowspan="4" | Thrust: +110% ||rowspan="4" | Thrust: +150% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| NFSD Thruster || 3
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Small Thruster || 4
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+|| Thruster  || 3
+|}
+
+====Manipulators====
+
+{| class="wikitable" style="margin: auto;"
+!style="color: var(--wiki-accent-color)" | Machine Name !!style="color: var(--wiki-accent-color)" | # of parts  !!style="color: var(--wiki-accent-color)" | Effect category !!style="color: var(--wiki-accent-color)" | Tier 1 [[File:micro mani.png]] !!style="color: var(--wiki-accent-color)" | Tier 2 [[File:nano mani.png]] !!style="color: var(--wiki-accent-color)" | Tier 3 [[File:pico mani.png]] !!style="color: var(--wiki-accent-color)" | Tier 4 [[File:femto mani-1-1.gif]]
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Cloning pod || 2 || Cloning speed || No effect || Cloning Speed: +33% || Cloning Speed: +77.78% || Cloning Speed: +137.04% 
+|- 
+| Gas mining drill || 3 || Extraction speed (gas) || No effect || Extraction rate: +20% || Extraction rate: +44% || Extraction rate: +72.8% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Lipid extractor || 1 || Extraction speed (meat) || No effect || Extraction rate: +100% || Extraction rate: +200% || Extraction rate: +300% 
+|-
+| Gas recycler || 1 || Minimum pressure || No effect || Minimum pressure: -20% || Minimum pressure: -36% || Minimum pressure: -48.8% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Industrial Reagent Grinder || 3 || Processing rate || No effect || Process rate: +50% || Process rate: +125% || Process rate: +237.5% 
+|-
+| Seed Extractor || 2 || Seed yield || No effect || Seed yield: +50% || Seed yield: +125% || Seed yield: +237.5% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| NFSD Techfab || 2 ||rowspan="19" | Crafting speed ||rowspan="19" | No effect ||rowspan="19" | Speed: +100% ||rowspan="19" | Speed: +300% ||rowspan="19" | Speed: +700% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Ammo Techfab || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Autolathe || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Circuit Imprinter || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Engineering Techfab  || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Exosuit fabricator || 3
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| McService Techfab || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Medical Techfab || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Mercenary Techfab || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Ore Processor || 3
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Protolathe || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Salvage Techfab || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Scrap Processor || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Service Techfab || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Sheet-meister 2000 || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Staff uniform printer || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Uniform printer || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Pirate Stitcher || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Industrial Ore Processor || 3
+|- 
+| Biomass reclaimer || 1 || Crafting speed || No effect || Speed: +35% || Speed: +82.25% || Speed: +95.31% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Hacked mercenary techfab <ref group="footnotes">The hacked mercenary techfab starts with a negative speed modifier compared to its parent machine. Upgrading its manipulators increases its crafting speed compared to its non-upgraded (tier 1) state, even though the upgrade text indicates a negative number in tier 2</ref> || 2 || Crafting speed || Speed: -66.7% || Speed: -33.33% || Speed: +33% || Speed: +166.67% 
+|- 
+| Gyroscope || 2 ||rowspan="5"| Thrust strength (angular acceleration) ||rowspan="5"| No effect ||rowspan="5"| Thrust strength: +25% ||rowspan="5"| Thrust strength: +50% ||rowspan="5"| Thrust strength: +75% 
+|-
+| Security Gyroscope || 2
+|-
+| Small Gyroscope || 2
+|-
+| Small Security Gyroscope || 2
+|- 
+| Small NFSD Gyroscope || 2
+|-  style="background-color: var(--wiki-content-background-color--secondary);"
+| Portable scrubber || 2 || Transfer rate || No effect || Transfer rate: +40% || Transfer rate: +96% || Transfer rate: +174.4% 
+|-
+| Reagent grinder <ref group="footnotes">In addition to the functional benefit of a faster grind cycle, upgrading a reagent grinder's manipulators will change the pitch of the grinding sound due to being played at high speed.</ref> || 2 || Work time reduction || No effect || Work time: -40% || Work time: -64% || Work time: -78.4% 
+|}
+
+====Matter bins====
+
+{| class="wikitable" style="margin: auto;"
+!style="color: var(--wiki-accent-color)" | Machine Name !!style="color: var(--wiki-accent-color)" | # of parts  !!style="color: var(--wiki-accent-color)" | Effect category !!style="color: var(--wiki-accent-color)" | Tier 1 [[File:matter bin.png]] !!style="color: var(--wiki-accent-color)" | Tier 2 [[File:advanced matter bin.png]] !!style="color: var(--wiki-accent-color)" | Tier 3 [[File:super matter bin.png]] !!style="color: var(--wiki-accent-color)" | Tier 4 [[File:bluespace matter bin-0-0.gif]]
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Cloning pod || 2 || Reduced biomass requirements || No effect || Biomass requirement: -15% || Biomass requirement: -27.75% || Biomass requirement: -38.59% 
+|-
+| Biomass reclaimer || 2 || Additional yield || No effect || biomass yield: +25% || biomass yield: +56.25% || biomass yield: +146.04% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Deep fryer || 1 || More frying slots || No effect (4 frying slots) || Frying slots: +4 (8 slots) || Frying slots: +8 (12 slots) || Frying slots: +12 (16 slots) 
+|-
+| Booze Dispenser || 1 || rowspan="4" | More jug slots || rowspan="4" | No effect || rowspan="4" | Jug slots: +5 || rowspan="4" | Jug slots: +10 || rowspan="4" | Jug slots: +15 
+|-
+| Chemical Dispenser || 1
+|-
+| Condiments dispenser || 1
+|-
+| Soda Dispenser || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| NFSD Techfab || 2 || rowspan="18" | Reduced material use || rowspan="18" | No effect || rowspan="18" | Material Use: -15% || rowspan="18" | Material Use: -27.75% || rowspan="18" | Material Use: -38.59% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Ammo Techfab  || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Biocube fabricator || 4 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Autolathe  || 3
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Circuit Imprinter || 1 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Engineering Techfab  || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Exosuit fabricator || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| McService Techfab || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Medical Techfab || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Mercenary Techfab || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Ore Processor || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Protolathe  || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Salvage Techfab  || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Scrap Processor   || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Service Techfab  || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Sheet-meister 2000  || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Staff uniform printer  || 1
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Pirate Stitcher  || 1
+|-
+| Industrial Ore Processor || 1 || Reduced material use || Material Use: -25% || Material Use: -36.25% || Material Use: -45.81% || Material Use: -53.94% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Hacked mercenary techfab || 2 || rowspan="4" | Reduced material use || rowspan="4" | Material Use: -50% || rowspan="4" | Material Use: -57.5% || rowspan="4" | Material Use: -63.87% || rowspan="4" | Material Use: -69.29% 
+|-
+| Hyper convection Autolathe || 3
+|-
+| Hyper convection Protolathe || 2
+|-
+| Hyper convection circuit imprinter  || 2
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Portable scrubber || 1 || higher max pressure || No effect || Max pressure: +50% || Max pressure: +125% || Max pressure: +237.5% 
+|-
+| Stasis bed || 1 || Slower metabolism || No effect || Stasis effect: +100% || Stasis effect: +200% || Stasis effect: +300% 
+|- style="background-color: var(--wiki-content-background-color--secondary);"
+| Reagent grinder || 1 || Additional grinding slots || No effect || Storage: +4 slots || Storage: +8 slots || Storage: +12 slots 
+|}
+
+=== List of non-upgradable machines which use upgradable components ===
+
+Ship guns appear to be upgradable, but do not seem to have any change in their states or variables after upgrades. In addition, they are out-of-scope for most players, therefore are not listed.  
+
+The following machines are built using upgradable components, but do not benefit mechanically from being created with higher tier parts.
+* ChemMaster 4000
+* Flatpacker 1001
+* J.R.P.A.C.M.A.N
+* PTK-1500e "Matter Dematerializer"
+* Artifact Analyzer
+* Artifact Crusher
+* Cage recharger
+* Cell recharger
+* Tabletop centrifuge
+* Condenser
+* Cyborg recharging station
+* Electric grill
+* Electrolysis unit
+* Freezer (gas freezer)
+* Heater (gas heater)
+* Hellfire Freezer (gas freezer)
+* Hellfire Heater (gas heater)
+* Bluespace Holopad
+* Mail teleporter
+* Material Silo
+* Mini gravity generator
+* Mini station anchor
+* Portable pump
+* Recharger
+* Salvage magnet
+* Space heater
+* Station anchor
+* Turbo recharger
+
+special cases:
+* Anomaly Vessel
+* Experimental Anomaly Vessel
+while they have the upgrade icon, it is only used to indicate that the experimental version is 100% faster. They cannot be upgraded with parts.
+
+*Mobile EMP generator
+While it has the upgrade icon, it is only used to show its use: 100m range, 1000 Kj absorbtion, 60s device deactivation. It cannot be upgraded with parts.
+
+*Shredder
+While it has the upgrade icon, and list process rate as upgradable, it isn't built with manipulators and cannot be upgraded.
+
+*Biogenerator
+The biogenerator used to accept upgrades using matter bins. Matter bins are no longer part of the construction recipe for the biogenerator. As a result, the biogenerator can no longer be upgraded.
+
+=== Raw data as of july 2025 ===
+The following section is collapsed by default as it was the raw dataset used for this article.
+This will not be maintained. Accurate information should be sought in the article above.
+
+{| class="mw-collapsible mw-collapsed wikitable"
+! Machine name !! Upgradable parts !! Tier 1 effect !! Tier 2 effect !! Tier 3 effect !! Tier 4 effect || Notes
+|-
+| A.P.E || 2x capacitors || No effect || Fire rate: +25% || Fire rate: +56.25% || Fire rate: +95.31% || -
+|-
+| ChemMaster 4000 || 1x capacitor || No effect || No known effect || No known effect || No known effect || -
+|-
+| D-K jr. portable generator || 2x capacitors || No effect || Power Supply: +25% || Power Supply: +56.25% || Power Supply: +95.31% || -
+|-
+| D-K portable generator || 2x capacitors || No effect || Power Supply: +25% || Power Supply: +56.25% || Power Supply: +95.31% || -
+|-
+| Flatpacker 1001 || 2x manipulators, 1x matter bin || No effect || No known effect || No known effect || No known effect || -
+|-
+| J.R.P.A.C.M.A.N || 1x capacitor || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| NFSD Techfab || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 2x matter bins || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+| NFSD Thruster || 3x capacitors || Thrust: +30% || Thrust: +70% || Thrust: +110% || Thrust: +150% || -
+|-
+| P.A.C.M.A.N || 1x capacitor || No effect || Power Supply: +25% || Power Supply: +56.25% || Power Supply: +95.31% || -
+|-
+| PTK-1500e "Matter Dematerializer" || 2x Matter Bins, 3x manipulators || No effect || No known effect || No known effect || No known effect || -
+|-
+| S.U.P.E.R.P.A.C.M.A.N || 2x capacitor || No effect || Power Supply: +25% || Power Supply: +56.25% || Power Supply: +95.31% || -
+|-
+|rowspan="2"| SMES || 1x capacitor || No effect || Power ramp rate: +100% || Power ramp rate: +200% || Power ramp rate: +300% || -
+|-
+| 4x power cells || No effect || Max charge: +100% || Max charge: +300% || Max charge: +700% || -
+|-
+|rowspan="2"| Advanced SMES || 2x capacitor || No effect || Power ramp rate: +100% || Power ramp rate: +200% || Power ramp rate: +300% || -
+|-
+| 8x power cells || No effect || Max charge: +100% || Max charge: +300% || Max charge: +700% || -
+|-
+|rowspan="2"| Ammo Techfab || 1x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 1x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|rowspan="2"| Anomaly synchronizer || 2x manipulators || No effect || No known effect || No known effect || No known effect || -
+|-
+| 5x capacitors || No effect || power draw: -20% || power draw: -36% || power draw: -48.8% || -
+|-
+| Anomaly Vessel || 3x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+|Experimental Anomaly Vessel || 3x capacitors || Point output: +100% || No known effect || No known effect || No known effect || -
+|-
+| Artifact Analyzer || 3x manipulators, 1x capacitor || No effect || No known effect || No known effect || No known effect || -
+|-
+| Artifact Crusher || 2x manipulators || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Biocube fabricator || 4x matter bins || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+| no relevant component || No effect || Speed: not upgraded || Speed: not upgraded  || Speed: not upgraded || -
+|-
+|rowspan="2"| Biogenerator || 2x matter bins || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+| no relevant component || No effect || Speed: not upgraded || Speed: not upgraded  || Speed: not upgraded || -
+|-
+|rowspan="2"| Biomass reclaimer || 2x matter bins || No effect || biomass yield: +25% || biomass yield: +56.25% || biomass yield: +146.04% || -
+|-
+| 1x manipulator || No effect || Speed: +35% || Speed: +82.25% || Speed: +95.31% || -
+|-
+|rowspan="2"| Autolathe || 1x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 3x matter bins || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+| Booze Dispenser || 1x matter bin || No effect || Jug slots: +5 || Jug slots: +10 || Jug slots: +15 || -
+|-
+| Cage recharger || 4x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| Cargo Telepad || 2x capacitors || No effect || Teleport delay: -20% || Teleport delay: -36% || Teleport delay: -48.8% || -
+|-
+| Cell recharger || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| Tabletop centrifuge || 1x manipulator || No effect || No known effect || No known effect || No known effect || -
+|-
+| Chemical Dispenser || 1x matter bin || No effect || Jug slots: +5 || Jug slots: +10 || Jug slots: +15 || -
+|-
+|rowspan="2"| Circuit Imprinter || 1x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 1x matter bins || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|rowspan="2"| Cloning pod || 2x manipulator || No effect || Cloning Speed: +33% || Cloning Speed: +77.78% || Cloning Speed: +137.04% || -
+|-
+| 2x matter bins || No effect || Biomass requirement: -15% || Biomass requirement: -27.75% || Biomass requirement: -38.59% || -
+|-
+| Condenser || 1x matter in || No effect || No known effect || No known effect || No known effect || -
+|-
+| Condiments dispenser || 1x matter bin || No effect || Jug slots: +5 || Jug slots: +10 || Jug slots: +15 || -
+|-
+|rowspan="3"| Circuit Imprinter || 1x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 1x capacitor || No effect || No known effect || No known effect || No known effect || -
+|-
+| no relevant component || No effect || Speed: not upgraded || Speed: not upgraded  || Speed: not upgraded || -
+|-
+| Cyborg recharging station || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Deep fryer || 1x matter bin || No effect (4 frying slots) || Frying slots: +4 (8 slots) || Frying slots: +8 (12 slots) || Frying slots: +12 (16 slots) ||rowspan="2"| Crowbar before RPED
+|-
+| 1x capacitor || No effect || No known effect || No known effect || No known effect
+|-
+| DONK CO. microwave || 1x capacitors || Cooking time: -50% || Cooking time: -75% || Cooking time: -87.5% || Cooking time: -93.75% || Crowbar before RPED
+|-
+| Electric grill || 4x capacitors || No effect || No known effect || No known effect || No known effect || Crowbar before RPED
+|-
+| Electric Range || 4x capacitors || No effect || Cooking time: -50% || Cooking time: -75% || Cooking time: -87.5% || Crowbar before RPED
+|-
+| Electrolysis unit || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| Emitter || 2x capacitors || No effect || Fire rate: +25% || Fire rate: +56.25% || Fire rate: +95.31% || -
+|-
+|rowspan="2"| Engineering Techfab || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 2x matter bins || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|rowspan="2"| Exosuit fabricator || 3x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 1x matter bins || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+| Food-o-mat || 1x capacitors || No effect || Cooking time: -50% || Cooking time: -75% || Cooking time: -87.5% || -
+|-
+| Freezer (gas freezer) || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| Gas mining drill || 3x Manipulators || No effect || Extraction rate: +20% || Extraction rate: +44% || Extraction rate: +72.8% || -
+|-
+|rowspan="2"| Gas recycler || 1x manipulator || No effect || Minimum pressure: -20% || Minimum pressure: -36% || Minimum pressure: -48.8% || -
+|-
+| 1x capacitor || No effect || Minimum temperature: -5% || Minimum temperature: -9.75% || Minimum temperature: -14.26% || -
+|-
+|rowspan="2"| Gyroscope || 2x manipulator || No effect || Thrust strength: +25% || Thrust strength: +50% || Thrust strength: +75% || -
+|-
+| 1x capacitor || No effect || Power draw: -25% || Power draw: -43.75% || Power draw: -57.81% || -
+|-
+|rowspan="2"| Hacked mercenary techfab || 2x manipulator || Speed: -66.7% || Speed: -33.33% || Speed: +33% || Speed: +166.67% || -
+|-
+| 2x matter bins || Material Use: -50% || Material Use: -57.5% || Material Use: -63.87% || Material Use: -69.29% || -
+|-
+|rowspan="2"| Heater (gas heater) || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| 2x matter bins || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Hellfire Freezer (gas freezer) || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| 2x matter bins || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Hellfire Heater (gas heater) || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| 2x matter bins || No effect || No known effect || No known effect || No known effect || -
+|-
+| Bluespace Holopad || 4x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| Hotplate || 2x capacitors || No effect || Heat strength: +50%|| Heat strength: +125% || Heat strength: +237.5% || -
+|-
+|rowspan="2"| Hyper convection Autolathe || no relevant component || Speed: -66.67% || No known effect || No known effect || No known effect || -
+|-
+| 3x matter bins || Material Use: -50% || Material Use: -57.5% || Material Use: -63.87% || Material Use: -69.29% || -
+|-
+|rowspan="2"| Hyper convection Protolathe || no relevant component || Speed: -66.67% || No known effect || No known effect || No known effect || -
+|-
+| 2x matter bins || Material Use: -50% || Material Use: -57.5% || Material Use: -63.87% || Material Use: -69.29% || -
+|-
+|rowspan="2"| Hyper convection circuit imprinter || no relevant component || Speed: -66.67% || No known effect || No known effect || No known effect || -
+|-
+| 2x matter bins || Material Use: -50% || Material Use: -57.5% || Material Use: -63.87% || Material Use: -69.29% || -
+|-
+|rowspan="2"| Industrial Ore Processor || 3x manipulators || Speed: +100% || Speed: +300% || Speed: +700% || Speed: +1500% ||rowspan="2"| crowbar before RPED
+|-
+| 1x matter bins || Material Use: -25% || Material Use: -36.25% || Material Use: -45.81% || Material Use: -53.94% 
+|-
+|rowspan="2"| Industrial Reagent Grinder || 3x manipulators || No effect|| Process rate: +50% || Process rate: +125% || Process rate: +237.5% || -
+|-
+| 1x matter bins || No effect || No known effect || No known effect || No known effect || -
+|-
+| Lipid extractor || 1x manipulator || No effect || Extraction rate: +100% || Extraction rate: +200% || Extraction rate: +300% || -
+|-
+| Mail teleporter || 2x Capacitor || No effect || ??? || ??? || ??? || Unable to construct or upgrade, cannot insert capacitors
+|-
+| Material reclaimer || 2x manipulators || No effect || Process rate: +50% || Process rate: +125% || Process rate: +237.5% || CAUTION: unpower before unscrewing
+|-
+| Material Silo || 4x Matter bins | No effect || ??? || ??? || ??? || Unable to construct or upgrade, cannot insert matter bins
+|-
+|rowspan="2"| McService Techfab || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 2x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+| Medical assembler || 3x capacitors | No effect || Cook time: -50% || Cook time: -75% || Cook time: -87.5% || Crowbar before RPED
+|-
+| Medical scanner || 1x capacitors | No effect || Cloning fail chance: -25% || Cloning fail chance: -43.75% || Cloning fail chance: -57.81% || -
+|-
+|rowspan="2"| Medical Techfab || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 2x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|rowspan="2"| Mercenary Techfab || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 2x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+| Microwave || 1x capacitors | No effect || Cook time: -50% || Cook time: -75% || Cook time: -87.5% || Crowbar before RPED
+|-
+|rowspan="2"| Mini gravity generator || 4x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| 3x matter bin || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Mini station anchor || 4x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| 3x matter bin || No effect || No known effect || No known effect || No known effect || -
+|-
+| Mobile EMP generator || 4x capacitors || 100m range, 1000 Kj absorbtion, 60s device deactivation || No known effect || No known effect || No known effect || cannot open panel
+|-
+|rowspan="2"| Ore Processor || 3x manipulators || No effect || Speed: +100% || Speed: +300% || Speed: +700% ||rowspan="2"| crowbar before RPED
+|-
+| 1x matter bins || No effect  || Material Use: -15% || Material Use: -27.5% || Material Use: -38.59% 
+|-
+| Portable pump || 2x manipulators || No effect  || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Portable scrubber || 2x manipulators || No effect || Transfer rate: +40% || Transfer rate: +96% || Transfer rate: +174.4% || -
+|-
+| 1x matter bins || No effect  || Max pressure: +50% || Max pressure: +125% || Max pressure: +237.5% || -
+|-
+|rowspan="2"| Protolathe || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 2x matter bins || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|rowspan="2"| Reagent ginder || 2x manipulator || No effect || Work time: -40% || Work time: -64% || Work time: -78.4% |rowspan="2"|| Can be RPED directly
+|-
+| 2x matter bins || No effect || Storage: +4 slots || Storage: +8 slots || Storage: +12 slots
+|-
+| Recharger || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| Salvage Magnet || 4x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Salvage Techfab || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 2x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|rowspan="2"| Scrap Processor || 2x manipulators || No effect || Speed: +100% || Speed: +300% || Speed: +700% ||rowspan="2"| crowbar before RPED
+|-
+| 2x matter bins || No effect  || Material Use: -15% || Material Use: -27.5% || Material Use: -38.59% 
+|-
+|rowspan="2"| Security Gyroscope || 2x manipulator || No effect || Thrust strength: +25% || Thrust strength: +50% || Thrust strength: +75% || -
+|-
+| 1x capacitor || No effect || Power draw: -25% || Power draw: -43.75% || Power draw: -57.81% || -
+|-
+| Security Thruster || 2x capacitors || Thrust strength: +30% || Thrust strength: +70% || Thrust strength: +110% || Thrust strength: +150% || -
+|-
+|rowspan="2"| Seed Extractor || 2x manipulator || No effect || Seed yield: +50% || Seed yield: +125% || Seed yield: +237.5% || -
+|-
+| 1x capacitor || No effect || Power draw: -25% || Power draw: -43.75% || Power draw: -57.81% || -
+|-
+|rowspan="2"| Service Techfab || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 2x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|rowspan="2"| Sheet-meister 2000 || 1x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 1x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|rowspan="2"| Shredder || 1x matter bin || No effect || No known effect || No known effect || No known effect || -
+|-
+| no relevant component  || No effect || Process rate: ??? || Process rate: ??? || Process rate: ??? || -
+|-
+|rowspan="2"| Small Gyroscope || 2x manipulator || No effect || Thrust strength: +25% || Thrust strength: +50% || Thrust strength: +75% || -
+|-
+| 1x capacitor || No effect || Power draw: -25% || Power draw: -43.75% || Power draw: -57.81% || -
+|-
+|rowspan="2"| Small Security Gyroscope || 2x manipulator || No effect || Thrust strength: +25% || Thrust strength: +50% || Thrust strength: +75% || -
+|-
+| 1x capacitor || No effect || Power draw: -25% || Power draw: -43.75% || Power draw: -57.81% || -
+|-
+|rowspan="2"| Small NFSD Gyroscope || 2x manipulator || No effect || Thrust strength: +25% || Thrust strength: +50% || Thrust strength: +75% || -
+|-
+| 1x capacitor || No effect || Power draw: -25% || Power draw: -43.75% || Power draw: -57.81% || -
+|-
+| Small Thruster || 4x capacitors || Thrust: +30% || Thrust: +70% || Thrust: +110% || Thrust: +150% || -
+|-
+| Soda Dispenser || 1x matter bin || No effect || Jug slots: +5 || Jug slots: +10 || Jug slots: +15 || -
+|-
+|rowspan="2"| Space heater || 1x matter bin || No effect || No known effect || No known effect || No known effect || -
+|-
+| 2x capacitor || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Staff uniform printer || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 1x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+| Stasis bed || 1x matter bin || No effect || Stasis effect: +100% || Stasis effect: +200%  || Stasis effect: +300%  || -
+|-
+|rowspan="2"| Station anchor || 4x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+| 3x matter bin || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Substation || 1x capacitor || No effect || Power ramp rate: +100% || Power ramp rate: +200% || Power ramp rate: +300% || -
+|-
+| 4x power cells || No effect || Max charge: +100% || Max charge: +300% || Max charge: +700% || -
+|-
+| DONK CO. Electric range (syndicate electric range) || 3x capacitors || Cooking time: -50% || Cooking time: -75% || Cooking time: -87.5% || Cooking time: -93.75% || Crowbar before RPED
+|-
+| Thruster || 3x capacitors || Thrust: +30% || Thrust: +70% || Thrust: +110% || Thrust: +150% || -
+|-
+| Turbo recharger || 2x capacitors || No effect || No known effect || No known effect || No known effect || -
+|-
+|rowspan="2"| Uniform printer || 2x manipulator || No effect || Speed: +100% || Speed: +300% || Speed: +700% || -
+|-
+| 1x matter bin || No effect || Material Use: -15% || Material Use: -27.75% || Material Use: -38.59% || -
+|-
+|}
+
+==Notes==
+<references group="footnotes" />

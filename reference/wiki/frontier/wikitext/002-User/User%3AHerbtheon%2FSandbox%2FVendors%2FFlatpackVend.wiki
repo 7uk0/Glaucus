@@ -1,0 +1,78 @@
+<!-- Requires Images -->
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost
+|-
+| [[File:Placeholder.png|50px]] || Autolathe Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Recharger Flatpack || $1,375
+|-
+| [[File:Placeholder.png|50px]] || Borg Charger Flatpack || $1,375
+|-
+| [[File:Placeholder.png|50px]] || Bluespace Holopad Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Ore Processor Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Material Reclaimer Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Scrap Processor Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || PTK-1500e "Matter Dematerializer" Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Cutter Machine Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Withdraw Only ATM Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Television Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Material Silo Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Flatpacker 1001 Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Exosuit Fabricator Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Circuit Imprinter Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Freezer Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || J.R.P.A.C.M.A.N. Portable Generator Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || P.A.C.M.A.N Portable Generator Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || S.U.P.E.R.P.A.C.M.A.N Portable Generator Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Solar Assembly Flatpack || $625
+|-
+| [[File:Placeholder.png|50px]] || Solar Control Computer Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Mini Gravity Generator Flatpack || $3,750
+|-
+| [[File:Placeholder.png|50px]] || Thruster Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Gyroscope Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Small Gyroscope Flatpack || $1,375
+|-
+| [[File:Placeholder.png|50px]] || Small Thruster Flatpack || $1,375
+|-
+| [[File:Placeholder.png|50px]] || Space Heater Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Airlock Flatpack || $2,375
+|-
+| [[File:Placeholder.png|50px]] || Glass Airlock Flatpack || $2,375
+|-
+| [[File:Placeholder.png|50px]] || Docking Airlock Flatpack || $2,375
+|-
+| [[File:Placeholder.png|50px]] || Docking Glass Airlock Flatpack || $2,375
+|-
+| [[File:Placeholder.png|50px]] || Artifact Analyzer Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Research and Development Server || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Blueprint Lithograph Flatpack || $6,250
+|-
+| [[File:Placeholder.png|50px]] || Grounding Rod Flatpack || $6,250
+|}
+</div>
+</includeonly>

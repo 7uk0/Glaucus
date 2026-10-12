@@ -1,0 +1,303 @@
+once you've successfully pulled your copy of frontier station using the pins inside the mapping-general discord channel, you'll need to know how to properly open it
+
+you'll need to run the server first, you can do this in many ways:
+
+
+
+== How to Run the server and client ==
+
+
+
+=== Using Windows Powershell/CMD: ===
+open the frontier-station-14 folder, then right click inside it without selecting anything in particular, then click "open in terminal", you might need to press the show more options button.
+
+once you do type in <code>dotnet run -c Release --project Content.Server</code> into the terminal, then wait until "ready" pops up, once it does, open the game launcher from steam, then click on "Direct connect to server" then type in "localhost", you've successfully entered the lobby window! read the rest of the instructions in the below section
+
+
+
+=== Using an IDE like VS code: ===
+open the frontier-station-14 folder then right click inside it without selecting anything in particular, you might need to press the show more options button but you'll see a "open with (IDE name)" as one of the options, once you do that you'll be able to edit the game files much easier, 
+
+and for our purposes you'll be able to run the server/client build in release mode much easier, just go to the run and debug tab (might be different name for your IDE) and look for Server/Client (release). 
+
+once the IDE finishes loading it you'll get a window with a username field, server adress, direct connect, options, quit, and changelog, make sure the server adress is "localhost" and press direct connect, you've successfully entered the lobby window! read the rest of the instructions in the below section
+
+
+
+== what to do from the lobby window: ==
+join as observer, once you load in you'll see 3 new admin menus, you'll use the first 2, open the "admin menu" on the "admin tab" then click on admin ghost, this is essential as it's what allows you to be able to interact with a uninitialized map.
+
+once you do you'll need to type in <code>mapping (mapid) /[path to ship file]</code> where mapid is any number that isn't already used and the / is the path to the ship file (you can use 100 if you're unsure, it's never used).
+<code>/Maps/_NF/Shuttles/</code> for ships already added to frontier, and for ships you're saving into the <code>frontier-station-14/bin/Content.Server/data</code> path, 
+if you don't add any ship file, then you'll be in a blank space with nothing in it!
+
+
+
+== List of <big>ESSENTIAL</big> Commands: ==
+
+
+
+=== <code>mapping (mapid) [/path/to/shuttle]</code> ===
+creates a blank uninitialized map, makes you an admin ghost, then teleports you to it.
+you can put in the path to shuttle if you want or not, if it's blank then the map will be empty and you can just use the loadgrid command to load a ship in
+
+Examples:
+* <code>mapping 100</code> : it first makes you an admin ghost if you aren't already, then it (sometimes it's rather glitchy and doesn't) runs the mappingclientsidesetup command, then teleports you to map 100
+* <code>mapping 100 /Maps/_NF/Shuttles/surveyor.yml</code> : it first makes you an admin ghost if you aren't already, then it (sometimes it's rather glitchy and doesn't) runs the mappingclientsidesetup command, then teleports you to map 100 then it loads the surveyor shuttle into the map
+* <code>mapping 100 /test.yml</code> : it first makes you an admin ghost if you aren't already, then it (sometimes it's rather glitchy and doesn't) runs the mappingclientsidesetup command, then teleports you to map 100 then loads the ship using the file test.yml from <code>frontier-station-14/bin/Content.Server/data</code> into the map
+
+
+
+=== <code>loadgrid (mapid) /path/to/shuttle x-position y-position</code> ===
+allows you to load a grid onto any map, even an uninitialized mapping map! but without going through the shipyard console system it'll end up without the drive/cruise/park settings shuttles have
+
+<code>/Maps/_NF/Shuttles/</code> for ships already added to frontier, and for ships you're saving they're in <code>frontier-station-14/bin/Content.Server/data</code>, 
+
+Examples:
+* <code>loadgrid 100 /Maps/_NF/Shuttles/surveyor.yml</code> : loads the surveyor shuttle into the map 100, if the map doesn't exist it makes it then loads the shuttle
+* <code>loadgrid 100 /test.yml</code> : loads the ship using the file test.yml from <code>frontier-station-14/bin/Content.Server/data</code> into the map 100, if the map doesn't exist it makes it then loads the shuttle
+
+
+
+=== <code>purchaseshuttle (stationid) /path/to/shuttle (ship atmosphere)</code> ===
+spawns a ship at the specified station, it doesn't use the standard grid id, so you'll have to search with the suggested ones, it usually has the station your on as the first suggestion.
+
+you can also open the admin menu, go to objects, then switch to Stations instead of grids to find the station ID
+
+=== <code>startround</code> === 
+this makes the game load in ASAP, bypassing the 3 minute wait time.
+
+
+
+=== <code>mappingclientsidesetup</code> ===
+this command adds a bunch of tiles/items to your actions bar, the main thing you'll use it for is deleting entities
+
+
+
+=== <code>aghost</code> ===
+this command turns you into an admin ghost without having to go through the admin menu
+
+
+
+=== <code>physics com</code> ===
+it shows the ships Centre Of Mass (com) as a large orange ball, if you see more than one then that means your Grid has split, due to how buggy mapping tools are just ctrl clicking out plating has a high chance of making some tiles that aren't connected to the main grid, please be sure to keep it on whenever you're modifying the ship's structure even a little bit
+
+=== <code>tp x y (mapid)</code> ===
+this command allows you to teleport into any x and y coordinate into any map, say you've teleported back to FO's mapid which is always 1 to buy a ship to look at as reference, to teleport back to your grid you just add it's mapid rather than FO's 
+
+
+
+=== <code>colornetwork (networkid) Pipe (#hexcode)</code> ===
+this command colors a pipe network, it needs to be Pipe with a capital P at the begining otherwise it won't work 
+to find the network id, you just right click a pipe, the number you see is the network id!
+
+it's included with other pins in the mapping general discord channel but the main colors are:  
+# #990000 for scrubber networks 
+# #0055cc for air distribution pipes 
+# #9955cc for auxilery gas networks
+
+=== <code>variantize (gridid)</code> ===
+this command adds the different variaties of tiles and adds garbage to the ship when it spawns, all ships are required to run this command before adding to the game
+
+
+
+=== <code>fixgridatmos (gridid)</code> ===
+this command fixes/adds air to the tiles of the ship , run it when you're finishing up a build and everytime you edit the ship's walls/shape
+
+
+
+=== <code>savegrid (gridid) /(shipname).yml</code> ===
+this one saves the ship grid into the <code>frontier-station-14\bin\Content.Server\data</code> path as a file, you'll need to appemd .yml to the end of the ship's name to save as a yml file
+
+
+
+=== <code>appraisegrid (gridid)</code> ===
+this one allows you to know how much is worth, you should only run it on a initialized grid!
+
+
+
+=== <code>gridtc (gridid)</code> ===
+this one counts all the tiles in the grid, is used for ship size classificiation
+
+
+
+=== <code>mapinit (mapid)</code> ===
+initializes the map whose id you used, do NOT use it before you save your ship, but it'd allow you to test the ship in an empty map, alternatively you can use the next command to test it in the Frontier map
+
+
+
+=== <code>nodevis</code> ===
+shows you the connections between the different Cables or Pipes, only works if you see them using the "show subfloor" in the admin menu
+
+== Ship Submition Guidelines ==
+these can be found on the [https://www.frontierstation14.com/ship-submission-guidelines frontier station site], you're meant to give it a very thorough read; so you're not forced to redo the shuttle with them in mind, as all ships follow them, you do have some leeway with some of them, but you'd need to ask before hand to make sure
+
+
+
+== Setting up a Ship's ID ==
+Before you can get the ship into the shipyard console, you'll need to add a ship specific ID to refer to the ship within the files, you'll need to use these 2 following commands
+
+
+
+=== <code>vv (gridid)</code> ===
+this allows you to edit the components of the ship's grid, the only thing you need to do is go to the server components tab, press "Add Component" then search for BecomesStation, once you do that, write out the next command to EDIT the ship's name!
+
+
+
+=== <code>vvwrite /entity/(gridid)/BecomesStation/Id "(shipname)"</code> ===
+this allows you to change the grid's ID properly, all you need to do is replace the gridid with the ship's, and the shipname with the ship's name that will be used as it's ID
+
+
+
+== How to add a shuttle to the shipyard console ==
+
+
+
+and if you want to figure out how to add all the needed files for it to appear in the shipyard console, then i'd recommend reading 
+
+This PR:    https://github.com/new-frontiers-14/frontier-station-14/pull/4294
+
+as reference to all the files you need to change/add, just ignore anything relating to posters as that's to allow a company logo to show within the guidebook page. 
+
+but if you want the bare minimum set up, then all you need to do is add the shuttle's .yml file in <code>frontier-station-14\Resources\Maps\_NF\Shuttles</code> -or inside a folder within this file for expedition/staff shuttles- 
+
+and add a file in <code>frontier-station-14\Resources\Prototypes\_NF\Shipyard</code>, you can open one for a shuttle of a similar archetype and use it as a template, while having the <code>  guidebookPage: Null</code>, this will make it purchusable without a guidebook entry.
+
+keep in mind, you need to have the <big>class and engine</big> match the ingame ones to the letter, otherwise the ship won't show up at all
+
+==Common Mistakes==
+
+
+
+=== Building the ship's front not facing north ===
+this one happens because people assume the ship's front is asigned by the ship's console, this isn't true however, it is the grid's north that should be the ship's front, as otherwise you'd have to rotate the ship console, which in turn rotates the camera view and the controls, you don't want to redo the whole ship after you make it!
+
+
+
+=== Not using the decal menu for decals ===
+the reason we use the specific admin decal menu rather than the magic spray painter, is that the decal menu can specifiy whether they can be cleaned away or not, while the magic spray painter's decals are all cleanable, don't want all your decals to be sweeped away!
+
+
+
+=== Using the rotation field for different decal orientations ===
+the reason why different orientations are defined rather than expecting you to use the rotation field, is because of 2 reasons:
+# it's way faster than typing in 0 90 180 manually every time
+# the decals are made to align only using the different decals, and they don't align with manual rotations
+
+
+
+=== Not testing the ship before PR ===
+running a couple test flights helps illuminate MANY mistakes you've missed! you're never trully done unless you do a run of the main task your ship was designed for
+
+
+
+=== Not using ctrl+f to find and replace all the old shuttle's name ===
+when you're copying over the shipyard entry yml folder in <code>frontier-station-14\Resources\Prototypes\_NF\Shipyard</code> be sure to use ctrl+f to find all the mentions of the old shuttle and replace them, a lot of people miss at least one mention and end up with problems while testing their shuttle, an example: [https://discord.com/channels/1123826877245694004/1128157227295985734/1475537681076191353 Our Clown shipwright Blundibus struggled too]
+
+=== Not linking the air alarms to firelocks/vents/scrubbers ===
+air alarms don't magically know what the air in the room they're in is like, they check the devices they're linked to, and close the firelocks when a warning thresholds hit
+
+
+
+=== Running in Debug Mode ===
+running in debug mode is only really intended for debuging entities and other objects that you work on <big>outside the game</big> this is mostly because Debug mode ensures that whenever any error shows up; no matter how small, it will end up crashing the entire server, and mapping tools aren't stable enough to not give out any error messages, and since mapping is done ingame via ingame tools, having it crash on you while you're mapping is a good way to waste your time!
+
+
+
+=== Using the shipyard consoles ship price ===
+the PROPER way to see a ship's value is using the appraisegrid command on a newly bought ship, because the shipyard console only shows 95% of the true shuttle's value while appraisegrid shows the true value as is.
+
+
+
+=== Using appraisegrid on an uninitialized grid ===
+this results in a far lower value as after initializing a lot of value is added from the machines/lockers/fills/etc
+
+=== Deleting your admin ghost ===
+did you know you can delete yourself? upon doing so you'll become a regular ghost, and as mentioned above only admin ghosts get simulated in uninitialized maps, that means you need to readmin ghost yourself<br>
+
+thankfully this is easy, all you need to do is teleport to an object within an initialized map using the "objects" tab in the admin menu ;Frontier Outpost works well for this, and then readmin ghost yourself using the admin menu again! you can now safely go back to the map you were building on using the tp command listed above
+
+
+
+=== Not using signal switches instead of signal buttons ===
+the regular button only has one port, which activates on a press, meaning it can only send one type of signal, this can be remedied by toggle ports in the things you're linking it with but some machines like conveyors don't have such a port......
+
+that's where signal switches come in! they have 3 ports!
+# on:     sends a signal when it's turned on
+# off:    sends a signal when it's turned off 
+# Status: sends a signal when it switches modes
+the use of signal switches can be seen within the dragoon and the surveyor, they're used for conveyors in those!
+
+
+
+=== Not using all 3 pipe layers ===
+if you use the entity spawner menu to select pipes you'll notice you can place them in all 3 layers as opposed to the pipes givven by mappingclientsidesetup, be sure to use all 3 pipe layers as otherwise the piping will be messy, keep in mind you're allowed to screwdriver vents and scrubers to lead directly into these different layer pipes
+
+
+
+=== Picking up and droping items to reposition them ===
+this isn't ideal, [https://discord.com/channels/1123826877245694004/1128157227295985734/1417465068295032832 as it saves the info about the deleted entities], so delete the entity then place another down to reposition
+
+
+
+=== using the (ghost only warp point) instead of Warp point ===
+the warp point (ship) automatically includes the ship info, while ghost only warp point doesn't.
+
+== Common Questions ==
+
+
+
+=== Can i place Items in a square? ===
+Yes, ctrl click for a square, or shift click for a line.
+(note this can be glitchy and spawn tiles as seperate grids, ALWAYS use physics com when placing tiles)
+
+=== What map is FO in? ===
+in map 1
+
+=== How does the grid/map system work? ===
+i'll keep the explanation simple for the purposes of knowing enough to map: 
+when you save a shuttle, you save it as a grid, when you use the shipyard console to purchase the ship, it turns the ship from a grid, to a map.
+
+what that means is that if you're working on map 100, and saved the ship, you can just go to map 101 and loadgrid the saved ship, the ship isn't tied to a specific map.
+
+ship files are stored as .yml files, so when you want to save your ship using the savegrid command, be sure to append .yml to the end of the ship's name!
+
+
+
+=== How to find your grid's ID and save the grid === 
+How to find your grid ID and save the grid. (section written by Arimah https://discord.com/channels/1123826877245694004/1128157227295985734/1349775296685146112 )
+# Open the debug overlay with F3.
+# Make sure your aghost is over the grid
+# Under _Attached NetEntity_, look at _Grid NEntId_
+# Put that ID in the `savegrid` command as shown.
+# DO NOT USE THE MOUSE POS DATA.
+<gallery>
+GridIDpng.png|the accompanying picture By arimah!
+</gallery>
+
+
+
+=== Where are the ship files stored? ===
+the ones you save yourself are stored at <code>frontier-station-14\bin\Content.Server\data</code>
+while the ones already within the game are in <code>frontier-station-14\Resources\Maps\_NF\Shuttles</code>
+
+
+
+=== How to add more than one Object on a wall/tile? ===
+# Place the Object down
+# Right click and select View Variables
+# Go to the Server Components Tab
+# Search for TransformCompoent and click on it
+# Look for _localPosition (NOT LocalPosition), the first value is the x coordinate, and the second is the y value
+# change it in .25 increments!
+
+this can be done for ALL entities! seen usually in buttons/lockers
+
+
+
+=== Is there an easier way to add more than one Object on a wall/tile? ===
+Yes! using the placement mode of the entity spawner you can find placement modes used by other machines, try to experiment to see what each one does and where they can be used
+<gallery>
+entity_placement_menu.png|where the dropdown is
+entity_placement_menu_dropdown.png|some options in it
+</gallery>

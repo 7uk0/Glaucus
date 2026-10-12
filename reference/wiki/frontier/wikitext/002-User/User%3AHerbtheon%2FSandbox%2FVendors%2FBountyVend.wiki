@@ -1,0 +1,123 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:PinpointerUniversal.png|50px]] || Universal Pinpointer || $1500
+|-
+| [[File:WeaponGrapplingGun.png|50px]] || Grappling Gun || $200
+|-
+| [[File:HandheldGPSBasic.png|50px]] || Global Positioning System || $350
+|-
+| [[File:JetpackMiniFilled.png|50px]] || Mini Jetpack || $950
+|-
+| [[File:NFWeaponEnergyPistolDisabler.png|50px]] || Disabler Pistol || $2500
+|-
+| [[File:Stunbaton.png|50px]] || Stun Baton || $800
+|-
+| [[File:Zipties.png|50px]] || Zipties || $90
+|-
+| [[File:Flash.png|50px]] || Flash || $400
+|-
+| [[File:ForensicScanner.png|50px]] || Forensics Scanner || $200
+|-
+| [[File:BoxForensicPad.png|50px]] || Forensics Pad Box || $100
+|-
+| [[File:LogProbeCartridge.png|50px]] || LogProbe Cartridge || $200
+|-
+| [[File:ContrabandAppraisalTool.png|50px]] || Contraband Appraisal Tool || $200
+|-
+| [[File:ClothingOuterArmorBasic.png|50px]] || Armor Vest || $300
+|-
+| [[File:NFMetalShield.png|50px]] || Metal Shield || $900
+|-
+| [[File:NFShieldBallistic.png|50px]] || Bullet Resistant Shield || $500
+|-
+| [[File:NFClothingOuterArmorReflective.png|50px]] || Basic Reflective Vest || $300
+|-
+| [[File:NFShieldReflective.png|50px]] || Reflective Shield || $500
+|-
+| [[File:ClothingHeadBandMercenary.png|50px]] || Mercenary Bandana || $100
+|-
+| [[File:ClothingHeadHatBeretMercenary.png|50px]] || Mercenary Beret || $100
+|-
+| [[File:ClothingEyesGlassesMercenary.png|50px]] || Mercenary Glasses || $100
+|-
+| [[File:ClothingUniformJumpsuitMercenary.png|50px]] || Mercenary Jumpsuit || $100
+|-
+| [[File:ClothingUniformJumpskirtMercenary.png|50px]] || Mercenary Jumpskirt || $100
+|-
+| [[File:ClothingOuterVestWebMercenary.png|50px]] || Mercenary Web Vest || $350
+|-
+| [[File:ClothingOuterEVASuitMercenary.png|50px]] || Mercenary EVA Suit || $1,500
+|-
+| [[File:ClothingBeltMercenaryWebbing.png|50px]] || Mercenary Webbing || $200
+|-
+| [[File:ClothingShoesBootsMercenary.png|50px]] || Mercenary Boots || $100
+|-
+| [[File:ClothingBackpackMercenary.png|50px]] || Mercenary Backpack || $100 || 3
+|-
+| [[File:ClothingBackpackDuffelMercenary.png|50px]] || Mercenary Duffel || $100 || 3
+|-
+| [[File:ClothingBackpackSatchelMercenary.png|50px]] || Mercenary Satchel || $100 || 3
+|-
+| [[File:ClothingBackpackMessengerMercenary.png|50px]] || Mercenary Messenger Bag || $100 || 3
+|-
+| [[File:ClothingHeadHatBeretSecurity.png|50px]] || Security Beret || $100
+|-
+| [[File:ClothingEyesGlassesSunglasses.png|50px]] || Sun Glasses || $100
+|-
+| [[File:ClothingUniformJumpsuitPrivateSec.png|50px]] || Private Security Jumpsuit || $100
+|-
+| [[File:ClothingUniformJumpskirtPrivateSec.png|50px]] || Private Security Jumpskirt || $100
+|-
+| [[File:ClothingOuterVestWebMercenaryBlack.png|50px]] || Mercenary Web Vest || $350
+|-
+| [[File:ClothingOuterEVASuitPrivateSec.png|50px]] || Private Security EVA Suit || $1,500
+|-
+| [[File:ClothingBeltSecurity.png|50px]] || Security Belt || $200
+|-
+| [[File:ClothingBeltMilitaryWebbing.png|50px]] || Chest Rig || $200
+|-
+| [[File:ClothingShoesBootsCombat.png|50px]] || Combat Boots || $100
+|-
+| [[File:ClothingBackpackDuffelPrivateSecurity.png|50px]] || Private Security Duffel || $100
+|-
+| [[File:ClothingBackpackMessengerPrivateSecurity.png|50px]] || Private Security Messenger Bag || $100
+|-
+| [[File:ClothingBackpackSecurity.png|50px]] || Security Backpack || $100
+|-
+| [[File:ClothingBackpackDuffelSecurity.png|50px]] || Security Duffel Bag || $100
+|-
+| [[File:ClothingBackpackSatchelSecurity.png|50px]] || Security Satchel || $100
+|-
+| [[File:ClothingBackpackMessengerSecurity.png|50px]] || Security Messenger Bag || $100
+|-
+| [[File:CDDogtags.png|50px]] || Dogtags || $100
+|-
+| [[File:ClothingHeadHatBH.png|50px]] || Bounty Hunter's Hat || $100
+|-
+| [[File:ClothingMaskBalaclavaBlack.png|50px]] || Black Balaclava || $3250
+|-
+| [[File:ClothingUniformJumpsuitBH.png|50px]] || Hard-worn Suit || $100
+|-
+| [[File:ClothingUniformJumpskirtBH.png|50px]] || Hard-worn Suit || $100
+|-
+| [[File:ClothingUniformJumpsuitBHGrey.png|50px]] || Noir Suit || $100
+|-
+| [[File:ClothingUniformJumpskirtBHGrey.png|50px]] || Noir Suit || $100
+|-
+| [[File:ClothingOuterCoatBHTrench.png|50px]] || Bounty Hunter's Flak Trenchcoat || $350
+|-
+| [[File:ClothingShoesBootsJack.png|50px]] || Jackboots || $100
+|-
+| [[File:ClothingNeckMantleBH.png|50px]] || Bounty Hunter's Mantle || $100
+|-
+| [[File:ClothingNeckTieBH.png|50px]] || Tie || $100
+|-
+| [[File:ClothingHeadHatDetGadget.png|50px]] || Go Go Hat || $100
+|-
+| [[File:ClothingEyesGlassesNoir.png|50px]] || Noir-tech Glasses || $100
+|}
+</div>
+</includeonly>

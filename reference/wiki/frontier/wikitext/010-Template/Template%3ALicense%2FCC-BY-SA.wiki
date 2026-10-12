@@ -1,0 +1,10 @@
+<includeonly>{{License/template
+| source = {{{source|}}}
+| type = CC-BY-SA
+| icon = [[File:CC-BY-SA.svg|x50px|link=https://creativecommons.org/licenses/by-sa/3.0/|CC-BY-SA]]
+| text = This file is under the [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike 3.0 License].
+}}</includeonly>
+<noinclude>This template currently looks like: {{License/CC-BY-SA}}
+
+See {{tl|License}} for full license documentation
+[[Category:License templates]]</noinclude>

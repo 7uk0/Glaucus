@@ -1,0 +1,10 @@
+<includeonly>{{License/template
+| source = {{{source|}}}
+| type = permission
+| icon = [[File:IN COPYRIGHT.svg|50px|link=|IN COPYRIGHT WITH PERMISSION]]
+| text = This file is copyrighted. The copyright holder has given permission for its use on wiki.gg.
+}}</includeonly>
+<noinclude>This template currently looks like: {{License/permission}}
+
+See {{tl|License}} for full license documentation
+[[Category:License templates]]</noinclude>

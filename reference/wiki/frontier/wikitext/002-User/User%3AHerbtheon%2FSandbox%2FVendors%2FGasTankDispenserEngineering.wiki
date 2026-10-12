@@ -1,0 +1,13 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Placeholder.png|50px]] || Plasma Tank || $200 || 10
+|-
+| [[File:Placeholder.png|50px]] || Nitrogen Tank || $200 || 10
+|-
+| [[File:Placeholder.png|50px]] || Oxygen Tank || $200 || 10
+|}
+</div>
+</includeonly>

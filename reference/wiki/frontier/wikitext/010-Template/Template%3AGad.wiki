@@ -1,0 +1,1 @@
+<code>Gadget-[[MediaWiki:Gadget-{{{1}}}|{{{1}}}]]</code><noinclude>[[Category:Formatting templates]]</noinclude>

@@ -1,0 +1,25 @@
+{
+	"settings": {
+		"section": "",
+		"package": false,
+		"default": true,
+		"hidden": false,
+		"supportsUrlLoad": false
+	},
+	"loadConditions": {
+		"actions": [],
+		"categories": [
+			"Pages with navboxes"
+		],
+		"namespaces": [],
+		"contentModels": [],
+		"rights": []
+	},
+	"module": {
+		"pages": [
+			"navbox.css"
+		],
+		"dependencies": [],
+		"type": "styles"
+	}
+}

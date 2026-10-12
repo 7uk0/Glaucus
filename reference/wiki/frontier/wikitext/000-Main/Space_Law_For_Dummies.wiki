@@ -1,0 +1,165 @@
+This page is intended to be a summarized document for the average contractor to help them understand and abide by [[Space Law]]. If you are a member of NFSD or Command, you are expected to know the full contents of Space Law and not just rely on this document.
+
+==What is this document?==
+This document is a basic summary of Space Law, designed for the casual observer to cover many of the basic pitfalls and misgivings when it comes to the law when it comes to the Frontier to the average contractor working with NanoTransen.
+
+While it’s a nice review for officers to read this document, they should be reading (and are expected to follow) the FULL set of Space Law, which goes into much more detail than is listed here.
+
+It should be noted that this document is not Space Law, but a convenient summary of it. Any questions of how a specific section works in more detail should be consulted from Space Law proper, and anything listed here is not legally binding. If something disagrees between this document and Space Law, Space Law takes priority.
+
+==What is law, anyways?==
+
+The Frontier might be away from the core sectors and the overbearing pressure of NanoTransen and SolGov, but that does not mean that it is a lawless wasteland. NanoTransen space (that is, everything that NT owns- which includes the entire sector and the vast majority of things inside that sector) operates under an abbreviated version of Space Law that allows for the sector to be mostly self-regulating from excessive corporate oversight, thanks to the help of an organization known as the New Frontier Sheriff’s Department.
+
+==Your friendly neighborhood law enforcement, the NFSD.==
+
+The New Frontier Sheriff’s Department (commonly referred to as the NFSD) is an organization of individuals contracted much like the rest of the sector, but instead of exploiting the resources of the Frontier Sectors or providing a service to those prospectors, they are tasked with keeping the peace and protecting the occupants from threats both within and without. They are NOT comparable to the police officers of other countries, nor are they security officers like the type that are seen in other industrialized sectors- they’re people like you, trained and paid to keep the sector safe.
+
+The NFSD possesses the power that any law enforcement and judicial officer does. They may detain individuals to keep them from leaving, search them if they suspect they might be doing or carrying something illegal, arrest individuals breaking the law and sentence them to punishments appropriate for their crimes.
+
+There’s also the security guard, who can do most things that the NFSD can do, but prioritize keeping the stations themselves safe as well as the Station Representative.
+
+==Who runs the NFSD?==
+
+The Sheriff is the position that runs the NFSD in the sector itself from a day-to-day basis. They are the highest legal authority in the sector, and have the final say in the interpretation and enforcement of space law. They can post bounties on criminals, or pardon (that is, forgive) people of their crimes, as well as write permits and making sure that the NFSD is respecting your rights. If there is no Sheriff, the Station Representative can instead do most of the things that the Sheriff can.
+
+==You have rights as a contractor.==
+
+As a contractor and not a formal employee, you are entitled to several promises from NanoTransen under the edition of Space Law that is used out here:
+* You can worship anyone you want or make your own religion, say what you want, report what news you want, peacefully assemble in protest, or reach out to NanoTrasen or Central Command for any grievances that you may have (as long as you don’t use these rights to commit crimes).
+* Officers have to have a reason and, in most cases, a warrant in order to search you. As long as you don’t perform a crime in front of them, they have to have a reason approved by the officer in charge (usually the Sheriff) in order to go through your things. If they don’t have a reason, or tell you that you’re under arrest for a crime, your privacy is protected.
+* If you DO commit a crime, your punishment will be reasonable, you’ll be treated humanely, and you won’t be forced to do any work you don’t want to do.
+* If you’re sued by someone else for a significant sum of money, you’ll be judged by a gallery of your peers.
+* If you commit a crime bad enough to where the punishment would be significant and involve punishments such as extended confinement or execution by themselves, you always have a right to argue your case.
+
+==What am I not allowed to do?==
+
+Most of the crimes on Frontier are common-sense crimes, ones that if you treat people honestly and respect their autonomy, you won't break the law. No stealing, breaking into places, damaging both other contractors or company property, hurting or threatening to hurt people, and so on. The notable stand-outs of crime that most people might not be aware of are listed below:
+
+* It’s illegal to possess or sell certain items. Examining the item and looking for the red lock on your heads up display will keep you mostly alright, but it’s not always accurate.
+* Sometimes the NFSD will declare an area to be a No Fly Zone, or NFZ- mostly to guard something that’s a danger to the sector or to protect something from being robbed. If you ignore them, you can get in trouble, so be careful!
+* If you're contracted to be a staff member of Frontier Outpost and you don’t do your job, either by ignoring Sector Command or by intentionally not doing your job as a member of Frontier Staff, you can get in varying amounts of trouble depending on what your authority is and how badly you messed up.
+* If the NFSD tell you to stop or tries to talk to you, and you run away or fight them, you’ll get in MUCH worse trouble than if you simply cooperated with them. If you run without giving them a chance to talk to you, they are allowed to stop you!
+* Obey traffic laws! We’ll talk more about those in a bit.
+
+==The Captain And His Ship==
+
+The Captain of the vessel is the one who put the money down to purchase it, and, aside from the NFSD, they have the final word on their ship concerning the law. They can bring on new crew or throw them off at will, pay them and give them authority over other crew as he sees fit. The Captain is permitted to execute people, which may sound scary, but it’s primarily to be used to protect himself and his investments from crewmembers acting in bad faith, who try to damage the ship, the operation, or attempt to injure or subvert the captain. The captain has to be able to justify their decision to the NFSD, so it’s not one that’s used lightly.
+
+If the Captain is a notable criminal and is using their position to violate Space Law, the crew are permitted and may choose to mutiny, or rebel, against him to reestablish the rule of law, turning the Captain into the NFSD if they succeed to pay for their crimes.
+
+==What about the things scuttling about that aren’t quite people?==
+
+A silicon is a cyborg, robot, or drone that is either built by or willingly joins your crew. You can repair them with welders, and, when their laws get scrambled too badly, replace the shell of the cyborg with a new one. There are also plenty of pets, familiars, companions, baby dragons, sentient carp, subcontracted scurrets, and more that work with and are considered to be companions or possessions of the contractors of the Frontier.
+
+They are treated as both property of NanoTrasen as well as your own property, meaning that they’re protected by the law. If someone damages your cyborg friend or injures your scurret buddy, they’re committing a crime that the NFSD can come to help protect you.
+
+==What’s this red lock icon on my HUD?==
+
+Certain items are considered contraband, illegal to own or possess. Contraband comes in tiers, from least to most dangerous:
+
+* '''C1''' Contraband is contraband that isn’t illegal on its own, but might get you in trouble if you use it to commit a crime. It mostly includes basic weapons.
+
+* '''C2''' Contraband is contraband that is restricted to people who have a permit for handling dangerous things, as well as NFSD or Sector Command equipment. Advanced weapons, common explosives, poisons, and advanced access permissions are all examples of C2 Contraband. In order to use C2 contraband, you have to have a permit written out and signed by either the Sheriff or, if one isn’t around, the Station Representative.
+
+* '''C3''' Contraband is contraband that’s ALWAYS illegal, whether you have a permit or not. The biggest offenders of C3 contraband are Syndicate gear, heavy weapons like cannons, and high explosives.
+
+For the most part, you can trust your heads up display when you examine an item to tell you what an object is, but it’s recommended you at least peek at the full list in Space Law itself- the HUD isn’t perfect!
+
+==I’m relatively new to working with NanoTrasen. What’s the Syndicate?==
+
+The Syndicate refers to a criminal organization composed of the underground, backroom dealings of a half-dozen different smaller companies who were shown up by the megacorporation, all come together to achieve one goal: to sabotage NanoTrasen and its affiliated personnel. Their gear and weaponry comes through the sector from time to time and is often a bit better than what is accessible to the average contractor, but it’s all highly illegal and can get you in trouble very easily.
+
+The Syndicate are well known for their sabotage and espionage operations, and have been known to, on border sectors where NanoTrasen’s reach is a bit looser, occasionally launch strike teams to destroy entire stations. However, that is not something that occurs in the Frontier- though occasionally a Syndicate battlecruiser suffers an FTL failure and ends stuck in the sector for a time, the syndies are too occupied with the corporate cold war in adjoining sectors to meaningfully influence things here. While they may pay unscrupulous individuals to run goods across the blockades to continue funding their operations, '''there are no Syndicate-sponsored agents acting under their orders on the Frontier,''' and pretending to be one will likely just get you laughed at or scorned by the sector at large.
+
+==Wait, drugs aren’t illegal?==
+
+Recreational drugs aren’t anymore- but the person providing them has to be licensed, and the person buying them has to have a signed receipt from them. If you’re looking to make them for yourself, make sure you’re licensed so you don’t get in trouble! You can get a license by talking to the '''Station Representative, Sheriff, or Director of Care'''.
+
+==The NFSD are asking to search my vessel!==
+
+While rare unless you’re doing something illegal, you will be asked by the NFSD to pull over and submit to a search from time to time. In order for them to do so, they need one of three things:
+
+* Probable cause - that is, they have to have seen you commit a crime and be able to tell you what that crime is, or they think that a crime is happening on your ship right now that they need to get inside to stop.
+* A search warrant - they got a piece of paper (that they should provide to you) that details what they think you did wrong, signed by someone in charge of the sector.
+* The Sheriff in person - sometimes they’ll ask to search your vessel personally! If they are able to give you the reason why, the NFSD is permitted to search your vehicle if directly accompanied by the Sheriff. Think of them as a walking search warrant. In exchange, they’re expected to keep the other officers in check and be the voice of reason in a situation.
+
+If they have any of these things, their search is warranted and you risk getting in trouble if you don’t allow them to search your vehicle. If they DON’T have any of those things, you’re still allowed to let them search you if you don’t mind being friendly, but if you don’t want them on your ship, you should politely, but firmly, deny them entry. If they insist on entering anyways, consider contacting the officer in charge of the operation or Central Command if you feel your rights are being violated or you are being harassed.
+
+==What about all these other ships running around?==
+
+The vast majority of ships in the sector are peaceful ships that are manned by law-abiding contractors. If the NFSD needs to pull you over, they aren’t permitted to use their tools to forcibly disable your ship without trying to reach out to you first. If they can’t reach you, or you ignore them, then you may become a ''belligerent'' vessel, which allows the NFSD to try and take you down and board you to talk to you. In both situations, talking is both required and recommended before they attempt to arrest you, even if they intend to board (and you intend to try and hold your own against them).
+
+Occasionally, a hostile vessel enters the sector, filled with people or things that have no intention of talking. They’re quite dangerous, and you should be careful when approaching one to ensure you don’t get shot, sliced, zapped, bludgeoned, bit, melted, or more.
+
+The sector also occasionally gets visitors! You’re expected to respect visitors and their autonomy, and if you visit their ship, you should abide by their rules as well as Space Law.
+
+==How am I expected to act with my vessel?==
+
+Your vessel is yours, but you’re expected to treat everyone else’s vessel with the same, if not more, respect. There’s a few rules everyone has to follow.
+
+* The NFSD will declare an area to be a No Fly Zone from time to time. If you enter the No Fly Zone, you’ll get in trouble, so be careful and pay attention!
+* If you find a vessel that you think has been abandoned, or who has personnel on it that has all fallen asleep, you have to follow the salvage procedure before you can take anything off of it. You have to declare over radio that you intend to salvage the vessel you have your eye on, and make regular attempts to contact the vessel’s owner during that time over the radio- once every five minutes or so is a good rule of thumb. If the owner shows up, their ship is protected and you should leave their belongings alone. If they don’t, then after twenty minutes, the ship is yours to do with as you please. 
+* If there are any sleeping crewmembers, make sure you leave them at either Trade Mall, Medical Dispatch, Expeditionary Lounge or Frontier Outpost! You have a responsibility to ensure that they remain safe, and you shouldn’t rob them.
+
+==A stern sounding person is yelling at me about docking procedure. What are they talking about?==
+
+That is the Station Traffic Controller, responsible for coordinating vessels arriving and departing from the busiest locations in the sector. They enforce traffic law, which can result in you accumulating fines or jail time if you treat folks disrespectfully when parking. Thankfully, traffic law is straightforwards. It all involves conversation over the Traffic channel, accessed with :d .
+
+* If you arrive at station being overseen by the Station Traffic Controller, hold around 200 meters away from the station, tell the STC which ship you are, and ask for permission to dock. You’ll be greeted and instructed on which dock to move to. If the station is busy, you might be instructed to dock in a position that you might not want, or instructed to wait in line. Don’t cut, or you could face a fine.
+* Certain devices can hide your ship signature. While they aren’t illegal to have and use, you’ll be instructed to keep your IFF visible when flying near these protected stations. If you don’t, you could face penalties, be unceremoniously removed by the NFSD, or both.
+* When you dock, don’t ram or damage the station or other shuttles.
+* You’re permitted to stay for ten minutes before you have to move on. You can ask for a time extension or docking exception from the STC if you need more time, or intend to dock for an extended period to offer a service. They may have you quickly fill out a form for such a purpose.
+* When you leave, announce your IFF and that you are leaving to the traffic controller. You do NOT need permission to leave, but you must inform them of your departure.
+
+The STC has permission to issue fines, to forcibly undock and knock away ships that break the rules, or refer particularly flagrant violations to the NFSD for criminal prosecution. If you’re issued a fine, it’s your responsibility to take it to either the Station Representative or the Sheriff, argue your case, and/or pay your fine- not doing so can result in being chased down by the NFSD.
+
+==I got arrested…==
+
+The biggest thing when you get arrested is to remember that everyone involved is a person, a contractor like you, and not a faceless corporate jackboot looking to abuse you for their own amusement. They are worthy of your respect, yet also prone to making mistakes. Being respectful, perhaps a bit humble, and most importantly not attempting to break out of your cuffs and flee every ten seconds will go a long way to ensuring you are treated well and released quickly.
+
+When you are arrested, you should be told your charges in short order. Generally this happens before you’re arrested, but if you’re arrested during an event that is complicated or busy, such as a multi-vessel situation or if you’re resisting or evading arrest with multiple people involved, NFSD may be currently trying to juggle several other people at the same time. Patience is your best bet in this regard, as well as a reminder to the officers on scene to tell you of your charges when they are available.
+
+==This isn’t fair! I want to go to court!==
+
+You may wish to take your case to court. If your crimes are mostly misdemeanors, you won’t be permitted (your sentence is probably MUCH shorter than the time it takes to put a trial together). If you have felonies, you may be able to have a case if someone who can serve as judge is available, usually the Sheriff or the Station Representative. If you’re accused of a capital crime, you’re ALWAYS permitted to have a trial, even if it means that the Sheriff or Station Representative has to appoint someone else to be a judge, or appeal to CentComm for a completely impartial judge.
+
+You have a right to be represented by a lawyer if you can find one, but if you can’t, then you’ll be defending yourself. Your lawyer has to be representing you in good faith, but they also have to be telling the truth to the best of their ability and working to maintain a fair trial.
+
+Criminal trials in Frontier are usually trials of arbitration, meaning that the judge will decide by themselves if you are innocent or guilty after hearing both sides of the argument. While there is a dedicated building for this, a court session can break out anywhere- from an NFSD vessel, to the middle of the NFSDO, to even the middle of the hallway of Trade Mall if parties are in a rush. You’ll be given at least six minutes to argue your case, the person opposing you will have an equal amount of time to argue theirs, and then the judge will make a decision.
+
+You might be sued, or want to sue, someone else for spesos or another conflict between people or entities. To get started, talk to either the Sheriff or Station Representative. If you get sued for a particularly large amount of money, you may choose to have a jury selected as well, to ensure that things remain fair and sane for all involved.
+
+==I was found guilty. Now what?==
+
+It depends on what you’ve done! Some general rules, though:
+
+* Charges compound on Frontier. This means two things - that your sentence will get worse for every crime you commit, not just your worst one, and that you can get in trouble for multiple instances of the same crime that is committed. If you steal two things from two different people, for instance, you can get charged for two counts of theft, and will be punished twice.
+* There is a minimum and maximum punishment for each crime. Your worst crime will provide the basis of the sentence, being judged anywhere between the minimum and maximum, and then the minimum punishment of all your other crimes will be added together to provide the final amount.
+* Your punishment gets worse and worse if you keep committing the same crimes over and over again.
+* If you made any money from, or stole things as part of, committing your crimes, that money might be taken and the things you stole returned to their owners. If you broke something, your supplies might be used to fix it or reimburse the victim, but any excess supplies- or the value of them- should be returned to you afterwards. They can make reasonable assumptions when deciding what money might need to be taken from you, but they can’t force you to withdraw money from your account or confiscate things that aren’t related to the crime.
+
+==How will I be punished?==
+
+* If your crimes aren’t that severe, you may be charged a fine as opposed to jail time. You’re never forced to pay a fine if you cannot afford or don’t want to pay it, but you’ll have to sit in the brig for a while if you don’t. Particularly bad crimes can’t be fined.
+* The NFSD might offer for you to do some work for them in exchange for a reduction of your time, or an early dismissal. You are never forced to do this work if you don’t want to, though you’ll likely be sitting in jail for longer if you do.
+* If you were exceptionally malicious, or you’ve been arrested for the same crime before that shift, you’ll get a worse penalty.
+* If you were cooperative and nice to your officers, you’ll get a lighter penalty and might be released early.
+* If you do a lot of serious crimes, you might be held in the brig indefinitely! This is called Extended Confinement, or Permanent Brigging (sometimes called ‘perma’). You can still be released early if you’re cooperative, though.
+* Particularly bad crimes, known as capital crimes, might result in you becoming indisposed for the remainder of the shift, whether through execution, being sent to Central Command for a formal arraignment, or put into a cyborg and pressed into service. If you suffer one of these capital punishments, your cloning rights get revoked for the remainder of the shift- though they are reinstated next shift ''(yes, even if you are a pirate- the Freebooter’s Union has to negotiate for your release!)''.
+
+==I’m a prisoner now. Do I still have rights?==
+
+Yes! The NFSD should still be treating you appropriately and humanely- you might be a prisoner, but you’re still a person.
+
+* If you’re hurt, you’ll get medical care. They might offer for a counsellor or therapist to visit you, if there is one in the sector. Do note, though, that the NFSD is not psychic- if you’re injured, let them know so you can be treated.
+* You’ll be permitted a headset with access to the Common radio channel. This CAN be taken away from you if you start badmouthing the NFSD or being abusive over the radio, so be nice!
+* You’ll be given clothes, food, water, shelter, and safety. You’ll be allowed to be within the communal brig with no handcuffs, as long as you don’t hurt other people or damage the brig. You are allowed a lawyer and visitors, though the visitors have to be searched and escorted in order to see you in person.
+* The things you have that aren’t illegal, nor were used in a crime, will be protected by the NFSD and returned to you after your sentence, as well as your ship. If you aren’t coming out of the brig for the foreseeable future because you were put in Extended Confinement, you have the right to sell your ship and belongings at the Outpost.
+* You might be let go early, or asked if you’d be willing to meet certain requirements in order to be let go early. You can either ask for this yourself, or you might be given it by one of the NFSD command officers.
+* If you’re sentenced to be executed, you get to choose to die via lethal injection, firing squad, electrocution or spacing. If you don’t give them one of these options, though, one will be chosen for you.
+* You’re always free to enter cryo during your punishment. If you do so, however, you won’t be able to return that shift- Central Command will make sure you serve your punishment, and then bury you in paperwork and disciplinary hearings afterwards!
+
+It should be noted as well that, if you start attacking people, breaking the brig, or try to violently escape, you can be put into solitary confinement or even executed without a trial! The NFSD are also authorized to consult Central Command concerning individuals who might be acting particularly strangely or inappropriately.
+
+If you feel as if your rights have been violated, or that you’re being intentionally harassed by officers, contact the administrators of Central Command by hitting the F1 key, and it’ll be investigated to ensure that everyone is doing their job appropriately.

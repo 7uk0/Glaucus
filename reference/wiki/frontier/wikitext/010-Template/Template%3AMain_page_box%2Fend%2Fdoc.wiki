@@ -1,0 +1,3 @@
+See [[Template:Main page box]] for information on how to use this.
+
+<noinclude>[[Category:Template documentation]]</noinclude>

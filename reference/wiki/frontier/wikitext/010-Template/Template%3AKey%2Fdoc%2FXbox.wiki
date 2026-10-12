@@ -1,0 +1,98 @@
+Images source: [[dev:Category:Xbox input images]]
+
+=== Series & One ===
+<code><nowiki>{{Key|Xbox|A}}</nowiki></code>
+{{Key|Xbox|A}}
+
+<code><nowiki>{{Key|Xbox|B}}</nowiki></code>
+{{Key|Xbox|B}}
+
+<code><nowiki>{{Key|Xbox|X}}</nowiki></code>
+{{Key|Xbox|X}}
+
+<code><nowiki>{{Key|Xbox|Y}}</nowiki></code>
+{{Key|Xbox|y}}
+
+<code><nowiki>{{Key|Xbox|Left Thumbstick}}</nowiki></code>
+{{Key|Xbox|Left Thumbstick}}
+
+<code><nowiki>{{Key|Xbox|Right Thumbstick}}</nowiki></code>
+{{Key|Xbox|Right Thumbstick}}
+
+<code><nowiki>{{Key|Xbox|Left Thumbstick Press}}</nowiki></code>
+{{Key|Xbox|Left Thumbstick Press}}
+
+<code><nowiki>{{Key|Xbox|Right Thumbstick Press}}</nowiki></code>
+{{Key|Xbox|Right Thumbstick Press}}
+
+<code><nowiki>{{Key|Xbox|LB}}</nowiki></code>
+{{Key|Xbox|LB}}
+
+<code><nowiki>{{Key|Xbox|RB}}</nowiki></code>
+{{Key|Xbox|RB}}
+
+<code><nowiki>{{Key|Xbox|View}}</nowiki></code>
+{{Key|Xbox|View}}
+
+<code><nowiki>{{Key|Xbox|Menu}}</nowiki></code>
+{{Key|Xbox|Menu}}
+
+<code><nowiki>{{Key|Xbox|Button}}</nowiki></code>
+{{Key|Xbox|Button}}
+
+=== Xbox Series ===
+<code><nowiki>{{Key|Xbox|D-pad}}</nowiki></code>
+{{Key|Xbox|D-pad}}
+
+<code><nowiki>{{Key|Xbox|D-pad Left}}</nowiki></code>
+{{Key|Xbox|D-pad Left}}
+
+<code><nowiki>{{Key|Xbox|D-pad Right}}</nowiki></code>
+{{Key|Xbox|D-pad Right}}
+
+<code><nowiki>{{Key|Xbox|D-pad Up}}</nowiki></code>
+{{Key|Xbox|D-pad Up}}
+
+<code><nowiki>{{Key|Xbox|D-pad Down}}</nowiki></code>
+{{Key|Xbox|D-pad Down}}
+
+<code><nowiki>{{Key|Xbox|LT}}</nowiki></code>
+{{Key|Xbox|LT}}
+
+<code><nowiki>{{Key|Xbox|RT}}</nowiki></code>
+{{Key|Xbox|RT}}
+
+<code><nowiki>{{Key|Xbox|Share}}</nowiki></code>
+{{Key|Xbox|Share}}
+
+==== Diagram ====
+<code><nowiki>{{Key|Xbox|Series Controller Diagram}}</nowiki></code>
+{{Key|Xbox|Series Controller Diagram}}
+
+=== Xbox One ===
+<code><nowiki>{{Key|Xbox|One D-pad}}</nowiki></code>
+{{Key|Xbox|D-pad}}
+
+<code><nowiki>{{Key|Xbox|One D-pad Left}}</nowiki></code>
+{{Key|Xbox|D-pad Left}}
+
+<code><nowiki>{{Key|Xbox|One D-pad Right}}</nowiki></code>
+{{Key|Xbox|D-pad Right}}
+
+<code><nowiki>{{Key|Xbox|One D-pad Up}}</nowiki></code>
+{{Key|Xbox|D-pad Up}}
+
+<code><nowiki>{{Key|Xbox|One D-pad Down}}</nowiki></code>
+{{Key|Xbox|D-pad Down}}
+
+<code><nowiki>{{Key|Xbox|One Left Trigger}}</nowiki></code>
+{{Key|Xbox|One Left Trigger}}
+
+<code><nowiki>{{Key|Xbox|One Right Trigger}}</nowiki></code>
+{{Key|Xbox|One Right Trigger}}
+
+==== Diagram ====
+<code><nowiki>{{Key|Xbox|One Controller Diagram}}</nowiki></code>
+{{Key|Xbox|One Controller Diagram}}
+__NOTOC__
+<noinclude>[[Category:Key template documentation]]</noinclude>

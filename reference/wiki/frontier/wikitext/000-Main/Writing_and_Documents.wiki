@@ -1,0 +1,320 @@
+
+== '''Frontier's Guide to Paperwork''' ==
+Frontier Station is often a busy place, with many characters coming and going. As someone in a leadership position, such as, but not limited to, Station Representative or Sheriff, it is imperative that proper documentation is maintained, both for yourself but also for the good of those working with you. Here are some general reminders about paperwork.
+
+* '''Be Concise:''' People don't always want to read huge paragraphs of text.
+* '''Be Consistent:''' It's helpful to have a consistent style, and it makes your documents look more professional.
+* '''Don't Create Hard Questions:''' Only request necessary information. Asking for unnecessary bits can lead to conflict and drawn-out arguments.
+* '''Be reasonable:''' Nice looking forms and documents are really cool, but remember that your job is to ensure Frontier operates well, not look pretty. Do not create bureaucratic barriers when they are not needed.
+* '''Take Feedback/Criticism:''' The best way you can improve what you make is to listen to others. This applies everywhere, not just in document preparation.
+
+== Writing Surfaces ==
+Nanotrasen provides everyone with a spare pen in their PDA and paper is most often found in Paper Trays, folders, books.     
+
+You can (amongst much more):
+
+* Read paper from any distance you can view it from
+* Write a manifesto with writing utensils
+* Stamp it
+* Copy it with a Fax Machine
+* Store it in a Tray or Folder
+* Put it in a filing cabinet for increased organization
+
+== Stamps and Pens ==
+Some specific [[jobs]] come with Stamps that are often found in lockers relevant to the position.
+
+These stamps include but are not limited to the Station Representative, Captains, and NFSD. All of these roles carry unique stamps of approval that are valid to varying degrees, depending on the situation and content of the paperwork.
+
+To use a rubber stamp, have it in your hand. Click on a desired document; this seals the document and makes it no longer able to be altered, but copies can be made.
+
+Using Right Click when a writing utensil is equipped will give you the options to continue to '''WRITE''' or '''SIGN''' the documents. Remember that signing a document prevents it from being edited anymore.
+
+== Formatting Guide ==
+Using a pen, you can write on paper or in books. You can find a pen in your PDA, alongside a copy of Space Law and your ID.
+
+The following formatting is used:
+
+> [color=color][/color] - to change the color of the text
+
+> [head=n][/head] - where n is the heading level from 1 to 4
+
+> [bullet/] - to insert a bullet point (useful for lists)
+
+> [bold][/bold], [italic][/italic] - for emphasis
+
+You can combine the bold and italic tags, or use the shortcut [bolditalic][/bolditalic]
+
+Remember that text needs to go between the bracketed sigils, so for example, typing out [bold]Hello![/bold] will show up on paper as '''Hello!'''
+
+Color supports either hexadecimal or most HTML color names. For example:
+
+[color=#ff0000][/color] makes your text come up as red.
+
+[color=red][/color] will accomplish the same thing.
+
+The following colors are grabbed from the job icons, and therefore are the colors that appear on the manifest.
+
+* cb0000 Security
+* c96dbf Science
+* 5b97bc Medical
+* b18644 Cargo
+* f39f27 Engineering
+* ff2fff Clown (how special)
+* 9fed58 Food Service (bartender/chef/botany/service worker)
+* 6e6e6e Passenger
+* 1b67a5 Command
+* 009100 CentComm
+* 134975 NanoTrasen
+* ff0000 Syndicate
+
+If you are a department head, or writing something to represent your department, it would be a good idea to use your respective color! (unless it's really gaudy or something)
+
+== '''Recommended Forms''' ==
+The Station Representative will likely want to draft up contracts for their employees on station, like the Janitor and Mail Carrier, listing the time the employee signed on, and their hourly salary.. Your employees may request reimbursement as they purchase supplies in order to do their job properly on station. In addition, Space Law allows non-NFSD employees to possess tier two contraband provided it has been approved by the Station Representative. Should a Sheriff not be present, the Station Representative is allowed to deputize individuals and vessels to enforce Space Law until a Sheriff arrives on shift.
+
+The Sheriff will also want contracts for the officers under their supervision, listing the time the officer signed onto NFSD, and the salary. All officers may want to prepare an after-action report, especially if they are serving on a different vessel from the Sheriff or Sergeant. When reasonable basis does not apply, a warrant is required to search vessels flying the Nanotrasen flag. Should a Station Representative not be present, NFSD can also authorize the possession of tier two contraband for civilians.
+
+The Station Traffic Controller will need forms to enforce the docking rules outlined in Space Law. Forms should be drafted for captains who loiter over their ten minute docking allowance, docking at Frontier without authorization, as well as the accompanying fine for the former. Captains may apply for extended docking permits, and will often request that permit to be faxed over to their vessel. Finally, per Space Law once more, derelict vessels will need proper paperwork documenting their derelict status so salvagers or NFSD can tow the vessel away from Frontier.
+
+Captains of medical vessels are encouraged to draft up insurance contracts (with reasonable treatment costs) so that employees of Frontier Station are fully aware of the fees and costs before agreeing to be insured. The medical implant sold on station vendors ensures that any medical vessels will respond to an alert, but it does not mean the care comes free! Restaurants will also want to print out a menu for their customers, and bars will want to do the same regarding the drinks they are serving.
+
+That is not an exhaustive list of all possible forms - mercenaries may want to draft a contract of their own with their clients, for example. Get creative with your paperwork, and have some fun drafting up forms!
+
+== Templates ==
+=== Civilian Templates ===
+{| class="wikitable mw-collapsible mw-collapsed"
+|+
+!
+!Templates
+!
+|-
+|Name
+|Template
+|Role
+|-
+|Notice of Derelict Vessel for STC
+|[color=#1b487e]███░███░░░░██░░░░[/color]
+[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Title[/head]
+
+[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Frontier[/head]
+
+[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station —[/bold]
+
+[color=#1b487e]░░░░██░░░████░███[/color]
+
+[head=1]Notice of Derelict Ship and Declaration of Salvage[/head]
+
+[bold]Ship callsign:[/bold]
+
+[bold]First hail at:[/bold]
+
+[bold]Issued at:[/bold]
+
+[bold]Issued by:[/bold]
+
+This is a formal declaration from Frontier's Station Traffic Controller, hereby declaring the vessel [italic] XX-XXX [/italic] to be abandoned by its captain, and recognized as salvage. Your vessel has been unresponsive on the radio for over twenty (20) minutes and has either not responded to written faxes, or is unable to receive faxes from Frontier. Henceforth, this office deems it fit to declare it as salvage.
+
+Pursuant to Space Law Section Nine, Article Three, this vessel will be moved out to three hundred (300) meters from Frontier Station by a Valet or NFSD, and will be salvageable by any other vessel operating within Frontier's space.
+
+Frontier Station and/or the Nanotrasen Corporation will not reimburse you or any parties affiliated with this vessel for any losses.
+|Brush up on Space Law before you start willy-nilly declaring vessels derelicts.
+|-
+|Medical Insurance Contract
+|[color=blue][head=1][italic]Welcome to Life Line Rescue Services![/color][/head][/italic]
+[italic]"Don't go into space without your Life-Line![/italic]
+
+[head=2]Individual Rescue Guarantee Form[/head]
+
+Rescue Associate:
+
+Rescue Ship ID:
+
+<nowiki>-----------------------------------------------------------------------------------------</nowiki>
+
+[head=3]SECTION 1: Client Info[/head]
+
+Full Name  :
+
+Race       :
+
+Ship Name  :
+
+<nowiki>-----------------------------------------------------------------------------------------</nowiki>
+
+[head=3]SECTION 2: Services[/head]
+
+Initial Cost: $2,000 Spesos (Includes free Medical Implant as a sign-on bonus!)
+
+(X) Treatment: Up to $5,000 Spesos
+
+(X) Revival  : Up to $10,000 Spesos. Minium $2,000
+
+(X) Cloning Fee: $10,000 Spesos (No additional Fees for treatment)
+
+(X) Towing: $2,000 Spesos for every 1km. Minimum $2,000. Single crew ships only.
+
+<nowiki>-----------------------------------------------------------------------------------------</nowiki>
+
+[head=3] SECTION 3: Cost Breakdown[/head]
+
+Costs are cost of materials used * rescue ship modifier * distance modifier
+
+Rescue Ship Modifiers:
+
+Pulse: x1.5
+
+Helix: x2.0
+
+Distance Modifiers:
+
+Up to 2km: x1
+
+Additional 0.25 for every 1km additional past 2km.
+|Blatantly stolen from Life Line Rescues, a medical insurance company within Frontier. Please do try to make your own - or at the very least, change the name and slogan at the top...
+|-
+|Bounty Hunter Contract
+|[head=1][color=#ff0000]Bounty Hunter Contract[/color][/head]
+[head=2][color=#555555]Contract Details[/color][/head]
+
+[bullet] [bold]Contract ID:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Client Name:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Target Name:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Target Alias:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Last Known Location:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Reward Offered:[/bold] [color=#336699][/color]
+
+[head=2][color=#555555]Target Information[/color][/head]
+
+[bullet] [bold]Description:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Affiliation:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Known Associates:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Threat Level:[/bold] [color=#336699][/color]
+
+[bullet] [bold]Capture Alive:[/bold] [color=#336699][/color]  [color=#336699][/color]
+
+[bullet] [bold]Delivery Deadline:[/bold] [color=#336699][/color]
+
+[head=3][color=#555555]Additional Notes[/color][/head]
+
+[color=#336699][/color]
+
+[head=3][color=#555555]Client's Signature:[/color][/head]
+
+[color=#336699][/color]
+
+[head=3][color=#555555]Bounty Hunter's Signature:[/color][/head]
+
+[color=#336699][/color]
+|Read Space Law prior to using this, and consult with the SR and NFSD before you embark on your bounty hunting adventures. Wanton murder is not allowed.
+|-
+|Generic header
+|[color=#1b67a5]█▄ █ ▀█▀    [head=3]TITLE[/head]
+█ ▀█     █        From: NAME
+To: RECIPIENT
+Subject: SUBJECT[/color]
+──────────────────────────────────────────
+BODY
+
+
+──────────────────────────────────────────
+Sincerely, NAME.
+|Your creativity is the limit here.
+|}
+
+=== SR Templates ===
+{| class="wikitable mw-collapsible mw-collapsed"
+|+
+!
+!Templates
+!
+|-
+|Name
+|Template
+|Role
+|-
+|Employee Contract for Sheriff and SR
+|[color=#0033cc]◥[bold]N[/bold]◣ [bold]Frontier Outpost Command[/bold][/color]
+
+[color=#0033cc]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+
+[head=1]Personnel contract[/head]
+
+Employee:
+
+Position:
+
+Wage: [color=#ff0000]XXXXX[/color] spesos per hour
+
+Hired by:
+
+Hired at:
+
+Only valid when stamped by the Station Representative or Sheriff, and signed by the employee and the Station Representative or Sheriff.
+
+A copy of this document is to remain in the Station Representative's office at all times. Additionally, a copy may be provided to the employee at their request.
+|Employment contract - handy for the employee when it comes to handing out pay, and also for future SRs should you need to cryo at any point. The Sheriff can use a similar form to maintain both a proper headcount of their officers, and also to streamline pay.
+|-
+|Station Reimbursement Form for Sheriff and SR
+|<center>
+[color=#0033cc]◥[bold]N[/bold]◣ [bold]Frontier Outpost Command[/bold][/color]
+
+[color=#0033cc]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+
+[head=1]Reimbursement Form[/head]
+
+Order number:
+
+Ordered by:
+
+Reimbursement amount: [color=#ff0000]XXXXX[/color] spesos
+
+Issued by:
+
+This form hereby certifies that you, employee of Frontier Station, have been reimbursed by Station Command for the purchase of your goods towards the betterment of this station.
+
+This form is to be signed by both the employee and by the Station Representative to certify that funds have been reimbursed to the employee.
+</center>
+|Remember that you need the order form on the back of the crate for the order number, unless you want to risk CentComm's wrath for "fund embezzlement". Trying to weasel out of it by saying it was a janitorial supplies crate only digs a deeper hole. 
+|-
+|Contraband Allowance Form for Sheriff and SR
+|[color=#FF0000]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#FF0000]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+
+[head=1]Acknowledgement and Authorization of Contraband[/head]
+
+[bold]Employee name:[/bold]
+
+[bold]Vessel:[/bold]
+
+[bold]Authorizing officer:[/bold]
+
+List articles of contraband, and their class:
+
+[bullet]
+
+[bullet]
+
+[bullet]
+
+This document certifies that the following articles of contraband are in your possession, and that you are authorized to carry and use them as you see fit throughout Frontier and its surrounding space. Abuse of these articles can and will lead to higher penalties than just felony or misdemeanor possession.
+|Change the header if you're the SR authorizing this - this is the Sheriff's version.
+|}
+'''Final Words'''
+
+The Frontier Paper Pusher's Club is a group of paperwork-loving employees who have agreed to graciously share their forms in the interests of standardizing paperwork throughout Frontier. Please visit [https://discord.gg/NBQ6fk9RY3 Frontier's Discord] to see their forms, and feel free to use them, and/or change them to better fit your style or needs during your shifts.
+
+A special thank you to SS14 user Moomoobeef for agreeing to allow his work in this guide, as well Discord user @tsjiptsjip for allowing their websites and forms to be shared in this guide. Please see the following links for additional headers and examples of what proper forms look like, and again, feel free to add your own adaptations to them to make Frontier feel more alive!
+
+https://wiki.spacestation14.io/wiki/User:Moomoobeef
+
+https://github.com/Moomoobeef/ss14-forms-txt/tree/master
+
+https://tsjiptsjip.net/ss14/

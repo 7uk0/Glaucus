@@ -1,0 +1,46 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ClothingUniformJumpsuitDetective.png|50px]] || Detective Hard-worn Suit || $100 || 2
+|-
+| [[File:ClothingUniformJumpskirtDetective.png|50px]] || Detective Hard-worn Suitskirt || $100 || 2
+|-
+| [[File:ClothingShoesColorBrown.png|50px]] || Brown Shoes || $100 || 2
+|-
+| [[File:ClothingOuterCoatDetectiveLoadout.png|50px]] || Detective Trenchcoat || $350 || 1
+|-
+| [[File:ClothingOuterCoatDetectiveLoadoutGrey.png|50px]] || Noir Trenchcoat || $350 || 1
+|-
+| [[File:ClothingHeadHatFedoraBrown.png|50px]] || Brown Fedora || $100 || 2
+|-
+| [[File:ClothingUniformJumpsuitDetectiveGrey.png|50px]] || Detective Noir Suit || $100 || 2
+|-
+| [[File:ClothingUniformJumpskirtDetectiveGrey.png|50px]] || Detective Noir Suitskirt || $100 || 2
+|-
+| [[File:ClothingOuterVestDetective.png|50px]] || Detective's Vest || $300 || 2
+|-
+| [[File:ClothingNeckTieDet.png|50px]] || Detective's Tie || $100 || 2
+|-
+| [[File:ClothingHeadHatFedoraGrey.png|50px]] || Grey Fedora || $100 || 2
+|-
+| [[File:ClothingHandsGlovesColorBlack.png|50px]] || Black Gloves || $100 || 2
+|-
+| [[File:ClothingHandsGlovesLatex.png|50px]] || Latex Gloves || $100 || 2
+|-
+| [[File:ClothingHeadsetSecurityCommon.png|50px]] || Headset || $100 || 2
+|-
+| [[File:trayScanner.png|50px]] || T-Ray Scanner || $850 || 2
+|-
+| [[File:ClothingHeadHatDetGadget.png|50px]] || Go Go Hat || $100 || 1
+|-
+| [[File:ClothingEyesGlassesNoir.png|50px]] || Noir-Tech Glasses || $100 || 1
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineDetective.png|50px]]
+| style="background-color:#383838;" | Detective Figure
+| style="background-color:#383838;" | $750
+| style="background-color:#383838;" | 1
+|}
+</div>
+</includeonly>

@@ -1,0 +1,36 @@
+This template allows you to [https://developer.mozilla.org/en-US/docs/Web/CSS/clear clear] the left side, the right side, or both by adding <code>&lt;div style="clear:left/right/both;"&gt;&lt;/div&gt;</code>
+
+==Usage==
+{{tlx|Clear}}: Makes content wait until existing content is completed in all columns.  Often used to stop text from flowing next to unrelated images. An optional <code>class</code> parameter can additionally be given for custom functionality.
+
+To clear the left, simply put {{tlx|Clear|left}}. To clear the right, put {{tlx|Clear|right}}. To clear both sides, put {{tlx|Clear}}.
+
+This template can also be called with {{tlx|-}} for short.
+
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Direction",
+			"description": "Which direction to clear",
+			"type": "string",
+			"default": "both",
+			"suggestedvalues": [
+				"left",
+				"right",
+				"both"
+			]
+		},
+		"class": {
+			"label": "Class",
+			"description": "A class to give to the clear",
+			"type": "string"
+		}
+	},
+	"description": "Clears the left, right, or both.",
+	"format": "inline"
+}
+</templatedata>
+<noinclude>
+[[Category:Template documentation]]
+</noinclude>

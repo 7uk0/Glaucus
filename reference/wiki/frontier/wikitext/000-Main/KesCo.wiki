@@ -1,0 +1,94 @@
+
+{| class="wikitable"
+|+'''KesCo'''
+!Type
+|Commercial, Military
+|-
+!Industry
+|Ship Builders
+|-
+!Founded
+| 2149
+|-
+!Headquarters
+|Luna
+|-
+!Area served
+|[[Frontier Prime]]
+|-
+!Key people
+| Kessandra Hart (CEO)
+|-
+!Parent
+| Nanotrasen
+|-
+!Logo
+|[[File:KesCo Logo.png|center|thumb|300x300px]]
+|}
+'''KesCo''' are proud ship builders who have over the years brought to the Nanotrasen fleet, both civil and military, a fine catalog of vessels for various uses across the New Frontiers program. They trace their origins to the Sol System with their headquarters based on Luna, as well as a Dry Dock in orbit around Luna and Frontier Prime.
+
+'''KesCo,''' commercial spacecraft builders was founded in 2149. '''KesCo''' is privately owned by a State Research and Production Company, which holds 49 percent.
+
+== '''KesCo Ship Catalogue''' ==
+This is the catalogue of ships from '''KesCo''' available on [[Frontier Prime|Frontier]].
+
+While originally focused on larger ship designs, '''KesCo''' has taken on various contracts, buildling luxury cruisers, military vessels, and cargo haulers alike.
+{| class="wikitable"
+| rowspan="5" |placeholder
+!Name
+|[[NT Sprinter]]
+|-
+!Ship Size
+|Medium 3-6
+|-
+!Cost
+|$75020
+|-
+!Power Gen Type
+|Plasma/Solar
+|-
+!Description
+|A light freighter often picked by bounty hunters due to its quick acceleration, expedition capable. The first real successful ship produced by KesCo and has seen heavy usage across the New Frontiers program.
+|}
+
+{| class="wikitable"
+| rowspan="5" |placeholder
+!Name
+|[[NT Pathfinder]]
+|-
+!Ship Size
+|Medium 2-4
+|-
+!Cost
+|$52400
+|-
+!Power Gen Type
+|Plasma/Solar
+|-
+!Description
+|Originally produced as a scout ship for the Nanotrasen Marine Expeditionary Forces, the Pathfinder has been since decommissioned and replaced with other more capable scout ships, but all old models have been reconverted for use as expedition craft for the New Frontiers program.
+|}
+
+{| class="wikitable"
+| rowspan="5" |placeholder
+!Name
+|[[NT Anchor]]
+|-
+!Ship Size
+|Large 4-8
+|-
+!Cost
+|$135020
+|-
+!Power Gen Type
+|Plasma/Solar
+|-
+!Description
+|A large luxury cruiser capable of long ranged travel acrossed the sector, expedition capable. The very first ship ever produced by KesCo, and a staple of comfort and style.
+|}
+
+<nowiki>**</nowiki>Prowler:** A medium-sized patrol craft, the prowler and class is a dedicated deep space reconnaissance and enforcement vessel outfitted with ECM technology to avoid detection.
+
+<nowiki>**</nowiki>Marauder:** A heavy corvette, the marauder class is a dedicated deep space patrol vessel outfitted with a reduced radar cross-section and heavily fortified against hostile assault.
+
+<nowiki>**</nowiki>Crescent:** Shaped like a crescent moon, this is a vessel focused on providing service, medical aide, and scientific breakthroughs for smaller vessels. It has seen extensive use by colonization programs as a top-side command center.

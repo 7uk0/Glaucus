@@ -1,0 +1,105 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:AloeSeeds.png|50px]] || Packet of Aloe Seeds || $100 || 3
+|-
+| [[File:AmbrosiaVulgarisSeeds.png|50px]] || Packet of Ambrosia Vulgaris Seeds || $100 || 3
+|-
+| [[File:AppleSeeds.png|50px]] || Packet of Apple Seeds || $100 || 5
+|-
+| [[File:AvocadoSeeds.png|50px]] || Packet of Avocado Seeds || $100 || 5
+|-
+| [[File:BananaSeeds.png|50px]] || Packet of Banana Seeds || $100 || 5
+|-
+| [[File:BeeSeeds.png|50px]] || Jar of Bees || $100 || 5
+|-
+| [[File:BerrySeeds.png|50px]] || Packet of Berry Seeds || $100 || 5
+|-
+| [[File:BungoSeeds.png|50px]] || Packet of Bungo Seeds || $100 || 5
+|-
+| [[File:CarrotSeeds.png|50px]] || Packet of Carrot Seeds || $100 || 5
+|-
+| [[File:CabbageSeeds.png|50px]] || Packet of Cabbage Seeds || $100 || 5
+|-
+| [[File:ChanterelleSeeds.png|50px]] || Packet of Chanterelle Spores || $100 || 5
+|-
+| [[File:CherrySeeds.png|50px]] || Packet of Cherry Seeds || $100 || 5
+|-
+| [[File:ChiliSeeds.png|50px]] || Packet of Chili Seeds || $100 || 5
+|-
+| [[File:CocoaSeeds.png|50px]] || Packet of Cocoa Seeds || $100 || 3
+|-
+| [[File:CoffeeSeeds.png|50px]] || Packet of Coffee Seeds || $100 || 5
+|-
+| [[File:CornSeeds.png|50px]] || Packet of Corn Seeds || $100 || 5
+|-
+| [[File:CottonSeeds.png|50px]] || Packet of Cotton Seeds || $100 || 5
+|-
+| [[File:CucumberSeeds.png|50px]] || Packet of Cucumber Seeds || $100 || 5
+|-
+| [[File:EggplantSeeds.png|50px]] || Packet of Eggplant Seeds || $100 || 5
+|-
+| [[File:EveryspiceSeeds.png|50px]] || Packet of Everyspice Seeds || $100 || 5
+|-
+| [[File:GalaxythistleSeeds.png|50px]] || Packet of Galaxythistle Seeds || $100 || 3
+|-
+| [[File:GarlicSeeds.png|50px]] || Packet of Garlic Seeds || $100 || 3
+|-
+| [[File:GrapeSeeds.png|50px]] || Packet of Grape Seeds || $100 || 5
+|-
+| [[File:LemonSeeds.png|50px]] || Packet of Lemon Seeds || $100 || 5
+|-
+| [[File:LimeSeeds.png|50px]] || Packet of Lime Seeds || $100 || 5
+|-
+| [[File:PineappleSeeds.png|50px]] || Packet of Pinapple Seeds || $100 || 5
+|-
+| [[File:LingzhiSeeds.png|50px]] || Packet of Lingzhi Spores || $100 || 3
+|-
+| [[File:OatSeeds.png|50px]] || Packet of Oat Seeds || $100 || 5
+|-
+| [[File:OnionSeeds.png|50px]] || Packet of Onion Seeds || $100 || 5
+|-
+| [[File:OnionRedSeeds.png|50px]] || Packet of Red Onion Seeds || $100 || 5
+|-
+| [[File:OrangeSeeds.png|50px]] || Packet of Orange Seeds || $100 || 5
+|-
+| [[File:PearSeeds.png|50px]] || Packet of Pear Seeds || $100 || 3
+|-
+| [[File:PeaSeeds.png|50px]] || Packet of Pea Pods || $100 || 5
+|-
+| [[File:PoppySeeds.png|50px]] || Packet of Poppy Seeds || $100 || 3
+|-
+| [[File:PotatoSeeds.png|50px]] || Packet of Potato Seeds || $100 || 5
+|-
+| [[File:PumpkinSeeds.png|50px]] || Packet of Pumpkin Seeds || $100 || 5
+|-
+| [[File:RiceSeeds.png|50px]] || Packet of Rice Seeds || $100 || 5
+|-
+| [[File:SoybeanSeeds.png|50px]] || Packet of Soybean Seeds || $100 || 5
+|-
+| [[File:SugarcaneSeeds.png|50px]] || Packet of Sugarcane Seeds || $100 || 5
+|-
+| [[File:TeaPlantSeeds.png|50px]] || Packet of Tea Plant Seeds || $100 || 5
+|-
+| [[File:TomatoSeeds.png|50px]] || Packet of Tomato Seeds || $100 || 5
+|-
+| [[File:TowercapSeeds.png|50px]] || Packet of Tower Cap Spores || $100 || 5
+|-
+| [[File:WheatSeeds.png|50px]] || Packet of Wheat Seeds || $100 || 5
+|-
+| [[File:WatermelonSeeds.png|50px]] || Packet of Watermelon Seeds || $100 || 5
+|-
+| style="background-color:#383838;" | [[File:TobaccoSeeds.png|50px]]
+| style="background-color:#383838;" | Packet of Tobacco Seeds
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#380C0C;" | [[File:FlyAmanitaSeeds.png|50px]]
+| style="background-color:#380C0C;" | Packet of Fly Amanita Spores
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 1
+|}
+</div>
+</includeonly>

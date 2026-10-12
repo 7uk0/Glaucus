@@ -1,0 +1,76 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ButchCleaver.png|50px]] || Butcher's Cleaver || $100 || 1
+|-
+| [[File:KitchenKnife.png|50px]] || Kitchen Knife || $100 || 5
+|-
+| [[File:RollingPin.png|50px]] || Rolling Pin || $100 || 4
+|-
+| [[File:Spoon.png|50px]] || Spoon || $100 || 4
+|-
+| [[File:Fork.png|50px]] || Fork || $100 || 4
+|-
+| [[File:PairedChopsticks.png|50px]] || Paired Chopsticks || $100 || 4
+|-
+| [[File:FoodBowlBig.png|50px]] || Bowl || $20 || 10
+|-
+| [[File:FoodPlate.png|50px]] || Large Plate || $22 || 10
+|-
+| [[File:FoodPlateSmall.png|50px]] || Small Plate || $15 || 10
+|-
+| [[File:FoodPlateTin.png|50px]] || Pie Tin || $20 || 5
+|-
+| [[File:FoodPlateMuffinTin.png|50px]] || Muffin Tin || $100 || 5
+|-
+| [[File:FoodKebabSkewer.png|50px]] || Skewer || $100 || 5
+|-
+| [[File:DrinkGlass.png|50px]] || Metamorphic Glass || $100 || 5
+|-
+| [[File:Beaker.png|50px]] || Beaker || $50 || 5
+|-
+| [[File:LargeBeaker.png|50px]] || Large Beaker || $100 || 5
+|-
+| [[File:Pitcher.png|50px]] || Metal Pitcher || $100 || 2
+|-
+| [[File:DrinkMug.png|50px]] || Mug || $22 || 5
+|-
+| [[File:DrinkMugBlack.png|50px]] || Black Mug || $22 || 2
+|-
+| [[File:DrinkMugBlue.png|50px]] || Blue Mug || $22 || 2
+|-
+| [[File:DrinkMugGreen.png|50px]] || Green Mug || $22 || 2
+|-
+| [[File:DrinkMugHeart.png|50px]] || Heart Mug || $22 || 2
+|-
+| [[File:DrinkMugMetal.png|50px]] || Metal Mug || $22 || 2
+|-
+| [[File:DrinkMugMoebius.png|50px]] || Moebius Mug || $22 || 2
+|-
+| [[File:DrinkMugOne.png|50px]] || #1 Mug || $22 || 2
+|-
+| [[File:DrinkMugRainbow.png|50px]] || Rainbow Mug || $22 || 2
+|-
+| [[File:DrinkMugRed.png|50px]] || Red Mug || $22 || 2
+|-
+| [[File:ServiceSelectiveDropper.png|50px]] || Service Selective Dropper || $150 || 2
+|-
+| style="background-color:#383838;" | [[File:CandyBowl.png|50px]]
+| style="background-color:#383838;" | Candy Bowl
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#383838;" | [[File:BarSpoon.png|50px]]
+| style="background-color:#383838;" | Bar Spoon
+| style="background-color:#383838;" | $5
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#383838;" | [[File:DrinkShaker.png|50px]]
+| style="background-color:#383838;" | Shaker
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|}
+</div>
+</includeonly>

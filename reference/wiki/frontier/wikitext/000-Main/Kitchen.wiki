@@ -1,0 +1,158 @@
+this page is a general how-to for the operation of kitchen ships on frontier.
+
+The chef role on frontier at its core is similar to the chef role on station, so this guide will not focus on the basics of "how to make food". Instead, the focus will on on the Frontier-specific aspects.
+
+==Recipes==
+You can find the entire list of food recipes on [https://ss14.recipes/?fork=frontier the cookbook website].
+
+
+Remember to select the "Frontier" fork in the fork menus on the top-right corner.
+
+== Frontier machines==
+Frontier cooking uses slightly different machines, with mostly the same logic as upstream (wizden) kitchen.
+
+* Cooking range
+The cooking range is both an oven and a grill. The oven functions with the same interface and logic as the vanilla microwave. Can cook multiples of the same recipe at once, provided that the multiples of ingredients and time are selected.
+
+Ex: 1 dough slice for 5s: 1 bun. 3 dough slices for 15s: 3 buns.
+The grill can be turned on with "alt + click" and functions as a vanilla grill.
+
+* The food assembler
+Functions mostly like a microwave (ingredients in, assembled item out), but doesn't require setting a time manually. Instead, the time is automatically assigned by the assembler depending on the ingredients provided. Can assemble multiples of the same recipe at once, which increases processing time.
+
+* The deep fryer
+Needs to be loaded with oil (ghee, vegetable oil, or olive oil). Items added to the deep fryer will be deep fryed after some time, provided that there is enough oil, and that the oil isn't too dirty.
+
+The deep fryer can be cleaned by holding a fluid container (beaker, bottle, etc) and selecting "remove slag" to transfer the slag out of the fryer and into the container.
+
+* The reagent grinder
+mostly identical to upstream. Start capable to hold 4 items to grind, but can be improved.
+
+==Why be a chef==
+
+Short answer: to sell food and sometime engage in RP.
+
+Long answer: there are two reasons for players to engage with a food ship. first and obviously, players usually want to avoid the hunger speed debuff. The speed penalties stack between hungry, thirsty, wounded, bags, armors. This can slow characters down significantly, so most players will try to top-up on food and drinks.
+
+Drinks are fairly easy to come by on frontier. most ships will either have a permanently refilling sink (common on large ships, hydroponics, or medical ships), or a water fountain on smaller ships (which usually last an entire round if used for drinking only). Some of the smallest or specialized ships may not have any water source, but water or alcohol barrels are a fairly common find on salvageable wrecks.
+
+Food on the other hand is a limited resource. Each character starts their round with a ration bar, but otherwise there are few non-player generated food items available. Due to this, you may often see people asking for open food ships in general radio. To note, one POI of either "Bahamas mama" or "Tianna's rest" will be available during a round. These POIs are public, and are equiped with kitchens, which allow non-kitchen ship to still access food, if no one is selling.
+
+Lastly, in frontier like in real life, food can be a social experience. Some player may only want to buy a quick meal to return to their own occupations, but you will also encounter characters interested in roleplaying during their meals.
+
+==How to chef==
+
+Chef gameplay can be broken down in four sub-roles.
+
+* Chef (mechanical): basically the same as the vanilla chef job. the machines on frontier are slightly different, but the same general logic and techniques apply here.
+* Botanist (mechanical): basically the same as a food-focused vanilla botanist. Grow plants for the kitchen.
+* Barkeep (mostly RP): basically the same as the vanilla barkeep
+* Waiter (mostly RP): The most frontier specific aspect. Frontier uses personal economy, so each of your customer's bills need to be paid, and they may engage in banter or storytelling while you catter to their sustenance.
+
+If you play solo, you will need to juggle these four aspects of running a food ship. note that while the chef aspect is the only truly essential one, engaging with the others can greatly improve your chef experience.
+
+===Sourcing ingredients===
+
+* Some ships are equipped with a chef-vend. If you intend to only engage with the cooking mechanics, you can get some milleage from a chef-vend and some small-scale botany.
+* Botany can procure a large number of ingredients for common recipes.
+* Biogenerators can synthesize a wide array of seeds, animal cubes, reagents (such as flour, sugar, milk, etc), or meats.
+* Salvage hunting can yield meat (from kangaroos), carp fillet (from carps and sharkminnows), xenos meat (from space ticks) and bear meat (from space bears). salvage debris also often yield seeds, including already mutated seeds.
+* Expedition hunting / vgroid hunting: more dangerous, bigger prey.
+* The anomalous geode starts the round with several xenos which all yield xenos meat
+
+===Food ships and crew sizes===
+
+Choosing the right ship is essential for a successful chef round. here's a short summary of common food service ships.
+
+Single chef doing both cooking and service:
+The boccadilo is the starter food ship, capable of making reasonable amounts of food to sell.
+Due to it's size, it is very difficult to accomodate more than one chef. It also has a very limited food serving area, with two docking sides.
+* Boccadilo
+
+
+1-2 crew:
+These ships are the middle ground in size and crew requirements.
+They can be crewed by a single person, but you will get most of their value with two crewmembers.
+* Piecrust
+* Skipper
+* Nightlight
+
+
+3+ crew:
+These are the large restaurant ships, with dedicated bars a large seating spaces.
+They have enough kitchen space for two chefs, a dedicated botanist to support them, in addition to a barman and a server.
+* Ceres
+* Izakaya
+* Mc Cargo
+
+===Customers===
+
+====Attracting customers====
+
+* Menu: Having a printed menu with your dishes and prices is a great way attract customers. You can send it to faxes on demand, or mass-mail it to every ship in the sector. If you are doing mass mailings, remember to print your IFF on the menu. Having some copies on your bar or tables is also helpful for customers to make their selection.
+
+* Radio: Keep any eye on the radio. People occasionally will ask if a food or "grub" ship is opened. It's a good idea to highlight "food" and "grub" as keywords in the chat highlighting menu. You can also make occasional announcements to tell the sector that you are opened, and providing food. Remember to not flood the radio, though.
+
+* IFF: You can request a ship renaming at the SR's office on FO. Having a distinctive name can help attract customers when they are scrolling through the IFF listings.
+
+* IFF markers: Your ship console has 3 toggleable IFF markers. You should enable them if:
+** Shopping: You provide food for a price. This should be always on when you are attempting to attract customers
+** Social: You are interested in hosting customers for longer RPs than simply exchanging food for currency. Anything involving discussing their day, talking about the food, or any other gimmick you may have for this shift.
+** Service: If you are providing additional services. While a food ship usually only sells food, having access to a botany room enables you to provide additional useful items, such as aloe cream, stellibinin, takeout drinks and more
+
+* Location: Ideally, you'll want to set up shop in a POI that:
+** Has traffic
+** doesn't already have too many food ships
+
+POIs with usually decent traffic are:
+* The trade mall: great location, but since it is the obvious choice, you might have competition
+* Frontier outpost: Setting up shop is forbidden on Frontier station and for 200m around it. You can fly out of range, and then open. Traffic is usually pretty good.
+* Medical dispatch: Hungry medics, and the MD tends to have other people coming and going, to provide materials, services or emergency pods.
+* The expeditionary lodge: Less busy than the previous choices, but an expeditionary crew might ask for a bulk order if you are lucky.
+* The NFSDO: some traffic, especially if the sheriff has a C3 redemption program active. The NFSD might have a bulk order as well.
+
+==Practical guide to kitchen botany==
+
+Botany is a broad, complicated discipline, and can appear difficult to learn. For the purpose of running a food ship, some very basic botany can grant huge dividends while being accessible and easy to learn.
+
+The important mecanic at play is swabbing. Swabbing will always copy all of the attributes of a donor plant to the swab.
+
+When a swab is applied to a receiving plant:
+* Any traits on the swab has a 50% chance to be added to the recipient
+* Any recipient trait which is not on the swab has a 50% chance to be deleted from the receiving plant
+
+=== yield 6 on recipe produces ===
+Cocoa tree has naturally 6 yield. This means that each harvest of cocoa provides (yields) 6 fruits.
+
+This is a desirable trait to have on produce that are grown for their type (for recipes) like tomatoes or potatoes, and not for their reagents (for grinding) like wheat or rice.
+
+Important note: do not reuse swabs.
+
+Once a swab has been used from a donor to a recipient, it will hold the traits of the recipient after applying the swab. Since it is difficult to be sure what exact traits combinations this create, avoid reusing swabs unless you are very sure of what you are doing.
+
+* Use a fresh swab on a cocoa tree
+* Use the swab on your plant
+* Harvest the plant (snip it first if not multi-harvest)
+* Does it yields 6 produce?
+** yes: success
+** no: repeat
+
+===The king of biomass: big bungo===
+Bungo naturally provides 5 biomass per fruit. With default (yield 3), a single harvest of bungo will provide 15 biomass (when inserted into a biogen directly).
+
+This can be improved by raising bungo to yield 6 and potency 50 to 37.5 biomass per harvest
+
+* Robust harvest a cocoa tree to pot 50
+* Plant a few bungo trees. 3 to 5 bungo trees offer decent consistency to achieve big bungo in a reasonable time
+* Swab from the cocoa tree to each bungo with a different swab (don't reuse swabs)
+* Wait for the bungo to mature, and harvest them one by one. Once you have harvested one plant:
+** If yield is 3: failed
+** If yield is 6: open the biogen interface, check the current biomass value, and insert one bungo.
+*** If the biomass in the generator increase by one: failed
+*** If the biomass increases by 5: successfully copied yield, but not potency, without removing the nutriments. Add robust harvest to bring the bungo to potency 50. You have achieved big bungo.
+*** if the biomass increases by 7: successfully copied both yield and potency, without removing the nutriments. You have achieved big bungo.
+If you have at least one success, snip it and grow more big bungo. Ideally, you can bring your biogen next to your trays to reduce carpal tunnel from clicking all of the bungo.
+If you have no successes, clear your bungo trays and start again.
+
+Access to large amount of biomass enables meat-based options, since the biogen can print meat directly, or print animal cubes. It can also be used to create on-demand refined products like flour, milk, rice, sugar, etc. This is less efficient than growing the specialized crops, with advanced botany techiques, but at low or medium scale, it allows for diverse ingredients without juggling too many crops.
+To note, the biogen also prints botany chemicals, such as robust harvest and some other, making it a convenient source of botany chems on kitchen ships.

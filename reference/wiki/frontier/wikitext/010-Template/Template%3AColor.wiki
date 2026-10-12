@@ -1,0 +1,4 @@
+<includeonly><span class="color">{{{1}}}&nbsp;<span class="color__splotch" style="background-color: {{{1}}};" title="{{{1}}}"></span></span>[[Category:Pages with colors]]</includeonly><noinclude>
+{{doc}}
+[[Category:Formatting templates]]
+</noinclude>

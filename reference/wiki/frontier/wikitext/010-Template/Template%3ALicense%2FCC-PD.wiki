@@ -1,0 +1,10 @@
+<includeonly>{{License/template
+| source = {{{source|}}}
+| type = CC-PD
+| icon = [[File:CC-PD.svg|x50px|link=|Public Domain]]
+| text = This file has been released into the public domain by the copyright holder, its copyright has expired, or it is ineligible for copyright. This applies worldwide.
+}}</includeonly>
+<noinclude>This template currently looks like: {{License/CC-PD}}
+
+See {{tl|License}} for full license documentation
+[[Category:License templates]]</noinclude>

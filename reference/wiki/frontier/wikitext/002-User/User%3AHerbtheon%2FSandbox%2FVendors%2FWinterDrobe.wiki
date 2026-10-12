@@ -1,0 +1,58 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ClothingNeckScarfStripedRed.png|50px]] || Striped Red Scarf || $100 || 3
+|-
+| [[File:ClothingNeckScarfStripedGreen.png|50px]] || Striped Green Scarf || $100 || 3
+|-
+| [[File:ClothingNeckScarfStripedBlue.png|50px]] || Striped Blue Scarf || $100 || 3
+|-
+| [[File:ClothingNeckScarfStripedBlack.png|50px]] || Striped Black Scarf || $100 || 3
+|-
+| [[File:ClothingNeckScarfStripedBrown.png|50px]] || Striped Brown Scarf || $100 || 3
+|-
+| [[File:ClothingNeckScarfStripedLightBlue.png|50px]] || Striped Light Blue Scarf || $100 || 3
+|-
+| [[File:ClothingNeckScarfStripedOrange.png|50px]] || Striped Orange Scarf || $100 || 3
+|-
+| [[File:ClothingNeckScarfStripedPurple.png|50px]] || Striped Purple Scarf || $100 || 3
+|-
+| [[File:ClothingOuterCoatTrench.png|50px]] || Trench Coat || $350 || 6
+|-
+| [[File:ClothingOuterWinterCoat.png|50px]] || Winter Coat || $550 || 6
+|-
+| [[File:ClothingShoesBootsWinter.png|50px]] || Winter Boots || $100 || 6
+|-
+| [[File:ClothingShoesBootsWinter.png|50px]] || Red Flannel Jacket || $300 || 2
+|-
+| [[File:ClothingOuterFlannelBlue.png|50px]] || Blue Flannel Jacket || $300 || 2
+|-
+| [[File:ClothingOuterFlannelGreen.png|50px]] || Green Flannel Jacket || $300 || 2
+|-
+| [[File:ClothingOuterCoatBomber.png|50px]] || Bomber Jacket || $350 || 3
+|-
+| [[File:ClothingHeadHatCanadaBeanie.png|50px]] || Beanie || $100 || 4
+|-
+| [[File:ClothingHeadHatSantahat.png|50px]] || Santa Hat || $100 || 2
+|-
+| [[File:ClothingHeadHatXmasCrown.png|50px]] || Xmas Crown || $100 || 2
+|-
+| style="background-color:#380C0C;" | [[File:ClothingNeckScarfStripedSyndieGreen.png|50px]]
+| style="background-color:#380C0C;" | Striped Syndicate Green Scarf
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 3
+|-
+| style="background-color:#380C0C;" | [[File:ClothingNeckScarfStripedSyndieRed.png|50px]]
+| style="background-color:#380C0C;" | Striped Syndicate Red Scarf
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 3
+|-
+| style="background-color:#380C0C;" | [[File:ClothingNeckScarfStripedCentcom.png|50px]]
+| style="background-color:#380C0C;" | Striped CentComm Scarf
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 3
+|}
+</div>
+</includeonly>

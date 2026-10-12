@@ -1,0 +1,62 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Jug.png|50px]] || Jug || $100 || 8
+|-
+| [[File:Jug.png|50px]] || Jug (Aluminum) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Carbon) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Chlorine) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Copper) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Ethanol) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Fluorine) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Hydrogen) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Iodine) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Iron) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Lithium) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Mercury) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Nitrogen) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Oxygen) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Phosphorus) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Potassium) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Radium) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Silicon) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Sugar) || $100 || 4
+|-
+| [[File:Jug.png|50px]] || Jug (Sulfur) || $100 || 4
+|-
+| style="background-color:#383838;" | [[File:DrinkLithiumFlask.png|50px]]
+| style="background-color:#383838;" | Lithium Flask
+| style="background-color:#383838;" | $200
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#383838;" | [[File:StrangePill.png|50px]]
+| style="background-color:#383838;" | Strange Pill
+| style="background-color:#383838;" | $200
+| style="background-color:#383838;" | 3
+|-
+| style="background-color:#380C0C;" | [[File:ChemistryBottleToxin.png|50px]]
+| style="background-color:#380C0C;" | Bottle (Toxin)
+| style="background-color:#380C0C;" | $200
+| style="background-color:#380C0C;" | 1
+|}
+</div>
+</includeonly>

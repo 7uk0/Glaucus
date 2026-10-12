@@ -1,0 +1,38 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:HappyHonk.png|50px]] || Happy Honk Meal || $50 || 10
+|-
+| [[File:HappyHonkMime.png|50px]] || Happy Honk Meal || $50 || 4
+|-
+| [[File:MysteryFigureBoxBulk.png|50px]] || Mystery Spaceman Minifigure Bulk Box || $1,200 || 5
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineClown.png|50px]]
+| style="background-color:#383838;" | Clown Figure
+| style="background-color:#383838;" | $375
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineMime.png|50px]]
+| style="background-color:#383838;" | Mime Figure
+| style="background-color:#383838;" | $375
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineNukie.png|50px]]
+| style="background-color:#383838;" | Syndicate Operative Figure
+| style="background-color:#383838;" | $375
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:HappyHonkCluwne.png|50px]]
+| style="background-color:#380C0C;" | Woeful Cluwne Meal
+| style="background-color:#380C0C;" | $50
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:HappyHonkNukie.png|50px]]
+| style="background-color:#380C0C;" | Robust Nukie Meal
+| style="background-color:#380C0C;" | $50
+| style="background-color:#380C0C;" | 1
+|}
+</div>
+</includeonly>

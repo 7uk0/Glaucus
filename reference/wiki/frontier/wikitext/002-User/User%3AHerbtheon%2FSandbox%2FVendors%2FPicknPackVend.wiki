@@ -1,0 +1,30 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:MK58.png|50px]] || MK58 || $2500
+|-
+| [[File:Pollock.png|50px]] || Pollock || $5000
+|-
+| [[File:Novalite_C1.png|50px]] || Novalite C1 || $5000
+|-
+| [[File:Gestio.png|50px]] || Gestio || $5000
+|-
+| [[File:Kammerer.png|50px]] || Kammerer || $4000
+|-
+| [[File:Magazine_35p.png|50px]] || Pistol Magazine (.35 pistol, any) || $200
+|-
+| [[File:Magazine_30r_low.png|50px]] || Low Cap Magazine (.30 rifle, any) || $200
+|-
+| [[File:AmmunitionBox_35.png|50px]] || Ammunition Box (.35 Pistol) || $200
+|-
+| [[File:AmmunitionBox_20.png|50px]] || Ammunition Box (.20 Rifle) || $200
+|-
+| [[File:AmmunitionBox_30.png|50px]] || Ammunition Box (.30 Rifle) || $200
+|-
+| [[File:AmmunitionBox_50bs.png|50px]] || Ammunition Box (.50 Buckshot) || $200
+|-
+| [[File:ShellBox_50bb.png|50px]] || Shell Box (.50 Beanbag) || $200
+|}
+</div>

@@ -1,0 +1,6 @@
+== Summary ==
+This is Gloober, Created by Krzysztof Pikes' community, who makes nice music. Uploaded elsewhere but somehow ended up here... I wonder why.
+
+Purely for Placeholders on image testing and has no effect or appearance within the Frontier Server.
+== Licensing ==
+{{License|CC-BY-NC-SA}}

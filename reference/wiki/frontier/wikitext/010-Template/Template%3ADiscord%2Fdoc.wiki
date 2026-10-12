@@ -1,0 +1,85 @@
+This template allows you to either use [[support:DiscordCompact|DiscordCompact]] or [[support:DiscordWidget|DiscordWidget]] to display information about a certain Discord server.
+== Usage ==
+In order to be able to show a Discord server widget on your wiki, first go to your Discord server and do the following:
+* Open the <code>Server Settings</code>, then go to the <code>Widget</code> section.
+* Enable the Widget.
+* Copy the <code>Server ID</code>.
+Then, do the following depending on the type of widget you want to use (compact or full).
+
+=== Compact Widget (Default) ===
+{{main|support:DiscordCompact{{!}}DiscordCompact}}
+The compact widget is the default one.
+
+To use it, simply add the template with the server ID either as the '''first''' parameter or as the <code>id</code> parameter:
+* <code><nowiki>{{Discord|serverID}}</nowiki></code>
+* <code><nowiki>{{Discord|id=serverID}}</nowiki></code>
+
+=== Full Widget ===
+{{main|support:DiscordWidget{{!}}DiscordWidget}}
+To use the full version of the Discord widget, you have to specify <code>full=yes</code> as one of the template parameters, with the ID either as the '''first''' parameter or as the <code>id</code> parameter:
+* <code><nowiki>{{Discord|serverID|full=yes}}</nowiki></code>
+* <code><nowiki>{{Discord|full=yes|id=serverID}}</nowiki></code>
+You can further customize the widget with the <code>width</code>, <code>height</code> and other parameters. See the Examples section and the full documentation for DiscordWidget on the [[support:DiscordWidget|Support Wiki]].
+
+== Examples ==
+{| class="wikitable"
+! Code !! Result
+|-
+| <code><nowiki>{{Discord|951501892553424917}}</nowiki></code><br/><code><nowiki>{{Discord|id=951501892553424917}}</nowiki></code>  || {{Discord|951501892553424917}}
+|-
+| <code><nowiki>{{Discord|951501892553424917}|full=yes}</nowiki></code> || {{Discord|951501892553424917|full=yes}} 
+|-
+| <pre><nowiki>{{Discord|full=yes
+|id     = 951501892553424917
+|width  = 300px
+|height = 500px
+}}</nowiki></pre> || {{Discord|full=yes|id=951501892553424917|width=300px|height=500px}}
+|}
+
+== Dependencies ==
+* As stated before, both Compact and Widget require the given Discord server to have Widgets enabled in its Server Settings.
+* DiscordCompact requires [[support:DiscordCompact#MediaWiki:DiscordCompact.js-0|DiscordCompact.js]] code, present in [[MediaWiki:Common.js]].
+* DiscordWidget requires [[dev:DiscordIntegrator.js|DiscordIntegrator.js]] code, present in [[MediaWiki:Common.js]].
+== TemplateData ==
+<templatedata>
+{
+	"params": {
+		"1": {
+			"aliases": [
+				"id"
+			],
+			"label": "Server ID",
+			"description": "The Discord server's ID.",
+			"example": "951501892553424917",
+			"type": "line",
+			"required": true
+		},
+		"full": {
+			"label": "Use Full Widget",
+			"example": "yes",
+			"type": "boolean",
+			"description": "Do you want to use the full widget?"
+		},
+		"width": {
+			"label": "Width (Full Widget only)",
+			"description": "A custom width for the full widget.",
+			"example": "300px",
+			"type": "line"
+		},
+		"height": {
+			"label": "Height (Full Widget only)",
+			"description": "A custom height for the full widget.",
+			"example": "500px",
+			"type": "line"
+		}
+	},
+	"description": "This template allows you to either use DiscordCompact or DiscordWidget extensions to display information about a certain Discord server.",
+	"paramOrder": [
+		"1",
+		"full",
+		"width",
+		"height"
+	],
+	"format": "block"
+}
+</templatedata>

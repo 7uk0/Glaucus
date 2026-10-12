@@ -1,0 +1,415 @@
+<div class="mw-parser-output" id="dl-variable-doc"><!-- hide this in your global.css if you're familiar with how default loadout works and this documentation is just in your way -->
+==Documentation==
+This wiki is using the theming template from the [[dlw:|default loadout]]. This template is intended to minimize the work required to create a custom colored version of the standard [[mw:Skin:Vector|Vector]] skin, while maximizing the various nooks and crannies that those colors reach, all while keeping everything legible and matching.
+
+Please be aware of the [[support:Customization policy|customization policy]] when modifying the theme.
+
+===Themes===
+The [[support:ThemeToggle|ThemeToggle]] extension is installed, and allows multiple themes to be used. In the actual stylesheet below this documentation, you'll find two huge rules at the top, each containing lots of [https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties CSS color variables]. They look like this:
+<syntaxhighlight lang=css>
+:root,
+/* Begin light styles, delete from here to "end light styles" if you don't want your wiki to support any light themes (remove from [[Mediawiki:Theme-definitions]] too, or ask wiki.gg staff for help doing this) */
+/* FYI: .view- will affect any theme marked |kind=light, */
+/* individual themes are prefixed with .theme- instead   */
+.view-light {
+	/**********************
+	* Probably edit these * [ LIGHT VIEW ]
+	***********************/
+    --wiki-body-background-color: #F6F6F6;
+    --wiki-body-background-image: url(/images/8/80/Site-background.jpg);
+    /* and so on */
+}
+
+.view-dark {
+	/**********************
+	* Probably edit these * [ DARK VIEW ]
+	***********************/
+    --wiki-body-background-color: #171717;
+    --wiki-body-background-image: url(/images/c/c4/Site-background-dark.jpg);
+    /* and so on */
+}
+</syntaxhighlight>
+These are the standard light and dark themes, defined in [[Mediawiki:Theme-definitions]]. '''Important''': if you want your wiki to only support a single theme, edit that page and remove the line you don't want (don't remove both). The <code>:root</code> selector is a fallback, meaning that in case something happens and ThemeToggle fails to work, the following theme will still mostly work. If you have multiple themes, you can move the <code>:root</code> rule to whichever you'd consider the "default" theme.
+
+===Non-color variables===
+{| class="wikitable"
+! Variable name !! Notes
+|-
+| --wiki-body-background-image
+| This is the image path to the wiki's background image. Usually this is uploaded to File:Site-background.jpg, File:Site-background-light.jpg, and/or File:Site-background-dark.jpg. While there's not a hard file size limit, it is recommended that this not exceed 250 KB. File size can be reduced by resizing (anything over 2560x1440p is excessive), converting to a jpg, and compressed using sites like [https://tinypng.com TinyPNG].
+|-
+| --wiki-body-background-position
+| The [https://developer.mozilla.org/en-US/docs/Web/CSS/background-position background-position] of the background image. Usually this is set to <code>top center</code>.
+|-
+| --wiki-body-background-size
+| The [https://developer.mozilla.org/en-US/docs/Web/CSS/background-size background-size] of the background image. Usually this is set to <code>cover</code>.
+|-
+| --wiki-body-background-repeat
+| The [https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat background-repeat] of the background image. Usually this is set to <code>no-repeat</code>.
+|-
+| --wiki-body-background-attachment
+| The [https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment background-attachment] of the background image. Usually this is set to <code>fixed</code>.
+|-
+| --wiki-body-font-family
+| The font family of most of the wiki, such as the sidebar, navigation, and content text. Usually this is sans-serif. If modifying this, use a simple font that is easy to read. See <code>--wiki-heading-font-family</code> if you want to incorporate a more decorative font into the theme.
+|-
+| --wiki-heading-font-family
+| The font family of headings, such as the page title and section headings. This font is usually displayed in a larger size, so it's safer to use a more decorative font than <code>--wiki-body-font-family</code>, but still try to keep it legible.
+|-
+| --wiki-sidebar-heading-font-family
+| The font family of sidebar headings. In contrast to <code>--wiki-heading-font-family</code>, this is usually displayed in a smaller size, so keep it simple and easy to read.
+|-
+| --wiki-sidebar-border-radius
+| The [https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius border-radius] of the sidebar. If <code>--wiki-sidebar-portal-spacing</code> is set to 0, then only the top and bottom corners of the sidebar as a whole will be affected, otherwise every portal will have all its corners affected. Units must be specified even if this is set to 0.
+|-
+| --wiki-sidebar-border-spacing
+| The space between each portal in the sidebar. Units must be specified even if this is set to 0.
+|-
+| --wiki-content-border-width
+| The thickness of the border around the content area.
+|-
+| --wiki-sidebar-border-width
+| The thickness of the border around the sidebar portals.
+|-
+| --wiki-content-background-opacity
+| The opacity of the main content area, to let the wiki's background image show through. Please keep this high, usually above 0.9, or it can make reading text difficult.
+|-
+| --wiki-sidebar-background-opacity
+| The background opacity of the sidebar. Usually this inherits <code>--wiki-content-background-opacity</code>.
+|-
+| --wiki-icon-general-filter
+| A filter applied to many icons to make them visible on dark themes. Usually this is just <code>invert(100%)</code> on dark themes and blank on light themes.
+|-
+| --wiki-icon-to-link-filter
+| A filter that converts many icons into the same color as <code>--wiki-content-link-color</code>. This can be generated by plugging that into https://mrpie5.gitlab.io/css-filter-generator/.
+|}
+
+===List of all colors with contrast checking===
+The table below shows all the colors currently in use, as well as notes on how to use them. The last column shows which colors are expected to show up as text against other colors. With the exception of <code>--wiki-content-text-mix-color--95</code>, all text in the last column should be ''clearly'' legible. If it is not, you may need to adjust one of the referenced colors in your color palette.
+
+Keep in mind that changes to the opacity variables in the section above will cause the content and sidebar background colors to mix with the body background color/image, so the contrasts below may not be perfectly accurate.
+
+{| class="wikitable"
+! Variable name !! Color !! style="width: 40em;" | Notes !! Test contrast against these variables
+|-
+| --wiki-body-background-color
+| style="background-color:var(--wiki-body-background-color);" |
+| The background color behind the background image. This usually only shows up if the background image doesn't load, doesn't fill the screen, or has some transparency. This color should be similar to the overall color of the background image, or the top-left corner if it is made up of many different colors. In the former case, https://matkl.github.io/average-color/ is helpful.
+| style="background-color:var(--wiki-body-background-color);" |
+<span style="color:var(--wiki-body-dynamic-color);">--wiki-body-dynamic-color</span><br/>
+<span style="color:var(--wiki-body-dynamic-color--secondary);">--wiki-body-dynamic-color--secondary</span><br/>
+|-
+| --wiki-body-dynamic-color
+| style="background-color:var(--wiki-body-dynamic-color);" |
+| This is expected to contrast sharply with the body-background-color, for cases when text needs to be displayed against it. Usually this is {{color|#000}} on light themes and {{color|#fff}} on dark themes.
+| style="background-color:var(--wiki-body-dynamic-color);" |
+<span style="color:var(--wiki-body-background-color)">--wiki-body-background-color</span><br/>
+<span style="color:var(--wiki-body-dynamic-color--inverted);">--wiki-body-dynamic-color--inverted</span><br/>
+<span style="color:var(--wiki-body-dynamic-color--secondary--inverted);">--wiki-body-dynamic-color--secondary--inverted</span><br/>
+|-
+| --wiki-body-dynamic-color--inverted
+| style="background-color:var(--wiki-body-dynamic-color--inverted);" |
+| The inverse of <code>--wiki-body-dynamic-color</code>. This should optimally have almost no contrast with the body-background-color.
+| style="background-color:var(--wiki-body-dynamic-color--inverted);" |
+<span style="color:var(--wiki-body-dynamic-color);">--wiki-body-dynamic-color</span><br/>
+<span style="color:var(--wiki-body-dynamic-color--secondary);">--wiki-body-dynamic-color--secondary</span><br/>
+|-
+| --wiki-body-dynamic-color--secondary
+| style="background-color:var(--wiki-body-dynamic-color--secondary);" |
+| A slightly different version of body-dynamic-color. Usually this is {{color|#333}} on light themes and {{color|#ddd}} on dark themes.
+| style="background-color:var(--wiki-body-dynamic-color--secondary);" |
+<span style="color:var(--wiki-body-background-color)">--wiki-body-background-color</span><br/>
+<span style="color:var(--wiki-body-dynamic-color--inverted);">--wiki-body-dynamic-color--inverted</span><br/>
+<span style="color:var(--wiki-body-dynamic-color--secondary--inverted);">--wiki-body-dynamic-color--secondary--inverted</span><br/>
+|-
+| --wiki-body-dynamic-color--secondary--inverted
+| style="background-color:var(--wiki-body-dynamic-color--secondary--inverted);" |
+| The inverse of <code>--wiki-body-dynamic-color--secondary</code>.
+| style="background-color:var(--wiki-body-dynamic-color--secondary--inverted);" |
+<span style="color:var(--wiki-body-dynamic-color);">--wiki-body-dynamic-color</span><br/>
+<span style="color:var(--wiki-body-dynamic-color--secondary);">--wiki-body-dynamic-color--secondary</span><br/>
+|-
+| --wiki-content-background-color
+| style="background-color:var(--wiki-content-background-color);" |
+| The background color of the main content area.
+| style="background-color:var(--wiki-content-background-color);" |
+<span style="color:var(--wiki-content-text-color)">--wiki-content-text-color</span><br/>
+<span style="color:var(--wiki-content-link-color)">--wiki-content-link-color</span><br/>
+<span style="color:var(--wiki-content-link-color--visited)">--wiki-content-link-color--visited</span><br/>
+<span style="color:var(--wiki-content-link-color--hover)">--wiki-content-link-color--hover</span><br/>
+<span style="color:var(--wiki-content-redlink-color)">--wiki-content-redlink-color</span><br/>
+<span style="color:var(--wiki-content-text-mix-color)">--wiki-content-text-mix-color</span><br/>
+<span style="color:var(--wiki-content-dynamic-color)">--wiki-content-dynamic-color</span><br/>
+<span style="color:var(--wiki-content-dynamic-color--secondary)">--wiki-content-dynamic-color--secondary</span><br/>
+<span style="color:var(--wiki-content-heading-color)">--wiki-content-heading-color</span><br/>
+<span style="color:var(--wiki-accent-color)">--wiki-accent-color</span><br/>
+<span style="color:var(--wiki-neutral-color)">--wiki-neutral-color</span><br/>
+<span style="color:var(--wiki-success-color)">--wiki-success-color</span><br/>
+<span style="color:var(--wiki-alert-color)">--wiki-alert-color</span><br/>
+|-
+| --wiki-content-background-color--secondary
+| style="background-color:var(--wiki-content-background-color--secondary);" |
+| A secondary content background to highlight certain things. Usually this is <code>--wiki-content-background-color</code> with saturation and/or value reduced or increased by about 10%, but you're free to make it whatever you want provided the contrast checks to the right still pass.
+| style="background-color:var(--wiki-content-background-color--secondary);" |
+<span style="color:var(--wiki-content-text-color)">--wiki-content-text-color</span><br/>
+<span style="color:var(--wiki-content-link-color)">--wiki-content-link-color</span><br/>
+<span style="color:var(--wiki-content-link-color--visited)">--wiki-content-link-color--visited</span><br/>
+<span style="color:var(--wiki-content-link-color--hover)">--wiki-content-link-color--hover</span><br/>
+<span style="color:var(--wiki-content-redlink-color)">--wiki-content-redlink-color</span><br/>
+<span style="color:var(--wiki-content-text-mix-color)">--wiki-content-text-mix-color</span><br/>
+<span style="color:var(--wiki-content-dynamic-color)">--wiki-content-dynamic-color</span><br/>
+<span style="color:var(--wiki-content-dynamic-color--secondary)">--wiki-content-dynamic-color--secondary</span><br/>
+<span style="color:var(--wiki-content-heading-color)">--wiki-content-heading-color</span><br/>
+<span style="color:var(--wiki-accent-color)">--wiki-accent-color</span><br/>
+<span style="color:var(--wiki-neutral-color)">--wiki-neutral-color</span><br/>
+<span style="color:var(--wiki-success-color)">--wiki-success-color</span><br/>
+<span style="color:var(--wiki-alert-color)">--wiki-alert-color</span><br/>
+|-
+| --wiki-content-border-color
+| style="background-color:var(--wiki-content-border-color);" |
+| Border color for the main content area and elements within it.
+| N/A
+|-
+| --wiki-content-text-color
+| style="background-color:var(--wiki-content-text-color);" |
+| Text color for the main content area.
+| style="background-color:var(--wiki-content-text-color);" |
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary)">--wiki-content-background-color--secondary</span><br/>
+|-
+| --wiki-content-link-color
+| style="background-color:var(--wiki-content-link-color);" |
+| Links within the content area. Please do not make this red, as red links on wikis traditionally denote pages that don't exist.
+| style="background-color:var(--wiki-content-link-color);" |
+<span style="color:var(--wiki-content-link-label-color);">--wiki-content-link-label-color</span>
+|-
+| --wiki-content-link-label-color
+| style="background-color:var(--wiki-content-link-label-color);" |
+| This is used when placing text on an element with the link color as a background, such as a button.
+| style="background-color:var(--wiki-content-link-label-color);" |
+<span style="color:var(--wiki-content-link-color);">--wiki-content-link-color</span>
+|-
+| --wiki-content-link-color--visited
+| style="background-color:var(--wiki-content-link-color--visited);" |
+| The color of visited links. This is optional, and usually inherits <code>--wiki-content-link-color</code>.
+| style="background-color:var(--wiki-content-link-color--visited);" |
+<span style="color:var(--wiki-content-background-color);">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary);">--wiki-content-background-color--secondary</span>
+|-
+| --wiki-content-link-color--hover
+| style="background-color:var(--wiki-content-link-color--hover);" |
+| The color links change to when hovered over. This is optional, and usually inherits <code>--wiki-content-link-color</code>.
+| style="background-color:var(--wiki-content-link-color--hover);" |
+<span style="color:var(--wiki-content-background-color);">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary);">--wiki-content-background-color--secondary</span>
+|-
+| --wiki-content-redlink-color
+| style="background-color:var(--wiki-content-redlink-color);" |
+| The color of links to pages that don't exist. Since these should only rarely be seen, you can be a little lax about choosing a color that contrasts with the background, but it should still be legible.
+| style="background-color:var(--wiki-content-redlink-color);" |
+<span style="color:var(--wiki-content-background-color);">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary);">--wiki-content-background-color--secondary</span>
+|-
+| --wiki-content-text-mix-color
+| style="background-color:var(--wiki-content-text-mix-color);" |
+| A mix of <code>--wiki-content-text-color</code> and <code>--wiki-content-background-color</code>, calculated automatically. This is generally used to mark disabled elements or placeholder text.
+| style="background-color:var(--wiki-content-text-mix-color);" |
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary)">--wiki-content-background-color--secondary</span><br/>
+<span style="color:var(--wiki-content-text-mix-color-95)">--wiki-content-text-mix-color-95</span>
+|-
+| --wiki-content-text-mix-color-95
+| style="background-color:var(--wiki-content-text-mix-color-95);" |
+| The same as <code>--wiki-content-text-mix-color</code>, but the mix is 95% <code>--wiki-content-background-color</code>, calculated automatically. This is used to mark disabled elements. The contrast checker to the right should actually be very hard to read but not impossible.
+| style="background-color:var(--wiki-content-text-mix-color-95);" |
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary)">--wiki-content-background-color--secondary</span>
+|-
+| --wiki-content-dynamic-color
+| style="background-color:var(--wiki-content-dynamic-color);" |
+| This is expected to contrast sharply with <code>--wiki-content-background-color</code>. Usually this is {{color|#000}} on light themes and {{color|#fff}} on dark themes.
+| style="background-color:var(--wiki-content-dynamic-color);" |
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-dynamic-color--inverted)">--wiki-content-dynamic-color--inverted</span><br/>
+<span style="color:var(--wiki-content-dynamic-color--secondary--inverted)">--wiki-content-dynamic-color--secondary--inverted</span><br/>
+|-
+| --wiki-content-dynamic-color--inverted
+| style="background-color:var(--wiki-content-dynamic-color--inverted);" |
+| The inverse of <code>--wiki-content-dynamic-color</code>.
+| style="background-color:var(--wiki-content-dynamic-color--inverted);" |
+<span style="color:var(--wiki-content-dynamic-color)">--wiki-content-dynamic-color</span><br/>
+<span style="color:var(--wiki-content-dynamic-color--secondary)">--wiki-content-dynamic-color--secondary</span><br/>
+|-
+| --wiki-content-dynamic-color--secondary
+| style="background-color:var(--wiki-content-dynamic-color--secondary);" |
+| A slightly different version of <code>--wiki-content-dynamic-color</code>. Usually this is {{color|#333}} on light themes and {{color|#ddd}} on dark themes.
+| style="background-color:var(--wiki-content-dynamic-color--secondary);" |
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-dynamic-color--inverted)">--wiki-content-dynamic-color--inverted</span><br/>
+<span style="color:var(--wiki-content-dynamic-color--secondary--inverted)">--wiki-content-dynamic-color--secondary--inverted</span><br/>
+|-
+| --wiki-content-dynamic-color--secondary--inverted
+| style="background-color:var(--wiki-content-dynamic-color--secondary--inverted);" |
+| The inverse of <code>--wiki-content-dynamic-color--secondary</code>.
+| style="background-color:var(--wiki-content-dynamic-color--secondary--inverted);" |
+<span style="color:var(--wiki-content-dynamic-color)">--wiki-content-dynamic-color</span><br/>
+<span style="color:var(--wiki-content-dynamic-color--secondary)">--wiki-content-dynamic-color--secondary</span><br/>
+|-
+| --wiki-content-heading-color
+| style="background-color:var(--wiki-content-heading-color);" |
+| The color of headings, such as the page title and section headings. Usually this is set to <code>--wiki-content-text-color</code>, but feel free to give it a different color to spice up the theme a little.
+| style="background-color:var(--wiki-content-heading-color);" |
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span>
+|-
+| --wiki-accent-color
+| style="background-color:var(--wiki-accent-color);" |
+| Used to style infoboxes, navboxes, focused element outlines, and some buttons, such as the save button when editing.
+| style="background-color:var(--wiki-accent-color);" |
+<span style="color:var(--wiki-accent-label-color)">--wiki-accent-label-color</span><br/>
+<span style="color:var(--wiki-accent-link-color)">--wiki-accent-link-color</span><br/>
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary)">--wiki-content-background-color--secondary</span><br/>
+|-
+| --wiki-accent-color--hover
+| style="background-color:var(--wiki-accent-color--hover);" |
+| The color of accent-color when hovered over, in some cases. Usually this is just accent-color with saturation and/or value reduced or increased by about 10%, but you're free to make it whatever you want provided the contrast checks to the right still pass.
+| style="background-color:var(--wiki-accent-color--hover);" |
+<span style="color:var(--wiki-accent-label-color)">--wiki-accent-label-color</span><br/>
+<span style="color:var(--wiki-accent-link-color)">--wiki-accent-link-color</span><br/>
+|-
+| --wiki-accent-label-color
+| style="background-color:var(--wiki-accent-label-color);" |
+| The color of normal text against the accent color.
+| style="background-color:var(--wiki-accent-label-color);" |
+<span style="color:var(--wiki-accent-color)">--wiki-accent-color</span><br/>
+<span style="color:var(--wiki-accent-color--hover)">--wiki-accent-color--hover</span><br/>
+|-
+| --wiki-accent-link-color
+| style="background-color:var(--wiki-accent-link-color);" |
+| The color of links against the accent color.
+| style="background-color:var(--wiki-accent-link-color);" |
+<span style="color:var(--wiki-accent-color)">--wiki-accent-color</span>
+|-
+| --wiki-sidebar-background-color
+| style="background-color:var(--wiki-sidebar-background-color);" |
+| The background color of the sidebar to the left of the content area. Usually this inherits <code>--wiki-content-background-color</code>.
+| style="background-color:var(--wiki-sidebar-background-color);" |
+<span style="color:var(--wiki-sidebar-link-color)">--wiki-sidebar-link-color</span><br/>
+<span style="color:var(--wiki-sidebar-heading-color)">--wiki-sidebar-heading-color</span><br/>
+|-
+| --wiki-sidebar-border-color
+| style="background-color:var(--wiki-sidebar-border-color);" |
+| The border color of the sidebar. Usually this inherits <code>--wiki-content-border-color</code>.
+| N/A
+|-
+| --wiki-sidebar-link-color
+| style="background-color:var(--wiki-sidebar-link-color);" |
+| The color of links in the sidebar. Usually this inherits <code>--wiki-content-link-color</code>.
+| style="background-color:var(--wiki-sidebar-link-color);" |
+<span style="color:var(--wiki-sidebar-background-color)">--wiki-sidebar-background-color</span>
+|-
+| --wiki-sidebar-link-color--hover
+| style="background-color:var(--wiki-sidebar-link-color--hover);" |
+| The color links change to when hovered over. This is optional, and usually inherits <code>--wiki-content-link-color--hover</code>.
+| style="background-color:var(--wiki-sidebar-link-color--hover);" |
+<span style="color:var(--wiki-sidebar-background-color)">--wiki-sidebar-background-color</span>
+|-
+| --wiki-sidebar-heading-color
+| style="background-color:var(--wiki-sidebar-heading-color);" |
+| The color of headings in the sidebar. Usually this inherits <code>--wiki-content-heading-color</code>.
+| style="background-color:var(--wiki-sidebar-heading-color);" |
+<span style="color:var(--wiki-sidebar-background-color)">--wiki-sidebar-background-color</span>
+|-
+| --wiki-navigation-background-color
+| style="background-color:var(--wiki-navigation-background-color);" |
+| The primary background color of the navigation tabs above the content area. Usually this inherits <code>--wiki-content-background-color--secondary</code>.
+| style="background-color:var(--wiki-navigation-background-color);" |
+<span style="color:var(--wiki-navigation-text-color)">--wiki-navigation-text-color</span><br/>
+|-
+| --wiki-navigation-background-color--secondary
+| style="background-color:var(--wiki-navigation-background-color--secondary);" |
+| The upper background color of the navigation tabs, as well as the background color of the "More" menu dropdown. Usually this inherits <code>--wiki-content-background-color</code>.
+| style="background-color:var(--wiki-navigation-background-color--secondary);" |
+<span style="color:var(--wiki-navigation-text-color)">--wiki-navigation-text-color</span><br/>
+|-
+| --wiki-navigation-border-color
+| style="background-color:var(--wiki-navigation-border-color);" |
+| Border color of the navigation tabs. Usually this inherits <code>--wiki-content-border-color</code>.
+| N/A
+|-
+| --wiki-navigation-text-color
+| style="background-color:var(--wiki-navigation-text-color);" |
+| The color of text in the navigation tabs. Usually this inherits <code>--wiki-content-link-color</code>.
+| style="background-color:var(--wiki-navigation-text-color);" |
+<span style="color:var(--wiki-navigation-background-color)">--wiki-navigation-background-color</span><br/>
+<span style="color:var(--wiki-navigation-background-color--secondary)">--wiki-navigation-background-color--secondary</span><br/>
+|-
+| --wiki-navigation-selected-background-color
+| style="background-color:var(--wiki-navigation-selected-background-color);" |
+| The background color of the currently active navigation tab. Usually this inherits <code>--wiki-content-background-color</code>
+| style="background-color:var(--wiki-navigation-selected-background-color);" |
+<span style="color:var(--wiki-navigation-selected-text-color)">--wiki-navigation-selected-text-color</span><br/>
+|-
+| --wiki-navigation-selected-border-color
+| style="background-color:var(--wiki-navigation-selected-border-color);" |
+| The border color of the currently active navigation tab. Usually this inherits <code>--wiki-navigation-border-color</code>
+| N/A
+|-
+| --wiki-navigation-selected-text-color
+| style="background-color:var(--wiki-navigation-selected-text-color);" |
+| The text color of the currently active navigation tab. Usually this inherits <code>--wiki-content-text-color</code>
+| style="background-color:var(--wiki-navigation-selected-text-color);" |
+<span style="color:var(--wiki-navigation-selected-background-color)">--wiki-navigation-selected-background-color</span><br/>
+|-
+| --wiki-neutral-color
+| style="background-color:var(--wiki-neutral-color);" |
+| A gray-ish color for displaying neutral text, such as a diff size of 0 in RecentChanges and page history. Usually this inherits <code>--wiki-content-text-mix-color</code>, but can be set explicitly if that color is not gray enough.
+| style="background-color:var(--wiki-neutral-color);" |
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary)">--wiki-content-background-color--secondary</span>
+|-
+| --wiki-alert-color
+| style="background-color:var(--wiki-alert-color);" |
+| A general, usually red-ish color used for negative notices, most notably negative diffs in RecentChanges and page history, and the "cancel" button when editing.
+| style="background-color:var(--wiki-alert-color);" |
+<span style="color:var(--wiki-alert-label-color)">--wiki-alert-label-color</span><br/>
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary)">--wiki-content-background-color--secondary</span><br/>
+|-
+| --wiki-alert-label-color
+| style="background-color:var(--wiki-alert-label-color);" |
+| The color of text against <code>--wiki-alert-color</code> as a background.
+| style="background-color:var(--wiki-alert-label-color);" |
+<span style="color:var(--wiki-alert-color)">--wiki-alert-color</span><br/>
+|-
+| --wiki-warning-color
+| style="background-color:var(--wiki-warning-color);" |
+| A general, usually orange-ish color used for warning notices.
+| style="background-color:var(--wiki-warning-color);" |
+<span style="color:var(--wiki-warning-label-color)">--wiki-warning-label-color</span><br/>
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+|-
+| --wiki-warning-label-color
+| style="background-color:var(--wiki-warning-label-color);" |
+| The color of text against <code>--wiki-warning-color</code> as a background.
+| style="background-color:var(--wiki-warning-label-color);" |
+<span style="color:var(--wiki-warning-color)">--wiki-warning-color</span><br/>
+|-
+| --wiki-success-color
+| style="background-color:var(--wiki-success-color);" |
+| A general, usually green-ish color used for success notices, most noticeably positive diffs in RecentChanges and page history.
+| style="background-color:var(--wiki-success-color);" |
+<span style="color:var(--wiki-success-label-color)">--wiki-success-label-color</span><br/>
+<span style="color:var(--wiki-content-background-color)">--wiki-content-background-color</span><br/>
+<span style="color:var(--wiki-content-background-color--secondary)">--wiki-content-background-color--secondary</span><br/>
+|-
+| --wiki-success-label-color
+| style="background-color:var(--wiki-success-label-color);" |
+| The color of text against <code>--wiki-success-color</code> as a background.
+| style="background-color:var(--wiki-success-label-color);" |
+<span style="color:var(--wiki-success-color)">--wiki-success-color</span><br/>
+|}
+
+==Stylesheet==
+<!-- When rendered on common.css, the actual stylesheet will be right here -->
+</div>

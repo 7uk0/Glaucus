@@ -1,0 +1,1051 @@
+= '''<big>Shipyard</big>''' =
+Shortly after you board the Frontier Prime, The Shipyard Computers are where most adventures will start. There are multiple different kinds of shipyards, outlined below, they all share some base functionality and the ability to purchase a different array of ships.
+
+To find maps of every currently-available ship, go to [https://shipyard.frontierstation14.com/ the shipyard site].
+
+== '''ID Card & PDA''' ==
+All Shipyards will require a player to insert their ID card from their [[PDA]] into the machine. The console imprints a Ship Deed onto the ID card, holding information such as the name and serial number (entity uid) and callsign of the ship itself. <u>'''Do not lose this ID card!'''</u> You will need to insert your ID card to sell your ship later on in the shift, in the event you end your round early or are looking to upgrade.  Some Captains will even stash their ID card in a safe, secure location, in the event of catastrophic failure or total crew death.
+
+== '''Bank Account & Purchasing''' ==
+All Shipyards will interface directly with a player's [[NT Galactic Bank]] account. Funds are automatically withdrawn to pay for ships. Selling a ship back to the shipyard will also automatically deposit the funds into your bank account. When selling your ship, the Shipyard will appraise the value of your entire ship, including anything added or removed in the course of your adventures. That means getting your money quickly can be a breeze at the end of the shift, but often you can earn much more for the same items if sold to a [[Cargo Depot]] or similar.
+
+To clarify on selling ship. Buy price is base appraisal of the ship +15-25% depending on ship maker. While Sell price is calculated on all grid contents the same as the Cargo Depot but at 100% value.
+
+For Expedition ships standard buy price is ~30% on top of base appraisal. 
+
+== '''Callsigns & Locating your Ship''' ==
+Each ship has a name along with their Company Callsign and Unique ID number; All ships fitted with an IFF & (BLANK) are shown on Mass Scanners. Each ship is typically displayed on a Mass Scanner in the order of; Company Callsign, Ship Name, Unique ID number. Recent changes to the displays on Mass Scanners have dropped the Company Callsign from the Radar visibility, but each ship still retains it in their designations.
+
+These are listed as for example if you buy a '''NT KESTREL''', on mass scanner it will show was '''KESTREL-###''', where ### is the number given when you purchase the ship.
+
+As of recently, you can rename your ships for the duration of your shift. This can be done by going to the local Station Representative Office at Frontier Station and requesting they change your ship's designation to almost whatever you desire.
+
+===Company Callsigns===
+
+{| class="wikitable sortable mw-collapsible"
+|+Company Callsigns;
+!Callsign
+!Company
+!Ships
+!Founder
+!CEO (IC)
+!Maintainer
+|-
+|'''NT'''
+|''[[Nanotrasen]]''
+|18
+|SS13
+|CentCom
+|Checkraze
+|-
+|'''KC'''
+|''[[KesCo]]''
+|6*
+|Kes
+|Kessandra Hart
+|SungYandy
+|-
+|'''SLI'''
+|[[Salami Lid Initiative|''Salami Lid Initiative'']]
+|2
+|Minty-Moo
+|Nadia MacMeow
+|
+|-
+|'''ICR'''
+|
+|1
+|
+|
+|
+|-
+|'''KL'''
+|
+|1
+|
+|
+|
+|-
+|'''NC'''
+|Nanotrasen Civilian
+|10
+|
+|
+|
+|-
+|'''NM'''
+|Nanotrasen Medical
+|3
+|
+|
+|
+|-
+|'''NR'''
+|Nanotrasen Research
+|3
+|
+|
+|
+|-
+|'''NSF'''
+|Nanotrasen Security Force
+|13
+|
+|
+|
+|-
+|'''SV'''
+|Salvage Vessels
+|3
+|
+|
+|
+|-
+|'''TC'''
+|
+|1
+|
+|
+|
+|-
+|'''DYS'''
+|
+|1
+|
+|
+|
+|-
+|'''DC'''
+|DarinCorp
+|1
+|DarinCorp
+|???
+|Dvir01
+|-
+|'''UAC'''
+|[[Ultimate Atmosian Coalition|''Ultimate Atmosian Coalition'']]
+|2
+|router
+|???
+|Cuir
+|-
+|'''SBB'''
+|BlueBird Shipbuilding
+|6
+|Arimah / Tych0
+|Tee Vogel / Aila Azure
+|Arimah / Tych0
+|-
+|'''SSS'''
+|Settler's Space Shuttles
+|1
+|Amfai (Buyrcsp2)
+|??? Settler
+|Amfai (Buyrcsp2)
+|-
+|'''FSB'''
+|Far Star Biotech
+|2
+|DustyLens
+|
+|DustyLens
+|-
+|'''EIS'''
+|Endurance Industrial Shipyards
+|1
+|Scry
+|
+|Scry
+|}
+
+With their respective Callsigns: KC is KesCo, NT is Nanotransen and SLI is Salami Lid Initiative, the future possibilities of companies such IRC, MYC..
+
+== '''Civilian Shipyard''' ==
+This is the starting shipyard, and is available on [[Frontier Prime]] to all players. The ships sold from this shipyard are standard issue and typically come suited for at least one profitable task.
+
+* No Hidden Costs or Fees
+* No Implied Contracts or Stipulations
+* Available to all players at the beginning of the round.
+
+=== Available Ships ===
+{| class="wikitable sortable mw-collapsible"
+|+Civilian Shipyard Ships
+!Name
+!Recommended Crew Size
+!Size
+!Roles
+!Cost
+!Power Type
+|-
+|[[NC Barge]]
+|3-6
+|Medium
+|Cargo Tech, Bartender, Salvage, Q.M
+|$47,000
+|Plasma/Solar
+|-
+|[[NC Mail Truck]]
+|1-2
+|Small
+|Mail Carrier
+|$10150
+|Plasma
+|-
+|[[NC Bocadillo]]
+|1-2
+|Small
+|Chef
+|$25,000 
+|Plasma
+|-
+|[[NC Personal Transport]]
+|1-3
+|Small
+|Passenger
+|$17,500
+|Plasma
+|-
+|[[NC Prospector]]
+|1-3
+|Small
+|Salvage
+|$24,500
+|Plasma
+|-
+|[[NC Skipper]]
+|1-3
+|Small
+|Botanist, Chef
+|$33,000
+|Plasma
+|-
+|[[NR Sparrow]]
+|1-4
+|Small
+|Scientist, Engineer
+|$41,000
+|Plasma
+|-
+|[[NR Investigator]]
+|1-2
+|Small
+|Salvage, Scientist, Bartender
+|$42,100
+|Plasma
+|-
+|[[NT Construct]]
+|1
+|Small
+|Passenger
+|$10,500
+|Plasma
+|-
+|[[NT Honker]]
+|1+
+|Small
+|Clown
+|$22,500
+|Plasma
+|-
+|[[NC Legman]]
+|1+
+|Small
+|Reporter
+|$13,000
+|Plasma
+|-
+|[[NC Loader]]
+|1-2
+|Small
+|Cargo Tech
+|$22,000
+|Plasma
+|-
+|[[NT Liquidator]]
+|1+
+|Small
+|Janitor, Atmos Tech, Chemist
+|$30,750
+|Plasma
+|-
+|[[NC Harbormaster]]
+|1+
+|Small
+|Pilot
+|$31,500
+|Plasma
+|-
+|[[NC Placebo]]
+|1+
+|Small
+|Psychologist
+|$20,000
+|Plasma
+|-
+|[[KL Bulker]]
+|2-4
+|Medium
+|Salvage
+|$47,500
+|Uranium
+|-
+|[[SLI Bazaar]]
+|2-4
+|Medium
+|Q.M, Cargo Tech, Mercenary, Service Worker
+|$80,000
+|AME
+|-
+|[[NR Phoenix]]
+|2-4
+|Medium
+|Salvage, Scientist, R.D, Cyborg
+|$64,000
+|Plasma
+|-
+|[[NT Kestrel]]
+|2-6
+|Medium
+|Salvage
+|$52,200
+|Plasma
+|-
+|[[NT Crescent]]
+|6+
+|Large
+|Bartender, Chef, Doctor, Chemist, Engineer, Atmos Tech, Scientist,
+Musician, Q.M, Lawyer, Janitor, R.D, C.M.O, Mercenary
+|$350,020
+|AME
+|-
+| [[NT Comet]]
+|3-6
+|Medium
+|Engineer, Passenger
+|$55,000
+|AME
+|-
+|[[ICR Chisel]]
+|2-4
+|Small
+|Salvage
+|$34,615
+|Plasma
+|-
+|[[NC Pioneer]]
+|1
+|Small
+|Salvage
+|$11,250
+|Plasma
+|-
+|[[SE Spectre|NR Spectre]]
+|4-5
+|Large
+|R.D, Scientist, Bartender
+|$185,000
+|AME
+|-
+|[[NT Stellaris]]
+|2-5
+|Medium
+|Musician, Clown, Mime, Chef, Doctor
+|$48,000
+|Plasma
+|-
+|[[NC Lantern]]
+|2-3
+|Medium
+|Pilot, Chaplain
+|$37,500
+|Solar/Plasma
+|-
+|[[NC Kilderkin]]
+|2-4
+|Medium
+|Pilot, Mercenary, Bartender, Botanist
+|$48,750
+|Plasma
+|-
+|[[NC Hauler]]
+|3-6
+|Medium
+|Cargo Tech, Bartender, Cargo Tech, Q.M
+|$77,000
+|Uranium
+|-
+|[[SBB Ceres]]
+|2-5
+|Medium
+|Contractor, Pilot, Mercenary
+|$60,000
+|Uranium
+|-
+|[[DC McCargo]]
+|3-6
+|Medium
+|Pilot, Chef, Junitor, Botanist, Cargo Tech, Q.M, Cyborg
+|$80,000
+|AME
+|-
+|[[HS Garden]]
+|1-2
+|Small
+|Botanist, Pilot
+|$28,000
+|Plasma
+|-
+|[[SBB Lyrae]]
+|2-4
+|Medium
+|Contractor, Pilot, Mercenary
+|$60,000
+|AME
+|-
+|[[NC Piecrust]]
+|1-2
+|Small
+|Chef, Pilot
+|$35,000
+|Plasma
+|-
+|[[SBB Bookworm]]
+|1-3
+|Medium
+|Contractor, Pilot, Mercenary
+|$31,500
+|Plasma
+|-
+|[[NT Vagabond]]
+|2-6
+|Medium
+|Cargo Tech, Engineer, Salvage, Quartermaster
+|$60,000
+|Plasma
+|-
+|[[DC Cleithro]]?
+|1-2
+|Medium
+|Psychologist
+|$30000
+|Welder Fuel
+|-
+|[[SBB Hammer]]
+|1-2
+|Medium
+|Contractor, Pilot, Mercenary
+|$44,000
+|Plasma
+|-
+|[[SBB Bodkin]]
+|1-3
+|Small
+|Salvage, Pilot
+|$39,000
+|Uranium
+|-
+|[[SSS Camper]]
+|1+
+|Small
+|Pilot
+|$14,000
+|Plasma
+|}
+
+== Medical '''Shipyard''' ==
+The medical shipyard can be found at the Medical Dispatch. All ships found here are either for medical responses or other similar emergency responses.
+
+=== Available Ships ===
+{| class="wikitable sortable mw-collapsible"
+|+Medical Shipyard Ships
+!Name
+!Recommended Crew Size
+!Size
+!Roles
+!Cost
+!Power Type
+|-
+|[[FSB Spirit]]
+|1
+|Small
+|Paramedic
+|$18,500
+|Plasma
+|-
+|[[SBB Tyne]]
+|1-2
+|Small
+|Paramedic, Pilot
+|$20,750
+|Plasma
+|-
+|[[NM Searchlight]]
+|1-3
+|Small
+|Pilot, Paramedic, Engineer
+|$30,000
+|Plasma
+|-
+|[[FSB Apothecary]]
+|1-2
+|Small
+|Medical, Chemistry
+|$36,500
+|Uranium
+|-
+|[[UW Akupara]]
+|1-3
+|Medium
+|Botanist, Atmos Tech, Chemist
+|$51,000
+|Uranium
+|-
+|[[FSB Stasis]]
+|1-3
+|Medium
+|Medical, Cryogenics, Chemistry, Botany
+|$56,000 
+|Bananium
+|-
+|[[NM Eagle]]
+|3-5
+|Medium
+|Chemist, Doctor, Paramedic, Pilot, Engineer
+|$60,000
+|Plasma
+|-
+|[[SBI Beaker]]?
+|2-4
+|Small
+|Chemist
+|$65,000
+|Uranium
+|-
+|[[NM Caduceus]]
+|4-8
+|Large
+|Paramedic, C.M.O, Doctor, Chemist, Cyborg, Engineer, Medical Intern
+|$115,000
+|AME
+|}
+
+== '''Expedition Shipyard''' ==
+The expedition shipyard can be found in the Expedition Lounge. All ships found here are capable of Expeditions.
+=== Available Ships ===
+{| class="wikitable sortable mw-collapsible"
+|+Expedition Shipyard Ships
+!Name
+!Recommended Crew Size
+!Size
+!Roles
+!Cost
+!Power Type
+|-
+|[[NT Pathfinder]]
+|2-4
+|Small
+|Salvage
+|$52,920
+|AME
+|-
+|[[NT Sprinter]]
+|3-6
+|Medium
+|Bartender, Paramedic, Mercenary, Salvage
+|$56,800
+|AME
+|-
+|[[NT Anchor]]
+|4-8
+|Large
+|Salvage, Chaplain, Bartender, Chef, Doctor, Atmos Tech, Engineer, Service Worker
+|$140,000
+|AME
+|-
+|[[SLI Gourd]]
+|4-8
+|Large
+|Atmos Tech, Engineer, Scientist, R.D, Chef, Bartender, Salvage, Janitor, Musician
+|$150,000
+|AME
+|-
+|[[DYS Dove]]
+|2-6
+|Medium
+|Engineer, Salvage, Cyborg
+|$78,500
+|AME
+|-
+|[[DYS Dragonfly]]
+|2-5
+|Medium
+|Cargo Tech, Salvage, Chemist, Engineer, Service Worker
+|$81,000
+|AME
+|-
+|[[UAC Ambition]]
+|4-8
+|Large
+|Pilot, Chief Engineer, Atmospherics Technician, Engineer, Salvage Specialist
+|$156,000
+|AME
+|-
+|[[NT Gasbender]]
+|3-6
+|Medium
+|Atmos Tech, C.E, Cyborg, Paramedic, Engineer
+|$82,500
+|AME
+|-
+|[[LVHI Brigand]]
+|3-6
+|Medium
+|Contractor, Pilot, Mercenary
+|$55,500
+|AME
+|-
+|[[EIS Charon]]
+|2-4
+|Medium
+|Contractor, Pilot, Mercenary
+|$82,000
+|AME
+|}
+
+== '''Scrapyard Shipyard''' ==
+The scrapyard shipyard can be found at [[Grifty's Gas and Grub]]. All ships found here either require repair or can best be described as 'technically spaceworthy hunks of scrap'.
+
+=== Available Ships ===
+{| class="wikitable sortable mw-collapsible"
+|+Scrapyard Shipyard Ships
+!Name
+!Recommended Crew Size
+!Size
+!Roles
+!Cost
+!Power Type
+|-
+|[[NT Bison]]
+|4-8
+|Large
+|Salvage, Paramedic, Engineer, Atmos Tech, Chef
+|$166138
+|Plasma
+|-
+|[[SV Nugget]]
+|1-2
+|Small
+|
+|$15950
+|Plasma
+|-
+|[[SV Orange]]
+|1-2
+|Small
+|
+|$16000
+|Uranium
+|-
+|[[SV Tide]]
+|1-2
+|Small
+|Passenger
+|$9700
+|Plasma
+|-
+|[[UAC Canister]]
+|1-2
+|Small
+|
+|$8000
+|Plasma
+|-
+|[[NSV Disciple]]
+|1+
+|Small
+|
+|$11300
+|Plasma
+|-
+|[[SV Point]]
+|1-3
+|Small
+|
+|$16100
+|Plasma
+|-
+|}
+
+== '''Security Shipyard''' ==
+This is the starting Security forces shipyard, and is where the [[New Frontier Sheriff's Department|NFSD]] will purchase their ships. The ships in here are typically specially designed for a certain style of security play. Purchasing a security ship binds you to uphold [[Space Law|space law]] and the [[Server Rules|server rules.]]
+
+* No hidden costs or fees
+* Incredibly cheap to run (cost is near market value)
+* Binds you to service in the NFSD, must uphold Space Law
+* Available only to security forces
+
+=== Available Ships ===
+{| class="wikitable sortable mw-collapsible"
+|+Security Shipyard Ships
+!Name
+!Recommended Crew Size
+!Size
+!Roles
+!Cost
+!Power Type
+!IFF Console
+|-
+|[[NSF Interceptor]]
+|1-2
+|Small
+|Detective, Security Officer
+|$21,350
+|Plasma
+|Yes
+|-
+|[[NT Cleric|NSF Cleric]]
+|1
+|Small
+|Brig Medic
+|$10800
+|APU
+|No
+|-
+|[[NT Rogue|NSF Rogue]]
+|1-2
+|Small
+|Security Officer
+|$8200
+|APU
+|No
+|-
+|[[NT Fighter|NSF Fighter]]
+|1
+|Small
+|Security Officer, Prison Guard
+|$9000
+|APU
+|Yes
+|-
+|[[NT Hospitaller|NSF Hospitaller]]
+|1-3
+|Small
+|Brig Medic
+|$28,220
+|APU
+|No
+|-
+|[[NT Templar|NSF Templar]]
+|1-3
+|Small
+|Security Officer
+|$24,220
+|APU
+|No
+|-
+|[[NSF Inquisitor]]
+|1-3
+|Small
+|Security Officer, Warden, Detective
+|$29000
+|Plasma
+|No
+|-
+|[[NSF Broadhead]]
+|2-4
+|Medium
+|Detective, Security Officer
+|$60,000
+|AME
+|Yes
+|-
+|[[NT Prowler|NSF Prowler]]
+|3-6
+|Medium
+|Security Officer, Warden
+|$42,000
+|AME
+|Yes
+|-
+|[[NT Marauder|NSF Marauder]]
+|4-8
+|Large
+|Security Officer, Brig Medic, Warden, Chef
+|$111550
+|AME
+|No
+|-
+|[[NT Empress|NSF Empress]]
+|4-8
+|Large
+|Prison Guard, Deputy, Bailiff, Brig Medic, Chef
+|$170,000
+|AME
+|Yes
+|-
+|[[NSF Wasp]]
+|4-8
+|Large
+|Security Officer, Warden, Prison Guard, Brigemdic
+|$135,000
+|AME
+|Yes
+|}
+
+== '''Black Market Shipyard''' ==
+These shipyard consoles will be rare and often hard to find. They also will charge a fairly steep fee to sell a ship to one of these hidden shipyards.  Many of these ships are uniquely designed and outfitted to assist in not-as-legal activities. Owning one of these vessels could make you liable to search, asset seizure, and likely continued harassment from Security.
+
+* Up to 30% or more tax to sell ships here
+* Hidden away from security forces
+* Exclusive Ship options
+* Can be considered [[contraband]]
+* Often loaded with antag goodies
+
+=== Available Ships ===
+{| class="wikitable sortable mw-collapsible"
+|+Black Market Shipyard Ships
+!Name
+!Recommended Crew Size
+!Size
+!Roles
+!Cost
+!Power Type
+!Expedition Capable
+!IFF Console
+|-
+|[[Schooner]]
+|2-4
+|Medium
+|None
+|$39120
+|Uranium
+|No
+|Yes
+|-
+|[[Hunter]]
+|1-4
+|Small
+|None
+|$46000
+|Plasma
+|No
+|Yes
+|-
+|[[Menace]]
+|1-2
+|Small
+|Pilot, Mercenary
+|$76000
+|AME
+|No
+|Yes
+|-
+|[[Infiltrator]]
+|2-5
+|Medium
+|None
+|$64000
+|AME
+|Yes
+|Yes
+|}
+
+== '''Retired Ships''' ==
+Gone, but hopefully not forgotten. These ships have been removed from their shipyards for any number of various reasons. Their listing here remains as a reminder of their existence in Frontier's history, and as a testament to the work done by Contributors gone-by. Know that the appreciation for your efforts remains even if your ship is no longer in service. Thank you.
+
+* Cost: Priceless
+* Hidden away from all but the most ghostly
+* Few Ships Retired
+* Can be considered [[contraband]] (why do you have one?)
+* Often loaded with remnants of prior Ship guidelines.
+
+=== Unavailable Ships ===
+{| class="wikitable sortable mw-collapsible"
+|+Retired Ships
+!Name
+!Crew Size
+!Creator
+!Size
+!Roles
+!Cost
+!Power Type
+!Expedition Capable
+!IFF Console
+|-
+|[[NM Helix]]
+|2-4
+|Checkraze
+|Small
+|Paramedic, C.M.O, Doctor, Chemist
+|$44,600
+|Plasma
+|No
+|No
+|-
+|[[NM Pulse]]
+|1-2
+|Checkraze
+|Small
+|Paramedic
+|$20,500
+|Plasma
+|No
+|No
+|-
+|[[NC Mission]]
+|1-2
+|kennedytcooper
+|Small
+|Janitor, Chaplain
+|$19,000
+|Plasma
+|No
+|No
+|-
+|[[NT WaveShot|NC WaveShot]]
+|1+
+|Lokey82 
+|Small
+|Reporter
+|$37,500
+|Plasma
+|No
+|No
+|-
+|[[TC Metastable]]
+|3-6
+|Temoffy
+|Medium
+|Scientist, Chef, Doctor, Chemist, Engineer, Passenger, Cyborg
+|$89,000
+|AME
+|No
+|No
+|-
+|[[NT Esquire]]
+|2-4
+|terezi4real
+|Medium
+|Lawyer, Prison Guard, Prisoner
+|$38,500
+|Plasma/RTG
+|No
+|No
+|-
+|[[NR Condor]]
+|2-6
+|Checkraze
+|Medium
+|Engineer, Scientist, R.D, CE, Atmos Tech, Cyborg
+|$72,890
+|Plasma/Solar
+|No
+|No
+|-
+|[[NR Stratos]]
+|2-6
+|GreaseMonk 
+|Medium
+|Pilot, Salvage, Bartender, Scientist, Engineer
+|$90,000
+|AME
+|No
+|No
+|-
+|[[NT Rosebud MK I]]
+|2-6
+|rosieposieeee 
+|Medium
+|Salvage, Paramedic, Engineer, Clown, Musician
+|$92,115
+|Solar/Welding Fuel
+|No
+|No
+|-
+|[[SSC KnuckleVerse]]
+|2-6
+|Batuh1n
+|Medium
+|Pilot, Janitor, Boxer, Bartender, Doctor
+|$36,500
+|Plasma
+|No
+|No
+|-
+|[[NT Courser-X]]
+|3-6
+|Checkraze
+|Medium
+|Salvage, Mercenary, Engineer, Paramedic, Bartender
+|$68,650
+|AME
+|Yes
+|No
+|-
+|[[NT Rosebud MK II]]
+|3-6
+|rosieposieeee 
+|Medium
+|Salvage, Paramedic, C.E, Doctor, Chemist
+|$138,000
+|AME/Solar/Welding Fuel
+|Yes
+|No
+|-
+|[[USS Mayflower]]
+|2-4
+|VividPups
+|Medium
+|Mercenary, Doctor
+|$50,000
+|AME
+|Yes
+|No
+|-
+|[[NSF Whiskey]]
+|2-4
+|cite2000
+|Medium
+|Brig Medic
+|$55,000
+|Plasma
+|No
+|No
+|-
+|[[NT Praeda]]
+|4-8
+|drhat
+|Large
+|Salvage, Bartender, Paramedic, Mercenary, Engineer, Q.M, C.E, Cargo Tech
+|$150,000
+|AME
+|Yes
+|No
+|-
+|[[NT Dart-X]]
+|3-6
+|
+|Medium
+|Clown, Engineer, Mercenary, Paramedic, Bartender
+|$80,500
+|AME
+|Yes
+|No
+|-
+|Placeholder
+|#
+|Author (GitHub)
+|Sml/Med/Lrg
+|Jobs (defunct)
+|$
+|Power
+|Yes/No
+|Yes/No
+|}
+*= ship needs image
+
+? = roles need verifying
+
+'''± =''' table needs standardizing
+
+(Use the [[Ship Template]] page to quickly build new ship pages)

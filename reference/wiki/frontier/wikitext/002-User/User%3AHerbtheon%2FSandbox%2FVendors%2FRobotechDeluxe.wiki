@@ -1,0 +1,39 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:CableApcStack.png|50px]] || LV Cable Coil || $337 || 4
+|-
+| [[File:SciFlash.png|50px]] || Flash || $200 || 4
+|-
+| [[File:ProximitySensor.png|50px]] || Proximity Sensor || $200 || 3
+|-
+| [[File:ClothingEyesHudDiagnostic.png|50px]] || Diagnostic HUD || $50 || 2
+|-
+| [[File:ClothingEyesEyepatchHudDiag.png|50px]] || Diagnostic HUD Eyepatch || $50 || 2
+|-
+| [[File:RemoteSignaller.png|50px]] || Remote Signaller || $200 || 3
+|-
+| [[File:Igniter.png|50px]] || Igniter || $100 || 3
+|-
+| [[File:HandheldHealthAnalyzer.png|50px]] || Health Analyzer || $150 || 3
+|-
+| [[File:Scalpel.png|50px]] || Scalpel || $100 || 2
+|-
+| [[File:SawElectric.png|50px]] || Circular Saw || $100 || 2
+|-
+| [[File:NitrousOxideTankFilled.png|50px]] || Nitrous Oxide Tank || $100 || 2
+|-
+| [[File:ClothingMaskBreathMedical.png|50px]] || Medical Mask || $125 || 5
+|-
+| [[File:ClothingHeadHatWeldingMaskFlame.png|50px]] || Flame Welding Mask || $250 || 1
+|-
+| [[File:Welder.png|50px]] || Welding Tool || $100 || 2
+|-
+| [[File:Screwdriver.png|50px]] || Screwdriver || $75 || 2
+|-
+| [[File:Crowbar.png|50px]] || Crowbar || $110 || 2
+|}
+</div>
+</includeonly>

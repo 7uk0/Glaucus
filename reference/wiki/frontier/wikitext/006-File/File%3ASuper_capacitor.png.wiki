@@ -1,0 +1,4 @@
+machine parts for the machine upgrade article
+
+== Licensing ==
+{{License|game}}

@@ -1,0 +1,55 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ClothingHandsGlovesColorYellow.png|50px]] || Insulated Gloves || $350
+|-
+| [[File:CrowbarYellow.png|50px]] || Crowbar || $220
+|-
+| [[File:MaintenanceJack.png|50px]] || Maintenance Jack || $200
+|-
+| [[File:Multitool.png|50px]] || Multitool || $280
+|-
+| [[File:ClothingEyesGlassesMeson.png|50px]] || Engineering Goggles || $1,350
+|-
+| [[File:ClothingHeadHatWelding.png|50px]] || Welding Mask || $500
+|-
+| [[File:NFInflatableWallStack1.png|50px]] || Inflatable Wall || $200
+|-
+| [[File:NFInflatableWindowStack1.png|50px]] || Inflatable Window || $200
+|-
+| [[File:NFInflatableDoorStack1.png|50px]] || Inflatable Door || $200
+|-
+| [[File:NFInflatableDoorWindowStack1.png|50px]] || Inflatable Windoor || $200
+|-
+| [[File:NFInflatableFloorStack1.png|50px]] || Inflatable Dock || $200
+|-
+| [[File:NFInflatableDockStack1.png|50px]] || Inflatable Crate || $200
+|-
+| [[File:GeigerCounter.png|50px]] || Geiger Counter || 200
+|-
+| [[File:PowerCellMedium.png|50px]] || Medium-Capacity Power Cell || $200
+|-
+| [[File:ShipyardRCD.png|50px]] || Shipyard RCD || $5,000
+|-
+| [[File:ShipyardRCDAmmo.png|50px]] || Shipyard Compressed Matter || $1,000
+|-
+| [[File:DoorRemoteShipyard.png|50px]] || Shipyard Door Remote || $2,000
+|-
+| [[File:ConstructionBag.png|50px]] || Construction Bag || $555
+|-
+| [[File:ClothingHeadHatCone.png|50px]] || Warning Cone || $250 || 10
+|-
+| style="background-color:#383838;" | [[File:CowToolboxFilled.png|50px]]
+| style="background-color:#383838;" | Cow Toolbox
+| style="background-color:#383838;" | $200
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#383838;" | [[File:DrinkBeerCan.png|50px]]
+| style="background-color:#383838;" | Beer Can
+| style="background-color:#383838;" | $55
+| style="background-color:#383838;" | 3
+|}
+</div>
+</includeonly>

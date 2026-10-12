@@ -1,0 +1,14 @@
+{{No direct use}}
+
+== List of hatnote templates ==
+* {{tl|Disambiguation}}
+* {{tl|Distinguish}}
+* {{tl|For}}
+* {{tl|Main}}
+
+== Dependencies ==
+For this template to work properly, you need the following:
+* The <code>.hatnote</code> class, found in [[MediaWiki:Common.css]].
+* The <code>--wiki-content-border-color--secondary</code> CSS variable, defined in [[MediaWiki:Common.css]].
+
+<noinclude>[[Category:Template documentation]]</noinclude>

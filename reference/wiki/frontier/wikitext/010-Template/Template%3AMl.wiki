@@ -1,0 +1,5 @@
+<code>{{[[Module:{{{1}}}|{{{1}}}]]}}<sup>m</sup>{{#if:{{{2|}}}|.{{{2}}}()}}</code><noinclude>
+* <code><nowiki>{{Ml|Infobox}}</nowiki></code> generates {{Ml|Infobox}}.
+* <code><nowiki>{{Ml|ArgsUtil|merge}}</nowiki></code> generates {{Ml|ArgsUtil|merge}}.
+[[Category:Formatting templates]]
+</noinclude>

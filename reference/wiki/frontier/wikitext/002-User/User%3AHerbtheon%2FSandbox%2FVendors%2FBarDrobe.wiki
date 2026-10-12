@@ -1,0 +1,40 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ClothingHeadHatBowlerHat.png|50px]] || Bowler Hat || $100 || 2
+|-
+| [[File:ClothingHeadHatTophat.png|50px]] || Tophat || $100 || 2
+|-
+| [[File:ClothingEyesHudBeer.png|50px]] || Beer Goggles || $100 || 2
+|-
+| [[File:ClothingEyesEyepatchHudBeer.png|50px]] || Beer HUD Eyepatch || $100 || 2
+|-
+| [[File:ClothingOuterApronBar.png|50px]] || Apron || $350 || 2
+|-
+| [[File:ClothingOuterWinterBar.png|50px]] || Bartender Winter Coat || $500 || 2
+|-
+| [[File:ClothingUniformJumpsuitBartender.png|50px]] || Bartender's Uniform || $100 || 2
+|-
+| [[File:ClothingUniformJumpskirtBartender.png|50px]] || Bartender's Uniform || $100 || 2
+|-
+| [[File:ClothingUniformJumpsuitBartenderPurple.png|50px]] || Purple Bartender's Uniform || $100 || 2
+|-
+| [[File:ClothingShoesColorBlack.png|50px]] || Black Shoes || $100 || 2
+|-
+| [[File:ClothingOuterArmorBasicSlim.png|50px]] || Armor Vest || $300 || 2
+|-
+| [[File:ClothingOuterVest.png|50px]] || Vest || $300 || 2
+|-
+| [[File:ClothingBeltBandolier.png|50px]] || Bandolier || $200 || 2
+|-
+| [[File:ClothingEyesGlassesSunglasses.png|50px]] || Sun Glasses || $100 || 2
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineBartender.png|50px]]
+| style="background-color:#383838;" | Bartender Figure
+| style="background-color:#383838;" | $750
+| style="background-color:#383838;" | 1
+|}
+</div>
+</includeonly>

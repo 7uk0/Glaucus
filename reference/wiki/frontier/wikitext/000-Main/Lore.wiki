@@ -1,0 +1,21 @@
+= Backstory =
+“In the year 2523, a cosmic beacon heralded the dawn of a new era. Frontier Station, a bastion of hope and opportunity, emerged in the depths of space. The yearning for exploration and autonomy led pioneers from all corners of the galaxy to converge on this celestial hub.
+In the heart of Frontier Station, a revolutionary concept took shape—every inhabitant could now become the captain of their own ship, navigating the uncharted territories that lay beyond the station's steel walls. The station served as a launching pad for the intrepid souls ready to embrace the boundless possibilities of the cosmos.
+
+As the cosmic winds of change swept through Frontier Station, a diverse community of captains emerged. Some sought the thrill of salvaging derelict vessels, uncovering hidden treasures among the stars. Others, drawn to the allure of wealth, established mining colonies on untouched asteroids, extracting resources that fueled the expansion of their cosmic empires.
+
+The research laboratories on Frontier Station buzzed with activity as captains delved into the mysteries of space, unlocking groundbreaking technologies that enhanced their ships' capabilities. Trade routes flourished as diplomats and entrepreneurs engaged with alien civilizations, forming alliances and rivalries that echoed through the cosmos.
+
+Yet, on the fringes of this bustling frontier, a darker tale unfolded. A new breed of captains, hungry for power and unbound by traditional morality, embraced the life of space piracy. Raiders and smugglers prowled the cosmic highways, preying on unsuspecting vessels and leaving chaos in their wake.
+
+Frontier Station became a nexus of emergent entrepreneurs, where the stories of its inhabitants unfolded in ways unforeseen. The cosmos, once a predictable expanse, now teemed with unpredictability. Each captain's journey was a unique tapestry woven into the ever-expanding fabric of the universe.
+
+And so, on this cosmic stage, the year 2523 witnessed the birth of a new era—a frontier where the spirit of adventure, the drive for exploration, and the quest for freedom ignited a flame that burned brightly in the darkness of space. The journey had just begun, and the destinies of countless captains were yet to be written across the canvas of the celestial frontier.”
+
+* Felonius Janton, NanoTrasen Records Director, circa 2987
+
+= Frontier Entities =
+
+* [[NanoTrasen CentComm and Command Roles]]
+* [[New Frontier Sheriff's Department]]
+* [[Antagonists]]

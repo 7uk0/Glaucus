@@ -1,0 +1,36 @@
+(function() {
+	if ( document.getElementById( 'ca-cargo-purge' )){ return } // disable if Cargo has already added a purge button
+	if ( mw.config.get( 'wgNamespaceNumber' ) === -1 ) { return } // disable on special pages
+	
+	var l10n = (function(){
+		var text = {
+			'buttonlabel': {
+				'en': 'Purge cache',
+				'de': 'Aktualisieren',
+				'fr': 'Purger',
+				'ru': 'Обновить',
+				'pt': 'Actualizar',
+				'pt-br': 'Actualizar',
+			},
+			'hovertext': {
+				'en': 'Purge the server cache for this page',
+				'de': 'Den Server-Cache dieser Seite löschen',
+				'fr': 'Purge le cache du serveur de cette page',
+				'ru': 'Очистить кэш сервера на этой странице',
+				'pt': 'Limpe o cache do servidor para esta página',
+				'pt-br': 'Limpe o cache do servidor para esta página',
+			}
+		}
+		var lang = mw.config.get( 'wgUserLanguage' ) || 'en';
+		return function(key){
+			return text[key] && (text[key][lang] || text[key]['en']) || '';
+		}
+	})();
+	
+	$(document).ready(function(){
+		var url = new URL(window.location.href);
+		url.searchParams.set('action', 'purge');
+		mw.util.addPortletLink('p-cactions', url.href, l10n('buttonlabel'), 'ca-gadget-purgecache', l10n('hovertext'), '1');
+	});
+	
+})();

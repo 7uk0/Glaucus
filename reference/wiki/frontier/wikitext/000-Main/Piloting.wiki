@@ -1,0 +1,36 @@
+Piloting is an essential mechanic in Frontier Station, due to the independent ships to fly.
+
+==Controls==
+
+To start, left click the shuttle computer ([[File:Avionics-Systems.png]]) to take control of your shuttle.
+
+Controls are:
+*WASD to strafe forward, left, backwards and right, 
+*Q and E to spin left and right respectfully.
+*Spacebar to brake. '''When in doubt, hold the brakes.'''
+
+To select '''docking mode''', right click the console and toggle mode. While in docking mode, '''A''' is for thrusting left and '''D''' is for thrusting right. This is useful for parallel parking.
+
+External airlock docking are used for docking with ships/stations that also have docking airlocks. Once you have two docking airlocks face to face, right click the docking airlock and select the '''Dock''' verb. If successful, the docks will both open and you will be attached to the other vessel.
+
+==Troubleshooting==
+Is your ship not responding to controls? One of the following may be happening
+
+
+[[File:Gyro.png|75px]]
+*Is your gyro's turned on? They are responsible for both braking and rotating your ship. If your ship is not responding to rotation controls, the gyro is probably off.
+
+[[File:Thrusters.png|75px]]
+*Is your ship not responding to movement controls? Your thrusters are possibly off.
+**If you can't find thrusters to propel the side you want, they may have been destroyed.
+*Ships also use this to brake, so if you are having trouble braking the thrusters could be off in addition to the gyro.
+
+==Common Courtesies when flying==
+
+*When docking to Frontier Station, make sure to try to get in contact with the station's STC on traffic communications to be directed to a dock.
+**Failure to do this can also result in unwanted attention/fines
+**You can find the traffic encryption key in your emergency survival box or space gear vendor.
+*Be careful not to bump into other ships, as it can throw off crews EVAing.
+*When flying near a ship near an asteroid, don't bump into them as they could be mining it, stranding them.
+**If you do end up accidentally hitting them, it's polite to give them a ride back to their ship.
+*Mind other ships, and don't hog docks that could be used for other ships, try parking in a manner that allows more access to docks.

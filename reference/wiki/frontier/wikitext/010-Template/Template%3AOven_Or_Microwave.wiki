@@ -1,0 +1,1 @@
+<div style="text-align:center;">[[File:OvenOrMicrowave.gif|32px|link=]] Oven or Microwave for {{{1|unknown}}} seconds.</div>

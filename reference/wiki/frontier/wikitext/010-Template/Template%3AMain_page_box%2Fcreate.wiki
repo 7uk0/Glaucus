@@ -1,0 +1,10 @@
+{{#tag: inputbox |
+type = create
+width = 40
+default = {{{1|}}}
+buttonlabel = Create this box
+prefix = {{#or:{{{rootpage|}}}|{{MediaWiki:Mainpage}}}}/
+placeholder = box name (no spaces)
+preload = Template:Main page box/preload
+summary = Created using preload
+}}<noinclude>[[Category:Main page templates]]</noinclude>

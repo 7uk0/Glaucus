@@ -1,0 +1,113 @@
+local p = {}
+local h = {}
+
+-- merge args from frame and frame:getParent()
+function h.mergeArgs(frame)
+	local inputArgs = {}
+	
+	for k, v in pairs(frame.args) do
+		v = mw.text.trim(tostring(v))
+		if v ~= '' then
+			inputArgs[k] = v
+		end
+	end
+	
+	for k, v in pairs(frame:getParent().args) do
+		v = mw.text.trim(v)
+		if v ~= '' then
+			inputArgs[k] = v
+		end
+	end
+	
+	return inputArgs
+end
+
+--------------------------------------------------------------------
+
+function p.main(frame)
+
+	local args = h.mergeArgs(frame)
+	
+	-- use the rootpage parameter if given, otherwise use the current page name
+	local rootpage = args['rootpage'] or mw.title.getCurrentTitle().fullText
+	
+	-- parse the arguments into CSS variables that contain legal syntax for grid-template-areas
+	local desktop = "--main-page-layout--desktop: '" .. string.gsub(args['desktop'], '\n', "' '") .. "';"
+	local tablet =  "--main-page-layout--tablet: '"  .. string.gsub(args['tablet' ], '\n', "' '") .. "';"
+	local mobile =  "--main-page-layout--mobile: '"  .. string.gsub(args['mobile' ], '\n', "' '") .. "';"
+	
+	-- grid-template-columns overrides
+	local desktop_cols = mw.text.trim(string.gsub(args['desktop-columns'] or '', ';', ''))
+	local  tablet_cols = mw.text.trim(string.gsub(args[ 'tablet-columns'] or '', ';', ''))
+	local  mobile_cols = mw.text.trim(string.gsub(args[ 'mobile-columns'] or '', ';', ''))
+	
+	-- set the variables used by grid-template-columns
+	if desktop_cols ~= '' then
+		desktop = desktop .. '--main-page-layout-columns--desktop: '.. desktop_cols ..';'
+	end
+	if tablet_cols ~= '' then
+		tablet = tablet .. '--main-page-layout-columns--tablet: '.. tablet_cols ..';'
+	end
+	if mobile_cols ~= '' then
+		mobile = mobile .. '--main-page-layout-columns--mobile: '.. mobile_cols ..';'
+	end
+
+	local boxes = {} -- list of all boxes
+	local boxes_in_layout = {} -- list of layouts, then list of all boxes in that layout
+	local missing_boxes = {} -- list of layouts, then list of boxes that are *not* included in that layout
+	
+	-- add every box referenced in the layout rules once
+	function parse_layout(layout)
+		for _,name in pairs(mw.text.split(args[layout], '%s')) do
+				boxes[name] = true -- list as set
+				boxes_in_layout[layout][name] = true
+		end
+	end
+	
+	local layouts = {'desktop', 'tablet', 'mobile'}
+	
+	-- loop through the layouts the first time to set up the box lists
+	for _,layout in pairs(layouts) do
+		boxes_in_layout[layout] = {}
+		missing_boxes[layout] = {}
+		parse_layout(layout)
+	end
+	
+	-- then loop through the layouts a second time because we need to compare those completed lists to check for missing boxes
+	for _,layout in pairs(layouts) do
+		for name,_ in pairs(boxes) do
+			if boxes_in_layout[layout][name] ~= true then
+				mw.addWarning( 'WARNING: the \"' .. name .. '\" box is missing in the ' .. layout .. ' layout. If this is intentional, you can ignore this warning.')
+				missing_boxes[layout][name] = true	
+			end
+		end
+	end
+	
+	-- start our mp-container wrapper, and add our variables from earlier as inline styles to declare them
+	-- the rootpage is added to the dataset so it's easily accessible by mp-edit-links.js and it doesn't need to make its own API call
+	local output = mw.html.create()
+	local container = output:tag('div'):attr('id', 'mp-container'):cssText(desktop .. tablet .. mobile):attr('data-rootpage', rootpage)
+	
+	-- loop through boxes and add the relevant main page subpages into the output
+	for box,_ in pairs(boxes) do
+		mw.ext.VariablesLua.vardefine('imp-variable-id', box) -- using a vardefine lets us pass this directly to the template without going through the user-facing box
+		
+		local pre_vardefine = ''
+		for _,layout in pairs(layouts) do
+			pre_vardefine = pre_vardefine .. (missing_boxes[layout][box] and '0' or '1') .. ','
+		end
+		-- formatted as a psuedo-bitmask to reduce variable usage, "<display-on-destop>, <display-on-tablet>, <display-on-mobile>," each value is 0 or 1 (trailing comma is insignificant)
+		-- expected to be used with #explode in the template receiving the variable
+		mw.ext.VariablesLua.vardefine('imp-variable-display-box', pre_vardefine)
+		
+		if mw.title.new(rootpage .. '/' .. box).exists then
+			container:wikitext(frame:expandTemplate{ title = ':' .. rootpage .. '/' .. box})
+		else
+			container:wikitext(frame:expandTemplate{ title = 'Main page box/missing', args = { box, rootpage = rootpage}}) -- See [[Template:Main page box/missing]]
+		end
+	end
+	
+	return output
+end
+
+return p

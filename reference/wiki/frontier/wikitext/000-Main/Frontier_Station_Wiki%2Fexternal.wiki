@@ -1,0 +1,10 @@
+{{Main page box/start
+ | title = External links
+}}
+<div class="mp-links columns-2">
+* {{MP link|Official site|link=https://www.frontierstation14.com}}
+* {{MP link|Discord|link=https://discord.gg/frontier|image=Discord.svg|size=64x64px}}
+* {{MP link|Github|link=https://github.com/new-frontiers-14/frontier-station-14/|image=Github-mark-white.png|size=64x64px}}
+* {{MP link|Patreon|link=https://patreon.com/FrontierStation14|image=Patreon-mark-white.png|size=64x64px}}
+</div>
+{{Main page box/end}}<noinclude>[[Category:Main page boxes]]</noinclude><!-- don't edit this line -->

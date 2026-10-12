@@ -1,0 +1,38 @@
+{{Example character infobox
+|title=Dragon
+|image=Example character image.png
+
+|Region=Shurima
+|Element=Fire
+
+|Attack=51
+|HP=85
+|Armor=34
+|Attack Speed=78
+}}
+Please note, this is NOT content related to {{SITENAME}}. It is an example page for the demonstration of [[support:DRUID infoboxes|DRUID infoboxes]]. Please delete this page at your earliest convenience! To edit how the infobox works, please see {{tl|Example character infobox}}.
+== About ==
+The '''Example Character''' is a very cool character found in the Default Loadout Wiki. It is a dragon that can camouflage itself as a flower due to inventive and scientific reasons, and not because the artist is bad at drawing dragons.
+
+== Combat ==
+The Example Character has several attacks, including:
+
+* Disguise Self As Flower
+* Flame Breath
+* Sneak Attack
+* Fireball
+* Dawizard
+
+== Dragon Riding ==
+If the player tames the Example Character, they can perform several Dragon Riding stunts. See [[Dragon Riding]] for more information.
+
+== Levels ==
+Example Character can be found in the following levels:
+
+* [[Introduction]]
+* [[Level 1]]
+* [[Level 3]]
+* [[Level 5]]
+* [[Bonus Content 6]]
+
+[[Category:Characters]]

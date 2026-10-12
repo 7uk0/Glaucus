@@ -1,0 +1,2 @@
+== Licensing ==
+{{License|game}}

@@ -1,0 +1,10 @@
+<includeonly>{{License/template
+| source = {{{source|}}}
+| type = nolicense
+| icon = [[File:Warning-red.svg|50px|link=|No license has been selected.]]
+| text = Please select the proper license for this file by adding the proper parameter to <nowiki>{{License}}</nowiki>. See [[Template:License]] for details.
+}}</includeonly>
+<noinclude>This template currently looks like: {{License/nolicense}}
+
+See {{tl|License}} for full license documentation
+[[Category:License templates]]</noinclude>

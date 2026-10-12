@@ -1,0 +1,2 @@
+<includeonly>{{License/{{{1|nolicense}}}|source={{{source|}}}}}</includeonly>
+<noinclude>{{documentation}}</noinclude>

@@ -1,0 +1,2 @@
+
+<div style="text-align: center; display: flex; align-items: flex-end; justify-content: center; width: 100%">[[File:BeakerBig.gif|32px|link=]]Mix {{{ this by heating to 1 K|it up}}}</div>

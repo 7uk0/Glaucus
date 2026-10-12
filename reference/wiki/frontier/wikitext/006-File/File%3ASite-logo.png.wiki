@@ -1,0 +1,4 @@
+== Summary ==
+Frontier Station logo
+== Licensing ==
+{{License|game}}

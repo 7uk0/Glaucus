@@ -1,0 +1,18 @@
+<big><center><span style="font-size:200%;"> '''I WANT <span style="color:red"> YOU </span> TO CONTRIBUTE TO FRONTIER STATION!''' </span></center></big>
+
+==Contributing to the wiki==
+
+Thank you for your interest in contributing to our <strike>dead</strike> ''ever-expanding'' wiki.
+
+Don't know wikitext? It's a really simple language to learn, and [https://www.mediawiki.org/wiki/Help:Formatting this place is a really good place to start!]
+
+First of all, if you want to get in contact with us, you can join our discord server and find us at the #wiki-work channel. From there you can ask for advice, formatting/code help, or just talk to us.
+
+Aside from that, feel free to create any page that you feel the need to create. Your advice can be someone else's savior. If you see any red links like [[aweiheoawithioaethoiawpethpawrhtoaweptnoanpoipangpaohguoawrhgouparhaorthaeopggwowgopnaugaweopnawengoapwng|this one]] around the wiki, feel free to make the page for them. 
+
+<!--I swear to FUCKING god if someone creates that page I'm going to explode-->
+
+If you do end up making a guide, you can add it to the [[Template:Guides Menu|Guides Menu Template]] in its respective category, so it can be easily accessible for everyone to see!
+
+==Contributing to the game==
+{{WIP}}

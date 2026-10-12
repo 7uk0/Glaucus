@@ -1,0 +1,23 @@
+<noinclude>This template is used to create the boxes of the IMProved Main Page (IMP) framework. '''It should not be called directly''', instead using {{tl|Main page box/start}} and {{tl|Main page box/end}}.
+
+<div style="text-align:center;">
+Use the box below to create a page with the required templates already in place, ready for you to add your content.
+{{/create}}
+The box name can not contain spaces or start with a number. Those are probably the only restrictions you'll run into, but for a full list see [https://developer.mozilla.org/en-US/docs/Web/CSS/custom-ident <custom-ident> on MDN web docs].
+</div>
+
+==Parameters==
+These are the parameters used by {{tl|Main page box/start}}. All parameters are optional.
+{| class="wikitable"
+! Name !! Data type !! Description
+|-
+| title || Wikitext || The title of the box. This can be empty, in which case the box will contain only the content.
+|-
+| class || CSS classes || A list of classes to be passed to the box, separated by spaces and without quotes. Standard options are <code>centered-content</code> to vertically center contents, and <code>has-floating-image</code> in case floating images are needed in the box (normally the flex layout disallows this).
+|-
+| style || CSS declarations || Inline CSS to be applied directly to the box, without quotes. A common usage is <code>text-align:center;</code> for cases where it's desired for individual boxes to have centered text.
+|}
+
+[[Category:Main page templates]]
+[[Category:Template documentation]]
+</noinclude><includeonly><code>Template:Main page box</code> is not intended to be used directly, please use [[Template:Main page box/start]] and [[Template:Main page box/end]].</includeonly>

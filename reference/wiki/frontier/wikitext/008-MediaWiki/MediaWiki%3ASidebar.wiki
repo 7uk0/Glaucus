@@ -1,0 +1,17 @@
+* navigation
+** mainpage|mainpage-description
+** recentchanges-url|recentchanges
+** randompage-url|randompage
+** helppage|help-mediawiki
+* Useful Pages
+** Server_Rules|Server Rules
+** Space_Law|Space Law
+** Special:AllPages|sidebar-all-pages
+** Special:SpecialPages|sidebar-special-pages
+* wiki.gg
+** support:|sidebar-support-wiki
+** Wikigg-ticket-link|sidebar-submit-ticket
+** wikigg-socialmedia-joinlink|wikigg-socialmedia-jointext-sidebar
+* SEARCH
+* TOOLBOX
+* LANGUAGES

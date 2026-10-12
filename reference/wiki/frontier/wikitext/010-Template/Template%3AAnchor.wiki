@@ -1,0 +1,8 @@
+<includeonly><!--
+
+--><span id="{{{1}}}"></span><!--
+
+--></includeonly><!--
+
+--><noinclude>{{doc}}
+[[Category:Navigation templates]]</noinclude>

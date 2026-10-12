@@ -1,0 +1,8 @@
+<includeonly>{{Ambox
+| color = darkblue
+| icon = Lua logo.svg
+| title= This template uses one or more modules written in the Lua programming language.
+| message = For more information, see [[wikipedia:Wikipedia:Lua|Wikipedia:Lua]] or the [[mw:Extension:Scribunto/Lua reference manual|Lua reference manual on mediawiki.org]]. Modules used include: {{#if:{{{1|}}}|{{#arraymap:{{{1|}}}|,|%s|'''[[Module:%s|%s]]'''}}|''None provided''}}.
+| tiny = {{{tiny|}}}
+| class = {{{class|}}}
+}}</includeonly><noinclude>{{doc|Template:Ambox/doc}}</noinclude>

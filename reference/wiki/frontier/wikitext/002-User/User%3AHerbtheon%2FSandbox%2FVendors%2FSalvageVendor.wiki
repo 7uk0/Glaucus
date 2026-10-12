@@ -1,0 +1,29 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost
+|-
+| [[File:NFWeaponHoloflareGun.png|50px]] || NFWeaponHoloflareGun || $3,750
+|-
+| [[File:NFWeaponPka.png|50px]] || NFWeaponPka || $300
+|-
+| [[File:WeaponCrusher.png|50px]] || WeaponCrusher || $300
+|-
+| [[File:WeaponCrusherDagger.png|50px]] || WeaponCrusherDagger || $300
+|-
+| [[File:WeaponGrapplingGun.png|50px]] || WeaponGrapplingGun || $300
+|-
+| [[File:Pickaxe.png|50px]] || Pickaxe || $300
+|-
+| [[File:OreBag.png|50px]] || OreBag || $300
+|-
+| [[File:Floodlight.png|50px]] || Floodlight || $300
+|-
+| [[File:BoxDispenserFlare.png|50px]] || BoxDispenserFlare || $150
+|-
+| [[File:FlashlightLantern.png|50px]] || FlashlightLantern || $232
+|-
+| [[File:RadioHandheldNF.png|50px]] || RadioHandheldNF || $300
+|}
+</div>
+</includeonly>

@@ -1,0 +1,33 @@
+{| class="wikitable"
+|+'''[[Salami Lid Initiative|Salami Lid Exploration and Science Initiative]]'''
+!Type
+|Commercial, Military, Scientific, Exploratory
+|-
+!Industry
+|Ship Builders, Research Haven, Planetary Surveyors 
+|-
+!Founded
+| 2298
+|-
+!Headquarters
+|Vega System
+|-
+!Area served
+|[[Frontier Prime]]
+|-
+!Key people
+|
+ Nadia MacMeow<sup>(Operations Commander)</sup>
+ Josephi Catkowski<sup>(Requisitions Officer)</sup>
+ Two Feathers<sup>(Chief of Experimental Archaeo-Tech)</sup>
+ Ōtomo Akari<sup>(Clinically Insane CMO)</sup>
+ Gary Gardiner<sup>(Culinary Specialist)</sup>
+ Brodie Todd<sup>(Exoplanet Cartographer)</sup>
+ Rusty Ferret<sup>(Celestial Guidance Officer)</sup> 
+|-
+!Parent
+| [[Nanotrasen]]
+|-
+!Logo
+|[[File:SLI icon.png|center|frameless]]
+|}

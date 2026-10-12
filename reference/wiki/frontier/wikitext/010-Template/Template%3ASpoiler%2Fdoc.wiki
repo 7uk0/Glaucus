@@ -1,0 +1,102 @@
+This template is used to mark text and other elements as spoilers. Users can click or optionally hover to reveal their content.
+
+== The hoverShowSpoilers gadget ==
+Users can enable <code>Gadget-hoverShowSpoilers</code> to make spoilers show on hover, not just on click. The code for this gadget can be found at {{gad|hoverShowSpoilers.css}}.
+
+== Examples ==
+{| class="wikitable"
+! Code !! Result
+|-
+| <code><nowiki>{{spoiler|spoiler text}}</nowiki></code> (Click to toggle) || {{spoiler|spoiler text}} 
+|-
+| <code><nowiki>{{spoiler|spoiler text with a [[Template:Navbox|link]]}}</nowiki></code> (Click to toggle) || {{spoiler|spoiler text with a [[Template:Navbox|link]]}} 
+|-
+| <pre>
+{{spoiler|block=y|Really long spoiler that spans multiple lines
+
+It even has a bulleted list inside it:
+* Item a
+* Item b
+* [[Special:Random|Item c]]
+}}</pre>
+|{{spoiler|block=y|Really long spoiler that spans multiple lines
+
+It even has a bulleted list inside it:
+* Item a
+* Item b
+* [[Special:Random|Item c]]
+}}
+|}
+
+== Dependencies ==
+For this template to work properly, you need the following:
+* The small JavaScript code for toggling the <code>.spoiler</code> class on/off on click, found in [[MediaWiki:Common.js]].
+* The <code>.spoiler-content</code> and any related classes, found in [[MediaWiki:Common.css]].
+
+== Source ==
+Base code adapted from [[wgg:terraria:Template:Spoiler|Template:Spoiler on Terraria Wiki]].
+
+==TemplateData==
+<templatedata>
+{
+	"params": {
+		"1": {
+			"aliases": [
+				"text"
+			],
+			"label": "Text",
+			"description": "The text to be shown.",
+			"example": "Character A died during the battle.",
+			"type": "content",
+			"required": true
+		},
+		"hover": {
+			"label": "Show on Hover?",
+			"description": "Show spoiler text on mouse hover.",
+			"example": "hover=yes",
+			"type": "boolean",
+			"default": "hover=no"
+		},
+		"block": {
+			"label": "Display as block?",
+			"description": "If given, display the spoiler as a block instead of inline. Useful for long spoilers spanning multiple lines or using block-level elements like lists.",
+			"example": "y",
+			"type": "boolean",
+			"suggested": true
+		},
+		"class": {
+			"label": "Class",
+			"description": "A class or classes to apply to the spoiler",
+			"type": "string"
+		},
+		"id": {
+			"label": "ID",
+			"description": "A CSS ID to apply to the spoiler.",
+			"type": "string"
+		},
+		"style": {
+			"description": "Inline CSS styles to pass in.",
+			"type": "string",
+			"aliases": [
+				"css"
+			],
+			"label": "Style"
+		}
+	},
+	"description": "This template can be used to mark text as a spoiler.",
+	"maps": {
+		"1": {}
+	},
+	"paramOrder": [
+		"1",
+		"hover",
+		"block",
+		"class",
+		"id",
+		"style"
+	],
+	"format": "inline"
+}
+</templatedata>
+
+<noinclude>[[Category:Template documentation]]</noinclude>

@@ -1,0 +1,158 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+|-
+| [[File:DrinkGlass.png|50px]] || Metamorphic Glass || $100 || 20
+|-
+| [[File:DrinkShotGlass.png|50px]] || Shot Glass || $100 || 10
+|-
+| [[File:DrinkGlassCoupeShaped.png|50px]] || Coupe Glass || $100 || 5
+|-
+| [[File:DrinkSakeCupEmpty.png|50px]] || Sakazuki || $22 || 5
+|-
+| [[File:DrinkShaker.png|50px]] || Shaker || $100 || 5
+|-
+| [[File:DrinkJigger.png|50px]] || Jigger || $100 || 5
+|-
+| [[File:DrinkIceBucket.png|50px]] || Ice Bucket || $100 || 2
+|-
+| [[File:BarSpoon.png|50px]] || Bar Spoon || $5 || 3
+|-
+| [[File:DrinkKegSteel.png|50px]] || Steel Cask || $150 || 2
+|-
+| [[File:DrinkKegWood.png|50px]] || Wood Cask || $150 || 2
+|-
+| [[File:DrinkKegPlastic.png|50px]] || Plastic Cask || $150 || 2
+|-
+| [[File:CustomDrinkJug.png|50px]] || Beverage Jug || $100 || 2
+|-
+| [[File:DrinkAbsintheBottleFull.png|50px]] || Jailbreaker Verte (Absinthe) || $80 || 1
+|-
+| [[File:DrinkAleBottleFull.png|50px]] || Magm-Ale Bottle (Ale) || $100 || 5
+|-
+| [[File:DrinkBeerBottleFull.png|50px]] || Beer Bottle (Beer) || $100 || 5
+|-
+| [[File:DrinkBlueCuracaoBottleFull.png|50px]] || Miss Blue Curaçao || $80|| 2
+|-
+| [[File:DrinkCognacBottleFull.png|50px]] || Cognac Bottle || $80 || 4
+|-
+| [[File:DrinkCoconutWaterCarton.png|50px]] || Coconut Water (Coconut Water) || $100 || 3
+|-
+| [[File:DrinkColaBottleFull.png|50px]] || Space Cola Bottle (Space Cola) || $100 || 4
+|-
+| [[File:DrinkEnergyDrinkCan.png|50px]] || Red Bool Can || $27 || 8
+|-
+| [[File:DrinkMilkCarton.png|50px]] || Milk || $100 || 2
+|-
+| [[File:DrinkCreamCarton.png|50px]] || Milk Cream || $100 || 5
+|-
+| [[File:DrinkGinBottleFull.png|50px]] || Griffeater Gin (Gin) || $80 || 3
+|-
+| [[File:DrinkGildlagerBottleFull.png|50px]] || Gildlager Bottle (Gildlager) || $80 || 2
+|-
+| [[File:DrinkGrenadineBottleFull.png|50px]] || Briar Rose Grenadine Syrup Bottle (Grenadine) || $80 || 2
+|-
+| [[File:DrinkJuiceLimeCarton.png|50px]] || Lime Juice || $100 || 3
+|-
+| [[File:DrinkJuiceLemonCarton.png|50px]] || Lemon Juice || $100 || 3
+|-
+| [[File:DrinkJuicePineappleCarton.png|50px]] || Pineapple Juice || $100 || 3
+|-
+| [[File:DrinkJuiceOrangeCarton.png|50px]] || Orange Juice || $100 || 3
+|-
+| [[File:DrinkJuiceTomatoCarton.png|50px]] || Tomato Juice || $100 || 3
+|-
+| [[File:DrinkCoffeeLiqueurBottleFull.png|50px]] || Coffee Liqueur Bottle (Coffee Liqueur) || $80 || 3
+|-
+| [[File:DrinkMelonLiquorBottleFull.png|50px]] || Emeraldine Melon Liquor (Melon Liquor) || $80 || 3
+|-
+| [[File:DrinkPatronBottleFull.png|50px]] || Wrapp Artiste Patrón Bottle (Patrón) || $80 || 2
+|-
+| [[File:DrinkRumBottleFull.png|50px]] || Captain Pete's Cuban Spiced Rum (Rum)) || $80 || 4
+|-
+| [[File:DrinkSodaWaterCan.png|50px]] || Soda Water Can || $27 || 8
+|-
+| [[File:DrinkSolDryCan.png|50px]] || Sol Dry Can || $27 || 8
+|-
+| [[File:DrinkSpaceMountainWindBottleFull.png|50px]] || Space Solar Wind Bottle (Space Solar Wind) || $100 || 3
+|-
+| [[File:DrinkSpaceUpBottleFull.png|50px]] || Space-Up Bottle (Space-Up) || $100 || 3
+|-
+| [[File:DrinkTequilaBottleFull.png|50px]] || Caccavo Guaranteed Quality Tequila Bottle (Tequila) || $80 || 3
+|-
+| [[File:DrinkTonicWaterCan.png|50px]] || Tonic Water Can || $27 || 8
+|-
+| [[File:DrinkVermouthBottleFull.png|50px]] || Goldeneye Vermouth Bottle (Vermouth) || $80 || 5
+|-
+| [[File:DrinkVodkaBottleFull.png|50px]] || Vodka Bottle (Vodka) || $80 || 5
+|-
+| [[File:DrinkWhiskeyBottleFull.png|50px]] || Uncle Git's Special Reserve (Whiskey) || $80 || 5
+|-
+| [[File:DrinkWineBottleFull.png|50px]] || Doublebearded Bearded Special Wine Bottle (Wine) || $80 || 5
+|-
+| [[File:DrinkChampagneBottleFull.png|50px]] || Champagne Bottle (Champaigne) || $80 || 2
+|-
+| [[File:DrinkSakeBottleFull.png|50px]] || Small Sake Bottle (Sake) || $100 || 3
+|-
+| [[File:DrinkBeerCan.png|50px]] || Beer Can || $27 || 5
+|-
+| [[File:DrinkWineCan.png|50px]] || Wine Can || $27 || 5
+|-
+| [[File:DrinkDisposableCup.png|50px]] || Disposable Cup || $100 || 5
+|-
+| [[File:EthylredoxrazineAutoInjector.png|50px]] || Barkeeper's Friend Auto-injector || $1,125 || 2
+|-
+| style="background-color:#383838;" | [[File:ChemistryBottle.png|50px]]
+| style="background-color:#383838;" | Bottle (Ethanol)
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 3
+|-
+| style="background-color:#383838;" | [[File:DrinkBottleOfNothingFull.png|50px]]
+| style="background-color:#383838;" | Bottle of Nothing (Nothing)
+| style="background-color:#383838;" | $80
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:DrinkPoisonWinebottleFull.png|50px]]
+| style="background-color:#380C0C;" | Warlock's Velvet Bottle
+| style="background-color:#380C0C;" | $80
+| style="background-color:#380C0C;" | 2
+|-
+| style="background-color:#380C0C;" | [[File:DrinkPremiumAbsintheBottleFull.png|50px]]
+| style="background-color:#380C0C;" | Bureaucracy's Kiss Absinthe Bottle (Absinthe)
+| style="background-color:#380C0C;" | $80
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:DrinkPremiumGinBottleFull.png|50px]]
+| style="background-color:#380C0C;" | Harry's Gin Bottle (Gin)
+| style="background-color:#380C0C;" | $80
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:DrinkPremiumRumBottleFull.png|50px]]
+| style="background-color:#380C0C;" | Redeemer's Bounty Run Bottle (Rum)
+| style="background-color:#380C0C;" | $80
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:DrinkPremiumTequilaBottleFull.png|50px]]
+| style="background-color:#380C0C;" | Casa del Eorg Tequila Bottle (Tequila)
+| style="background-color:#380C0C;" | $80
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:DrinkPremiumVodkaBottleFull.png|50px]]
+| style="background-color:#380C0C;" | Moment of Clarity Vodka Bottle (Vodka)
+| style="background-color:#380C0C;" | $80
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:DrinkPremiumWhiskeyBottleFull.png|50px]]
+| style="background-color:#380C0C;" | Ol' Prowler 18 Whiskey Bottle (Whiskey)
+| style="background-color:#380C0C;" | $80
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:JugCaramexinin.png|50px]]
+| style="background-color:#380C0C;" | Caramexinin Jug (Caramexinin)
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 1
+|}
+</div>
+</includeonly>

@@ -1,0 +1,6 @@
+{{Important
+|Title=Warning!
+|Note=<font size=2>Read the server rules [[Server_Rules|here]]</font><br>{{{Notes|Don't break the rules!}}}
+|Image=Warningsign.png
+|Color=#FFBFBF
+}}

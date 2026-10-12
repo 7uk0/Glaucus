@@ -1,0 +1,1 @@
+<div style="flex-basis:12em;flex-grow:1;min-width:24%; box-shadow: 0 0 1px black; padding:3px 0;display: flex;align-items: center;justify-content: center;">[[File:{{{image|beaker}}}.png|32px|link=]] [[#{{{1}}}|{{{1|Component name}}} [{{{2|1}}}]]]</div>

@@ -1,0 +1,47 @@
+== Finding Space Objects ==
+
+The type of asteroids and other space objects which can be encountered depends on distance from FO.
+
+FO is always at coordinates [0, 0]
+
+'''0km - 5km''' around FO, you will find:
+* small blue wrecks
+* small default asteroids
+* small scrap asteroids
+
+'''5Km to 9Km''' from FO, the other asteroids types can be found. In addition, you can find larger wrecks, as well as brass wrecks, and larger scrap asteroids.
+
+'''More than 9Km''' from FO, you can find the same types, but the ratio of snow asteroids increases significantly. This can provide a significant amount of bluespace ore and artifact fragments, which are plentiful on snow asteroids.
+== Wrecks ==
+Wrecks are large pieces of space debris that offer a broad selection of goodies to be reclaimed by the bold:
+
+* Processed Materials
+* Recyclable Wreckage
+* Item Containers
+* Gas Canisters
+* Liquid Barrels
+* Artifacts
+* Emergency Medical Pods
+* ...And more!
+
+It is important to know however that Space Fauna often make Wrecks their hunting grounds, be careful not to get swarmed then.
+
+== Scrap Asteroids ==
+Scrap asteroids are made of compacted scrap and station walls. They have the following unique mechanics:
+
+* Instead of ore crabs and golems, mining compacted scrap may cause a malfunctionning bot to spawn. Malfunctionning bots are significantly faster and more lethal than crabs or golems. Some of them also have access to ranged weapons (lasers), making heat resistance and burns medicine desirable while mining scraps
+
+Scrap asteroids produce both regular ore, scrap and tech scraps
+
+* Regular ore is processed as normal
+* Scrap and tech scrap are exploited at the scrap processor
+** Scrap can be processed into a wide array of base materials
+** Tech scrap can be processed to generate blueprints, machine boards and other technological items
+
+== Non-Scrap Asteroids ==
+Other Asteroids produce raw ores and Artifact Fragments, keep an eye out for visible ore deposits.
+
+Mining an ore deposit has a chance to produce an Ore Elemental (A Ore Crab or a Stronger Ore Golem), keeping a safe distance while mining will give you enough time to identify threats.
+
+The table below shows the percent chance for all ores on all the different non-scrap asteroids. Chart created by Natalie (greymaria) on discord. 
+[[File:Salvage chart.webp|thumb|1154x1154px]]

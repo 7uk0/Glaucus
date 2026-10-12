@@ -1,0 +1,33 @@
+<includeonly><!--
+-->{{#vardefine:pages|<!-- start vd
+      
+   -->{{#if:{{{2|}}}<!-- if more than one page
+      
+      -->|new pages titled [[{{{1}}}]]{{#if:{{{3|}}}<!-- start concat if
+         
+         -->|, [[{{{2}}}]] and [[{{{3}}}]]<!-- concat two
+            
+         -->|<nowiki> </nowiki>and [[{{{2}}}]]<!-- else; concat one
+            
+      -->}}<!-- end concat if
+         
+      -->|a new page titled [[{{{1}}}]]<!-- else; one page only
+         
+   -->}}<!-- end if
+      
+-->}}<!-- end vd
+
+-->{{Ambox
+| color = purple
+| icon = Split.svg
+| message = It has been proposed that this page be split into {{#var:pages}}.
+| tiny = {{{tiny|}}}
+| class = {{{class|}}}
+| date = {{{date|}}}
+}}<!--
+
+-->{{#ifeq: {{lc:{{{nocat|}}}}} | yes ||[[Category:Candidates for splitting]]}}</includeonly><!--
+
+--><noinclude>{{Split|Template:Ambox{{!}}Example|nocat=yes}}
+{{Split|Template:Ambox{{!}}Example 1|Template:Ambox{{!}}Example 2|Template:Ambox{{!}}Example 3|nocat=yes}}
+{{doc|Template:Ambox/doc}}</noinclude>

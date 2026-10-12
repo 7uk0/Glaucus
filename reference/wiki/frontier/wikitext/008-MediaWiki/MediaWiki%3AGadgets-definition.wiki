@@ -1,0 +1,10 @@
+* userProfile[ResourceLoader|dependencies=mediawiki.api|default]|userProfile.js|userProfile.css
+* hoverShowSpoilers[ResourceLoader|type=styles]|hoverShowSpoilers.css
+
+== Utility gadgets ==
+* mpEditLinks[ResourceLoader|rights=editprotected|default]|mpEditLinks.css|mpEditLinks.js
+* purge[ResourceLoader|default|type=general|rights=edit,purge|dependencies=mediawiki.util]|purge.js
+* UploadMultipleFiles[ResourceLoader|default|rights=edit,upload]|UploadMultipleFiles.js
+
+== appearance ==
+* collapsibleSidebarSections[ResourceLoader]|collapsibleSidebarSections.js|collapsibleSidebarSections.css<!-- not default, to make it default please add |default after ResourceLoader, follow the examples above -->

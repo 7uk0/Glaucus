@@ -1,0 +1,14 @@
+<tabber>
+|-|Desktop={{:Template:Key/doc/Keyboard}}
+
+|-|Mobile={{:Template:Key/doc/Gesture}}
+
+|-|Xbox={{:Template:Key/doc/Xbox}}
+
+|-|DualSense={{:Template:Key/doc/DualSense}}
+
+|-|PlayStation 4={{:Template:Key/doc/PS4}}
+
+|-|Nintendo Switch={{:Template:Key/doc/Nintendo Switch}}
+</tabber>
+<noinclude>[[Category:Key template documentation]]</noinclude>

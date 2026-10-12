@@ -1,0 +1,11 @@
+{{Main page box/start
+| title = About Frontier Station
+}}
+Welcome to Frontier Station! Here you can find all sorts of community curated information and articles about our little corner of Space Station 14. This site is a continuous work in progress, and if you feel it is missing some vital information, it likely just has been written down yet and we are eager for more community contributions.
+
+Frontier Station is a unique twist on the traditional Space Station gameplay. On Frontier, everyone can be the captain of their own ship to venture forth and explore space beyond the station! Salvage, mine, research, trade, explore, or pirate your way to riches on the vast Frontier! Our unique game design turns regular station play on its head, instead relying heavily on procedural generated worlds and environments, and allowing more emergent forms of gameplay and RP to develop outside of traditional Space Station type of play.
+
+Due to the nature of our game style, many aspects of the underlying game have been modified to provide a better overall experience on the Frontier. Expeditions are hand tailored to allow a more relaxing and less stressful experience, many game systems have been slowed down and had their balance tweaked to allow for a more semi-persistent type game world. Here you can find a short list of links to various areas to help guide you through your experience on Frontier! 
+
+<div style="text-align:right">[[Frontier Station|Read more...]]</div>
+{{Main page box/end}}<noinclude>[[Category:Main page boxes]]</noinclude><!-- don't edit this line -->

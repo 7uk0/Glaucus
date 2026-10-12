@@ -1,0 +1,90 @@
+{| class="wikitable" style="text-align:center"
+|-
+! scope="col" style="width:7.0em;" | {{no wrap|Template call}}<br>{{normal|('''m''' for magic word)}}
+! scope="col" style="width:5.75em;" | {{no wrap|Output}}&nbsp;{{normal|(delayed interpretation as wikimarkup)}}
+! scope="col" style="width:9.0em;" | {{no wrap|HTML alternative}} {{normal|(never interpreted as wikimarkup)}}
+! Why you might want to use this
+|- style="vertical-align:top"
+| <code><nowiki>{{!}}</nowiki></code> '''(m)'''
+| <nowiki>|</nowiki>
+| &amp;#124; or {{tl|pipe}}
+| Displaying pipe characters inside of a parser function
+|- style="vertical-align:top"
+| <code><nowiki>{{=}}</nowiki></code> '''(m)'''
+| <nowiki>=</nowiki>
+| &amp;#61;
+| Displaying equal signs inside of unnamed parameters (e.g. <code><nowiki>{{MyTemplate|1+1=2}}</nowiki></code> will assign <code>2</code> to <code><nowiki>{{{1+1|}}}</nowiki></code>; <code><nowiki>{{MyTemplate|1+1{{=}}2}}</nowiki></code> will do what you want)
+|- style="vertical-align:top"
+| {{tlx|!!}}
+| <nowiki>||</nowiki>
+| &amp;#124;&amp;#124;
+| Displaying a break between two table cells inside of a parser function
+|- style="vertical-align:top"
+| {{tlx|!(}}
+| {{!(}}
+| &amp;#91;
+| Displaying a bracket inside of an external link
+|- style="vertical-align:top"
+| {{tlx|)!}}
+| {{)!}}
+| &amp;#93;
+| Displaying a bracket inside of an external link
+|- style="vertical-align:top"
+| {{tlx|!((}}
+| {{!((}}
+| &amp;#91;&amp;#91;
+| Displaying a bracket inside of a link
+|- style="vertical-align:top"
+| {{tlx|))!}}
+| {{))!}}
+| &amp;#93;&amp;#93;
+| Displaying a bracket inside of a link
+|- style="vertical-align:top"
+| {{tlx|(}}
+| {{(}}
+| &amp;#123;
+| Escaping a single brace immediately next to a template or parser function to avoid turning it into a parameter
+|- style="vertical-align:top"
+| {{tlx|)}}
+| {{)}}
+| &amp;#125;
+| Escaping a single brace immediately next to a template or parser function to avoid turning it into a parameter
+|- style="vertical-align:top"
+| {{tlx|((}}
+| {{((}}
+| &amp;#123;&amp;#123;
+| Displaying open braces for a template without actually transcluding that template
+|- style="vertical-align:top"
+| {{tlx|))}}
+| {{))}}
+| &amp;#125;&amp;#125;
+| Displaying closed braces for a template without actually transcluding that template
+|- style="vertical-align:top"
+| {{tlx|(((}}
+| {{(((}}
+| &amp;#123;&amp;#123;&amp;#123;
+| Displaying a template parameter's open curly braces without actually using that variable
+|- style="vertical-align:top"
+| {{tlx|)))}}
+| {{)))}}
+| &amp;#125;&amp;#125;&amp;#125;
+| Displaying a template parameter's closed curly braces without actually using that variable
+|- style="vertical-align:top"
+| {{tlx|(!}}
+| <nowiki>{|</nowiki>
+| &amp;#123;&amp;#124;
+| Starting a table inside of a parser function
+|- style="vertical-align:top"
+| {{tlx|!-}}
+| <nowiki>|-</nowiki>
+| &amp;#124;&amp;#45;
+| Starting a new table row inside of a parser function
+|- style="vertical-align:top"
+| {{tlx|!)}}
+| <nowiki>|}</nowiki>
+| &amp;#124;&amp;#125;
+| Closing a table inside of a parser function
+|}<includeonly>
+[[Category:Formatting templates]]
+</includeonly>
+<noinclude>[[Category:Template documentation]]</noinclude>

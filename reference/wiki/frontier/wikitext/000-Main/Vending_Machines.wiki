@@ -1,0 +1,386 @@
+
+=='''FlatpackVend'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:FlatpackVend.png|thumb]] 
+|Frontier Station, Trade Outpost
+|Offers a selection of multitool activated flatpacks to set your ship up for success
+|-
+|}
+{| class="wikitable" style="color:black; background-color:#EBEDEF;" border-width: 100px;"
+!Product !! Cost !! Product !! Cost 
+|-
+|PTK-800 “Matter Dematerializer” Flatpack || $6250 ||Ore Processor Flatpack || $3750
+|-
+|Autolathe Flatpack || $3750 ||Hydroponics Tray Flatpack || $3750
+|-
+|[[File:Exoflatpack.png|thumb]] || Exosuit Fabricator Flatpack || $6250 || Protolathe Flatpack || $6250
+|-
+|Circuit Imprinter Flatpack || $6250 ||Research & Development Server Flatpack || $6250
+|-
+|Science Techfab Flatpack || $6250 ||Engineering Techfab Flatpack || $6250
+|-
+|-Salvage Techfab Flatpack || $3750 ||-Service Techfab Flatpack || $6250
+|-
+|-Medical Techfab Flatpack || $6250 ||Material Reclaimer Flatpack || $3750
+|-
+|Uniform Printer Flatpack || $3750 ||Tile-meister 5000 Flatpack || $3750
+|-
+|Cell Charger Flatpack || $1375 ||Recharger Flatpack || $375
+|-
+|Borg Charger Flatpack || $1375 ||Flatpacker 1001 Flatpack || $6250
+|-
+|Glass Airlock Flatpack || $2375 ||Docking Airlock Flatpack || $2375
+|-
+|Docking Glass Airlock Flatpack || $2375
+|}
+
+
+=='''YouTool'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:YouTool.png|thumb]]
+|Frontier Station, Trade Outpost
+|Tools and cables to set up the inner workings of your ship.
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+|Screwdriver || $150 || Crowbar || $150
+|-
+|Wirecutter || $150 || Wrench || $150
+|-
+|Welding tool || $250 || Network configurator || $250
+|-
+|Appraisal tool || $200 || Utility belt || $200
+|-
+|LV cable coil || $100 || MV cable coil || $100
+|-
+|HV cable coil || $100 || Flashlight || $155
+|-
+|T-ray scanner || $750 || Gas analyzer || $750
+|-
+|Spray painter || $400
+|}
+
+=='''Engi-Vend'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:Engi-Vend.png|thumb]]
+|Frontier Station, Trade Outpost
+|Specialized tools to remodel your ship and mitigate the spacings when you take down that exterior wall by mistake 
+|-
+|}
+{| class="wikitable"
+!Product !! Cost
+|-
+|Insulated Gloves || $455 |
+|-|Multitool || $350
+|Engineering Goggles || $1350 ||Welding Mask || $355
+|-
+|Inflatable Barricade || $75 ||Inflatable Door || $150
+|-
+|Geiger Counter || $200 ||Medium Capacity power cell || $750
+|-
+|Shipyard RCD || $5000 ||Shipyard RCD Ammo || $1000
+|-
+|}
+
+=='''VendoMat'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:Vendomat.png|thumb]]
+|Frontier Station, Trade Outpost
+|Bits and bobs to build machines
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+|Remote signaller || $400 || Igniter  || $200
+|-
+|Wirecutter  || $150 || LV cable coil  || $100
+|-
+|Flashlight  || $155 || Small-capacity power cell  || $200
+|-
+| Matter bin  || $200 || Capacitor  || $200 
+|-
+|Manipulator  || $200 || Beaker  || $100
+|-
+| Air freshener  || $100
+|}
+
+=='''Gas Tank Dispenser'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:Gas Tank Dispenser.png|thumb]]
+|Frontier Station, Trade Outpost
+|description
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+| Air Tank || $100 || Double Emergency Air Tank || $100
+|-
+| Oxygen Tank || $100 || Double Emergency Oxygen Tank || $100
+|-
+| Nitrogen Tank || $100 || Double Emergency Nitogen Tank || $100
+|}
+
+
+=='''Salvage Vendor'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:Salvage Vendor.png|thumb]]
+|Frontier Station, Trade Outpost
+|description
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+| Crusher Glaive || $2850 || Proto-Kinetic Accelerator ||$2700
+|-
+|Crusher || $2550 || Crusher Dagger || $955
+|-
+| Pickaxe || $155 || Ore Bag || $555
+|-
+| Floodlight || $750 || Handheld Radio || $550
+|-
+| Global Positioning System || $250 || Emergency Flare || $75
+|-
+| Flashlight || $155
+|}
+
+
+=='''AstroVend'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:AstroVend.png|thumb]]
+|Frontier Station, Trade Outpost
+|description
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+| Spationaut Hardsuit || $2350 || Magboots || $1450
+|-
+| Basic Hardsuit || $1350 || EVA Suit | $650
+|-
+| EVA Helmet || $250 || Handheld Radio || $550
+|-
+| Global Positioning System || $250 || Gas Mask || $250
+|-
+| Mini Jetpack || $950 || Jetpack || $1000
+|-
+|Traffic Control Encryption Key || $20 || Handheld Mass Scanner || $1500
+|-
+|Pilot Backpack || $100 || Pilot Duffel || $100
+|-
+| Pilot Satchel || $100 || Pilot Messenger Bag || $100
+|-
+|Pilot Webbing || $200 || Pilot Breathing Mask || $100
+|-
+|Pilot Jumpsuit || $100 || Bomber Jacket || $700
+|-
+| Pilot Over-Ear Headset || $100 || Pilot Goggles || $100
+|-
+|Pilot Gloves || $100 || Pilot’s Helmet || $100
+|-
+| Pilots Scarf || $100 || Pilot Hardsuit || $1950
+|-
+|Pilot Boots || $100
+|}
+
+=='''NonLethalVend'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:NonLethalVend.png|thumb]]
+|Frontier Station, Trade Outpost
+|description
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+|Practice Disabler || $1000 || Practice Laser Rifle || $3000
+|-
+| Shotgun Practice Cartridges Dispenser || $250 || Ammo (.20 Rifle Practice) || $200
+|-
+| Ammo (.25 Caseless Practice) || $200 || Ammo (.30 Rifle Practice) || $200
+|-
+| Ammo (.35 Auto Practice) || $200 || Ammo (.45 Magnum Practice) || $200
+|-
+| Cap Gun || $200 || Cap Gun Cartridge Box || $200
+|-
+| Foam Crossbow || $200 || Box of Foam Darts || $200
+|-
+| Dartboard || $400 || Darts Box || $100
+|}
+
+=='''LessLethalVend'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:LessLethalVend.png|thumb]]
+|Frontier Station, Trade Outpost
+|description
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+| Disabler || $5000 || Kardashev-Mosin || $5000
+|-
+| Argenti || $2000 || Double-Barreled Shotgun || $3500
+|-
+| Flare Gun || $1500 || Shotgun Beanbag Cartridges Dispenser || $200
+|-
+| Ammo (.20 Rifle Rubber)  || $200 || Ammo (.25 Caseless Rubber)  || $200 
+|-
+| Ammo (.30 Rifle Rubber)  || $200 || Ammo (.35 Auto Rubber)  || $200
+|-
+| Ammo (.45 Magnum Rubber ) || $200
+|}
+
+=='''Robotech Deluze'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:RoboTechDeluxe.png|thumb]]
+|Trade Outpost
+|description
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+|LV Cable Coil || $50 || Flash || $200
+|-
+| Proximity Sensor || $200 || Diagnostic Hud || $50
+|-
+| Diagnostic Hud Eyepatch || $50 || Remote Signaller || $200
+|-
+| Health Analyzer || $100 || Scalpel || $100
+|-
+| Circular Saw || $100 || Nitrous Oxide Tank || $100
+|-
+| Medical Mask || $50 || Flame WElding Mask || $250
+|-
+| Welding Tool || $125 || Screwdriver || $75
+|-
+|Crowbar || $75
+|}
+
+=='''ChefVend'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:ChefVend.png|thumb]]
+|Trade Outpost, Tinneas’s Rest
+|description
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+| Flour Bag || $100 || Cornmeal Bag || $100
+|-
+| Sugar Bag || $100 || Rice Bag || $100
+|-
+| Raisin Bag || $100 || Chocolate Chip Bag || $100
+|-
+| Salt Container || $100 || Pepper Container  || $100
+|-
+| Ketchup Keg || $300 || Mustard Keg || $300
+|-
+| Universal Enzyme Bottle || $67 || Hotsauce Bottle || $67
+|-
+| Ketchup Bottle || $67 || BBQ Sauce Bottle Bottle || $67
+|-
+| Vinegar || $67 || Jar of Olive Oil || $100
+|-
+| Jar of Corn Oil  || $100 || Jar of Ghee || $100
+|-
+| Mayonnaise || $100 || Variant Cube Box || $900
+|-
+|Egg Carton || $50 || Milk || $100
+|-
+| Soy Milk || $100 || Stick of Butter || $250
+|-
+| Cheese Wheel || $250 || Raw Meat || $100
+|}
+
+=='''Plasteel Chef’s Dinnerware Vendor'''==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Location
+!Description
+|-
+|[[File:Plasteel Chef's Dinnerware Vendor.png|thumb]]
+|Trade Outpost, Tinneas’s Rest
+|description
+|-
+|}
+{| class="wikitable"
+!Product !! Cost !! Product !! Cost
+|-
+| Butcher’s Cleaver || $100 || Kitchen Knife || $100
+|-
+| Rolling Pin || $100 || Spoon || $5
+|-
+| Fork || $5 || Paired Chopsticks || $100
+|-
+| Bowl || $5 || Large Plate || $15
+|-
+| Small Plate || $10 || Pie Tin || $5
+|-
+|Skewer || $100 || Metamorphic Glass || $100
+|-
+| Beaker || $50 || Large Beaker || $100
+|-
+| Mug || $22 || Black Mug || $22
+|-
+| Blue Mug || $22 || Green Mug || $22
+|-
+| Heart || $22 || Metal Mug || $22
+|-
+| Moebius Mug || $22 || #1 Mug || $22
+|-
+| Rainbow Mug || $22 || Red Mug || $22
+|-
+| Service Selective Dropper || $150
+|}

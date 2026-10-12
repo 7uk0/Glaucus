@@ -1,0 +1,41 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:RemoteSignaller.png|50px]] || Remote Signaller || $400
+|-
+| [[File:Igniter.png|50px]] || Igniter || $200
+|-
+| [[File:Wirecutter.png|50px]] || Wirecutter || $150
+|-
+| [[File:Screwdriver.png|50px]] || Screwdriver || $150
+|-
+| [[File:CableApcStack.png|50px]] || LV Cable Coil || $675
+|-
+| [[File:FlashlightLantern.png|50px]] || Flashlight || $155
+|-
+| [[File:PowerCellSmallPrinted.png|50px]] || Small-capacity Power Cell || $200
+|-
+| [[File:MicroManipulatorStockPart.png|50px]] || Matter Bin || $200
+|-
+| [[File:MatterBinStockPart.png|50px]] || Capacitor || $200
+|-
+| [[File:CapacitorStockPart.png|50px]] || Manipulator || $200
+|-
+| [[File:Beaker.png|50px]] || Beaker || $100
+|-
+| [[File:AirFreshener.png|50px]] || Air Freshener || $100
+|-
+| style="background-color:#383838;" | [[File:ProximitySensor.png|50px]]
+| style="background-color:#383838;" | Proximity Sensor
+| style="background-color:#383838;" | $400
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#383838;" | [[File:LeftArmBorg.png|50px]]
+| style="background-color:#383838;" | Cyborg Left Arm
+| style="background-color:#383838;" | $50
+| style="background-color:#383838;" | 1
+|}
+</div>
+</includeonly>

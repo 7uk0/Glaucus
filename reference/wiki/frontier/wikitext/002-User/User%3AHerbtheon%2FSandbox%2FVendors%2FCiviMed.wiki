@@ -1,0 +1,37 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:HandheldHealthAnalyzer.png|50px]] || Health Analyzer || $900
+|-
+| [[File:Brutepack.png|50px]] || Bruise Pack || $1500
+|-
+| [[File:Ointment.png|50px]] || Ointment || $1500
+|-
+| [[File:Bloodpack.png|50px]] || Blood Pack || $1500
+|-
+| [[File:Gauze.png|50px]] || Roll of Gauze || $1500
+|-
+| [[File:Medipen.png|50px]] || Emergency Medipen || $1050
+|-
+| [[File:BodyBagFolded.png|50px]] || Body Bag || $1050
+|-
+| [[File:ClothingEyesHudMedical.png|50px]] || Medical Hud || $900
+|-
+| [[File:ClothingEyesEyepatchHudMedical.png|50px]] || Medical Hud Eyepatch || $900
+|-
+| [[File:Implanter.png|50px]] || Medical Tracking Implanter || $1050
+|-
+| [[File:Implanter.png|50px]] || Sad Trombone Implanter || $1050
+|-
+| [[File:Implanter.png|50px]] || Bike Horn Implanter || $1050
+|-
+| [[File:Implanter.png|50px]] || Light Implanter || $1050
+|-
+| [[File:cart-med.png|50px]] || MedTek Cartridge || $600
+|-
+| [[File:folder-white.png|50px]] || Medicinal Doctor Folder || $500
+|}
+</div>
+</includeonly>

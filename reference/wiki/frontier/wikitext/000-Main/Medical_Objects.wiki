@@ -1,0 +1,30 @@
+'''How to start'''
+
+
+All medical items must be created from a medical techfab OR a medic assembler, both machines mostly found in botany and medical ships (it is highly suggested to check the Frontier Shipyard page to make sure the ship has it), the materials for said items will be mostly from blue wreckages and from salvage/expedition people in general, it's a good idea to keep in contact with them and also make a list of materials you're interested into to make things quicker.
+
+
+'''Medic Assembler'''
+
+
+Much like it's name implies, it is a machine made for assembling items, said items can be checked on the guide book in "Medical Recipes" or also in the [https://ss14.recipes/?fork=frontier SS14 Cookbook] page (make sure it is in frontier fork just in case).
+
+
+'''Aloe cream''': As easy as putting just an Aloe vera in the machine, it heals 5 burn, cold and shock damage, as for caustic it heals only 1.5. Not too great, but really cheap, so it's a nice alternative if you want to heal small damages instead of wasting chemicals.
+
+'''Regenerative mesh''': It requires '''aloe, ointment, cloth,''' '''20 sigynate''' and '''20 dermaline''' (the chemicals can be in a single beaker and it'll work). It heals 10 of all burn damage, a great option to use appart from chemicals. 
+
+'''Medicated Suture:''' Requires '''poppy, bruise pack, cloth, 20 tranexamic acid and 20 cryptobolin (chemicals can be in a single beaker). ''' It heals 10 of all brute damage while also closing wounds. 
+
+''Auto-injectors''
+
+
+It's worth noting, auto-injectors instantly inject the chemicals unlike normal syringes, it is a great option to use mid-combat or when in a rush. Every single auto-injector requires an '''empty medipen''', which is made in a medical techfab, just remember this item since i don't want to repeat it constantly.
+
+'''Brute Auto-injector: 15 bicaridine, 5 tranexamic acid'''. Applies those 2 chemicals instantly, great to use mid gunfights
+
+'''Air-loss Auto-injector: 20 saline, 20 dexaline plus.''' Great to help stabilize someone in crit situation. 
+
+'''Emergency medipen: 12 epinephrine and 3 tranexamic acid.''' Much like the medipens you start with, just remember.. do not use 2 on the same person.
+
+'''Burn auto-injector: 10 dermaline 10 leporazine.''' Doesn't need much to explain, just pop it if you notice your enemy likes to play with fire.

@@ -1,0 +1,79 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Screwdriver.png|50px]]
+| Screwdriver
+| $150
+|-
+| [[File:Crowbar.png|50px]]
+| Crowbar
+| $220
+|-
+| [[File:Wirecutter.png|50px]]
+| Wirecutter
+| $110
+|-
+| [[File:Wrench.png|50px]]
+| Wrench
+| $110
+|-
+| [[File:Welder.png|50px]]
+| Welding Tool
+| $200
+|-
+| [[File:NetworkConfigurator.png|50px]]
+| Network Configurator
+| $280
+|-
+| [[File:AppraisalTool.png|50px]]
+| Appraisal Tool
+| $200
+|-
+| [[File:ClothingBeltUtility.png|50px]]
+| Utility Belt
+| $200
+|-
+| [[File:ConstructionBag.png|50px]]
+| Construction Bag
+| $555
+|-
+| [[File:CableApcStack.png|50px]]
+| LV Cable Coil
+| $675
+|-
+| [[File:CableMVStack.png|50px]]
+| MV Cable Coil
+| $675
+|-
+| [[File:CableHVStack.png|50px]]
+| HV Cable Coil
+| $675
+|-
+| [[File:Flashlight.png|50px]]
+| Flashlight
+| $155
+|-
+| [[File:trayScanner.png|50px]]
+| T-ray Scanner
+| $850
+|-
+| [[File:GasAnalyzer.png|50px]]
+| Gas Analyzer
+| $800
+|-
+| [[File:SprayPainter.png|50px]]
+| Spray Painter
+| $200
+|-
+| [[File:SprayPainterAmmo.png|50px]]
+| Compressed Paint
+| $300
+|-
+| [[File:Multitool.png|50px]]
+| [Hidden] Multitool
+| $280
+|}
+</div>
+</includeonly>

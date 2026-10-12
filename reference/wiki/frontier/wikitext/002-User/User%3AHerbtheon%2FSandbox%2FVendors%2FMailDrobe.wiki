@@ -1,0 +1,45 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ShuttleGunMailLauncherFlatpack.png|50px]] || FWD-6500m "Priority" Flatpack || $1,500 || 2
+|-
+| [[File:NFWeaponLauncherMail.png|50px]] || RPDS || $500 || 2
+|-
+| [[File:HoverbikeMailcarrierFlatpack.png|50px]] || Mail Carrier Hoverbike Flatpack || $750 || 2
+|-
+| [[File:ClothingOuterEVASuitMailman.png|50px]] || Mailcarrier EVA Suit || $1,500 || 2
+|-
+| [[File:BoxMailCapsulePrimed.png|50px]] || Mail Capsule Box || $100 || 2
+|-
+| [[File:NFClothingBackpackDuffelMailCarrier.png|50px]] || Mail Carrier Duffel || $100 || 2
+|-
+| [[File:ClothingBackpackMessengerMailCarrier.png|50px]] || Mail Carrier Messenger Bag || $100 || 2
+|-
+| [[File:ClothingUniformJumpsuitMailCarrier.png|50px]] || Mail Carrier's Jumpsuit || $100 || 2
+|-
+| [[File:ClothingUniformJumpskirtMailCarrier.png|50px]] || Mail Carrier's Jumpskirt || $100 || 2
+|-
+| [[File:ClothingHeadMailCarrier.png|50px]] || Mail Carrier's Hat || $100 || 2
+|-
+| [[File:ClothingEyesHudMail.png|50px]] || Mail HUD || $100 || 2
+|-
+| [[File:NFMailBag.png|50px]] || Mail Bag || $200 || 2
+|-
+| [[File:NFPouchMailCarrier.png|50px]] || Mail Carrier's Pouch || $500 || 2
+|-
+| [[File:ClothingOuterWinterCoatMail.png|50px]] || Mail Carrier's Winter Coat || $500 || 2
+|-
+| [[File:ClothingShoesColorBlack.png|50px]] || Black Shoes || $100 || 2
+|-
+| [[File:RubberStampApproved.png|50px]] || Approved Rubber Stamp || $200 || 3
+|-
+| [[File:RubberStampDenied.png|50px]] || Denied Rubber Stamp || $100 || 3
+|-
+| [[File:BoxFolderClipboard.png|50px]] || Clipboard || $100 || 3
+|-
+| [[File:BoxEnvelope.png|50px]] || Envelope Box || $100 || 4
+|}
+</div>
+</includeonly>

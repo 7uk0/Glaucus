@@ -1,0 +1,7 @@
+<!--''[[GAME]]'' content and materials are the intellectual property of their respective owners.
+
+-->Content that you make available on {{SITENAME}} is licensed by you to us under our [{{int:wikigg-tos-url}} Terms of Service]. Do not make content available on {{SITENAME}} where you do not have the necessary rights to grant this license.
+
+All textual and graphical content on {{SITENAME}} that we may lawfully license is licensed to you under the [https://creativecommons.org/licenses/by-sa/4.0 Creative Commons Attribution-ShareAlike 4.0] license.
+
+[[Category:Legal notices]]

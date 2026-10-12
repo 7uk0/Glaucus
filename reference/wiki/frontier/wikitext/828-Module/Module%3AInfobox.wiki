@@ -1,0 +1,648 @@
+-- version 0.1.6
+
+--------------------------------------
+-- User settings, you can modify these
+--------------------------------------
+
+-- if you want to not always use divs in your wiki (as opposed to tables), you can change this default
+-- just remember to change it back each time you update from the main "branch" on the support wiki!
+-- you can also control it per infobox with `|useDivs=yes` or `|useDivs=no`
+local USE_DIVS = true -- `false` or `true`
+
+-- default value to show if a param is missing in some but not all tabs.
+-- set to `nil` (not in quotes) to remove such rows altogether in the tabs where they're missing
+local TABBED_NONEXIST = nil -- `''` or `nil` or `'N/A'` etc. Don't put nil in quotes.
+
+---------------------------------------------------------------------------
+-- Do not modify anything below this line unless you know what you're doing
+---------------------------------------------------------------------------
+
+local h = {}
+local p = {}
+local hooks = {}
+
+function p.arraymap(frame)
+	-- a lua implementation of Page Forms' arraymap
+	local args = h.overwrite()
+	local items = h.split(args[1], args[2] or ',')
+	for i, item in ipairs(items) do
+		items[i] = args[4]:gsub(args[3], item)
+	end
+	return table.concat(items, args[5] or ',')
+end
+
+function p.preprocess(frame)
+    return frame:preprocess(frame.args[1] or frame:getParent().args[1])
+end
+
+function p.main(frame)
+	h.registerHooks()
+	h.increment()
+	local args = h.overwrite()
+	local sep = args.sep or ','
+	h.castArgs(args, sep)
+    h.setMainImage(args.images[1])
+    -- suggest to use HIDDENCAT here; will be used for maintenance & gadget imports
+	return h.makeInfobox(args, sep), '[[Category:Pages with DRUID infoboxes]]'
+end
+
+function h.registerHooks()
+	if not mw.title.new('Module:Infobox/Hooks').exists then return end
+	hooks = require('Module:Infobox/Hooks')
+end
+
+function h.runHook(key, ...)
+	if hooks[key] then
+		hooks[key](...)
+	end
+end
+
+function h.increment()
+	-- optional use of VariablesLua for better compatibility
+	local VariablesLua = mw.ext.VariablesLua
+	if VariablesLua == nil then
+		h.counter = mw.getCurrentFrame():callParserFunction('#var', {'DRUID_INFOBOX_ID', 0}) + 1
+		mw.getCurrentFrame():callParserFunction('#vardefine', {'DRUID_INFOBOX_ID', h.counter})
+	else
+		h.counter = VariablesLua.var('DRUID_INFOBOX_ID', 0) + 1
+		VariablesLua.vardefine('DRUID_INFOBOX_ID', h.counter)
+	end
+end
+
+function h.castArgs(args, sep)
+	h.runHook('onCastArgsStart', args, sep, args.kind)
+	args.tabs = h.split(args.tabs or args.image_labels, sep)
+	args.images = h.getImages(args, sep)
+	args.sections = h.split(args.sections, sep)
+	for _, section in ipairs(args.sections) do
+		args[section] = h.split(args[section], sep)
+		args[section .. '_tabs'] = h.split(args[section .. '_tabs'], sep)
+		if #args.tabs > 0 and #args[section .. '_tabs'] > 0 then
+			error(('You cannot specify |tabs= and |%s= at the same time, please pick one'):format(section .. '_tabs'))
+		end
+	end
+	if args.useDivs then
+		USE_DIVS = h.castBool(args.useDivs)
+	end
+	-- this would be in the outer scope, but we're hiding it
+	h.entityType = USE_DIVS and 'div' or 'table' -- key of h.htmlEntities
+	h.runHook('onCastArgsEnd', args, sep, args.kind)
+end
+
+function h.getImages(args, sep)
+	if args.image and not args.images then
+		args.images = args.image
+	end
+	if args.images then
+		return h.split(args.images, sep)
+	end
+	if not args.tabs then return {} end
+	local ret = {}
+	for _, key in ipairs(args.tabs) do
+		if args[key .. '_image'] then
+			ret[#ret+1] = args[key .. '_image']
+		end
+	end
+	return ret
+end
+
+function h.setMainImage(file)
+	if h.counter > 1 then return end
+    if not file then return end
+    local fileText = file:gsub('.-:', '')
+	fileText = fileText:gsub('^([^|%]]+).*', '%1')
+	-- setmainimage is guaranteed to exist on wiki.gg but may not exist on other wikis
+	-- it's not a crucial piece of functionality so we'll fail silently if it doesn't exist
+	pcall(function() mw.getCurrentFrame():callParserFunction{
+		name = '#setmainimage',
+		args = { fileText },
+	} end)
+end
+
+function h.makeInfobox(args, sep)
+	local out = mw.html.create(h.getTag('container'))
+		:addClass('druid-infobox')
+		:addClass('druid-container')
+		:addClass('noexcerpt')
+		:addClass(args.class) -- warning: class can be nil, don't concat anything
+		:attr('id', args.id or ('druid-container-' .. h.counter))
+	if args.kind then out:addClass('druid-container-' .. h.escape(args.kind)) end
+	h.printTitle(out, args)
+	h.printImages(out, args.images, args)
+	for _, section in ipairs(args.sections) do
+		-- cannot begin tagging here because we don't know if any applicable args are present
+		local cols = args[section .. '_columns']
+		local makeSection = cols and h.makeGridSection or h.makeSection
+		out:node(makeSection(section, args[section], args, tonumber(cols)))
+	end
+	return out
+end
+
+function h.printTitle(out, args)
+	local tabs = args.tabs
+	if not tabs or #tabs == 0 then
+		h.printSimpleTitle(out, args)
+		return
+	end
+	if not h.hasComplexData('title', tabs, args) then
+		h.printSimpleTitle(out, args)
+		return
+	end
+	local node = h.printTitleWrapper(out)
+	h.printTabbedDataItem(node, 'title', tabs, args)
+end
+
+function h.printSimpleTitle(out, args)
+	if args.title then
+		local node = h.printTitleWrapper(out)
+		node:wikitext(args.title)
+	end
+end
+
+function h.printTitleWrapper(out)
+	return out:tag(h.getTag('titleOuter'))
+		:tag(h.getTag('titleInner'))
+			:addClass('druid-title')
+			:attr('colspan', 2)
+end
+
+function h.printTabbedDataItem(node, item, tabs, args)
+	-- hasData isn't used in the title case but we will need to track this
+	-- when we're printing section data later on
+	-- so we'll just track it always
+	local hasData = false
+	for i, label in ipairs(tabs) do
+		local div = node:tag('div')
+			:addClass('druid-toggleable-data')
+			:addClass('druid-toggleable')
+			:attr('data-druid', h.counter .. '-' .. i)
+			:attr('data-druid-tab-key', label)
+		if h.getTabbedContent(args, label, item) then
+			hasData = true
+			div:wikitext('\n\n' .. h.getTabbedContent(args, label, item))
+			div:addClass('druid-toggleable-data-nonempty')
+		else
+			div:addClass('druid-toggleable-data-empty')
+		end
+		
+		if i == 1 then div:addClass('focused') end
+	end
+	return hasData
+end
+
+function h.printImages(out, images, args)
+	if #images == 0 and #args.tabs == 0 then return end
+	-- burden is on the user to format this as an image. this should be done in the infobox template,
+	-- with something like |image={{#if:{{{image|}}}|[[File:{{{image|}}}{{!}}300px{{!}}link=]]}}
+	local td = out:tag(h.getTag('section'))
+		:addClass('druid-section-container')
+		:tag(h.getTag('cell'))
+		:attr('colspan', 2)
+	local tabs = args.tabs
+	local tabTexts = h.getImageTabTexts(tabs, images, args)
+	h.printTabs(td, tabs, tabTexts, false, args)
+	if #images == 0 then return end
+	if #images == 1 then
+		td:addClass('druid-main-image')
+			:wikitext(images[1])
+		if args.caption then
+			td:tag('div')
+				:addClass('druid-main-image-caption')
+				:wikitext(args.caption)
+		end
+		return
+	end
+	td:addClass('druid-main-images')
+	local imagesContainer = td:tag('div')
+		:addClass('druid-main-images-files')
+	for i, image in ipairs(images) do
+		local container = imagesContainer:tag('div')
+			:addClass('druid-main-images-file')
+			:addClass('druid-toggleable')
+			:attr('data-druid', h.counter .. '-' .. i)
+			:wikitext(image)
+			:attr('data-druid-tab-key', tabs[i])
+		local labelText
+		if tabs[i] then
+			labelText = args[tabs[i] .. '_label'] or tabs[i]
+		else
+			labelText = '[[Category:Infoboxes missing image labels]]Image ' .. i
+		end
+		if args[labelText .. '_caption'] then
+			container:tag('div')
+				:addClass('druid-main-images-caption')
+				:wikitext(args[labelText .. '_caption'])
+		end
+		if i == 1 then
+			container:addClass('focused')
+		end
+	end
+end
+
+function h.getImageTabTexts(tabs, images, args)
+	if #tabs == 0 and #images <= 1 then return {} end
+	local texts = {}
+	local i = 1
+	while images[i] or tabs[i] do
+		if tabs[i] then
+			texts[i] = args[tabs[i] .. '_label'] or tabs[i]
+		else
+			texts[i] = '[[Category:Infoboxes missing image labels]]Image ' .. i
+		end
+		i = i + 1
+	end
+	return texts
+end
+
+function h.printTabs(td, tabs, texts, isSection, args)
+	if #texts == 0 then return end
+	local container = td:tag('div')
+		:addClass('druid-main-images-labels')
+		:addClass('druid-tabs')
+	if isSection then
+		container:addClass('druid-section-tabs')
+	end
+	for i, item in ipairs(tabs) do
+		local label = container:tag('div')
+			:addClass('druid-main-images-label')
+			:addClass('druid-tab')
+			:addClass('druid-toggleable')
+			:attr('data-druid', h.counter .. '-' .. i)
+			:wikitext(texts[i])
+			:attr('data-druid-tab-key', item)
+		if isSection then
+			label:addClass('druid-section-tab')
+		else
+			label:addClass('druid-title-tab')
+		end
+		if i == 1 then
+			label:addClass('focused')
+		end
+		-- this can be null, don't concat anything here
+		label:addClass(args[item .. '_class'])
+	end
+end
+
+function h.makeGridSection(section, sectionFields, args, numCols)
+	local numItems = h.countItems(sectionFields, section, args)
+	if numItems == 0 then return end
+	local node = mw.html.create(h.getTag('section'))
+		:addClass('druid-section-container')
+	h.printSectionHeader(node, section, args)
+	h.printSectionTabs(node, section, args)
+	local tr = node:tag(h.getTag('row'))
+		:attr('data-druid-section-row', h.escape(section))
+	if args[section .. '_collapsed'] then
+		tr:addClass('druid-collapsed')
+	end
+	local grid = tr:tag(h.getTag('cell'))
+		:attr('colspan', 2)
+		:addClass('druid-grid-section')
+		:addClass('druid-grid-section-' .. h.escape(section))
+		:addClass(args[section .. '_class']) -- warning: class can be nil, don't concat anything
+		:tag('div')
+			:addClass('druid-grid')
+	local row, col, i = 1, 1, 1
+	local sizeOfLastRow = numItems % numCols
+	local lcm = h.getNumGridCols(numItems, sizeOfLastRow, numCols)
+	grid:css('grid-template-columns', ('repeat(%s, 1fr)'):format(lcm))
+	local size = lcm / numCols
+	for _, item in ipairs(sectionFields) do
+		local node = mw.html.create('div')
+		local shouldPrint = h.printData(node, item, section, args)
+		if shouldPrint then
+			if i == numItems - sizeOfLastRow + 1 then
+				size = lcm / sizeOfLastRow
+			end
+			i = i + 1
+			local gStart = (col - 1) * size + 1
+			local gEnd = (col) * size + 1
+			local itemContainer = grid:tag('div')
+				:addClass('druid-grid-item')
+				:addClass('druid-grid-item-' .. h.escape(item))
+				:addClass(args[item .. '_class']) -- warning: class can be nil, don't concat anything
+				:css('grid-column', ('%s / %s'):format(gStart, gEnd))
+				:css('grid-row', row)
+			if not h.castBool(args[item .. '_nolabel']) then
+				h.printLabel(itemContainer:tag('div'), item, args)
+			end
+			itemContainer:node(node)
+			if col == numCols then
+				row = row + 1
+				col = 1
+			else
+				col = col + 1
+			end
+		end
+	end
+	return node
+end
+
+function h.makeSection(section, sectionFields, args)
+	if section == '' then return end -- bruteforce fix for trailing commas
+	local shouldPrint = false
+	local container = mw.html.create(h.getTag('section'))
+		:addClass('druid-section-container')
+		:addClass(args[section .. '_class']) -- warning: class can be nil, don't concat anything
+	h.printSectionHeader(container, section, args)
+	h.printSectionTabs(container, section, args)
+	for _, item in ipairs(sectionFields) do
+		local node = mw.html.create(h.getTag('cell'))
+		local shouldPrintItem = h.printData(node, item, section, args)
+		if shouldPrintItem then
+			shouldPrint = true
+			local tr = container:tag(h.getTag('row'))
+				:addClass('druid-row')
+				:addClass('druid-row-' .. h.escape(item))
+				:addClass(args[item .. '_class']) -- warning: class can be nil, don't concat anything
+				:attr('data-druid-section-row', h.escape(section))
+			if args[section .. '_collapsed'] then
+				tr:addClass('druid-collapsed')
+			end
+			if h.castBool(args[item .. '_wide']) or h.castBool(args[item .. '_nolabel']) then
+				node
+					:attr('colspan', 2)
+					:addClass('druid-data-wide')
+			else
+				h.printLabel(tr:tag(h.getTag('label')), item, args)
+			end
+			tr:node(node)
+		end
+	end
+	if not shouldPrint then return nil end
+	return container
+end
+
+function h.countItems(sectionFields, section, args)
+	local numItems = 0
+	for _, v in ipairs(sectionFields) do
+		-- we aren't actually printing here, but we're finding out if we should print anything
+		-- because we need the count of columns before we print anything in grid data
+		if h.printData(mw.html.create(), v, section, args) then
+			numItems = numItems + 1
+		end
+	end
+	return numItems
+end
+
+function h.getNumGridCols(numItems, sizeOfLastRow, numCols)
+	if not numCols then return numItems, 1 end
+	if numItems < numCols then return numItems, 1 end
+	if sizeOfLastRow == 0 then
+		return numCols, 1
+	end
+	local a, b = sizeOfLastRow, numCols
+	while b ~= 0 do
+	    a, b = b, a % b
+	end
+	local lcm = sizeOfLastRow * numCols / a
+	return lcm
+end
+
+function h.printLabel(node, item, args)
+	return node
+		:addClass('druid-label')
+		:addClass('druid-label-' .. h.escape(item))
+		:wikitext(args[item .. '_display'] or args[item .. '_label'] or item)
+end
+
+function h.printData(node, item, section, args)
+	-- prints data to the node
+	-- and also returns whether the item is nonempty or not
+	local hasData = false
+	local sectionTabs = args[section .. '_tabs']
+	local tabs = args.tabs
+	if sectionTabs and #sectionTabs > 0 then
+		tabs = sectionTabs
+	end
+	if not tabs or #tabs == 0 then
+		return h.printSimpleData(node, item, args)
+	end
+	if not h.hasComplexData(item, tabs, args) then
+		return h.printSimpleData(node, item, args)
+	end
+	hasData = hasData or h.printTabbedDataItem(node, item, tabs, args)
+	if hasData then
+		node:addClass('druid-data')
+	end
+	return hasData
+end
+
+function h.getTabbedContent(args, label, item)
+	return args[label .. '_' .. item] or args[item] or TABBED_NONEXIST
+end
+
+function h.printSimpleData(node, item, args)
+	if args[item] and type(args[item]) ~= 'string' then
+		error(("Invalid use of field %s as both a section and a data value"):format(item))
+	end
+	if not args[item] then return false end
+	node:addClass('druid-data')
+		:addClass('druid-data-' .. h.escape(item))
+		:addClass('druid-data-nonempty')
+		:wikitext('\n\n' .. args[item])
+	return true
+end
+
+function h.hasComplexData(item, tabs, args)
+	for _, v in ipairs(tabs) do
+		if args[v .. '_' .. item] then return true end
+	end
+	return false
+end
+
+function h.printSectionHeader(node, section, args)
+	if h.castBool(args[section .. '_nolabel']) then return end
+	local tr = node:tag(h.getTag('row'))
+		:attr('data-druid-section', h.escape(section))
+	local th = tr:tag(h.getTag('sectionTitle'))
+		:attr('colspan', 2)
+		:addClass('druid-section')
+		:addClass('druid-section-' .. h.escape(section))
+	if args[section .. '_collapsible'] or args[section .. '_collapsed'] then
+		tr:addClass('druid-collapsible')
+		if args[section .. '_collapsed'] then
+			tr:addClass('druid-collapsible-collapsed')
+		end
+	end
+	local emptySections = {}
+	for _, label in ipairs(args.tabs) do
+		local hasLabel = false
+		for _, item in ipairs(args[section] or {}) do
+			if h.getTabbedContent(args, label, item) then
+				hasLabel = true
+			end
+		end
+		if not hasLabel then emptySections[label] = true end
+	end
+	if not next(emptySections) then
+		th:wikitext(args[section .. '_label'] or section)
+		return
+	end
+	for i, label in ipairs(args.tabs) do
+		local div = th:tag('div')
+			:addClass('druid-toggleable-heading')
+			:addClass('druid-toggleable')
+			:attr('data-druid', h.counter .. '-' .. i)
+			:wikitext(args[section .. '_label'] or section)
+		-- we are going to print the section content even in empty nodes
+		-- for compatibility with browsers without :has, where hiding empty rows won't happen
+		if emptySections[label] then
+			div:addClass('druid-toggleable-heading-empty')
+		end
+		if i == 1 then
+			div:addClass('focused')
+		end
+	end
+end
+
+function h.printSectionTabs(node, section, args)
+	local tabs = args[section .. '_tabs']
+	if not tabs or #tabs == 0 then return end
+	local tr = node:tag(h.getTag('sectionTabsOuter'))
+		:attr('data-druid-section', h.escape(section))
+	local th = tr:tag(h.getTag('sectionTabs'))
+		:attr('colspan', 2)
+		:addClass('druid-section-tabs')
+		:addClass('druid-section-tabs-' .. h.escape(section))
+	local texts = {}
+	for i, item in ipairs(tabs) do
+		texts[i] = args[item .. '_label'] or item
+	end
+	h.printTabs(th, tabs, texts, true, args)
+end
+
+----------------------------
+-- general utility functions
+----------------------------
+
+function h.overwrite()
+	-- this is a generic utility function that collects args from the invoke call & the parent template.
+	-- normally, you merge args with parent template overwriting the invoke call, but
+	-- since we'll be putting markup/formatting into our invoke call,
+	-- we actually want to overwrite what the user sent.
+	local f = mw.getCurrentFrame()
+	local origArgs = f.args
+	local parentArgs = f:getParent().args
+
+	local args = {}
+	
+	for k, v in pairs(parentArgs) do
+		v = mw.text.trim(v)
+		if v ~= '' then
+			args[k] = v
+		end
+	end
+	
+	for k, v in pairs(origArgs) do
+		v = mw.text.trim(tostring(v))
+		if v ~= '' then
+			args[k] = v
+		end
+	end
+	
+	return args
+end
+
+-- generic utility functions
+-- these would normally be provided by other modules, but to make installation easy
+-- I'm including everything here
+
+function h.split(text, pattern, plain)
+	if not text then
+		return {}
+	end
+	local ret = {}
+	for m in h.gsplit(text, pattern, plain) do
+		ret[#ret+1] = m
+	end
+	return ret
+end
+
+function h.gsplit( text, pattern, plain )
+	if not pattern then pattern = ',' end
+	if not plain then
+		pattern = '%s*' .. pattern .. '%s*'
+	end
+	local s, l = 1, text:len()
+	return function ()
+		if s then
+			local e, n = text:find( pattern, s, plain )
+			local ret
+			if not e then
+				ret = text:sub( s )
+				s = nil
+			elseif n < e then
+				-- Empty separator!
+				ret = text:sub( s, e )
+				if e < l then
+					s = e + 1
+				else
+					s = nil
+				end
+			else
+				ret = e > s and text:sub( s, e - 1 ) or ''
+				s = n + 1
+			end
+			return ret
+		end
+	end, nil, nil
+end
+
+function h.escape(s)
+	s = s:gsub(' ', '')
+		:gsub('"', '')
+		:gsub("'", '')
+		:gsub("%?", '')
+		:gsub("%%", '')
+		:gsub("%[", '')
+		:gsub("%]", '')
+		:gsub("{", '')
+		:gsub("}", '')
+		:gsub("!", '')
+	return s
+end
+
+
+-- normally I would make these constants at the top of the file
+-- but I don't want to mistake them with user-set constants
+h.boolFalse = { ['false'] = true, ['no'] = true, [''] = true, ['0'] = true, ['nil'] = true }
+
+function h.castBool(x)
+	if not x then return false end
+	return not h.boolFalse[tostring(x):lower()]
+end
+
+h.htmlEntities = {
+	table = {
+		container = 'table',
+		titleOuter = 'tr',
+		titleInner = 'th',
+		section = '',
+		sectionTitle = 'th',
+		sectionTabsOuter = 'tr',
+		sectionTabs = 'td',
+		row = 'tr',
+		label = 'th',
+		cell = 'td',
+	},
+	div = {
+		container = 'div',
+		titleOuter = 'div',
+		titleInner = 'div',
+		section = 'div',
+		sectionTitle = 'div',
+		sectionTabsOuter = 'div',
+		sectionTabs = 'div',
+		row = 'div',
+		label = 'div',
+		cell = 'div',
+	}
+}
+
+function h.getTag(key)
+	-- try not to totally fail here
+	return h.htmlEntities[h.entityType or 'div'][key]
+end
+
+return p

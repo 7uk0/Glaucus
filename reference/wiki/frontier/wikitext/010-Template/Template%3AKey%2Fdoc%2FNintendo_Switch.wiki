@@ -1,0 +1,94 @@
+Images source: [[dev:Category:Nintendo Switch input images]]
+
+=== Nintendo Switch ===
+<code><nowiki>{{Key|Switch|a}}</nowiki></code>
+{{Key|Switch|a}}
+
+<code><nowiki>{{Key|Switch|b}}</nowiki></code>
+{{Key|Switch|b}}
+
+<code><nowiki>{{Key|Switch|x}}</nowiki></code>
+{{Key|Switch|x}}
+
+<code><nowiki>{{Key|Switch|y}}</nowiki></code>
+{{Key|Switch|y}}
+
+<code><nowiki>{{Key|Switch|Left Stick}}</nowiki></code>
+{{Key|Switch|Left Stick}}
+
+<code><nowiki>{{Key|Switch|Right Stick}}</nowiki></code>
+{{Key|Switch|Right Stick}}
+
+<code><nowiki>{{Key|Switch|Left Stick Press}}</nowiki></code>
+{{Key|Switch|Left Stick Press}}
+
+<code><nowiki>{{Key|Switch|Right Stick Press}}</nowiki></code>
+{{Key|Switch|Right Stick Press}}
+
+<code><nowiki>{{Key|Switch|-}}</nowiki></code>
+{{Key|Switch|-}}
+
+<code><nowiki>{{Key|Switch|+}}</nowiki></code>
+{{Key|Switch|+}}
+
+<code><nowiki>{{Key|Switch|Capture}}</nowiki></code>
+{{Key|Switch|Capture}}
+
+<code><nowiki>{{Key|Switch|HOME}}</nowiki></code>
+{{Key|Switch|HOME}}
+
+<code><nowiki>{{Key|Switch|L}}</nowiki></code>
+{{Key|Switch|L}}
+
+<code><nowiki>{{Key|Switch|R}}</nowiki></code>
+{{Key|Switch|R}}
+
+<code><nowiki>{{Key|Switch|ZL}}</nowiki></code>
+{{Key|Switch|ZL}}
+
+<code><nowiki>{{Key|Switch|ZR}}</nowiki></code>
+{{Key|Switch|ZR}}
+
+=== Pro Controller ===
+<code><nowiki>{{Key|Switch|Pro Control Pad}}</nowiki></code>
+{{Key|Switch|Pro Control Pad}}
+
+<code><nowiki>{{Key|Switch|Pro Control Pad Left}}</nowiki></code>
+{{Key|Switch|Pro Control Pad Left}}
+
+<code><nowiki>{{Key|Switch|Pro Control Pad Right}}</nowiki></code>
+{{Key|Switch|Pro Control Pad Right}}
+
+<code><nowiki>{{Key|Switch|Pro Control Pad Up}}</nowiki></code>
+{{Key|Switch|Pro Control Pad Up}}
+
+<code><nowiki>{{Key|Switch|Pro Control Pad Down}}</nowiki></code>
+{{Key|Switch|Pro Control Pad Down}}
+
+=== Joy-Con ===
+<code><nowiki>{{Key|Switch|Directional Left}}</nowiki></code>
+{{Key|Switch|Directional Left}}
+
+<code><nowiki>{{Key|Switch|Directional Right}}</nowiki></code>
+{{Key|Switch|Directional Right}}
+
+<code><nowiki>{{Key|Switch|Directional Up}}</nowiki></code>
+{{Key|Switch|Directional Up}}
+
+<code><nowiki>{{Key|Switch|Directional Down}}</nowiki></code>
+{{Key|Switch|Directional Down}}
+
+==== Diagrams ====
+<code><nowiki>{{Key|Switch|Joy-Con}}</nowiki></code>
+{{Key|Switch|Joy-Con}}
+
+<code><nowiki>{{Key|Switch|Joy-Con Separate}}</nowiki></code>
+{{Key|Switch|Joy-Con Separate}}
+
+<code><nowiki>{{Key|Switch|Joy-Con Left}}</nowiki></code>
+{{Key|Switch|Joy-Con Left}}
+
+<code><nowiki>{{Key|Switch|Joy-Con Right}}</nowiki></code>
+{{Key|Switch|Joy-Con Right}}
+__NOTOC__
+<noinclude>[[Category:Key template documentation]]</noinclude>

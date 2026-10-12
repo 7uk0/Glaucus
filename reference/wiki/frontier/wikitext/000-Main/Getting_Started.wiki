@@ -1,0 +1,103 @@
+== Welcome Pilot! ==
+Congratulations, contractor, on being accepted into the Nanotrasen Frontiers Program! This exciting initiative opens up new horizons and markets for the Nanotrasen corporation, and you are the spearhead of this venture. This guide is designed to help station employees new to the program acclimate to the policies, procedures, and culture of the Frontier. In this guide, you will find:
+
+Basic information differentiating Frontier from other stations.
+Important documentation policies and procedures critical to the smooth function of Frontier Station and its sector of space.
+Helpful tips and stories for new contractors just getting started, including:
+The Frontier economy and your role in it.
+How to acquire NT-approved currency, also known as spesos.
+Different career paths that are accessible for new crewmen and pilots.
+Testimonials from veteran pilots on their secrets to success.
+Reading this guide is proven to improve your chances of success as a Frontier pilot by at least 35.7%, according to NT social scientists.
+
+'''Make sure that you read [[Server Rules|the rules]] before playing!'''
+
+=== An Overview of the Frontier Sector ===
+Cramped and overpopulated stations such as Bagel, Kettle, and Hive are subject to a variety of dangers that are somewhat relaxed on the frontier. Many prefer the freedom of the endless stars and the command of their own ship to the regimented struggles aboard standard station. That same freedom, however, has meant that Nanotrasen authority is somewhat more "relaxed" compared to a standard station. Station security and a command structure still exist; however, pilots are chosen for their self-reliance and ingenuity. To ensure the sector is able to receive vital goods and services efficiently, an internal market has been established between pilots and with the station. Overall, this has led to significantly different objectives compared to standard station life:
+
+* Shifts are roughly six to twelve hours long in real time. The Maunder server has rounds of 8 hours long, while the Hypatia server supports 10 hour rounds.
+* These long shifts mean that it is not frowned upon to cryo (leave the game via cryopod) in the middle of the shift and come back later. Nobody expects you to play for 10 hours straight.
+* Antagonists tend to be fewer and farther between, with them mainly existing in the form of space pirates or admin events.
+
+* Frontier has a semi-persistent economic system, based on spesos.
+* Ships and the station restart with each new round.
+* Money is carried over between rounds.
+* New players start with 30,000 spesos.
+
+* Goods can be purchased through the Trade Mall, produced and sold by players, or, occasionally, obtained through other sources.
+
+Frontier is a Medium Roleplay (MRP) server.
+Goals are usually open-ended and player-driven. They might include objectives based on game mechanics, job-related duties, or subjective criteria. Players may choose to engage in some or all of these goals in a round. Some examples:
+Game Mechanics: Making the most money possible through trade or resource production, mastering research trees, or winning loot in expeditions. These are common goals for ship captains.
+Job-Related Duties: There are some jobs that are carried out on behalf of Nanotrasen by station employees, including the command staff, security, janitors, station engineers, and valets. These positions are most closely-aligned to other SS14 servers.
+Subjective Criteria: What sounds fun? Build the ship of your dreams, explore far-flung places of interest, start a gambling den, or operate as a shrewd merchant.
+Additionally, Frontier features a regular occurrence of admin events (admemes). These range in breadth and scope from an admin sending you intuitions or messages (such as the gods answering a Chaplain's prayers) to monster hunts, courtroom cases, or even sector-wide events. Like other servers, these events are often driven through communications from Central Command (CentComm/CC). They will often have their own sets of conditions and objectives.
+
+=== A Quick Summary of Jobs in the Sector ===
+In this sector most players share one of the three basic roles: Contractor, Pilot and Mercenary.
+Roles are based on the ship you serve on, instead of the role you spawn as. This also means you can more easily switch between roles mid-round.
+Pilots and Mercenaries have a higher time requirement, and they have access to spawn locations like the Medical Dispatch and the Expedition Lodge.
+
+There are also different NT departments you can work for: Frontier Outpost Staff and the New Frontier Sheriff Department, or NFSD for short. See [[Jobs]] and [[NFSDSOP]] for more information. 
+===== Frontier Outpost Staff =====
+The Frontier Outpost Staff department provides multiple roles that provide support to the sector in a variety of ways, such as delivering mail or keeping Points Of Interests (POI's) clean.
+They have a special shipyard console for buying job-specific ships.
+The Outpost Staff Department is led by a Station Representative (SR), who also handles business like ship renames and putting out bounties on goods or criminals. The SR is also a good person to ask for information if you are a newer player, as the role is often played by more experienced players. The SR can often be found in their office on the main Frontier Outpost.
+Outpost Staff members are paid on an hourly basis by the SR or the Sheriff if there isn't an SR present.
+===== New Frontier Sheriff Department =====
+The NFSD is Frontiers main security force, keeping the sector safe from pirates and other criminal types. It is led by a Sheriff, and it follows a more typical hierarchy. 
+NFSD's main job is to follow and uphold [[Space Law]] throughout the sector. They also follow a strict Standard Operating Procedure.
+NFSD has a special brand of ships that are only held by this department. Some notable ships include the Empress, the Hypnos and the Prowler.
+The Sheriff may be willing to provide licenses to trusted contractors that authorize actions that would otherwise be considered illegal, such as the use of Class Two contraband as defined by [[Space Law]]. This paperwork is commonly referred to as a 'writ'. 
+===== Pirates =====
+A bunch of shady types that populate the dark side of Frontier. They can often be found drinking rum, robbing cargo ships and annoying NFSD.
+Pirates are led by a (whitelisted) pirate captain or pirate first mate and must abide by the pirate code.
+
+===The Layout of the Sector===
+Frontier takes place on a randomized map: An asteroid filled space with a few notable Points of Interest (POIs) scattered throughout.
+
+[[File:Topology.PNG|thumb|Basic map showing the asteroid layout of the sector. Screenshot taken from the in-game guide "Sector Topology".]]
+[[Asteroids]] spawn in a few different "zones", all centered around the central Frontier Outpost. The first 1000m around Frontier will be empty. Then, ranging from 1000 to 5000 meters there will be a few, small asteroids. From 5000 to around 9000 meters you can find regular sized asteroids and loot-filled debris. This is where [[Basic Salvaging|salvagers]] and miners like to hang out. From 9km to 15km out you can find icy asteroid and clockwork debris asteroids. This zone is mainly of interest to scientists. You can find more info about the sector topology in the in-game guide, found in the escape menu.
+
+====POI's====
+Here is a quick overview of the most noteworthy POIs. There are some others out there, but those you will have to discover for yourself.
+===== Frontier Outpost (FO) =====
+Home of the Station Representative and where you will start most shifts. Facilities include a shipyard console to buy ships, lots of vending machines to buy tools and fuel, ATMs to deposit your money and a public holopad to call all your friends! The Frontier Outpost is often monitored by a Station Traffic Controller if one is present, so make sure to make use of the Traffic Comms Channel and to follow the docking regulations as described in [[Space Law]].
+'''This station has a 200m safezone around it. Antagonistic/Illegal activities done inside of it are not allowed. Check the [[Server Rules|rules]] for more information.'''
+===== NFSD Outpost =====
+The HQ of the NFSD. This is where they will gear up, buy ships and deliver contraband to.
+===== Medical Dispatch (MD) =====
+This is where you can buy medical ships. Medical services are privatized, which means that anyone can be a doctor! The dispatch is home to the Director of Care, who can grant bonuses to crews that deserve them.
+===== Trade Mall (TM) =====
+The place to buy miscellaneous goods from the Cargo Console, and the perfect place to meet up with other players to sell your goods and mingle.
+Goods sold here on the Cargo pads are sold at 125% of the value listed on Appraisal Scanners.
+===== Cargo Depots =====
+The cargo depots are where you can sell Cargo Crates (and Express Cargo Crates) bought from the Trade Outpost and other goods you find while doing salvaging for varying prices.
+Cargo Crates (and Express Cargo Crates) bought at TM will be assigned a destination, and are sold for more then their initial value was if delivered to their appropriate destination (1k to 1.5k for Cargo Crates, 2k to 4k for Express Crates).
+Because other forms of goods are sold at 75% of their appraisal value no matter what form they take, it is recommended to sell them at TM.
+There are four different Cargo Depots (A, B, C and D), each are positioned at opposite ends of the sector so make sure to plan your route and have plenty of fuel!
+===== Expedition Lodge (EL) =====
+This is where mercenaries can mingle and purchase expedition ships. Expedition ships are the only ships capable of going to expedition planets, but due to their increased price and high risk they are not very suitable for newer players.
+
+== Your First Job ==
+Now I hear you ask: That information is nice and all, but how do I actually get started?
+You are going to need a ship of course!
+====Buying a Ship====
+You can buy a ship from the Shipyard console, found in the center section of the main outpost. To buy a ship, alt-click on your PDA to get your ID card, click on the shipyard console to insert it, then find a ship you like. There are ships that align with most regular station jobs, though some jobs are more profitable than others.
+Once you find a ship you like and have looked at its guidebook entry, you press the buy button. Then you, and this is very important, take out your ID-card and put it back into your PDA.
+The ship is now registered to your ID-card. When you are done with your shift, head back to the shipyard console and sell your ship. You will get a large percentage of the value back.
+'''Ships do not persist between rounds. Any ships not sold at the end of the shift will be lost, and their value in spesos will be gone forever.'''
+For information on how to fly your ship, take a look at the [[Piloting]] section of this wiki.
+====Crewing Up====
+While there is room for solo players on Frontier, it is often easier and more fun to team up with other characters. Ask around in common channel, on the main outpost or ask the SR if they have heard of any ships that need extra hands. You can also use the public holopad to call people, though they might not be as responsive.
+Be sure to inquire about how much you are paid before you join up. The specifics are for each captain to decide, and it can range from a cut of the profits to an hourly salary.
+==== Tips for Beginners====
+*The list of ships can be overwhelming at first. Do not be afraid to ask players in-character for help selecting a ship for a job you want to do or for other questions. 
+*The most common jobs new players do when flying solo are running food ships and doing salvaging work (see [[Asteroids]]). Salvaging may require more advanced knowledge on zero gravity movement and combat than it might require in other sectors, so do not be afraid to ask others to tutor you.
+*Salvaged goods and materials can be sold to the trade mall, but you can often get a larger amount from other players. Artifacts have no base value when sold at TM, but are in high demand with Science ships. You can use the holopads available on most ships to contact other ships and discuss a trade deal.
+*Food ships are harder to run, because they do not provide a reliable stream of income and are mainly reliant on making sales to other players. However, if advertised sufficiently, these can be very lucrative. Asking the SR to rename your ship can help you stand out more. 
+*The radio communications are usually easily missed. If you want something, it is best to reach out via holopad communication. 
+'''The 200m safezone around Frontier does not allow for Food ships to do their business there.''' If you want a better docking spot, there are often a lot of free docks at the trade outpost.
+*Station jobs can provide a good early source of income. Especially the Janitor and Mailcarrier jobs are easy to learn and good for beginners. The downside of these jobs are that you will not get paid if there is no SR available. If there is an SR, you can ask them for more information on how to do your function. Keep in mind that station jobs are held to a higher roleplay standard and that they cannot do any crime.
+=====Medical Recommendations (How not to be lost in space forever)=====
+Your character's Loadout starts with a free Medical Implant, but one can be acquired from the FO Medical Vendor if needed. Medical implants will broadcast your location on the medical comms channel when you reach critical status or die. This will allow for you to be rescued by medical ships. You should also make sure to maximize the sensors on your suit (Right click the jumpsuit you are wearing in your inventory and set it to coordinates). This will allow medical ships to find you in case your body drifts away into deep space. It also has the added bonus of letting the Mailcarrier track you down more easily (You want those cool gifts in the mail, right?).

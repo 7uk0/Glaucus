@@ -1,0 +1,137 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:NFClothingBackpackDuffelChaplain.png|50px]] || Chaplain Duffel || $100 || 2
+|-
+| [[File:ClothingBackpackMessengerChaplain.png|50px]] || Chaplain Messenger Bag || $100 || 2
+|-
+| [[File:ClothingUniformJumpsuitChaplain.png|50px]] || Chaplain's Jumpsuit || $100 || 3
+|-
+| [[File:ClothingUniformJumpskirtChaplain.png|50px]] || Chaplain's Jumpskirt || $100 || 3
+|-
+| [[File:ClothingUniformJumpsuitMonasticRobeDark.png|50px]] || Dark Monastic Robe || $100 || 3
+|-
+| [[File:ClothingUniformJumpsuitMonasticRobeLight.png|50px]] || Light Monastic Robe || $100 || 3
+|-
+| [[File:ClothingOuterHoodieChaplain.png|50px]] || Chaplain's Hoodie || $300 || 3
+|-
+| [[File:ClothingOuterHoodieBlack.png|50px]] || Black Hoodie || $300 || 3
+|-
+| [[File:ClothingHeadHatHoodNunHood.png|50px]] || Nun Hood || $100 || 3
+|-
+| [[File:ClothingOuterNunRobe.png|50px]] || Nun Robe || $300 || 3
+|-
+| [[File:ClothingHeadHatFez.png|50px]] || Fez || $100 || 3
+|-
+| [[File:ClothingHeadHatPlaguedoctor.png|50px]] || Plague Doctor Hat || $100 || 3
+|-
+| [[File:ClothingHeadHatWitch.png|50px]] || Witch Hat || $100 || 3
+|-
+| [[File:ClothingHeadHatWitch1.png|50px]] || Witch Hat || $100 || 3
+|-
+| [[File:ClothingOuterPlagueSuit.png|50px]] || Plague Doctor Suit || $300 || 3
+|-
+| [[File:ClothingMaskPlague.png|50px]] || Plague Doctor Mask || $250 || 3
+|-
+| [[File:ClothingHeadHatKippah.png|50px]] || Kippah || $100 || 3
+|-
+| [[File:ClothingHeadHatWideBrimmed.png|50px]] || Wide-Brimmed Hat || $100 || 3
+|-
+| [[File:ClothingHeadHatPilgrim.png|50px]] || Pilgrim's Hat || $100 || 3
+|-
+| [[File:ClothingUniformJumpsuitChaplainPilgrimVest.png|50px]] || Pilgram Jumpsuit || $100 || 3
+|-
+| [[File:ClothingHeadHatBishopMitre.png|50px]] || Bishop's Mitre || $100 || 3
+|-
+| [[File:ClothingOuterCoatBishop.png|50px]] || Bishop's Robes || $350 || 3
+|-
+| [[File:ClothingHeadHatCardinal.png|50px]] || Cardinal's Hat || $100 || 3
+|-
+| [[File:ClothingOuterCoatCardinal.png|50px]] || Cardinal's Coat || $300 || 3
+|-
+| [[File:ClothingHeadHatWitchhunter.png|50px]] || Witch Hunter's Hat || $100 || 3
+|-
+| [[File:ClothingOuterCoatWitchHunter.png|50px]] || Witch Hunter's Coat || $300 || 3
+|-
+| [[File:ClothingNeckScarfChaplainStole.png|50px]] || Chaplain's Stole || $100 || 3
+|-
+| [[File:ClothingNeckStoleChaplain.png|50px]] || Chaplain's Stole || $100 || 3
+|-
+| [[File:ClothingBeltChaplainSash.png|50px]] || Chaplain Sash || $200 || 3
+|-
+| [[File:RubberStampChaplain.png|50px]] || Chaplain's Rubber Stamp || $200 || 3
+|-
+| [[File:Bible.png|50px]] || Bible || $200 || 3
+|-
+| [[File:BoxCandle.png|50px]] || Candle Box || $100 || 2
+|-
+| [[File:BoxCandleSmall.png|50px]] || Small Candle Box || $100 || 2
+|-
+| [[File:Urn.png|50px]] || Urn || $200 || 5
+|-
+| [[File:UrnMortuary.png|50px]] || Mortuary Urn || $200 || 4
+|-
+| [[File:Censer.png|50px]] || Censer || $50 || 2
+|-
+| [[File:SilverRing.png|50px]] || Silver Ring || $2,750 || 2
+|-
+| [[File:GoldRing.png|50px]] || Gold Ring || $3,000 || 2
+|-
+| [[File:ClothingNeckCrucifix.png|50px]] || Crucifix || $100 || 3
+|-
+| [[File:ClothingOuterEVASuitChaplain.png|50px]] || Chaplain EVA Suit || $1,500 || 3
+|-
+| style="background-color:#383838;" | [[File:DrinkWineBottleFull.png|50px]]
+| style="background-color:#383838;" | Doublebearded Bearded Special Wind Bottle (Wine)
+| style="background-color:#383838;" | $160
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineChaplain.png|50px]]
+| style="background-color:#383838;" | Chaplain Figure
+| style="background-color:#383838;" | $750
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:WoodenStake.png|50px]]
+| style="background-color:#380C0C;" | Wooden Stake
+| style="background-color:#380C0C;" | $200
+| style="background-color:#380C0C;" | 6
+|-
+| style="background-color:#380C0C;" | [[File:ClothingOuterArmorCult.png|50px]]
+| style="background-color:#380C0C;" | Acolyte Armor
+| style="background-color:#380C0C;" | $300
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:ClothingHeadHelmetCult.png|50px]]
+| style="background-color:#380C0C;" | Cult Helmet
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:ClothingOuterRobesCult.png|50px]]
+| style="background-color:#380C0C;" | Cult Robes
+| style="background-color:#380C0C;" | $300
+| style="background-color:#380C0C;" | 3
+|-
+| style="background-color:#380C0C;" | [[File:ClothingHeadHatHoodCulthood.png|50px]]
+| style="background-color:#380C0C;" | Cult Hood
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 3
+|-
+| style="background-color:#380C0C;" | [[File:ClothingShoesCult.png|50px]]
+| style="background-color:#380C0C;" | Cult Shoes
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 6
+|-
+| style="background-color:#380C0C;" | [[File:BedsheetCult.png|50px]]
+| style="background-color:#380C0C;" | Cult Bedsheet
+| style="background-color:#380C0C;" | $1,000
+| style="background-color:#380C0C;" | 4
+|-
+| style="background-color:#380C0C;" | [[File:ClothingNeckScarfStripedBlack.png|50px]]
+| style="background-color:#380C0C;" | Striped Black Scarf
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 3
+|}
+</div>
+</includeonly>

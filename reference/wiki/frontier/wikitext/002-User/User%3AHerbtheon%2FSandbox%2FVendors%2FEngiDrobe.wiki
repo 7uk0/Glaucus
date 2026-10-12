@@ -1,0 +1,118 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ClothingBackpackDuffelEngineering.png|50px]] || Engineering Duffel Bag || $100 || 3
+|-
+| [[File:ClothingBackpackSatchelEngineering.png|50px]] || Engineering Satchel || $100 || 3
+|-
+| [[File:ClothingBackpackEngineering.png|50px]] || Engineering Backpack || $100 || 3
+|-
+| [[File:ClothingBackpackMessengerEngineering.png|50px]] || Engineering Messenger Bag || $100 || 3
+|-
+| [[File:ClothingOuterEVASuitEngineer.png|50px]] || Engineer EVA Suit || $1,500 || 3
+|-
+| [[File:ClothingUniformJumpsuitEngineering.png|50px]] || Engineering Jumpsuit || $100 || 3
+|-
+| [[File:ClothingUniformJumpskirtEngineering.png|50px]] || Engineering Jumpskirt || $100 || 3
+|-
+| [[File:ClothingUniformJumpsuitEngineeringHazard.png|50px]] || Hazard Jumpsuit || $100 || 3
+|-
+| [[File:ClothingShoesColorBlack.png|50px]] || Black Shoes || $100 || 3
+|-
+| [[File:ClothingOuterVestHazard.png|50px]] || Hi-vis Vest || $350 || 3
+|-
+| [[File:ClothingShoesBootsWork.png|50px]] || Workboots || $100 || 3
+|-
+| [[File:ClothingHeadHatHardhatYellow.png|50px]] || Yellow Hard Hat || $100 || 3
+|-
+| [[File:ClothingHeadHatHardhatOrange.png|50px]] || Orange Hard Hat || $100 || 3
+|-
+| [[File:ClothingHeadsetEngineering.png|50px]] || Engineering Headset || $100 || 3
+|-
+| [[File:EncryptionKeyEngineering.png|50px]] || Engineering Encryption Key || $20 || 10
+|-
+| [[File:ClothingMaskGas.png|50px]] || Gas Mask || $250 || 3
+|-
+| [[File:ClothingOuterWinterEngi.png|50px]] || Engineering Winter Coat || $500 || 2
+|-
+| [[File:ClothingNeckScarfStripedOrange.png|50px]] || Striped Orange Scarf || $100 || 3
+|-
+| [[File:ClothingShoesBootsWinterEngi.png|50px]] || Engineering Winter Boots || $100 || 2
+|-
+| [[File:ClothingBackpackDuffelAtmospherics.png|50px]] || Atmospherics Duffel Bag || $100 || 2
+|-
+| [[File:ClothingBackpackSatchelAtmospherics.png|50px]] || Atmospherics Satchel || $100 || 2
+|-
+| [[File:ClothingBackpackAtmospherics.png|50px]] || Atmospherics Backpack || $100 || 2
+|-
+| [[File:ClothingBackpackMessengerAtmospherics.png|50px]] || Atmospherics Messenger Bag || $100 || 2
+|-
+| [[File:ClothingOuterEVASuitAtmosTech.png|50px]] || Atmospherics Technician EVA Suit || $1,500 || 2
+|-
+| [[File:ClothingUniformJumpsuitAtmos.png|50px]] || Atmospherics Technician Jumpsuit || $100 || 3
+|-
+| [[File:ClothingUniformJumpskirtAtmos.png|50px]] || Atmospherics Technician Jumpskirt || $100 || 3
+|-
+| [[File:ClothingUniformJumpsuitAtmosCasual.png|50px]] || Atmospherics Technician Casual Jumpsuit || $100 || 3
+|-
+| [[File:ClothingShoesColorWhite.png|50px]] || White Shoes || $100 || 3
+|-
+| [[File:ClothingHeadHelmetFire.png|50px]] || Fire Helmet || $100 || 2
+|-
+| [[File:ClothingOuterSuitFire.png|50px]] || Fire Suit || $300 || 3
+|-
+| [[File:ClothingOuterWinterAtmos.png|50px]] || Atmospherics Winter Coat || $500 || 2
+|-
+| [[File:ClothingNeckScarfStripedLightBlue.png|50px]] || Striped Light Blue Scarf || $100 || 3
+|-
+| [[File:ClothingMaskGasAtmos.png|50px]] || Atmospheric Gas Mask || $250 || 2
+|-
+| [[File:ClothingShoesBootsWinterAtmos.png|50px]] || Atmospherics Winter Boots || $100 || 2
+|-
+| [[File:ClothingUniformJumpsuitSeniorEngineer.png|50px]] || Senior Engineer Jumpsuit || $100 || 1
+|-
+| [[File:ClothingUniformJumpskirtSeniorEngineer.png|50px]] || Senior Engineer Jumpskirt || $100 || 1
+|-
+| [[File:ClothingUniformJumpsuitChiefEngineerNT.png|50px]] || Chief Engineer Jumpsuit || $100 || 1
+|-
+| [[File:ClothingUniformJumpsuitChiefEngineer.png|50px]] || Chief Engineer's Jumpsuit || $100 || 1
+|-
+| [[File:ClothingUniformJumpskirtChiefEngineer.png|50px]] || Chief Engineer's Jumpskirt || $100 || 1
+|-
+| [[File:ClothingUniformJumpsuitChiefEngineerTurtle.png|50px]] || Chief Engineer's Turtleneck || $100 || 1
+|-
+| [[File:ClothingUniformJumpskirtChiefEngineerTurtle.png|50px]] || Chief Engineer's Turtleneck || $100 || 1
+|-
+| [[File:ClothingOuterWinterCE.png|50px]] || Chief Engineer's Winter Coat || $500 || 1
+|-
+| [[File:ClothingShoesBootsWinterChiefEngineer.png|50px]] || Chief Engineer's Winter Boots || $100 || 1
+|-
+| [[File:ClothingHeadHatBeretEngineering.png|50px]] || Engineering Beret || $100 || 1
+|-
+| [[File:ClothingNeckCloakCe.png|50px]] || Chief Engineer's Cloak || $100 || 1
+|-
+| [[File:ClothingNeckMantleCE.png|50px]] || Chief Engineer's Mantle || $100 || 1
+|-
+| [[File:ClothingHeadsetAltEngineering.png|50px]] || Chief Engineer's Over-ear Headset || $100 || 1
+|-
+| [[File:RubberStampCE.png|50px]] || Chief Engineer's Rubber Stamp || $200 || 1
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineEngineer.png|50px]]
+| style="background-color:#383838;" | Station Engineer Figure
+| style="background-color:#383838;" | $750
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineChiefEngineer.png|50px]]
+| style="background-color:#383838;" | Chief Engineer Figurex
+| style="background-color:#383838;" | $750
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:ClothingUniformJumpsuitChiefEngineerSyndie.png|50px]]
+| style="background-color:#380C0C;" | Syndicate Chief Engineer Jumpsuit
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 1
+|}
+</div>
+</includeonly>

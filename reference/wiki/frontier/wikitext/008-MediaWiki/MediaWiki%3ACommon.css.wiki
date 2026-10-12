@@ -1,0 +1,969 @@
+/* CSS placed here will be applied to all skins */
+
+:root{
+    /* start font settings */
+    --wiki-body-font-family: sans-serif;
+    --wiki-heading-font-family: 'Linux Libertine','Georgia','Times',serif;
+    --wiki-sidebar-heading-font-family: sans-serif;
+    /* end font settings */
+    
+      /* start design variables */
+	--wiki-sidebar-border-radius:0px; /* these two variables must have units specified even if 0, ignore the warning */
+	--wiki-sidebar-portal-spacing:0px;
+	
+	--wiki-content-border-width:1px;
+	--wiki-sidebar-border-width:1px;
+	/* end design variables */
+}
+
+/* the rest of the variables will modify some type of color, either text color, background color, border color, etc. */
+
+:root,
+/* Begin light styles, delete from here to "end light styles" if you don't want your wiki to support any light themes (remove from [[Mediawiki:Theme-definitions]] too, or ask wiki.gg staff for help doing this) */
+/* FYI: .view- will affect any theme marked |kind=light, */
+/* individual themes are prefixed with .theme- instead   */
+
+/* end light styles */
+
+/* Begin dark styles, delete from here to "end dark styles" if you don't want your wiki to support any dark themes (remove it from [[Mediawiki:Theme-definitions]] too, or ask wiki.gg staff for help doing this) */
+/* FYI: .view- will affect any theme marked |kind=dark, */
+/* individual themes are prefixed with .theme- instead   */
+.view-dark {
+	/**********************
+	* Probably edit these * [ DARK VIEW ]
+	***********************/
+    --wiki-body-background-color: #171717;
+    --wiki-body-background-image: url(/images/8/80/Site-background.jpg); /* please find the file path by viewing the image directly (not at the File: page) */
+    
+    --wiki-content-background-color: #202120;
+	--wiki-content-background-opacity: 85%;
+    --wiki-content-border-color: #00ec64;
+    --wiki-content-link-color: #6d8afb; /* if changing this, remember to change --wiki-icon-to-link-filter as well!!! */
+    /* [ DARK VIEW ] */
+    --wiki-accent-color: #00ec64;
+    --wiki-accent-label-color: #000;
+    --wiki-accent-link-color: #1e1e43;
+	
+    --wiki-icon-to-link-filter: invert(60%) sepia(70%) saturate(3715%) hue-rotate(206deg) brightness(101%) contrast(97%); /* put your --wiki-content-link-color into https://mrpie5.gitlab.io/css-filter-generator/ */
+    /**/
+
+    /*******************
+    * Maybe edit these * [ DARK VIEW ]
+    ********************/
+    --wiki-body-background-position: top center;
+    --wiki-body-background-size: 100%;
+    --wiki-body-background-repeat-x: repeat-y;
+    --wiki-body-background-attachment: fixed;
+	
+    --wiki-content-background-color--secondary: color-mix(in srgb, var(--wiki-content-background-color) 96%, var(--wiki-content-dynamic-color));
+	--wiki-content-text-color: #ededed;
+    --wiki-content-link-color--visited: var(--wiki-content-link-color);
+    --wiki-content-link-color--hover: var(--wiki-content-link-color);
+    --wiki-content-redlink-color: #FC5B4F;
+	
+	--wiki-content-heading-color:  var(--wiki-content-text-color);
+	
+	--wiki-accent-color--hover: color-mix(in srgb, var(--wiki-accent-color) 90%, var(--wiki-accent-label-color));
+    /* [ DARK VIEW ] */
+	--wiki-sidebar-background-color: var(--wiki-content-background-color);
+    --wiki-sidebar-background-opacity: var(--wiki-content-background-opacity);
+    --wiki-sidebar-border-color: var(--wiki-content-border-color);
+    --wiki-sidebar-link-color: var(--wiki-content-link-color);
+    --wiki-sidebar-link-color--hover: var(--wiki-content-link-color--hover);
+    --wiki-sidebar-heading-color: var(--wiki-content-heading-color);
+    /* [ DARK VIEW ] */
+    --wiki-navigation-background-color: var(--wiki-content-background-color--secondary);
+    --wiki-navigation-background-color--secondary: var(--wiki-content-background-color);
+    --wiki-navigation-border-color: var(--wiki-content-border-color);
+    --wiki-navigation-text-color: var(--wiki-content-link-color);
+    --wiki-navigation-text-color--hover: var(--wiki-content-link-color--hover);
+    --wiki-navigation-selected-background-color: var(--wiki-content-background-color);
+    --wiki-navigation-selected-border-color: var(--wiki-navigation-border-color);
+    --wiki-navigation-selected-text-color: var(--wiki-content-text-color);
+    /* [ DARK VIEW ] */
+    --wiki-neutral-color: var(--wiki-content-text-mix-color);
+    --wiki-alert-color: #ff576a;
+    --wiki-warning-color:#cf721c;
+    --wiki-success-color: #13aa45;
+    /**/
+    
+    /***********************************
+    * Likely do not need to edit these * [ DARK VIEW ]
+    ************************************/
+    --wiki-body-dynamic-color: #ffffff;
+    --wiki-body-dynamic-color--inverted: #000000;
+    --wiki-body-dynamic-color--secondary: #dddddd;
+    --wiki-body-dynamic-color--secondary--inverted: #333333;
+	
+    --wiki-content-border-color--secondary: color-mix(in srgb, var(--wiki-content-border-color) 50%, transparent);
+    --wiki-content-border-color--accent: color-mix(in srgb, var(--wiki-accent-color) 50%, transparent);
+    --wiki-content-link-label-color: #000;
+    --wiki-content-dynamic-color: #ffffff;
+    --wiki-content-dynamic-color--inverted: #000000;
+    --wiki-content-dynamic-color--secondary: #dddddd;
+    --wiki-content-dynamic-color--secondary--inverted: #333333;
+    /* [ DARK VIEW ] */
+    --wiki-alert-label-color: #000000;
+    --wiki-warning-label-color: #000000;
+    --wiki-success-label-color: #000000;
+	
+    --wiki-icon-general-filter: invert(100%);
+}
+
+/* End dark styles */
+
+/**************************************
+* Shared styles                       *
+* You likely don't need to edit these *
+***************************************/
+:root{
+    --wiki-content-text-mix-color: color-mix(in srgb, var(--wiki-content-background-color), var(--wiki-content-text-color) 62%);
+    --wiki-content-text-mix-color-95: color-mix(in srgb, var(--wiki-content-background-color) 95%, var(--wiki-content-text-color));
+}
+/********************
+* End shared styles *
+*********************/
+
+/******************************
+* Fallback for older browsers *
+* DONT EDIT THIS              *
+*******************************/
+@supports not (color:color-mix(in srgb, #000, transparent)) {
+	.view-dark,
+	.view-light,
+	:root {
+		--wiki-content-text-mix-color: var(--wiki-content-text-color);
+		--wiki-content-text-mix-color-95: var(--wiki-content-background-color);
+		--wiki-content-background-color--secondary: var(--wiki-content-dynamic-color--secondary--inverted);
+		--wiki-content-border-color--secondary: var(--wiki-content-border-color);
+		--wiki-content-border-color--accent: var(--wiki-accent-color);
+		--wiki-accent-color--hover: var(--wiki-accent-color);
+	}
+}
+/*****************************
+* End older browser fallback *
+******************************/
+
+/*****************************
+*     PortableInfoboxes      *
+******************************/
+:root {
+	--pi-background: var(--wiki-content-background-color);
+	--pi-secondary-background: var(--wiki-accent-color);
+	--pi-secondary-background-label: var(--wiki-accent-label-color);
+	--pi-border-color: color-mix(in srgb, var(--pi-secondary-background) 50%, transparent);
+}
+
+.portable-infobox .pi-title,
+.portable-infobox .pi-header {
+	text-align:center;
+	font-size:1.5em;
+	background:var(--pi-secondary-background); /* fallback */
+	background:color-mix(in srgb, var(--pi-secondary-background) 75%, transparent);
+	color:var(--pi-secondary-background-label);
+}
+
+.portable-infobox .pi-data {
+	background:var(--pi-secondary-background); /* fallback */
+	background:color-mix(in srgb, var(--pi-secondary-background) 18%, transparent);
+}
+
+.portable-infobox .pi-image {
+	padding: 8px;
+}
+
+.pi-image-thumbnail {
+	max-width:100%;
+}
+
+.pi-caption {
+	color: var(--wiki-content-text-mix-color);
+}
+
+.pi-section-navigation .pi-section-tab.pi-section-active,
+.pi-section-navigation .pi-section-tab.current,
+.pi-media-collection .pi-tab-link.current {
+	background: var(--pi-secondary-background);
+	color: var(--pi-secondary-background-label);
+}
+
+/* overqualify these to overwrite normal content heading styles */
+.mw-body .portable-infobox h2,
+.mw-body .portable-infobox h3 {
+	border-bottom: 0;
+	font-family: inherit;
+	font-weight: 700;
+	margin: 0;
+}
+/*****************************
+*   End PortableInfoboxes    *
+******************************/
+
+
+/*******************
+* Main page layout *
+********************/
+
+#mp-container {
+	display:grid;
+	gap:10px;
+}
+
+@media screen and (max-width:990px) {
+	/* for mobile screens */
+	#mp-container{
+		grid-template-areas:var(--main-page-layout--mobile);
+		grid-template-columns:var(--main-page-layout-columns--mobile,100%);
+	}
+	
+	.mp-box.mp-hide-on-mobile {
+		display:none;
+	}
+}
+
+@media screen and (min-width:990px) and (max-width:1350px) {
+	/* for narrow screens, between 990px and 1350px */
+	#mp-container {
+		grid-template-areas:var(--main-page-layout--tablet);
+		grid-template-columns:var(--main-page-layout-columns--tablet,1fr 1fr);
+	}
+	
+	.mp-box.mp-hide-on-tablet {
+		display:none;
+	}
+}
+
+@media screen and (min-width:1350px) {
+	/* for all other screens, 1350px and wider */
+	#mp-container {
+		grid-template-areas:var(--main-page-layout--desktop);
+		grid-template-columns:var(--main-page-layout-columns--desktop,2fr 1fr 2fr);
+	}
+	
+	.mp-box.mp-hide-on-desktop {
+		display:none;
+	}
+}
+
+.mp-box {
+	position:relative;
+	display:flex;
+	flex-flow:column nowrap;
+	width: calc(100% - 2px);
+	box-sizing: border-box;
+	background:var(--wiki-content-background-color--secondary); /* fallback */
+	background:color-mix(in srgb, var(--wiki-content-background-color--secondary) 25%, transparent);
+	border:1px solid var(--wiki-content-border-color);
+	padding:0px;
+}
+
+.mp-body {
+	height: 100%;
+	display: flex;
+	padding:0.5em;
+	flex-flow: column nowrap;
+}
+
+.mp-box.centered-content .mp-body {
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+}
+
+.mp-box.has-floating-image {
+	display:block;
+}
+
+.mp-box.has-floating-image .mp-body {
+	height:unset;
+	display:block;
+}
+
+/* overqualified to override normal heading styles */
+.mw-body .mp-box h2 {
+	text-align:center;
+	font-weight:bold;
+	font-family:var(--wiki-heading-font-family);
+    overflow: initial;
+	border-bottom: 1px solid var(--wiki-content-border-color);
+	font-size: 150%;
+	margin: 0;
+	padding: 5px 0;
+	color:var(--wiki-content-heading-color);
+}
+
+#mp-box-welcome {
+	text-align:center;
+	position:relative;
+	overflow:hidden;
+}
+
+#mp-box-welcome h2{
+    font-size: 200%;
+}
+
+#mp-welcome {
+	display:flex;
+	flex-flow:column nowrap;
+	position: relative;
+	height: 100%;
+	z-index: 2;
+	box-sizing: border-box;
+}
+
+#mp-welcome .welcome-subtitle {
+	height: 100%;
+	background:var(--wiki-content-dynamic-color--inverted); /* fallback */
+	background:color-mix(in srgb, var(--wiki-content-dynamic-color--inverted) 85%, transparent);
+	padding:0.5em;
+}
+
+#mp-banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    z-index: -1;
+    background: url(/images/e/e0/MP_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.view-dark #mp-banner {
+	filter: blur(5px) brightness(50%);
+}
+
+.view-light #mp-banner {
+	filter: blur(5px) contrast(50%);
+}
+
+/* [[Template:MP_link]] */
+.mp-links {
+  --gap:10px;
+}
+
+.mp-links > ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	margin: 2px;
+	gap:var(--gap);
+}
+
+.mp-links > ul > li {
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:stretch;
+	text-align: center;
+	box-sizing:border-box;
+	flex: max(calc(50% - var(--gap)), 5em) 1 1;
+	outline:1px solid var(--wiki-content-link-color);
+	transition:0.1s ease-in;
+}
+
+.mp-links > ul > li:hover {
+	background-color:var(--wiki-content-link-color); /* fallback */
+	background-color:color-mix(in srgb, var(--wiki-content-link-color) 20%, transparent);
+}
+
+.mp-links.columns-1 > ul > li {flex: max(calc(100% - var(--gap)), 5em) 1 1;}
+.mp-links.columns-2 > ul > li {flex: max(calc(50% - var(--gap)), 5em) 1 1;}
+.mp-links.columns-3 > ul > li {flex: max(calc((100% / 3) - var(--gap)), 5em) 1 1;}
+.mp-links.columns-4 > ul > li {flex: max(calc(25% - var(--gap)), 5em) 1 1;}
+.mp-links.columns-5 > ul > li {flex: max(calc(20% - var(--gap)), 5em) 1 1;}
+.mp-links.columns-6 > ul > li {flex: max(calc((100% / 6) - var(--gap)), 5em) 1 1;}
+.mp-links.columns-7 > ul > li {flex: max(calc((100% / 7) - var(--gap)), 5em) 1 1;}
+.mp-links.columns-max > ul > li {flex: max(calc(0% - var(--gap)), 5em) 1 1;}
+
+.mp-links > ul > li:hover a {
+	text-decoration: underline;
+}
+
+.mp-links > ul > li > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:100%;
+	flex:1 1 auto;
+	box-sizing:border-box;
+	padding:5px;
+}
+
+.mp-links > ul > li > a:first-child {
+  height:100%;
+}
+
+.mp-links > ul > li > a:last-child:not(:first-child) {
+  height:unset;
+}
+
+.mp-links.stretch,
+.mp-links.stretch > ul {
+	height:100%;
+}
+
+.mp-links.side-image li {
+	flex-flow:row nowrap;
+}
+
+.mp-links.plain > ul > li {
+  outline-color:transparent;
+}
+
+/* MP icon lists */
+.mp-iconlists {
+	display: flex;
+    flex-flow: wrap;
+    gap: 5px 20px;
+}
+
+.mp-iconlists > .mp-iconlist {
+	flex: 1;
+    min-width: fit-content;
+}
+
+.mp-iconlist > h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.mp-iconlist > ul {
+	list-style: none;
+	margin: 0;
+}
+
+/* MP gallery */
+.mp-box ul.gallery.gallery.gallery { /* this selector looks ridiculous but is actually part of stock Vector and therefore a necessary override */
+    display: flex;
+    flex-flow: wrap;
+    gap: 5px 10px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.mp-box ul.gallery .gallerytext {
+	margin-top: 1em;
+	padding: 0;
+    background-color: var(--wiki-content-background-color--secondary);
+    border: 1px solid var(--wiki-content-link-color);
+}
+
+.mp-box .gallerybox:hover .gallerytext {
+    background-color: var(--wiki-content-link-color); /* fallback */
+    background-color: color-mix(in srgb, var(--wiki-content-link-color) 20%, transparent);
+}
+
+.mp-box ul.gallery .gallerytext > p {
+	margin: 0;
+}
+
+.mp-box ul.gallery .gallerytext a {
+	display: block;
+    padding: .5em 0;
+}
+
+/***********************
+* End main page layout *
+************************/
+
+/****************************************/
+/*******  Start DRUID CSS rules *********/
+/****************************************/
+
+.druid-container {
+    /* These variables are designed to inherit from your wiki's color variables.
+       If your wiki uses a different naming scheme, change the inner names to match yours.
+       If your wiki doesn't use color variables you should consider doing so,
+       otherwise you can replace the inner variables or the fallback values with colors that match your wiki.
+    */
+    --druid-background-color: var(--wiki-content-background-color, #ffffff);
+    
+    --druid-secondary-background-color: var(--wiki-accent-color, #36c);
+    --druid-secondary-background-label-color: var(--wiki-accent-label-color, #fff);
+    
+    --druid-tertiary-background-color: var(--wiki-content-background-color--secondary, #eaecf0);
+    
+    --druid-border-color: var(--wiki-content-border-color, #a7d7f9);
+    
+    --druid-link-color: var(--wiki-content-link-color, #0645ad);
+    --druid-link-label-color: var(--wiki-content-link-label-color, #fff);
+}
+
+/* ---------------------------------  */
+/*    Safe to edit ABOVE this line    */
+/* ---------------------------------  */
+
+/* ---------------------------------  */
+/*     Do not edit below this line    */
+/* ---------------------------------  */
+
+.druid-container {
+    border: 4px solid var(--druid-border-color);
+    border-radius: 3px;
+    background: var(--druid-background-color);
+    float: right;
+    clear: right;
+    margin: 0 0 1em 1em;
+	width:100%;
+	max-width:22em;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 720px) {
+  .druid-container {
+    float: none;
+    margin: 0.5rem auto;
+  }
+}
+
+.druid-main-images-file,
+.druid-main-image {
+    text-align:center;
+}
+
+.druid-infobox .druid-title,
+.druid-infobox .druid-section {
+    background:var(--druid-secondary-background-color); /* fallback */
+    background:color-mix(in srgb, var(--druid-secondary-background-color) 75%, transparent);
+    color:var(--druid-secondary-background-label-color);
+    text-align:center;
+    font-size:1.5em;
+    padding:1px;
+}
+
+.druid-infobox .druid-section {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.druid-infobox  .druid-collapsible .druid-section {
+	flex-grow: 1;
+}
+
+.druid-label {
+    font-weight:bold;
+    text-align: right;
+	box-sizing: border-box;
+}
+
+.druid-row > .druid-label {
+    width: 48%;
+    flex-shrink: 0;
+}
+
+.druid-row > .druid-label,
+.druid-row > .druid-data {
+	padding-inline: 0.3em;
+}
+
+.druid-main-image,
+.druid-main-images {
+    padding:5px;
+}
+
+.druid-main-image img, 
+.druid-main-images img {
+    max-width:100%;
+    height:auto;
+}
+
+.druid-main-images-labels {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin:0.25em;
+    gap:0.25em;
+}
+
+.druid-main-images-label {
+    cursor:pointer;
+    flex:1 1 auto;
+    text-align:center;
+    transition:.1s ease-in;
+    outline:1px solid var(--druid-link-color);
+}
+
+.druid-main-images-label.focused {
+    background:var(--druid-link-color);
+    color:var(--druid-link-label-color);
+}
+
+.druid-main-images-label:not(.focused):hover {
+    background:var(--druid-link-color); /* fallback */
+    background:color-mix(in srgb, var(--druid-link-color) 25%, transparent);
+}
+
+.druid-toggleable-data:not(.focused),
+.druid-main-images-file:not(.focused),
+.druid-toggleable-heading:not(.focused) {
+    display:none;
+}
+
+.druid-row:not(:has(.druid-grid)):has(.druid-toggleable-data-empty.focused) {
+    display:none;
+}
+
+.druid-section:has(.druid-toggleable-heading-empty.focused) {
+    display:none;
+}
+
+.druid-grid {
+    display:grid;
+    gap: 0.3em;
+	padding: 0.35em;
+}
+
+.druid-grid-item {
+    background:var(--druid-tertiary-background-color);
+    padding:0.25em;
+    border:1px solid var(--druid-border-color); /* fallback */
+    border:1px solid color-mix(in srgb, var(--druid-border-color) 50%, transparent);
+    border-radius: 2px;
+}
+
+.druid-grid-item .druid-label,
+.druid-grid-item .druid-data {
+	text-align: center;
+}
+
+.druid-data-wide {
+	width:100%;
+}
+
+.druid-section-container > .druid-collapsible {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.druid-collapsed {
+    display:none!important;
+}
+
+.druid-collapsible {
+    cursor:pointer;
+    position:relative;
+}
+
+.druid-collapsible::after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	--mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ctitle%3E collapse %3C/title%3E%3Cpath d='M1 13.75l1.5 1.5 7.5-7.5 7.5 7.5 1.5-1.5-9-9-9 9z'/%3E%3C/svg%3E") no-repeat;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+	-webkit-mask-size: 100% 100%;
+	mask-size: 100% 100%;
+	-webkit-mask-position: center center;
+	mask-position: center center;
+	background-color: var(--druid-secondary-background-label-color);
+}
+
+.druid-collapsible-collapsed::after {
+	transform: rotate(180deg);
+}
+
+.druid-section-container:has(.druid-toggleable-data-empty.focused):not(:has(.druid-toggleable-data-nonempty.focused)):not(:has(.druid-data-nonempty)) {
+  display: none;
+}
+
+/*****************************************
+Div support
+*****************************************/
+
+div.druid-row {
+    display:flex;
+    margin-block: 1px;
+}
+
+div.druid-row + div.druid-row {
+	margin-top: 0;
+}
+
+div.druid-row > .druid-label {
+	background: var(--druid-tertiary-background-color);
+}
+
+.druid-infobox .druid-title {
+  font-weight: 700;
+}
+
+.druid-infobox #toc {
+    display:none;
+}
+
+
+/********
+Custom display classes
+*********/
+
+div.druid-stacked.druid-row,
+.druid-stacked div.druid-row {
+    flex-direction: column;
+}
+
+.druid-stacked.druid-row > .druid-label,
+.druid-stacked .druid-row > .druid-label {
+    text-align: left;
+    width: 100%;
+    flex-basis:unset;
+}
+
+.druid-stacked.druid-row > .druid-data,
+.druid-stacked .druid-row > .druid-data {
+    padding-left: .75em;
+}
+
+/* ---------------------------------  */
+/*    Do not edit above this line     */
+/* ---------------------------------  */
+
+/* ---------------------------------  */
+/* Local overrides go below this line */
+/* ---------------------------------  */
+
+
+/****************************************/
+/*******  End DRUID CSS rules   *********/
+/****************************************/
+
+/*** Miscellaneous ***/
+.responsive-image {
+	max-width:100%;
+	height:auto;
+}
+
+.view-dark .invert-on-dark,
+.view-light .invert-on-light {
+    filter:invert(100%);
+}
+
+.pixelated {
+  image-rendering:pixelated;
+}
+
+@media screen and (min-width:720px) {
+	.mobileonly {
+		display:none;
+	}
+}
+@media screen and (max-width:720px) {
+	.nomobile {
+		display:none;
+	}
+}
+
+/*** Utility classes for standard MW galleries ***/
+/* it's important that spaced comes before centered in the sheet */
+.gallery.gallery.gallery.spaced { /* this selector looks ridiculous but is actually part of stock Vector and therefore a necessary override */
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-evenly;
+    margin-left:unset;
+}
+
+.gallery.centered {
+    text-align:center;
+}
+
+/**************************
+* Start Modular Templates *
+**************************/
+
+/********* [[Template:Ambox]] *********/
+.ambox {
+    --ambox-color:var(--wiki-accent-color);
+
+	border: 1px solid var(--wiki-content-border-color);
+	border-left: 10px solid var(--ambox-color);
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	gap: .6em;
+	margin: 1em 0;
+	padding: 3px .6em;
+	background-color: var(--wiki-content-background-color--secondary);
+	box-shadow: 2px 2px 5px 0px #0002;
+}
+
+@media (min-width: 720px) {
+	.ambox {
+		margin-inline: 10%;
+	}
+}
+
+.ambox.tiny {
+	padding: .04rem .5em;
+	margin-inline: 0;
+    width: fit-content;
+}
+
+.ambox + .ambox {
+	margin-top: -.6em;
+}
+
+.ambox-content p {
+	margin: .15em 0;
+}
+
+.ambox-title {
+	font-weight: bold;
+}
+
+/********* [[Template:Hatnote]] *********/
+.hatnote {
+    padding: 1px 0 1px 1.6em;
+    margin-bottom: 0.5em;
+    font-style: italic;
+    border-top: 1px solid var(--wiki-content-border-color--secondary);
+    border-bottom: 1px solid var(--wiki-content-border-color--secondary);
+}
+
+.hatnote.icon {
+	padding-left: 0;	
+}
+
+/********* [[Template:Spoiler]] *********/
+.spoiler-content {
+  background-color: var(--wiki-content-dynamic-color); /* fallback */
+  background-color: color-mix(in srgb, var(--wiki-content-dynamic-color) 50%, transparent);
+  transition: all 0.3s;
+  cursor: pointer;
+  overflow:auto;
+}
+
+.spoiler-content > * {
+  pointer-events:none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.spoiler-content.show {
+  background-color: transparent;
+}
+
+.spoiler-content.show > * {
+  pointer-events:unset;
+  opacity: 1;
+}
+
+/********* [[Template:Link icon]] *********/
+.link-icon {
+	--link-icon-line-height: 1.5em;
+	--link-icon-size: 1.5em;	
+	display: inline-flex; 
+	align-items: center;
+    height: var(--link-icon-line-height);
+    vertical-align: bottom;
+}
+
+.link-icon .regular {
+    align-self: center;
+}
+
+.link-icon .regular a {
+	display: flex;
+}
+
+.link-icon .regular img {
+	height: var(--link-icon-size);
+	max-width: var(--link-icon-size);
+}
+
+.link-icon .fallback {
+	outline: 1px solid var(--wiki-content-text-color);
+	border-radius: 50%;
+	text-align: center;
+	width: var(--link-icon-size);
+	line-height: var(--link-icon-size);
+}
+
+.link-icon.notext .fallback {
+	display: inline-block;
+}
+
+.link-icon.notext {
+    display: inline;
+}
+
+/********* [[Template:Quote]] *********/
+.quote {
+    background: var(--wiki-content-background-color--secondary);
+    border-radius: 5px;
+    border: 2px solid var(--wiki-content-border-color);
+    margin: .5em 0;
+    padding: .5em;
+	overflow-y: hidden;
+}
+
+.quote .block {
+	display: block;
+}
+
+.quote .title {
+	font-size: large;
+    font-weight: bold;
+}
+
+.quote .content {
+	font-style: italic;
+}
+
+.quote .author {
+	font-weight: bold;
+	text-align: end;
+}
+
+.quote .marks-wrapper {
+	display: flex;
+	gap: 5px;
+}
+
+.quote .marks-wrapper::before,
+.quote .marks-wrapper::after {
+	font-size: 100px;
+    line-height: 0px;
+}
+
+.quote .marks-wrapper::before {
+	content: "\201C";
+	margin-top: 40px;
+}
+
+.quote .marks-wrapper::after {
+	content: "\201D";
+	align-self: end;
+	margin-bottom: -10px;
+}
+
+.client-js .mw-charinsert-item {
+ display:none;
+}
+
+/************************
+* End Modular Templates *
+*************************/
+
+/*****************************
+* Used by [[Template:Color]] *
+******************************/
+.color__splotch {
+  display:inline-block;
+  height:1em;
+  width:1em;
+  box-sizing:border-box;
+  vertical-align:text-top;
+  border-radius:50%;
+  border:1px solid var(--wiki-content-text-color); 
+}
+/*********************
+* End Template:Color *
+**********************/

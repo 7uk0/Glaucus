@@ -1,0 +1,21 @@
+{| class="wikitable mw-collapsible" width=100% style="font-size: 95%;"
+! colspan=2 style="background: #013220; font-size: 100%;border: 2px solid #FFFFFF" | Game Mechanics
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#9b870c;" |'''Engineering'''
+| style="border: 2px solid #FFFFFF" | [[Guide to Engineering]] · [[Shuttle building]] · [[Guide_to_Engineering/Machine_Upgrades|Machine Upgrades]]
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#00008B" |'''Medical'''
+| style="border: 2px solid #FFFFFF" | [[Guide to Medical]] · [[Director of Care]]
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#5f9ea0;" |'''Civilian'''
+| style="border: 2px solid #FFFFFF" | [[Kitchen]] · [[Hydroponics]] · [[Station Traffic Controller]] · [[Station Representative]]
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#b37400;" |'''Salvaging'''
+| style="border: 2px solid #FFFFFF" | [[Basic Salvaging]] · [[Expeditions]] · [[Asteroids]] 
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#4B5320;" |'''<abbr title="New Frontier's Sheriff's Department"> {{{1|NFSD}}}</abbr>'''
+| style="border: 2px solid #FFFFFF" | [[Space Law]] · [[NFSDSOP|Standard Operating Procedure]]
+|-
+| style="text-align:right;border: 2px solid #FFFFFF;color: white;background:#800000;" |'''Crime'''
+| style="border: 2px solid #FFFFFF" | [[Smuggling]] · [[Piracy]]
+|}

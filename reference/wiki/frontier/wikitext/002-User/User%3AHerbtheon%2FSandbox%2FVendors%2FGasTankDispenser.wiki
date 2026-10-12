@@ -1,0 +1,19 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost
+|-
+| [[File:Placeholder.png|50px]] || O2/N2 Tank || $100
+|-
+| [[File:Placeholder.png|50px]] || Double Emergency O2/N2 Tank || $100
+|-
+| [[File:Placeholder.png|50px]] || Oxygen Tank || $100
+|-
+| [[File:Placeholder.png|50px]] || Double Emergency Oxygen Tank || $100
+|-
+| [[File:Placeholder.png|50px]] || Nitrogen Tank || $100
+|-
+| [[File:Placeholder.png|50px]] || Double Emergency Nitrogen Tank || $100 
+|}
+</div>
+</includeonly>

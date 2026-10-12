@@ -1,0 +1,5 @@
+{{Main page box/start
+| title = Welcome to {{SITENAME}}!
+}}
+Contributing to the Frontier Station wiki is open to all. Please feel free to contribute by creating new articles or expanding existing ones.
+{{Main page box/end}}<noinclude>[[Category:Main page boxes]]</noinclude><!-- don't edit this line -->

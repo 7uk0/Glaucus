@@ -1,0 +1,3 @@
+Top-level category for game content.
+
+[[Category:{{SITENAME}}]]

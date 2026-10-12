@@ -1,0 +1,8 @@
+<includeonly>{{#invoke:Main page|main}}
+__NOTITLE__
+__NOTOC__
+__NOEDITSECTION__
+[[Category:{{SITENAME}}| ]]</includeonly><noinclude>
+{{doc}}
+[[Category:Main page templates]]
+</noinclude>

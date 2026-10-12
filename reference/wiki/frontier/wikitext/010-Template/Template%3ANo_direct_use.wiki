@@ -1,0 +1,7 @@
+<includeonly>{{ambox|icon=Warning-red.svg|title='''Don't call this template directly from any content page!'''
+|message=This template is intended to be used inside of another template. Then that template in turn may be used on content pages.
+|color=red
+|tiny={{{tiny|}}}
+|class={{{class|}}}
+}}</includeonly><noinclude>{{doc|Template:Ambox/doc}}
+[[Category:Notice templates]]</noinclude>

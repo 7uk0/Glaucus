@@ -1,0 +1,17 @@
+<includeonly><!--
+--><div class="quote"><!-- start quote wrapper
+   --><div class="marks-wrapper"><!-- start marks wrapper
+      --><div class="block"><!-- start quote block
+
+      -->{{#if:{{{title|}}}|<div class="title">{{{title}}}</div>|}}<!--
+
+      -->{{#if:{{{text|{{{1|}}}}}}|<div class="text">{{{text|{{{1|}}}}}}</div>|}}<!--
+
+      --></div><!-- end quote block
+   --></div><!-- end marks wrapper
+   
+   -->{{#if:{{{author|{{{2|}}}}}}|<div class="author">― {{#if:{{{authorpage|}}}| [[{{{authorpage}}}|{{{author|{{{2|}}}}}}]] | {{{author|{{{2|}}}}}} }}</div>|}}<!--
+   
+--></div><!--
+
+-->[[Category:Pages with quotes]]</includeonly><noinclude>{{Documentation}}[[Category:Formatting templates]]</noinclude>

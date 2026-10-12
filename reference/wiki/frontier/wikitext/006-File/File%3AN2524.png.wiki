@@ -1,0 +1,2 @@
+== Summary ==
+Base sprite of the N2524 repeater rifle

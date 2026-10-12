@@ -1,0 +1,4 @@
+== Summary ==
+Frontier Station Parallax Background
+== Licensing ==
+{{License|game}}

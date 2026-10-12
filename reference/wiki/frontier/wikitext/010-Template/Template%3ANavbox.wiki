@@ -1,0 +1,1 @@
+<includeonly>{{#invoke:Navbox|main}}</includeonly><noinclude>[[Category:Navigation templates]] {{documentation}}</noinclude>

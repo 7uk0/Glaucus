@@ -1,0 +1,11 @@
+<includeonly>{{License/template
+| source = {{{source|}}}
+| type = fairuse
+| darkIcon = yes
+| icon = [[File:IN COPYRIGHT.svg|50px|link=https://rightsstatements.org/page/InC/1.0/?language=en|IN COPYRIGHT]]
+| text = This file is copyrighted. It will be used in a way that qualifies as fair use under [https://en.wikipedia.org/wiki/Fair_use#Fair_use_under_United_States_law US copyright law].
+}}</includeonly>
+<noinclude>This template currently looks like: {{License/fairuse}}
+
+See {{tl|License}} for full license documentation
+[[Category:License templates]]</noinclude>

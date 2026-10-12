@@ -1,0 +1,290 @@
+== Engineering Overview ==
+Engineering is the process of creating, repairing, or maintaining parts of a station or ship. Engineering is critical to prolonging the lifetime of a ship and it's occupants.
+
+Engineering can be split into 3 main sections: Construction, Electrical, and Atmospheric.
+----
+
+== Construction ==
+Construction is the act of creating structures from raw materials. Construction is responsible for creating Structures, Computers, and Machines.
+
+The construction menu can be opened with '''(G)''' by default.                                                                                                                                      [https://wiki.spacestation14.io/wiki/Construction (Construction SS14)]   The construction menu contains instructions on how to make all build-able objects in SS14. Some objects cannot be built and must be spawned in my admins, these usually are event or enemy faction structures, while they cannot be built some objects, like computers, may be deconstructed and reconstructed elsewhere.
+
+=== Tools ===
+All of the basic engineering tools can be purchased in a '''YouTool.'''
+
+'''Crowbar -''' Very good at prying anything open, even alien skulls.
+
+'''Screwdriver -''' Drives all the Screws.
+
+'''Wrench -''' Bolts things to the floor to prevent theft.
+
+'''Wirecutter -''' Cuts wires, and fingers.
+
+'''Welding Torch -''' Melts walls and seals doors, make sure you have eye protection. (Raw Carrots/Oculine will fix damaged eyesight)
+
+'''Multitool -''' Pulses maintenance panel wires, become L33T H4CK3R M4N!
+
+'''Shipyard R.C.D. -''' Rapidly Construct Devices, Purchasable from Engi-vends.
+
+=== Structures ===
+Structures are the most varied of the three, Structures have a wide range of complexity from stools to airlocks. Structures are made entirely in the Construction Menu where all of their materials and instructions are listed. 
+
+Some Structures can be quickly created or destroyed using an R.C.D. (Rapid Construction Device). Shipyard R.C.D.s require an ID with a [[Shipyard|purchased ship]] to function.
+
+'''To construct a Structure'''
+
+# first open the '''Construction Menu (G)''' and select the Structure you wish to build.
+# Press the '''"Place Construction Ghost"''' button to place down a ghost of the object you intend to build.
+# Once placed, follow the instructions listed in the Construction Menu.
+
+'''To deconstruct a Structure'''
+
+# '''Right Click''' the object you intend on deconstructing.
+# Mouse over the expanding menu for the object.
+# Left Click '''"Begin Deconstructing"''' with the Hammer Icon.
+# Follow the instructions listed by pressing "'''Shift + Left Click"''' to inspect the object.
+
+==== Computers ====
+Computers are the most consistent construction. Computers require Computer Boards to be constructed. Computer Boards can be made at Circuit Imprinters, usually carried by Science. All computers are constructed the same with only the Computer Board changing it's function.
+
+'''To Construct a Computer'''
+
+# Construct a '''Computer Frame''' from the Construction Menu.
+# Insert the desired '''Computer Board''', secure with a Screwdriver.
+# Wire the console with '''5x Lv Cable'''. 
+# Place '''2x Glass''' to act as the screen, secure with Screwdriver.
+
+'''To Deconstruct a Computer'''
+
+# Use a '''Screwdriver''' to unscrew the screen, remove with a '''Crowbar'''.
+# Cut internal wires using '''Wirecutters.'''
+# Use a '''Screwdriver''' to unscrew the computer board, remove with a '''Crowbar'''.
+# Use a '''Screwdriver''' to deconstruct the computer frame.
+
+=== Machines ===
+Machines are the most complex construction, typically requiring advanced components that must be sourced by Science or Salvaged from other Machines. All machines require '''Machine Boards''' to function, this also denotes what parts the machine requires. Machine Boards can be made in a Circuit Imprinter, usually located in Science. 
+
+Basic forms of Capacitors, Manipulators, Matter Bins, and Power Cells can be made in an '''Autolathe''', these parts are inefficient.
+
+Science can upgrade Machines with better components, these can be inserted during construction, or using an R.P.E.D. (Rapid Parts Exchange Device).
+
+'''To Construct a Machine'''
+
+# Construct a '''Machine Frame''' from the Construction Menu.
+# Wire the frame with '''1x Lv Cable'''.
+# Insert your '''Machine Board''' of choice
+# Install all the '''Parts''' listed on the Machine Board.
+# Use a '''Screwdriver''' to secure the machine parts.
+
+'''To Deconstruct a Machine'''
+
+# Open the maintenance panel with a '''Screwdriver.'''
+# Use a '''Crowbar''' to remove internal components.
+# Cut internal wires with '''Wirecutters.'''
+# Use a '''Screwdriver''' to deconstruct the external frame.
+
+====Upgrading machines====
+Refer to the [[Guide_to_Engineering/Machine_Upgrades|Machine Upgrades]] page.
+
+===Grid modification===
+Terrain (including ships and stations) is arranged in a "grid". A grid is a group of tiles that exist in space as a continous block. Grids can be modified as follow.
+
+====Creating new grids====
+* Purchasing a ship creates a new grid, which operates independently from other ships or station.
+* Manually placing lattices in free space creates new grids.
+
+====Lattices====
+Artificial objects like ships and stations use lattices as their base layer.
+
+lattices are placed from rods. Clicking a rod onto free space will create a new independent grid.
+Clicking a rod onto a free space adjacent to an existing grid will extend the grid with a new lattice square.
+
+Lattice can be removed with a Wirecutter.
+
+Lattices are not airtight, so an exposed lattice will prevent a ship from supporting an atmosphere.
+
+====Hull plates====
+
+Most constructions such as walls cannot be performed on an exposed lattice, and require a hull.
+
+to build hull,use a steel tile on a lattice square. steel tiles are craftable from steel in the construction menu (G).
+
+removing a hull plate requires a jack, or a RCD using deconstruction mode.
+
+----
+
+== Electrical ==
+Electrical is the act of creating and maintaining the electrical systems of the station, providing power to devices. Power is categorized by Generation, Distribution, and Usage.
+
+=== Tools ===
+'''T-Ray Scanner''' '''-''' Used to view hidden wires and pipes under floor tiles or catwalks. Tiles must still be pried up to access wires and pipes.
+
+'''Insulated Gloves -''' To keep your insides from becoming cwispied.
+
+'''Multitool -''' Shows statistics on the wire network a wire is connected to.
+
+'''Power Monitoring Console -''' Shows the location and consumption of all electrical devices.
+
+=== Generation ===
+'''Power Generators''' create electricity from fuel sources, this power is almost always made as High Voltage (Hv). Power generators range from small portable generators to collecting radiation from contained black holes.
+
+==== Solar Power<!-- Solars are so bad I almost forgot they existed... --> ====
+'''Solar Power''' is the most situational power source, requiring lots panels and proper alignment to generate any power, along with batteries to store power during a deficit. Each Solar panel will produce ~1.5 kW.                                                                                                                                   [https://wiki.spacestation14.io/wiki/Power#Solar_Power (Solar Power SS14 Wiki)]
+
+Solar Panels must be connected to a Solar Control Console and an SMES via High Voltage cables for them to work effectively. Solar Panels must also have minimal walls blocking the path of sunlight.
+
+'''Setting up the Solar Control Console -''' The first text box is the '''Solar Panel Angle''', this should match the angle of the Sun. Below it is the '''Panel Angular Velocity''' this is usually '''6°/s''' ±1°
+
+==== '''Portable Generators''' ====
+'''Portable Generators''' are the smallest and simplest sources of electricity, usually occupying one tile.
+
+* '''Uranium Generator ((S.U.P.E.R) P.A.C.M.A.N.) -''' The most powerful portable generator. Fueled by '''Uranium''' and produces up to '''50kW''', Hv or Mv.
+* '''Plasma Generator (P.A.C.M.A.N.)''' '''-''' The most common generator type on Frontier. Fueled by '''Plasma''' and produces up to '''25kW''', Hv or Mv.
+* '''Fuel Generator (J.R. P.A.C.M.A.N) -''' The smallest and weakest generator. Fueled by '''welding fuel''' and produces up to '''5kW''', ''Only'' Lv.
+
+==== Large Generators ====
+'''Large Generators''' occupy more than one tile and create more energy than portable generators, requiring more expensive fuel as a result.
+
+* '''Anti-Matter Engine (AME) -''' The most common Large generator typically on Medium and Large ships. Requires '''Antimatter''' as fuel. [https://wiki.spacestation14.io/wiki/Power#The_Antimatter_Engine (AME SS14 Wiki)] An AME is made of '''Shielding''' surrounding '''AME Core(s)'''. The '''Anti-mater Control Unit''' (ACU), placed adjacent to the AME Shielding, injects fuel into the AME, ''<u>'''injection rate should be no more than double the core count''' '''to prevent overheating'''.</u>'' The AME will stop generating power when its fuel has been used up. If the AME stops glowing and making that loud and obnoxious '''''THUNK''''' sound, then it should probably be refueled. '''To Refuel the AME'''
+*# Make sure Injection is off.
+*# Eject the empty fuel jar from the AME.
+*# Place a new fuel jar into the AME.
+*# Turn Injection back on.
+* '''Radiation Collectors -''' Radiation collectors turn '''Radiation''' sources into large amounts of electricity using '''Gaseous Plasma''' as fuel. 
+
+==== Ginormous Generators ====
+'''Ginormous Generators''' are too large and dangerous to be made on Fronteer, and are more commonly found in the core sectors, creating immense power from little fuel. Since they cannot be made on Fronteer they will be listed, but not expanded upon.<!-- If someone wants to add how to make a Singulo or Tesla here, feel free. I just don't want to, since we will never have em. -->
+
+* '''Singularity -''' Using Radiation Collectors to harvest the radiation emitted by a contained black hole, fueled by [REDACTED].
+* '''Tesla -''' Using lightning rods to harness bolts of high voltage electricity from a contained ball of condensed lightning.
+
+=== Distribution ===
+Power generators create High Voltage electricity, if the ship electronics tried to use that, it would explode. So we need to step the power down to low voltage to actually use it.                                                                                                                                                                                     [https://wiki.spacestation14.io/wiki/Power#The_Power_Hierarchy (Power Hierarchy SS14)]
+
+The power train is as follows:
+
+'''Generation (Creates HV) → SMES (HV Storage) → Substation (HV to MV) → APC (MV to LV)''' '''→ Electronic Equipment (User)'''
+
+different voltage wires are sorted by color:
+
+'''High Voltage (Red) → Medium Voltage (Yellow) → Low Voltage (Green)'''
+
+
+'''SMES -''' Stores High Voltage (HV) power for later use, usually while replacing fuel sources or when solars cannot see the Sun.                                                                                                                                              
+
+'''Substation -''' Converts High Voltage (HV) to Medium Voltage (MV), has an internal battery for '''emergency use'''.
+
+'''APC -''' Converts Medium Voltage (MV) to Low Voltage (LV) for user electronics to use, has an internal battery for '''emergency use'''.
+
+=== Usage<!-- Might remove this section, seems unnecessary... --> ===
+It's good to keep track of how much power devices are consuming. In the event you need to limp back to Fronteer on just your SMES, it pays to know what might be eating your precious seconds of thrust.
+
+From most power hungry to least.
+
+# '''Science Equipment -''' Scanning horrific artifacts is very power intensive, make sure to shut these off first.
+# '''Production Machines -''' Things like Autolathes, Ore Processors and Protolathes eat up a decent amount of power.
+# '''Vending Machines -''' Combined they eat up a surprising amount of power and are very non-essential.
+
+== Atmospherics ==
+Atmospherics ensures that the air in your ship or station doesn't kill you. Most atmospheric systems are already set up, so minimal effort is required.
+
+=== Tools ===
+'''T-Ray Scanner''' '''-''' Used to view hidden wires and pipes under floor tiles or catwalks. Tiles must still be pried up to access wires and pipes.
+
+'''Gas Analyzer -''' Measures the atmospheric contents of a pipe or room. 
+
+'''Hard-suit + Internals -''' In case you accidentally space yourself. Will not save you from over-presureized areas.
+
+=== Initial setup ===
+In the event that the gas mixer on your ship was not setup properly or changed, Typical air mixture is '''79% Nitrogen, 21% Oxygen, at 101 kPa''' use a gas mixer to mix connected atmospheric tanks. Ensure that Nitrogen and Oxygen tanks are '''Wrenched''' to the appropriate '''Connector Port''' before turning on Atmospherics.
+
+=== Air alarms ===
+Open the panel with a screwdriver and hack em to change stuff. You probably don't want to change anything.
+
+To modify an Air Alarm, use a screwdriver to open the maintenance panel, and cut the wire that disables the "ACC" light.  Once hacked, the Air alarm UI will allow you to change the properties of all connected devices individually. Connect Scrubbers, Vents, Sensors, and Firelocks to Air alarms using a Multitool or Network Configuratior.
+
+At the bottom of the Air Alarm, there are 5 basic settings.
+
+* '''None''' - Disables the Air alarm and all connected devices
+* '''Filtering -''' The default configuration, '''Scrubbers''' clean the tiles they are on, and '''Vents''' pressurize as normal.
+* '''Filtering (Wide) -''' '''Scrubbers''' clean the 9 tiles surrounding them, '''Vents''' pressurize as normal.
+* '''Panic -''' '''Scrubbers''' '''remove <u>all</u> atmosphere''' from the room very quickly, '''<u>be careful using this setting.</u>'''
+* '''Fill -''' Fills the room with gas as fast as possible, '''Scrubbers''' are turned '''off'''.
+
+=== Scrubbers & Vents ===
+'''Scrubbers -''' Filters gasses out of the air, configurable when connected to an '''Air Alarm.'''
+
+'''Vents -''' Injects the room with whatever gas it's connected to, usually air from '''blue dystro pipes'''.
+
+'''Sensors -''' Detects what is in the air, '''Scrubbers''' and '''Vents''' have these built in.
+
+== List of Engineering Ships ==
+Engineering is nothing without the tools of the trade, every ship can benefit from an engineer but, here are some ships for the tech savvy Engineer.               If none of these are to your liking, you can always [[Shuttle building|Build Your Own]].
+{| class="wikitable sortable mw-collapsible"
+|[[NR Sparrow]]
+|1-4
+|Small
+|Scientist, Engineer
+|$37000
+|Plasma
+|-
+|[[NT Comet]]
+|3-6
+|Medium
+|Engineer, Passenger
+|$55000
+|AME
+|-
+|[[NR Condor]]
+|2-6
+|Medium
+|Engineer, Scientist, R.D, CE, Atmos Tech, Cyborg
+|$72890
+|Plasma/Solar
+|-
+|[[TC Metastable]]
+|3-6
+|Medium
+|Scientist, Chef, Doctor, Chemist, Engineer, Passenger, Cyborg
+|$89000
+|
+|-
+|[[NR Stratos]]
+|2-6
+|Medium
+|Pilot, Salvage, Bartender, Scientist, Engineer
+|$90000
+|AME
+|-
+|[[NT Gasbender]]
+|3-6
+|Medium
+|Atmos Tech, C.E, Cyborg, Paramedic, Engineer
+|$90500
+|AME
+|-
+|[[NT Rosebud MK I]]
+|2-6
+|Meduim
+|Salvage, Paramedic, Engineer, Clown, Musician
+|$92115
+|Solar/Welding Fuel
+|-
+|[[NM Caduceus]]
+|4-8
+|Large
+|Paramedic, C.M.O, Doctor, Chemist, Cyborg, Engineer, Medical Intern
+|$105000
+|AME
+|-
+|[[NT Crescent]]
+|6+
+|Large
+|Bartender, Chef, Doctor, Chemist, Engineer, Atmos Tech, Scientist,
+Musician, Q.M, Lawyer, Janitor, R.D, C.M.O, Mercenary
+|$208020
+|AME
+|}
+
+== Other Guides ==
+{{Guides_Menu}}

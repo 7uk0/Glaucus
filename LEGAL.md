@@ -33,3 +33,10 @@ Images under [`screenshots/`](screenshots) show Space Station 14 / Frontier
 Station art rendered by Caput Mortuum. That art is © its respective authors and
 licensed CC-BY-SA 3.0 (see the upstream `meta.json` files); the screenshots are
 shared under the same license.
+
+## Reference material
+
+`reference/` holds third-party documentation kept for offline study: the
+Frontier Station wiki (CC BY-SA 4.0, frontierstation.wiki.gg contributors) and
+the Space Wizards developer docs. See `reference/README.md`. They are not part
+of the program and keep their own licences.

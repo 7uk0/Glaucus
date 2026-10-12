@@ -1,0 +1,385 @@
+{{Cleanup}}
+{{WIP}}
+
+= '''<big>Species</big>''' =
+While humans are the most common when exploring the Frontier or deep space you may find aliens, mutated humans or others self aware creatures and you may need to coexist and work along them so this guide is here to help you understand them, learning they pros and cons and how to keep a friendly face with your aliens friends! (Or how to destroy them!)
+
+= Roundstart Races =
+All of the races in this category can be selected in the character creation menu.
+{| class="wikitable sortable"
+|+
+!'''Race'''
+!'''Homeworld'''
+!'''Language'''
+!'''System'''
+!'''Height (cm)'''
+!'''Lifespan (years)'''
+!'''Breathes'''
+|-
+|[[File:Human.png|100px]]Human
+|Earth
+|Sol Common
+|Sol
+|180
+|100
+|Oxygen
+|-
+|[[File:Reptilian.png|100px]]Reptilian
+|Unknown
+|Sol Common
+|Unknown
+|190
+|50
+|Oxygen
+|-
+|[[File:Vulpkanin.png|100px]]Vulpkanin
+|Unknown
+|Canilunzt
+|Unknown
+|160
+|90
+|Oxygen
+|-
+|[[File:Moth.png|100px]]Moth
+|Unknown
+|Sol Common
+|Unknown
+|180
+|65
+|Oxygen
+|-
+|[[File:Felinds.png|100px]]Felinds
+|Unknown
+|Sol Common
+|Sol
+|130
+|80
+|Oxygen
+|-
+|[[File:Harpies.png|100px]]Harpies
+|Unknown
+|Sol Common
+|Sol
+|150
+|80
+|Oxygen
+|-
+|[[File:Onis.png|100px]]Onis
+|Unknown
+|Sol Common
+|Sol
+| 
+| 
+|Oxygen
+|-
+|[[File:Diona.png|100x100px]]Diona
+|Unknown
+|Sol Common
+|
+|
+|
+|Oxygen
+|-
+|[[File:Goblin.png|100x100px]]Goblin
+|Unknown
+|Sol Common
+|
+|
+|
+|Oxygen
+|-
+|[[File:Slimeperson.png|100x100px]]Slime
+|Unknown
+|Sol Common
+|
+|
+|
+|Oxygen
+|-
+|[[File:Dwarf.png|100x100px]]Dwarf
+|Unknown
+|Sol Common
+|
+|
+|
+|Oxygen
+|-
+|[[File:Vox.png|100x100px]]Vox
+|Unknown
+|Sol Common
+|
+|
+|
+|Nitrogen
+|-
+|[[File:Arachnid.png|100x100px]]Arachnid
+|Unknown
+|Sol Common
+|
+|
+|
+|Oxygen
+|}
+
+== Human ==
+[[File:Human.png|100px]]
+
+Baseline, unmodified human beings, functionally similar to the human beings of our world, aside for a comparatively incredible resistance to the vacuum of space, most stations and ships are designed for humans in mind and they are the most common specie.
+
+<u>'''Basic Information'''</u>
+
+* '''Homeworld:''' Earth
+* '''Language:''' Sol Common
+* '''System:''' Sol
+
+<u>'''Physiology'''</u>
+
+* '''Height:''' 180cm
+* '''Lifespan:''' 100 years
+* '''Breathes:''' Oxygen
+
+<u>'''Pros'''</u>
+
+* None
+
+<u>'''Cons'''</u>
+
+* None
+
+<u>'''Diets'''</u>
+
+* Nothing special
+
+== Reptilian ==
+[[File:Reptilian.png|100px]]
+
+Reptile-like humanoids with sharp claws, tough scales, and an appetite for raw meat.
+
+<u>'''Basic Information'''</u>
+
+* '''Homeworld:''' Unknown
+* '''Language:''' Sol Common
+* '''System:''' Unknown
+
+<u>'''Physiology'''</u>
+
+* '''Height:''' 190cm
+* '''Lifespan:''' 50 years
+* '''Breathes:''' Oxygen
+
+<u>'''Pros'''</u>
+
+* They have claws.
+* Higher heat threshold.
+* Are 10% more resistant to Slash, Poison and 20% resistant to Heat.
+* They can pull objects with their tail, freeing up their hands.
+
+<u>'''Cons'''</u>
+
+* Takes 50% more cold and 10% more blunt.
+* onions, chocolate, coffee and tea are poisons.
+* Lower cold threshold.
+
+<u>'''Diets'''</u>
+
+* Can eat raw meat.
+* Can consume tiny animals.
+* Meat
+* Fruits
+* Eggs
+* Bread
+* Poisoned by Theobromine
+
+== Vulpkanin ==
+[[File:Vulpkanin.png|100px]]
+
+The Vulpkanin (vulp-ka-nin) are a race of humanoid canine-like beings.
+
+<u>'''Basic Information'''</u>
+
+* '''Homeworld:''' Unknown
+* '''Language:''' Canilunzt
+* '''System:''' Unknown
+
+<u>'''Physiology'''</u>
+
+* '''Height:''' 160cm
+* '''Lifespan:''' 90 years
+* '''Breathes:''' Oxygen
+
+<u>'''Pros'''</u>
+
+* Higher cold threshold.
+* Can understand the Canilunzt langauge.
+* Are 20% more resistant to Cold and 10% to Poison.
+* Get pats instead of hugs!
+* Have claws.
+
+<u>'''Cons'''</u>
+
+* Lower heat threshold.
+* Takes double the amount of heat damage when in flames.
+* Can only speak the Canilunzt language and need a translator to speak Sol Common.
+* Takes 30% more Burn Damage.
+
+<u>'''Diets'''</u>
+
+* Can eat raw meat.
+* Can consume tiny animals.
+* Meat
+* Fruits
+* Eggs
+* Bread
+* Poisoned by Theobromine
+
+== Moth ==
+[[File:Moth.png|100px]]
+
+Insect people with wings and antennae, mothpeople come in a variety of colors and patterns. Their physiology allows them to maneuver slightly without gravity.
+
+<u>'''Basic Information'''</u>
+
+* '''Homeworld:''' Unknown
+* '''Language:''' Sol Common
+* '''System:''' Unknown
+
+<u>'''Physiology'''</u>
+
+* '''Height:''' 180cm
+* '''Lifespan:''' 65 years
+* '''Breathes:''' Oxygen
+
+<u>'''Pros'''</u>
+
+* Having wings makes it possible to move in zero-gravity environments to a degree.
+* Are 20% more resistant to Cold.
+* Higher cold threshold.
+
+<u>'''Cons'''</u>
+
+* onions, chocolate, coffee and tea are poisons.
+* Takes double the amount of heat damage when in flames.
+* Lower heat threshold.
+* Takes 10% more Poison, 15% more Slash and Piercing and 30% more heat.
+
+<u>'''Diets'''</u>
+
+* Cotton
+* Fruits
+* Poisoned by Theobromine
+
+== Felinds ==
+[[File:Felinds.png|100px]]
+
+Small and mischievous cat-eared people. Being small in itself has lots of upsides and downsides. They are naturally good at thieving, and can hide inside duffelbags.
+
+<u>'''Basic Information'''</u>
+
+* '''Homeworld:''' Unknown
+* '''Language:''' Sol Common
+* '''System:''' Sol
+
+<u>'''Physiology'''</u>
+
+* '''Height:''' 130cm
+* '''Lifespan:''' 80 years
+* '''Breathes:''' Oxygen
+
+<u>'''Pros'''</u>
+
+* Have weak claws.
+* They are smaller than Humans, making them harder to hit.
+* Have the ability to throw up an hairball to get rid of some of the chemicals from their bloodstream.
+* Able to eat mice and rats after picking them up. This has the benefit of regenerating the hairball ability and feeding them.
+* Efficient in the art of stealing from people.
+* Immunity to the OwOnavirus disease.
+* Can fit in duffelbags.
+
+<u>'''Cons'''</u>
+
+* Takes 15% more Blunt, Slash and Piercing damage.
+* Are easily shoved, pushed and carried around by every other morphotypes due to their small size.
+* They are weaker and struggle to carry and pull things due to their small size. They are unable to carry an Oni.
+
+<u>'''Diets'''</u>
+
+* Can consume tiny animals.
+* Poisoned by Theobromine
+
+== Harpies ==
+[[File:Harpies.png|100px]]
+
+An avian humanoid species that features colorful feathered wings and tails that can mimic almost any sound.
+
+They are quite sensitive to the air quality, and when exposed to low quality air, they will begin to visibly gasp, and eventually start choking.
+When this happens, a Harpy should either move away from sources of bad air, stand on top of a scrubber for a few seconds, or take a few breaths from a pure oxygen tank in order to restore their blood-oxygen levels. Only three seconds of being on pure oxygen is enough to completely restore a Harpy's blood oxygen saturation.
+
+<u>'''Basic Information'''</u>
+
+* '''Homeworld:''' Unknown
+* '''Language:''' Sol Common
+* '''System:''' Sol
+
+<u>'''Physiology'''</u>
+
+* '''Height:''' 150cm
+* '''Lifespan:''' 80 years
+* '''Breathes:''' Oxygen
+
+<u>'''Pros'''</u>
+
+* Somewhat smaller than Humans, although not as small as Felinids.
+* Uses their talons to deal Piercing damage.
+* Can imitate around 70% of the game's sound library through a huge list of voice emotes.
+* They can "Sing" midis by imitating instruments. Right click yourself to select an instrument.
+* Have Ultraviolet Vision.
+
+<u>'''Cons'''</u>
+
+* Cannot wear Jumpsuits.
+* Takes 15% more Blunt, Slash, and Piercing damage.
+* Extreme low density, Harpies are lighter than even Felinids, and weigh half as much as a Human.
+* A Harpy breathes in air twice as often as Humans, inhaling and exhaling every 3 seconds.
+** Air tanks last half as long and Harpies are more susceptible than usual to low air quality.
+** If a Harpy is exposed to at least 0.2 moles of combined CO2 and/or Miasma, they start struggling to take in oxygen.
+
+<u>'''Diets'''</u>
+
+* Can eat raw meat.
+* Poisoned by Theobromine and Allicin.
+
+== Onis ==
+[[File:Onis.png|100px]]
+
+Large, horned people that come in a variety of colors. Their accuracy with guns is terrible, but their physical strength brings them a lot of boons both in and out of combat.
+
+<u>'''Basic Information'''</u>
+
+* '''Homeworld:''' Unknown
+* '''Language:''' Sol Common
+* '''System:''' Sol
+
+<u>'''Physiology'''</u>
+
+* '''Height:''' 
+* '''Lifespan:''' 
+* '''Breathes:''' Oxygen
+
+<u>'''Pros'''</u>
+
+* Takes 15% less Blunt, Slash and Piercing damage.
+* Does more damage in melee; 35% more Blunt and Asphyxiation, 20% more Slash and Piercing.
+* Due to their big size, they can easily carry, shove and pull any other morphotypes.
+* They are harder to shove.
+* Slightly more stamina than Humans.
+* They have an easier time prying open doors, taking around 50% less time than other species.
+
+<u>'''Cons'''</u>
+
+* Their accuracy with guns is terrible.
+* They are harder to carry and pull.
+* They are bigger than Humans, making them easier to hit.
+
+<u>'''Diets'''</u>
+
+* Nothing Special

@@ -1,0 +1,197 @@
+{{no direct use}}
+{{UsesLua|Navbox}}
+This template is designed to set up navigational templates relatively quickly with one or more lists of links. We highly recommend using this template for standardizing navigational templates and ease of use, especially for mobile devices.
+
+See [[support:RANGER navboxes|the support wiki]] for more information, including installation steps and further examples.
+
+== Basic example ==
+The following example demonstrates the core functionality of this template: the title text, one standard link group, and one link group that contains two sub-groups. The rows are striped for easier readability.
+
+{{Navbox
+
+| title = Items
+| striped = even
+
+| group1 = Consumables
+| list1 =
+* Health Potion
+* Mana Potion
+
+| group2 = Weapons
+
+| group2.1 = Swords
+| list2.1 =
+* Wooden Sword
+* Rusted Sword
+* Steel Sword
+
+| group2.2 = Bows
+| list2.2 =
+* Shortbow
+* Crossbow
+* Longbow
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Navbox
+| template = <template_title> <!-- Required. e.g. `|template=Items` for template:Items -->
+
+| title = Items
+| striped = even
+
+| group1 = Consumables
+| list1 =
+* Health Potion
+* Mana Potion
+
+| group2 = Weapons
+
+| group2.1 = Swords
+| list2.1 =
+* Wooden Sword
+* Rusted Sword
+* Steel Sword
+
+| group2.2 = Bows
+| list2.2 =
+* Shortbow
+* Crossbow
+* Longbow
+}}
+</syntaxhighlight>
+
+== Parameters ==
+=== Main ===
+The following parameters modify the navbox as a whole.
+
+{| class="wikitable"
+! Parameter
+! Description
+|-
+! <code>template</code><br><code>name</code>
+| ('''Required''') Title of the template that the edit icon links to. e.g. <code>Items</code> for template:Items.
+|-
+! <code>title</code>
+| Text that appears at the top of the navbox.
+|-
+! <code>state</code><br><code>collapsible</code>
+| Controls if a navbox should be expanded or collapsed when the page loads. This only affects the whole navbox; if [[#Sections|sections]] are used, they are treated differently.
+* <code>expanded</code> ('''default''') - the navbox will start open and readers can collapse it.
+* <code>collapsed</code> - the navbox will start closed and readers can expand it.
+* <code>off</code>, <code>no</code>, or <code>plain</code> - the navbox will start open and cannot be collapsed.
+Advanced users can modify this on a page-by-page basis; see [[support:RANGER navboxes#Controlling the collapsible|the support wiki]] for more information.
+|-
+! <code>editlinks</code>
+| Controls if an edit icon should be displayed at the top-left of the navbox, making it easier for users to interact with the template itself.
+* unset ('''default''') - displays the edit icon
+* <code>off</code> or <code>no</code> - hides the edit icon
+|-
+! <code>above</code>
+| Text that appears above all list groups, directly below the title.
+|-
+! <code>below</code>
+| Text that appears below all list groups, at the bottom of the navbox.
+|-
+! <code>striped</code><br><code>evenodd</code>
+| Controls if the navbox rows should have zebra striping on even or odd rows, making it easier for users to distinguish two rows apart from each other. If [[#Sections|sections]] are used, each section resets the even/odd counter.
+*unset ('''default''') - all rows have the same background
+*<code>y</code>, <code>yes</code>, <code>on</code>, <code>striped</code>, or <code>even</code> - even-numbered rows are highlighted
+*<code>swap</code> or <code>odd</code> - odd-numbered rows are highlighted
+|}
+
+=== Sections ===
+The following parameters define sections within the navbox with their own titles.
+
+{| class="wikitable"
+! Parameter
+! Description
+|-
+! <code>header''n''</code>
+| Text that appears at the top of the section, where ''n'' is any positive integer. If the value is set to two or more <code>-</code> (e.g. <code>--</code>, <code>-----</code>, etc.) the new section will have no header bar and cannot be collapsed.
+
+All groups and lists that are ''n'' or higher will appear in this section unless there is a higher <code>header''n''</code> later in the template. For example, if a navbox defines <code>header1</code> and <code>header4</code>, the first section will include <code>list1</code>, <code>list2</code>, and <code>list3</code> (and any of their sub-lists), while the second section will include all remaining lists starting at <code>list4</code> and their sub-lists.
+|-
+! <code>header_state</code><br><code>state''n''</code>
+| <code>header_state</code> controls if all sections, by default, should be expanded or collapsed when the page loads.
+
+<code>state''n''</code> overrides <code>header_state</code> for the specific section defined by <code>header''n''</code> (where ''n'' is a matching integer).
+* <code>expanded</code> ('''default''') - the section will start open and readers can collapse it.
+* <code>collapsed</code> - the section will start closed and readers can expand it.
+* <code>off</code> or <code>plain</code> - the section will start open and cannot be collapsed.
+Advanced users can modify these on a page-by-page basis; see [[support:RANGER navboxes#Controlling the collapsible|the support wiki]] for more information.
+
+Both parameters have no effect on sections with headers set to two or more <code>-</code>, which are always expanded and cannot be collapsed.
+|}
+
+=== List groups ===
+The following parameters define the list groups.
+
+{| class="wikitable"
+! Parameter
+! Description
+|-
+! <code>group''n''</code>
+| Text label for a list, which appears on the left on desktop or at the top on mobile, where ''n'' is any positive integer.
+
+This parameter is optional; if a <code>list''n''</code> does not have a matching <code>group''n''</code>, the list will take the full width on desktop.
+|-
+! <code>list''n''</code>
+| A wikitext list, where ''n'' is any positive integer.
+|-
+! <code>group''n''.''x''</code><br><code>group''n''.''x''.''y''</code><br>etc.
+| Text label for sub-lists that appear under <code>group''n''</code>, <code>group''n''.''x''</code>, etc.
+|-
+! <code>list''n''.''x''</code><br><code>list''n''.''x''.''y''</code><br>etc.
+| Wikitext sub-lists.
+|}
+
+=== Styling ===
+The following parameters add inline styling or your custom CSS classes to specific elements of the navbox.
+
+To assist with text alignment, three default classes are available: <code>align-left</code>, <code>align-center</code>, and <code>align-right</code>.
+
+{| class="wikitable"
+! Parameter
+! Description
+|-
+! <code>navbox_style</code><br><code>navbox_class</code>
+| Modifies the parent navbox element; <code>class</code> can be used as a shorthand for <code>navbox_class</code>
+
+Two default classes are available:
+*<code>pill</code> changes the links to pill-styled rather than dot-separated
+*<code>pill-mobile</code> only changes the links to pill-styled on mobile devices
+|-
+! <code>title_style</code><br><code>title_class</code>
+| Modifies the title bar
+|-
+! <code>above_style</code><br><code>above_class</code>
+| Modifies the <code>above</code> text row
+|-
+! <code>below_style</code><br><code>below_class</code>
+| Modifies the <code>below</code> text row
+|-
+! <code>header_style</code><br><code>header_class</code>
+| Modifies all section headers (''not'' the title bar)
+|-
+! <code>header''n''_style</code><br><code>header''n''_class</code>
+| Modifies the specific section header ''n''
+|-
+! <code>section''n''_style</code><br><code>section''n''_class</code>
+| Modifies the container holding the section defined by a matching <code>header''n''</code>
+|-
+! <code>group_style</code><br><code>group_class</code>
+| Modifies all base groups (<code>group''n''</code>), but ''not'' any subgroups (<code>group''n''.''x''</code>, etc.)
+|-
+! <code>subgroup_style</code><br><code>subgroup_class</code>
+| Modifies all subgroups at all levels (<code>group''n''.''x''</code>, <code>group''n''.''x''.''y''</code>, etc.)
+|-
+! <code>group''A''_style</code><br><code>group''A''_class</code>
+| Modifies the specific group ''A'', where ''A'' is any ''n'', ''n''.''x'', ''n''.''x''.''y'', etc.
+|-
+! <code>list_style</code><br><code>list_class</code>
+| Modifies all lists. Note, in this context, "list" refers to the container of a <code>list''n''</code> parameter, not a <code>ul</code> or <code>ol</code> element inside the parameter
+|-
+! <code>list''A''_style</code><br><code>list''A''_class</code>
+| Modifies the specific list ''A'', where ''A'' is any ''n'', ''n''.''x'', ''n''.''x''.''y'', etc.
+|}
+
+<noinclude>[[Category:Template documentation]]</noinclude>

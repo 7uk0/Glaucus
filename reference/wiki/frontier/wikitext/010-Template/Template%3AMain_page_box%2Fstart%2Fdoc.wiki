@@ -1,0 +1,43 @@
+See [[Template:Main page box]] for information on how to use this.
+
+==TemplateData==
+<templatedata>
+{
+	"params": {
+		"class": {
+			"label": "Class",
+			"description": "Additional classes to give to the box wrapping this box.",
+			"example": "centered-content",
+			"suggestedvalues": [
+				"centered-content",
+				"has-floating-image"
+			]
+		},
+		"style": {
+			"label": "Style",
+			"description": "Inline CSS to add to the box wrapping this box",
+			"example": "text-align:center;",
+			"type": "string"
+		},
+		"title": {
+			"aliases": [
+				"1"
+			],
+			"label": "Title",
+			"description": "The title of this box.",
+			"example": "Welcome to the wiki!",
+			"type": "content",
+			"suggested": true
+		}
+	},
+	"description": "Creates a box for use on the main page.",
+	"paramOrder": [
+		"title",
+		"class",
+		"style"
+	],
+	"format": "block"
+}
+</templatedata>
+
+<noinclude>[[Category:Template documentation]]</noinclude>

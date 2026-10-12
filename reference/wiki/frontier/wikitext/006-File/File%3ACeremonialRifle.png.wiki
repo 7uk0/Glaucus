@@ -1,0 +1,2 @@
+== Summary ==
+Base sprite of the Ceremonial Rifle rifle

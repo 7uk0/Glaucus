@@ -1,0 +1,1009 @@
+==Introduction==
+
+Vending machines - commonly referred to as ''Vends'' - are essential infrastructure commonly located in various POIs or Outposts throughout the Frontier. These automated dispensers offer a wide selection of items, ranging from classic tools, uniforms, to fuel, and non-lethal to less-lethal weaponry. Each vending machine serves a particular purpose or department to ensure efficient access without direct oversight.
+
+Some particular vending machines provide specific quotes in reaction to passerbys or consumers. This page provides an exhaustive list of all vending machines located on the Frontier.
+
+==List==
+
+{| class="wikitable sortable"; style="margin:10pt; width:98%; table-layout:auto;"
+! style="width:64px; text-align:center; white-space:nowrap;" class="unsortable" | Image
+! style="width:128px; text-align:center;" | Name
+! style="width:128px; text-align:center;" class="unsortable" | Description
+! style="width:128px; text-align:center;" class="unsortable" | Locations
+! style="width:128px; text-align:center;" class="unsortable" | Items
+
+|-
+| style="text-align:center;" | [[File:ArcadiaDrobe.png|64px]]
+| style="text-align:center;" | ArcadiaDrobe
+| Selling clothes from another reality for cheap prices!
+| • Unknown<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ArcadiaDrobe}}
+
+|-
+| style="text-align:center;" | [[File:AtmosDrobe.png|64px]]
+| style="text-align:center;" | AtmosDrobe
+| This relatively unknown vending machine delivers clothing for Atmospherics Technicians, an equally unknown job.
+| • Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/AtmosDrobe}}
+
+|-
+| style="text-align:center;" | [[File:AstroVend.png|64px]]
+| style="text-align:center;" | AstroVend
+| Essential gear for the spaceman on the go.
+| • Expeditionary Lodge,<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• NFSD Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/AstroVend}}
+
+|-
+| style="text-align:center;" | [[File:AutoTune.png|64px]]
+| style="text-align:center;" | AutoTune
+| Feeling BASSed? Time to TUNE into AutoVend! Take NOTES and let your audience TREBLE.
+| • Crazy Casey's Casino,<br>• Trade Mall (RDM),<br>• NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/AutoTune}}
+
+|-
+| style="text-align:center;" | [[File:AutoDrobe.png|64px]]
+| style="text-align:center;" | AutoDrobe
+| A vending machine containing costumes.
+| • Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/AutoDrobe}}
+
+|-
+| style="text-align:center;" | [[File:BarDrobe.png|64px]]
+| style="text-align:center;" | BarDrobe
+| A stylish vendor to dispense the most stylish bar clothing!
+| • Crazy Casey's Casino,<br>• Tinnia's Rest<br>
+| {{:User:Herbtheon/Sandbox/Vendors/BarDrobe}}
+
+
+|-
+| style="text-align:center;" | [[File:Boozeomat.png|64px]]
+| style="text-align:center;" | Booze-O-Mat
+| A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one.
+| • Crazy Casey's Casino,<br>• Expeditionary Lodge,<br>• Medical Dispatch,<br>• The Pit,<br>• Tinnia's Rest,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/BoozeOMat}}
+
+|-
+| style="text-align:center;" | [[File:Bonanzamatic.png|64px]]
+| style="text-align:center;" | Bonanzamatic
+| A vandalized BountyVend.
+| • Trade Mall (RDM)<br>
+| <div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! style="width:64px; text-align:center; white-space:nowrap;" class="unsortable" | Image
+! Product
+! Cost
+! Stock
+|-
+| [[File:ClothingEyesPunkGoggles.png|50px]]
+| Punk Goggles
+| $1,350
+| 6
+|-
+| [[File:ClothignEyesPunkInfoShades.png|50px]]
+| Punk Infoshades
+| $300
+| 3
+|-
+| [[File:ClothingUniformRandomPunkCroptop.png|50px]]
+| Punk Croptop Jumpsuit
+| $100
+| 12
+|-
+| [[File:ClothingUniformRandomPunkTanktop.png|50px]]
+| Punk Tanktop Jumpsuit
+| $100
+| 8
+|-
+| [[File:ClothingUniformRandomArmlessNoSkirt.png|50px]]
+| Colorful Armless Jumpsuit
+| $100
+| 6
+|-
+| [[File:ClothingUniformRandomPunkPantsOnly.png|50px]]
+| Punk Pants
+| $100
+| 6
+|-
+| [[File:ClothingUniformRandomPunkShortsOnly.png|50px]]
+| Punk Shorts
+| $100
+| 6
+|-
+| [[File:ClothingBeltPunkRandomized.png|50px]]
+| Punk Belt
+| $200
+| 6
+|-
+| [[File:ClothingMaskBalaclavaRandom.png|50px]]
+| Punk Balaclava
+| $250
+| 6
+|-
+| [[File:NFPouchPunk.png|50px]]
+| Punk Pouch
+| $500
+| 6
+|-
+| [[File:ClothingShoesBootsPunkRandomized.png|50px]]
+| Punk Boots
+| $100
+| 6
+|-
+| [[File:ClothingOuterArmorPunkRandomized.png|50px]]
+| Punk Armor
+| $350
+| 4
+|-
+| [[File:ClothingOuterArmorPunkGreen.png|50px]]
+| Punk Armor
+| $350
+| 2
+|-
+| [[File:ClothingOuterArmorPunkOrange.png|50px]]
+| Punk Armor
+| $350
+| 2
+|-
+| [[File:ClothingOuterArmorPunkRed.png|50px]]
+| Punk Armor
+| $350
+| 2
+|-
+| [[File:HoloGraffitiProjector.png|50px]]
+| Holograffiti Projector
+| $800
+| 4
+|}
+</div>
+
+|-
+| style="text-align:center;" | [[File:BountyVend.png|64px]]
+| style="text-align:center;" | BountyVend
+| Essential gear for the bounty hunter on the go.
+| • Expeditionary Lodge<br>• NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/BountyVend}}
+
+|-
+| style="text-align:center;" | [[File:BoxingDrobe.png|64px]]
+| style="text-align:center;" | Boxing Drobe
+| Always short on stock.
+| • The Pit<br>
+| {{:User:Herbtheon/Sandbox/Vendors/BoxingDrobe}}
+
+|-
+| style="text-align:center;" | [[File:CargoDrobe.png|64px]]
+| style="text-align:center;" | CargoDrobe
+| A highly advanced vending machine for buying cargo related clothing for free.
+| • Vessels<br>
+| {{:User:Herbtheon/Sandbox/Vendors/CargoDrobe}}
+
+|-
+| style="text-align:center;" | [[File:ChapDrobe.png|64px]]
+| style="text-align:center;" | PietyVend
+| Just add capitalism!
+| • Omnichurch<br>• Trade Mall (RDM)<br>
+| {{:User:Herbtheon/Sandbox/Vendors/PietyVend}}
+
+|-
+| style="text-align:center;" | [[File:ChefDrobe.png|64px]]
+| style="text-align:center;" | ChefDrobe
+| The vending machine might not dispense meat, but it certainly dispenses chef related clothing.
+| • Tinnia's Rest<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ChefDrobe}}
+
+|-
+| style="text-align:center;" | [[File:ChefVend.png|64px]]
+| style="text-align:center;" | ChefVend
+| An ingredient vendor for all your cheffin needs.
+| • The Pit<br>• Tinnia's Rest<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ChefVend}}
+
+|-
+| style="text-align:center;" | [[File:ChemVend.png|64px]]
+| style="text-align:center;" | ChemVend
+| Probably not the coffee machine.
+| • NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ChemVend}}
+
+|-
+| style="text-align:center;" | [[File:CiviMed.png|64px]]
+| style="text-align:center;" | CiviMed Plus
+| CiviMed Plus, distributing lifesaving meds harder than the rocks you break! Miners, DON'T DIE!
+| • Expeditionary Lodge,<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• NFSD Outpost,<br>• The Pit<br>• Trade Mall,<br>
+| {{:User:Herbtheon/Sandbox/Vendors/CiviMed}}
+
+|-
+| style="text-align:center;" | [[File:ClothesMate.png|64px]]
+| style="text-align:center;" | ClothesMate
+| A vending machine for clothing.
+| • Frontier Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ClothesMate}}
+
+|-
+| style="text-align:center;" | [[File:ContraVend.png|64px]]
+| style="text-align:center;" | ContraVend
+| Wanted across multiple sectors!
+| • Listening Point Bravo<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ContraVend}}
+
+|-
+| style="text-align:center;" | [[File:CuddlyCritterVend.png|64px]]
+| style="text-align:center;" | CuddlyCritterVend
+| Step into the world of wonder and warmth with Cuddly Critters Vending Machine, a haven for plushie and toy enthusiasts alike.
+| • Crazy Casey's Casino,<br>• Frontier Outpost,<br>• NFSD Outpost,<br>• The Pit,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/CuddlyCritterVend}}
+
+|-
+| style="text-align:center;" | [[File:CuraDrobe.png|64px]]
+| style="text-align:center;" | CuraDrobe
+| A lowstock vendor only capable of vending clothing for curators and librarians.
+| • Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/CuraDrobe}}
+
+|-
+| style="text-align:center;" | [[File:Detdrobe.png|64px]]
+| style="text-align:center;" | DetDrobe
+| A machine for all your detective needs, as long as you need clothes.
+| • NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/DetDrobe}}
+
+|-
+| style="text-align:center;" | [[File:Dinnerware.png|64px]]
+| style="text-align:center;" | Plasteel Chef's Dinnerware Vendor
+| A kitchen and restaurant equipment vendor.
+| • The Pit,<br>• Tinnia's Rest,<br>• Trade Mall,<br>
+| {{:User:Herbtheon/Sandbox/Vendors/PlasteelDinnerware}}
+
+|-
+| style="text-align:center;" | [[File:EngiDrobe.png|64px]]
+| style="text-align:center;" | EngiDrobe
+| A vending machine renowned for vending industrial grade clothing.
+| • Edison Power Plant<br>• Expeditionary Lodge<br>
+| {{:User:Herbtheon/Sandbox/Vendors/EngiDrobe}}
+</div>
+
+|-
+| style="text-align:center;" | [[File:Engi-Vend.png|64px]]
+| style="text-align:center;" | Engi-Vend
+| Spare tool vending. What? Did you expect some witty description?
+| • Edison Power Plant<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• NFSD Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/EngiVend}}
+
+|-
+| style="text-align:center;" | [[File:ExpeditionaryflatpackVend.png|64px]]
+| style="text-align:center;" | Expeditionary FlatpackVend
+| Essential tech for the spaceman on an expedition.
+| • Expeditionary Lodge<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ExpeditionaryflatpackVend}}
+
+|-
+| style="text-align:center;" | [[File:FlatpackVend.png|64px]]
+| style="text-align:center;" | FlatpackVend
+| Essential tech for the spaceman on the go.
+| • Edison Power Plant,<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/FlatpackVend}}
+
+|-
+| style="text-align:center;" | [[File:FuelVend.png|64px]]
+| style="text-align:center;" | FuelVend
+| A vendor selling fuel for ship engines. Smells like ozone.
+| • Courthouse,<br>• Derelict McCargo,<br>• Edison Power Plant,<br>• Expeditionary Lodge<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/FuelVend}}
+
+|-
+| style="text-align:center;" | [[File:GasTankDispenser.png|64px]]
+| style="text-align:center;" | Gas Tank Dispenser
+| A vendor for dispensing gas tanks. This one has an engineering livery.
+| • Expeditionary Lodge<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• NFSD Outpost<br>• Trade Mall,<br>
+| {{:User:Herbtheon/Sandbox/Vendors/GasTankDispenser}}
+
+|-
+| style="text-align:center;" | [[File:GasTankDispenserEng.png|64px]]
+| style="text-align:center;" | Gas Tank Dispenser (Engineering)
+| A vendor for dispensing gas tanks. This one has an engineering livery.
+| • Edison Power Plant<br>
+| {{:User:Herbtheon/Sandbox/Vendors/GasTankDispenserEngineering}}
+
+|-
+| style="text-align:center;" | [[File:GeneDrobe.png|64px]]
+| style="text-align:center;" | GeneDrobe
+| A machine for dispensing clothing related to genetics.
+| • Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/GeneDrobe}}
+
+|-
+| style="text-align:center;" | [[File:GoodCleanFun.png|64px]]
+| style="text-align:center;" | Good Clean Fun
+| Vends things that the station representative are probably not going to appreciate you fiddling with instead of your job...
+| • Crazy Casey's Casino,<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• Tinnia's Rest,<br>• Trade Mall (RDM)<br>
+| {{:User:Herbtheon/Sandbox/Vendors/GoodCleanFun}}
+
+|-
+| style="text-align:center;" | [[File:HappyHonkDispenser.png|64px]]
+| style="text-align:center;" | Happy Honk Dispenser
+| A happy honk meal box dispenser made by honk! co.
+| • Tinnia's Rest<br>
+| {{:User:Herbtheon/Sandbox/Vendors/HappyHonkDispenser}}
+
+|-
+| style="text-align:center;" | [[File:HyDrobe.png|64px]]
+| style="text-align:center;" | HyDrobe
+| A machine with a catchy name. It dispenses botany related clothing and gear.
+| • Omnichurch,<br>• Tinnia's Rest<br>
+| {{:User:Herbtheon/Sandbox/Vendors/HyDrobe}}
+
+|-
+| style="text-align:center;" | [[File:JaniDrobe.png|64px]]
+| style="text-align:center;" | JaniDrobe
+| A self cleaning vending machine capable of dispensing clothing for janitors.
+| • Frontier Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/JaniDrobe}}
+
+|-
+| style="text-align:center;" | [[File:LawDrobe.png|64px]]
+| style="text-align:center;" | LawDrobe
+| Objection! This wardrobe dispenses the rule of law... and lawyer clothing..
+| • Courthouse,<br>• NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/LawDrobe}}
+
+|-
+| style="text-align:center;" | [[File:LessLethalVend.png|64px]]
+| style="text-align:center;" | LessLethalVend
+| Making violence safe since '08.
+| • Expedtionary Lodge,<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• NFSD Outpost,<br>• Trade Mall<br>
+| <div class="mw-collapsible mw-collapsed">
+Less Lethal Vending Inventory
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! style="width:64px; text-align:center; white-space:nowrap;" class="unsortable" | Image
+! Product
+! Cost
+|-
+| [[File:DisablerPistol.png|50px]]
+| Disabler Pistol
+| $2,500
+|-
+| [[File:Argenti.png|50px]]
+| Argenti
+| $2,000
+|-
+| [[File:StunBaton.png|50px]]
+| Stun Baton
+| $800
+|-
+| [[File:SpeedLoader_35r.png|50px]]
+| Speed Loader (.35 Pistol, Rubber)
+| $200
+|-
+| [[File:SpeedLoader_45r.png|50px]]
+| Speed Loader (.45 Pistol, Rubber)
+| $200
+|-
+| [[File:AmmunitionBox_35r.png|50px]]
+| Ammunition Box (.35 Pistol, Rubber)
+| $200
+|-
+| [[File:AmmunitionBox_45r.png|50px]]
+| Ammunition Box (.45 Pistol, Rubber)
+| $200
+|-
+| [[File:AmmunitionBox_20r.png|50px]]
+| Ammunition Box (.20 Rifle, Rubber)
+| $200
+|-
+| [[File:AmmunitionBox_30r.png|50px]]
+| Ammunition Box (.30 Rifle, Rubber)
+| $200
+|-
+| [[File:ShellBox_50bs.png|50px]]
+| Shell Box (.50 Buckshot)
+| $240
+|-
+| [[File:ShellBox_50bb.png|50px]]
+| Shell Box (.50 Beanbag)
+| $240
+|}
+</div>
+
+|-
+| style="text-align:center;" | [[File:LiberationStation.png|64px]]
+| style="text-align:center;" | Liberation Station
+| An overwhelming amount of ancient patriotism washes over you just by looking at the machine.
+| • Expeditionary Lodge<br>• NFSD Outpost<br>
+| <div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! style="width:64px; text-align:center; white-space:nowrap;" class="unsortable" | Image
+! Product
+! Cost
+|-
+| [[File:LaserPistol.png|50px]]
+| Laser Pistol
+| $3000
+|-
+| [[File:Argenti.png|50px]]
+| Argenti
+| $2400
+|-
+| [[File:FitzSpecial.png|50px]]
+| Fitz Special
+| $2400
+|-
+| [[File:N2524PatternRepeater.png|50px]]
+| N2524PatternRepeater
+| $4800
+|-
+| [[File:DoubleBarreledShotgun.png|50px]]
+| Double-barreled Shotgun
+| $4800
+|-
+| [[File:KnuckleDusters.png|50px]]
+| Knuckle Dusters
+| $120
+|-
+| [[File:SurvivalKnife.png|50px]]
+| Survival Knife
+| $240
+|-
+| [[File:SpeedLoader_35.png|50px]]
+| Speed Loader (.35 Pistol, Any)
+| $240
+|-
+| [[File:SpeedLoader_45.png|50px]]
+| Speed Loader (.45 Pistol, Any)
+| $240
+|-
+| [[File:AmmunitionBox_35.png|50px]]
+| Ammunition Box (.35 Pistol)
+| $240
+|-
+| [[File:AmmunitionBox_45.png|50px]]
+| Ammunition Box (.45 Pistol)
+| $240
+|-
+| [[File:AmmunitionBox_20.png|50px]]
+| Ammunition Box (.20 Rifle)
+| $240
+|-
+| [[File:AmmunitionBox.50b.png|50px]]
+| Ammunition Box (.50 Buckshot)
+| $240
+|-
+| [[File:AmmunitionBox.50.png|50px]]
+| Ammunition Box (.50 Buckshot)
+| $240
+|}
+</div>
+
+|-
+| style="text-align:center;" | [[File:MailDrobe.png|64px]]
+| style="text-align:center;" | MailDrobe
+| Neither solar flares nor meteors nor plasma fire nor void of space stays these couriers from the swift completion of their appointed rounds.
+| • Frontier Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/MailDrobe}}
+
+|-
+| style="text-align:center;" | [[File:MailVend.png|64px]]
+| style="text-align:center;" | MailVend
+| Make your thoughts known, send a letter today!
+| • Frontier Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/MailVend}}
+
+|-
+| style="text-align:center;" | [[File:MediDrobe.png|64px]]
+| style="text-align:center;" | MediDrobe
+| A vending machine rumoured to be capable of dispensing clothing for medical personnel.
+| • Medical Dispatch,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/MediDrobe}}
+
+|-
+| style="text-align:center;" | [[File:MegaSeedServitor.png|64px]]
+| style="text-align:center;" | MegaSeed Servitor
+| For when you need seeds fast. Hands down the best seed selection on the station!
+| • Tinnia's Rest<br>
+| {{:User:Herbtheon/Sandbox/Vendors/MegaSeedServitor}}
+
+|-
+| style="text-align:center;" | [[File:NFSDDrobe.png|64px]]
+| style="text-align:center;" | NFSDDrobe
+| A vending machine for NFSD and NFSD clothing!
+| • NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/NFSDDrobe}}
+
+|-
+| style="text-align:center;" | [[File:NFSDTech.png|64px]]
+| style="text-align:center;" | NFSDTech
+| A vending machine for NFSD and NFSD tech!
+| • NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/NFSDTech}}
+
+|-
+| style="text-align:center;" | [[File:NonLethalVend.png|64px]]
+| style="text-align:center;" | NonLethalVend
+| Try not to aim for the eyes!
+| • Expedtionary Lodge,<br>• NFSD Outpost,<br>• Frontier Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/NonLethalVend}}
+
+|-
+| style="text-align:center;" | [[File:NutriMax.png|64px]]
+| style="text-align:center;" | NutriMax
+| A vending machine containing nutritional substances for plants and botanical tools.
+| • Tinnia's Rest<br>
+| {{:User:Herbtheon/Sandbox/Vendors/NutriMax}}
+
+|-
+| style="text-align:center;" | [[File:PicknPackVend.png|64px]]
+| style="text-align:center;" | Pick-n-Pack Vend
+| Putting arms in your hands since 2549.
+| • Expeditionary Lodge<br>• NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/PicknPackVend}}
+
+|-
+| style="text-align:center;" | [[File:PottedPlantVend.png|64px]]
+| style="text-align:center;" | Plant-O-Matic
+| Description
+| • Medical Dispatch,<br>• Tinnia's Rest,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/PottedPlantVend}}
+
+|-
+| style="text-align:center;" | [[File:PrideoMat.png|64px]]
+| style="text-align:center;" | Pride-O-Mat
+| A vending machine containing pride.
+| • Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/PrideoMat}}
+
+|-
+| style="text-align:center;" | [[File:PTech.png|64px]]
+| style="text-align:center;" | PTech (Frontier Outpost)
+| PTech vending! Providing a ROBUST selection of PDAs, cartridges, and anything else a dull paper pusher needs!
+| • NFSD Outpost<br>
+| <div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! style="width:64px; text-align:center; white-space:nowrap;" class="unsortable" | Image
+! Product
+! Cost
+! Stock
+|-
+| [[File:ClearNFPDA.png|50px]]
+| Clear PDA
+| $100
+|-
+| [[File:ContractorPDA.png|50px]]
+| Contractor PDA
+| $100
+|-
+| [[File:PilotPDA.png|50px]]
+| Pilot PDA
+| $100
+|-
+| [[File:MercenaryPDA.png|50px]]
+| Mercenary PDA
+| $100
+|-
+| [[File:ContractorIDCard.png|50px]]
+| ID Card
+| $25
+|-
+| [[File:ClothingHeadsetGrey.png|50px]]
+| Passenger Headset
+| $50
+|-
+| [[File:RubberStampStc.png|50px]]
+| Station Traffic Controller's Rubber Stamp
+| $100
+| 3
+|-
+| [[File:RubberStampCaptain.png|50px]]
+| Captain's Rubber Stamp
+| $100
+|-
+| [[File:RubberStampApproved.png|50px]]
+| Approved Rubber Stamp
+| $100
+|-
+| [[File:RubberStampDenied.png|50px]]
+| Denied Rubber Stamp
+| $100
+|-
+| [[File:BoxPaper.png|50px]]
+| Paper Box
+| $50
+| 4
+|-
+| [[File:BoxPaperOffice.png|50px]]
+| Office Paper Box
+| $50
+| 4
+|-
+| [[File:BoxPaperCaptainsThoughts.png|50px]]
+| Captains Thoughts Paper Box
+| $50
+| 4
+|-
+| [[File:BoxEnvelope.png|50px]]
+| Envelope Box
+| $50
+| 4
+|-
+| [[File:BoxFolderClipboard.png|50px]]
+| Clipboard
+| $50
+| 3
+|-
+| [[File:BoxFolderSr.png|50px]]
+| SR Folder
+| $50
+| 3
+|-
+| [[File:BoxFolderBlue.png|50px]]
+| Folder
+| $50
+| 3
+|-
+| [[File:BoxFolderRed.png|50px]]
+| Folder
+| $50
+| 3
+|-
+| [[File:BoxFolderYellow.png|50px]]
+| Folder
+| $50
+| 3
+|-
+| [[File:HandLabeler.png|50px]]
+| Hand Labeler
+| $50
+|-
+| [[File:BrbSign.png|50px]]
+| BRB Sign
+| $50
+|-
+| [[File:DeskBell.png|50px]]
+| Desk Bell
+| $50
+|-
+| [[File:EncryptionKeyGreeting.png|50px]]
+| Greeting Encryption Key
+| $10
+|-
+| [[File:EncryptionKeySecurity.png|50px]]
+| Security Encryption Key
+| $10
+|-
+| [[File:EncryptionKeyService.png|50px]]
+| Service Encryption Key
+| $10
+|-
+| [[File:EncryptionKeyNfsd.png|50px]]
+| NFSD Encryption Key
+| $10
+| 5
+|-
+| [[File:EncryptionKeyCommand.png|50px]]
+| Command Encryption Key
+| $10
+| 5
+|-
+| [[File:AccessConfigurator.png|50px]]
+| Access Configurator
+| $100
+| 2
+|}
+</div>
+
+|-
+| style="text-align:center;" | [[File:PTech.png|64px]]
+| style="text-align:center;" | PTech (NFSDO)
+| PTech vending! Providing a ROBUST selection of PDAs, cartridges, and anything else a dull paper pusher needs!
+| • NFSD Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/PTechNFSD}}
+
+|-
+| style="text-align:center;" | [[File:pwrgame.png|64px]]
+| style="text-align:center;" | Pwr Game Vendor
+| You want it, we got it. Brought to you in partnership with Vlad's Salads
+| • Unknown<br>
+| {{:User:Herbtheon/Sandbox/Vendors/PWRGame}}
+
+|-
+| style="text-align:center;" | [[File:RobotechDeluxe.png|64px]]
+| style="text-align:center;" | Robotech Deluxe
+| All the tools you need to create your own robot army.
+| • Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/RobotechDeluxe}}
+
+|-
+| style="text-align:center;" | [[File:RobustSoftdrinks.png|64px]]
+| style="text-align:center;" | Robust Softdrinks
+| A softdrinik vendor provided by Robust Industries.
+| • Frontier Outpost (RDM)<br>
+| <div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! style="width:64px; text-align:center; white-space:nowrap;" class="unsortable" | Image
+! Product
+! Cost
+! Stock
+|-
+| [[File:DrinkColaCan.png|50px]]
+| Space Cola
+| $55
+| 5
+|-
+| [[File:DrinkGrapeCan.png|50px]]
+| Grade Soda Can
+| $55
+| 3
+|-
+| [[File:DrinkRootBeerCan.png|50px]]
+| Root Beer Can
+| $55
+| 3
+|-
+| [[File:DrinkIcedTeaCan.png|50px]]
+| Iced Tea Can
+| $55
+| 3
+|-
+| [[File:DrinkSolDryCan.png|50px]]
+| Sol Dry Can
+| $55
+| 3
+|-
+| [[File:DrinkLemonLimeCan.png|50px]]
+| Smite Can
+| $55
+| 3
+|-
+| [[File:DrinkLemonLimeCranberryCan.png|50px]]
+| Smite Cranberry Can
+| $55
+| 3
+|-
+| [[File:DrinkFourteenLokoCan.png|50px]]
+| Fourteen Loko Can
+| $55
+| 3
+|-
+| [[File:DrinkColaBottleFull.png|50px]]
+| [HIDDEN] Space Cola Bottle (Space Cola)
+| $200
+| 2
+|-
+| [[File:DrinkNukieCan.png|50px]]
+| [EMAG] Blood-red Brew Can
+| $55
+| 2
+|-
+| [[File:DrinkChangelingStingCan.png|50px]]
+| [EMAG] Changeling Sting Can
+| $55
+| 2
+|}
+</div>
+
+|-
+| style="text-align:center;" | [[File:SalvageVendor.png|64px]]
+| style="text-align:center;" | SalvageVendor
+| A dwarf's best friend!.
+| • Expeditionary Lodge,<br>• Frontier Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/SalvageVendor}}
+
+|-
+| style="text-align:center;" | [[File:SecTech.png|64px]]
+| style="text-align:center;" | SecTech
+| A vending machine containing Security equipment. A label reads SECURITY PERSONNEL ONLY.
+| • Frontier Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/SecTech}}
+
+|-
+| style="text-align:center;" | [[File:ShadyCigsDeluxe.png|64px]]
+| style="text-align:center;" | ShadyCigs Deluxe
+| If you want to get cancer, might as well do it in style.
+| • Crazy Casey's Casino,<br>• Expeditionary Lodge,<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• The Pit,<br>• Tinnia's Rest,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ShadyCigsDeluxe}}
+
+|-
+| style="text-align:center;" | [[File:ShamblersJuice.png|64px]]
+| style="text-align:center;" | Shambler's Juice Vendor
+| ~Shake me up some of that Shambler's Juice!
+| • Frontier Outpost RDM<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ShamblersJuice}}
+
+|-
+| style="text-align:center;" | [[File:CoffeeVend.png|64px]]
+| style="text-align:center;" | Solar's Best Hot Drinks
+| Served boiling so it stays hot all shift!
+| • Tinnia's Rest<br>
+| <div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! style="width:64px; text-align:center; white-space:nowrap;" class="unsortable" | Image
+! Product
+! Cost
+! Stock
+|-
+| [[File:DrinkHotCoffee.png|50px]]
+| Coffee
+| $45
+| 5
+|-
+| [[File:DrinkCafeLatte.png|50px]]
+| Coffee
+| $45
+| 5
+|-
+| [[File:DrinkTeacup.png|50px]]
+| Coffee
+| $45
+| 5
+|-
+| [[File:DrinkGreenTea.png|50px]]
+| Coffee
+| $45
+| 5
+|-
+| [[File:DrinkHotCoco.png|50px]]
+| Coffee
+| $45
+| 5
+|-
+| [[File:DrinkTeapot.png|50px]]
+| [HIDDEN] Teapot
+| $200
+| 2
+|-
+| [[File:DrinkNothing.png|50px]]
+| [EMAG] Metamorphic Glass
+| $200
+| 2
+|}
+</div>
+
+|-
+| style="text-align:center;" | [[File:SpaceUpVendor.png|64px]]
+| style="text-align:center;" | Space-Up! Vendor
+| Indulge in an explosion of flavor.
+| • Frontier Outpost RDM<br>
+| {{:User:Herbtheon/Sandbox/Vendors/SpaceUp}}
+
+|-
+| style="text-align:center;" | [[File:Threadschoom.png|64px]]
+| style="text-align:center;" | Threadschoom
+| A vandalized ClothesMate.
+| • Trade Mall (RDM)<br>
+| <div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! style="width:64px; text-align:center; white-space:nowrap;" class="unsortable" | Image
+! Product
+! Cost
+! Stock
+|-
+| [[File:Placeholder_Item.png|50px]]
+| Product Name
+| Price
+| Max In-Stock
+|-
+| [[File:ClothingEyesPunkGoggles.png|50px]]
+| Punk Goggles
+| $1,350
+| 6
+|-
+| [[File:ClothignEyesPunkInfoShades.png|50px]]
+| Punk Infoshades
+| $300
+| 3
+|-
+| [[File:ClothingUniformRandomPunkCroptop.png|50px]]
+| Punk Croptop Jumpsuit
+| $100
+| 12
+|-
+| [[File:ClothingUniformRandomPunkTanktop.png|50px]]
+| Punk Tanktop Jumpsuit
+| $100
+| 8
+|-
+| [[File:ClothingUniformRandomArmlessNoSkirt.png|50px]]
+| Colorful Armless Jumpsuit
+| $100
+| 6
+|-
+| [[File:ClothingUniformRandomPunkPantsOnly.png|50px]]
+| Punk Pants
+| $100
+| 6
+|-
+| [[File:ClothingUniformRandomPunkShortsOnly.png|50px]]
+| Punk Shorts
+| $100
+| 6
+|-
+| [[File:ClothingBeltPunkRandomized.png|50px]]
+| Punk Belt
+| $200
+| 6
+|-
+| [[File:ClothingMaskBalaclavaRandom.png|50px]]
+| Punk Balaclava
+| $250
+| 6
+|-
+| [[File:NFPouchPunk.png|50px]]
+| Punk Pouch
+| $500
+| 6
+|-
+| [[File:ClothingShoesBootsPunkRandomized.png|50px]]
+| Punk Boots
+| $100
+| 6
+|-
+| [[File:ClothingOuterArmorPunkRandomized.png|50px]]
+| Punk Armor
+| $350
+| 4
+|-
+| [[File:ClothingOuterArmorPunkGreen.png|50px]]
+| Punk Armor
+| $350
+| 2
+|-
+| [[File:ClothingOuterArmorPunkOrange.png|50px]]
+| Punk Armor
+| $350
+| 2
+|-
+| [[File:ClothingOuterArmorPunkRed.png|50px]]
+| Punk Armor
+| $350
+| 2
+|-
+| [[File:HoloGraffitiProjector.png|50px]]
+| Holograffiti Projector
+| $800
+| 4
+|}
+</div>
+
+|-
+| style="text-align:center;" | [[File:ValetDrobe.png|64px]]
+| style="text-align:center;" | ValetDrobe
+| Assist others in style! Dress in top-top shape for tip-top tips!
+| • Frontier Outpost<br>
+| {{:User:Herbtheon/Sandbox/Vendors/ValetDrobe}}
+
+|-
+| style="text-align:center;" | [[File:Vendomat.png|64px]]
+| style="text-align:center;" | Vendomat
+| Only the finest robust equipment in space!
+| • Expeditionary Lodge<br>• Edison Power Plant<br>• Frontier Outpost,<br>• NFSD Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/Vendomat}}
+
+|-
+| style="text-align:center;" | [[File:WinterDrobe.png|64px]]
+| style="text-align:center;" | WinterDrobe
+| The best place to enjoy the cold!
+| • Expeditionary Lodge,<br>• Trade Mall (RDM)<br>
+| {{:User:Herbtheon/Sandbox/Vendors/WinterDrobe}}
+
+|-
+| style="text-align:center;" | [[File:YarrrDrobe.png|64px]]
+| style="text-align:center;" | YarrrDrobe
+| Description
+| • Unknown<br>
+| {{:User:Herbtheon/Sandbox/Vendors/YarrrDrobe}}
+
+|-
+| style="text-align:center;" | [[File:YouTool.png|64px]]
+| style="text-align:center;" | YouTool
+| A vending machine containing standard tools. A label reads: Tools for tools.
+| • Expeditionary Lodge<br>• Edison Power Plant<br>• Frontier Outpost,<br>• Medical Dispatch,<br>• NFSD Outpost,<br>• Trade Mall<br>
+| {{:User:Herbtheon/Sandbox/Vendors/YouTool}}
+
+|-
+| style="text-align:center;" | [[File:Placeholder_Vend.png|64px]]
+| style="text-align:center;" | Vend
+| Description
+| • Location,<br>
+| {{:User:Herbtheon/Sandbox/Vendors/Placeholder_Vend}}
+</div>
+
+|}

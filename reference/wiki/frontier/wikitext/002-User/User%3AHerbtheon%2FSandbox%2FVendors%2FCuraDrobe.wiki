@@ -1,0 +1,36 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:BooksBag.png|50px]] || Book Bag || $200 || 2
+|-
+| [[File:BriefcaseBrown.png|50px]] || Brown Briefcase || $200 || 2
+|-
+| [[File:HandLabeler.png|50px]] || Hand Labeler || $100 || 2
+|-
+| [[File:Cane.png|50px]] || Cane || $200 || 3
+|-
+| [[File:ClothingEyesGlasses.png|50px]] || Glasses || $100 || 2
+|-
+| [[File:ClothingEyesGlassesJamjar.png|50px]] || Jamjar Glasses || $100 || 2
+|-
+| [[File:ClothingNeckScarfStripedGreen.png|50px]] || Striped Green Scarf || $100 || 2
+|-
+| [[File:ClothingUniformJumpsuitCurator.png|50px]] || Sensible Suit || $100 || 3
+|-
+| [[File:ClothingUniformJumpskirtCurator.png|50px]] || Sensible Skirt || $100 || 3
+|-
+| [[File:ClothingUniformJumpsuitLibrarian.png|50px]] || Librarian Jumpsuit || $100 || 3
+|-
+| [[File:ClothingUniformJumpskirtLibrarian.png|50px]] || Librarian Jumpskirt || $100 || 3
+|-
+| [[File:ClothingShoesBootsLaceup.png|50px]] || Laceup Shoes || $100 || 2
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineLibrarian.png|50px]]
+| style="background-color:#383838;" | Librarian Figure
+| style="background-color:#383838;" | $750
+| style="background-color:#383838;" | 1
+|}
+</div>
+</includeonly>

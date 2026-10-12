@@ -1,0 +1,2 @@
+== Summary ==
+base sprite of the Mk58 pistol

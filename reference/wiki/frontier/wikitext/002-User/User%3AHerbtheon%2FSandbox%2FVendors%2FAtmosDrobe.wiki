@@ -1,0 +1,40 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ClothingBackpackDuffelAtmospherics.png|50px]] || Atmospherics Duffel Bag || $100 || 2
+|-
+| [[File:ClothingBackpackSatchelAtmospherics.png|50px]] || Atmospherics Satchel || $100 || 2
+|-
+| [[File:ClothingBackpackAtmospherics.png|50px]] || Atmospherics Backpack || $100 || 2
+|-
+| [[File:ClothingBackpackMessengerAtmospherics.png|50px]] || Atmospherics Messenger Bag || $100 || 2
+|-
+| [[File:ClothingUniformJumpsuitAtmos.png|50px]] || Atmospheric Technician Jumpsuit || $100 || 3
+|-
+| [[File:ClothingUniformJumpskirtAtmos.png|50px]] || Atmospheric Technician Jumpskirt || $100 || 3
+|-
+| [[File:ClothingUniformJumpsuitAtmosCasual.png|50px]] || Atmospheric Technician's Casual Jumpsuit || $100 || 3
+|-
+| [[File:ClothingShoesColorWhite.png|50px]] || White Shoes || $100 || 3
+|-
+| [[File:ClothingHeadsetEngineering.png|50px]] || Engineering Headset || $100 || 2
+|-
+| [[File:ClothingHeadHelmetFire.png|50px]] || Fire Helmet || $100 || 2
+|-
+| [[File:ClothingOuterSuitFire.png|50px]] || Fire Suit || $300 || 2
+|-
+| [[File:ClothingOuterWinterAtmos.png|50px]] || Atmospherics Winter Coat || $500 || 2
+|-
+| [[File:ClothingNeckScarfStripedLightBlue.png|50px]] || Striped Light Blue Scarf || $100 || 3
+|-
+| [[File:ClothingShoesWinterAtmos.png|50px]] || Atmospherics Winter Boots || $100 || 2
+|-
+| style="background-color:#383838;" | [[File:ToyFigurineAtmosTech.png|50px]]
+| style="background-color:#383838;" | Atmospherics Technician Figure
+| style="background-color:#383838;" | $750
+| style="background-color:#383838;" | 1
+|}
+</div>
+</includeonly>

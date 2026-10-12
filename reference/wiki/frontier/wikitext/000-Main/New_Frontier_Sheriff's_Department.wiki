@@ -1,0 +1,26 @@
+Introducing the New Frontier Sheriff's Department (NFSD)—a pivotal force in maintaining order within the expansive Frontier Sector. Aligned with NanoTrasen Corp, this dedicated group serves as the peacekeepers overseeing the vast cosmic territories.
+
+At the forefront is the Sheriff, overseeing responsibilities ranging from solving interstellar crimes to ensuring the overall safety of the denizens within the sector. What sets NFSD apart is its distinctive structure—eschewing traditional departmental frameworks, the Frontier Sector designates a single Sheriff to manage both judicial and criminal matters, seamlessly adapting to the dynamic environment of the cosmic frontier.
+
+In close collaboration with Central Command and NanoTrasen, NFSD embodies the principles of exploration and adaptation. This isn't your standard assignment; it's about navigating the unknown while staying true to NanoTrasen's fundamental values.
+
+Whether patrolling the far reaches, mediating disputes, or responding to emergencies, NFSD remains a critical presence in maintaining order throughout the expansive Frontier Sector. For a comprehensive list of various laws an regulations NFSD enforces check out [[Space Law]].
+
+In addition to the Sheriff, the New Frontier Sheriff's Department (NFSD) comprises a diverse team of skilled individuals, each with distinct roles vital to maintaining order within the expansive Frontier Sector:
+
+=== '''Sergeant:''' ===
+Serving as the Sheriff's Second in Command, the Sergeant is a linchpin in the NFSD hierarchy. They support the Sheriff in strategic decision-making and assist in overseeing the operations of the department.
+
+=== '''Bailiff:''' ===
+Tasked with a multifaceted role, the Bailiff shoulders responsibilities such as safeguarding the armory, securing the brig, protecting ships, ensuring adherence to Space Law by fellow officers, managing the security department, overseeing individuals within the prison, and maintaining order when chaos ensues. Their duties extend to cleaning up after other officers and ensuring prisoners are not left unattended, even as the station gears up for defense.
+
+=== '''Detective:''' ===
+Tasked with investigating crimes, the Detective plays a crucial role in unraveling mysteries and ensuring justice is served. Their keen investigative skills contribute to maintaining the integrity of the NFSD.
+
+=== '''Brigmedic:''' ===
+Responsible for all medical matters within the NFSD, the Brigmedic ensures the health and well-being of individuals in custody. Their role extends to managing medical situations within the department, adding a vital layer to the NFSD's operational capabilities.
+
+=== '''Deputy:''' ===
+Taking on the role of patrolling on and around Frontier Station, the Deputy is the guardian on the front lines. Their duties include protecting the station from mischievous and sinister individuals, as well as piloting smaller ships from the NFSD shipyard to maintain security in the cosmic expanse.
+
+This diverse team collectively forms the backbone of the NFSD, ensuring a comprehensive and effective approach to upholding justice and order throughout the expansive Frontier Sector.

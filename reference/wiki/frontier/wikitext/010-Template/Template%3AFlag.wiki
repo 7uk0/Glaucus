@@ -1,0 +1,4 @@
+<includeonly><!--
+--><span class="country-flag" title="{{{2|}}}">{{#if: {{{1|}}} | [[File:Flag {{{1|}}}.svg|x20px|link=]] | }}</span><!--
+--></includeonly><!--
+--><noinclude>{{doc}}[[Category:Formatting templates]]</noinclude>

@@ -1,0 +1,69 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Bioluminescent Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || RD's Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Plastic Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Plastic Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Plastic Potted Plant || $500 || 6
+|-
+| [[File:Placeholder.png|50px]] || Plastic Potted Plant || $500 || 6
+|}
+</div>
+</includeonly>

@@ -1,0 +1,63 @@
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Topic",
+			"description": "The topic the following pages are about.",
+			"example": "more information",
+			"type": "line",
+			"required": true
+		},
+		"2": {
+			"label": "Related Page",
+			"description": "A related page.",
+			"example": "Related Page",
+			"type": "wiki-page-name",
+			"required": true
+		},
+		"3": {
+			"label": "Second Page",
+			"description": "A second related page.",
+			"example": "Second Related Page",
+			"type": "wiki-page-name"
+		},
+		"4": {
+			"label": "Third Page",
+			"description": "A third related page.",
+			"example": "Third Related Page",
+			"type": "wiki-page-name"
+		}
+	},
+	"description": "This hatnote template is meant to be used to show pages related to a topic the reader might want to visit.",
+	"paramOrder": [
+		"1",
+		"2",
+		"3",
+		"4"
+	],
+	"format": "inline"
+}
+</templatedata>
+
+== Examples ==
+{| class="wikitable"
+! Code !! Result
+|-
+| <code><nowiki>{{For|more information|Special:WantedPages}}</nowiki></code> || {{For|more information|Special:WantedPages}}
+|-
+| <code><nowiki>{{For|more information|Special:WantedPages|Special:UncategorizedPages}}</nowiki></code> || {{For|more information|Special:WantedPages|Special:UncategorizedPages}}
+|-
+| <code><nowiki>{{For|more information|Special:WantedPages|Special:UncategorizedPages|Special:UncategorizedCategories}}</nowiki></code> || {{For|more information|Special:WantedPages|Special:UncategorizedPages|Special:UncategorizedCategories}}
+|-
+| <code><nowiki>{{For|more information|Special:WantedPages{{!}}Page 1}}</nowiki></code> (Custom link label) || {{For|more information|Special:WantedPages{{!}}Page 1}}
+|}
+
+== Dependencies ==
+For this template to work properly, you need the following:
+* The {{tl|Hatnote}} base template.
+* The <code>.hatnote</code> class, found in [[MediaWiki:Common.css]].
+
+== Source ==
+Roughly based on [[wikipedia:Template:For|Wikipedia's For Template]].
+
+<noinclude>[[Category:Template documentation]]</noinclude>

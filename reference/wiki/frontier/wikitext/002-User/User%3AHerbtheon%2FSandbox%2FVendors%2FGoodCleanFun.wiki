@@ -1,0 +1,54 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:DiceBag.png|50px]] || Bag of Dice || $200 || 6
+|-
+| [[File:Paper.png|50px]] || Paper || $200 || 80
+|-
+| [[File:d6Dice.png|50px]] || D6 || $200 || 8
+|-
+| [[File:ChessBoard.png|50px]] || Chessboard || $200 || 2
+|-
+| [[File:BackgammonBoard.png|50px]] || Backgammon Board || $200 || 2
+|-
+| [[File:ParchisBoard.png|50px]] || Parchís Board || $200 || 2
+|-
+| [[File:CheckerBoard.png|50px]] || Checkerboard || $200 || 2
+|-
+| [[File:ShipBattlemap.png|50px]] || Ship Battlemap || $200 || 2
+|-
+| [[File:SnowBattlemap.png|50px]] || Snow Battlemap || $200 || 2
+|-
+| [[File:SandBattlemap.png|50px]] || Sand Battlemap || $200 || 2
+|-
+| [[File:MoonBattlemap.png|50px]] || Moon Battlemap || $200 || 2
+|-
+| [[File:GrassBattlemap.png|50px]] || Grass Battlemap || $200 || 2
+|-
+| [[File:PaperCNCSheet.png|50px]] || Character Sheet || $200 || 6
+|-
+| [[File:MysteryFigureBox.png|50px]] || Mystery Spaceman Minifigure Box || $200 || 5
+|-
+| [[File:BooksBag.png|50px]] || Book Bag || $200 || 3
+|-
+| [[File:CardBoxBlack.png|50px]] || Black Deck Box || $2,000 || 5
+|-
+| style="background-color:#383838;" | [[File:Basketball.png|50px]]
+| style="background-color:#383838;" | Basketball
+| style="background-color:#383838;" | $200
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#383838;" | [[File:DrinkSpaceMountainWindCan.png|50px]]
+| style="background-color:#383838;" | Space Solar Wind Can
+| style="background-color:#383838;" | $55
+| style="background-color:#383838;" | 3
+|-
+| style="background-color:#383838;" | [[File:CardBoxNanotrasen.png|50px]]
+| style="background-color:#383838;" | Nanotrasen Deck Box
+| style="background-color:#383838;" | $2,000
+| style="background-color:#383838;" | 1
+|}
+</div>
+</includeonly>

@@ -1,0 +1,14 @@
+This formatting template allows you to display country flags inline.
+
+Available country flags can be seen in [[dev:Category:Country_flags|our Commons Wiki]].
+== Usage ==
+The template can be used with the following formatting: <code><nowiki>{{flag|code|Legend}}</nowiki></code>, where:
+* <code>code</code> is the [[wikipedia:ISO 3166-1 alpha-2|ISO 3166-1 alpha-2]] code for the country flag.
+* <code>Legend</code> is the legend displayed on hover (optional).
+== Examples ==
+{| class="wikitable"
+! Code !! Result
+|-
+| <code><nowiki>{{flag|ca|Canada}}</nowiki></code> || {{flag|ca|Canada}}
+|}
+<noinclude>[[Category:Template documentation]]</noinclude>

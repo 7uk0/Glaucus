@@ -1,0 +1,30 @@
+<includeonly><!--
+-->{{#vardefine:text|<!-- start vd
+   -->{{#if:{{{text|}}} | {{{text}}} |<!-- start top if
+      
+   -->{{#if:{{{2|}}}<!-- if more than one page
+      
+      -->|[[{{{1}}}]]{{#if:{{{3|}}}<!-- start concat if
+         
+         -->|, [[{{{2}}}]] or [[{{{3}}}]]<!-- concat two
+            
+         -->|<nowiki> </nowiki>or [[{{{2}}}]]<!-- else; concat one
+            
+      -->}}<!-- end concat if
+         
+      -->|[[{{{1}}}]]<!-- else; one page only
+         
+   -->}}<!-- end custom disambig if
+      
+   -->}}<!-- end if
+-->}}<!-- end vd
+
+-->{{Hatnote|<!--
+
+   -->Not to be confused with {{#var:text}}.<!-- 
+   
+-->}}<!-- 
+
+--></includeonly><!-- 
+
+--><noinclude>{{doc}}[[Category:Hatnote templates]]</noinclude>

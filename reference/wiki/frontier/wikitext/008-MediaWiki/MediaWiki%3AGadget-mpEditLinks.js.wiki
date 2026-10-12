@@ -1,0 +1,43 @@
+$( function () {
+    if(!document.getElementById('mp-container')) return;
+    
+    var rootpage = document.getElementById('mp-container').dataset['rootpage']; // Get the rootpage passed from the main page module, so we don't need to make an API call
+
+	/* generate the links here instead of in the wikitext, so that users who can't see them don't have them
+	* in the DOM at all, and screenreaders and search engines don't get confused */
+    function createLinks(){
+        $('.mp-box').each(function(_, el){
+        	var params = '?action=edit';
+        	
+        	// only add the long preload stuff if the box doesn't exist, for prettier urls
+        	if ( $(el).hasClass('missing') ){
+        		// ignore the "Missing ; before statement" error on the next line, I have no idea what it's on about and it still works
+        		params += '&preload=Template:Main page box/preload&preloadparams[0]={{subst:' + 'SUBPAGENAME}}' /* subst:subpagename is broken up here so it doesn't resolve as this JS page */
+        	}
+        	
+            $('<a></a>', {
+                href: mw.util.getUrl(rootpage + '/' + el.dataset['boxId']) + params,
+                text: 'Edit ' + rootpage + '/' + el.dataset['boxId']
+            }).appendTo(
+                $('<div></div>', {
+                    class: 'mp-edit-link'
+                }).prependTo(el)
+            );
+        });
+    }
+
+    function toggleLinks(){
+        $('.mp-edit-link').each(function(_, el){
+            $(el).toggle().css('display none;');
+        });
+    }
+
+    $('<span></span>', {
+        text: 'Toggle edit buttons',
+        class: 'mp-edit-toggle',
+        on: {click: toggleLinks},
+    }).appendTo($('#top'));
+
+    createLinks();
+
+});

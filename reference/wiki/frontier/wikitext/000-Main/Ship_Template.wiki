@@ -1,0 +1,29 @@
+= Description =
+  "This is what can be read in game about the ship"
+                                            -The Shipyard
+
+{| class="wikitable"
+| rowspan="7" |[[File:ShipName.png|left|frameless]]
+!Ship Size
+|Small/Medium/Large
+|-
+!Recommended Crew
+|#-#
+|-
+!Cost
+|$000000
+|-
+!Power Gen Type
+|Plasma/Uranium/Solar/AME/Radiation
+|-
+!Expeditions
+|No/Yes (If yes, needs to be in the Lodge table)
+|-
+!IFF Console
+|No/Yes/Advanced
+|-
+!Available Roles (Player Jobs)
+|Atmos Tech, Bartender, Botanist, C.M.O, Chaplain, Chef, Chemist, Clown, Cyborg, Doctor, Engineer, Janitor, Janitor, Lawyer, Mercenary, Musician, Paramedic, Passenger, Q.M, R.D, Reporter, Scientist, Service Worker, Salvage
+|}
+
+Back to the [[Shipyard]]

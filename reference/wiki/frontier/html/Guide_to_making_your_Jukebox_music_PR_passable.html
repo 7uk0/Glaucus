@@ -1,0 +1,27 @@
+<!-- Guide to making your Jukebox music PR passable rev 610 2025-07-21T22:41:08Z -->
+<div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><p>To start. This guide assumes you already have a Frontier Dev environment set up. On guides how to do that - ask for assistance in Discord <a rel="nofollow" class="external text" href="https://discord.com/channels/1123826877245694004/1127687656084611214">#development</a> channel.
+</p><p>Now. Let’s start.
+</p><p>Before going into coding in anything - you need to find music to add (unless you already have something in mind). BUT. It must be free to use under Creative Commons license (generally it’s <a rel="nofollow" class="external text" href="https://creativecommons.org/share-your-work/cclicenses/">CC-BY-3.0 or CC-BY-4.0</a>). Make sure music is clearly labeled and it is free to use, store and distribute. You may use any archive of free music or sites such as <a rel="nofollow" class="external text" href="https://soundcloud.com/">Soundcloud</a> or <a rel="nofollow" class="external text" href="https://freemusicarchive.org/">Free Music Archive</a> <br />
+</p><p><b>N.B.:</b> do note. Royalty free not necessary means free to use. Also ‘personal licenses’ or ‘internal guidelines’ (such as Runescape) are not covered. It needs explicitly be under CC with permission to store, playback, etc.<br />
+</p><p>Done that, download music (do note, if there is no easy way to download and you need to use some tool to rip it from a website - something is wrong) and then convert into mono OGG format. Easiest way to do so is to use <a rel="nofollow" class="external text" href="https://www.audacityteam.org/">Audacity</a><br />
+</p><p>And now finally you can start coding.
+</p><p>For starters drop your audio file into <b>Resources/Audio/_NF/Jukebox/</b>
+</p><p>After that go to the file <b>Resources/Audio/_NF/Jukebox/attributions.yml</b> (same folder) and add attributions in the format as below
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:516px;"><a href="/wiki/File:Jb_attributions.png" class="image"><img alt="Jb attributions.png" src="/images/Jb_attributions.png?4f1cff" decoding="async" loading="lazy" width="514" height="88" class="thumbimage" data-file-width="514" data-file-height="88" /></a>  <div class="thumbcaption"></div></div></div></div>
+<p><b>files</b> - It MUST contain correct and full name of the file<br />
+</p><p><b>license</b> - type of license used (consult <a rel="nofollow" class="external text" href="https://github.com/space-wizards/RobustToolbox/blob/01f71ca55ad1620b5b7f747d1801b468a21ef2b4/Schemas/rga_validators.py#L4">this block</a> for correct formatting\naming)<br />
+</p><p><b>copyright</b> - name of the track and by whom. As addition - add what has been changed (as example on screenshot it was converted to mono OGG)<br />
+</p><p><b>source</b> - proper link where you found it. Do not provide a direct download link, it is so we can verify music is correctly licensed and people can check out author(s) using it.<br />
+</p><p><br />
+Next, go to <b>Resources/Prototypes/_NF/Catalog/Jukebox/Standard.yml</b>
+Here we essentially add your track to the Jukebox
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:400px;"><a href="/wiki/File:Jb_standard.png" class="image"><img alt="Jb standard.png" src="/images/Jb_standard.png?2829f3" decoding="async" loading="lazy" width="398" height="106" class="thumbimage" data-file-width="398" data-file-height="106" /></a>  <div class="thumbcaption"></div></div></div></div>
+<p><b>type</b> - where we add it (jukebox, duh!)<br />
+</p><p><b>id</b> - identifier for your track. Must be unique, but please not track1, track2, etc<br />
+</p><p><b>name</b> - how it will show up in the Jukebox. Please follow Author - Song Name format<br />
+</p><p><b>path</b> - path to your file you’ve uploaded earlier<br />
+</p><p><br />
+And this is pretty much it. Now the important part - you <b>MUST</b> load into your Dev environment and check that the song you’ve just added is actually there, that it correctly plays, etc. Only after that you can either proceed with adding the next song or making PR for review. As a personal note - do not do more than 1 song at the time (as in - upload and check) and do not try to add the whole album. Add it in a way that you feel Jukebox listeners would be glad to have it.
+</p></div>

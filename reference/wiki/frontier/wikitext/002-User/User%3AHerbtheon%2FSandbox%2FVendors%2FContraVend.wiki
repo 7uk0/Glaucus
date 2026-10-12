@@ -1,0 +1,221 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost
+|-
+| [[File:Placeholder.png|50px]] || Kardashev-Mosin || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Energy Dagger || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Advanced Circular Saw || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Viper || 3 TC
+|-
+| [[File:Placeholder.png|50px]] || C.H.I.M.P Handcannon Upgrade Chip || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Combat Bakery Kit || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Ritland-45 || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Cobra || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Fake Cap Gun || 5 TC
+|-
+| [[File:Placeholder.png|50px]] || Cane Blade || 5 TC
+|-
+| [[File:Placeholder.png|50px]] || Rigged Boxing Gloves || 6 TC
+|-
+| [[File:Placeholder.png|50px]] || Throwing Knives Kit || 6 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Knuckle Dusters || 6 TC
+|-
+| [[File:Placeholder.png|50px]] || Energy Sword || 8 TC
+|-
+| [[File:Placeholder.png|50px]] || Gloves of the North Star || 8 TC
+|-
+| [[File:Placeholder.png|50px]] || Packet of Gatfruit Seeds || 10 TC
+|-
+| [[File:Placeholder.png|50px]] || Rickenbacker 4001 || 10 TC
+|-
+| [[File:Placeholder.png|50px]] || Kanabou || 10 TC
+|-
+| [[File:Placeholder.png|50px]] || Sniper Bundle || 12 TC
+|-
+| [[File:Placeholder.png|50px]] || C-20r Bundle || 17 TC
+|-
+| [[File:Placeholder.png|50px]] || Bulldog Bundle || 20 TC
+|-
+| [[File:Placeholder.png|50px]] || EMP China-Lake Bundle || 25 TC
+|-
+| [[File:Placeholder.png|50px]] || LMG-6 Bundle || 30 TC
+|-
+| [[File:Placeholder.png|50px]] || Ammunition Box (.30 Rifle) || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Pistol Magazine (.35 auto) || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Cobra .45 Pistol Magazine || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || SMG Magazine (.35 auto) || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Ammunition Box (.60 Antimateriel) || 2 TC <!-- Yeah it's named Antimateriel -->
+|-
+| [[File:Placeholder.png|50px]] || .45 Pistol Speed Loader || 3 TC
+|-
+| [[File:Placeholder.png|50px]] || Flashbang || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Smoke Grenade || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || EMP Grenade || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Incendiary Grenade || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Shrapnel Grenade || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Electrical Disruptor Kit || 6 TC
+|-
+| [[File:Placeholder.png|50px]] || Shoulder Holster || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Chest Rig || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Black Jetpack || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Voice Mask || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || No-slip Shoes || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Backpack || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Conducting Gloves || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate EVA Bundle || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Web Vest || 3 TC
+|-
+| [[File:Placeholder.png|50px]] || Blood-red Magboots || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Chameleon Kit || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Carp Hardsuit || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Elite Web Vest || 5 TC
+|-
+| [[File:Placeholder.png|50px]] || Chameleon Thieving Gloves || 5 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Samurai Armor Bundle || 6 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Hardsuit || 8 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Smokes Packet || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Hypodart || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Hyperzine Injector || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Chemical Synthesis Kit || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Combat Medipen || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Combat Medical Kit || 5 TC
+|-
+| [[File:Placeholder.png|50px]] || Nocturine Bottle || 6 TC
+|-
+| [[File:Placeholder.png|50px]] || Hypopen || 6 TC
+|-
+| [[File:Placeholder.png|50px]] || Hyperzine Injector Kit || 12 TC
+|-
+| [[File:Placeholder.png|50px]] || Binary Translator Key || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Decoy Nuclear Disk || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Extra-Bright Lantern || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Encryption Keys || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Agent ID Card || 3 TC
+|-
+| [[File:Placeholder.png|50px]] || Lobbying Bundle || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Stealth Box || 5 TC
+|-
+| [[File:Placeholder.png|50px]] || Decoy Kit || 6 TC
+|-
+| [[File:Placeholder.png|50px]] || Chameleon Projector || 7 TC
+|-
+| [[File:Placeholder.png|50px]] || Cybersun Pen || 8 TC
+|-
+| [[File:Placeholder.png|50px]] || Soap || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Toolbox || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Slipocalypse Clustersoap || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Jaws of Life || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Radio Jammer || 3 TC
+|-
+| [[File:Placeholder.png|50px]] || Access Breaker || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Camera Bug || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Disposable Emag || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Singularity Beacon || 12 TC
+|-
+| [[File:Placeholder.png|50px]] || Surplus Crate || 35 TC
+|-
+| [[File:Placeholder.png|50px]] || EMP Implanter || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Radio Implanter || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Fake Mindshield || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Freedom Implanter || 5 TC
+|-
+| [[File:Placeholder.png|50px]] || DNA Scrambler Implanter || 5 TC
+|-
+| [[File:Placeholder.png|50px]] || Storage Implanter || 8 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Personal AI Device || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Dehydrated Space Carp || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Holoparasite Kit || 14 TC
+|-
+| [[File:Placeholder.png|50px]] || Holoclown Kit || 14 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Business Card || Free
+|-
+| [[File:Placeholder.png|50px]] || Contra SpaceBlade || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Striped Syndicate Green Scarf || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Operative Jumpskirt || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Barber Scissors || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Striped Syndicate Red Scarf || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Outlaw Glasses || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Outlaw Hat || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Operative Jumpsuit || 1 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Rubber Stamp || 2 TC
+|-
+| [[File:Placeholder.png|50px]] || Carp Suit Duffel Bag || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Cap Gun || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Pyjama Duffel Bag || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Deck Box || 4 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndie Balloon || 20 TC
+|-
+| [[File:Placeholder.png|50px]] || Syndicate Segway || 25 TC
+|-
+| [[File:Placeholder.png|50px]] || Cat Ears || 26 TC
+|}
+</div>
+</includeonly>

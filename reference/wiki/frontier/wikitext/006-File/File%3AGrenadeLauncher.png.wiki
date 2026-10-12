@@ -1,0 +1,2 @@
+== Summary ==
+Base sprite of the GP-40 Grenade launcher

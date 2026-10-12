@@ -1,0 +1,106 @@
+.ranger-navbox{
+  --navbox-background: none; /* for entire navbox */
+  --navbox-margin: 0.5em auto;
+  --navbox-padding: 4px;
+  --navbox-gap: 3px; /* when using zero-value, it must be 0px */
+  --navbox-outer-border-color: var(--wiki-content-border-color--accent);
+  --navbox-outer-border-width: 1px;
+  --navbox-outer-border-style: solid;
+  --navbox-outer-border-radius: 0px;
+  --navbox-font-size: calc(1em - 2px);
+  --navbox-title-color: var(--wiki-accent-label-color);
+  --navbox-title-font-size: calc(125%);
+  --navbox-title-background: var(--wiki-accent-color);
+  --navbox-title-icon-color: var(--wiki-accent-label-color);
+  --navbox-title-link-color: var(--navbox-title-color);
+  --navbox-title-link-color--visited: var(--navbox-title-link-color);
+  --navbox-title-link-color--hover: var(--wiki-accent-link-color);
+  --navbox-title-redlink-color: var(--navbox-title-link-color);
+  --navbox-title-link-decoration: underline solid;
+  --navbox-title-redlink-decoration: underline wavy;
+  --navbox-title-padding--y: 0.5em;
+  --navbox-above-background: color-mix(in srgb, var(--wiki-content-text-color) 15%, transparent);
+  --navbox-above-color: var(--wiki-content-text-color);
+  --navbox-above-padding: var(--navbox-list-padding);
+  --navbox-below-background: var(--navbox-above-background);
+  --navbox-below-color: var(--navbox-above-color);
+  --navbox-below-padding: var(--navbox-above-padding);
+  --navbox-header-color: var(--navbox-title-color);
+  --navbox-header-font-size: calc(110%);
+  --navbox-header-background: var(--navbox-title-background);
+  --navbox-header-icon-color: var(--navbox-title-icon-color);
+  --navbox-header-link-color: var(--navbox-title-link-color);
+  --navbox-header-link-color--visited: var(--navbox-title-link-color--visited);
+  --navbox-header-link-color--hover: var(--navbox-title-link-color--hover);
+  --navbox-header-redlink-color: var(--navbox-title-redlink-color);
+  --navbox-header-link-decoration: var(--navbox-title-link-decoration);
+  --navbox-header-redlink-decoration: var(--navbox-title-redlink-decoration);
+  --navbox-header-padding--y: 0.3em;
+  --navbox-subheader-font-size: calc(100%);
+  --navbox-subheader-padding--y: calc(var(--navbox-header-padding--y)/2);
+  --navbox-list-background: color-mix(in srgb, var(--wiki-content-text-color) 5%, transparent);
+  --navbox-list-background--striped: color-mix(in srgb, var(--wiki-content-text-color) 8%, transparent);
+  --navbox-list-color: var(--wiki-content-text-color);
+  --navbox-list-padding: 0.25em 0.5em;
+  /* --navbox-group-* also apply to .ranger-subgroup */
+  --navbox-group-text-align: left;
+  --navbox-group-text-align--mobile: left; /* only for mobile view */
+  --navbox-group-background: color-mix(in srgb, var(--wiki-accent-color) 20%, transparent);
+  --navbox-group-color: var(--wiki-content-text-color);
+  --navbox-group-padding: var(--navbox-list-padding);
+  --navbox-tree-line-color: color-mix(in srgb, var(--wiki-accent-color) 30%, transparent);
+  --navbox-tree-line-width: 2px;
+  --navbox-tree-indent: 1em;
+  --navbox-tree-line-indent: 0.5em;
+  --navbox-tree-line-spacing: var(--navbox-gap);
+  --icon-chevron-down: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevron-down' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M6 9l6 6l6 -6'%3E%3C/path%3E%3C/svg%3E");
+  --icon-metalinks: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-edit' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1'%3E%3C/path%3E%3Cpath d='M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z'%3E%3C/path%3E%3Cpath d='M16 5l3 3'%3E%3C/path%3E%3C/svg%3E");
+  --navbox-icon-offset--x: 0.5rem; /* should be an absolute length (rem-based or px-based) */
+}
+.ranger-navbox.pill, 
+.ranger-navbox.pill-mobile{
+  /** vars for the "pill" style only (`.pill` and ".pill-mobile" clases) **/
+  --navbox-pill-gap: 0.3em;
+  --navbox-pill-padding: 0.25em 0.75em;
+  --navbox-pill-border-radius: 3px;
+  --navbox-pill-box-shadow: none;
+  --navbox-pill-background: color-mix(in srgb, var(--wiki-content-text-color) 5%, transparent);
+  --navbox-pill-box-shadow--hover: inset 0 0 3px var(--navbox-list-color);
+  --navbox-pill-background--hover: var(--navbox-pill-background);
+  --navbox-pill-selflink-background: color-mix(in srgb, var(--wiki-accent-color) 15%, transparent);/* background of pills with selflink in them */  
+  /* remove list cell background */
+  --navbox-list-background: none;
+  --navbox-list-background--striped: color-mix(in srgb, var(--wiki-content-text-color) 3%, transparent);
+}
+.ranger-navbox.no-underline-title-links{
+  --navbox-title-link-color: var(--wiki-accent-link-color);
+  --navbox-title-link-decoration: none;
+  --navbox-title-redlink-decoration: none;
+}
+.ranger-navbox.noborder,
+.ranger-navbox.no-border{
+  --navbox-padding: 0px;
+  --navbox-outer-border-width: 0px;
+}
+
+/******************************
+* Fallback for older browsers *
+*******************************/
+@supports not (color:color-mix(in srgb, #000, transparent)) {
+  .ranger-navbox {
+    --navbox-above-background: var(--wiki-content-background-color--secondary);
+    --navbox-list-background: transparent;
+    --navbox-list-background--striped: var(--wiki-content-background-color--secondary);
+    --navbox-group-background: var(--wiki-content-background-color--secondary);
+    --navbox-tree-line-color：var(--wiki-content-background-color--secondary);
+  }
+  .ranger-navbox.pill, 
+  .ranger-navbox.pill-mobile {
+    --navbox-pill-background: var(--wiki-content-background-color--secondary);
+    --navbox-list-background--striped: transparent;
+    --navbox-pill-selflink-background: var(--wiki-content-background-color--secondary);
+  }
+}
+/***************
+* End fallback *
+****************/

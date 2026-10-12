@@ -1,0 +1,67 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Placeholder.png|50px]] || Space Law || $350 || 20
+|-
+| [[File:Placeholder.png|50px]] || NFSD SOP Manual || $350 || 20
+|-
+| [[File:Placeholder.png|50px]] || Handcuffs || $190 || 10
+|-
+| [[File:Placeholder.png|50px]] || Zipties || $90 || 10
+|-
+| [[File:Placeholder.png|50px]] || Flashbang || $200 || 10
+|-
+| [[File:Placeholder.png|50px]] || NFSD Whistle || $200 || 5
+|-
+| [[File:Placeholder.png|50px]] || Tear Gas Grenade || $200 || 4
+|-
+| [[File:Placeholder.png|50px]] || ClusterBang || $200 || 2
+|-
+| [[File:Placeholder.png|50px]] || Stinger Grenade || $200 || 4
+|-
+| [[File:Placeholder.png|50px]] || Flash || $400 || 10
+|-
+| [[File:Placeholder.png|50px]] || Tac-lite || $155 || 10
+|-
+| [[File:Placeholder.png|50px]] || NFSD Holobarrier Projector || $500 || 4
+|-
+| [[File:Placeholder.png|50px]] || Tourniquet || $200 || 5
+|-
+| [[File:Placeholder.png|50px]] || Sun Glasses || $100 || 5
+|-
+| [[File:Placeholder.png|50px]] || NFSD Glasses || $100 || 5
+|-
+| [[File:Placeholder.png|50px]] || NFSD Hud || $100 || 10
+|-
+| [[File:Placeholder.png|50px]] || NFSD Hud Eyepatch || $100 || 5
+|-
+| [[File:Placeholder.png|50px]] || NFSD Webbing || $200 || 10
+|-
+| [[File:Placeholder.png|50px]] || NFSD Belt || $200 || 10
+|-
+| [[File:Placeholder.png|50px]] || Riot Shield || $900 || 3
+|-
+| [[File:Placeholder.png|50px]] || Laser Shield || $500 || 3
+|-
+| [[File:Placeholder.png|50px]] || Ballistic Shield || $500 || 3
+|-
+| [[File:Placeholder.png|50px]] || Stun Baton || $800 || 10
+|-
+| [[File:Placeholder.png|50px]] || Disabler Pistol || $2,500 || 10
+|-
+| [[File:Placeholder.png|50px]] || Contraband Appraisal Tool || $200 || 5
+|-
+| [[File:Placeholder.png|50px]] || Emergency Crowbar || $220 || 10
+|-
+| [[File:Placeholder.png|50px]] || Forensic Scanner || $200 || 3
+|-
+| [[File:Placeholder.png|50px]] || Forensic Pad Box || $100 || 3
+|-
+| [[File:Placeholder.png|50px]] || LogProbe Cartridge || $200 || 3
+|-
+| [[File:Placeholder.png|50px]] || Tracking Implanter || $350 || 5
+|}
+</div>
+</includeonly>

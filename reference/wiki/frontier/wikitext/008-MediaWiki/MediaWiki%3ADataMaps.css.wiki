@@ -1,0 +1,62 @@
+/** Container */
+.ext-datamaps-container-content .ext-datamaps-container-leaflet {
+	background: var(--wiki-content-background-color--secondary);
+}
+/** Legend */
+.ext-datamaps-container .ext-datamaps-control-expandable[aria-expanded="true"] {
+	background: rgba(var(--wiki-content-background-color--secondary--rgb), 0.95);
+}
+.ext-datamaps-container .oo-ui-tabOptionWidget {
+	color: var(--wiki-content-link-color);
+}
+.ext-datamaps-container .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
+	background: var(--wiki-content-link-color);
+	box-shadow: none;
+	color: var(--wiki-content-link-label-color);
+}
+/** Popups */
+.ext-datamaps-container .leaflet-popup-content-wrapper,
+.ext-datamaps-container .leaflet-popup-tip {
+	background: var(--wiki-content-background-color--secondary);
+	color: var(--wiki-content-text-color);
+}
+.ext-datamaps-container .ext-datamaps-popup-buttons a,
+.ext-datamaps-container .leaflet-popup-close-button {
+	filter: var(--wiki-icon-general-filter);
+}
+.ext-datamaps-popup-header .ext-datamaps-popup-subtitle, .ext-datamaps-popup-header .ext-datamaps-popup-location {
+	color: var(--wiki-content-text-mix-color);
+}
+/** Controls */
+.ext-datamaps-container .leaflet-bar {
+  background-color: var(--wiki-content-background-color--secondary);
+  border-color: rgba(var(--wiki-content-link-color--rgb), 0.5);
+}
+.ext-datamaps-container .leaflet-bar button:hover {
+  background-color: rgba(var(--wiki-content-dynamic-color--rgb), 0.25);
+}
+.ext-datamaps-container .leaflet-control {
+  color: var(--wiki-content-text-color);
+}
+.ext-datamaps-container .leaflet-control button {
+  border-bottom-color: rgba(var(--wiki-content-link-color--rgb), 0.5);
+  color: var(--wiki-content-text-color);
+}
+/* HACK: awful selector, v1.0 will prolly use a standard class on these */
+.ext-datamaps-container .ext-datamaps-control span[class^="oo-ui-icon"] {
+  filter: var(--wiki-icon-general-filter);
+}
+/** Search */
+.ext-datamaps-container .ext-datamaps-control-search ul.ext-datamaps-control-search-results {
+	background: var(--wiki-content-background-color--secondary);
+}
+.ext-datamaps-container .ext-datamaps-control-search ul.ext-datamaps-control-search-results li:focus,
+.ext-datamaps-container .ext-datamaps-control-search ul.ext-datamaps-control-search-results li[data-highlighted="true"] {
+  background: rgba(var(--wiki-content-link-color--rgb),0.15);
+  color: var(--wiki-content-link-color);
+}
+
+.ext-datamaps-container .ext-datamaps-container-status > :not(.oo-ui-widget) {
+  background:var(--wiki-content-background-color--secondary);
+  color:var(--wiki-content-text-mix-color);
+}

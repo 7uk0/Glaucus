@@ -1,0 +1,9 @@
+{{No direct use}}
+
+== List of link icon templates ==
+* {{tl|Character icon}}
+* {{tl|Item icon}}
+== Dependencies==
+For this template to work properly, you need the following:
+* The <code>.link-icon</code> class and any related classes, found in [[MediaWiki:Common.css]].
+<noinclude>[[Category:Template documentation]]</noinclude>

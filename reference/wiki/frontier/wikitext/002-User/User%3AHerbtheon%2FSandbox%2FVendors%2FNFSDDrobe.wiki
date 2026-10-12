@@ -1,0 +1,90 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ClothingBackpackNfsdBrown.png|50px]] || NFSD Backpack || $100 || 6
+|-
+| [[File:ClothingBackpackSatchelNfsdBrown.png|50px]] || NFSD Satchel || $100 || 6
+|-
+| [[File:ClothingBackpackDuffelNfsdBrown.png|50px]] || NFSD Duffel || $100 || 6
+|-
+| [[File:ClothingBackpackMessengerNfsdBrown.png|50px]] || NFSD Messenger Bag || $100 || 6
+|-
+| [[File:ClothingBackpackNfsdCream.png|50px]] || NFSD Backpack || $100 || 2
+|-
+| [[File:ClothingBackpackSatchelNfsdCream.png|50px]] || NFSD Satchel || $100 || 2
+|-
+| [[File:ClothingBackpackDuffelNfsdCream.png|50px]] || NFSD Duffel || $100 || 2
+|-
+| [[File:ClothingBackpackMessengerNfsdCream.png|50px]] || NFSD Messenger Bag || $100 || 2
+|-
+| [[File:ClothingHeadHatNfsdBeretGreen.png|50px]] || NFSD Beret || $100 || 6
+|-
+| [[File:ClothingHeadHatNfsdBeretBrown.png|50px]] || NFSD Beret || $100 || 6
+|-
+| [[File:ClothingHeadHatNfsdBeretCream.png|50px]] || NFSD Beret || $100 || 6
+|-
+| [[File:ClothingHeadHatNfsdCampaign.png|50px]] || NFSD Campaign Hat || $100 || 6
+|-
+| [[File:ClothingHeadHatNfsdSmallCampaign.png|50px]] || NFSD Campaign Cap || $100 || 6
+|-
+| [[File:ClothingHandsGlovesCombatNfsdBrown.png|50px]] || NFSD Combat Gloves || $100 || 6
+|-
+| [[File:ClothingHandsGlovesCombatNfsdCream.png|50px]] || NFSD Combat Gloves || $100 || 6
+|-
+| [[File:ClothingUniformJumpskirtNfsd.png|50px]] || NFSD Jumpskirt || $100 || 6
+|-
+| [[File:ClothingUniformJumpskirtNfsdShort.png|50px]] || NFSD Jumpskirt || $100 || 6
+|-
+| [[File:ClothingUniformJumpsuitNfsd.png|50px]] || NFSD Jumpsuit || $100 || 6
+|-
+| [[File:ClothingUniformJumpsuitNfsdShort.png|50px]] || NFSD Jumpsuit || $100 || 6
+|-
+| [[File:ClothingUniformJumpsuitNfsdTacBlack.png|50px]] || NFSD Tactical Jumpsuit || $100 || 6
+|-
+| [[File:ClothingUniformJumpsuitNfsdTacGray.png|50px]] || NFSD Tactical Jumpsuit || $100 || 6
+|-
+| [[File:ClothingUniformJumpsuitNfsdTacCamo.png|50px]] || NFSD Tactical Jumpsuit || $100 || 6
+|-
+| [[File:ClothingUniformJumpsuitNfsdTacCream.png|50px]] || NFSD Tactical Jumpsuit || $100 || 6
+|-
+| [[File:ClothingHeadsetNfsdGreenCommon.png|50px]] || Headset || $100 || 6
+|-
+| [[File:ClothingHeadsetNfsdBrownCommon.png|50px]] || Headset || $100 || 6
+|-
+| [[File:ClothingHeadsetNfsdCreamCommon.png|50px]] || Headset || $100 || 6
+|-
+| [[File:ClothingHeadHelmetNfsd.png|50px]] || NFSD Helmet || $100 || 6
+|-
+| [[File:ClothingOuterArmorNfsd.png|50px]] || NFSD Armor || $300 || 6
+|-
+| [[File:ClothingOuterCoatNfsdBomber.png|50px]] || NFSD Bomber || $350 || 6
+|-
+| [[File:ClothingOuterCoatNfsdLongCoat.png|50px]] || NFSD Long Coat || $350 || 6
+|-
+| [[File:ClothingOuterCoatNfsdFormal.png|50px]] || NFSD Formal Coat || $350 || 6
+|-
+| [[File:ClothingMaskGasNfsd.png|50px]] || NFSD Gas Mask || $250 || 8
+|-
+| [[File:NfsdWhistle.png|50px]] || NFSD Whistle || $200 || 3
+|-
+| [[File:ClothingEyesBlindfold.png|50px]] || Blindfold || $100 || 3
+|-
+| [[File:ClothingShoesBootsNfsdBrown.png|50px]] || NFSD Brown Boots || $100 || 6
+|-
+| [[File:ClothingShoesBootsNfsdCream.png|50px]] || NFSD Cream Boots || $100 || 6
+|-
+| [[File:ClothingShoesBootsMagNfsd.png|50px]] || NFSD Magboots || $1,000 || 3
+|-
+| [[File:ClothingOuterEVASuitNfsd.png|50px]] || NFSD EVA Suit || $1,500 || 6
+|-
+| [[File:ClothingOuterEVASuitPrisoner.png|50px]] || Prisoner EVA Suit || $1,500 || 6
+|-
+| style="background-color:#383838;" | [[File:ClothingUniformJumpskirtOfLife.png|50px]]
+| style="background-color:#383838;" | Skirt of Life
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|}
+</div>
+</includeonly>

@@ -1,0 +1,104 @@
+This creates one of the stylized and formatted links on the [[{{MediaWiki:Mainpage}}|main page]].
+
+== Usage ==
+Groups of this template should be wrapped inside of <code><nowiki><div class="mp-links"></div></nowiki></code> and each entry should be a separate line in an [[wikipedia:Help:Lists#Basically|unordered list]]. This div can be given one of the classes <code>columns-x</code> where x is a number from 1 to 7, and the links will line up in that many columns if space permits (default is 3). The div can also optionally be given the class <code>stretch</code> and it will stretch the list vertically to fill empty space. See [[Mediawiki:Common.css]] for the full definitions of these classes and styling for this template.
+
+===Parameters===
+<templatedata>
+{
+	"description": {
+		"en": "Creates stylized and formatted links on the main page."
+	},
+	"format": "inline",
+	"params": {
+		"1": {
+			"label": {
+				"en": "Text"
+			},
+			"description": {
+				"en": "The text to display. If the link parameter is not given, this will also be the link target."
+			},
+			"example": "Stuff",
+			"type": "string",
+			"suggested": true
+		},
+		"link": {
+			"label": {
+				"en": "Link"
+			},
+			"description": {
+				"en": "The target page for the link, if different than the display text."
+			},
+			"required": false,
+			"example": "Main Page",
+			"type": "wiki-page-name"
+		},
+		"image": {
+			"label": {
+				"en": "Image"
+			},
+			"description": {
+				"en": "An image to display with the link."
+			},
+			"required": false,
+			"suggested": true,
+			"type": "wiki-file-name"
+		},
+		"size": {
+			"label": {
+				"en": "Image size"
+			},
+			"description": {
+				"en": "The size of the image, in px."
+			},
+			"required": false,
+			"default": "42px",
+			"type": "string"
+		},
+		"imageClass": {
+			"label": "Image class",
+			"description": "A class to give directly to the image",
+			"example": "invert-on-dark",
+			"type": "string",
+			"suggestedvalues": [
+				"invert-on-dark",
+				"invert-on-light"
+			]
+		},
+		"altText": {
+			"label": "Alt text",
+			"description": "Alt text to describe the image",
+			"example": "Wiki logo",
+			"type": "string",
+			"suggested": true
+		}
+	},
+	"paramOrder": [
+		"1",
+		"link",
+		"image",
+		"size",
+		"imageClass",
+		"altText"
+	]
+}
+</templatedata>
+
+==Examples==
+<pre>
+<div class="mp-links columns-3">
+* {{MP link|Stuff|link=Special:Random|image=Site-logo.png|size=42px}}
+* {{MP link|Things|link=Special:Random}}
+* {{MP link|Other stuff|link=Special:Random|image=Site-logo.png|size=42px}}
+</div>
+</pre>
+Produces:
+<div class="mp-links columns-3">
+* {{MP link|Stuff|link=Special:Random|image=Site-logo.png|size=42px}}
+* {{MP link|Things|link=Special:Random}}
+* {{MP link|Other stuff|link=Special:Random|image=Site-logo.png|size=42px}}
+</div>
+
+<noinclude>
+[[Category:Template documentation]]
+</noinclude>

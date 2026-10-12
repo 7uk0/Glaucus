@@ -1,0 +1,135 @@
+==Introduction==
+
+Bounties are a method of obtaining valuable gear through accepting bounties. You can only do expeditions if you are on an [[Shipyard#Expedition_Shipyard|expedition capable shuttle]]. These expeditions can range from extremely easy to extremely deadly depending on the difficulty of the expedition. The rewards for completion can scale depending on the difficulty of the expedition, ranging from a simple party crate to a double energy sword.
+
+==Picking your expeditions==
+
+When picking an expedition, it's important to take into account its modifiers, difficulty, and rewards. You would want to pick the expedition that expends the least of your resources, while giving you the best rewards. Sometimes the hardest expedition has rewards worse than an expedition of a lower difficulty, so it is important to keep an eye out.
+
+Expedition rewards are randomized to an extent, meaning you wouldn't get a ridiculous weapon from a minimal difficulty expedition.
+
+===Modifiers===
+
+Expeditions can have numerous modifiers that change how an expedition is played out. These modifiers can make a planet dark, or its atmosphere unbreathable. 
+
+{| class="wikitable"
+|'''Modifier'''
+|'''Effect'''
+|'''Notes'''
+|-
+|Daylight
+|Makes the entire map well lit and bright.
+|Cannot be paired with evening or night.
+|-
+|Evening
+|Makes the entire map dim, brighter than night but darker than daylight.
+|Cannot be paired with daylight or night
+|-
+|Night
+|Makes the entire map dark, light source required to see.
+|Cannot be paired with daylight or evening. Player Xenomorph Queens currently have no way to see in this modifier aside from player-made light sources.
+|-
+|Rush
+|Cuts the expedition duration by around two minutes.
+|Basically means the shuttle will leave earlier, and have less time to complete objectives.
+|-
+|Breathable atmosphere
+|You are able to breathe in the atmosphere without the need of internals or spacesuit.
+|Currently, although this modifier exists the game does not show it. Assume anything without an atmosphere modifier is this modifier.
+|-
+|Dangerous Atmosphere
+|Unable to breathe in the atmosphere without internals. No spacesuit required.
+|Essentially makes it so you need internals to breathe in the atmosphere. Watch the oxygen tank! Effects of atmosphere vary, but most common is eternal sleep. 
+|-
+|No Atmosphere
+|Unable to breathe in the atmosphere without internals. Spacesuit required.
+|There is no atmosphere in the area, you'll take damage without a space suit.
+|-
+|Toxic atmosphere
+|The atmosphere is very toxic. Unable to breathe in the atmosphere without internals. No spacesuit required.
+|You'll take accumulating toxin damage if you continue breathing the atmosphere.
+|-
+|Volatile Atmosphere
+| The area is covered in a volatile gas.
+| Exclusive to certain biomes, the area is covered in a volatile gas. This gas makes it harder to navigate and see in the dungeon.
+|-
+|Low Temperature
+|The area is cold
+|Makes it so the area is cold, species vulnerable to the cold can take damage due to freezing. Spacesuits can counter the effects of the cold. Can only be found in snow biome.
+|-
+|High Temperature.
+|The area is hot.
+|Makes it so the area is hot, species vulnerable to the heat can take damage due to burning. Spacesuit can counter the effects of the heat. Can only be found in lava biome.
+|}
+==Difficulty==
+
+Difficulty reflects the expected difficulty in the expedition. The higher the difficulty, the higher chance it will come with harder modifiers. That doesn't mean it is impossible to get a hard difficulty with easy modifiers.
+
+Difficulty also reflects the monster volume within the dungeon, for instance a higher difficulty would also mean a higher enemy count.
+
+This also means that the higher the difficulty, the more loot you will see within the dungeon, alongside the rewards for completion being greater.
+
+It should be noted that the true difficulty of a dungeon is subjective. A person may have no problem with a dangerous atmosphere, or a lot of problems for an expedition with no atmosphere. At the end of the day, it comes down to practice and knowledge.
+
+==Rewards==
+
+The big prize of why you might want to do expeditions. Some of this loot can be unobtainable anywhere else (barring random events/admin shenanigans).
+
+===Reward Loot===
+Reward loot (not to be confused with loot found in dungeons) is the rewards you receive after completing a dungeon completely. The loot is split up into three rarities: Common, Rare, and Epic. The higher tier rarities are unobtainable in lower difficulties, forcing you to take on the harder difficulty dungeons in order to gain better loot.
+
+Here is a table of the possible loot for each difficulty:
+ 
+{| class="wikitable"
+|'''Difficulty'''
+|'''Loot tiers'''
+|-
+|Minimal
+|Common, Common, Common
+|-
+|Minor
+|Common, Common, Rare
+|-
+|Moderate
+|Common, Rare, Rare
+|-
+|Hazardous
+|Rare, Rare, Rare, Epic
+|-
+|Extreme
+|Rare, Rare, Epic, Epic, Epic
+|}
+
+===Potential Loot===
+The loot can be obtained from expeditions can be both powerful and weak. It can reward contraband such as a double e-sword or RPG, both in the Epic tiers, or terrible loot such as tiling or a keg disguised as a bomb, both in the common tiers.
+
+As always, higher difficulty expeditions can net you higher tier loot.
+
+===Dungeon Loot===
+Depending on the type of dungeon, you can find loot that's worthwhile to plunder for yourself. For instance, in science dungeons, you can plunder science equipment and research data disks for yourself.
+
+Dungeon loot is completely randomized, usually found in crates scattered around the dungeon, so keep a close eye on potential plunders!
+
+==Enemies & Dangers==
+Each expedition has some sort of threat that you must content to or avoid. A expedition only has one 'faction' of enemies, but can come in many types. You can only encounter certain groups on certain threat levels.
+
+{| class="wikitable"
+|'''Group'''
+|'''Threat Level'''
+|-
+|Argocytes, Carps, Flesh, Xenomorphs
+|Moderate
+|-
+|Dinosaurs, '''Mercenaries''', '''Punks''', 
+|Hazardous
+|-
+|'''Cultists''', '''Explorers''', Rogue Silicon, '''Syndicate'''
+|Extreme
+|}
+
+Enemy groups in bold are enemies that have additional loot on them in the form of special 'loot bags'. These bags contain a assortment of items but is semi-random, depending on the enemy the bag came from. Items can include items such as spesos, weapons, materials and other useful items. Not that these items can also include contraband of different classes (remember, you need a licence to have c2 contraband, and c3 is strictly illegal.)
+
+===Getting Lost===
+Another danger of expeditions is getting lost, it's very easy to lose track of your ship and have led many confident expeditioners to their demise. There are a few ways of countering this, such as leaving a trail of items leading back to your ship. Or more effectively, using a universal pinpointer to mark something on your ship, allowing you to effectively trace your ship. Alternatively, you can use a GPS and return to the coordinates (0,0) as your ship will always land on those coordinates.
+
+{{Guides Menu}}

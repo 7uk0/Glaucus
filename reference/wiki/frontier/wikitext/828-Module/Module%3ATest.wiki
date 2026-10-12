@@ -1,0 +1,13 @@
+local p = {}
+
+function p.test(frame)
+    local out = {}
+    out[#out+1] = "pages = " .. tostring(mw.site.stats.pages)
+    out[#out+1] = "articles = " .. tostring(mw.site.stats.articles)
+    out[#out+1] = "edits = " .. tostring(mw.site.stats.edits)
+    out[#out+1] = "users = " .. tostring(mw.site.stats.users)
+    out[#out+1] = "activeUsers = " .. tostring(mw.site.stats.activeUsers)
+    return table.concat(out, "<br>")
+end
+
+return p

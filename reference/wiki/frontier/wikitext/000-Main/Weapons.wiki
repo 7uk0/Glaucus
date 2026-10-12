@@ -1,0 +1,391 @@
+Within the freedom space of frontier, you may encounter many different types of weapons. Ranging from shitty outdated rifles to high-tech very illegal syndicate weaponry, there is no shortage of different weapon types within the frontier.
+
+There are seven main categories of weapons, Pistol, Shotgun, Rifle, SMG, Laser, Explosive. This page is dedicated to covering all the different weapons in frontier.
+
+==Pistols==
+
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Ammo Type
+!Description
+|-
+|[[File:Mk58.png|62px]]
+|Mk58
+|.35 pistol
+|Simple, reliable pistol for simple encounters. The standard handheld for any NFSD officer and any mercenary.
+|-
+|[[File:Pollock.png|62px]]
+|Pollock
+|.35 pistol
+|A compact and mass-produced combat pistol.
+|-
+|[[File:Argenti.png|62px]]
+|Argenti
+|.35 pistol
+|The civilian grade Argenti Type 35 Revolver.
+|-
+|[[File:Deckard.png|62px]]
+|Deckard
+|.45 pistol
+|Rare, custom-built revolver found in certain places. Features a light indicator helping you tell the ammo status of the gun.
+|-
+|[[File:Mateba.png|62px]]
+|Mateba
+|.45 pistol
+|Formerly found only in the hands of the infamous deathsquad, this revolver can be purchased for FUC through the Sheriff's uplink.
+|-
+|[[File:Inspector.png|62px]]
+|Inspector
+|.45 pistol
+|A classic choice for a detective, can load six shots.
+|-
+|[[File:Viper.png|62px]]
+|Viper
+|.35 pistol
+|The syndicate version of the Mk58, uses the same ammo type with the option to switch to full-auto.
+|-
+|[[File:Base.png|62px]]
+|Cobra
+|.45 pistol
+|An stealthy operator's choice. Leave no trace behind with this gun, comes with a built-in silencer.
+|-
+|[[File:Fitz.png|62px]]
+|Fitz
+|.45 pistol
+|A compact and concealable self defence snub revolver.
+|-
+|[[File:Python.png|62px]]
+|Python
+|.45 pistol
+|The syndicate's choice of revolver. Classic six-shooter and can be grown from gatfruit.
+|-
+|[[File:PirateRevolver.png|62px]]
+|Pirate Revolver
+|.45 pistol
+|An odd, illegal, old-looking revolver, favoured by pirate crews.
+|-
+|[[File:Ward45.png|62px]]
+|Ward-45
+|.45 pistol
+|The iconic sidearm of the dreaded death squads.
+|-
+|[[File:Lucky.png|62px]]
+|Lucky
+|.45 pistol
+|Luck always beat skill, ya weasel.
+|-
+|[[File:Icon.png|62px]]
+|Faith
+|.45 pistol
+|Delivers blessings in bullet form.
+|-
+|[[File:Ritland45.png|62px]]
+|Ritland-45
+|.45 pistol
+|An illegal revolver favoured by Syndicate agents.
+|-
+|[[File:FlintlockPistol.png|62px]]
+|Flintlock Pistol
+|.60 Rifle
+|A pirate's companion. Yarrr! An illegal weapon often used by pirates.
+|-
+|[[File:HandmadePistol.png|62px]]
+|HandmadePistol
+|Shells
+|Looks unreliable, but legal.
+|}
+
+==Shotguns==
+
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Ammo Type
+!Description
+|-
+|[[File:DualBarrelShotgun.png|62px]]
+|Double Barreled Shotgun
+|Shells
+|The basic shotgun, two barrels, two shells.
+|-
+|[[File:SawnOffShotgun.png|62px]]
+|Sawn-Off Shotgun
+|Shells
+|Made with a saw, the basic double barrel now able to fit in your pocket.
+|-
+|[[File:Kammerer.png|62px]]
+|Kammerer
+|Shells
+|Four shells, twice the fun of a double barrel.
+|-
+|[[File:Enforcer.png|62px]]
+|Enforcer
+|Shells
+|A monster of a shotgun, lots of shells, lots of power. Found in the hands of NFSD.
+|-
+|[[File:Bulldog.png|62px]]
+|Bulldog
+|Shells
+|Fully automatic magazine fed shotgun, the true syndicate close-quarters-combat option.
+|-
+|[[File:Blunderbuss.png|62px]]
+|Blunderbuss
+|Shells
+|Deadly at close range, an illegal shotgun often found at the side of a pirate.
+|-
+|[[File:ImprovisedShotgun.png|62px]]
+|Improvised Shotgun
+|Shells
+|A shitty, but legal, hand-made shotgun. It can only hold one round in the chamber.
+|}
+
+==Rifles==
+
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Ammo Type
+!Description
+|-
+|[[File:NovaliteC1.png|62px]]
+|Novalite C1
+|.20 Rifle
+|A civilian grade semi-automatic rifle with an internal magazine.
+|-
+|[[File:Gestio.png|62px]]
+|Gestio
+|.30 Rifle
+|An old burst-fire rifle designed by Silver Industries that never left trials.
+|-
+|[[File:SVS42.png|62px]]
+|SVS-42
+|.20 Rifle
+|Old surplus battle rifle looks like it's seen a few wars. Equipped with bayonet.
+|-
+|[[File:Jackdaw.png|62px]]
+|Jackdaw
+|.30 Rifle
+|The beginning of the end is heralded by the song of a Jackdaw.
+|-
+|[[File:SolandMoss.png|62px]]
+|Soland-Moss
+|.30 Rifle
+|An iconic weapon of war. An illegal firearm often used by Syndicate agents.
+|-
+|[[File:M90gl.png|62px]]
+|M-90gl
+|.20 Rifle
+|An older bullpup carbine model, with an attached underbarrel grenade launcher. An illegal firearm often used by Syndicate agents.
+|-
+|[[File:Lecter.png|62px]]
+|Lecter
+|.20 Rifle
+|A medium end military grade assault rifle.
+|-
+|[[File:Vulcan.png|62px]]
+|Vulcan
+|.30 Rifle
+|One of the heaviest small arms to grace Security's armory.
+|-
+|[[File:Romulan.png|62px]]
+|Romulan
+|.20 Rifle
+|Yarrr, a retrofitted Vulcan befitting of a pirate!
+|-
+|[[File:N2524.png|62px]]
+|N2524 pattern repeater
+|.20 Rifle
+|A civilian grade lever action firearm, favored by space cowboys across the Frontier for its reliability.
+|-
+|[[File:Barlows.png|62px]]
+|Barlows bolt-action rifle
+|.30 Rifle
+|A weapon for hunting, or endless trench warfare. Equipped with bayonet.
+|-
+|[[File:CeremonialRifle.png|62px]]
+|Ceremonial Rifle
+|.20 Rifle
+|A ceremonial variant of the Mark 1 Rifle, in tasteful blue and white.
+|-
+|[[File:Musket.png|62px]]
+|Musket
+|.60 Rifle
+|This should've been in a museum long before you were born. Equipped with bayonet.
+|-
+|[[File:Estoc.png|62px]]
+|Estoc DMR
+|.20 Rifle
+|A designated marksman rifle, favored for medium-to-long range engagements.
+|-
+|[[File:Hristov.png|62px]]
+|Estoc DMR
+|.20 Rifle
+|A portable anti-materiel rifle.
+|}
+
+==Sub Machine Guns & Machine Guns==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Ammo Type
+!Description
+|-
+|[[File:WT550.png|62px]]
+|WT550
+|.35 Pistol
+|Boasts high firerate in exchange for accuracy, a fine choice for all.
+|-
+|[[File:Atreides.png|62px]]
+|Atreides
+|.35 Pistol
+|Is the WT550 firerate not enough? The Arteides has the highest firerate, but at the cost of accuracy. Made by the syndicate.
+|-
+|[[File:C20r.png|62px]]
+|C20r
+|.35 Pistol
+|The classic syndicate SMG, has high firepower and magazines automatically eject for easier reloading.
+|-
+|[[File:Drozd.png|62px]]
+|Drozd
+|.35 Pistol
+|The heavy SMG, capable of fully automatic and semi automatic fire.
+|-
+|[[File:LMG6.png|62px]]
+|GSW LMG-6
+|.20 Rifle
+|Strike fear into your foes' eyes as you bring out this gun. 100 shots per magazine, made by the syndicate to cause havoc and terror.
+|-
+|[[File:Typewriter.png|62px]]
+|Typewriter
+|.35 Pistol
+|A modern take on the classic design used by mobsters throughout space and time.
+|}
+
+==Lasers==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Ammo Type
+!Damage
+!Description
+|-
+|[[File:MakeshiftLaserPistol.png|62px]]
+|Makeshift Laser Pistol
+|14 Shots
+|10 Heat
+|Better pray it won't burn your hands off.
+|-
+|[[File:LaserPistol.png|62px]]
+|Laser Pistol
+|16 Shots, self-recharge
+|10 Heat/2 Shock disabler
+|An older model of civilian-grade laser pistol with two settings: disable and kill.
+|-
+|[[File:Svalinn.png|62px]]
+|Svalinn
+|power-cell dependant
+|10 Heat/
+|A cheap and widely used laser pistol.
+|-
+|[[File:AntiqueLaserPistol.png|62px]]
+|Antique Laser Pistol
+|26 Shots, faster self-recharge
+|10 Heat/2 Shock disabler
+|This is an antique laser pistol with two settings: disable and kill. All craftsmanship is of the highest quality.
+|-
+|[[File:MultiphaseGun.png|62px]]
+|X-01 multiphase energy gun
+|26 Shots, faster self-recharge
+|10 Heat/2 Shock disabler
+|This is an expensive, modern recreation of an antique laser gun.
+|-
+|[[File:AdvancedLaserPistol.png|62px]]
+|Advanced Laser Pistol
+|26 shots, self-recharge
+|10 Heat/2 Shock disabler
+|An experimental civilian grade high-energy laser pistol.
+|-
+|[[File:EnergySMG.png|62px]]
+|Energy Submachine gun
+|40 Shots, self-recharge
+|10 Heat/2 Shock disabler
+|An advanced hybrid energy submachine gun with two settings: disable and kill.
+|-
+|[[File:TemperatureGun.png|62px]]
+|Temperature gun
+|30 Shots, self-recharge
+|10 Heat/10 Cold
+|An advanced gun that shoots beams capable of heating or cooling their target.
+|-
+|[[File:LaserRepeater.png|62px]]
+|Laser repeater
+|30 Shots, self-recharge
+|12.5 Heat/2 Shock disabler
+|A burst-fire laser rifle, fires quickly at the expense of accuracy.
+|-
+|[[File:LaserCarbine.png|62px]]
+|Laser Carbine
+|30 Shots, self-recharge
+|17.5 Heat/2 Shock disabler
+|A simple civilian grade laser carbine, the workhorse of many private security organizations.
+|-
+|[[File:LaserCannon.png|62px]]
+|Laser Cannon
+|20 Shots, self-recharge
+|25 Heat
+|A heavy duty, high powered laser sniper rifle.
+|-
+|[[File:PulsePistol.png|62px]]
+|Pulse Pistol
+|20 Shots, self-recharge
+|22.5 Heat
+|A state of the art energy pistol favoured as a sidearm by the NT operatives.
+|-
+|[[File:PulseRifle.png|62px]]
+|Pulse Rifle
+|30 Shots, self-recharge
+|22.5 Heat
+|A weapon that is almost as infamous as its users.
+|-
+|[[File:PulseCarbine.png|62px]]
+|Pulse Carbine
+|40 Shots, self-recharge
+|22.5 Heat
+|A high tech energy carbine favoured by the NT-ERT operatives.
+|-
+|[[File:TurboLaserMK3.png|62px]]
+|Turbo laser MK3
+|50 Shots, self-recharge
+|15 Heat
+|A turbo laser ripped from the guardian unit.
+|-
+|[[File:XRayCannon.png|62px]]
+|X-Ray Cannon
+|20 Shots, self-recharge
+|12.5 Heat, 12.5 Radiation
+|An illegal and experimental weapon that uses concentrated x-ray energy against its target.
+|}
+
+==Explosive==
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Ammo Type
+!Description
+|-
+|[[File:RocketLauncher.png|62px]]
+|GSW Rocket Launcher
+|Rocket-propelled grenades
+|A modified ancient rocket-propelled grenade launcher.
+|-
+|[[File:GrenadeLauncher.png|62px]]
+|GP-40 grenade launcher
+|Grenades
+|PLOOP. Holds multiple grenades despite having two barrels.
+|-
+|[[File:PirateCannon.png|62px]]
+|Pirate cannon
+|Cannon balls
+|Kaboom!
+|}

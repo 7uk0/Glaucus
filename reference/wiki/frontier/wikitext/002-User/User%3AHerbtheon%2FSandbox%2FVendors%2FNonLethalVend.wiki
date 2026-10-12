@@ -1,0 +1,52 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Dartboard.png|50px]] || Dartboard || $400 || 2
+|-
+| [[File:Box_Darts.png|50px]] || Darts Box || $100 || 4
+|-
+| [[File:CapGun.png|50px]] || Cap Gun || $2,000 || 2
+|-
+| [[File:FoamForceAstroAce.png|50px]] || Foam Force Astro Ace || $4,000 || 2
+|-
+| [[File:FoamCrossbow.png|50px]] || Foam Crossbow || $200 || 2
+|-
+| [[File:Practice_DisablerPistol.png|50px]] || Practice Disabler Pistol || $2,500 || 4
+|-
+| [[File:Practice_DisablerRifle.png|50px]] || Practice Disabler Rifle || $4000 || 4
+|-
+| [[File:AmmunitionBox_Capgun.png|50px]] || Cap Gun Cartridge Box || $200 || 4
+|-
+| [[File:AmmunitionBox_FoamDarts.png|50px]] || Box of Foam Darts || $200 || 4
+|-
+| [[File:AmmunitionBox_35p.png|50px]] || Ammunition Box (.35 Pistol, Practice) || $200 || 10
+|-
+| [[File:AmmunitionBox_45p.png|50px]] || Ammunition Box (.45 Pistol, Practice) || $200 || 10
+|-
+| [[File:AmmunitionBox_20p.png|50px]] || Ammunition Box (.20 Rifle, Practice) || $200 || 10
+|-
+| [[File:AmmunitionBox_25p.png|50px]] || Ammunition Box (.25 Rifle, Practice) || $200 || 10
+|-
+| [[File:AmmunitionBox_30p.png|50px]] || Ammunition Box (.30 Rifle, Practice) || $200 || 5
+|-
+| [[File:ShellBox_50b.png|50px]] || Shell Box (.50 Beanbag) || $240 || 10
+|-
+| style="background-color:#383838;" | [[File:NFSpeedLoaderPistol35Practice.png|50px]]
+| style="background-color:#383838;" | Speed Loader (.35 Pistol, Practice)
+| style="background-color:#383838;" | $200
+| style="background-color:#383838;" | 3
+|-
+| style="background-color:#383838;" | [[File:ShellBox_50b.png|50px]]
+| style="background-color:#383838;" | Speed Loader (.45 Pistol, Practice)
+| style="background-color:#383838;" | $200
+| style="background-color:#383838;" | 3
+|-
+| style="background-color:#380C0C;" | [[File:ThrowingKnife.png|50px]]
+| style="background-color:#380C0C;" | Throwing Knife
+| style="background-color:#380C0C;" | $200
+| style="background-color:#380C0C;" | 1
+|}
+</div>
+</includeonly>

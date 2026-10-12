@@ -1,0 +1,100 @@
+{{WIP}}
+Within the freedom space of frontier, you may encounter many different types of weapons. The ones listed here are much better suited to bashing, bonking and stabbing, than shooting.
+Ranging from your own fists to illegal and ridiculous weaponry, there's no shortage of different bludgeons and blades within the frontier.
+
+
+There are 5 main categories of weapons, swords, knives, axes, spears, and bludgeons. This page is dedicated to covering all the different melee weapons in frontier.
+
+
+==Swords==
+
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Damage
+!Description
+|-
+|[[File:Machete.png|62px]]
+|Machete
+|15 Slash
+|A large looking blade.
+|-
+|}
+
+==Knives==
+
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Damage
+!Description
+|-
+|[[File:SurvivalKnife.png|62px]]
+|Survival Knife
+|12 Slash (10 if thrown)
+|Your first and last resort.
+|-
+|[[File:KitchenKnife.png|62px]]
+|Kitchen Knife
+|10 slash
+|A general purpose chef's knife.
+|-
+|[[File:Butcher'sCleaver.png|62px]]
+|Butcher's Cleaver
+|13 slash
+|A huge blade for chopping up meat. Any and all kinds of meat will do.
+|}
+
+==Axes==
+
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Damage
+!Description
+|-
+|[[File:Fireaxe.png|62px]]
+|Fireaxe
+|10 slash,10 structural / (2 handed) 20 slash,50 structural 
+|Also good at opening unpowered doors.
+|-
+|[[File:Hatchet.png|62px]]
+|Hatchet
+|8 slash 2 piercing
+|A very sharp axe blade upon a short fibremetal handle.
+|}
+
+==Spears==
+
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!damage
+!Description
+|-
+|[[File:Spear.png|62px]]
+|Spear
+|16 Piercing (Two-hand)
+12 Piercing (One-hand)
+15 Piercing (Thrown)
+|There are other variants to the spear which have different values.
+|-
+|}
+
+==Bludgeons==
+
+{| class="wikitable sortable mw-collapsible"; margin:10pt; width:90%;
+!Image
+!Weapon
+!Description
+|-
+|[[File:Shovel.png|62px]]
+|Shovel
+|Simple, reliable weapon for grave encounters. That is, digging a grave, and putting your enemies in them.
+|-
+|[[File:Toolbox.png|62px]]
+|Toolbox
+|12 Blunt
+|Comes in many colors! They all do the same damage, except for syndie ones.
+|}
+(damage data included so far based off of base ss14 values)

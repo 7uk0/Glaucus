@@ -1,0 +1,55 @@
+<includeonly><!--
+
+-->{{#vardefine:rightsholder|<!--
+
+***************************************
+***************************************
+Step 1/2 [required]
+Enter the name of the rightsholder, optionally with a link.
+Example without link: indie.io
+Example with a URL: [https://www.indie.io/ indie.io]
+
+Edit on the line below this************-->
+
+<!--Edit on the line above this********
+***************************************
+***************************************
+-->}}<!--
+
+
+continue to step 2
+
+
+***************************************
+***************************************
+Step 2/2 [optional]
+Enter the TOS link.
+Example link: https://www.indie.io/terms-of-service
+-->{{#vardefine:tos|<!--
+Edit on the line below this************-->
+
+<!--Edit on the line above this********
+***************************************
+***************************************
+
+-->}}<!--
+
+DON'T EDIT ANYTHING BELOW THIS
+
+
+-->{{License/template
+| source = {{{source|}}}
+| type = developer
+| darkIcon = yes
+| icon = [[File:IN COPYRIGHT.svg|50px|link=https://rightsstatements.org/page/InC/1.0/?language=en|IN COPYRIGHT]]
+| text = {{#if:{{#var:rightsholder}}|
+
+<!-- Specific: -->This file is owned by {{#var:rightsholder}} and/or its licensors{{#if:{{#var:tos}}|, and is licensed under the {{#var:rightsholder}} [{{#var:tos}} Terms of Use]}}.<br/>All trademarks and registered trademarks present in the file are proprietary to {{#var:rightsholder}} and/or its licensors.
+|
+<!-- Generic: -->This file is owned by the applicable game studio and/or its licensors.
+}}
+}}</includeonly><noinclude>
+This template currently looks like: {{License/game}}
+
+See {{tl|License}} for full license documentation
+[[Category:License templates]]</noinclude>

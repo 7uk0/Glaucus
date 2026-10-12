@@ -1,0 +1,30 @@
+{{From Wikipedia|Module:Template link general,Template:Tlx}}
+{{Uses Lua|Template link}}
+
+This template returns an exemplaric use of a template while linking to the template description page, if the template exists.
+
+== Usage ==
+<pre>
+{{tl|<Template name>}}
+{{tl|<Template name>|<Template parameters>}}
+</pre>
+
+; ''unnamed parameter'' 1
+: Template name (without <code>Template:</code> prefix)
+; ''unnamed parameter'' 2 - 9
+: Optional. Template parameters
+; nl
+: Optional flag to display an un-linked template usage.
+
+== Examples ==
+: <code><nowiki>{{tl|stub}}</nowiki></code> returns {{tl|stub}}
+: <code><nowiki>{{tl|stub|1}}</nowiki></code> returns {{tl|stub|1}}
+: <code><nowiki>{{tl|stub|1|2|nl{{=}}y}}</nowiki></code> returns {{tl|stub|1|2|nl{{=}}y}}
+: <code><nowiki>{{tl|for|page|t1{{=}}alt text}}</nowiki></code> returns {{tl|for|page|t1{{=}}alt text}}
+
+== See also ==
+
+<includeonly>
+[[Category:Formatting templates]]
+</includeonly>
+<noinclude>[[Category:Template documentation]]</noinclude>

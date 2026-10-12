@@ -1,0 +1,64 @@
+For basic species information, please refer to the guidebook in game
+The purpose of this article is to got in depth in the mechanics of each species
+
+== Arachnid ==
+<code>>88w88<</code>
+* Meat type: spider meat
+* Blood type: copper blood
+* Default attack: bite (5 piercing)
+* reagent interactions
+** Water (touch): water droplet hat
+** Water, space cleaner (touch): wash cream pie
+* Special emotes: '@Click', '@Chitter'
+* Carriable: yes
+
+===Low oxygen exchange===
+Arachnids take 50% more asphyxiation damage from all sources.
+Arachnids heal asphyxiation damage at half the normal rate through access to oxygen.
+
+===Extra pocket slots===
+Arachnids have two extra "web" slots, which acts as pockets.
+
+=== Sericulture ===
+Arachnids can produce 1 silk for the cost of 4 hunger.
+At full satiety, this allows an arachnid to produce 25 silk
+
+===SpiderCraft===
+Can craft special recipes, transforming silk into other items using the crafting menu
+(x) indicating the cost in silk
+* Classic web poncho (12)
+* Web bed (6)
+* Web chair (3)
+* Web cloak (12)
+* Web crate (10)
+* Web door (10)
+* Web jumpskirt (8)
+* Web jumpsuit (8)
+* Web nest (6)
+* Web poncho (12)
+* Web Shield (12)
+* Web table (4)
+* Web tile (1)
+* Web wall (4)
+* Web winter boots (2)
+* Web winter coat (5)
+
+== Diona ==
+* Meat type: plant meat
+* Blood type: sap
+* Default attack: fist (5 blunt)
+* reagent interactions
+** Water (touch): water droplet hat
+** Water, space cleaner (touch): wash cream pie
+* Special emotes: '@Click', '@Chitter'
+* Carriable: yes
+
+===Plant respiration===
+Dionas take half the asphyxiation damage from breathing.
+Dionas do not heal asphyxiation damage from breathing
+
+
+== Human ==
+The guidebook says that they have no remarkable attributes. This is a lie.
+Humans have access to the @belch emote
+You are welcome.

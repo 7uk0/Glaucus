@@ -1,0 +1,73 @@
+Images source: [[dev:Category:DualSense input images]]
+
+=== Buttons ===
+<code><nowiki>{{Key|PS|Directional}}</nowiki></code>
+{{Key|PS|Directional}}
+
+<code><nowiki>{{Key|PS|Directional Left}}</nowiki></code>
+{{Key|PS|Directional Left}}
+
+<code><nowiki>{{Key|PS|Directional Right}}</nowiki></code>
+{{Key|PS|Directional Right}}
+
+<code><nowiki>{{Key|PS|Directional Up}}</nowiki></code>
+{{Key|PS|Directional Up}}
+
+<code><nowiki>{{Key|PS|Directional Down}}</nowiki></code>
+{{Key|PS|Directional Down}}
+
+<code><nowiki>{{Key|PS|Left Stick}}</nowiki></code>
+{{Key|PS|Left Stick}}
+
+<code><nowiki>{{Key|PS|Right Stick}}</nowiki></code>
+{{Key|PS|Right Stick}}
+
+<code><nowiki>{{Key|PS|Touch Pad}}</nowiki></code>
+{{Key|PS|Touch Pad}}
+
+<code><nowiki>{{Key|PS|Circle}}</nowiki></code>
+{{Key|PS|Circle}}
+
+<code><nowiki>{{Key|PS|Cross}}</nowiki></code>
+{{Key|PS|Cross}}
+
+<code><nowiki>{{Key|PS|Square}}</nowiki></code>
+{{Key|PS|Square}}
+
+<code><nowiki>{{Key|PS|Triangle}}</nowiki></code>
+{{Key|PS|Triangle}}
+
+<code><nowiki>{{Key|PS|Create}}</nowiki></code>
+{{Key|PS|Create}}
+
+<code><nowiki>{{Key|PS|Options}}</nowiki></code>
+{{Key|PS|Options}}
+
+<code><nowiki>{{Key|PS|L1}}</nowiki></code>
+{{Key|PS|L1}}
+
+<code><nowiki>{{Key|PS|R1}}</nowiki></code>
+{{Key|PS|R1}}
+
+<code><nowiki>{{Key|PS|L2}}</nowiki></code>
+{{Key|PS|L2}}
+
+<code><nowiki>{{Key|PS|R2}}</nowiki></code>
+{{Key|PS|R2}}
+
+<code><nowiki>{{Key|PS|L3}}</nowiki></code>
+{{Key|PS|L3}}
+
+<code><nowiki>{{Key|PS|R3}}</nowiki></code>
+{{Key|PS|R3}}
+
+<code><nowiki>{{Key|PS|Mute}}</nowiki></code>
+{{Key|PS|Mute}}
+
+<code><nowiki>{{Key|PS|PS}}</nowiki></code>
+{{Key|PS|PS}}
+
+=== Diagram ===
+<code><nowiki>{{Key|PS|Controller Diagram}}</nowiki></code>
+{{Key|PS|Controller Diagram}}
+<noinclude>[[Category:Key template documentation]]</noinclude>

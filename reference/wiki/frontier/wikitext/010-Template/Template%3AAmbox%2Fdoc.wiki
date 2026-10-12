@@ -1,0 +1,73 @@
+{{#ifeq:{{ROOTPAGENAME}}|Ambox|"Ambox" is an abbreviation for '''A'''rticle '''m'''essage '''box'''. You can use amboxes in articles to indicate something important about the current page, often in the header.|
+This '''message template''' is an [[Template:Ambox|article message box]], or '''ambox'''. The documentation below discusses how to use each ambox provided by the wiki.
+}}
+
+== Premade amboxes ==
+=== Problem notice amboxes ===
+These amboxes are used temporarily to notify other editors and visitors about a problem with an article. These amboxes support the following parameters:
+
+* <code>|tiny=</code>: If set to <code>yes</code>, the box will have less padding and the icon will be much smaller than default.
+* <code>|class=</code>: Any additional CSS classes to add to the ambox container element.
+* <code>|date=</code>: The date the ambox was added to the page.
+* <code>|nocat=</code>: If set to <code>yes</code>, no category will be added to the page. Use this only when creating documentation.
+
+'''Note:''' Premade amboxes need the base {{tl|Ambox}} template to work.
+{| class="wikitable"
+! Code !! Result
+|-
+| {{tl|Cleanup}} || {{Cleanup|nocat=yes}}
+|-
+| {{tl|Delete}} || {{Delete|nocat=yes}}
+|-
+| <code><nowiki>{{</nowiki>[[Template:Merge|Merge]]|Example<nowiki>}}</nowiki></code> || {{Merge|Template:Ambox{{!}}Example|nocat=yes}}
+|-
+| <code><nowiki>{{</nowiki>[[Template:Move|Move]]|Example<nowiki>}}</nowiki></code> || {{Move|Template:Ambox{{!}}Example|nocat=yes}}
+|-
+| <code><nowiki>{{</nowiki>[[Template:Split|Split]]|Example<nowiki>}}</nowiki></code><br/><br/><code><nowiki>{{</nowiki>[[Template:Split|Split]]|Example 1|Example 2|Example 3<nowiki>}}</nowiki></code> || {{Split|Template:Ambox{{!}}Example|nocat=yes}}
+{{Split|Template:Ambox{{!}}Example 1|Template:Ambox{{!}}Example 2|Template:Ambox{{!}}Example 3|nocat=yes}}
+|-
+| {{tl|Stub}} || {{Stub|nocat=yes}}
+|-
+
+|}
+
+=== Informational amboxes ===
+These amboxes are intended as permanent fixtures to a page, to notify visitors about some piece of information relevant to the page. These amboxes support the following parameters in addition to any listed:
+
+* <code>|tiny=</code>: If set to <code>yes</code>, the box will have less padding and the icon will be much smaller than default.
+* <code>|class=</code>: Any additional CSS classes to add to the ambox container element.
+
+{| class="wikitable"
+! Code !! Additional parameters !! Result
+|-
+| {{tl|Spoiler warning}} ||  || {{Spoiler warning|nocat=yes}}
+|-
+| {{tl|No direct use}} || || {{No direct use|nocat=yes}}
+|-
+| {{tl|Uses Lua}} || <code><nowiki>|1=</nowiki></code>, a comma-separated list of modules used || {{Uses Lua|nocat=yes}}
+
+|}
+
+=== Optional parameters ===
+You can use optional parameters to further customize a premade ambox. The example below is using <code>tiny=yes</code> and <code>date=01/01/2021</code>.
+{{Cleanup|tiny=yes|date=01/01/2021|nocat=yes}}
+
+== Creating a custom ambox ==
+You can create additional ambox templates as needed using the following parameters:
+<pre>
+{{Ambox
+| color = The left border color.
+| icon = The icon image to be displayed.
+| title = The optional title.
+| message = The explanation text displayed.
+| tiny = If you want the tiny version of the ambox, fill the parameter with "yes".
+| date = An optional date of creation for the message.
+| class = An optional CSS class for the ambox.
+}}
+</pre>
+
+== Dependencies ==
+For this template to work properly, you need the following:
+* <code>.ambox</code> and any related classes, found in [[MediaWiki:Common.css]].
+<includeonly>[[Category:Notice templates]]</includeonly>
+<noinclude>[[Category:Template documentation]]</noinclude>

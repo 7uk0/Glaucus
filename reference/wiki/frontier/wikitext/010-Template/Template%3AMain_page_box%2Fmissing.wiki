@@ -1,0 +1,10 @@
+{{Main page box/start
+| title = {{{1}}}
+| style = text-align:center;
+| class = missing
+}}
+The {{{1}}} box does not exist. Check your spelling or create it here:<br/>
+{{Main page box/create|{{{1|}}}|rootpage = {{{rootpage|}}}}}<br/>
+See [[Template:Main page box]] for more information.
+
+{{Main page box/end}}<noinclude>[[Category:Main page templates]]</noinclude>

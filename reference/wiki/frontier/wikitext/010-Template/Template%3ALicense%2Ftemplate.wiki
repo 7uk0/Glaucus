@@ -1,0 +1,8 @@
+<includeonly><!--
+
+--><div class="license {{{type|}}}" style="border: 1px solid var(--wiki-content-border-color); background: var(--wiki-content-background-color--secondary); align-items: center; padding: 5px; display: flex; gap: 1em;">
+<div class="icon {{#if:{{{darkIcon|}}}|invert-on-dark}}">{{{icon|}}}</div>
+<div class="text">{{{text|}}}{{#if:{{{source|}}}|<br/><span class="source">Source:&nbsp;{{{source|}}}</span>}}{{{text2|}}}</div>
+</div><!--
+
+--></includeonly><noinclude>{{documentation|Template:License/doc}}</noinclude>

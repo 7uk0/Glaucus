@@ -1,0 +1,26 @@
+{| class="wikitable"
+|+'''[[Ultimate Atmosian Coalition]]'''
+!Type
+|Commercial, Military
+|-
+!Industry
+|Gas Processing, Atomic Weaponry, Hallucinogens
+|-
+!Founded
+|2523
+|-
+!Headquarters
+|Deep Space
+|-
+!Area served
+|Unknown
+|-
+!Key people
+|Classified
+|-
+!Parent
+|Unknown
+|-
+!Logo
+|-
+|}

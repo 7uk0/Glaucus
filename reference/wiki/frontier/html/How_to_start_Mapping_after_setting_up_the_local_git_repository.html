@@ -1,0 +1,318 @@
+<!-- How to start Mapping after setting up the local git repository rev 1116 2026-09-26T09:33:13Z -->
+<div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><p>once you've successfully pulled your copy of frontier station using the pins inside the mapping-general discord channel, you'll need to know how to properly open it
+</p><p>you'll need to run the server first, you can do this in many ways:
+</p><p><br />
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#How_to_Run_the_server_and_client"><span class="tocnumber">1</span> <span class="toctext">How to Run the server and client</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Using_Windows_Powershell/CMD:"><span class="tocnumber">1.1</span> <span class="toctext">Using Windows Powershell/CMD:</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Using_an_IDE_like_VS_code:"><span class="tocnumber">1.2</span> <span class="toctext">Using an IDE like VS code:</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#what_to_do_from_the_lobby_window:"><span class="tocnumber">2</span> <span class="toctext">what to do from the lobby window:</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#List_of_ESSENTIAL_Commands:"><span class="tocnumber">3</span> <span class="toctext">List of ESSENTIAL Commands:</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#mapping_(mapid)_[/path/to/shuttle]"><span class="tocnumber">3.1</span> <span class="toctext">mapping (mapid) [/path/to/shuttle]</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#loadgrid_(mapid)_/path/to/shuttle_x-position_y-position"><span class="tocnumber">3.2</span> <span class="toctext">loadgrid (mapid) /path/to/shuttle x-position y-position</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#purchaseshuttle_(stationid)_/path/to/shuttle_(ship_atmosphere)"><span class="tocnumber">3.3</span> <span class="toctext">purchaseshuttle (stationid) /path/to/shuttle (ship atmosphere)</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#startround"><span class="tocnumber">3.4</span> <span class="toctext">startround</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#mappingclientsidesetup"><span class="tocnumber">3.5</span> <span class="toctext">mappingclientsidesetup</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#aghost"><span class="tocnumber">3.6</span> <span class="toctext">aghost</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#physics_com"><span class="tocnumber">3.7</span> <span class="toctext">physics com</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#tp_x_y_(mapid)"><span class="tocnumber">3.8</span> <span class="toctext">tp x y (mapid)</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#colornetwork_(networkid)_Pipe_(#hexcode)"><span class="tocnumber">3.9</span> <span class="toctext">colornetwork (networkid) Pipe (#hexcode)</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#variantize_(gridid)"><span class="tocnumber">3.10</span> <span class="toctext">variantize (gridid)</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#fixgridatmos_(gridid)"><span class="tocnumber">3.11</span> <span class="toctext">fixgridatmos (gridid)</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#savegrid_(gridid)_/(shipname).yml"><span class="tocnumber">3.12</span> <span class="toctext">savegrid (gridid) /(shipname).yml</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#appraisegrid_(gridid)"><span class="tocnumber">3.13</span> <span class="toctext">appraisegrid (gridid)</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#gridtc_(gridid)"><span class="tocnumber">3.14</span> <span class="toctext">gridtc (gridid)</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#mapinit_(mapid)"><span class="tocnumber">3.15</span> <span class="toctext">mapinit (mapid)</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#nodevis"><span class="tocnumber">3.16</span> <span class="toctext">nodevis</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Ship_Submition_Guidelines"><span class="tocnumber">4</span> <span class="toctext">Ship Submition Guidelines</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Setting_up_a_Ship&#39;s_ID"><span class="tocnumber">5</span> <span class="toctext">Setting up a Ship's ID</span></a>
+<ul>
+<li class="toclevel-2 tocsection-24"><a href="#vv_(gridid)"><span class="tocnumber">5.1</span> <span class="toctext">vv (gridid)</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#vvwrite_/entity/(gridid)/BecomesStation/Id_&quot;(shipname)&quot;"><span class="tocnumber">5.2</span> <span class="toctext">vvwrite /entity/(gridid)/BecomesStation/Id "(shipname)"</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="#How_to_add_a_shuttle_to_the_shipyard_console"><span class="tocnumber">6</span> <span class="toctext">How to add a shuttle to the shipyard console</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#Common_Mistakes"><span class="tocnumber">7</span> <span class="toctext">Common Mistakes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-28"><a href="#Building_the_ship&#39;s_front_not_facing_north"><span class="tocnumber">7.1</span> <span class="toctext">Building the ship's front not facing north</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Not_using_the_decal_menu_for_decals"><span class="tocnumber">7.2</span> <span class="toctext">Not using the decal menu for decals</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Using_the_rotation_field_for_different_decal_orientations"><span class="tocnumber">7.3</span> <span class="toctext">Using the rotation field for different decal orientations</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Not_testing_the_ship_before_PR"><span class="tocnumber">7.4</span> <span class="toctext">Not testing the ship before PR</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Not_using_ctrl+f_to_find_and_replace_all_the_old_shuttle&#39;s_name"><span class="tocnumber">7.5</span> <span class="toctext">Not using ctrl+f to find and replace all the old shuttle's name</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Not_linking_the_air_alarms_to_firelocks/vents/scrubbers"><span class="tocnumber">7.6</span> <span class="toctext">Not linking the air alarms to firelocks/vents/scrubbers</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#Running_in_Debug_Mode"><span class="tocnumber">7.7</span> <span class="toctext">Running in Debug Mode</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#Using_the_shipyard_consoles_ship_price"><span class="tocnumber">7.8</span> <span class="toctext">Using the shipyard consoles ship price</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#Using_appraisegrid_on_an_uninitialized_grid"><span class="tocnumber">7.9</span> <span class="toctext">Using appraisegrid on an uninitialized grid</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#Deleting_your_admin_ghost"><span class="tocnumber">7.10</span> <span class="toctext">Deleting your admin ghost</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#Not_using_signal_switches_instead_of_signal_buttons"><span class="tocnumber">7.11</span> <span class="toctext">Not using signal switches instead of signal buttons</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Not_using_all_3_pipe_layers"><span class="tocnumber">7.12</span> <span class="toctext">Not using all 3 pipe layers</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#Picking_up_and_droping_items_to_reposition_them"><span class="tocnumber">7.13</span> <span class="toctext">Picking up and droping items to reposition them</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#using_the_(ghost_only_warp_point)_instead_of_Warp_point"><span class="tocnumber">7.14</span> <span class="toctext">using the (ghost only warp point) instead of Warp point</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-42"><a href="#Common_Questions"><span class="tocnumber">8</span> <span class="toctext">Common Questions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-43"><a href="#Can_i_place_Items_in_a_square?"><span class="tocnumber">8.1</span> <span class="toctext">Can i place Items in a square?</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#What_map_is_FO_in?"><span class="tocnumber">8.2</span> <span class="toctext">What map is FO in?</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#How_does_the_grid/map_system_work?"><span class="tocnumber">8.3</span> <span class="toctext">How does the grid/map system work?</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#How_to_find_your_grid&#39;s_ID_and_save_the_grid"><span class="tocnumber">8.4</span> <span class="toctext">How to find your grid's ID and save the grid</span></a></li>
+<li class="toclevel-2 tocsection-47"><a href="#Where_are_the_ship_files_stored?"><span class="tocnumber">8.5</span> <span class="toctext">Where are the ship files stored?</span></a></li>
+<li class="toclevel-2 tocsection-48"><a href="#How_to_add_more_than_one_Object_on_a_wall/tile?"><span class="tocnumber">8.6</span> <span class="toctext">How to add more than one Object on a wall/tile?</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="#Is_there_an_easier_way_to_add_more_than_one_Object_on_a_wall/tile?"><span class="tocnumber">8.7</span> <span class="toctext">Is there an easier way to add more than one Object on a wall/tile?</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="How_to_Run_the_server_and_client">How to Run the server and client</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=1" title="Edit section: How to Run the server and client"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span id="Using_Windows_Powershell.2FCMD:"></span><span class="mw-headline" id="Using_Windows_Powershell/CMD:">Using Windows Powershell/CMD:</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=2" title="Edit section: Using Windows Powershell/CMD:"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>open the frontier-station-14 folder, then right click inside it without selecting anything in particular, then click "open in terminal", you might need to press the show more options button.
+</p><p>once you do type in <code>dotnet run -c Release --project Content.Server</code> into the terminal, then wait until "ready" pops up, once it does, open the game launcher from steam, then click on "Direct connect to server" then type in "localhost", you've successfully entered the lobby window! read the rest of the instructions in the below section
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Using_an_IDE_like_VS_code:">Using an IDE like VS code:</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=3" title="Edit section: Using an IDE like VS code:"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>open the frontier-station-14 folder then right click inside it without selecting anything in particular, you might need to press the show more options button but you'll see a "open with (IDE name)" as one of the options, once you do that you'll be able to edit the game files much easier, 
+</p><p>and for our purposes you'll be able to run the server/client build in release mode much easier, just go to the run and debug tab (might be different name for your IDE) and look for Server/Client (release). 
+</p><p>once the IDE finishes loading it you'll get a window with a username field, server adress, direct connect, options, quit, and changelog, make sure the server adress is "localhost" and press direct connect, you've successfully entered the lobby window! read the rest of the instructions in the below section
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="what_to_do_from_the_lobby_window:">what to do from the lobby window:</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=4" title="Edit section: what to do from the lobby window:"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>join as observer, once you load in you'll see 3 new admin menus, you'll use the first 2, open the "admin menu" on the "admin tab" then click on admin ghost, this is essential as it's what allows you to be able to interact with a uninitialized map.
+</p><p>once you do you'll need to type in <code>mapping (mapid) /[path to ship file]</code> where mapid is any number that isn't already used and the / is the path to the ship file (you can use 100 if you're unsure, it's never used).
+<code>/Maps/_NF/Shuttles/</code> for ships already added to frontier, and for ships you're saving into the <code>frontier-station-14/bin/Content.Server/data</code> path, 
+if you don't add any ship file, then you'll be in a blank space with nothing in it!
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="List_of_ESSENTIAL_Commands:">List of <big>ESSENTIAL</big> Commands:</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=5" title="Edit section: List of ESSENTIAL Commands:"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span id="mapping_.28mapid.29_.5B.2Fpath.2Fto.2Fshuttle.5D"></span><span class="mw-headline" id="mapping_(mapid)_[/path/to/shuttle]"><code>mapping (mapid) [/path/to/shuttle]</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=6" title="Edit section: mapping (mapid) [/path/to/shuttle]"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>creates a blank uninitialized map, makes you an admin ghost, then teleports you to it.
+you can put in the path to shuttle if you want or not, if it's blank then the map will be empty and you can just use the loadgrid command to load a ship in
+</p><p>Examples:
+</p>
+<ul><li><code>mapping 100</code>&#160;: it first makes you an admin ghost if you aren't already, then it (sometimes it's rather glitchy and doesn't) runs the mappingclientsidesetup command, then teleports you to map 100</li>
+<li><code>mapping 100 /Maps/_NF/Shuttles/surveyor.yml</code>&#160;: it first makes you an admin ghost if you aren't already, then it (sometimes it's rather glitchy and doesn't) runs the mappingclientsidesetup command, then teleports you to map 100 then it loads the surveyor shuttle into the map</li>
+<li><code>mapping 100 /test.yml</code>&#160;: it first makes you an admin ghost if you aren't already, then it (sometimes it's rather glitchy and doesn't) runs the mappingclientsidesetup command, then teleports you to map 100 then loads the ship using the file test.yml from <code>frontier-station-14/bin/Content.Server/data</code> into the map</li></ul>
+<p><br />
+</p>
+<h3><span id="loadgrid_.28mapid.29_.2Fpath.2Fto.2Fshuttle_x-position_y-position"></span><span class="mw-headline" id="loadgrid_(mapid)_/path/to/shuttle_x-position_y-position"><code>loadgrid (mapid) /path/to/shuttle x-position y-position</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=7" title="Edit section: loadgrid (mapid) /path/to/shuttle x-position y-position"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>allows you to load a grid onto any map, even an uninitialized mapping map! but without going through the shipyard console system it'll end up without the drive/cruise/park settings shuttles have
+</p><p><code>/Maps/_NF/Shuttles/</code> for ships already added to frontier, and for ships you're saving they're in <code>frontier-station-14/bin/Content.Server/data</code>, 
+</p><p>Examples:
+</p>
+<ul><li><code>loadgrid 100 /Maps/_NF/Shuttles/surveyor.yml</code>&#160;: loads the surveyor shuttle into the map 100, if the map doesn't exist it makes it then loads the shuttle</li>
+<li><code>loadgrid 100 /test.yml</code>&#160;: loads the ship using the file test.yml from <code>frontier-station-14/bin/Content.Server/data</code> into the map 100, if the map doesn't exist it makes it then loads the shuttle</li></ul>
+<p><br />
+</p>
+<h3><span id="purchaseshuttle_.28stationid.29_.2Fpath.2Fto.2Fshuttle_.28ship_atmosphere.29"></span><span class="mw-headline" id="purchaseshuttle_(stationid)_/path/to/shuttle_(ship_atmosphere)"><code>purchaseshuttle (stationid) /path/to/shuttle (ship atmosphere)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=8" title="Edit section: purchaseshuttle (stationid) /path/to/shuttle (ship atmosphere)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>spawns a ship at the specified station, it doesn't use the standard grid id, so you'll have to search with the suggested ones, it usually has the station your on as the first suggestion.
+</p><p>you can also open the admin menu, go to objects, then switch to Stations instead of grids to find the station ID
+</p>
+<h3><span class="mw-headline" id="startround"><code>startround</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=9" title="Edit section: startround"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this makes the game load in ASAP, bypassing the 3 minute wait time.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="mappingclientsidesetup"><code>mappingclientsidesetup</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=10" title="Edit section: mappingclientsidesetup"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this command adds a bunch of tiles/items to your actions bar, the main thing you'll use it for is deleting entities
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="aghost"><code>aghost</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=11" title="Edit section: aghost"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this command turns you into an admin ghost without having to go through the admin menu
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="physics_com"><code>physics com</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=12" title="Edit section: physics com"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>it shows the ships Centre Of Mass (com) as a large orange ball, if you see more than one then that means your Grid has split, due to how buggy mapping tools are just ctrl clicking out plating has a high chance of making some tiles that aren't connected to the main grid, please be sure to keep it on whenever you're modifying the ship's structure even a little bit
+</p>
+<h3><span id="tp_x_y_.28mapid.29"></span><span class="mw-headline" id="tp_x_y_(mapid)"><code>tp x y (mapid)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=13" title="Edit section: tp x y (mapid)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this command allows you to teleport into any x and y coordinate into any map, say you've teleported back to FO's mapid which is always 1 to buy a ship to look at as reference, to teleport back to your grid you just add it's mapid rather than FO's 
+</p><p><br />
+</p>
+<h3><span id="colornetwork_.28networkid.29_Pipe_.28.23hexcode.29"></span><span class="mw-headline" id="colornetwork_(networkid)_Pipe_(#hexcode)"><code>colornetwork (networkid) Pipe (#hexcode)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=14" title="Edit section: colornetwork (networkid) Pipe (#hexcode)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this command colors a pipe network, it needs to be Pipe with a capital P at the begining otherwise it won't work 
+to find the network id, you just right click a pipe, the number you see is the network id!
+</p><p>it's included with other pins in the mapping general discord channel but the main colors are:  
+</p>
+<ol><li>#990000 for scrubber networks</li>
+<li>#0055cc for air distribution pipes</li>
+<li>#9955cc for auxilery gas networks</li></ol>
+<h3><span id="variantize_.28gridid.29"></span><span class="mw-headline" id="variantize_(gridid)"><code>variantize (gridid)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=15" title="Edit section: variantize (gridid)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this command adds the different variaties of tiles and adds garbage to the ship when it spawns, all ships are required to run this command before adding to the game
+</p><p><br />
+</p>
+<h3><span id="fixgridatmos_.28gridid.29"></span><span class="mw-headline" id="fixgridatmos_(gridid)"><code>fixgridatmos (gridid)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=16" title="Edit section: fixgridatmos (gridid)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this command fixes/adds air to the tiles of the ship , run it when you're finishing up a build and everytime you edit the ship's walls/shape
+</p><p><br />
+</p>
+<h3><span id="savegrid_.28gridid.29_.2F.28shipname.29.yml"></span><span class="mw-headline" id="savegrid_(gridid)_/(shipname).yml"><code>savegrid (gridid) /(shipname).yml</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=17" title="Edit section: savegrid (gridid) /(shipname).yml"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this one saves the ship grid into the <code>frontier-station-14\bin\Content.Server\data</code> path as a file, you'll need to appemd .yml to the end of the ship's name to save as a yml file
+</p><p><br />
+</p>
+<h3><span id="appraisegrid_.28gridid.29"></span><span class="mw-headline" id="appraisegrid_(gridid)"><code>appraisegrid (gridid)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=18" title="Edit section: appraisegrid (gridid)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this one allows you to know how much is worth, you should only run it on a initialized grid!
+</p><p><br />
+</p>
+<h3><span id="gridtc_.28gridid.29"></span><span class="mw-headline" id="gridtc_(gridid)"><code>gridtc (gridid)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=19" title="Edit section: gridtc (gridid)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this one counts all the tiles in the grid, is used for ship size classificiation
+</p><p><br />
+</p>
+<h3><span id="mapinit_.28mapid.29"></span><span class="mw-headline" id="mapinit_(mapid)"><code>mapinit (mapid)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=20" title="Edit section: mapinit (mapid)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>initializes the map whose id you used, do NOT use it before you save your ship, but it'd allow you to test the ship in an empty map, alternatively you can use the next command to test it in the Frontier map
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="nodevis"><code>nodevis</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=21" title="Edit section: nodevis"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>shows you the connections between the different Cables or Pipes, only works if you see them using the "show subfloor" in the admin menu
+</p>
+<h2><span class="mw-headline" id="Ship_Submition_Guidelines">Ship Submition Guidelines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=22" title="Edit section: Ship Submition Guidelines"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>these can be found on the <a rel="nofollow" class="external text" href="https://www.frontierstation14.com/ship-submission-guidelines">frontier station site</a>, you're meant to give it a very thorough read; so you're not forced to redo the shuttle with them in mind, as all ships follow them, you do have some leeway with some of them, but you'd need to ask before hand to make sure
+</p><p><br />
+</p>
+<h2><span id="Setting_up_a_Ship.27s_ID"></span><span class="mw-headline" id="Setting_up_a_Ship's_ID">Setting up a Ship's ID</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=23" title="Edit section: Setting up a Ship&#039;s ID"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Before you can get the ship into the shipyard console, you'll need to add a ship specific ID to refer to the ship within the files, you'll need to use these 2 following commands
+</p><p><br />
+</p>
+<h3><span id="vv_.28gridid.29"></span><span class="mw-headline" id="vv_(gridid)"><code>vv (gridid)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=24" title="Edit section: vv (gridid)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this allows you to edit the components of the ship's grid, the only thing you need to do is go to the server components tab, press "Add Component" then search for BecomesStation, once you do that, write out the next command to EDIT the ship's name!
+</p><p><br />
+</p>
+<h3><span id="vvwrite_.2Fentity.2F.28gridid.29.2FBecomesStation.2FId_.22.28shipname.29.22"></span><span class="mw-headline" id="vvwrite_/entity/(gridid)/BecomesStation/Id_&quot;(shipname)&quot;"><code>vvwrite /entity/(gridid)/BecomesStation/Id "(shipname)"</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=25" title="Edit section: vvwrite /entity/(gridid)/BecomesStation/Id &quot;(shipname)&quot;"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this allows you to change the grid's ID properly, all you need to do is replace the gridid with the ship's, and the shipname with the ship's name that will be used as it's ID
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="How_to_add_a_shuttle_to_the_shipyard_console">How to add a shuttle to the shipyard console</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=26" title="Edit section: How to add a shuttle to the shipyard console"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>and if you want to figure out how to add all the needed files for it to appear in the shipyard console, then i'd recommend reading 
+</p><p>This PR:    <a rel="nofollow" class="external free" href="https://github.com/new-frontiers-14/frontier-station-14/pull/4294">https://github.com/new-frontiers-14/frontier-station-14/pull/4294</a>
+</p><p>as reference to all the files you need to change/add, just ignore anything relating to posters as that's to allow a company logo to show within the guidebook page. 
+</p><p>but if you want the bare minimum set up, then all you need to do is add the shuttle's .yml file in <code>frontier-station-14\Resources\Maps\_NF\Shuttles</code> -or inside a folder within this file for expedition/staff shuttles- 
+</p><p>and add a file in <code>frontier-station-14\Resources\Prototypes\_NF\Shipyard</code>, you can open one for a shuttle of a similar archetype and use it as a template, while having the <code>  guidebookPage: Null</code>, this will make it purchusable without a guidebook entry.
+</p><p>keep in mind, you need to have the <big>class and engine</big> match the ingame ones to the letter, otherwise the ship won't show up at all
+</p>
+<h2><span class="mw-headline" id="Common_Mistakes">Common Mistakes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=27" title="Edit section: Common Mistakes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span id="Building_the_ship.27s_front_not_facing_north"></span><span class="mw-headline" id="Building_the_ship's_front_not_facing_north">Building the ship's front not facing north</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=28" title="Edit section: Building the ship&#039;s front not facing north"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this one happens because people assume the ship's front is asigned by the ship's console, this isn't true however, it is the grid's north that should be the ship's front, as otherwise you'd have to rotate the ship console, which in turn rotates the camera view and the controls, you don't want to redo the whole ship after you make it!
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Not_using_the_decal_menu_for_decals">Not using the decal menu for decals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=29" title="Edit section: Not using the decal menu for decals"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>the reason we use the specific admin decal menu rather than the magic spray painter, is that the decal menu can specifiy whether they can be cleaned away or not, while the magic spray painter's decals are all cleanable, don't want all your decals to be sweeped away!
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Using_the_rotation_field_for_different_decal_orientations">Using the rotation field for different decal orientations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=30" title="Edit section: Using the rotation field for different decal orientations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>the reason why different orientations are defined rather than expecting you to use the rotation field, is because of 2 reasons:
+</p>
+<ol><li>it's way faster than typing in 0 90 180 manually every time</li>
+<li>the decals are made to align only using the different decals, and they don't align with manual rotations</li></ol>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Not_testing_the_ship_before_PR">Not testing the ship before PR</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=31" title="Edit section: Not testing the ship before PR"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>running a couple test flights helps illuminate MANY mistakes you've missed! you're never trully done unless you do a run of the main task your ship was designed for
+</p><p><br />
+</p>
+<h3><span id="Not_using_ctrl.2Bf_to_find_and_replace_all_the_old_shuttle.27s_name"></span><span class="mw-headline" id="Not_using_ctrl+f_to_find_and_replace_all_the_old_shuttle's_name">Not using ctrl+f to find and replace all the old shuttle's name</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=32" title="Edit section: Not using ctrl+f to find and replace all the old shuttle&#039;s name"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>when you're copying over the shipyard entry yml folder in <code>frontier-station-14\Resources\Prototypes\_NF\Shipyard</code> be sure to use ctrl+f to find all the mentions of the old shuttle and replace them, a lot of people miss at least one mention and end up with problems while testing their shuttle, an example: <a rel="nofollow" class="external text" href="https://discord.com/channels/1123826877245694004/1128157227295985734/1475537681076191353">Our Clown shipwright Blundibus struggled too</a>
+</p>
+<h3><span id="Not_linking_the_air_alarms_to_firelocks.2Fvents.2Fscrubbers"></span><span class="mw-headline" id="Not_linking_the_air_alarms_to_firelocks/vents/scrubbers">Not linking the air alarms to firelocks/vents/scrubbers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=33" title="Edit section: Not linking the air alarms to firelocks/vents/scrubbers"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>air alarms don't magically know what the air in the room they're in is like, they check the devices they're linked to, and close the firelocks when a warning thresholds hit
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Running_in_Debug_Mode">Running in Debug Mode</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=34" title="Edit section: Running in Debug Mode"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>running in debug mode is only really intended for debuging entities and other objects that you work on <big>outside the game</big> this is mostly because Debug mode ensures that whenever any error shows up; no matter how small, it will end up crashing the entire server, and mapping tools aren't stable enough to not give out any error messages, and since mapping is done ingame via ingame tools, having it crash on you while you're mapping is a good way to waste your time!
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Using_the_shipyard_consoles_ship_price">Using the shipyard consoles ship price</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=35" title="Edit section: Using the shipyard consoles ship price"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>the PROPER way to see a ship's value is using the appraisegrid command on a newly bought ship, because the shipyard console only shows 95% of the true shuttle's value while appraisegrid shows the true value as is.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Using_appraisegrid_on_an_uninitialized_grid">Using appraisegrid on an uninitialized grid</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=36" title="Edit section: Using appraisegrid on an uninitialized grid"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this results in a far lower value as after initializing a lot of value is added from the machines/lockers/fills/etc
+</p>
+<h3><span class="mw-headline" id="Deleting_your_admin_ghost">Deleting your admin ghost</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=37" title="Edit section: Deleting your admin ghost"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>did you know you can delete yourself? upon doing so you'll become a regular ghost, and as mentioned above only admin ghosts get simulated in uninitialized maps, that means you need to readmin ghost yourself<br />
+</p><p>thankfully this is easy, all you need to do is teleport to an object within an initialized map using the "objects" tab in the admin menu ;Frontier Outpost works well for this, and then readmin ghost yourself using the admin menu again! you can now safely go back to the map you were building on using the tp command listed above
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Not_using_signal_switches_instead_of_signal_buttons">Not using signal switches instead of signal buttons</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=38" title="Edit section: Not using signal switches instead of signal buttons"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>the regular button only has one port, which activates on a press, meaning it can only send one type of signal, this can be remedied by toggle ports in the things you're linking it with but some machines like conveyors don't have such a port......
+</p><p>that's where signal switches come in! they have 3 ports!
+</p>
+<ol><li>on:     sends a signal when it's turned on</li>
+<li>off:    sends a signal when it's turned off</li>
+<li>Status: sends a signal when it switches modes</li></ol>
+<p>the use of signal switches can be seen within the dragoon and the surveyor, they're used for conveyors in those!
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Not_using_all_3_pipe_layers">Not using all 3 pipe layers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=39" title="Edit section: Not using all 3 pipe layers"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>if you use the entity spawner menu to select pipes you'll notice you can place them in all 3 layers as opposed to the pipes givven by mappingclientsidesetup, be sure to use all 3 pipe layers as otherwise the piping will be messy, keep in mind you're allowed to screwdriver vents and scrubers to lead directly into these different layer pipes
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Picking_up_and_droping_items_to_reposition_them">Picking up and droping items to reposition them</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=40" title="Edit section: Picking up and droping items to reposition them"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>this isn't ideal, <a rel="nofollow" class="external text" href="https://discord.com/channels/1123826877245694004/1128157227295985734/1417465068295032832">as it saves the info about the deleted entities</a>, so delete the entity then place another down to reposition
+</p><p><br />
+</p>
+<h3><span id="using_the_.28ghost_only_warp_point.29_instead_of_Warp_point"></span><span class="mw-headline" id="using_the_(ghost_only_warp_point)_instead_of_Warp_point">using the (ghost only warp point) instead of Warp point</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=41" title="Edit section: using the (ghost only warp point) instead of Warp point"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>the warp point (ship) automatically includes the ship info, while ghost only warp point doesn't.
+</p>
+<h2><span class="mw-headline" id="Common_Questions">Common Questions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=42" title="Edit section: Common Questions"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span id="Can_i_place_Items_in_a_square.3F"></span><span class="mw-headline" id="Can_i_place_Items_in_a_square?">Can i place Items in a square?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=43" title="Edit section: Can i place Items in a square?"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Yes, ctrl click for a square, or shift click for a line.
+(note this can be glitchy and spawn tiles as seperate grids, ALWAYS use physics com when placing tiles)
+</p>
+<h3><span id="What_map_is_FO_in.3F"></span><span class="mw-headline" id="What_map_is_FO_in?">What map is FO in?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=44" title="Edit section: What map is FO in?"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>in map 1
+</p>
+<h3><span id="How_does_the_grid.2Fmap_system_work.3F"></span><span class="mw-headline" id="How_does_the_grid/map_system_work?">How does the grid/map system work?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=45" title="Edit section: How does the grid/map system work?"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>i'll keep the explanation simple for the purposes of knowing enough to map: 
+when you save a shuttle, you save it as a grid, when you use the shipyard console to purchase the ship, it turns the ship from a grid, to a map.
+</p><p>what that means is that if you're working on map 100, and saved the ship, you can just go to map 101 and loadgrid the saved ship, the ship isn't tied to a specific map.
+</p><p>ship files are stored as .yml files, so when you want to save your ship using the savegrid command, be sure to append .yml to the end of the ship's name!
+</p><p><br />
+</p>
+<h3><span id="How_to_find_your_grid.27s_ID_and_save_the_grid"></span><span class="mw-headline" id="How_to_find_your_grid's_ID_and_save_the_grid">How to find your grid's ID and save the grid</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=46" title="Edit section: How to find your grid&#039;s ID and save the grid"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>How to find your grid ID and save the grid. (section written by Arimah <a rel="nofollow" class="external free" href="https://discord.com/channels/1123826877245694004/1128157227295985734/1349775296685146112">https://discord.com/channels/1123826877245694004/1128157227295985734/1349775296685146112</a> )
+</p>
+<ol><li>Open the debug overlay with F3.</li>
+<li>Make sure your aghost is over the grid</li>
+<li>Under _Attached NetEntity_, look at _Grid NEntId_</li>
+<li>Put that ID in the `savegrid` command as shown.</li>
+<li>DO NOT USE THE MOUSE POS DATA.</li></ol>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="/wiki/File:GridIDpng.png" class="image" title="the accompanying picture By arimah!"><img alt="the accompanying picture By arimah!" src="/images/thumb/GridIDpng.png/102px-GridIDpng.png?4bbc5c" decoding="async" loading="lazy" width="102" height="120" srcset="/images/thumb/GridIDpng.png/154px-GridIDpng.png?4bbc5c 1.5x, /images/thumb/GridIDpng.png/205px-GridIDpng.png?4bbc5c 2x" data-file-width="347" data-file-height="406" /></a></div></div>
+			<div class="gallerytext">the accompanying picture By arimah!</div>
+		</div></li>
+</ul>
+<p><br />
+</p>
+<h3><span id="Where_are_the_ship_files_stored.3F"></span><span class="mw-headline" id="Where_are_the_ship_files_stored?">Where are the ship files stored?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=47" title="Edit section: Where are the ship files stored?"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>the ones you save yourself are stored at <code>frontier-station-14\bin\Content.Server\data</code>
+while the ones already within the game are in <code>frontier-station-14\Resources\Maps\_NF\Shuttles</code>
+</p><p><br />
+</p>
+<h3><span id="How_to_add_more_than_one_Object_on_a_wall.2Ftile.3F"></span><span class="mw-headline" id="How_to_add_more_than_one_Object_on_a_wall/tile?">How to add more than one Object on a wall/tile?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=48" title="Edit section: How to add more than one Object on a wall/tile?"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<ol><li>Place the Object down</li>
+<li>Right click and select View Variables</li>
+<li>Go to the Server Components Tab</li>
+<li>Search for TransformCompoent and click on it</li>
+<li>Look for _localPosition (NOT LocalPosition), the first value is the x coordinate, and the second is the y value</li>
+<li>change it in .25 increments!</li></ol>
+<p>this can be done for ALL entities! seen usually in buttons/lockers
+</p><p><br />
+</p>
+<h3><span id="Is_there_an_easier_way_to_add_more_than_one_Object_on_a_wall.2Ftile.3F"></span><span class="mw-headline" id="Is_there_an_easier_way_to_add_more_than_one_Object_on_a_wall/tile?">Is there an easier way to add more than one Object on a wall/tile?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/How_to_start_Mapping_after_setting_up_the_local_git_repository?action=edit&amp;section=49" title="Edit section: Is there an easier way to add more than one Object on a wall/tile?"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Yes! using the placement mode of the entity spawner you can find placement modes used by other machines, try to experiment to see what each one does and where they can be used
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:19px auto;"><a href="/wiki/File:Entity_placement_menu.png" class="image" title="where the dropdown is"><img alt="where the dropdown is" src="/images/thumb/Entity_placement_menu.png/120px-Entity_placement_menu.png?e042c0" decoding="async" loading="lazy" width="120" height="112" srcset="/images/thumb/Entity_placement_menu.png/180px-Entity_placement_menu.png?e042c0 1.5x, /images/thumb/Entity_placement_menu.png/240px-Entity_placement_menu.png?e042c0 2x" data-file-width="501" data-file-height="466" /></a></div></div>
+			<div class="gallerytext">where the dropdown is</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="/wiki/File:Entity_placement_menu_dropdown.png" class="image" title="some options in it"><img alt="some options in it" src="/images/thumb/Entity_placement_menu_dropdown.png/79px-Entity_placement_menu_dropdown.png?173ab2" decoding="async" loading="lazy" width="79" height="120" srcset="/images/thumb/Entity_placement_menu_dropdown.png/119px-Entity_placement_menu_dropdown.png?173ab2 1.5x, /images/thumb/Entity_placement_menu_dropdown.png/159px-Entity_placement_menu_dropdown.png?173ab2 2x" data-file-width="492" data-file-height="742" /></a></div></div>
+			<div class="gallerytext">some options in it</div>
+		</div></li>
+</ul></div>

@@ -1,0 +1,43 @@
+{{WIP}}
+
+= Guide to Shuttle Building =
+
+== Shuttle Building Overview ==
+This Guide assumes you are familiar with Engineering and know how to construct various objects and how they interact. If you are not familiar, please read up on Engineering: [[Guide to Engineering]]. 
+The basics of shuttle building are as follows:
+* Steel can be crafted into Rods
+* Rods can be placed to create a grid
+* Adding steel or crafted floor tiles to grid tiles will create hull plates
+* An area can then be enclosed with walls and windows to contain an atmosphere within
+----
+
+== Building on Frontier ==
+This section covers building custom ships on frontier, if you are instead mapping a ship to be purchased from a Shipyard, please visit the Building for Shipyard section further down.
+
+=== Picking a Ship ===
+
+==== Knowing your Limits ====
+
+=== Expanding your Ship ===
+
+=== Atmospheric Control ===
+
+=== Critical Components ===
+----
+
+== Building for Shipyard ==
+
+=== Things to Consider ===
+
+==== Size ====
+
+==== Class ====
+
+==== Equipment ====
+
+=== Creating a Fork ===
+No, I don't mean the kind you eat with.
+
+=== Creating your Ship ===
+
+=== Submitting your Creation ===

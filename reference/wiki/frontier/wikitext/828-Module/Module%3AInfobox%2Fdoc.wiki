@@ -1,0 +1,1 @@
+{{luadoc}} This module enables the creation of [[support:DRUID infoboxes|DRUID infoboxes]].

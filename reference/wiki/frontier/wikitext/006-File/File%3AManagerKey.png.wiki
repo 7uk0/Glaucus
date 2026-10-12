@@ -1,0 +1,4 @@
+== Summary ==
+Testing Background Imagery for MNGR access for Vending Machines (i.e. Hidden Selections via Hacking)
+== Licensing ==
+{{License|CC-BY-SA}}

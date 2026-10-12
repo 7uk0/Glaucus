@@ -1,0 +1,58 @@
+This template helps you create indexed columns in tables (particularly [[support:Cargo|Cargo]] queries) and to retrieve iterator values when using the parser function <code><nowiki>{{#arraymaptemplate</nowiki></code> (bundled with Extension:ParserPower on wiki.gg).
+== Simple counting ==
+<pre>
+* {{iter|}}
+* {{iter|}}
+* {{iter|}}
+* {{iter|}}
+</pre>
+
+* {{iter|}}
+* {{iter|}}
+* {{iter|}}
+* {{iter|}}
+
+== Reset the counter ==
+
+<pre>
+* {{iter|reset=yes}}
+* {{iter|}}
+* {{iter|reset=yes}}
+* {{iter|}}
+</pre>
+
+* {{iter|reset=yes}}
+* {{iter|}}
+* {{iter|reset=yes}}
+* {{iter|}}
+
+== Multiple counters ==
+
+<pre>
+* {{iter|key1}}
+* {{iter|key2}}
+* {{iter|key2}}
+* {{iter|key1}}
+</pre>
+
+* {{iter|key1}}
+* {{iter|key2}}
+* {{iter|key2}}
+* {{iter|key1}}
+
+== Get value without incrementing ==
+
+<pre>
+* {{iter|reset=yes}}
+* {{iter|}}
+* {{iter|}}
+* {{iter|get=yes}}
+</pre>
+
+* {{iter|reset=yes}}
+* {{iter|}}
+* {{iter|}}
+* {{iter|get=yes}}
+<noinclude>
+[[Category:Template documentation]]
+</noinclude>

@@ -1,0 +1,14 @@
+<includeonly>{{Ambox
+| color = grey
+| icon = Delete.svg
+| title = Candidate for Deletion
+| message = This page lacks relevance for '''{{SITENAME}}''' and is a candidate for '''deletion'''.
+| tiny = {{{tiny|}}}
+| class = {{{class|}}}
+| date = {{{date|}}}
+}}<!--
+
+-->{{#ifeq: {{lc:{{{nocat|}}}}} | yes ||[[Category:Candidates for deletion]]}}</includeonly><!--
+
+--><noinclude>{{Delete|nocat=yes}}
+{{doc|Template:Ambox/doc}}</noinclude>

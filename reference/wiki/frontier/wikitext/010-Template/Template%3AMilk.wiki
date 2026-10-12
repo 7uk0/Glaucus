@@ -1,0 +1,1 @@
+<div style="text-align: center; display: flex; align-items: flex-end; justify-content: center; width: 100%">[[File:Bucket.png|32px|link=]]Milk it</div>

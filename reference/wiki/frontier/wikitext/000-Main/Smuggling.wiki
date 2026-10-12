@@ -1,0 +1,37 @@
+<!-- For Wiki Contributors, this guide is purposefully left vague and shouldn't be edited to create a TRUE Guide for the process of Smuggling. -->
+
+{{Warning|Notes=When smuggling you are '''NOT''' granted antagonist permissions.}}
+{| class="wikitable" style="margin-left: auto; margin-right: auto; border: none;
+| [[File:Cybersun-Crate.png|center|75px]]
+| [[File:Donkco-Crate.png|center|75px]]
+| [[File:Contraband-Crate.png|center|75px]]
+|}
+
+Smuggling is the illegal transportation of contraband crates from Spinward Syndicate Drop Pods to deliver to either Cargo Depots or Trade Mall to sell. This is a player-activated event which can lead to in-character consequences from fines, arrests, and robberies. Specifically, [[Space_Law#Capital_Crimes|Black Marketing]] and [[Space_Law#Misdemeanors|Misdemeanor Possession]] or more can be charged against you.
+
+== <span style="color:red;">Disclaimer</span> ==
+Smuggling '''cannot grant you Antagonistic permissions''', meaning you cannot kill any Frontier crew or pirates, nor act as an antagonistic way in any shape or form. You cannot smuggle as a pirate or as New Frontier Sheriff Department (NFSD) personnel - meaning you cannot activate any dead drops by acting to ''search closer''.
+
+For Pirates and NFSD, you '''cannot''' actively search for dead drop notes, or drop pods. You must wait for a tip-off from your respective headsets or a report from the general crew; you cannot work with others to activate them on your behalf.
+
+If you are confused about what you can and cannot do, AHELP (F1) in-game so an admin can answer your questions. Keep in mind that if an admin does not answer, it is not approval to go ahead with that action.
+
+==Starting a Smuggle==
+I can't tell you much, but I can say that the first step isn’t finding the right people. 
+
+It’s letting them find you. 
+
+It starts with a fax, one that arrives when you least expect it, when no one’s watching. No sender. No trace. You don’t ask questions. You don’t tell a soul. You simply read, and follow.
+
+==Dealing with the NFSD==
+If the NFSD happens to intercept you, there are a few things you could do.
+
+If you have no contraband on you, you can quickly get rid all of the evidence on your ship of your involvement. Your best bet being spacing, however be warned that the NFSD may have other ways of pinning the culprit as you.
+
+If you do have the contraband on you, your best bet is to peacefully surrender it. While you will probably face brig time, the NFSD may be more lenient with your punishment as a result of your peaceful surrender.
+
+However, if you want to fight the NFSD, you NEED to follow the [[Server Rules|escalation rules]]. Failure to do so will result in OOC repercussions. A mere traffic stop should not result in an all out shootout. It is advised you use non-lethal weaponry if you must, but it is a much better option to simply surrender the cargo. 
+
+{{Guides Menu}} 
+
+''<small>Hey,  if you want to know more.   Ask around in space.  I am not going to announce my self as I don't want to get caught, but if you ask the right questions I can probably help.  just for the love of god stay off the fucking coms.</small>''

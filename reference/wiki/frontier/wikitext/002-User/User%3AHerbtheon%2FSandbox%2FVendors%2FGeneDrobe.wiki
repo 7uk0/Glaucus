@@ -1,0 +1,28 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Placeholder.png|50px]] || Genetics Jumpsuit || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Genetics Jumpskirt || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || White Shoes || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Geneticist Lab Coat || $350 || 2
+|-
+| [[File:Placeholder.png|50px]] || Genetics Winter Coat || $500 || 2
+|-
+| [[File:Placeholder.png|50px]] || Genetics Backpack || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Genetics Satchel || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Genetics Duffel Bag || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Genetics Winter Boots || $100 || 2
+|-
+| [[File:Placeholder.png|50px]] || Genetics Messenger Boots || $100 || 2
+|-
+|}
+</div>
+</includeonly>

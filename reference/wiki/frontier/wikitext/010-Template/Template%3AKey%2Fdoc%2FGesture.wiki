@@ -1,0 +1,77 @@
+Images source: [[dev:Category:Gesture input images]]
+
+=== Fingers ===
+<code><nowiki>{{key|gesture|Finger Front}}</nowiki></code>
+{{key|gesture|Finger Front}}
+
+<code><nowiki>{{key|gesture|Finger Side}}</nowiki></code>
+{{key|gesture|Finger Side}}
+
+=== Tap & hold ===
+<code><nowiki>{{key|gesture|Tap}}</nowiki></code>
+{{key|gesture|Tap}}
+
+<code><nowiki>{{key|gesture|Double Tap}}</nowiki></code>
+{{key|gesture|Double Tap}}
+
+<code><nowiki>{{key|gesture|Hold}}</nowiki></code>
+{{key|gesture|Hold}}
+
+=== Swipe motions ===
+<code><nowiki>{{key|gesture|Swipe Bottom Left}}</nowiki></code>
+{{key|gesture|Swipe Bottom Left}}
+
+<code><nowiki>{{key|gesture|Swipe Bottom Right}}</nowiki></code>
+{{key|gesture|Swipe Bottom Right}}
+
+<code><nowiki>{{key|gesture|Swipe Down}}</nowiki></code>
+{{key|gesture|Swipe Down}}
+
+<code><nowiki>{{key|gesture|Swipe Left}}</nowiki></code>
+{{key|gesture|Swipe Left}}
+
+<code><nowiki>{{key|gesture|Swipe Right}}</nowiki></code>
+{{key|gesture|Swipe Right}}
+
+<code><nowiki>{{key|gesture|Swipe Top Left}}</nowiki></code>
+{{key|gesture|Swipe Top Left}}
+
+<code><nowiki>{{key|gesture|Swipe Top Right}}</nowiki></code>
+{{key|gesture|Swipe Top Right}}
+
+<code><nowiki>{{key|gesture|Swipe Up}}</nowiki></code>
+{{key|gesture|Swipe Up}}
+
+=== Zoom & scroll ===
+<code><nowiki>{{key|gesture|Zoom In}}</nowiki></code>
+{{key|gesture|Zoom In}}
+
+<code><nowiki>{{key|gesture|Zoom Out}}</nowiki></code>
+{{key|gesture|Zoom Out}}
+
+<code><nowiki>{{key|gesture|Scroll Down}}</nowiki></code>
+{{key|gesture|Scroll Down}}
+
+<code><nowiki>{{key|gesture|Scroll Left}}</nowiki></code>
+{{key|gesture|Scroll Left}}
+
+<code><nowiki>{{key|gesture|Scroll Right}}</nowiki></code>
+{{key|gesture|Scroll Right}}
+
+<code><nowiki>{{key|gesture|Scroll Up}}</nowiki></code>
+{{key|gesture|Scroll Up}}
+
+=== Circular motions ===
+<code><nowiki>{{key|gesture|Double Rotate}</nowiki></code>
+{{key|gesture|Double Rotate}}
+
+<code><nowiki>{{key|gesture|Full Circle}}</nowiki></code>
+{{key|gesture|Full Circle}}
+
+<code><nowiki>{{key|gesture|Half Circle}}</nowiki></code>
+{{key|gesture|Half Circle}}
+
+<code><nowiki>{{key|gesture|Quarter Circle}}</nowiki></code>
+{{key|gesture|Quarter Circle}}
+__NOTOC__
+<noinclude>[[Category:Key template documentation]]</noinclude>

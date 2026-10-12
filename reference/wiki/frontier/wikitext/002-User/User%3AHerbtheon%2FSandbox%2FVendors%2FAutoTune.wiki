@@ -1,0 +1,99 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:TrumpetInstrument.png|50px]] || Trumpet || $2000 || 2
+|-
+| [[File:TromboneInstrument.png|50px]] || Trombone || $2000 || 2
+|-
+| [[File:FrenchHornInstrument.png|50px]] || French Horn || $2000 || 2
+|-
+| [[File:SaxophoneInstrument.png|50px]] || Saxophone || $2000 || 2
+|-
+| [[File:EuphoniumInstrument.png|50px]] || Eophonium || $2000 || 2
+|-
+| [[File:AcousticGuitarInstrument.png|50px]] || Acoustic Guitar || $2000 || 2
+|-
+| [[File:ElectricGuitarInstrument.png|50px]] || Electric Guitar || $2000 || 2
+|-
+| [[File:BassGuitarInstrument.png|50px]] || Bass Guitar || $2000 || 2
+|-
+| [[File:RockGuitarInstrument.png|50px]] || Rock Guitar || $2000 || 2
+|-
+| [[File:BanjoInstrument.png|50px]] || Banjo || $2000 || 2
+|-
+| [[File:ViolinInstrument.png|50px]] || Violin || $2000 || 2
+|-
+| [[File:CelloInstrument.png|50px]] || Cello || $2000 || 2
+|-
+| [[File:ViolaInstrument.png|50px]] || Viola || $2000 || 2
+|-
+| [[File:RecorderInstrument.png|50px]] || Recorder || $2000 || 2
+|-
+| [[File:BagpipeInstrument.png|50px]] || Bagpipe || $2000 || 2
+|-
+| [[File:ClarinetInstrument.png|50px]] || Clarinet || $2000 || 2
+|-
+| [[File:FluteInstrument.png|50px]] || Flute || $2000 || 2
+|-
+| [[File:OcarinaInstrument.png|50px]] || Ocarina || $2000 || 2
+|-
+| [[File:PanFluteInstrument.png|50px]] || Pan Flute || $2000 || 2
+|-
+| [[File:SynthesizerInstrument.png|50px]] || Synthesizer || $2000 || 2
+|-
+| [[File:AccordionInstrument.png|50px]] || Accordion || $2000 || 2
+|-
+| [[File:KalimbaInstrument.png|50px]] || Kalimba || $2000 || 2
+|-
+| [[File:WoodblockInstrument.png|50px]] || Wood Block || $2000 || 2
+|-
+| [[File:GlockenspielInstrument.png|50px]] || Glockenspiel || $2000 || 2
+|-
+| [[File:BikeHornInstrument.png|50px]] || Gilded Bike Horn || $2000 || 2
+|-
+| [[File:MusicBoxInstrument.png|50px]] || Music Box || $2000 || 2
+|-
+| [[File:XylophoneInstrument.png|50px]] || Xylophone || $2000 || 2
+|-
+| [[File:MicrophoneInstrument.png|50px]] || Microphone || $2000 || 2
+|-
+| [[File:MusicalLungInstrument.png|50px]] || Musical Lung || $2000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Tuba Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Harp Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Contrabass Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Vibraphone Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Marimba Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Tom Drums Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Timpani Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Taiko Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Minimoog Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Church Organ Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Piano Flatpack || $4000 || 2
+|-
+| [[File:InstrumentFlatpack.png|50px]] || Upright Piano Flatpack || $4000 || 2
+|-
+| style="background-color:#383838;" | [[File:Rickenbacker.png|50px]]
+| style="background-color:#383838;" |  Rickenbacker
+| style="background-color:#383838;" | $2000
+| style="background-color:#383838;" | 1
+|-
+| style="background-color:#380C0C;" | [[File:Rickenbacker.png|50px]]
+| style="background-color:#380C0C;" |  Rickenbacker
+| style="background-color:#380C0C;" | $2000
+| style="background-color:#380C0C;" | 1
+|}
+</div>
+</includeonly>

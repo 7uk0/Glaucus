@@ -1,0 +1,46 @@
+== Summary ==
+<templatedata>
+{
+	"params": {
+		"1": {
+			"aliases": [
+				"page"
+			],
+			"label": "Page Name",
+			"description": "The name for the target page.",
+			"example": "Page Name",
+			"type": "wiki-page-name",
+			"required": true
+		},
+		"2": {
+			"aliases": [
+				"label"
+			],
+			"label": "Link Label",
+			"description": "The text to the be displayed on the link icon's label.",
+			"example": "Alternative Page Name",
+			"type": "line"
+		}
+	},
+	"description": "Use this template to display an icon next to a page link.\n\nThis template assumes that each page has an icon uploaded at a specific location, namely \"File:Page Name (Item).png\".",
+	"format": "inline"
+}
+</templatedata>
+
+== Examples ==
+For the examples below, <code><nowiki>File:Mystic Feather (Item).png</nowiki></code> was used as the icon for a page called <code>Mystic Feather</code>.
+{| class="wikitable"
+! Code !! Result
+|-
+| <code><nowiki>{{Item icon|Mystic Feather}}</nowiki></code> || {{Item icon|Mystic Feather}}
+|-
+| <code><nowiki>{{Item icon|Mystic Feather|Mystic Feathers}}</nowiki></code> || {{Item icon|Mystic Feather|Mystic Feathers}}
+|-
+| <code><nowiki>{{Item icon|Mystic Feather|notext}}</nowiki></code> || {{Item icon|Mystic Feather|notext}}
+|-
+| <code><nowiki>{{Item icon|Missing Item}}</nowiki></code> (Missing Page Icon) || {{Item icon|Missing Item}}
+|}
+== Dependencies==
+For this template to work properly, you need the following:
+* The base {{tl|Link icon}} template.
+* The <code>.link-icon</code> class and any related classes, found in [[MediaWiki:Common.css]].

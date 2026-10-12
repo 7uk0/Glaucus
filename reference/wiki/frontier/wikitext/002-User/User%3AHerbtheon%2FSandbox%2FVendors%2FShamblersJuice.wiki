@@ -1,0 +1,33 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:DrinkShamblersJuiceCan.png|50px]] || Shambler's Juice Can || $55 || 5
+|-
+| [[File:DrinkGrapeCan.png|50px]] || Grape Soda Can || $55 || 2
+|-
+| [[File:DrinkRootBeerCan.png|50px]] || Root Beer Can || $55 || 2
+|-
+| [[File:DrinkIcedTeaCan.png|50px]] || Iced Tea Can || $55 || 2
+|-
+| [[File:DrinkSolDryCan.png|50px]] || Sol Dry Can || $55 || 2
+|-
+| [[File:DrinkLemonLimeCan.png|50px]] || Smite Can || $55 || 2
+|-
+| [[File:DrinkLemonLimeCranberryCan.png|50px]] || Smite Cranberry Can || $55 || 2
+|-
+| [[File:DrinkFourteenLokoCan.png|50px]] || Fourteen Loko Can || $55 || 2
+|-
+| style="background-color:#383838;" | [[File:DrinkChangelingStingCan.png|50px]]
+| style="background-color:#383838;" | Changeling Sting Can
+| style="background-color:#383838;" | $55
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#380C0C;" | [[File:DrinkNukieCan.png|50px]]
+| style="background-color:#380C0C;" | Blood-red Brew Can
+| style="background-color:#380C0C;" | $55
+| style="background-color:#380C0C;" | 2
+|}
+</div>
+</includeonly>

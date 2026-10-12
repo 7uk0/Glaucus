@@ -1,0 +1,34 @@
+== ''The following is a quick guide on how a trial should be run, whether it be by an SR as is their authority or by someone appointed to a Judge position.'' ==
+
+=== OPENING STATEMENTS: ===
+The Plaintiff and the Defense State why they are there and what they want out of the case. (Plaintiff first, Defense second) 
+
+=== REBUTTAL: ===
+This is when The Plaintiff and Defense get to argue points brought up in the opening statements. Witnesses may be called after each party's rebuttal. Each team's lawyer may cross-examine (question) the witnesses After Witness statements are given. This process should be monitored closely by the appointed judge and should remain constructive and within reasonable time constraints.
+
+=== CLOSING STATEMENTS: ===
+This is when the plaintiff and defense make a short statement on their behalf to wrap up the case. 
+
+=== RULING: ===
+If it is a Jury Trial, the individuals should be given a reasonable time to come to a judgment decision (no more than five minutes). This judgment will be read by an elected official within the Jury and announced to the entire courtroom. In such cases where a Jury trial was not warranted, the Judge will decide within similar time constraints and announce it in the same manner.
+----
+
+=== FOR LAWYERS: ===
+
+==== Grounds to object on: (An Objection is given when the objecting party's lawyer wants a statement from a witness or the opposite party redacted for one of the following reasons) ====
+Hearsay: The person is stating something as a fact that they were not present to see or hear. 
+
+Speculation: The witness or opposing party is drawing assumptions. 
+
+Relevance: The party or lawyer lacks reason relevant to the case to be making a statement or asking a specific question to a witness. 
+
+Leading: The party or lawyer is asking questions to a witness that are leading them towards a certain narrative, instead of being constructive to the case all around. 
+----
+
+=== FOR JUDGES: ===
+The Judge '''WILL''' need to validate or invalidate a lawyer's objections by simply saying "sustained" if they agree or "I'll allow the statement" if they disagree with the objection. 
+
+Lastly, they would also need to call ORDER when people speak out of turn and charge contempt of court when someone is being disruptive and won't stop. (The disruptive party must be warned first before a contempt charge is given)
+----
+
+==== To conclude, the Judge is the highest authority in the courtroom at the time a court hearing is in session. They are to be in complete control of the room and have free reign to eject any personnel that fail to keep the peace. The Judge has full authority within a courtroom setting, if reasonable, to sentence at that time non-compliant personnel with contempt of court which carries a sentence of up to thirty minutes in an NFSD brig. ====

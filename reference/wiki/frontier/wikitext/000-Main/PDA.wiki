@@ -1,0 +1,23 @@
+PDA: Personal Data Assistant, is the smartphone equivalent in Space Station. Equipped with various slots to hold different useful tools, and a EasyClip™ Jumpsuit clip for use on the go.  The user can also install various programs to aid their Journey into Frontier space. Coming in various types, there is surely a PDA right for you.
+
+== PDA Contents ==
+
+=== ID Card ===
+
+=== Space Law ===
+
+=== Pen ===
+
+=== pAI ===
+
+== PDA Programs ==
+
+=== Installing a Program ===
+
+=== List of Programs ===
+
+==== Pre-Installed ====
+
+==== Installable Programs ====
+
+==== Restricted Programs ====

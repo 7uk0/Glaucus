@@ -1,0 +1,23 @@
+This template creates a small color splotch with a given background color next to a plaintext color code. This is useful for previewing colors.
+
+==Usage==
+{{tlx|color|<color>}}
+Where <code><color></code> is any valid [https://developer.mozilla.org/en-US/docs/Web/CSS/color_value CSS color].
+
+==Examples==
+<pre>
+My favorite color is {{color|darkgreen}}
+
+I think the current {{color|#6d8afb}} of links should be changed to a {{color|#6df4fb}}
+
+RGB is cool too, you can do {{color|rgb(128,255,128)}}, or even transparency with {{color|rgba(128,255,128,0.5)}}.
+</pre>
+Produces:
+
+My favorite color is {{color|darkgreen}}
+
+I think the current {{color|#6d8afb}} of links should be changed to a {{color|#6df4fb}}
+
+RGB is cool too, you can do {{color|rgb(128,255,128)}}, or even transparency with {{color|rgba(128,255,128,0.5)}}.
+
+<noinclude>[[Category:Template documentation]]</noinclude>

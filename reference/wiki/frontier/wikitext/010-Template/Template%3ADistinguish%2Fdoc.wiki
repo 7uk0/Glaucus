@@ -1,0 +1,64 @@
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Alternative",
+			"description": "The alternative page.",
+			"example": "Alternative Page",
+			"type": "wiki-page-name",
+			"suggested": true
+		},
+		"2": {
+			"label": "Second Alternative",
+			"description": "A second alternative page.",
+			"example": "Second Alternative Page",
+			"type": "wiki-page-name"
+		},
+		"3": {
+			"label": "Third Alternative",
+			"description": "A third alternative page.",
+			"example": "Third Alternative Page",
+            "type": "wiki-page-name"
+		},
+		"text": {
+			"label": "Alternative Text",
+			"description": "Instead of using pages, you can provide a full alternative text. This parameter overrides other provided parameters.",
+			"example": "the alternative page, [[Alternative Page]]",
+			"type": "line"
+		}
+	},
+	"description": "This hatnote template is meant to be used to indicate possible alternatives to what the reader wants to find.",
+	"paramOrder": [
+		"1",
+		"2",
+		"3",
+		"text"
+	],
+	"format": "inline"
+}
+</templatedata>
+
+== Examples ==
+{| class="wikitable"
+! Code !! Result
+|-
+| <code><nowiki>{{Distinguish|Special:Uncategorizedpages}}</nowiki></code> || {{Distinguish|Special:Uncategorizedpages}}
+|-
+| <code><nowiki>{{Distinguish|Special:Uncategorizedpages|Special:Uncategorizedfiles}}</nowiki></code> || {{Distinguish|Special:Uncategorizedpages|Special:Uncategorizedfiles}}
+|-
+| <code><nowiki>{{Distinguish|Special:Uncategorizedpages|Special:Uncategorizedfiles|Special:Uncategorizedcategories}}</nowiki></code> || {{Distinguish|Special:Uncategorizedpages|Special:Uncategorizedfiles|Special:Uncategorizedcategories}}
+|-
+| <code><nowiki>{{Distinguish|Special:Uncategorizedpages{{!}}Page 1}}</nowiki></code> (Custom link label) || {{Distinguish|Special:Uncategorizedpages{{!}}Page 1}}
+|-
+| <code><nowiki>{{Distinguish|text = Page 1, another name for [[Special:Uncategorizedpages]]}}</nowiki></code> || {{Distinguish|text = Page 1, another name for [[Special:Uncategorizedpages]]}}
+|}
+
+== Dependencies ==
+For this template to work properly, you need the following:
+* The {{tl|Hatnote}} base template.
+* The <code>.hatnote</code> class, found in [[MediaWiki:Common.css]].
+
+== Source ==
+Roughly based on [[wikipedia:Template:Distinguish|Wikipedia's Distinguish Template]].
+
+<noinclude>[[Category:Template documentation]]</noinclude>

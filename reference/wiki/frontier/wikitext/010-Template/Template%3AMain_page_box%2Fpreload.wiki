@@ -1,0 +1,8 @@
+{{Main page box/start
+ | title = Example
+}}
+Content goes here, between the start and end templates.
+Feel free to use wikitext, tables, templates, new lines, whatever.
+{{Main page box/end}}<includeonly><no<noinclude></noinclude>include>[[Category:Main page boxes]]</no<noinclude></noinclude>include></includeonly><!-- don't edit this line --><noinclude>
+[[Category:Main page templates]]
+</noinclude>

@@ -1,0 +1,1 @@
+<noinclude>[[Category:Documentation templates]]</noinclude><div class="luadoc">Edit the [[{{FULLPAGENAME}}/doc|documentation or categories]] for this module. {{#ifexist:{{FULLPAGENAME}}/i18n|This module has an [[/i18n|i18n file]].}}</div>

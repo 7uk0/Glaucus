@@ -1,0 +1,4 @@
+== Summary ==
+entity_placement_menu with the dropdown menu expanded
+== Licensing ==
+{{License|game}}

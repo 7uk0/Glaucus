@@ -1,0 +1,19 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:Placeholder.png|50px]] || Placeholder || $100 || 2
+|-
+| style="background-color:#383838;" | [[File:Placeholder.png|50px]]
+| style="background-color:#383838;" | Placeholder
+| style="background-color:#383838;" | $100
+| style="background-color:#383838;" | 2
+|-
+| style="background-color:#380C0C;" | [[File:Placeholder.png|50px]]
+| style="background-color:#380C0C;" | Placeholder
+| style="background-color:#380C0C;" | $100
+| style="background-color:#380C0C;" | 2
+|}
+</div>
+</includeonly>

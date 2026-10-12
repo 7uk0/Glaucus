@@ -1,0 +1,120 @@
+// User profile
+// <nowiki>
+mw.loader.using( [ 'mediawiki.util', 'mediawiki.api' ] ).done( function() {
+	var username = mw.config.get('wgRelevantUserName');
+	var lang = mw.language.bcp47(mw.config.get('wgUserLanguage'));
+	if ( username && !window.loadedHorseUserProfile ) {
+		window.loadedHorseUserProfile = true;
+		var dateOptions = {
+			year: "numeric",
+			month: "short",
+			day: "numeric",
+			hour: "2-digit",
+			minute: "2-digit",
+			timeZone: "UTC",
+			timeZoneName: "short"
+		};
+		var api = new mw.Api();
+		if ( mw.util.isIPAddress(username) ) api.get( {
+			action: 'query',
+			list: ['usercontribs', 'blocks'],
+			ucuser: username,
+			ucprop: [],
+			uclimit: 'max',
+			bkip: username,
+			bkprop: ['user', 'by', 'timestamp', 'expiry', 'reason'],
+			bklimit: 1,
+			formatversion: 2
+		} ).done( function(data) {
+			var editcount = data.query.usercontribs.length;
+			if ( data.continue ) editcount = data.limits.usercontribs+'+'
+			var user = {
+				groups: ['*'],
+				editcount: editcount
+			};
+			formatProfile(user, data.query.blocks[0]);
+		} );
+		else api.get( {
+			action: 'query',
+			list: 'users',
+			ususers: username,
+			usprop: ['groups', 'editcount', 'registration', 'blockinfo', 'emailable'],
+			formatversion: 2
+		} ).done( function(data) {
+			var user = data.query.users[0];
+			var block;
+			if ( user.blockid ) block = {
+				user: username,
+				by: user.blockedby,
+				timestamp: user.blockedtimestamp,
+				expiry: user.blockexpiry,
+				reason: user.blockreason
+			};
+			formatProfile(user, block);
+		} );
+		
+		function formatProfile(user, block) {
+			user.groups.splice(user.groups.indexOf('*'), 1);
+			var text = '<div class="horse-userprofile-info">';
+			if ( user.groups.length ) {
+				var groupList = user.groups.map( function(group) {
+					var grouppage = '{{MediaWiki:grouppage-'+group+'}}';
+					return [
+						'{{#ifexist: '+grouppage+' | [['+grouppage+'|{{int:group-'+group+'}}]] | {{int:group-'+group+'}} }}',
+						'{{#ifexist: '+grouppage+' | [['+grouppage+'|{{int:group-'+group+'-member|'+username+'}}]] | {{int:group-'+group+'-member|'+username+'}} }}'
+					];
+				} ).reduce( function(prev, cur) {
+					prev[0].push(cur[0]);
+					prev[1].push(cur[1]);
+					return prev;
+				}, [[], []] );
+				text += '\n\n<span>{{int:prefs-memberingroups|'+user.groups.length+'|'+username+'}}</span>\t<span>{{int:prefs-memberingroups-type|'+mw.language.listToText(groupList[0])+'|'+mw.language.listToText(groupList[1])+'}}</span>';
+			}
+			text += '\n\n<span>{{int:prefs-edits}}</span>\t<span>[[Special:Contribs/'+username+'|'+mw.language.convertNumber(user.editcount)+']]</span>';
+			if ( user.registration ) {
+				text += '\n\n<span>{{int:prefs-registration}}</span>\t<span>'+mw.language.convertNumber(new Date(user.registration).toLocaleString(lang, dateOptions))+'</span>';
+				if ( !user.emailable ) text += '\n\n<span>{{int:nowikiemailtext|'+username+'}}</span>';
+			}
+			text += '\n\n</div>';
+			if ( block && mw.config.get('wgArticleId') !== 0 ) {
+				var blockDate = new Date(block.timestamp);
+				var blockexpiry = '{{int:infiniteblock}}';
+				if ( !['infinite', 'indefinite', 'infinity', 'never'].includes(block.expiry) ) {
+					var expiry = new Date(block.expiry.replace( /(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2,3})/, '$1-$2-$3T$4:$5:$6Z' ));
+					var duration = expiry - blockDate;
+					var blockDuration = [];
+					var factor = 1000;
+					if ( duration % factor === 0 ) blockDuration = ['duration-seconds', Math.floor(duration / factor)];
+					factor *= 60;
+					if ( duration % factor === 0 ) blockDuration = ['duration-minutes', Math.floor(duration / factor)];
+					factor *= 60;
+					if ( duration % factor === 0 ) blockDuration = ['duration-hours', Math.floor(duration / factor)];
+					factor *= 24;
+					if ( duration % factor === 0 ) blockDuration = ['duration-days', Math.floor(duration / factor)];
+					if ( duration % (factor*7) === 0 ) blockDuration = ['duration-weeks', Math.floor(duration / (factor*7))];
+					if ( duration % (factor*30) === 0 ) blockDuration = ['months', Math.floor(duration / (factor*30))];
+					factor *= 365;
+					if ( duration % factor === 0 ) blockDuration = ['duration-years', Math.floor(duration / factor)];
+					if ( duration % (factor*10) === 0 ) blockDuration = ['duration-decades', Math.floor(duration / (factor*10))];
+					if ( duration % (factor*100) === 0 ) blockDuration = ['duration-centuries', Math.floor(duration / (factor*100))];
+					if ( duration % (factor*1000) === 0 ) blockDuration = ['duration-millennia', Math.floor(duration / (factor*1000))];
+					if ( blockDuration.length < 2 || blockDuration[1] > 1000 ) blockexpiry = mw.language.convertNumber(expiry.toLocaleString(lang, dateOptions));
+					else blockexpiry = '{{int:'+blockDuration.join('|')+'}}';
+				}
+				text += '<div class="horse-userprofile-block mw-warning-with-logexcerpt"><div>\n{{int:blocked-notice-logextract|'+username+'}}\n';
+				text += '* '+mw.language.convertNumber(blockDate.toLocaleString(lang, dateOptions))+' {{int:logentry-block-block|[[User:'+block.by+'|'+block.by+']] <span class="mw-usertoollinks mw-changeslist-links"><span>[[User talk:'+block.by+'|{{int:talkpagelinktext}}]]</span> <span>[[Special:Contribs/'+block.by+'|{{int:contribslink}}]]</span></span>|'+block.by;
+				if ( mw.util.isIPAddress(block.user, true) ) text += '|[[Special:Contribs/'+block.user+'|'+block.user+']] <span class="mw-usertoollinks mw-changeslist-links"><span>[[User talk:'+block.user+'|{{int:talkpagelinktext}}]]</span></span>';
+				else text += '|[[User:'+block.user+'|'+block.user+']] <span class="mw-usertoollinks mw-changeslist-links"><span>[[User talk:'+block.user+'|{{int:talkpagelinktext}}]]</span> <span>[[Special:Contribs/'+block.user+'|{{int:contribslink}}]]</span></span>';
+				text += '|'+block.user+'|'+blockexpiry+'|}} <span class="comment">{{int:parentheses|'+block.reason+'}}</span></div></div>';
+			}
+			api.parse( text, {
+				disablelimitreport: true,
+				wrapoutputclass: 'horse-userprofile mw-message-box mw-content-'+($('#contentSub').attr('dir')||'ltr'),
+				uselang: mw.config.get('wgUserLanguage')
+			} ).done( function(parsedText) {
+				$('#contentSub').append(parsedText.replace( /\u29FCgroup-([^\u29FC\u29FD]+?)(?:-member)?\u29FD/g, '$1' ));
+			} );
+		}
+	}
+} );
+// </nowiki>

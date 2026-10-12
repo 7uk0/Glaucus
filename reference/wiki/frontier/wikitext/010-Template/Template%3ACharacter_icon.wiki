@@ -1,0 +1,1 @@
+<includeonly>{{Link icon|{{{1|}}}|{{{2|}}}|type=Character}}</includeonly><noinclude>{{documentation}}[[Category:Formatting templates]]</noinclude>

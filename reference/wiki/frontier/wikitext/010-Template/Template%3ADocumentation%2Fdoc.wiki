@@ -1,0 +1,2 @@
+Use {{tl|documentation}} inside of the <code><nowiki><noinclude></noinclude></nowiki></code> section on your template. Then create your template at the <code>/doc</code> subpage of your template.
+<noinclude>[[Category:Template documentation]]</noinclude>

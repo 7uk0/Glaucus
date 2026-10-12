@@ -1,0 +1,13 @@
+<includeonly>{{Ambox
+| color = gold
+| icon = Cleanup.svg
+| message = This page does not meet '''{{SITENAME}}'''<nowiki/>'s page quality standards. You can [{{fullurl:{{FULLPAGENAME}}|action=edit}} edit it] to help fix grammar, formatting, or code issues.
+| tiny = {{{tiny|}}}
+| class = {{{class|}}}
+| date = {{{date|}}}
+}}<!--
+
+-->{{#ifeq: {{lc:{{{nocat|}}}}} | yes ||[[Category:Pages in need of improvement]]}}</includeonly><!--
+
+--><noinclude>{{Cleanup|nocat=yes}}
+{{doc|Template:Ambox/doc}}</noinclude>

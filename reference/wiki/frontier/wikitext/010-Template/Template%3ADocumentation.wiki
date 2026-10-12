@@ -1,0 +1,53 @@
+<includeonly><!--
+
+--><div class="documentation"><!--
+	--><div class="documentation-header"><!--
+		-->[[File:Template-{{#ifexist:{{#vardefineecho:docpage|{{{1|Template:{{#replace:{{{1|{{PAGENAME}}/doc}}}|Template:|}}}}}<!-- end vde -->}}|{{#if:{{{baddoc|}}}|bad}}|no}}info.svg|50px|link=]] <!--
+		--><span style="font-weight: bold; font-size: 125%; margin-right: 10px;">Documentation</span> <!--
+		-->{{#ifeq:{{SUBPAGENAME}}|doc|<!--nothing-->|<!--
+			-->{{#ifexist:{{#var:docpage}}|<!--
+				--><span style="font-size: 90%; font-style: italic;"><!--
+					-->[{{fullurl:{{#var:docpage}}|action=edit}} Edit] this documentation at [{{fullurl:{{#var:docpage}}|redirect=no}} {{FULLPAGENAMEE:{{#var:docpage}}}}].<!--
+				--></span><!--
+			-->}}<!--
+		-->}}<!--
+		--><div style="float: right; margin-left: 5px;"><!--
+			-->([{{fullurl:{{FULLPAGENAMEE}}/doc|action=edit}} edit] • [{{fullurl:{{FULLPAGENAMEE}}/doc|action=history}} history] • [{{fullurl:{{FULLPAGENAMEE}}|action=purge}} purge])<!--
+		--></div><!--
+	--></div><!--
+<!-- leave line break here -->
+{{#if:{{{lua|}}}|{{UsesLua|{{{lua}}} }} }}
+<!-- documentation text/error box begins here -->
+<div style="border-radius: 5px; border: 2px solid var(--wiki-content-border-color); margin: 0.5em auto 1em; padding: 0.8em 1.2em; background: var(--wiki-content-background-color--secondary);">
+<!--
+	-->{{#ifexist:{{#var:docpage}}|<!--
+
+
+If there is documentation
+
+-->
+{{ {{#var:docpage}} }}
+<!--
+
+
+Else
+
+	-->|<!-- 
+		-->No documentation subpage exists yet for this template. [{{fullurl:{{FULLPAGENAMEE:Template:{{{1|{{PAGENAME}}}}}}}/doc|action=edit&preload=Template:Doc/preload}} Create one now].<!--
+		-->[[Category:Templates with no documentation]]<!--
+	-->}}<!-- leave line break here -->
+<!-- documentation text/error box ends here -->
+</div>
+<!--	-->{{#ifeq:{{SUBPAGENAME}}|doc|<!--
+			-->{{#ifeq:{{BASEPAGENAME}}|Doc|<!--nothing-->|<!-- only if page is not Template:Doc
+				-->This is the documentation page, it should be transcluded into the main template page. See {{tlx|doc}} for more information. <!--
+				-->[[Category:Template documentation]]<!--
+			-->}}<!--
+		-->}}<!--
+--></div><!--
+
+--></includeonly><!--
+
+--><noinclude>{{Documentation}}
+[[Category:Documentation templates| ]]
+</noinclude>

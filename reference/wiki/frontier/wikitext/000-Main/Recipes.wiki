@@ -1,0 +1,2261 @@
+__TOC__
+
+
+{{WIP}}
+<div style="display: flex; flex-direction: column; align-items: center; width: 100%">
+<p style="font-size: 24px"><strong>Welcome to the recipe page!</strong></p>
+
+<ul>
+  <li>This page is a recipe guide. For general information on what the role of a chef entails, read the corresponding [[Jobs#Chef|article]].</li>
+  <li>Any recipe has component products, they are anchor links, so clicking on an ingredient will take you to its recipe (if there is one).</li>
+  <li>You can go back to the main recipe by clicking the backlink button on your browser (the button to go to the previous page).</li>
+  <li>You can use the [https://ss14.recipes?fork=frontier recipe site] to make cooking easier for you.
+</ul>
+==Ingredients==
+===Basic Ingredients===
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+ name = Universal Enzyme|
+ component-1 = {{RecipeComponent|image=Bungo Fruit|Bungo Fruit}} |
+ transformer = {{Grinder}} |
+ result = {{ResultComponent|image=Universal Enzyme|Universal Enzyme|10}}
+}}
+{{Recipe|
+ name = Universal Enzyme|
+ component-1 = {{RecipeComponent|image=Corn|Corn}} |
+ transformer = {{Juice}} |
+ result = {{ResultComponent|image=Universal Enzyme|Universal Enzyme|2}}
+}}
+{{Recipe|
+ name = Wheat|
+ component-1 = {{RecipeComponent|image=Wheat|Wheat|1}} |
+ transformer = {{Juice}} |
+ result = {{ResultComponent|image=Flour|Flour|10}}
+}}
+{{Recipe|
+ name = Cornmeal|
+ component-1 = {{RecipeComponent|image=Corn|Corn|1}} |
+ transformer = {{Grinder}} |
+ result = {{ResultComponent|image=Cornmeal|Cornmeal|10}}
+}}
+{{Recipe|
+ name = Rice|
+ component-1 = {{RecipeComponent|image=Rice Bushel|Rice Bushel|1}} |
+ transformer = {{Grinder}} |
+ result = {{ResultComponent|image=Rice|Rice|10}}
+}}
+{{Recipe|
+ name = Sugar|
+ component-1 = {{RecipeComponent|image=Sugarcane|Sugarcane|1}} |
+ transformer = {{Grinder}} |
+ result = {{ResultComponent|image=Sugar|Sugar|10}}
+}}
+{{Recipe|
+ name = Milk|
+ component-1 = {{RecipeComponent|image=Cow|Cow|1}} |
+ transformer = {{Milk}} |
+ result = {{ResultComponent|image=Milk|Milk|250 max}}
+}}
+{{Recipe|
+ name = Goat Milk|
+ component-1 = {{RecipeComponent|image=Goat|Goat|1}} |
+ transformer = {{Milk}} |
+ result = {{ResultComponent|image=Goat Milk|Goat Milk|250 max}}
+}}
+{{Recipe|
+ name = Soy Milk|
+ component-1 = {{RecipeComponent|image=Soybeans|Soybeans|1}} |
+ transformer = {{Juice}} |
+ result = {{ResultComponent|image=Soy Milk|Soy Milk|5}}
+}}
+{{Recipe|
+ name = Oat Milk|
+ component-1 = {{RecipeComponent|image=Oats Bushel|Oats Bushel|1}} |
+ transformer = {{Juice}} |
+ result = {{ResultComponent|image=Oat Milk|Oat Milk|5}}
+}}
+{{Recipe|
+ name = Salt|
+ component-1 = {{RecipeComponent|Chlorine|1}} |
+ component-2 = {{RecipeComponent|Sodium|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Salt|Salt|2}}
+}}
+{{Recipe|
+ name = Vinegar|
+ component-1 = {{RecipeComponent|Ethanol|1}} |
+ component-2 = {{RecipeComponent|Oxygen|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Vinegar|Vinegar|2}}
+}}
+{{Recipe|
+ name = Corn Oil|
+ component-1 = {{RecipeComponent|image=Corn|Corn|1}} |
+ transformer = {{Juice}} |
+ result = {{ResultComponent|image=Corn Oil|Corn Oil|3}}
+}}
+{{Recipe|
+ name = Egg|
+ component-1 = {{RecipeComponent|image=Egg|Egg|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|Egg reagent|6}}
+}}
+{{Recipe|
+ name = Tofu|
+ component-1 = {{RecipeComponent|image=Soy Milk|Soy Milk|30}} |
+ component-2 = {{RecipeComponent|image=Universal Enzyme|Universal Enzyme (catalyst)|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Tofu|Tofu|1}}
+}}
+{{Recipe|
+ name = Tofu Slice|
+ component-1 = {{RecipeComponent|image=Tofu|Tofu|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Tofu Slice|Tofu Slice|3}}
+}}
+{{Recipe|
+ name = Lime Juice|
+ component-1 = {{RecipeComponent|image=Lime|Lime|1}} |
+ transformer = {{Juice}} |
+ result = {{ResultComponent|image=Lime Juice|Lime Juice|10}}
+}}
+{{Recipe|
+ name = Cocoa Powder|
+ component-1 = {{RecipeComponent|image=Cocoa Pod|Cocoa Pod|1}} |
+ transformer = {{Grinder}} |
+ result = {{ResultComponent|Cocoa Powder|2}}
+}}
+{{Recipe|
+ name = Oats|
+ component-1 = {{RecipeComponent|image=Oats Bushel|Oats Bushel|1}} |
+ transformer = {{Grinder}} |
+ result = {{ResultComponent|Oats|10}}
+}}
+{{Recipe|
+ name = Onion Slice|
+ component-1 = {{RecipeComponent|image=Onion|Onion|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Onion Slice|Onion Slice|5}}
+}}
+{{Recipe|
+ name = Red Onion Slice|
+ component-1 = {{RecipeComponent|image=Red Onion|Red Onion|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Red Onion Slice|Red Onion Slice|5}}
+}}
+{{Recipe|
+ name = Pineapple Slice|
+ component-1 = {{RecipeComponent|image=Pineapple|Pineapple|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Pineapple Slice|Pineapple Slice|5}}
+}}
+{{Recipe|
+ name = Watermelon Slice|
+ component-1 = {{RecipeComponent|image=Watermelon|Watermelon|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Watermelon Slice|Watermelon Slice|5}}
+}}
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; width: 100%">
+
+===Doughs===
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+ name = Dough|
+ component-1 = {{RecipeComponent|image=Flour|Flour|15}} |
+ component-2 = {{RecipeComponent|image=Water|Water|10}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Dough|Dough|1}}
+}}
+{{Recipe|
+ name = Dough Slice|
+ component-1 = {{RecipeComponent|image=Dough|Dough|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Dough Slice|Dough Slice|1}}
+}}
+{{Recipe|
+ name = Dough Rope|
+ component-1 = {{RecipeComponent|image=Dough Slice|Dough Slice|1}} |
+ transformer = {{RollingPin}} |
+ result = {{ResultComponent|image=Dough Rope|Dough Rope|1}}
+}}
+{{Recipe|
+ name = Dough Flat|
+ component-1 = {{RecipeComponent|image=Dough|Dough|1}} |
+ transformer = {{RollingPin}} |
+ result = {{ResultComponent|image=Dough Flat|Dough Flat|1}}
+}}
+{{Recipe|
+ name = Dough Cornmeal|
+ component-1 = {{RecipeComponent|image=Cornmeal|Cornmeal|15}} |
+ component-2 = {{RecipeComponent|image=Milk|Milk|10}} |
+ component-3 = {{RecipeComponent|image=Egg|Egg reagent|6}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Dough Cornmeal|Dough Cornmeal|1}}
+}}
+{{Recipe|
+ name = Dough Cornmeal Slice|
+ component-1 = {{RecipeComponent|image=Dough Cornmeal|Dough Cornmeal|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Dough Cornmeal Slice|Dough Cornmeal Slice|1}}
+}}
+{{Recipe|
+ name = Dough Tortilla|
+ component-1 = {{RecipeComponent|image=Cornmeal|Cornmeal|15}} |
+ component-2 = {{RecipeComponent|image=Water|Water|10}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Dough Tortilla|Dough Tortilla|1}}
+}}
+{{Recipe|
+ name = Dough Tortilla Slice|
+ component-1 = {{RecipeComponent|image=Dough Tortilla|Dough Tortilla|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Dough Tortilla Slice|Dough Tortilla Slice|1}}
+}}
+{{Recipe|
+ name = Dough Tortilla Flat|
+ component-1 = {{RecipeComponent|image=Dough Tortilla|Dough Tortilla|1}} |
+ transformer = {{RollingPin}} |
+ result = {{ResultComponent|image=Dough Tortilla Flat|Dough Tortilla Flat|1}}
+}}
+{{Recipe|
+ name = Cake Batter|
+ component-1 = {{RecipeComponent|image=Flour|Flour|15}} |
+ component-2 = {{RecipeComponent|image=Egg|Egg reagent|12}} |
+ component-3 = {{RecipeComponent|image=Sugar|Sugar|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Cake Batter|Cake Batter|1}}
+}}
+{{Recipe|
+ name = Vegan Cake Batter|
+ component-1 = {{RecipeComponent|image=Flour|Flour|15}} |
+ component-2 = {{RecipeComponent|image=Soy Milk|Soy Milk|15}} |
+ component-3 = {{RecipeComponent|image=Sugar|Sugar|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Vegan Cake Batter|Vegan Cake Batter|1}}
+}}
+{{Recipe|
+ name = Dough Pie|
+ component-1 = {{RecipeComponent|image=Flour|Flour|15}} |
+ component-2 = {{RecipeComponent|image=Egg|Egg reagent|12}} |
+ component-3 = {{RecipeComponent|image=Salt|Salt|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Dough Pie|Dough Pie|1}}
+}}
+{{Recipe|
+ name = Bread Bun|
+ component-1 = {{RecipeComponent|image=Dough Slice|Dough Slice|1}} |
+ transformer = {{Microwave|5}} |
+ result = {{ResultComponent|image=Bread Bun|Bread Bun|1}}
+}}
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; width: 100%">
+
+===Dairy Products===
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+ name = Cheese Wheel|
+ component-1 = {{RecipeComponent|image=Milk|Milk|40}} |
+ component-2 = {{RecipeComponent|image=Universal Enzyme|Universal Enzyme (catalyst)|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Cheese Wheel|Cheese Wheel|1}}
+}}
+{{Recipe|
+ name = Cheese Wedge|
+ component-1 = {{RecipeComponent|image=Cheese Wheel|Cheese Wheel|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cheese Wedge|Cheese Wedge|3}}
+}}
+{{Recipe|
+ name = Chevre Log|
+ component-1 = {{RecipeComponent|image=Goat Milk|Goat Milk|10}} |
+ component-2 = {{RecipeComponent|image=Universal Enzyme|Universal Enzyme (catalyst)|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Chevre Log|Chevre Log|1}}
+}}
+{{Recipe|
+ name = Chevre Disk|
+ component-1 = {{RecipeComponent|image=Chevre Log|Chevre Log|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Chevre Disk|Chevre Disk|3}}
+}}
+{{Recipe|
+ name = Butter|
+ component-1 = {{RecipeComponent|image=Milk|Milk|30}} |
+ component-2 = {{RecipeComponent|image=Salt|Salt|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Butter|Butter|1}}
+}}
+{{Recipe|
+ name = Curd Cheese|
+ component-1 = {{RecipeComponent|image=Milk|Milk|15}} |
+ component-2 = {{RecipeComponent|image=Vinegar|Vinegar|5}} |
+ component-2 = {{RecipeComponent|image=Cream|Cream|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Curd Cheese|Curd Cheese|1}}
+}}
+{{Recipe|
+ name = Cheese Curds|
+ component-1 = {{RecipeComponent|image=Curd Cheese|Curd Cheese|1}} |
+ transformer = {{Microwave|5}} |
+ result = {{ResultComponent|image=Cheese Curds|Cheese Curds|1}}
+}}
+{{Recipe|
+ name = Mozzarella|
+ component-1 = {{RecipeComponent|image=Milk|Milk|15}} |
+ component-2 = {{RecipeComponent|image=Cream|Cream|10}} |
+ component-3 = {{RecipeComponent|image=Universal Enzyme|Universal Enzyme (catalyst)|5}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Mozzarella|Mozzarella|1}}
+}}
+{{Recipe|
+ name = Stick Of Cannabis Butter|
+ component-1 = {{RecipeComponent|image=Stick of Butter|Stick of Butter|1}} |
+ component-2 = {{RecipeComponent|image=Cannabis Leaves|Cannabis Leaves|6}} |
+ transformer = {{Microwave|5}} |
+ result = {{ResultComponent|image=Stick Of Cannabis Butter|Stick Of Cannabis Butter|1}}
+}}
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; width: 100%">
+
+===Raw Meats===
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+ name = Uncooked Animal Proteins|
+ component-1 = {{RecipeComponent|image=Raw Meat|Any type of meat|1}} |
+ transformer = {{Grinder}} |
+ result = {{ResultComponent|Uncooked Animal Proteins|9}}
+}}
+{{Recipe|
+ name = Meat|
+ component-1 = {{RecipeComponent|image=Cow|Any type of animals|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat|Meat|N/A}}
+}}
+{{Recipe|
+ name = Meat Bacon|
+ component-1 = {{RecipeComponent|image=Pig|Pig|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Bacon|Meat Bacon|6}}
+}}
+{{Recipe|
+ name = Meat Human|
+ component-1 = {{RecipeComponent|image=Human|Human|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat|Meat Human|5}}
+}}
+{{Recipe|
+ name = Cutlet|
+ component-1 = {{RecipeComponent|image=Meat|Meat|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cutlet|Cutlet|3}}
+}}
+{{Recipe|
+ name = Meat Fish|
+ component-1 = {{RecipeComponent|image=Space Carp|Space Carp|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Fish|Meat Fish|2}}
+}}
+{{Recipe|
+ name = Meat Bear|
+ component-1 = {{RecipeComponent|image=Space Bear|Space Bear|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Bear|Meat Bear|1}}
+}}
+{{Recipe|
+ name = Cutlet Bear|
+ component-1 = {{RecipeComponent|image=Meat Bear|Meat Bear|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cutlet Bear|Cutlet Bear|3}}
+}}
+{{Recipe|
+ name = Meat Penguin|
+ component-1 = {{RecipeComponent|image=Penguin|Penguin|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Penguin|Meat Penguin|3}}
+}}
+{{Recipe|
+ name = Cutlet Penguin|
+ component-1 = {{RecipeComponent|image=Meat Penguin|Meat Penguin|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cutlet Penguin|Cutlet Penguin|3}}
+}}
+{{Recipe|
+ name = Meat Chicken|
+ component-1 = {{RecipeComponent|image=Chicken|Chicken|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Chicken Meat|Chicken Meat|1}}
+}}
+{{Recipe|
+ name = Cutlet Chicken|
+ component-1 = {{RecipeComponent|image=Meat Chicken|Meat Chicken|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cutlet Chicken|Cutlet Chicken|3}}
+}}
+{{Recipe|
+ name = Meat Duck|
+ component-1 = {{RecipeComponent|image=Duck|Duck|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Duck|Meat Duck|1}}
+}}
+{{Recipe|
+ name = Cutlet Duck|
+ component-1 = {{RecipeComponent|image=Meat Duck|Meat Duck|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cutlet Duck|Cutlet Duck|3}}
+}}
+{{Recipe|
+ name = Meat Corgi|
+ component-1 = {{RecipeComponent|image=Ian|Ian|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Corgi|Meat Corgi|2}}
+}}
+{{Recipe|
+ name = Meat Crab|
+ component-1 = {{RecipeComponent|image=Crab|Crab|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Crab|Meat Crab|2}}
+}}
+{{Recipe|
+ name = Meat Dragon|
+ component-1 = {{RecipeComponent|image=Space Dragon|Space Dragon|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Dragon|Meat Dragon|3}}
+}}
+{{Recipe|
+ name = Meat Rat|
+ component-1 = {{RecipeComponent|image=Mouse|Any Small Animal Pest|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Rat|Meat Rat|N/A}}
+}}
+{{Recipe|
+ name = Meat Lizard|
+ component-1 = {{RecipeComponent|image=Lizard|Any reptilian|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Lizard|Meat Lizard|N/A}}
+}}
+{{Recipe|
+ name = Cutlet Lizard|
+ component-1 = {{RecipeComponent|image=Meat Lizard|Meat Lizard|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cutlet Lizard|Cutlet Lizard|3}}
+}}
+{{Recipe|
+ name = Meat Plant|
+ component-1 = {{RecipeComponent|image=Diona|Diona|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Plant|Meat Plant|5}}
+}}
+{{Recipe|
+ name = Meat Spider|
+ component-1 = {{RecipeComponent|image=Space Spider|Any spider|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Spider|Meat Spider|N/A}}
+}}
+{{Recipe|
+ name = Cutlet Spider|
+ component-1 = {{RecipeComponent|image=Meat Spider|Meat Spider|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cutlet Spider|Cutlet Spider|3}}
+}}
+{{Recipe|
+ name = Meat Xeno|
+ component-1 = {{RecipeComponent|image=Xeno|Any Xeno|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Xeno|Meat Xeno|N/A}}
+}}
+{{Recipe|
+ name = Cutlet Xeno|
+ component-1 = {{RecipeComponent|image=Meat Xeno|Meat Xeno|1}} |
+ transformer = {{Knife}} |
+ result = {{ResultComponent|image=Cutlet Xeno|Cutlet Xeno|3}}
+}}
+{{Recipe|
+ name = Meat Rouny|
+ component-1 = {{RecipeComponent|image=Rouny|Rouny|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Rouny|Meat Rouny|3}}
+}}
+{{Recipe|
+ name = Meat Snake|
+ component-1 = {{RecipeComponent|image=Space Cobra|Space Cobra|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Snake|Meat Snake|2}}
+}}
+{{Recipe|
+ name = Meat Cat|
+ component-1 = {{RecipeComponent|image=Clippy|Clippy|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Meat Cat|Meat Cat|1}}
+}}
+{{Recipe|
+ name = Killer Tomato Meat|
+ component-1 = {{RecipeComponent|image=Killer Tomato|Killer Tomato|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Killer Tomato Meat|Killer Tomato Meat|3}}
+}}
+{{Recipe|
+ name = Slimeball|
+ component-1 = {{RecipeComponent|image=Slime|Any Slime|1}} |
+ transformer = {{Butcher}} |
+ result = {{ResultComponent|image=Slimeball|Slimeball|N/A}}
+}}
+{{Recipe|
+ name = Meatball|
+ component-1 = {{RecipeComponent|Uncooked Animal Proteins|5}} |
+ component-2 = {{RecipeComponent|image=Flour|Flour|5}} |
+ component-3 = {{RecipeComponent|image=Egg|Egg|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Meatball|Meatball|1}}
+}}
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; width: 100%">
+
+===Condiments===
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+ name = Hotsauce|
+ component-1 = {{RecipeComponent|image=Tomato Juice|Tomato Juice|1}} |
+ component-2 = {{RecipeComponent|image=Salt|Salt|1}} |
+ component-3 = {{RecipeComponent|Capsaicin Oil|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Hotsauce|Hotsauce|3}}
+}}
+{{Recipe|
+ name = Ketchup|
+ component-1 = {{RecipeComponent|image=Tomato Juice|Tomato Juice|2}} |
+ component-2 = {{RecipeComponent|image=Sugar|Sugar|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Ketchup|Ketchup|3}}
+}}
+{{Recipe|
+ name = BBQ Sauce|
+ component-1 = {{RecipeComponent|image=Ketchup|Ketchup|1}} |
+ component-2 = {{RecipeComponent|image=Sugar|Sugar|1}} |
+ component-3 = {{RecipeComponent|image=Vinegar|Vinegar|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=BBQ Sauce|BBQ Sauce|3}}
+}}
+{{Recipe|
+ name = Frostoil|
+ component-1 = {{RecipeComponent|image=Ice Chilly|Ice Chilly}} |
+ transformer = {{Grinder}} |
+ result = {{ResultComponent|image=Frostoil|Frostoil|10}}
+}}
+{{Recipe|
+ name = Mustard|
+ component-1 = {{RecipeComponent|Bleach|1}} |
+ component-2 = {{RecipeComponent|Ammonia|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Mustard|Mustard|2}}
+}}
+{{Recipe|
+ name = Soy Sauce|
+ component-1 = {{RecipeComponent|image=Soy Milk|Soy Milk|2}} |
+ component-2 = {{RecipeComponent|Sulfuric Acid|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Soy Sauce|Soy Sauce|3}}
+}}
+{{Recipe|
+ name = Vinaigrette|
+ component-1 = {{RecipeComponent|image=Vinegar|Vinegar|1}} |
+ component-2 = {{RecipeComponent|image=Olive Oil|Olive Oil|1}} |
+ component-3 = {{RecipeComponent|image=Pepper|Pepper|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|Vinaigrette|3}}
+}}
+{{Recipe|
+ name = Mayo|
+ component-1 = {{RecipeComponent|image=Vinegar|Vinegar|5}} |
+ component-2 = {{RecipeComponent|Oil|5}} |
+ component-3 = {{RecipeComponent|image=Egg|Egg reagent|6}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|image=Mayo|Mayo|15}}
+}}
+{{Recipe|
+ name = Ketchunaise|
+ component-1 = {{RecipeComponent|Ketchunaise|2}} |
+ component-2 = {{RecipeComponent|image=Ketchup|Ketchup|1}} |
+ component-3 = {{RecipeComponent|image=Mayo|Mayo|1}} |
+ transformer = {{Chemistry}} |
+ result = {{ResultComponent|Ketchunaise|2}}
+}}
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; width: 100%">
+
+==Recipes==
+=== Bagels ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Bagel|
+component-1 = {{RecipeComponent|image=Dough Rope|Dough Rope|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Bagel|Bagel|1}}
+}}
+{{Recipe|
+name = Poppyseed Bagel|
+component-1 = {{RecipeComponent|image=Dough Rope|Dough Rope|1}} | 
+component-2 = {{RecipeComponent|image=Poppy Seeds|Poppy Seeds|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Bagel Poppy|Bagel Poppy|1}}
+}}
+</div>
+=== Burgers ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Appendix Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Organ Human Appendix|Organ Human Appendix|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Appendix|Burger Appendix|1}}
+}}
+{{Recipe|
+name = Bacon Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Bacon|Meat Bacon|1}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Bacon|Burger Bacon|1}}
+}}
+{{Recipe|
+name = Baseball Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Base Ball Bat|Base Ball Bat|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Baseball|Burger Baseball|1}}
+}}
+{{Recipe|
+name = Bearger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Bear|Meat Bear|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Bear|Burger Bear|1}}
+}}
+{{Recipe|
+name = Big Bite Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|2}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-5 = {{RecipeComponent|image=Onion Slice|Onion Slice|2}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Burger Big|Burger Big|1}}
+}}
+{{Recipe|
+name = Brain Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Organ Human Brain|Organ Human Brain|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Brain|Burger Brain|1}}
+}}
+{{Recipe|
+name = Cat Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|1}} | 
+component-3 = {{RecipeComponent|image=Clothing Head Hat Cat Ears|Clothing Head Hat Cat Ears|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Cat|Burger Cat|1}}
+}}
+{{Recipe|
+name = Cheeseburger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|1}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Cheese|Burger Cheese|1}}
+}}
+{{Recipe|
+name = Chicken Sandwich|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Chicken|Meat Chicken|1}} | 
+component-3 = {{RecipeComponent|Mayo|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Chicken|Burger Chicken|1}}
+}}
+{{Recipe|
+name = Clownburger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Clothing Mask Clown|Clothing Mask Clown|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Clown|Burger Clown|1}}
+}}
+{{Recipe|
+name = Corgi Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Corgi|Meat Corgi|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Corgi|Burger Corgi|1}}
+}}
+{{Recipe|
+name = Crab Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Crab|Meat Crab|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Crab|Burger Crab|1}}
+}}
+{{Recipe|
+name = Crazy Hamburger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|2}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+component-4 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|1}} | 
+component-5 = {{RecipeComponent|image=Cabbage|Cabbage|1}} | 
+component-6 = {{RecipeComponent|image=Crayon Green|Crayon Green|1}} | 
+component-7 = {{RecipeComponent|image=Flare|Flare|1}} | 
+component-8 = {{RecipeComponent|Oil Olive|15}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Burger Crazy|Burger Crazy|1}}
+}}
+{{Recipe|
+name = Duck Sandwich|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Duck|Meat Duck|1}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Duck|Burger Duck|1}}
+}}
+{{Recipe|
+name = Empowered Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Sheet Plasma|Sheet Plasma|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Empowered|Burger Empowered|1}}
+}}
+{{Recipe|
+name = Fillet-O-Carp Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Fish|Meat Fish|1}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Carp|Burger Carp|1}}
+}}
+{{Recipe|
+name = Five Alarm Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|1}} | 
+component-3 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|3}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Five|Burger Five|1}}
+}}
+{{Recipe|
+name = Ghost Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Ectoplasm|Ectoplasm|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Ghost|Burger Ghost|1}}
+}}
+{{Recipe|
+name = Human Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Human|Meat Human|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Human|Burger Human|1}}
+}}
+{{Recipe|
+name = Mcguffin|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-3 = {{RecipeComponent|image=Egg|Egg|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Mcguffin|Burger Mcguffin|1}}
+}}
+{{Recipe|
+name = Bbq Rib Sandwich|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meal Ribs|Meal Ribs|1}} | 
+component-3 = {{RecipeComponent|image=Onion Slice|Onion Slice|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Mcrib|Burger Mcrib|1}}
+}}
+{{Recipe|
+name = Mime Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Clothing Mask Mime|Clothing Mask Mime|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Mime|Burger Mime|1}}
+}}
+{{Recipe|
+name = Plain Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Plain|Burger Plain|1}}
+}}
+{{Recipe|
+name = Rat Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat Rat|Meat Rat|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Rat|Burger Rat|1}}
+}}
+{{Recipe|
+name = Roburger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Capacitor Stock Part|Capacitor Stock Part|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Robot|Burger Robot|1}}
+}}
+{{Recipe|
+name = Soylent Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+component-3 = {{RecipeComponent|image=Soybeans|Soybeans|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Soy|Burger Soy|1}}
+}}
+{{Recipe|
+name = Spell Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Clothing Head Hat Wizard|Clothing Head Hat Wizard|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Spell|Burger Spell|1}}
+}}
+{{Recipe|
+name = Super Bite Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|2}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|2}} | 
+component-5 = {{RecipeComponent|image=Egg|Egg|2}} | 
+component-6 = {{RecipeComponent|Table Salt|5}} | 
+transformer = {{Oven|25}} |
+result = {{ResultComponent|image=Burger Super|Burger Super|1}}
+}}
+{{Recipe|
+name = Tofu Burger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Tofu Slice|Tofu Slice|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Tofu|Burger Tofu|1}}
+}}
+{{Recipe|
+name = Xenoburger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Raw Xeno Meat|Raw Xeno Meat|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Xeno|Burger Xeno|1}}
+}}
+{{Recipe|
+name = Mothroachburger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Mob Mothroach|Mob Mothroach|1}} | 
+transformer = {{Oven|20}} |
+result = {{ResultComponent|image=Burger Moth Roach|Burger Moth Roach|1}}
+}}
+{{Recipe|
+name = Clurger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Clothing Head Mail Carrier|Clothing Head Mail Carrier|1}} | 
+component-3 = {{RecipeComponent|image=Raw Cat Meat|Raw Cat Meat|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Clurger|Burger Clurger|1}}
+}}
+{{Recipe|
+name = Rosy Mothroachburger|
+component-1 = {{RecipeComponent|image=Bread Bun|Bread Bun|1}} | 
+component-2 = {{RecipeComponent|image=Mob Rosy Mothroach|Mob Rosy Mothroach|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Burger Rosy Moth Roach|Burger Rosy Moth Roach|1}}
+}}
+</div>
+
+=== Breads & Sandwiches ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Banana Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Banana|Banana|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Banana|Bread Banana|1}}
+}}
+{{Recipe|
+name = Cornbread|
+component-1 = {{RecipeComponent|image=Dough Cornmeal|Dough Cornmeal|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Bread Corn|Bread Corn|1}}
+}}
+{{Recipe|
+name = Cream Cheese Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+component-3 = {{RecipeComponent|Milk|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Creamcheese|Bread Creamcheese|1}}
+}}
+{{Recipe|
+name = Meat Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|2}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Meat|Bread Meat|1}}
+}}
+{{Recipe|
+name = Mimana Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Mimana|Mimana|1}} | 
+component-3 = {{RecipeComponent|Nothing|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Mimana|Bread Mimana|1}}
+}}
+{{Recipe|
+name = Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Bread Plain|Bread Plain|1}}
+}}
+{{Recipe|
+name = Cotton Bread|
+component-1 = {{RecipeComponent|image=Dough Cotton|Dough Cotton|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Bread Cotton|Bread Cotton|1}}
+}}
+{{Recipe|
+name = Sausage Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Sausage|Bread Sausage|1}}
+}}
+{{Recipe|
+name = Spider Meat Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Cutlet Spider|Cutlet Spider|2}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Meat Spider|Bread Meat Spider|1}}
+}}
+{{Recipe|
+name = Tofu Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Tofu|Tofu|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Tofu|Bread Tofu|1}}
+}}
+{{Recipe|
+name = Xeno Meat Bread|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Cutlet Xeno|Cutlet Xeno|2}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Meat Xeno|Bread Meat Xeno|1}}
+}}
+{{Recipe|
+name = Avocado Toast|
+component-1 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|1}} | 
+component-2 = {{RecipeComponent|image=Avocado Slice|Avocado Slice|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Meal Avocado Toast|Meal Avocado Toast|1}}
+}}
+{{Recipe|
+name = Breakfast Bagel|
+component-1 = {{RecipeComponent|image=Bagel|Bagel|1}} | 
+component-2 = {{RecipeComponent|image=Egg|Egg|2}} | 
+component-3 = {{RecipeComponent|image=Avocado Slice|Avocado Slice|1}} | 
+component-4 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Meal Breakfast Bagel|Meal Breakfast Bagel|1}}
+}}
+{{Recipe|
+name = Poppyseed Breakfast Bagel|
+component-1 = {{RecipeComponent|image=Bagel Poppy|Bagel Poppy|1}} | 
+component-2 = {{RecipeComponent|image=Egg|Egg|2}} | 
+component-3 = {{RecipeComponent|image=Avocado Slice|Avocado Slice|1}} | 
+component-4 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Meal Breakfast Bagel Poppy|Meal Breakfast Bagel Poppy|1}}
+}}
+{{Recipe|
+name = Cucumber Sandwich|
+component-1 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|2}} | 
+component-2 = {{RecipeComponent|image=Cucumber Slice|Cucumber Slice|4}} | 
+component-3 = {{RecipeComponent|image=Chevre Slice|Chevre Slice|1}} | 
+component-4 = {{RecipeComponent|Mayo|5}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Meal Cucumber Sandwich|Meal Cucumber Sandwich|1}}
+}}
+</div>
+
+=== Slices Only ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Baguette|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|Table Salt|5}} | 
+component-3 = {{RecipeComponent|Blackpepper|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Bread Baguette|Bread Baguette|1}}
+}}
+{{Recipe|
+name = Baguette Sword|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Part Rod Metal|Part Rod Metal|1}} | 
+component-3 = {{RecipeComponent|Table Salt|5}} | 
+component-4 = {{RecipeComponent|Blackpepper|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Weapon Baguette|Weapon Baguette|1}}
+}}
+{{Recipe|
+name = Buttered Toast|
+component-1 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|1}} | 
+component-2 = {{RecipeComponent|image=Butter Slice|Butter Slice|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Bread Buttered Toast|Bread Buttered Toast|1}}
+}}
+{{Recipe|
+name = French Toast|
+component-1 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|1}} | 
+component-2 = {{RecipeComponent|Milk|5}} | 
+component-3 = {{RecipeComponent|Egg|12}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Bread French Toast|Bread French Toast|1}}
+}}
+{{Recipe|
+name = Garlic Bread Slice|
+component-1 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|1}} | 
+component-2 = {{RecipeComponent|image=Garlic|Garlic|1}} | 
+component-3 = {{RecipeComponent|image=Butter Slice|Butter Slice|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Bread Garlic Slice|Bread Garlic Slice|1}}
+}}
+{{Recipe|
+name = Jelly Toast|
+component-1 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|1}} | 
+component-2 = {{RecipeComponent|image=Jelly Amanita|Jelly Amanita|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Bread Jelly Slice|Bread Jelly Slice|1}}
+}}
+{{Recipe|
+name = Moldy Bread Slice|
+component-1 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|1}} | 
+component-2 = {{RecipeComponent|image=Fly Amanita|Fly Amanita|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Bread Moldy Slice|Bread Moldy Slice|1}}
+}}
+{{Recipe|
+name = Two Slice|
+component-1 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|2}} | 
+component-2 = {{RecipeComponent|Wine|5}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Bread Two Slice|Bread Two Slice|1}}
+}}
+{{Recipe|
+name = Onion Rings|
+component-1 = {{RecipeComponent|image=Onion Slice|Onion Slice|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Onion Rings|Onion Rings|1}}
+}}
+</div>
+=== Pizzas ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Margherita Pizza|
+component-1 = {{RecipeComponent|image=Dough Flat|Dough Flat|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-3 = {{RecipeComponent|image=Tomato|Tomato|4}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Margherita|Pizza Margherita|1}}
+}}
+{{Recipe|
+name = Mushroom Pizza|
+component-1 = {{RecipeComponent|image=Dough Flat|Dough Flat|1}} | 
+component-2 = {{RecipeComponent|image=Mushroom|Mushroom|5}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Mushroom|Pizza Mushroom|1}}
+}}
+{{Recipe|
+name = Meat Pizza|
+component-1 = {{RecipeComponent|image=Dough Flat|Dough Flat|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|3}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Meat|Pizza Meat|1}}
+}}
+{{Recipe|
+name = Vegetable Pizza|
+component-1 = {{RecipeComponent|image=Dough Flat|Dough Flat|1}} | 
+component-2 = {{RecipeComponent|image=Eggplant|Eggplant|1}} | 
+component-3 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-4 = {{RecipeComponent|image=Corn|Corn|1}} | 
+component-5 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Vegetable|Pizza Vegetable|1}}
+}}
+{{Recipe|
+name = Hawaiian Pizza|
+component-1 = {{RecipeComponent|image=Dough Flat|Dough Flat|1}} | 
+component-2 = {{RecipeComponent|image=Cutlet Chicken|Cutlet Chicken|3}} | 
+component-3 = {{RecipeComponent|image=Pineapple Slice|Pineapple Slice|5}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Pineapple|Pizza Pineapple|1}}
+}}
+{{Recipe|
+name = Dank Pizza|
+component-1 = {{RecipeComponent|image=Dough Flat|Dough Flat|1}} | 
+component-2 = {{RecipeComponent|image=Leaves Cannabis|Leaves Cannabis|2}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Dank|Pizza Dank|1}}
+}}
+{{Recipe|
+name = Donk-Pocket Pizza|
+component-1 = {{RecipeComponent|image=Dough Flat|Dough Flat|1}} | 
+component-2 = {{RecipeComponent|image=Donkpocket Warm|Donkpocket Warm|3}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Donkpocket|Pizza Donkpocket|1}}
+}}
+{{Recipe|
+name = Spicy Rock Pizza|
+component-1 = {{RecipeComponent|image=Dough Flat|Dough Flat|1}} | 
+component-2 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|2}} | 
+component-3 = {{RecipeComponent|image=Tomato|Tomato|2}} | 
+component-4 = {{RecipeComponent|image=Sheet Uranium|Sheet Uranium|2}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Uranium|Pizza Uranium|1}}
+}}
+{{Recipe|
+name = Cotton Pizza|
+component-1 = {{RecipeComponent|image=Dough Cotton Flat|Dough Cotton Flat|1}} | 
+component-2 = {{RecipeComponent|image=Cotton Bol|Cotton Bol|4}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Pizza Cotton|Pizza Cotton|1}}
+}}
+</div>
+
+=== Sushi ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Avocado Sushi|
+component-1 = {{RecipeComponent|image=Avocado Slice|Avocado Slice|2}} | 
+component-2 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-3 = {{RecipeComponent|image=Cucumber Slice|Cucumber Slice|2}} | 
+component-4 = {{RecipeComponent|Rice|15}} | 
+component-5 = {{RecipeComponent|Water|10}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Meal Avocado Sushi|Meal Avocado Sushi|1}}
+}}
+{{Recipe|
+name = Carp Sushi|
+component-1 = {{RecipeComponent|image=Avocado Slice|Avocado Slice|2}} | 
+component-2 = {{RecipeComponent|image=Cucumber Slice|Cucumber Slice|2}} | 
+component-3 = {{RecipeComponent|image=Meat Fish|Meat Fish|1}} | 
+component-4 = {{RecipeComponent|Rice|15}} | 
+component-5 = {{RecipeComponent|Water|10}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Meal Carp Sushi|Meal Carp Sushi|1}}
+}}
+</div>
+
+=== Italian ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Boiled Spaghetti|
+component-1 = {{RecipeComponent|image=Butter|Butter|1}} | 
+component-2 = {{RecipeComponent|Flour|15}} | 
+component-3 = {{RecipeComponent|Egg|6}} | 
+transformer = {{Microwave|15}} |
+result = {{ResultComponent|image=Noodles Boiled|Noodles Boiled|1}}
+}}
+{{Recipe|
+name = Pasta Tomato|
+component-1 = {{RecipeComponent|image=Noodles Boiled|Noodles Boiled|1}} | 
+component-2 = {{RecipeComponent|image=Tomato|Tomato|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Noodles|Noodles|1}}
+}}
+{{Recipe|
+name = Spaghetti & Meatballs|
+component-1 = {{RecipeComponent|image=Noodles Boiled|Noodles Boiled|1}} | 
+component-2 = {{RecipeComponent|image=Meat Meatball|Meat Meatball|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Noodles Meatball|Noodles Meatball|1}}
+}}
+{{Recipe|
+name = Butter Noodles|
+component-1 = {{RecipeComponent|image=Noodles Boiled|Noodles Boiled|1}} | 
+component-2 = {{RecipeComponent|image=Butter|Butter|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Noodles Butter|Noodles Butter|1}}
+}}
+{{Recipe|
+name = Chow Mein|
+component-1 = {{RecipeComponent|image=Noodles Boiled|Noodles Boiled|1}} | 
+component-2 = {{RecipeComponent|image=Eggplant|Eggplant|1}} | 
+component-3 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-4 = {{RecipeComponent|image=Corn|Corn|1}} | 
+component-5 = {{RecipeComponent|Egg|6}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Noodles Chowmein|Noodles Chowmein|1}}
+}}
+{{Recipe|
+name = Oatmeal|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|Oats|15}} | 
+component-3 = {{RecipeComponent|Water|10}} | 
+transformer = {{Microwave|15}} |
+result = {{ResultComponent|image=Oatmeal|Oatmeal|1}}
+}}
+{{Recipe|
+name = Boiled Rice|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|Rice|15}} | 
+component-3 = {{RecipeComponent|Water|10}} | 
+transformer = {{Microwave|15}} |
+result = {{ResultComponent|image=Rice Boiled|Rice Boiled|1}}
+}}
+{{Recipe|
+name = Rice Pudding|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|Rice|15}} | 
+component-3 = {{RecipeComponent|Milk|10}} | 
+component-4 = {{RecipeComponent|Sugar|5}} | 
+transformer = {{Microwave|15}} |
+result = {{ResultComponent|image=Rice Pudding|Rice Pudding|1}}
+}}
+{{Recipe|
+name = Rice And Pork|
+component-1 = {{RecipeComponent|image=Rice Boiled|Rice Boiled|1}} | 
+component-2 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|3}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Rice Pork|Rice Pork|1}}
+}}
+{{Recipe|
+name = Black-Eyed Gumbo|
+component-1 = {{RecipeComponent|image=Rice Boiled|Rice Boiled|1}} | 
+component-2 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|3}} | 
+component-3 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|2}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Rice Gumbo|Rice Gumbo|1}}
+}}
+{{Recipe|
+name = Egg-Fried Rice|
+component-1 = {{RecipeComponent|image=Rice Boiled|Rice Boiled|1}} | 
+component-2 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-3 = {{RecipeComponent|Egg|6}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Rice Egg|Rice Egg|1}}
+}}
+{{Recipe|
+name = Copypasta|
+component-1 = {{RecipeComponent|image=Noodles|Noodles|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Noodles Copy|Noodles Copy|1}}
+}}
+</div>
+=== Soups & Stew ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Bisque|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-3 = {{RecipeComponent|image=Mushroom|Mushroom|1}} | 
+component-4 = {{RecipeComponent|image=Meat Fish|Meat Fish|1}} | 
+component-5 = {{RecipeComponent|Water|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Bisque|Soup Bisque|1}}
+}}
+{{Recipe|
+name = Meatball Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Meat Meatball|Meat Meatball|1}} | 
+component-3 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-4 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-5 = {{RecipeComponent|Water|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Meatball|Soup Meatball|1}}
+}}
+{{Recipe|
+name = Nettle Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Nettle|Nettle|1}} | 
+component-3 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-4 = {{RecipeComponent|Water|10}} | 
+component-5 = {{RecipeComponent|Egg|6}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Nettle|Soup Nettle|1}}
+}}
+{{Recipe|
+name = Eyeball Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Organ Human Eyes|Organ Human Eyes|1}} | 
+component-3 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-4 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-5 = {{RecipeComponent|Water|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Eyeball|Soup Eyeball|1}}
+}}
+{{Recipe|
+name = Amanita Jelly|
+component-1 = {{RecipeComponent|image=Fly Amanita|Fly Amanita|3}} | 
+component-2 = {{RecipeComponent|Water|5}} | 
+component-3 = {{RecipeComponent|Vodka|5}} | 
+transformer = {{Microwave|10}} |
+result = {{ResultComponent|image=Jelly Amanita|Jelly Amanita|1}}
+}}
+{{Recipe|
+name = Onion Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Onion Slice|Onion Slice|5}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-4 = {{RecipeComponent|Water|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Onion|Soup Onion|1}}
+}}
+{{Recipe|
+name = Mushroom Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Mushroom|Mushroom|2}} | 
+component-3 = {{RecipeComponent|Water|5}} | 
+component-4 = {{RecipeComponent|Milk|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Mushroom|Soup Mushroom|1}}
+}}
+{{Recipe|
+name = Stew|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|3}} | 
+component-3 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-4 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-5 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-6 = {{RecipeComponent|image=Eggplant|Eggplant|1}} | 
+component-7 = {{RecipeComponent|image=Mushroom|Mushroom|1}} | 
+component-8 = {{RecipeComponent|Water|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Stew|Soup Stew|1}}
+}}
+{{Recipe|
+name = Tomato Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Tomato|Tomato|2}} | 
+component-3 = {{RecipeComponent|Water|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Tomato|Soup Tomato|1}}
+}}
+{{Recipe|
+name = Tomato Blood Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Blood Tomato|Blood Tomato|2}} | 
+component-3 = {{RecipeComponent|Blood|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Tomato Blood|Soup Tomato Blood|1}}
+}}
+{{Recipe|
+name = Wing Fang Chu|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Meat Xeno Cutlet|Meat Xeno Cutlet|2}} | 
+component-3 = {{RecipeComponent|Soysauce|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Wing Fang Chu|Soup Wing Fang Chu|1}}
+}}
+{{Recipe|
+name = Wing Fang Chu|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Meat Spider|Meat Spider|2}} | 
+component-3 = {{RecipeComponent|Soysauce|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Wing Fang Chu|Soup Wing Fang Chu|1}}
+}}
+{{Recipe|
+name = Vegetable Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Corn|Corn|1}} | 
+component-3 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-4 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-5 = {{RecipeComponent|image=Eggplant|Eggplant|1}} | 
+component-6 = {{RecipeComponent|Water|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Vegetable|Soup Vegetable|1}}
+}}
+{{Recipe|
+name = Clown Tears Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Banana|Banana|1}} | 
+component-3 = {{RecipeComponent|image=Shard Glass|Shard Glass|1}} | 
+component-4 = {{RecipeComponent|Water|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Clown|Soup Clown|1}}
+}}
+{{Recipe|
+name = Monkeys Delight|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Banana|Banana|1}} | 
+component-3 = {{RecipeComponent|image=Monkey Cube|Monkey Cube|1}} | 
+component-4 = {{RecipeComponent|Flour|5}} | 
+component-5 = {{RecipeComponent|Table Salt|1}} | 
+component-6 = {{RecipeComponent|Blackpepper|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Monkey|Soup Monkey|1}}
+}}
+{{Recipe|
+name = Bungo Soup|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Bungo|Bungo|2}} | 
+component-3 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|1}} | 
+component-4 = {{RecipeComponent|Water|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Bungo|Soup Bungo|1}}
+}}
+{{Recipe|
+name = Boiled Snail|
+component-1 = {{RecipeComponent|image=Meat Snail|Meat Snail|1}} | 
+component-2 = {{RecipeComponent|Water|10}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Meat Snail Cooked|Meat Snail Cooked|1}}
+}}
+{{Recipe|
+name = Escargot|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Onion Slice|Onion Slice|1}} | 
+component-3 = {{RecipeComponent|image=Butter|Butter|1}} | 
+component-4 = {{RecipeComponent|image=Meat Snail Cooked|Meat Snail Cooked|1}} | 
+component-5 = {{RecipeComponent|Water|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Soup Escargot|Soup Escargot|1}}
+}}
+</div>
+
+=== Pies ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Amanita Pie|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Fly Amanita|Fly Amanita|1}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Amanita|Pie Amanita|1}}
+}}
+{{Recipe|
+name = Apple Pie|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Apple|Apple|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Apple|Pie Apple|1}}
+}}
+{{Recipe|
+name = Baklava|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Snack Pistachios|Snack Pistachios|1}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Baklava|Pie Baklava|1}}
+}}
+{{Recipe|
+name = Banana Cream Pie|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Banana|Banana|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Banana Cream|Pie Banana Cream|1}}
+}}
+{{Recipe|
+name = Berry Clafoutis|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Berries|Berries|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Clafoutis|Pie Clafoutis|1}}
+}}
+{{Recipe|
+name = Cherry Pie|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Cherry|Cherry|5}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Cherry|Pie Cherry|1}}
+}}
+{{Recipe|
+name = Frosty Pie|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Chilly Pepper|Chilly Pepper|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Frosty|Pie Frosty|1}}
+}}
+{{Recipe|
+name = Meat Pie|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Meat|Meat|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Meat|Pie Meat|1}}
+}}
+{{Recipe|
+name = Xeno Pie|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Meat Xeno|Meat Xeno|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Pie Xeno|Pie Xeno|1}}
+}}
+</div>
+=== Tarts ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Chocolate Lava Tart|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Snack Chocolate Bar|Snack Chocolate Bar|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+component-4 = {{RecipeComponent|Sugar|5}} | 
+component-5 = {{RecipeComponent|Milk|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Tart Coco|Tart Coco|1}}
+}}
+{{Recipe|
+name = Golden Apple Streusel Tart|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Apple|Apple|2}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+component-4 = {{RecipeComponent|Gold|10}} | 
+component-5 = {{RecipeComponent|Sugar|5}} | 
+component-6 = {{RecipeComponent|Milk|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Tart Gapple|Tart Gapple|1}}
+}}
+{{Recipe|
+name = Grape Tart|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Grape|Grape|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+component-4 = {{RecipeComponent|Sugar|5}} | 
+component-5 = {{RecipeComponent|Milk|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Tart Grape|Tart Grape|1}}
+}}
+{{Recipe|
+name = Mime Tart|
+component-1 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-2 = {{RecipeComponent|image=Mimana|Mimana|3}} | 
+component-3 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+component-4 = {{RecipeComponent|Sugar|5}} | 
+component-5 = {{RecipeComponent|Milk|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Tart Mime|Tart Mime|1}}
+}}
+</div>
+=== Other ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Cuban Carp|
+component-1 = {{RecipeComponent|image=Dough|Dough|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+component-3 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|1}} | 
+component-4 = {{RecipeComponent|image=Meat Fish|Meat Fish|2}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Meal Cubancarp|Meal Cubancarp|1}}
+}}
+{{Recipe|
+name = Sashimi|
+component-1 = {{RecipeComponent|image=Meat Fish|Meat Fish|2}} | 
+component-2 = {{RecipeComponent|Table Salt|1}} | 
+transformer = {{Assembler|15}} |
+result = {{ResultComponent|image=Meal Sashimi|Meal Sashimi|1}}
+}}
+{{Recipe|
+name = Salty Sweet Misocola Soup|
+component-1 = {{RecipeComponent|image=Soup Miso|Soup Miso|1}} | 
+component-2 = {{RecipeComponent|Cola|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Disgusting Swept Soup|Disgusting Swept Soup|1}}
+}}
+{{Recipe|
+name = Loaded Baked Potato|
+component-1 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Meal Potato Loaded|Meal Potato Loaded|1}}
+}}
+{{Recipe|
+name = Space Fries|
+component-1 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-2 = {{RecipeComponent|Table Salt|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Meal Fries|Meal Fries|1}}
+}}
+{{Recipe|
+name = Cheesy Fries|
+component-1 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-3 = {{RecipeComponent|Table Salt|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Meal Fries Cheesy|Meal Fries Cheesy|1}}
+}}
+{{Recipe|
+name = Carrot Fries|
+component-1 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-2 = {{RecipeComponent|Table Salt|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Meal Fries Carrot|Meal Fries Carrot|1}}
+}}
+{{Recipe|
+name = Popcorn|
+component-1 = {{RecipeComponent|image=Corn|Corn|1}} | 
+transformer = {{Microwave|20}} |
+result = {{ResultComponent|image=Snack Popcorn|Snack Popcorn|1}}
+}}
+{{Recipe|
+name = Blueberry Pancake|
+component-1 = {{RecipeComponent|image=Berries|Berries|2}} | 
+component-2 = {{RecipeComponent|Flour|5}} | 
+component-3 = {{RecipeComponent|Milk|5}} | 
+component-4 = {{RecipeComponent|Egg|6}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Baked Pancake Bb|Baked Pancake Bb|1}}
+}}
+{{Recipe|
+name = Cookie|
+component-1 = {{RecipeComponent|image=Butter Slice|Butter Slice|1}} | 
+component-2 = {{RecipeComponent|image=Snack Chocolate Bar|Snack Chocolate Bar|1}} | 
+component-3 = {{RecipeComponent|Flour|5}} | 
+component-4 = {{RecipeComponent|Sugar|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Baked Cookie|Baked Cookie|1}}
+}}
+{{Recipe|
+name = Sugar Cookie|
+component-1 = {{RecipeComponent|image=Butter Slice|Butter Slice|1}} | 
+component-2 = {{RecipeComponent|Flour|5}} | 
+component-3 = {{RecipeComponent|Sugar|10}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Baked Cookie Sugar|Baked Cookie Sugar|1}}
+}}
+{{Recipe|
+name = Oatmeal Cookie|
+component-1 = {{RecipeComponent|image=Butter Slice|Butter Slice|1}} | 
+component-2 = {{RecipeComponent|Oats|5}} | 
+component-3 = {{RecipeComponent|Sugar|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Baked Cookie Oatmeal|Baked Cookie Oatmeal|1}}
+}}
+{{Recipe|
+name = Chocolate Chip Pancake|
+component-1 = {{RecipeComponent|image=Snack Chocolate Bar|Snack Chocolate Bar|1}} | 
+component-2 = {{RecipeComponent|Flour|5}} | 
+component-3 = {{RecipeComponent|Milk|5}} | 
+component-4 = {{RecipeComponent|Egg|6}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Baked Pancake Cc|Baked Pancake Cc|1}}
+}}
+{{Recipe|
+name = Apple Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Apple|Apple|3}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Apple|Cake Apple|1}}
+}}
+{{Recipe|
+name = Carrot Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Carrot|Carrot|3}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Carrot|Cake Carrot|1}}
+}}
+{{Recipe|
+name = Lemon Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Lemon|Lemon|3}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Lemon|Cake Lemon|1}}
+}}
+{{Recipe|
+name = Lemoon Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Lemoon|Lemoon|2}} | 
+component-3 = {{RecipeComponent|image=Berries|Berries|1}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Lemoon|Cake Lemoon|1}}
+}}
+{{Recipe|
+name = Orange Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Orange|Orange|3}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Orange|Cake Orange|1}}
+}}
+{{Recipe|
+name = Blueberry Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Berries|Berries|3}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Blueberry|Cake Blueberry|1}}
+}}
+{{Recipe|
+name = Lime Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Lime|Lime|3}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Lime|Cake Lime|1}}
+}}
+{{Recipe|
+name = Cheese Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|3}} | 
+component-3 = {{RecipeComponent|Cream|10}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Cheese|Cake Cheese|1}}
+}}
+{{Recipe|
+name = Pumpkin Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Pumpkin|Pumpkin|1}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Pumpkin|Cake Pumpkin|1}}
+}}
+{{Recipe|
+name = Clown Cake|
+component-1 = {{RecipeComponent|image=Clothing Mask Clown|Clothing Mask Clown|1}} | 
+component-2 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Clown|Cake Clown|1}}
+}}
+{{Recipe|
+name = Cake|
+component-1 = {{RecipeComponent|image=Cake Batter|Cake Batter|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Cake Plain|Cake Plain|1}}
+}}
+{{Recipe|
+name = Birthday Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|Cream|5}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Birthday|Cake Birthday|1}}
+}}
+{{Recipe|
+name = Chocolate Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Snack Chocolate Bar|Snack Chocolate Bar|2}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Chocolate|Cake Chocolate|1}}
+}}
+{{Recipe|
+name = Brain Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Organ Human Brain|Organ Human Brain|1}} | 
+transformer = {{Assembler|15}} |
+result = {{ResultComponent|image=Cake Brain|Cake Brain|1}}
+}}
+{{Recipe|
+name = Slime Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|Slime|15}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Cake Slime|Cake Slime|1}}
+}}
+{{Recipe|
+name = Cat Cake|
+component-1 = {{RecipeComponent|image=Cake Plain|Cake Plain|1}} | 
+component-2 = {{RecipeComponent|image=Organ Animal Heart|Organ Animal Heart|1}} | 
+component-3 = {{RecipeComponent|Milk|15}} | 
+component-4 = {{RecipeComponent|Raisins|10}} | 
+component-5 = {{RecipeComponent|Cognizine|5}} | 
+transformer = {{Assembler|15}} |
+result = {{ResultComponent|image=Mob Cat Cake|Mob Cat Cake|1}}
+}}
+{{Recipe|
+name = Bread Dog|
+component-1 = {{RecipeComponent|image=Bread Sausage|Bread Sausage|1}} | 
+component-2 = {{RecipeComponent|image=Organ Animal Heart|Organ Animal Heart|1}} | 
+component-3 = {{RecipeComponent|image=Spaceshroom Cooked|Spaceshroom Cooked|1}} | 
+component-4 = {{RecipeComponent|Cognizine|5}} | 
+transformer = {{Assembler|15}} |
+result = {{ResultComponent|image=Mob Bread Dog|Mob Bread Dog|1}}
+}}
+{{Recipe|
+name = Dumplings|
+component-1 = {{RecipeComponent|image=Dough Slice|Dough Slice|3}} | 
+component-2 = {{RecipeComponent|Water|10}} | 
+component-3 = {{RecipeComponent|Uncooked Animal Proteins|6}} | 
+transformer = {{Microwave|15}} |
+result = {{ResultComponent|image=Baked Dumplings|Baked Dumplings|1}}
+}}
+{{Recipe|
+name = Brownie|
+component-1 = {{RecipeComponent|image=Butter|Butter|2}} | 
+component-2 = {{RecipeComponent|image=Snack Chocolate Bar|Snack Chocolate Bar|2}} | 
+component-3 = {{RecipeComponent|Flour|15}} | 
+component-4 = {{RecipeComponent|Sugar|30}} | 
+component-5 = {{RecipeComponent|Egg|18}} | 
+transformer = {{Oven|25}} |
+result = {{ResultComponent|image=Baked Brownie Batch|Baked Brownie Batch|1}}
+}}
+{{Recipe|
+name = Cat Crispy|
+component-1 = {{RecipeComponent|image=Meal Fries|Meal Fries|1}} | 
+component-2 = {{RecipeComponent|image=Onion Rings|Onion Rings|1}} | 
+component-3 = {{RecipeComponent|image=Organ Animal Heart|Organ Animal Heart|1}} | 
+component-4 = {{RecipeComponent|Cornoil|10}} | 
+component-5 = {{RecipeComponent|Cognizine|5}} | 
+transformer = {{Assembler|15}} |
+result = {{ResultComponent|image=Mob Cat Crispy|Mob Cat Crispy|1}}
+}}
+{{Recipe|
+name = Dragon Omelette|
+component-1 = {{RecipeComponent|image=Butter|Butter|1}} | 
+component-2 = {{RecipeComponent|Ichor|12}} | 
+component-3 = {{RecipeComponent|Egg|12}} | 
+component-4 = {{RecipeComponent|Table Salt|5}} | 
+component-5 = {{RecipeComponent|Blackpepper|5}} | 
+transformer = {{Oven_Or_Microwave|15}} |
+result = {{ResultComponent|image=Meal Dragon Omelette|Meal Dragon Omelette|1}}
+}}
+{{Recipe|
+name = Raisins|
+component-1 = {{RecipeComponent|image=Grape|Grape|5}} | 
+transformer = {{Oven_Or_Microwave|30}} |
+result = {{ResultComponent|image=Reagent Container Raisin|Reagent Container Raisin|1}}
+}}
+{{Recipe|
+name = Pickle|
+component-1 = {{RecipeComponent|image=Cucumber|Cucumber|1}} | 
+component-2 = {{RecipeComponent|Saline|10}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Pickle|Pickle|1}}
+}}
+{{Recipe|
+name = Poached Pears|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Pear|Pear|3}} | 
+component-3 = {{RecipeComponent|image=Orange|Orange|2}} | 
+component-4 = {{RecipeComponent|Wine|10}} | 
+transformer = {{Assembler|10}} |
+result = {{ResultComponent|image=Meal Poached Pears|Meal Poached Pears|1}}
+}}
+{{Recipe|
+name = Pears Belle Helene|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Pear|Pear|3}} | 
+component-3 = {{RecipeComponent|image=Snack Chocolate Bar|Snack Chocolate Bar|2}} | 
+component-4 = {{RecipeComponent|image=Lemon|Lemon|1}} | 
+component-5 = {{RecipeComponent|Cream|5}} | 
+transformer = {{Assembler|10}} |
+result = {{ResultComponent|image=Meal Pears Belle Helene|Meal Pears Belle Helene|1}}
+}}
+{{Recipe|
+name = Pear Muffin|
+component-1 = {{RecipeComponent|image=Pear|Pear|1}} | 
+component-2 = {{RecipeComponent|image=Snack Chocolate Bar|Snack Chocolate Bar|1}} | 
+component-3 = {{RecipeComponent|Flour|5}} | 
+component-4 = {{RecipeComponent|Oats|5}} | 
+component-5 = {{RecipeComponent|Sugar|5}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Baked Muffin Pear|Baked Muffin Pear|1}}
+}}
+{{Recipe|
+name = Pear And Cheese Tart|
+component-1 = {{RecipeComponent|image=Plate Tin|Plate Tin|1}} | 
+component-2 = {{RecipeComponent|image=Dough Pie|Dough Pie|1}} | 
+component-3 = {{RecipeComponent|image=Pear|Pear|2}} | 
+component-4 = {{RecipeComponent|image=Chevre|Chevre|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Tart Pear Cheese|Tart Pear Cheese|1}}
+}}
+{{Recipe|
+name = Dried Shrooms|
+component-1 = {{RecipeComponent|image=Spaceshroom|Spaceshroom|1}} | 
+component-2 = {{RecipeComponent|image=Mushroom|Mushroom|1}} | 
+component-3 = {{RecipeComponent|image=Fly Amanita|Fly Amanita|1}} | 
+transformer = {{Oven_Or_Microwave|15}} |
+result = {{ResultComponent|image=Shrooms Dried|Shrooms Dried|1}}
+}}
+</div>
+
+=== Donks ===
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+{{Recipe|
+name = Warm Donk Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket|Donkpocket|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Warm|Donkpocket Warm|1}}
+}}
+{{Recipe|
+name = Warm Dank Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket Dank|Donkpocket Dank|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Dank Warm|Donkpocket Dank Warm|1}}
+}}
+{{Recipe|
+name = Warm Spicy Donk-Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket Spicy|Donkpocket Spicy|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Spicy Warm|Donkpocket Spicy Warm|1}}
+}}
+{{Recipe|
+name = Warm Teriyaki-Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket Teriyaki|Donkpocket Teriyaki|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Teriyaki Warm|Donkpocket Teriyaki Warm|1}}
+}}
+{{Recipe|
+name = Warm Pizza-Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket Pizza|Donkpocket Pizza|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Pizza Warm|Donkpocket Pizza Warm|1}}
+}}
+{{Recipe|
+name = Warm Honk-Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket Honk|Donkpocket Honk|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Honk Warm|Donkpocket Honk Warm|1}}
+}}
+{{Recipe|
+name = Warm Berry-Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket Berry|Donkpocket Berry|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Berry Warm|Donkpocket Berry Warm|1}}
+}}
+{{Recipe|
+name = Warm Stonk-Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket Stonk|Donkpocket Stonk|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Stonk Warm|Donkpocket Stonk Warm|1}}
+}}
+{{Recipe|
+name = Warm Carp-Pocket|
+component-1 = {{RecipeComponent|image=Donkpocket Carp|Donkpocket Carp|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Donkpocket Carp Warm|Donkpocket Carp Warm|1}}
+}}
+{{Recipe|
+name = Hot Chili|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|1}} | 
+component-3 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|1}} | 
+component-4 = {{RecipeComponent|image=Onion Slice|Onion Slice|1}} | 
+component-5 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+transformer = {{Oven|20}} |
+result = {{ResultComponent|image=Soup Chili Hot|Soup Chili Hot|1}}
+}}
+{{Recipe|
+name = Cold Chili|
+component-1 = {{RecipeComponent|image=Soup Chili Hot|Soup Chili Hot|1}} | 
+component-2 = {{RecipeComponent|Nitrogen|5}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Soup Chili Cold|Soup Chili Cold|1}}
+}}
+{{Recipe|
+name = Clown'S Tears|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Onion Slice|Onion Slice|1}} | 
+component-3 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-4 = {{RecipeComponent|image=Bike Horn|Bike Horn|1}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Soup Clown|Soup Clown|1}}
+}}
+{{Recipe|
+name = Chili Con Carnival|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|1}} | 
+component-3 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|1}} | 
+component-4 = {{RecipeComponent|image=Onion Slice|Onion Slice|1}} | 
+component-5 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-6 = {{RecipeComponent|image=Clothing Shoes Clown|Clothing Shoes Clown|1}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Soup Chili Clown|Soup Chili Clown|1}}
+}}
+{{Recipe|
+name = Queso|
+component-1 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|2}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Meal Queso|Meal Queso|1}}
+}}
+{{Recipe|
+name = Bbq Ribs|
+component-1 = {{RecipeComponent|image=Meat|Meat|2}} | 
+component-2 = {{RecipeComponent|image=Kebab Skewer|Kebab Skewer|1}} | 
+component-3 = {{RecipeComponent|Bbq Sauce|5}} | 
+transformer = {{Oven|15}} |
+result = {{ResultComponent|image=Meal Ribs|Meal Ribs|1}}
+}}
+{{Recipe|
+name = Enchiladas|
+component-1 = {{RecipeComponent|image=Chili Pepper|Chili Pepper|2}} | 
+component-2 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|1}} | 
+component-3 = {{RecipeComponent|image=Corn|Corn|1}} | 
+transformer = {{Oven|20}} |
+result = {{ResultComponent|image=Meal Enchiladas|Meal Enchiladas|1}}
+}}
+{{Recipe|
+name = Herb Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Ambrosia Vulgaris|Ambrosia Vulgaris|3}} | 
+component-3 = {{RecipeComponent|image=Apple|Apple|1}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Herb|Salad Herb|1}}
+}}
+{{Recipe|
+name = Valid Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Ambrosia Vulgaris|Ambrosia Vulgaris|3}} | 
+component-3 = {{RecipeComponent|image=Potato|Potato|1}} | 
+component-4 = {{RecipeComponent|image=Meat Meatball|Meat Meatball|1}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Valid|Salad Valid|1}}
+}}
+{{Recipe|
+name = Coleslaw|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Onion Red|Onion Red|1}} | 
+component-3 = {{RecipeComponent|image=Cabbage|Cabbage|1}} | 
+component-4 = {{RecipeComponent|Vinaigrette|5}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Coleslaw|Salad Coleslaw|1}}
+}}
+{{Recipe|
+name = Caesar Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Onion Red Slice|Onion Red Slice|1}} | 
+component-3 = {{RecipeComponent|image=Bread Plain Slice|Bread Plain Slice|1}} | 
+component-4 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-5 = {{RecipeComponent|image=Cabbage|Cabbage|1}} | 
+component-6 = {{RecipeComponent|Oil Olive|5}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Caesar|Salad Caesar|1}}
+}}
+{{Recipe|
+name = Citrus Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Orange|Orange|1}} | 
+component-3 = {{RecipeComponent|image=Lemon|Lemon|1}} | 
+component-4 = {{RecipeComponent|image=Lime|Lime|1}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Citrus|Salad Citrus|1}}
+}}
+{{Recipe|
+name = Kimchi Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Carrot|Carrot|1}} | 
+component-3 = {{RecipeComponent|image=Cabbage|Cabbage|1}} | 
+component-4 = {{RecipeComponent|image=Garlic|Garlic|1}} | 
+component-5 = {{RecipeComponent|Vinegar|5}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Kimchi|Salad Kimchi|1}}
+}}
+{{Recipe|
+name = Fruit Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Orange|Orange|1}} | 
+component-3 = {{RecipeComponent|image=Apple|Apple|1}} | 
+component-4 = {{RecipeComponent|image=Grape|Grape|1}} | 
+component-5 = {{RecipeComponent|image=Watermelon Slice|Watermelon Slice|2}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Fruit|Salad Fruit|1}}
+}}
+{{Recipe|
+name = Jungle Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Banana|Banana|1}} | 
+component-3 = {{RecipeComponent|image=Apple|Apple|1}} | 
+component-4 = {{RecipeComponent|image=Grape|Grape|1}} | 
+component-5 = {{RecipeComponent|image=Watermelon Slice|Watermelon Slice|2}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Jungle|Salad Jungle|1}}
+}}
+{{Recipe|
+name = Watermelon Fruit Bowl|
+component-1 = {{RecipeComponent|image=Watermelon|Watermelon|1}} | 
+component-2 = {{RecipeComponent|image=Apple|Apple|1}} | 
+component-3 = {{RecipeComponent|image=Banana|Banana|1}} | 
+component-4 = {{RecipeComponent|image=Lemon|Lemon|1}} | 
+component-5 = {{RecipeComponent|image=Orange|Orange|1}} | 
+component-6 = {{RecipeComponent|image=Ambrosia Vulgaris|Ambrosia Vulgaris|1}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Watermelon Fruit Bowl|Salad Watermelon Fruit Bowl|1}}
+}}
+{{Recipe|
+name = Greek Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Cucumber|Cucumber|1}} | 
+component-3 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-4 = {{RecipeComponent|image=Chevre Slice|Chevre Slice|1}} | 
+component-5 = {{RecipeComponent|Vinaigrette|5}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Greek|Salad Greek|1}}
+}}
+{{Recipe|
+name = Avocado Salad|
+component-1 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-2 = {{RecipeComponent|image=Cucumber|Cucumber|1}} | 
+component-3 = {{RecipeComponent|image=Avocado|Avocado|1}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-5 = {{RecipeComponent|Oil Olive|5}} | 
+component-6 = {{RecipeComponent|Juice Lime|5}} | 
+transformer = {{Assembler|5}} |
+result = {{ResultComponent|image=Salad Avocado|Salad Avocado|1}}
+}}
+{{Recipe|
+name = Dried Tea Leaves|
+component-1 = {{RecipeComponent|image=Leaves Tea|Leaves Tea|1}} | 
+transformer = {{Microwave|10}} |
+result = {{ResultComponent|image=Leaves Tea Dried|Leaves Tea Dried|1}}
+}}
+{{Recipe|
+name = Dried Tobacco Leaves|
+component-1 = {{RecipeComponent|image=Leaves Tobacco|Leaves Tobacco|1}} | 
+transformer = {{Microwave|10}} |
+result = {{ResultComponent|image=Leaves Tobacco Dried|Leaves Tobacco Dried|1}}
+}}
+{{Recipe|
+name = Dried Cannabis Leaves|
+component-1 = {{RecipeComponent|image=Leaves Cannabis|Leaves Cannabis|1}} | 
+transformer = {{Microwave|10}} |
+result = {{ResultComponent|image=Leaves Cannabis Dried|Leaves Cannabis Dried|1}}
+}}
+{{Recipe|
+name = Dried Rainbow Cannabis Leaves|
+component-1 = {{RecipeComponent|image=Leaves Cannabis Rainbow|Leaves Cannabis Rainbow|1}} | 
+transformer = {{Microwave|10}} |
+result = {{ResultComponent|image=Leaves Cannabis Rainbow Dried|Leaves Cannabis Rainbow Dried|1}}
+}}
+{{Recipe|
+name = Baked Banana Peel|
+component-1 = {{RecipeComponent|image=Trash Banana Peel|Trash Banana Peel|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Trash Baked Banana Peel|Trash Baked Banana Peel|1}}
+}}
+{{Recipe|
+name = Suppermatter|
+component-1 = {{RecipeComponent|image=Cake Batter|Cake Batter|2}} | 
+component-2 = {{RecipeComponent|Sugar|30}} | 
+component-3 = {{RecipeComponent|Nitrogen|10}} | 
+component-4 = {{RecipeComponent|Plasma|10}} | 
+transformer = {{Oven|30}} |
+result = {{ResultComponent|image=Cake Suppermatter|Cake Suppermatter|1}}
+}}
+{{Recipe|
+name = Chevre Chaud|
+component-1 = {{RecipeComponent|image=Chevre Slice|Chevre Slice|1}} | 
+component-2 = {{RecipeComponent|image=Bread Baguette Slice|Bread Baguette Slice|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Baked Chevre Chaud|Baked Chevre Chaud|1}}
+}}
+{{Recipe|
+name = Cooked Spaceshroom|
+component-1 = {{RecipeComponent|image=Spaceshroom|Spaceshroom|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Spaceshroom Cooked|Spaceshroom Cooked|1}}
+}}
+{{Recipe|
+name = Cannabis Butter|
+component-1 = {{RecipeComponent|image=Butter|Butter|1}} | 
+component-2 = {{RecipeComponent|image=Leaves Cannabis|Leaves Cannabis|6}} | 
+transformer = {{Microwave|15}} |
+result = {{ResultComponent|image=Cannabis Butter|Cannabis Butter|1}}
+}}
+{{Recipe|
+name = Cannabis Brownie|
+component-1 = {{RecipeComponent|image=Cannabis Butter|Cannabis Butter|2}} | 
+component-2 = {{RecipeComponent|image=Snack Chocolate Bar|Snack Chocolate Bar|2}} | 
+component-3 = {{RecipeComponent|Flour|15}} | 
+component-4 = {{RecipeComponent|Sugar|30}} | 
+component-5 = {{RecipeComponent|Egg|18}} | 
+transformer = {{Oven|25}} |
+result = {{ResultComponent|image=Baked Cannabis Brownie Batch|Baked Cannabis Brownie Batch|1}}
+}}
+{{Recipe|
+name = Corn In Butter|
+component-1 = {{RecipeComponent|image=Corn|Corn|1}} | 
+component-2 = {{RecipeComponent|image=Plate|Plate|1}} | 
+component-3 = {{RecipeComponent|image=Butter|Butter|1}} | 
+transformer = {{Microwave|10}} |
+result = {{ResultComponent|image=Meal Corn In Butter|Meal Corn In Butter|1}}
+}}
+{{Recipe|
+name = Pea Soup|
+component-1 = {{RecipeComponent|image=Pea Pod|Pea Pod|2}} | 
+component-2 = {{RecipeComponent|image=Bowl Big|Bowl Big|1}} | 
+component-3 = {{RecipeComponent|Water|10}} | 
+transformer = {{Microwave|10}} |
+result = {{ResultComponent|image=Soup Pea|Soup Pea|1}}
+}}
+{{Recipe|
+name = Taco Shell|
+component-1 = {{RecipeComponent|image=Dough Tortilla Flat|Dough Tortilla Flat|1}} | 
+transformer = {{Microwave|5}} |
+result = {{ResultComponent|image=Taco Shell|Taco Shell|1}}
+}}
+{{Recipe|
+name = Beef Taco|
+component-1 = {{RecipeComponent|image=Taco Shell|Taco Shell|1}} | 
+component-2 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|1}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Taco Beef|Taco Beef|1}}
+}}
+{{Recipe|
+name = Chicken Taco|
+component-1 = {{RecipeComponent|image=Taco Shell|Taco Shell|1}} | 
+component-2 = {{RecipeComponent|image=Meat Chicken Cutlet|Meat Chicken Cutlet|1}} | 
+component-3 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Taco Chicken|Taco Chicken|1}}
+}}
+{{Recipe|
+name = Fish Taco|
+component-1 = {{RecipeComponent|image=Taco Shell|Taco Shell|1}} | 
+component-2 = {{RecipeComponent|image=Meat Fish|Meat Fish|1}} | 
+component-3 = {{RecipeComponent|image=Onion Slice|Onion Slice|2}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-5 = {{RecipeComponent|image=Cabbage|Cabbage|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Taco Fish|Taco Fish|1}}
+}}
+{{Recipe|
+name = Rat Taco|
+component-1 = {{RecipeComponent|image=Taco Shell|Taco Shell|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-3 = {{RecipeComponent|image=Meat Rat|Meat Rat|1}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Taco Rat|Taco Rat|1}}
+}}
+{{Recipe|
+name = Beef Taco Supreme|
+component-1 = {{RecipeComponent|image=Taco Shell|Taco Shell|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-3 = {{RecipeComponent|image=Meat Cutlet|Meat Cutlet|1}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-5 = {{RecipeComponent|image=Cabbage|Cabbage|1}} | 
+component-6 = {{RecipeComponent|image=Onion Slice|Onion Slice|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Taco Beef Supreme|Taco Beef Supreme|1}}
+}}
+{{Recipe|
+name = Beef Taco Supreme|
+component-1 = {{RecipeComponent|image=Taco Shell|Taco Shell|1}} | 
+component-2 = {{RecipeComponent|image=Cheese Slice|Cheese Slice|1}} | 
+component-3 = {{RecipeComponent|image=Meat Chicken Cutlet|Meat Chicken Cutlet|1}} | 
+component-4 = {{RecipeComponent|image=Tomato|Tomato|1}} | 
+component-5 = {{RecipeComponent|image=Cabbage|Cabbage|1}} | 
+component-6 = {{RecipeComponent|image=Onion Slice|Onion Slice|2}} | 
+transformer = {{Oven|10}} |
+result = {{ResultComponent|image=Taco Chicken Supreme|Taco Chicken Supreme|1}}
+}}
+{{Recipe|
+name = Croissant|
+component-1 = {{RecipeComponent|image=Croissant Raw|Croissant Raw|1}} | 
+component-2 = {{RecipeComponent|image=Butter Slice|Butter Slice|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Baked Croissant|Baked Croissant|1}}
+}}
+{{Recipe|
+name = Throwing Croissant|
+component-1 = {{RecipeComponent|image=Croissant Raw|Croissant Raw|1}} | 
+component-2 = {{RecipeComponent|image=Butter Slice|Butter Slice|1}} | 
+component-3 = {{RecipeComponent|image=Shard Glass|Shard Glass|1}} | 
+transformer = {{Oven|5}} |
+result = {{ResultComponent|image=Weapon Croissant|Weapon Croissant|1}}
+}}
+</div>
+
+
+{{Template:Guides_Menu}}

@@ -1,0 +1,73 @@
+This template is used to create an IMP Main Page. It uses [[Module:Main page]] to arrange a series of [[Template:Main page box]]es in a [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout CSS grid].
+
+==Simple explanation==
+The layout is made using keywords arranged in a grid. This grid has 3 columns on desktop-width screens, 2 columns on tablet, and 1 on mobile. Each can have as many rows as you want. Each keyword represents the same section and can span multiple rows and/or columns, but ''must'' form a contiguous rectangle of any dimension (1x1, 1x2, 2x2, 2x3, etc.).
+
+For example, the following input to desktop:
+<pre style="display:table;">
+welcome welcome welcome
+about links links
+about contribute contribute
+</pre>
+would produce a grid resembling the following:
+{| class="wikitable"
+| style="background-color:rgba(0,255,0,0.15)" | welcome
+| style="background-color:rgba(0,255,0,0.15)" | welcome
+| style="background-color:rgba(0,255,0,0.15)" | welcome
+|-
+| style="background-color:rgba(255,0,255, 0.15)" | about 
+| style="background-color:rgba(0,0,255, 0.15)" | links
+| style="background-color:rgba(0,0,255, 0.15)" | links
+|-
+| style="background-color:rgba(255,0,255, 0.15)" | about 
+| style="background-color:rgba(255,255,0, 0.15)" | contribute
+| style="background-color:rgba(255,255,0, 0.15)" | contribute
+|}
+Where <code>welcome</code> is the contents of [[{{MediaWiki:Mainpage}}/welcome]], <code>about</code> is the contents of [[{{MediaWiki:Mainpage}}/about]], and so on. See [[Template:Main page box]] for more information about creating your own boxes.
+
+If you enter a keyword that does not have a corresponding box already, you'll be prompted to create one when saving or previewing the page.
+
+If you leave a keyword out of a certain layout, it will not be displayed on that layout. A warning will be given at the top of the edit preview in case this was an accident, but can be safely ignored if intentional.
+
+For additional hints and information, see the comments that came on your main page or ask a wiki.gg staff member for help.
+
+==Technical explanation==
+For the CSS savvy, this section explains how it works a bit under the hood.
+
+The input to desktop, tablet, and mobile create [https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties CSS variables] which are then used as the value of [https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas grid-template-areas] in media queries for screen widths >=1350px, >=990px, and <990px. The boxes are given an id based on their subpage name, which is then used by the module to find the template, as well as by the box templates to assign them a CSS id of <code>mp-box-<keyword></code>. Since these keywords are used directly in the grid layout, they must follow the rules of [https://developer.mozilla.org/en-US/docs/Web/CSS/custom-ident <custom-ident>] naming.
+
+==Dependencies==
+For this template to work properly, you need the following:
+* [[Module:Main page]]
+* All templates in [[:Category:Main page templates]].
+* All CSS within the "Main page layout" section found in [[MediaWiki:Common.css]].
+{{gad|mpEditLinks}} is also highly recommended. Its code can be found at {{gad|mpEditLinks.css}} and {{gad|mpEditLinks.js}}.
+
+==TemplateData==
+<templatedata>
+{
+	"params": {
+		"desktop": {
+			"label": "Desktop",
+			"description": "The layout for wide screens",
+			"required": true,
+			"type": "string"
+		},
+		"tablet": {
+			"label": "Tablet",
+			"description": "The layout for mid-width screens",
+			"required": true,
+			"type": "string"
+		},
+		"mobile": {
+			"label": "Mobile",
+			"description": "The layout for narrow screens",
+			"required": true,
+			"type": "string"
+		}
+	},
+	"description": "Creates an IMP Main Page.",
+	"format": "block"
+}
+</templatedata>
+<noinclude>[[Category:Template documentation]]</noinclude>

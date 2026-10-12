@@ -1,0 +1,1 @@
+#REDIRECT [[How to start Mapping after setting up the local git repository]]

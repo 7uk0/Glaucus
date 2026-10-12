@@ -1,0 +1,6 @@
+/* CSS placed here will affect the print output */
+
+/* hide the wiki.gg header. Please note that this is generally not allowed but is fine for print mode */
+#wikigg-header {
+	display:none !important;
+}

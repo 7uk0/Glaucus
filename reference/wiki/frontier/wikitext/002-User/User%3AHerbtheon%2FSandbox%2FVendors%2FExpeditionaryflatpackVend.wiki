@@ -1,0 +1,21 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:ComputerCrewMonitoringFlatpack.png|50px]] || Crew Monitoring Console Flatpack || $6,250
+|-
+| [[File:TelecomServerFlatpack.png|50px]] || Telecommunication Server Flatpack || $3,750
+|-
+| [[File:WeaponCapacitorRechargerFlatpack.png|50px]] || Recharger Flatpack || $1,375
+|-
+| [[File:BorgChargerFlatpack.png|50px]] || Borg Charger Flatpack || $1,375
+|-
+| [[File:MercenaryTechFabFlatpack.png|50px]] || Mercenary Techfab Flatpack || $15,000
+|-
+| [[File:NFHolopadShipFlatpack.png|50px]] || Bluespace Holopad Flatpack || $3,750
+|-
+| [[File:ComputerIFFFlatpack.png|50px]] || IFF Computer Flatpack || $10,000 || 1
+|}
+</div>
+</includeonly>

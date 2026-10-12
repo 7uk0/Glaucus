@@ -1,0 +1,28 @@
+<includeonly><!--
+
+-->{{#vardefine:topic|<!-- start vd
+   -->{{#if:{{{topic|}}} | {{{topic}}} | {{PAGENAME}} }}<!-- end if
+-->}}<!-- end vd
+   
+-->{{#vardefine:disambig|<!-- start vd
+   
+   -->{{#if:{{{1|}}}<!-- start custom disambig if
+      
+      -->|{{{1}}}<!-- start label if -->{{#if:{{{2|}}} | {{!}}{{{2}}} }}<!-- end label if
+         
+      -->|{{#var:topic}} (disambiguation)<!-- else; use regular disambig
+         
+   -->}}<!-- end custom disambig if
+      
+-->}}<!-- end vd
+   
+-->{{Hatnote|<!--
+
+   -->This page is about '''{{#var:topic}}'''. For other uses, see [[{{#var:disambig}}]].<!-- 
+   -->|icon=Disambig.svg<!-- 
+   
+-->}}<!-- 
+
+--></includeonly><!-- 
+
+--><noinclude>{{doc}}[[Category:Hatnote templates]]</noinclude>

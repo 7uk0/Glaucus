@@ -1,0 +1,691 @@
+Officers are expected to read and follow [[Space Law]] in addition to this document.
+
+==Foreword==
+This document is to outline the Standard Operating Procedure (from here on out known as the SOP) that every employee of the New Frontier Sheriff’s Department (known from here on out as the NFSD) is expected to follow as a guideline. Deviation from this policy, written as is, should be done only in exceptional circumstances or at the direct orders of a Sheriff, but, as in most matters, context is king in regards to actions taken. The Sheriff is to be the final arbiter as to what is justifiable in the moment, and may be held responsible by Central Command for decisions made that violate the rights of civilians under Space Law.
+
+Remember that the priority of the NFSD is the protection of the innocent over the persecution of the guilty, and that NFSD officers are not expected to be perfect. As long as they are respectful to their superior officers and acknowledge their mistakes as they occur, officers can expect to have a long and respected career in frontier law enforcement.
+
+==The NFSD==
+The NFSD is a group of contractors individually commissioned by NanoTrasen to uphold Space Law in the sector. Coming from a large swathe of individuals of all sorts of backgrounds, they share a common purpose in ensuring that the people are safe from danger and to contain threats before they hurt others or reach other sectors. Although they are overseen and funded by Central Command, they are not directly employed by NanoTrasen akin to the security departments of other sectors. They are not faceless corporate minions, but fellow contractors looking to keep the peace, ensure that people remain safe, and to stop unscrupulous individuals from taking advantage of the lack of direct oversight in an effort to keep direct corporate intervention in the sector to a minimum.
+
+==Officers of the NFSD==
+''It should be noted that Brigmedics, Detectives, and Cadet slots start empty. These roles are vastly different from most of the others in the NFSD, and thus are only able to be opened by a Sheriff if one is present.''
+
+===Enlisted===
+
+====The Cadet====
+
+The Cadet is a fresh recruit, having recently sworn to protect the sector and get their boots wet learning how best to do so. Each Cadet has three expectations that they are expected to meet: to learn Space Law and the SOP, to listen and respect their supervisors, and to ask many questions. Cadet positions are only opened by a Sheriff, when they feel that they are able to properly support and train new cadets. While it is encouraged that a Sheriff opens at least one cadet slot if they are able, they are not required to do so, especially if it will detract from their other duties.
+
+Cadets are expected to be trained and directly supervised. If a Bailiff or Sheriff is not present to direct the training of Cadets, they are to enter cryogenic transportation and return to civilian life. Both the Cadet and NFSD Command are responsible for assuring that a Cadet has proper training. 
+
+====The Deputy====
+
+The Deputy is the officer of the line, having earned their stripes and now trusted to operate in an official capacity. Deputies are assigned to members of command, most commonly to Sergeants, to form squads that patrol the sector, handle threats, and stomp out crime. They serve as the manpower that is essential for the NFSD to effectively keep peace in the sector.
+
+===Support Officers===
+
+====The Public Affairs Liaison====
+
+The Public Affairs Liaison, commonly referred to as the PAL, is responsible for handling the front-facing affairs of the NFSD. From publishing news articles, to handling departmental disputes, to aiding the Sheriff in paperwork, the PAL is at the forefront of the NFSD’s public relations. The PAL also represents the NFSD in court, serving as the prosecutor in criminal cases and defending the NFSD in civil cases.
+
+The PAL is NOT permitted to perform the legalizing signature on permits that would allow expanded permissions for individuals, such as contraband permits. Only the Sheriff or Station Representative are permitted to authorize such papers. The PAL, however, is permitted to write such papers and aid in preparing them to present to the Sheriff or Station Representative for a signature.
+
+====The Brigmedic====
+
+The Brigmedic is responsible for the health and safety of the NFSD and the people they interact with. Be they criminal, civilian, or officer, the Brigmedic has a responsibility to ensure that everyone comes back alive and intact. They are also responsible for the care of prisoners, and ensuring that those imprisoned have their needs fulfilled and are kept healthy. The job of the Brigmedic is not to be leading an engagement, it is to bring up the rear and support the deputies who take up the front line, ensuring everyone receives the medical care they require both during and after an engagement. The Brigmedic often works directly with the Bailiff, but answers to NFSD Command and should be cooperating with and respecting Sergeants as necessary.
+
+The brigmedic is always considered to be a licensed chemist, and are responsible for the responsible distribution of chemicals and medicines to the rest of the department.
+
+====The Detective====
+
+The Detective has two core responsibilities: sniffing out smugglers and investigating crime scenes. To this end, they possess a forensic scanner with a unique upgrade chip installed that allows them to scan Syndicate dead drops without teleporting them into the sector. Because of the nature of their work, Detectives are often given significant freedom with how they go about it, but they must respect Space Law as much as any other officer must. The Detective often works directly with the Sheriff in their work, but answers to NFSD Command and should be cooperating with and respecting Sergeants and Bailiffs as necessary.
+
+===NFSD Command===
+
+Members of NFSD Command are held to a higher standard and are expected to be an example. They are required to know Space Law and SOP well enough to answer questions and make decisions, and to ensure those under your supervision are trained, equipped, and adequately behaved. They are responsible not just for those under their command, but also the experiences of those they confront.
+
+All command officers are also given access to an NFSD Uplink, which is used to convert Frontier Uplink Credits (known from here on out as FUCs) into equipment vital to the operation of the department.
+
+====The Sergeant====
+
+The Sergeant is a squad leader, answering to the Bailiff, and is responsible for their squad: two to three other officers who are assigned to them and work with them to provide backup. Sergeants are generally assigned to lead individual vessels and are responsible for tactical command in situations, whether that situation is conversation or combat. If a Cadet is assigned to a Sergeant, they are also responsible for ensuring that Cadet has the opportunities they need to learn and to answer their questions to the best of their ability.
+
+====The Bailiff====
+
+The Bailiff is the field leader, and is responsible for the maintenance of the department's equipment and training. While the Sheriff leads administrative duties, the Bailiff leads field duties, leading Sergeants while ensuring the supporting elements of the NFSD are deployed where necessary. The Bailiff is also responsible for ensuring that Cadets that are not being trained directly by the Sheriff are receiving proper education and being given opportunities to learn and grow.
+
+===The Sheriff===
+The Sheriff is the premier authority on maintaining peace and order throughout the sector through judicious application of Space Law. They are an administrator, first and foremost; Sheriffs should not be putting themselves at risk unless the sector is in a state of dire emergency or they are directly supervising training. They are at the top of the chain of command, and responsible for maintaining the integrity of your department as well as the wellbeing of the sector. The Sheriff has the final say on departmental matters, from organization to department pay.
+
+The Sheriff has many things they can do with their authority, from signing permits to ensuring the department is paid to implementing extreme measures in emergency situations. '''These special powers can neither be inherited nor delegated to the Bailiff. The Station Representative may use these powers in absence of a Sheriff.'''
+
+===Non-NFSD Law Enforcement===
+
+====The Security Guard:====
+
+Security guards are authorized and expected to help the NFSD keep the sector in check. For all intents and purposes, a security guard is considered to be a deputy of the NFSD, with three main exceptions:
+* They primarily receive instruction from the Station Representative as opposed to the Sheriff’s, and are responsible for helping to maintain their safety.
+* They prioritize the protection of the major ports, and should not be defending UIVs or chasing criminals through space.
+* They should defer to the NFSD in matters of sentencing and administering sentences.
+
+====The Station Representative:====
+
+While they are not primarily concerned with the law, Station Representatives are responsible for maintaining the sector in the absence of a Sheriff. They are permitted to do everything that a Sheriff can in their absence, and often need to coordinate with NFSD officers on duty to ensure that they are paid and are doing their jobs sufficiently. They are permitted with permission to issue permits and sign warrants if the Sheriff is present, but occupied, as well. However, Station Representatives should not use this power to argue with or overrule the Sheriff. A Station Representative should not open cadet slots while there is a Sheriff active, and if they do so when there is not one active, they take personal responsibility for ensuring that the cadet is trained appropriately. Station Representatives that open Cadet slots and abandon them without ensuring that they are receiving proper guidance will be subjected to action by Central Command.
+
+==Commanding Officer vs. The Sheriff: Powers And Responsibilities==
+It is common that there is not a Sheriff present to lead the department, in which case, the highest ranking officer in the list below is the Commanding Officer:
+
+# Sheriff
+# Bailiff
+# Sergeant
+# Detective
+# Brigmedic
+# Deputy
+# Public Affairs Liaison
+
+It should be noted that there should be no cadets in the sector if there is not sufficient leadership to instruct and oversee them. If this is the case, the cadets that remain should be instructed to enter cryogenic storage.
+
+A Commanding Officer who is not the Sheriff has significantly less power than the Sheriff. For such things that explicitly require a Sheriff, the Station Representative is permitted to perform most of these roles at their discretion.
+
+'''A Commanding Officer may:'''
+* Declare changes to the sector heat level.
+* Declare a No Fly Zone.
+* Write and sign a search or arrest warrant.
+* Organize the department and decide what the NFSD fleet composition is.
+* Determine suitable equipment for their officers when it is not stated in the SOP.
+
+'''Only the Sheriff, and in their absence or with their permission the Station Representative, may:'''
+* Sign for and allow any permits or actions that would otherwise be illegal without those permits, such as contraband trade amnesties or C2 contraband permits.
+* Personally supervise and conduct a warrantless search with sufficient reasonable suspicion.
+** ''Note this is done to save time, not as justification to reasonably search by itself.''
+* Open new NFSD positions beyond what Central Command establishes at the start of each shift.
+* Access the NFSD Outpost Account to pay staff and fund operations.
+
+==ZERO TOLERANCE REGULATIONS==
+'''The following tenets are to be held at all times.''' Further explanations of specific points will be handled in the articles below. Violating these tenants, or instructing other NFSD officers to do so, is a severe violation of Central Command policy and will be handled accordingly.
+
+* NFSD is to follow the escalation procedures as outlined in this document. You are to attempt conversation first whenever it is feasible to do so.
+* NFSD is never to store or wield C3 Contraband for personal use except for emergencies only. Officers may not store such contraband ‘just in case’.
+* Only the Commanding Officer is permitted to possess contraband communications channels, such as the Freelancer or Syndicate channels, and they may only do so if they are a Sergeant, Bailiff, or Sheriff. They are not permitted to use such channels, only to monitor them. Other officers are forbidden from using the keys, and if the role of Commanding Officer changes, the radio keys must be transferred to the new commanding officer as soon as possible.
+* Officers are not to activate smuggling dead drops, even if there is no Detective to scan them. In such cases, they are to be left alone, though they can be used for stakeouts.
+* Officers may not waste time searching for dead drops unprompted- they must be tipped off, whether by an intercepted fax, CentComm’s smuggling alert, or by a tip from another contractor.
+* Officers are not to search for hostile points of interest such as Listening Post Bravo or the Pirate Cove unprompted. They are permitted to use a Syndicate Pinpointer to find Listening Post Bravo if it is discovered or recovered, or use information that they find on captured pirates to attempt to locate the Pirate Cove.
+* If a hostile point of interest serves as a spawn location for individuals coming out of cryosleep, officers must keep the point of interest habitable to the best of their ability to prevent the death of those awakening from cryosleep. Do not sabotage the power, destroy external airlocks, or space the location if unnecessary.
+* Officers are not to use hostile uplinks. They may not spend or remove credits from the uplinks. Officers are neither required to nor forbidden from confiscating uplinks that are found on arrested individuals.
+* Officers are not to make modifications to their ships to cut out interaction with the civilians of the sector, nor by making modifications explicitly designed with combat in mind unless the officer is in a Heat Level 2 situation.
+* Officers are not to use the equipment and supplies intended for prisoners in the brig for their own use. Of note, officers shouldn’t be using the hydroponics trays in the brig to grow food or medicinal plants.
+* Officers are not to entrap contractors- that is, they are not to bait nor encourage contractors into committing a crime simply to arrest them.
+* NFSD officers are not permitted to accept a contract from the Freebooter’s Union during the same shift, nor are those who have accepted a contract from the Freebooter’s Union be permitted to serve as NFSD during the same shift.
+* NFSD officers who quit their positions explicitly to perform criminal activity on the same shift will be held responsible by Central Command as though they committed those crimes on duty.
+* Officers are to follow Space Law at all times. They are forbidden from being ‘bad’ or ‘corrupt’ officers, accepting bribes, or being grossly insubordinate to their superior officers.
+
+In addition, officers are expected to respect the rights of the contractors of the sector and generally follow the other regulations in this document. While smaller violations are to be handled through the methods dictated in the sector, gross or repeated violations of rights will be subjected to action from Central Command as deemed appropriate.
+
+==Sector Heat And Equipment==
+Heat is an internal classification of how secure a situation is at any given time. Heat can be classified as either a specific situation, such as an Unidentified Vessel or a single chase, or sector-wide, in the case of criminals on the loose or a major, incoming event. Situational Heat is determined by the highest-ranking officer on the scene, while sector-wide Heat is established by the Commanding Officer, to be announced to and acknowledged by the entire department.
+
+Sector Heat is assumed to be 0 at all times unless otherwise stated.
+
+Heat also determines the level of equipment that is permitted to be carried by officers. The higher the heat level, the more equipped an officer is permitted to be. Excess equipment is to be stored on an officer's locker on their assigned ship or stored in the armory. Locker inspections to ensure the safekeeping of gear and that excessive amounts of gear are not being stored are not only permitted but encouraged.
+
+{| class="wikitable"
+|'''Heat'''
+|'''Alias'''
+|'''Description'''
+|'''Equipment'''
+|-
+|0 (Green)
+|All Clear
+|Everything is well in the sector. There are no active threats. Minimal equipment required.
+|Officers are always permitted to have their standard issue loadout on them at all times. Longarms must be stored in an officer’s locker or kept in the armory.
+|-
+|1 (Blue)
+|Probable Threat
+|There is a notable problem that has the potential to escalate. Officers should be wary.
+|In addition to the standard loadout, officers are permitted to have in their direct possession an approved longarm. They may not openly carry the longarm.
+|-
+|2 (Red)
+|Confirmed Threat
+|There is an active threat to the sector. Officers are expected to identify and contain the threat.
+|Officers are permitted to wear combat hardsuits, explosives, and survival essentials, as well as all other previously allowed equipment. They may openly carry their issued longarm.
+|-
+|3 (Red / Delta)
+|FUBAR
+|There is a dire emergency that threatens the entire sector. Officers are permitted to quell the threat by any means necessary.
+|Anything goes. Officers may use C3 Contraband to preserve their lives and those of civilians. Remember to dispose of all used contraband as appropriate once the situation is handled.
+|}
+
+===The Standard Issue Loadout===
+
+The standard issue loadout is expected to be carried by officers at all times. In addition to what is below, officers are permitted to carry medical supplies, tools, advanced technologies researched by science, and other smaller utilities as well, space permitting.
+
+'''Jumpsuit:''' Standard issue beige, olive, or brown jumpsuit or jumpskirt. Nonstandard clothing is only permitted with permission of the Commanding Officer.
+
+'''Badge:''' Must be either worn or on your person at all times.
+
+'''Belt kit:''' Two pairs of handcuffs, stun baton, and nonlethal grenades.
+
+'''Survival kit:''' Emergency oxygen, mask, and rations. Emergency crowbar optional.
+
+'''Sidearms:''' Pistols and melee weapons are permitted sidearms. Disablers are permitted, but not disabler SMGs.
+
+'''Suits:''' Officers are permitted to wear EVA softsuits and patrol hardsuits on heat zero.
+
+===Heat-Restricted Items===
+
+These items explicitly require higher heat levels in order to be carried by an officer.
+
+* '''Longarms''': Any rifles, carbines, SMGs, shotguns, cannons, sniper rifles, grenade launchers, or rocket launchers, as well as laser or nonlethal equivalents of those weapons, are considered longarms. As a rule of thumb, if you are able to wield it in two hands, it’s probably a longarm. Officers should be assigned a longarm when possible. It is permitted for officers to use C2 firearms that are not obtainable from the FUC catalog, such as those turned in by permitted mercenaries or possessing modifications.
+** On Heat 0, assigned longarms must be stored in your locker or in the armory.
+** On Heat 1, you are permitted to carry your longarm, but it cannot be openly carried.
+** On Heat 2, you are permitted to carry your longarm normally.
+* '''Breaching Charges:''' Breaching charges are often deployed during scenarios where boarding needs to be forced in an unconventional way. Officers should only carry breaching charges when they intend to use them, and they should be stored otherwise. Officers should strive to place breaching charges to destroy airlocks and salvage docks, as opposed to windows or walls, when able to minimize the damage that breaching charges cause, and should consider alternatives such as hacking or using a signaller if possible.
+* '''Explosives:''' EMP grenades, or any grenade that carries a lethal payload, may only be used on Heat 2. Grenades with less-than-lethal payloads may be carried at will.
+* '''Combat Hardsuits:''' The Combat Hardsuit, Command Combat Hardsuit, and the Experimental Combat Hardsuit are limited to Heat 2 scenarios only.
+* '''Combat Stimulants:''' The use of combat stimulants are permitted for use during Heat 2 scenarios only. They should not be used preemptively. NFSD officers must ensure that they follow the laws regarding obtaining stimulants if they obtain them from civilians.
+
+====Harmful Chemicals and Chemical Weapons====
+
+The Brigmedic may carry chemicals to subdue or pacify for self-defense, but these chemicals must be nonlethal. The brigmedic may deploy lethal chemical weapons in self-defense ONLY, only during Heat 2 scenarios, and only with proper warning and escalation.
+
+Other officers may be issued chemical weapons by the Brigmedic, but all chemical weapons issued in such a way are to be used in Heat 2 only. The Brigmedic has the final say on the distribution of chemical weapons, and they are permitted to overrule even the Sheriff to deny officers access to these weapons at their discretion.
+
+==Escalation==
+Officers of the NFSD must follow a stricter escalation guideline when performing detainment or arrests. When following the guidelines, ensure that a genuine effort is put into each step. Officers should not be rushing through the list to fight as soon as possible unless they are given no other choice. The steps are as follows:
+
+* Hail and attempt conversation.
+* Attempt a show of force, brandishing and making it known that you have and will use non-lethal force.
+* Deploy non-lethal force. Note that fleeing from or blatantly ignoring an officer’s escalation is considered nonlethal resistance for the purposes of escalation and may be responded to accordingly.
+* Make every attempt to advise that you will use Lethal force.
+* Deploy lethal force.
+
+While it is expected that you follow these escalation rules whenever possible, it is understood that this is not always reasonable to follow in every situation. In such cases, you are permitted to escalate to what is necessary to ensure the minimal loss of life. For example, deploying nonlethals to subdue someone who flees from you before you can speak to them, or answering sudden lethal force with your own in turn.
+
+==Investigation and Procedure==
+
+===Due Diligence===
+
+The NFSD is expected to operate with due diligence at all times, performing their investigations and searches to what could be reasonably expected to be performed by a given individual. This is not an obligation for perfection, rather, it is meant to ensure that blatant violations of Space Law do not go ignored without due cause. NFSD officers should strive for accountability and transparency whenever possible.
+
+===Reasonable Suspicion===
+
+Reasonable suspicion is defined as the sort of common-sense conclusion about a person’s behavior upon which practical people are entitled to rely. It is the suspicion that it is possible that crime may have occurred, but does not cover ‘hunches’ or blanket assumptions.
+
+Examples:
+
+''“We should search Urist McHands, I heard him talking about having contraband.”'' - Reasonable Suspicion.
+
+''“We should search Urist McHands, he’s a mercenary and they always have contraband.”'' - NOT Reasonable Suspicion.
+
+===Probable Cause===
+
+Probable cause is defined as to where a reasonable person would believe that a crime has been or is currently being committed. It requires more than reasonable suspicion, and must have actionable evidence of some sort. Probable cause is required to conduct an arrest and sentencing.
+
+Examples:
+
+''“We should arrest Urist McHands, a pair of witnesses is telling me that he broke the windows on the Trade Outpost.”'' - Probable Cause
+
+''“We should arrest Urist McHands, he ran away from us when I asked for him to pull over.”'' - Probable Cause
+
+''“We should arrest Urist McHands, his ship was seen pulling away from a known arms dealer.”'' - NOT Probable Cause, but Reasonable Suspicion.
+
+===Searches, Seizures, And Warrants===
+
+Officers are not permitted to perform random stops, searches, and seizures upon vessels, and contractors are protected under Space Law from such violations. What an officer is permitted to do depends on what level of suspicion they have.
+
+If the officer has '''neither Reasonable Suspicion or Probable Cause''', they are not permitted to board, search, or otherwise interfere with a vessel. Consensual conversations, questions, and searches are permitted, but officers cannot force the issue if they don’t have a basis to do so, as described below. Officers are permitted to look inside the shuttle from outside if doing so does not interfere with the normal activity of a vessel, but they may not board without further reason.
+
+If an officer has '''Reasonable Suspicion''', they may stop a vessel and board it only to obtain information such as ship IFF. They may search the individual they have Reasonable Suspicion on, but they may NOT randomly open containers or force their way into sealed areas. If they spot something illegal without actively searching for it, they then have Probable Cause and can act as is detailed below, but should not be actively going through ships or seeking this activity. In order to perform a more thorough search, a valid search warrant must be written and signed by the Commanding Officer or Station Representative.
+
+If an officer has '''Probable Cause''', whether before boarding or by uncovering evidence of a crime during the course of an investigation, they have full permission to search and arrest individuals and vessels directly involved in a crime. This permission to search does not extend to vessels that were not used in a crime unless you have separate Probable Cause to believe that it was or a warrant, such as loose contraband or black marketeering.
+
+It should be noted that the act of fleeing an officer attempting to conduct a legal search off of Reasonable Suspicion is considered evading arrest, that fighting an officer attempting to conduct a legal search is considered resisting arrest, and refusing to cooperate with an officer attempting to conduct a legal search is considered obstruction of justice. All three are crimes that give the officer Probable Cause to perform an arrest and associated search.
+
+===Exigent Circumstances===
+
+If the NFSD has reason to believe that a crime is actively taking place upon a vessel, they are permitted to board without a warrant so as to halt that crime in progress. Examples include, but are not limited to, contraband being actively transported with intent to sell, a transaction of illegal material taking place, a fight or robbery in progress, or a victim who is kidnapped or in critical condition.
+
+===Detaining vs. Arresting===
+
+Detaining someone is the process of taking someone into custody to perform an investigation. Detaining requires reasonable suspicion, and they should have a justifiable basis for detaining someone. Detainment should only last for as long as it takes to finish an investigation and determine next steps, to a maximum of fifteen minutes. If probable cause cannot be established within 15 minutes, detained suspects should be released.
+
+Arresting someone is taking someone into custody for crimes committed. Arresting someone requires probable cause, and that the officer has objective and concrete facts justifying an arrest. The time between arrest and sentencing should be as quick as possible, and time spent under arrest should be taken into account when sentencing.
+
+'''The Process'''
+* Inform the suspect that they are being detained or are under arrest, and what for.
+* Follow escalation guidelines as appropriate to the situation. Attempt a nonviolent arrest when at all possible.
+* Ensure the suspect is secured in such a way to where they cannot flee or interfere with the investigation. This often includes but does not strictly require cuffing the individual if they are cooperative.
+* Move them to the designated holding area or brig as appropriate. Sentence as soon as possible, or if awaiting trial ensure that prisoners have access to legal counsel.
+
+==Vessels and Space==
+
+This section is in regards to how NFSD treats vessel classifications as dictated by Space Law.
+
+'''Peaceful vessels''' consist of most vessels in a given sector at a given time. It is assumed that friendly vessels will act in good faith and cooperate with the NFSD when possible. When approaching a friendly vessel to perform their duties, the NFSD must contact the vessel and announce their identity and intention before boarding it, whether from outside the vessel, over holocall, or over radio. It is recommended you attempt to contact a vessel at least twice with multiple methods. If you do not receive a response, and are permitted to proceed with boarding if there is none or it is impossible to contact the vessel safely.
+
+If a vessel escapes the NFSD, flees, or begins acting in such a way that makes it clear that it has no regard for enforcement (for instance, storming No Fly Zones when announcements have been clearly made and refusing hails to disengage, or attacking or sabotaging an NFSD vessel), it is a '''belligerent vessel.''' ''You must warn vessels you are categorizing as such that they are about to be treated as belligerent vessels.'' You are permitted to use non-destructive alternative methods of tracking and boarding a belligerent vessel to ensure that justice is carried out. Once you have successfully detained an individual for a given crime, their vessel returns to being a peaceful vessel and you must return to giving them warnings and the benefit of the doubt.
+
+'''''Boarding a belligerent vessel does not permit you to skip escalation once you are face-to-face.'''''
+
+Some examples of alternate methods might be:
+* Not warning pilots before engaging EMPs on their ships.
+* Powering off, rotating or unanchoring thrusters (''but not destroying them'').
+* Sneaking onboard a vessel to turn of generators or confront their pilots (''but remember, escalation must be followed.'').
+
+Vessels of clearly hostile intent, such as those labelled by CentComm communications as unidentified vessels, or entities of clear aggression such as carp, dragons, xenos, and so forth, are '''hostile vessels'''. Hostile vessels are not subjected to the protections outlined in SOP and Space Law.
+
+===No Fly Zones===
+
+No Fly Zones are an are of at most 300m, within which civilian presence is generally forbidden. They are to be announced either over the common radio channel or via the communication console by the Commanding Officer. No Fly Zones are to be declared for reasons of public safety, to protect corporate property, or because of people intending to use the contents within for illegal activity, not simply to ward people away from an area arbitrarily. Violating a No Fly Zone can be charged with trespassing if that is the only crime, or breaking and entering if the crime is compounded in any way.
+
+==Considerations During Sentencing==
+
+The following points should be considered when deciding on a sentence. While Bailiffs and Sheriffs have priority over sentencing and can overrule the sentencing of other officers, any officer can pass a sentence if they are occupied.
+
+* Fines are powerful tools that should be utilized to save time from both parties involved. Remember, though, that only crimes of a certain severity or lower can be fined, and you can’t split sentences between fines and brig time.
+* Community service is also a good alternative to brig time, especially for relatively minor crimes or to reduce the duration of longer ones.
+* The duration of detainment and arrest (though generally not transport, should it be done in a timely manner) should be considered when assigning someone’s final brig time. While the reduction need not be one-to-one, consider reducing the timer or even releasing them as time served for particularly long delays.
+* Do not be afraid to admit you made a mistake. Apologize and correct yourself.
+* Be merciful to those who appear to be acting in genuine ignorance. Use it as an opportunity to teach, not to oppress.
+* Consider releasing those who appear genuinely remorseful for their actions and who remain peaceful and respectful early on good behavior. Remember that if someone turns themselves in and acts respectfully, you should reduce the time they spend in the brig if possible.
+* Administer harsher punishments to those who act without remorse, or those who attempt to take advantage of you. Ensure you are aware of the definitions of aggravation or recidivism, and that those who commit the same crime repeatedly or those who do so with lethal intent have increased punishment.
+* Administer lighter punishments to those who cooperate and are acting in good faith. Ensure you are aware of the definitions of cooperation and good behavior.
+* If investigation reveals more details while a prisoner is carrying out their sentence, adjust their sentence and time accordingly, treating it as part of the same arrest.
+
+A link to a spreadsheet that is designed to aid you with sentencing can be found [https://docs.google.com/spreadsheets/d/1cSi1elfCdwAjAm0q9-37LbsP9x-TbEC7BZvpnLi3mmk/edit?gid=0#gid=0 here]. To use it, make a copy of the spreadsheet first before using your own copy.
+
+==Prisoner Treatment==
+
+It should be noted that humane and ethical treatment is to be prioritized at all times. The goal of enforcement should be rehabilitation, NOT humiliation. To this extent, it is encouraged that officers remember that criminals are people, too, and that empathy goes a long way towards de-escalating situations.
+
+A prisoner of the NFSD is to be given humane treatment at all times. They have rights that must be upheld by law enforcement.
+
+* Prisoners must be granted adequate medical care. They should also be proffered counseling, if available.
+* Prisoners must be provided access to the common radio channel so long as it is not abused. They are not permitted to have departmental radio.
+* Prisoners must be granted clothing, food, water, shelter and safety to the best of ability of the NFSD. If the brig is no longer safe, confinement must be established in another location.
+* The belongings and vehicles of prisoners that are not confiscated are to be protected and returned to them upon the conclusion of their sentence. Prisoners in Extended Confinement should be permitted to sell their vessels and gear using the terminals provided at the outpost, or their value as provided is to be reimbursed as outlined in Space Law.
+* Prisoners are permitted legal counsel, if available.
+* Prisoners should be granted freedom of movement and kept in the communal brig unless there is an undue risk to life and limb. Prisoners may be sent to solitary confinement if they are unruly.
+* Prisoners who repeatedly attempt to escape, who excessively damage their cell or the brig to the point where it significantly degrades or destroys the public functions of the brig, who render the brig spaced or uninhabitable, or who inflict serious bodily harm to officers or their fellow inmates, may be executed without trial.
+* Prisoners may request or may otherwise be given parole or bail without prompt by the Bailiff or Sheriff.
+* Prisoners are allowed visitors at the visitation window. Visitors may enter the brig only at the discretion of the Bailiff or Sheriff. If so permitted, they must be searched, have a valid reason of entry, and must be supervised and escorted at all times.
+* Prisoners sentenced to execution via a trial may request the method of execution. These options are limited to spacing, electrocution, firing squad, or lethal injection.
+* Prisoners are always permitted to sell their belongings and enter cryogenic storage. They should be advised that upon doing so, they’ll be incarcerated at Central Command and be unable to return for that shift. If they are spotted in the sector again that shift, Central Command should be informed.
+
+Officers who come across insane individuals who act unsightly or unreasonably during their detainment or incarceration should reach out to Central Command for advice.
+
+==Permits==
+
+Sheriffs and Station Representatives only are permitted to write permits allowing individuals to perform certain actions that may otherwise be considered criminal. Common permits include the transportation of illegal goods to the NFSD, permission to enter into otherwise illegal areas to assist the NFSD, or usage of C2 contraband items. There are limits, however:
+
+* Any permits written are to be for the advantage of the NFSD and the sector at large, for the protection of innocents or public interest.
+* Permits should be specific and serve a purpose.
+* Permits must be signed by all parties and stamped by the Sheriff. Both the Sheriff and the permit holder are to have copies of the permit paperwork.
+* Permits may never be written directly permitting a person the use of C3 contraband, or to allow smuggling, even if the NFSD are beneficiaries. They may never condone actions that lead to syndicate smuggling pods being transported into the sector.
+* Sheriffs are held responsible for the contents of their permits. Any permit deemed irresponsible, unjustified, or unjustifiable will be subject to action by CentComm as appropriate.
+
+Sheriffs are allowed to revoke any permit at any time, and invalidated permits are to be announced to the sector. Permits cannot be used to bait contractors or to entrap them- NFSD officers are expected to honor a permit issued in good faith, and to honor them to a degree that is reasonable to their position. Permit holders that violate the terms of their permit lose their protections and may be charged based on their actions as appropriate.
+
+Sheriffs are encouraged, but not required, to honor the permits of any previous Sheriffs that shift, especially if the permit holder is otherwise respectful and respectable.
+
+==Capital Punishments:==
+It is inevitable that eventually you encounter an individual that is charged with capital punishment. As this is the most severe punishment that the NFSD is permitted to enforce, a thorough consultation of Space Law and consideration of mitigating circumstances should occur before finalizing the decision. Only capital crimes can be given capital punishment.
+
+All criminals sentenced to capital punishment are entitled to trial, and you are obligated to ensure that they are aware of their right to trial. A prisoner is permitted to waive this right. If a prisoner who has been captured is found to be catatonic, they are to be given twenty minutes to recover before it is assumed that they have waived their right and that punishment is subsequently carried out.
+
+Once the prisoner has waived their right to trial or has been found guilty by the court, their capital punishment may commence. If execution is chosen as the capital punishment, the ONLY legal methods of execution are firing squad, electrocution, spacing, or lethal injection. The criminal is permitted to select their method of execution. You are NOT to execute a prisoner through another means.
+
+Upon the completion of the execution, an announcement is to be made informing the sector of who was terminated and why. The body, if recoverable, must be treated with respect and be taken to either a morgue, incinerator, or biomass reclamation machine, as appropriate.They are not to be revived or cloned; any who do so are guilty of insubordination, as well as obstruction of justice if they have been sentenced by the court. A prisoner who is revived is to be rearrested and held for the same charges they were originally executed for.
+
+If the prisoner reappears in the sector as a result of Central Command cloning, Central Command is to be contacted and informed that a clone of the criminal has been accidentally returned to the sector. If Central Command cannot be reached, they are to be rearrested and held in Extended Confinement until a connection can be established.
+
+==Internal Discipline:==
+The Sheriff is ultimately responsible for how they wish to handle the specifics of ensuring that their department remains compliant. This is not a blank check to allow your officers free reign, for they WILL be held responsible by Central Command for violations which it is found that they are explicitly dismissive of or encouraging of. It is expected that Sheriffs enforce discipline and respectable behavior to the best of their ability, and they are to be reminded that Sheriffs are permitted to remove people from their positions at any time.
+
+A demerit system is in place to help NFSD Command monitor and track the behavior of their officers. Disorderly conduct, failure to comply with direct orders, and gross negligence are examples of behavior that should be documented. Enlisted and support officers are to be given three strikes, while command are to be given two strikes. Upon reaching either the third or second strike as appropriate, they are to be demoted or dismissed from the department.
+
+When someone is demoted or dismissed, they are to be escorted to cryogenic transportation. If demoted, they are permitted to return as a lower rank; if dismissed, they are not. Sheriffs are to inform Central Command of this decision so that they may ensure compliance. They are also to inform Central Command of any demerits that come from the violation of a zero-tolerance policy.
+
+
+== Paperwork Handling ==
+
+=== Submission of Paperwork to the Public Affairs Liaison ===
+
+NFSD personnel must submit all paperwork (reports, requests, complaints, legal documents, etc.) to the Public Affairs Liaison for review and processing. This includes, but is not limited to:
+
+* Incident and arrest reports
+* Warrant requests
+* Complaint forms
+* Evidence logs for court cases
+
+Personnel should ensure all documents are fully completed and legible before submission. The Public Affairs Liaison may return incomplete or unclear paperwork for revisions.
+
+=== Review and Formatting by the Liaison ===
+
+The Public Affairs Liaison will review submitted paperwork for accuracy, completeness, and adherence to SOPs. They will format documents as needed (typed, handwritten, or digitally processed) to meet internal and legal requirements. The Liaison will then either file the documents or submit them to the appropriate legal or administrative channels.
+
+=== Legal Document Handling===
+
+For any paperwork related to legal matters, such as court proceedings or evidence submission, NFSD personnel must ensure that all supporting documentation is provided to the Public Affairs Liaison. The Liaison will review, prepare, and submit these documents to the appropriate court or legal authority, ensuring compliance with legal deadlines.
+
+=== Urgent Paperwork and Priority Requests ===
+
+Any urgent paperwork, such as warrant requests, time-sensitive reports, or legal filings, should be clearly marked as such. The Public Affairs Liaison will prioritize these documents and ensure they are processed and submitted without delay.
+
+=== Filing and Archiving ===
+
+Once reviewed and processed, the Public Affairs Liaison will be responsible for filing paperwork in both physical and digital systems, depending on departmental protocol. They will ensure all documents are stored securely and are easily accessible for future reference by authorized personnel.
+
+=== Corrections and Resubmissions ===
+
+If the Public Affairs Liaison identifies errors or missing information in the paperwork, they will promptly return it to the originating officer for corrections. It is the responsibility of NFSD personnel to correct and resubmit paperwork promptly.
+
+=== Communication and Updates ===
+
+The Public Affairs Liaison will regularly communicate with NFSD personnel to provide updates on the status of submitted paperwork, especially in legal cases or time-sensitive situations. Personnel can follow up with the Liaison if they need to check the progress of their submissions.
+
+=== Standard Paperwork Templates ===
+
+Variation and reasonable revisions to the standardized templates provided are permitted, provided that they do not deviate from established procedure (eg: the Public Affairs Liaison cannot solely authorize a Class 2 Contraband Permit).
+
+==== Search Warrant ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Search Warrant[/head]
+
+[head=3]Warrant Information[/head]
+[bold]Subject (Person/Vessel IFF):[/bold]
+[bold]Request Reason:[/bold]
+[bold]Shift Time Granted:[/bold]
+
+[head=3]Requestor Information[/head]
+[bold]Case #:[/bold]
+[bold]Request Time:[/bold]
+[bold]Requesting Officer:[/bold]
+[bold]Officer Rank:[/bold]
+
+
+
+[color=#AAAAAA]This Warrant is only valid when requested by an agent of the NFSD and approved, signed, and stamped by a [italic]distinct[/italic] (unless impossible) officer ranked Bailiff or above or a Station Representative.[/color]</nowiki>
+
+==== Arrest Warrant ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Arrest Warrant[/head]
+
+[head=2]Defendant(s)[/head]
+[bold]Name:[/bold] 
+[bold]Description:[/bold] 
+
+[bold]Name:[/bold] 
+[bold]Description:[/bold] 
+
+[bold]Name:[/bold] 
+[bold]Description:[/bold] 
+
+[head=2]Offense Details[/head]
+[bold]Case #:[/bold] 
+[bold]Approximate Time of Offense:[/bold] 
+[bold]Location of Offense:[/bold] 
+[bold]Charges:[/bold] 
+
+[head=2]Requestor Information[/head]
+[bold]Requesting Officer:[/bold] 
+[bold]Authorizing Officer:[/bold] 
+[bold]Time of Authorization:[/bold] 
+
+
+
+[color=#AAAAAA]This warrant is only valid when requested by an agent of the NFSD, and approved, signed and stamped by a distinct (unless impossible) officer ranked Bailiff or above, or a Station Representative.[/color]</nowiki>
+
+==== Arrest Report ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Arrest Report[/head]
+
+[head=2]Incident Details[/head]
+[bold]Case #:[/bold] 
+[bold]Time of Arrest:[/bold] 
+[bold]Location of Arrest:[/bold] 
+[bold]Charges:[/bold] 
+
+[head=2]Arrested Person(s)[/head]
+[bold]Name:[/bold] 
+[bold]Description:[/bold] 
+[bold]Fine or Punishment:[/bold] 
+
+[bold]Name:[/bold] 
+[bold]Description:[/bold] 
+[bold]Fine or Punishment:[/bold] 
+
+[head=2]Arrestor[/head]
+[bold]Arresting Officer:[/bold] 
+[bold]Supervisor:[/bold] 
+
+
+
+[color=#AAAAAA]I, the undersigned, hereby swear under oath that all information on this report is accurate and correct to the best of my knowledge at the time of signing.[/color]</nowiki>
+
+==== After Action Report ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]After Action Report[/head]
+
+[bold]Case #:[/bold]
+[bold]Offending Vessel:[/bold] 
+
+[bold]Suspect:[/bold] 
+[bold]Charges (list any escalations):[/bold] 
+
+[bold]Suspect:[/bold] 
+[bold]Charges (list any escalations):[/bold] 
+
+[bold]Responding Vessel:[/bold] 
+[bold]Time of Incident:[/bold] 
+[bold]Officers on Board:[/bold] 
+
+[head=3]Evidence Collected[/head]
+List all evidence collected below and the officer in possession.
+
+
+
+[head=3]Incident Summary[/head]
+
+
+
+[head=3]Commendations[/head]
+
+
+
+[head=3]Recommendations[/head]
+
+
+
+[color=#AAAAAA]I, the [italic]Bailiff or Sheriff[/italic] of the NFSD, or an agent acting on their behalf, certify that everything written in this report is correct and truthful. I am aware of the penalties should anything in this report be proven incorrect, falsified, or exaggerated.[/color]</nowiki>
+
+==== Duty Log ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Duty Log[/head]
+
+[head=2]Sheriff[/head]
+[bold]Name:[/bold] 
+[bold]Sign On Time:[/bold] 
+[bold]Sign Off Time:[/bold] 
+
+[head=2]Officers[/head]
+[bold]Name:[/bold] 
+[bold]Position:[/bold]
+[bold]Sign On Time:[/bold] 
+[bold]Sign Off Time:[/bold] 
+
+[bold]Name:[/bold] 
+[bold]Position:[/bold]
+[bold]Sign On Time:[/bold] 
+[bold]Sign Off Time:[/bold] 
+
+[bold]Name:[/bold] 
+[bold]Position:[/bold]
+[bold]Sign On Time:[/bold] 
+[bold]Sign Off Time:[/bold] 
+
+
+[color=#AAAAAA]This Form is considered NT Sensitive Data, Class 2, and is for internal NFSD use only.[/color]</nowiki>
+
+==== Contraband Amnesty Agreement ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Contraband Amnesty Agreement[/head]
+
+[head=3]Contraband Holder[/head]
+    [bold]Name:[/bold] 
+    [bold]Species:[/bold] 
+    [bold]Vessel IFF:[/bold] 
+
+[bold]Payout per FUC:[/bold] [color=#ff0000]$2,000[/color]
+[bold]Shift Time:[/bold] 
+
+This document is a contract between the above Contraband Holder and Frontier Command.
+
+Any crimes of contraband possession for the Contraband Holder will be waived so long as all class 3 contraband items, and any class 2 contraband items not subject to a Class 2 Contraband Permit are turned in within reasonable time (subject to the clause below), and not used for malicious purposes. Noncompliance with this document results in voiding any standing Class 2 Contraband Permits.
+
+If the Contraband Holder is not paid in full at the above rate for any contraband turned in, they may remain in possession of the contraband without penalty at their discretion.
+
+
+
+[color=#AAAAAA]This form is void without the signatures of both Parties and a stamp of Frontier Command (Sheriff or Station Representative).[/color]</nowiki>
+
+==== Class 2 Contraband Permit ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Class 2 Contraband Permit[/head]
+
+[bold]Permit Holder:[/bold] 
+[bold]Holder Crew:[/bold]
+    [bullet/] 
+    [bullet/] 
+    [bullet/] 
+
+[bold]Shift Time:[/bold] 
+
+This Permit allows the Holder and crew, as listed above, to possess and use class 2 contraband.
+Non-compliance with a Contraband Amnesty agreement voids this Permit.
+Refer to §6.1.4 of Space Law for a full definition of class 2 contraband.
+
+
+
+[color=#AAAAAA]This Permit is void without the signature of the Holder and the signature and stamp of the Sheriff[/color]</nowiki>
+
+==== Contraband Turnover Reciept ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Contraband Turnover Receipt[/head]
+
+[bold]Contraband Holder:[/bold] 
+[bold]Total Contraband Value (FUC):[/bold] 
+[bold]Payout per FUC:[/bold] [color=#ff0000]$2,000[/color]
+[bold]Payout Total:[/bold] 
+
+[bold]C2 Contraband:[/bold]
+    [bullet/] 
+    [bullet/] 
+    [bullet/] 
+
+[bold]C3 Contraband:[/bold]
+    [bullet/] 
+    [bullet/] 
+    [bullet/] 
+
+[bold]Shift Time:[/bold] 
+
+
+
+[color=#AAAAAA]This Form is void without the signatures of both Parties and a stamp of Frontier Command (Sheriff or Station Representative).[/color]</nowiki>
+
+==== Authorization for Bluespace Threat ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Authorization for Bluespace Threats[/head]
+
+[bold]Vessel Captain:[/bold]
+[bold]Vessel IFF:[/bold]
+[bold]Shift Time:[/bold]
+
+[head=3][bold]Issuing Frontier Authority[/bold][/head]
+[bold]Commanding Officer Name:[/bold]
+[bold]Commanding Officer Rank:[/bold]
+
+This document authorizes the above vessel and its captain to assist and [bold]cooperate with the NFSD and Frontier authorities[/bold] in neutralizing [bold]hostile bluespace threats[/bold] to Frontier. These include, but are not limited to:
+    [bullet] Cultist vessels
+    [bullet] Syndicate vessels
+    [bullet] Wizard Federation vessels
+    [bullet] Arcadia Industries vessels
+
+This document [bold]does NOT deputize[/bold] the authorized party. The authorized party is not granted special privileges to arrest, detain, and prosecute individuals associated with Nanotrasen.
+
+[bold]Any contraband[/bold] seized during operations aboard hostile vessels [bold]must be surrendered[/bold], either to the NFSD or the Station Representative, for a cash bounty. Failure to surrender contraband will lead to the forfeiture of this agreement, and the authorized party may be liable for criminal charges.
+
+The authorized party is to [bold]keep a copy of this[/bold] document for inspection. The authorized party is expected to [bold]maintain contact with NFSD[/bold] command and/or the Station Representative to minimize casualties.
+
+[bold]Before engaging[/bold] with hostile vessels, the authorized party is expected to [bold]follow any instructions given by the NFSD[/bold] for staging or other preparation prior to boarding.
+
+
+
+[color=#AAAAAA]This Form is void without the signatures of both the permitted Captain and the issuing Commanding Officer, as well as their stamp when one is available at their rank.[/color]</nowiki>
+
+==== Writ of the Frontier ====
+
+ <nowiki>[color=#4f6e40]◥[bold]N[/bold]◣ [bold]New Frontier Sheriff's Department[/bold][/color]
+[color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+[head=2]Writ of The Frontier[/head]
+
+[head=3]Contraband Holder[/head]
+    [bold]Name:[/bold] 
+    [bold]Species:[/bold] 
+    [bold]Vessel IFF:[/bold] 
+
+[bold]Holder Crew:[/bold]
+    [bullet/] 
+    [bullet/] 
+    [bullet/] 
+
+[bold]Payout per FUC:[/bold] [color=#ff0000]$2,000[/color]
+[bold]Shift Time:[/bold] 
+
+This document is a contract between the above Contraband Holder and Frontier Command.
+
+Any crimes of contraband possession for the Contraband Holder will be waived so long as all class 3 contraband items, and any class 2 contraband items not subject to a Class 2 Contraband Permit are turned in within reasonable time (subject to the clause below), and not used for malicious purposes. Noncompliance with this document results in voiding any standing Class 2 Contraband Permits.
+
+If the Contraband Holder is not paid in full at the above rate for any contraband turned in, they may remain in possession of the contraband without penalty at their discretion.
+
+This Permit allows the Holder and crew, as listed above, to possess and use class 2 contraband.
+Non-compliance with a Contraband Amnesty agreement voids this Permit.
+Refer to §6.1.4 of Space Law for a full definition of class 2 contraband.
+
+This document authorizes the above vessel and its captain to assist and cooperate with the NFSD and Frontier authorities in neutralizing hostile bluespace threats to Frontier. These include, but are not limited to:
+   [bullet] Cultist vessels
+   [bullet] Syndicate vessels
+   [bullet] Wizard Federation vessels
+   [bullet] Arcadia Industries vessels
+
+This document does NOT deputize the authorized party. The authorized party is not granted special privileges to arrest, detain, and prosecute individuals associated with Nanotrasen.
+
+[bold]Any contraband seized during operations aboard hostile vessels must be surrendered, either to the NFSD or the Station Representative, for a cash bounty. Failure to surrender contraband will lead to the forfeiture of this agreement, and the authorized party may be liable for criminal charges.[/bold]
+
+The authorized party is to keep a copy of this document for inspection. The authorized party is expected to maintain contact with NFSD command and/or the Station Representative to minimize casualties.
+
+Before engaging with hostile vessels, the authorized party is expected to follow any instructions given by the NFSD for staging or other preparation prior to boarding.
+
+
+
+[color=#AAAAAA]This Permit is void without the signature of the Holder and the signature and stamp of the Sheriff[/color]</nowiki>

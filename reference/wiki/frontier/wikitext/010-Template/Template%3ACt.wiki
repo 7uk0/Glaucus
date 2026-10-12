@@ -1,0 +1,3 @@
+<code><nowiki>[</nowiki>[[Special:CargoTables/{{{1}}}|{{{1}}}]]<nowiki>]</nowiki>{{#if:{{{2|}}}|.{{{2}}}}}</code><noinclude>
+
+[[Category:Formatting templates]]</noinclude>

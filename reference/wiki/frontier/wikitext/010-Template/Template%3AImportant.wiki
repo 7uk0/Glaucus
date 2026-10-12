@@ -1,0 +1,27 @@
+{| width=90% style="text-align:center; margin: 0 auto; border: 1px solid {{{Color|#FF4444}}}; border-left: 10px solid {{{Color|#FF4444}}}; border-right: 10px solid {{{Color|#FF4444}}}; background:{{{Color|#FF4444}}}10;"
+| style="padding: 0.25em 0.5em; border-right: 1px hidden" |[[File:{{{Image|FSIcon.png}}}|64px]]
+| style="padding: 0.25em 0.5em; width: 100%;" |<big>'''{{{Title|Important title goes here!}}}'''</big><br>{{{Note|Important description goes here!}}}
+| style="padding: 0.25em 0.5em; border-right: 1px hidden" |[[File:{{{Image|FSIcon.png}}}|64px]]
+|}<noinclude>
+
+==Usage==
+This: 
+<pre>
+{{Important
+|Title=Urist
+|Note=This is a human.
+|Image=human.png
+|Color=#FFFFCC
+}}
+</pre>
+
+Renders as:
+{{Important
+|Title=Urist
+|Note=This is a human.
+|Image=human.png
+|Color=#FFFFCC
+}}
+
+[[Category:Templates]]
+</noinclude>

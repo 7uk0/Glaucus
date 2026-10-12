@@ -1,0 +1,90 @@
+== Examples ==
+{| class="wikitable"
+! Code !! Result
+|-
+| <pre>{{Quote|text=Now is the winter of our discontent made glorious summer by this sun of York}}</pre>
+| {{Quote|text=Now is the winter of our discontent made glorious summer by this sun of York}}
+|-
+| <pre>{{Quote
+|title=Opening lines of ''Richard III''
+|text=Now is the winter of our discontent made glorious summer by this sun of York}}</pre>
+| {{Quote
+|title=Opening lines of ''Richard III''
+|text=Now is the winter of our discontent made glorious summer by this sun of York}}
+|-
+| <pre>{{Quote
+|title=Opening lines of ''Richard III''
+|author=William Shakespeare
+|text=Now is the winter of our discontent made glorious summer by this sun of York}}</pre>
+| {{Quote
+|title=Opening lines of ''Richard III''
+|author=William Shakespeare
+|text=Now is the winter of our discontent made glorious summer by this sun of York}}
+|-
+| <pre>{{Quote
+|title=Opening lines of ''Richard III''
+|author=William Shakespeare
+|authorpage=wikipedia:William Shakespeare
+|text=Now is the winter of our discontent made glorious summer by this sun of York}}</pre>
+| {{Quote
+|title=Opening lines of ''Richard III''
+|author=William Shakespeare
+|authorpage=wikipedia:William Shakespeare
+|text=Now is the winter of our discontent made glorious summer by this sun of York}}
+|-
+| <pre>{{Quote
+|author=William Shakespeare
+|authorpage=wikipedia:William Shakespeare
+|text=Now is the winter of our discontent made glorious summer by this sun of York}}</pre>
+| {{Quote
+|author=William Shakespeare
+|authorpage=wikipedia:William Shakespeare
+|text=Now is the winter of our discontent made glorious summer by this sun of York}}
+|}
+
+== Dependencies ==
+For this template to work properly, you need the following:
+* The <code>.quote</code> and any related classes, found in [[MediaWiki:Common.css]].
+<noinclude>[[Category:Template documentation]]</noinclude>
+== Template data (for Visual Editor) ==
+<templatedata>
+{
+	"params": {
+		"title": {
+			"label": "Title",
+			"description": "If the quote has a title, put it here.",
+			"example": "Richard III's soliloquy",
+			"type": "line"
+		},
+		"text": {
+			"label": "Quoted Text",
+			"description": "The quoted text to be displayed.",
+			"example": "Now is the winter of our discontent made glorious summer by this sun of York",
+			"type": "string",
+			"required": true
+		},
+		"author": {
+			"label": "Quote's Author",
+			"description": "The author of the displayed quote.",
+			"example": "William Shakespeare",
+			"type": "line",
+			"suggested": true
+		},
+		"authorpage": {
+			"label": "Author's Page",
+			"description": "If the quote's author has a page on the Wiki, put the page name here.",
+			"example": "William Shakespeare (playwright)",
+			"type": "wiki-page-name",
+			"suggested": true
+		}
+	},
+	"description": "This template creates a styled block element for quotes.",
+	"paramOrder": [
+		"text",
+		"author",
+		"authorpage",
+		"title"
+	],
+	"format": "block"
+}
+</templatedata>

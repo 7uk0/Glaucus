@@ -1,0 +1,12 @@
+#contentSub > * + .horse-userprofile {
+	margin-top: 1em;
+}
+.horse-userprofile {
+	font-size: 120%;
+	color: var(--wiki-content-text-color);
+	border: 2px solid var(--wiki-content-border-color);
+	padding: 6px 12px;
+}
+.horse-userprofile-info span:first-of-type {
+	font-weight: bold;
+}

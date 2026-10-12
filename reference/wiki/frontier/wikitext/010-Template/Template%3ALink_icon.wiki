@@ -1,0 +1,29 @@
+<includeonly>{{#vardefine:target|{{{1|}}}<!-- end vd -->}}<!--
+-->{{#vardefine:display|{{#if:{{{2|}}}|{{{2}}}|{{{1}}}<!-- end if -->}}<!-- end vd -->}}<!--
+-->{{#vardefine:iconSize|1.2em}}<!--
+-->{{#vardefine:lineHeight|1lh}}<!--
+-->{{#vardefine:fileExists|{{filepath:{{#var:target}} ({{{type}}}).png}}}}<!--
+
+-->{{#ifeq: {{{2|}}} | notext <!-- start if notext
+
+-->|<span class="link-icon notext" style="--link-icon-size: {{#var:iconSize}}; --link-icon-line-height: {{#var:lineHeight}};"><!-- start notext icon element
+
+   -->{{#if: {{#var:fileExists}} <!-- start icon if
+   -->| <span class="regular">[[File:{{#var:target}} ({{{type}}}).png|link={{#var:target}}|alt=]]</span><!-- end regular icon
+   -->| <span class="fallback">[[File:{{{1}}} ({{{type}}}).png|?]]</span><!-- end fallback icon (?)
+   -->}}<!-- end icon if
+   
+--></span><!-- end notext icon
+
+-->|<span class="link-icon" style="--link-icon-size: {{#var:iconSize}}; --link-icon-line-height: {{#var:lineHeight}};"><!-- start icon + text element
+
+   -->{{#if: {{#var:fileExists}} <!-- start icon if
+   -->| <span class="regular">[[File:{{#var:target}} ({{{type}}}).png|link={{#var:target}}|alt=]]</span><!-- end regular icon
+   -->| <span class="fallback">[[File:{{{1}}} ({{{type}}}).png|?]]</span><!-- end fallback icon (?)
+   -->}}&nbsp;<!-- end icon if
+   
+   --><span class="display-text">[[{{#var:target}}|{{#var:display}}]]</span><!-- end display text
+
+-->}}<!-- start if notext
+   
+--></span></includeonly><noinclude>{{Documentation}}[[Category:Formatting templates]]</noinclude>

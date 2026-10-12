@@ -1,0 +1,50 @@
+<includeonly><!--
+
+-->{{#vardefine:platform | {{#if: {{{2|}}} | {{#switch: {{lc:{{{1|}}}}}
+<!-- Desktop -->
+|mouse
+|keyboard=keyboard
+
+<!-- Mobile -->
+|gesture=gesture
+
+<!-- Microsoft -->
+|xboxseries
+|xbox=Xbox
+
+|xbox one
+|xbone
+|xbox1
+|xboxone=xboxone
+
+|xbox 360
+|xb360
+|xbox360
+|360=360
+
+<!-- Sony -->
+|ps
+|ps5
+|playstation
+|ds
+|dualsense=DualSense
+
+|playstation 4
+|ps4=PS4
+
+|playstation 3
+|ps3=ps3
+
+<!-- Nintendo -->
+|ns
+|switch=Switch
+
+|wii=wii
+}} | undefined }} }}<!--
+
+-->{{#vardefine:key | {{#if: {{{2|}}} | {{ucfirst:{{{2}}}}} | {{ucfirst:{{{1}}}}} }} }}<!--
+
+-->{{#vardefine:img | {{#if: {{{2|}}} | [[File:{{#var:platform}} {{#var:key}}.png|x25px|link=]] }} | Undefined }}<!--
+--><span class="key">{{#var:img}}</span><!--
+--></includeonly><!--
+--><noinclude>{{doc}}</noinclude>

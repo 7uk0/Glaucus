@@ -1,0 +1,4 @@
+== Summary ==
+Frontier Station Favicon (green)
+== Licensing ==
+{{License|game}}

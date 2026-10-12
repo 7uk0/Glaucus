@@ -1,0 +1,69 @@
+<includeonly>
+<div class="mw-collapsible mw-collapsed">
+{| class="wikitable" style="width:100%; text-align:center; margin-top:4px;"
+! Image !! Product !! Cost !! Stock
+|-
+| [[File:NFWeaponHoloflareGun.png|50px]] || Holoflare Pistol || $2,500
+|-
+| [[File:ClothingOuterHardsuitSpatio.png|50px]] || Spationaut Hardsuit || $1,500
+|-
+| [[File:ClothingShoesBootsMag.png|50px]] || Magboots || $1,000
+|-
+| [[File:ClothingOuterEVASuitContractor.png|50px]] || Contractor EVA Suit || $1,500
+|-
+| [[File:RadioHandheldNF.png|50px]] || Handicomms || $200
+|-
+| [[File:ClothingMaskGas.png|50px]] || Gas Mask || $250
+|-
+| [[File:JetpackMiniFilled.png|50px]] || Mini Jetpack || $950
+|-
+| [[File:HandHeldMassScanner.png|50px]] || Handheld Mass Scanner || $1,500
+|-
+| [[File:AppraisalCartridge.png|50px]] || AppraiseAll Cartridge || $200
+|-
+| [[File:EncryptionKeyCommon.png|50px]] || Common Encryption Key || $20
+|-
+| [[File:EncryptionKeyTraffic.png|50px]] || Traffic Control Encryption Key || $20
+|-
+| [[File:EncryptionKeyMedical.png|50px]] || Medical Encryption Key || $20
+|-
+| [[File:EncryptionKeyCargo.png|50px]] || Cargo Encryption Key || $20
+|-
+| [[File:EncryptionKeyEngineering.png|50px]] || Engineering Encryption Key || $20
+|-
+| [[File:EncryptionKeyScience.png|50px]] || Science Encryption Key || $20
+|-
+| [[File:ClothingBackpackPilot.png|50px]] || Pilot Backpack || $100 || 3
+|-
+| [[File:ClothingBackpackDuffelPilot.png|50px]] || Pilot Duffel || $100 || 3
+|-
+| [[File:ClothingBackpackSatchelPilot.png|50px]] || Pilot Satchel || $100 || 3
+|-
+| [[File:ClothingBackpackMessengerPilot.png|50px]] || Pilot Messenger Bag || $100 || 3
+|-
+| [[File:ClothingBeltPilot.png|50px]] || Pilot Webbing || $200 || 3
+|-
+| [[File:ClothingMaskPilot.png|50px]] || Pilot Breath Mask || $250 || 3
+|-
+| [[File:ClothingUniformJumpsuitPilot.png|50px]] || Pilot Jumpsuit || $100 || 3
+|-
+| [[File:ClothingOuterCoatBomber.png|50px]] || Bomber Jacket || $350 || 3
+|-
+| [[File:ClothingHeadsetAltPilot.png|50px]] || Pilot Over-ear Headset || $100 || 3
+|-
+| [[File:ClothingEyesGlassesPilot.png|50px]] || Pilot Goggles || $100 || 3
+|-
+| [[File:ClothingHandsGlovesPilot.png|50px]] || Pilot Gloves || $100 || 3
+|-
+| [[File:ClothingHeadHatPilot.png|50px]] || Pilot's Helmet || $100 || 3
+|-
+| [[File:ClothingNeckScarfPilot.png|50px]] || Pilot's Scarf || $100 || 3
+|-
+| [[File:ClothingOuterEVASuitPilot.png|50px]] || Pilot EVA Suit || $1,500 || 5
+|-
+| [[File:ClothingOuterHardsuitPilot.png|50px]] || Pilot Hardsuit || $1,500 || 5
+|-
+| [[File:ClothingShoesBootsPilot.png|50px]] || Pilot Boots || $100 || 3
+|}
+</div>
+</includeonly>
