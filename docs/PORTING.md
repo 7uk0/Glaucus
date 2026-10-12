@@ -40,7 +40,9 @@ Verified by tests: 35,592 prototypes / 195 kinds, 374 maps, 4,244 RSIs, zero err
 | Inventory & clothing | 🟡 | Slots from templates, `Loadout`/`startingGear`; no armor/modifiers from clothing yet |
 | Damage / modifier sets / containers | ✅ | Group splitting, coefficients, flat reductions |
 | Mob thresholds & state | ✅ | Alive/Critical/Dead |
-| Destructible | 🟡 | `DamageTrigger` + destruction/spawn/sound behaviours |
+| Destructible | 🟡 | `DamageTrigger` + destruction/spawn/sound behaviours; `destroy_entity` raises destruction (ore veins) |
+| Mining (`Gatherable`, `OreVein`) | 🟡 | One-hit gathering with whitelisted tools, ore rolls and yields, loot tables; PKA waits on projectiles |
+| `EntityWhitelist`, tags | ✅ | Components/sizes/tags/requireAll as upstream |
 | Melee | ✅ | Attack rate, range, unarmed via mob's own weapon |
 | Doors & airlocks | 🟡 | Two-phase state machine, bump-open, auto-close, blocked-closing, bolts. No access readers/power yet |
 | Spawners | ✅ | `ConditionalSpawner`, `RandomSpawner`, `EntityTableSpawner` |

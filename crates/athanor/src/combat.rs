@@ -112,6 +112,16 @@ pub fn try_melee(world: &mut World, attacker: Entity, target: Entity) -> AttackR
         });
         return AttackResult::OutOfRange;
     }
+    // `AttackedEvent`: a mining tool gathers the rock outright.
+    if crate::mining::on_attacked(world, target, attacker, weapon_e) {
+        world.write_message(MeleeSwing {
+            attacker,
+            target: None,
+            hit: true,
+            animation: w.animation.clone(),
+        });
+        return AttackResult::Hit;
+    }
     let content = world.resource::<Content>().clone();
     let dmg = Damage::from_yaml(&w.damage, &content.damage);
     apply_damage(world, target, &dmg, Some(attacker));

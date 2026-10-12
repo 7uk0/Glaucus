@@ -39,8 +39,9 @@ always let a fresh session resume without the chat history.
 ## Next, in order
 
 The goal is the Frontier loop: buy ship → mine/salvage → sell → upgrade.
-1. **Mining**: research done in `systems/mining.md`, with a port plan. Start
-   with an `EntityWhitelist` helper and the `Tag` component.
+1. **Mining**: melee gathering and ore veins are ported (`systems/mining.md`).
+   Next comes the client side: try it in game (a pickaxe from a locker or
+   `--player` loadout), then the mining scanner overlay.
 2. **Guns and projectiles**: hitscan, projectiles, PKA, NPC gun operators.
    Mining's PKA needs this.
 3. **Ore processing and material sales**: ore processor, lathe materials.

@@ -445,8 +445,18 @@ pub fn check_destructible(world: &mut World, e: Entity) {
         }
     }
     if destroy {
-        crate::spawn::delete(world, e);
+        destroy_entity(world, e);
     }
+}
+
+/// `DestructibleSystem.DestroyEntity`: raise `DestructionEventArgs` (ore
+/// veins drop their ore), then delete.
+pub fn destroy_entity(world: &mut World, e: Entity) {
+    if world.get_entity(e).is_err() {
+        return;
+    }
+    crate::mining::on_destruction(world, e);
+    crate::spawn::delete(world, e);
 }
 
 #[cfg(test)]

@@ -38,6 +38,7 @@ pub mod factions;
 pub mod interaction;
 pub mod inventory;
 pub mod map_loader;
+pub mod mining;
 pub mod movement;
 pub mod naming;
 pub mod physics;
@@ -49,6 +50,7 @@ pub mod spawn;
 pub mod spawners;
 pub mod storage;
 pub mod transform;
+pub mod whitelist;
 
 use bevy_app::prelude::*;
 use bevy_ecs::prelude::*;
@@ -188,6 +190,7 @@ impl Plugin for AthanorPlugin {
                 doors::door_sync_collision,
                 doors::bump_open,
                 doors::door_update,
+                mining::roll_ore_veins,
                 naming::resolve_names,
                 inventory::resolve_loadouts,
                 storage::resolve_fills,
@@ -200,6 +203,7 @@ impl Plugin for AthanorPlugin {
         doors::install(app.world_mut());
         shuttles::install(app.world_mut());
         storage::install(app.world_mut());
+        mining::install(app.world_mut());
     }
 }
 
@@ -212,6 +216,7 @@ pub fn register_components(reg: &mut spawn::ComponentFactories) {
     combat::register(reg);
     doors::register(reg);
     docking::register(reg);
+    mining::register(reg);
     factions::register(reg);
     spawners::register(reg);
     naming::register(reg);

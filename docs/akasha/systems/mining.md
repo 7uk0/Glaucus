@@ -1,4 +1,4 @@
-# Mining (research done, port not started)
+# Mining (melee gathering and ore veins ported; PKA waits on guns)
 
 **What it's for:** mining is the first way a new Frontier player earns money.
 You fly to the asteroid belts (`demiurge` now generates them), break rock
@@ -85,3 +85,27 @@ e.g. a mob with a `MiningGathering*` component.
 6. Test on real content: break `AsteroidRockMining` with a `Pickaxe`; check
    ore spawns within the yield range and that a non-tool weapon only deals
    damage.
+
+## Ported (2026-10-12)
+
+- `athanor/src/whitelist.rs`: `EntityWhitelist.IsValid`.
+  - Components are checked against the entity's YAML. Then item sizes.
+    Then tags, any or all.
+  - With nothing matched, the result is `requireAll`.
+  - Also `pass`, `fail`, `fail_or_null`, `tags_of` and `has_tag`.
+- `athanor/src/mining.rs`:
+  - `Gatherable`, `OreVein` (rolled by `roll_ore_veins` in Gameplay) and
+    `GatheringProjectile`;
+  - `gather`, `on_attacked` (hooked into `combat::try_melee` before damage),
+    `on_activate` (interaction handler) and `on_projectile_hit` (ready for
+    projectiles);
+  - `on_destruction`, called by the new `damage::destroy_entity`.
+    `check_destructible` uses it too, so guns and explosions drop ore.
+- Test: `crates/athanor/tests/mining.rs`. A fist only damages the rock.
+  A pickaxe mines `AsteroidRockCoal` in one swing and drops 1–5 `Coal5`.
+  Plain rock with a random vein mines too.
+
+Still to do:
+- guns and projectiles (PKA);
+- the mining scanner overlay (`MiningScannerViewable`);
+- ore processing and selling ore.

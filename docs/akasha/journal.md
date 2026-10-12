@@ -124,3 +124,10 @@ chemistry/medical → food → construction.
   - `tools/conjure-fleet.sh` and `tools/catoptromancy.py`: the batch render
     and compare tools, moved out of the scratchpad;
   - disk and batch-render gotchas in `environment.md`.
+
+## 2026-10-12 — Mining (melee)
+
+- Ported the `EntityWhitelist` helper, `GatherableSystem` and `MiningSystem`
+  ore veins. A pickaxe mines rock in one hit, like upstream. Ore drops on any
+  destruction.
+- Tested on real content. All sim crate tests are green.
